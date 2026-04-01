@@ -1,10 +1,6 @@
 \scriptsize
 \renewcommand{\arraystretch}{1.16}
 
-\newcommand{\adv}[1]{\cellcolor{Good!14}#1}
-\newcommand{\dis}[1]{\cellcolor{Bad!10}#1}
-\newcommand{\neu}[1]{\cellcolor{Ink!6}#1}
-
 \begin{tabularx}{22.8cm}{
 		>{\raggedright\arraybackslash\bfseries}p{2.8cm}
 		>{\raggedright\arraybackslash}p{1.4cm}
@@ -19,67 +15,67 @@
 	Метод оплаты               & Тип & Финальность & Chargeback & PCI scope & Международность & Скорость & Комиссия мерчанта \\
 
 	Карты                      &
-	\dis{pull}                 &
-	\dis{нет}                  &
-	\dis{есть}                 &
-	\dis{да}                   &
-	\adv{глобальный}           &
-	\adv{мс}                   &
-	\dis{высокая}                                                                                                            \\
+	\cellcolor{Bad!10}pull     &
+	\cellcolor{Bad!10}нет      &
+	\cellcolor{Bad!10}есть     &
+	\cellcolor{Bad!10}да       &
+	\cellcolor{Good!14}глобальный &
+	\cellcolor{Good!14}мс      &
+	\cellcolor{Bad!10}высокая                                                                                                     \\
 
 	A2A (СБП/PIX)              &
-	\adv{push}                 &
-	\adv{да}                   &
-	\adv{нет}                  &
-	\adv{нет}                  &
-	\neu{региональный}         &
-	\adv{сек}                  &
-	\adv{низкая}                                                                                                             \\
+	\cellcolor{Good!14}push    &
+	\cellcolor{Good!14}да      &
+	\cellcolor{Good!14}нет     &
+	\cellcolor{Good!14}нет     &
+	\cellcolor{Ink!6}региональный &
+	\cellcolor{Good!14}сек     &
+	\cellcolor{Good!14}низкая                                                                                                     \\
 
 	Closed-loop кошелёк        &
-	\neu{push/pull}            &
-	\neu{зависит}              &
-	\neu{ограничен}            &
-	\adv{нет}                  &
-	\dis{нишевый}              &
-	\adv{мс}                   &
-	\neu{средняя}                                                                                                            \\
+	\cellcolor{Ink!6}push/pull &
+	\cellcolor{Ink!6}зависит   &
+	\cellcolor{Ink!6}ограничен &
+	\cellcolor{Good!14}нет     &
+	\cellcolor{Bad!10}нишевый  &
+	\cellcolor{Good!14}мс      &
+	\cellcolor{Ink!6}средняя                                                                                                      \\
 
 	BNPL                       &
-	\dis{pull}                 &
-	\dis{нет}                  &
-	\dis{есть}                 &
-	\neu{нет}                  &
-	\neu{региональный}         &
-	\adv{сек}                  &
-	\neu{средняя}                                                                                                            \\
+	\cellcolor{Bad!10}pull     &
+	\cellcolor{Bad!10}нет      &
+	\cellcolor{Bad!10}есть     &
+	\cellcolor{Ink!6}нет       &
+	\cellcolor{Ink!6}региональный &
+	\cellcolor{Good!14}сек     &
+	\cellcolor{Ink!6}средняя                                                                                                      \\
 
 	Cash-based                 &
-	\adv{push}                 &
-	\adv{да}                   &
-	\adv{нет}                  &
-	\adv{нет}                  &
-	\dis{нишевый}              &
-	\dis{часы / дни}           &
-	\neu{нет данных}                                                                                                         \\
+	\cellcolor{Good!14}push    &
+	\cellcolor{Good!14}да      &
+	\cellcolor{Good!14}нет     &
+	\cellcolor{Good!14}нет     &
+	\cellcolor{Bad!10}нишевый  &
+	\cellcolor{Bad!10}часы / дни &
+	\cellcolor{Ink!6}нет данных                                                                                                   \\
 
 	CBDC (цифровой рубль)      &
-	\adv{push}                 &
-	\adv{да}                   &
-	\adv{нет}                  &
-	\adv{нет}                  &
-	\dis{региональный}         &
-	\neu{сек / мин}            &
-	\neu{нет данных}                                                                                                         \\
+	\cellcolor{Good!14}push    &
+	\cellcolor{Good!14}да      &
+	\cellcolor{Good!14}нет     &
+	\cellcolor{Good!14}нет     &
+	\cellcolor{Bad!10}региональный &
+	\cellcolor{Ink!6}сек / мин &
+	\cellcolor{Ink!6}нет данных                                                                                                   \\
 
 	Crypto                     &
-	\adv{push}                 &
-	\adv{да}                   &
-	\adv{нет}                  &
-	\adv{нет}                  &
-	\neu{глобальный / нишевый} &
-	\neu{мин / часы}           &
-	\neu{нет данных}                                                                                                         \\
+	\cellcolor{Good!14}push    &
+	\cellcolor{Good!14}да      &
+	\cellcolor{Good!14}нет     &
+	\cellcolor{Good!14}нет     &
+	\cellcolor{Ink!6}глобальный / нишевый &
+	\cellcolor{Ink!6}мин / часы &
+	\cellcolor{Ink!6}нет данных                                                                                                   \\
 \end{tabularx}
 
 \vspace{4mm}
