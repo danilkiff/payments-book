@@ -1,3 +1,7 @@
+% Пакеты LaTeX и глобальные настройки книги.
+% Редактору: этот файл не нужно трогать при добавлении глав или фигур.
+% Стили TikZ живут в src/figure-styles.tex (подключаются отсюда же).
+%
 % Keep the preamble focused on functionality; visual defaults come from KOMA.
 
 \usepackage[T2A,T1]{fontenc}
@@ -17,13 +21,13 @@
 \input{src/figure-styles}
 
 \newcommand{\includefiguretex}[2][width=\linewidth]{%
-  \adjustbox{#1}{\sffamily\input{#2}}%
+	\adjustbox{#1}{\sffamily\input{#2}}%
 }
 
 \hypersetup{
-  pdftitle={Платёжный стек},
-  pdfauthor={},
-  hidelinks,
+	pdftitle={Платёжный стек},
+	pdfauthor={},
+	hidelinks,
 }
 
 \setcounter{tocdepth}{1}
