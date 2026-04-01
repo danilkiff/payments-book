@@ -27,7 +27,7 @@ jobs:
           cache: pip
 
       - name: Install Python deps
-        run: pip install cairosvg
+        run: pip install -r requirements.txt
 
       - name: excalidraw → SVG → figure PDFs
         run: make excalidraw svg
