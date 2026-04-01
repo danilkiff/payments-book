@@ -1,29 +1,6 @@
 # ── Артефакты сборки LaTeX ──────────────────────────────────────────────────
 build/
-payments-book.pdf
-*.aux
-*.bbl
-*.bcf
-*.blg
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.run.xml
-*.synctex*
-*.xdv
-*.toc
-*.lof
-*.lot
-*.idx
-*.ilg
-*.ind
-*.glo
-*.gls
-*.ist
-*.acn
-*.acr
-*.alg
+*.pdf
 
 # ── macOS ────────────────────────────────────────────────────────────────────
 .DS_Store
