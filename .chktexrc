@@ -12,6 +12,10 @@ CmdLine
          #      slash character, not a dangling command.
          #      Example: \textbf{M\slash Chip Contactless (MC)}
 
+    -n8  # W8  "Wrong length of dash may have been used": current book
+         #      style uses `--` broadly in running Russian text, so this
+         #      rule generates high-volume noise and is not actionable.
+
     -n12 # W12 "Interword spacing": English rule -- use `\ ' after inline
          #      commands like \emph{...}. Russian typography has no such
          #      convention; the spacing after } is always correct.
