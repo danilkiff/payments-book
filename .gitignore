@@ -1,7 +1,6 @@
 # ── Артефакты сборки LaTeX ──────────────────────────────────────────────────
 build/
 payments-book.pdf
-font-test.pdf
 *.aux
 *.bbl
 *.bcf
