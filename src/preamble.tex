@@ -60,7 +60,11 @@ itemsep=0pt,topsep=0pt,partopsep=0pt}
 
 % --- Команда включения фигур ---
 % \includefiguresvg[width=<dim>]{path-without-ext}  — Excalidraw-SVG → PDF
-\newcommand{\includefiguresvg}[2][width=\linewidth]{\includegraphics[#1]{#2.pdf}}
+% Корпусные фигуры ограничиваем по высоте, чтобы они не доминировали на полосе.
+\newcommand{\figuremaxheight}{.35\textheight}
+\newcommand{\includefiguresvg}[2][width=\linewidth]{%
+  \includegraphics[height=\figuremaxheight,keepaspectratio,#1]{#2.pdf}%
+}
 
 % --- \fullwidth: после удаления колонки полей равен \textwidth ---
 % \AtBeginDocument нужен: KOMA финализирует \textwidth только в \begin{document}
