@@ -29,11 +29,8 @@ jobs:
       - name: Install Python deps
         run: pip install cairosvg
 
-      - name: excalidraw → SVG
-        run: make excalidraw
-
-      - name: SVG → PDF
-        run: python3 scripts/svg2pdf.py
+      - name: excalidraw → SVG → figure PDFs
+        run: make excalidraw svg
 
       - name: Build PDF (LaTeX)
         uses: docker://ghcr.io/xu-cheng/texlive-full:20260101
