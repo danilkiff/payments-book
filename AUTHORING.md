@@ -1,42 +1,35 @@
 # Authoring Guide
 
-## Принципы
+## Базовый подход
 
-- Активный стек книги: `scrbook` + pdfLaTeX + `latexmk` + `biblatex` + `imakeidx/texindy`.
-- Предпочитать коробочные решения и существующие макросы, а не добавлять новые workflow-слои.
-- Историю изменений и удалённых артефактов хранит система контроля версий.
+- Активный стек книги: `scrbook` + `pdflatex` + `latexmk` + `biblatex`.
+- Приоритет — ясность исходников, а не тонкая типографская настройка.
+- Новые workflow-слои и новые макросы добавлять только если без них уже трудно читать и поддерживать текст.
 
 ## Текст
 
 Публичный author-facing набор макросов живёт в `src/commands.tex`:
 
-`\\codeword`, `\\domain`, `\\endpoint`, `\\filepath`, `\\iso`, `\\mti`, `\\de`, `\\rc`, `\\pan`, `\\hex`, `\\law`, `\\scheme`, `\\idx`, `\\idxdef`, `\\idxsee`, `\\idxseealso`, `\\sourcebib`.
+`\\codeword`, `\\domain`, `\\endpoint`, `\\filepath`, `\\iso`, `\\mti`, `\\de`, `\\rc`, `\\pan`, `\\hex`, `\\law`, `\\scheme`, `\\idx`, `\\idxdef`, `\\sourcebib`.
 
-Новые локальные макросы добавлять только если без них начинается заметное дублирование по нескольким главам.
+`\\idx` и `\\idxdef` оставлены как совместимые текстовые обёртки. Они больше не строят предметный указатель.
 
 ## Сборка книги
-
-Основной путь:
 
 ```bash
 make pdf
 ```
 
-Итоговый PDF:
-
-```text
-build/payments-book.pdf
-```
+Итоговый PDF: `build/payments-book.pdf`.
 
 Если нужно собрать напрямую:
 
 ```bash
-mkdir -p build && latexmk -pdf -outdir=build payments-book.tex
+mkdir -p build
+latexmk -pdf -outdir=build payments-book.tex
 ```
 
 `pdflatex` считается единственным поддерживаемым движком для основной книги. После заметных изменений в сборочном окружении или вспомогательных файлах полезно запускать `make clean`.
-
-Очистка:
 
 ```bash
 make clean
@@ -44,9 +37,16 @@ make clean
 
 ## Фигуры
 
-- Активная техническая фигура существует как пара `assets/figures/<chapter>/<name>.tex` и `assets/figures/<chapter>/<name>.pdf`.
-- Никаких manifest/status/placement-файлов у активных фигур больше нет.
-- Если правится standalone-исходник фигуры, итоговый `.pdf` нужно обновить рядом с ним.
+- Источником правды для фигуры считается `assets/figures/<chapter>/<name>.tex`.
+- `assets/figures/<chapter>/<name>.pdf` — локальный артефакт сборки. Он нужен книге, но не хранится в репозитории.
+- Общий шаблон фигур в `assets/figures/templates/figure-preamble.tex` намеренно простой и совместимый с текущими исходниками.
+- `make pdf` сам пересобирает figure PDF перед сборкой книги.
+
+Если нужно пересобрать только фигуры:
+
+```bash
+make figures
+```
 
 Пример ручной пересборки фигуры:
 
@@ -57,4 +57,4 @@ latexmk -pdf -outdir=build emv-chip-architecture.tex
 cp build/emv-chip-architecture.pdf emv-chip-architecture.pdf
 ```
 
-Локальный `build/` рядом с фигурой считается временным артефактом.
+Локальный `build/` рядом с фигурой и соседний `.pdf` считаются временными артефактами. Их можно убрать через `make clean`.
