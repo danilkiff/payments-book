@@ -13,14 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check texindy
-        uses: docker://ghcr.io/xu-cheng/texlive-alpine:20260101
-        with:
-          entrypoint: texindy
-          args: -V
-
       - name: Compile LaTeX
         uses: docker://ghcr.io/xu-cheng/texlive-alpine:20260101
         with:
-          entrypoint: latexmk
-          args: -xelatex payments-book.tex
+          entrypoint: sh
+          args: -lc "mkdir -p build && latexmk -xelatex -outdir=build payments-book.tex"
