@@ -2,7 +2,7 @@
 
 ## Принципы
 
-- Активный стек книги: `scrbook` + XeLaTeX + `latexmk` + `biblatex` + `imakeidx/texindy`.
+- Активный стек книги: `scrbook` + pdfLaTeX + `latexmk` + `biblatex` + `imakeidx/texindy`.
 - Предпочитать коробочные решения и существующие макросы, а не добавлять новые workflow-слои.
 - Историю изменений и удалённых артефактов хранит система контроля версий.
 
@@ -31,8 +31,10 @@ build/payments-book.pdf
 Если нужно собрать напрямую:
 
 ```bash
-mkdir -p build && latexmk -xelatex -outdir=build payments-book.tex
+mkdir -p build && latexmk -pdf -outdir=build payments-book.tex
 ```
+
+`pdflatex` считается единственным поддерживаемым движком для основной книги. После заметных изменений в сборочном окружении или вспомогательных файлах полезно запускать `make clean`.
 
 Очистка:
 
@@ -51,7 +53,7 @@ make clean
 ```bash
 cd assets/figures/ch07-emv
 mkdir -p build
-latexmk -xelatex -outdir=build emv-chip-architecture.tex
+latexmk -pdf -outdir=build emv-chip-architecture.tex
 cp build/emv-chip-architecture.pdf emv-chip-architecture.pdf
 ```
 
