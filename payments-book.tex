@@ -2,14 +2,14 @@
 % !BIB program = biber
 
 \documentclass[
-  b5paper,
+  paper=a4,
   10pt,
-  twoside,
+  oneside,
   open=any,
   numbers=noenddot,
   headings=big,
   chapterprefix=false,
-  DIV=11,
+  DIV=calc,
 ]{scrbook}
 
 \input{src/preamble}
@@ -24,6 +24,11 @@
 \begin{document}
 \input{src/frontmatter/pre}
 \maketitle
+\clearpage
+\thispagestyle{empty}
+\null\vfill
+\booktitleback
+\clearpage
 
 \frontmatter
 \input{src/frontmatter/preface}
