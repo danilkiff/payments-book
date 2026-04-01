@@ -14,17 +14,14 @@
 %% ── Преамбула ────────────────────────────────────────────────────────────────
 \input{preamble/packages}
 \input{preamble/fonts}
+\input{preamble/build-flags}
 \input{preamble/kaobook-config}
+\input{preamble/kaobook-patches}
 \input{preamble/commands}
 \input{preamble/terms}
 
 %% ── Библиография ──────────────────────────────────────────────────────────────
 \addbibresource{assets/bibliography.bib}
-
-% Pre-load math fonts to avoid microtype/expl3 stack overflow inside figures
-% (TeX Live 2026 bug: font config files loaded inside figure environments
-% trigger recursive \@popfilename → \ExplSyntaxOff calls)
-\AtBeginDocument{\setbox0=\hbox{$\alpha$}}
 
 %% ════════════════════════════════════════════════════════════════════════════
 \begin{document}
@@ -32,13 +29,11 @@
 \input{frontmatter/titlepage}
 
 \frontmatter
-\setchapterstyle{plain}
 \input{frontmatter/preface}
 \input{frontmatter/toc}
 
 %% ── Основная часть ────────────────────────────────────────────────────────────
 \mainmatter
-\setchapterstyle{kao}
 
 %% Часть I. Как двигаются деньги
 \input{parts/part1/_part}
@@ -97,7 +92,6 @@
 
 %% ── Конец книги ───────────────────────────────────────────────────────────────
 \backmatter
-\setchapterstyle{plain}
 \input{backmatter/bibliography}
 \input{backmatter/glossary}
 \input{backmatter/index}
