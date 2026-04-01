@@ -3,13 +3,14 @@
 
 \documentclass[
   paper=a4,
-  10pt,
+  11pt,
   oneside,
   open=any,
   numbers=noenddot,
   headings=big,
   chapterprefix=false,
   DIV=calc,
+  BCOR=0mm,
 ]{scrbook}
 
 \input{src/preamble}
@@ -22,15 +23,6 @@
 \addbibresource{assets/bibliography.bib}
 
 \begin{document}
-\newgeometry{
-  left=16mm,
-  textwidth=178mm,
-  top=18mm,
-  bottom=22mm,
-  marginparsep=0mm,
-  marginparwidth=0mm,
-  heightrounded,
-}
 \input{src/frontmatter/pre}
 \maketitle
 \clearpage
@@ -43,24 +35,15 @@
 \input{src/frontmatter/preface}
 \input{src/frontmatter/toc}
 
-\restoregeometry
 \mainmatter\par\input{src/parts/part1/index}
 \input{src/parts/part2/index}
 \input{src/parts/part3/index}
 \input{src/parts/part4/index}
 \input{src/parts/part5/index}
 
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 \backmatter\par\input{src/backmatter/epilogue}
 \input{src/backmatter/source-map}
-\newgeometry{
-  left=16mm,
-  textwidth=178mm,
-  top=18mm,
-  bottom=22mm,
-  marginparsep=0mm,
-  marginparwidth=0mm,
-  heightrounded,
-}
 \input{src/backmatter/bibliography}
 
 \end{document}
