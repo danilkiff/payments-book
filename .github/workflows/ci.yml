@@ -30,7 +30,7 @@ jobs:
         run: pip install cairosvg
 
       - name: excalidraw → SVG
-        run: python3 scripts/excalidraw2svg.py
+        run: make excalidraw
 
       - name: SVG → PDF
         run: python3 scripts/svg2pdf.py
