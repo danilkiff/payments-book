@@ -209,6 +209,7 @@ def _shape(el: dict, ox: float, oy: float, bound_texts: dict | None = None) -> s
     if bound:
         label_text = bound.get("text", label_text)
         label_fs = bound.get("fontSize", label_fs)
+    label_color = (bound or label).get("strokeColor") or DEFAULT_STROKE
 
     parts = []
 
@@ -219,7 +220,7 @@ def _shape(el: dict, ox: float, oy: float, bound_texts: dict | None = None) -> s
             f' fill="{fill}"{fo} stroke="{stroke}"{so} stroke-width="{sw}"{dash}/>'
         )
         if label_text:
-            parts.append(_text_lines(label_text, x + w / 2, y + h / 2, label_fs, "#1e1e1e",
+            parts.append(_text_lines(label_text, x + w / 2, y + h / 2, label_fs, label_color,
                                      font_weight=label_fw))
 
     elif t == "ellipse":
@@ -229,7 +230,7 @@ def _shape(el: dict, ox: float, oy: float, bound_texts: dict | None = None) -> s
             f' fill="{fill}"{fo} stroke="{stroke}"{so} stroke-width="{sw}"{dash}/>'
         )
         if label_text:
-            parts.append(_text_lines(label_text, cx, cy, label_fs, "#1e1e1e",
+            parts.append(_text_lines(label_text, cx, cy, label_fs, label_color,
                                      font_weight=label_fw))
 
     elif t == "diamond":
@@ -240,7 +241,7 @@ def _shape(el: dict, ox: float, oy: float, bound_texts: dict | None = None) -> s
             f' fill="{fill}"{fo} stroke="{stroke}"{so} stroke-width="{sw}"{dash}/>'
         )
         if label_text:
-            parts.append(_text_lines(label_text, mx, my, label_fs, "#1e1e1e",
+            parts.append(_text_lines(label_text, mx, my, label_fs, label_color,
                                      font_weight=label_fw))
 
     return "\n".join(filter(None, parts))
