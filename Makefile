@@ -8,7 +8,7 @@ PDF      := $(BUILD)/main.pdf
 RELEASE_FLAG := $(AUX)/release-mode.tex
 LATEXMK  := $(shell command -v latexmk 2>/dev/null || { test -x /Library/TeX/texbin/latexmk && echo /Library/TeX/texbin/latexmk; })
 
-.PHONY: pdf release verify env-check doctor clean clean-all watch terms-audit prepare-draft prepare-release
+.PHONY: pdf release verify env-check doctor clean clean-all watch terms-audit margin-audit prepare-draft prepare-release
 
 pdf: prepare-draft ## Основная сборка (draft)
 	$(LATEXMK) $(MAIN)
@@ -34,6 +34,9 @@ doctor: env-check ## Алиас для env-check
 
 terms-audit: ## Проверить термины и зависимости определений (CHAPTER=path/to/file.tex)
 	@python3 scripts/term_audit.py $(CHAPTER)
+
+margin-audit: ## Показать плотность маргиналий по build/aux/main.log
+	@python3 scripts/margin_audit.py
 
 prepare-draft:
 	@rm -f $(RELEASE_FLAG)
