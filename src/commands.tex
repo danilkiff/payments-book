@@ -1,0 +1,43 @@
+% Small semantic helpers that simplify writing without adding build machinery.
+
+\DeclareRobustCommand{\codeword}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
+\DeclareRobustCommand{\domain}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
+\DeclareRobustCommand{\endpoint}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
+\DeclareRobustCommand{\filepath}[1]{\texorpdfstring{\path{#1}}{\detokenize{#1}}}
+\DeclareRobustCommand{\iso}[1]{\texorpdfstring{\textsf{ISO #1}}{ISO #1}}
+\DeclareRobustCommand{\mti}[1]{\codeword{#1}}
+\DeclareRobustCommand{\de}[1]{DE \codeword{#1}}
+\DeclareRobustCommand{\rc}[1]{\codeword{#1}}
+\DeclareRobustCommand{\pan}[1]{\codeword{#1}}
+\DeclareRobustCommand{\hex}[1]{\codeword{0x#1}}
+\newcommand{\law}[1]{\textit{#1}}
+\DeclareRobustCommand{\scheme}[1]{\texorpdfstring{\textsf{#1}}{#1}}
+
+\pdfstringdefDisableCommands{%
+  \def\codeword#1{#1}%
+  \def\domain#1{#1}%
+  \def\endpoint#1{#1}%
+  \def\filepath#1{#1}%
+  \def\mti#1{#1}%
+  \def\de#1{DE #1}%
+  \def\rc#1{#1}%
+  \def\pan#1{#1}%
+  \def\hex#1{0x#1}%
+  \def\law#1{#1}%
+}
+
+\newcommand{\sourcebib}[1]{%
+  \par\smallskip
+  {\footnotesize\noindent\fullcite{#1}\par}%
+}
+
+\newcommand{\textrightarrowglyph}{\texorpdfstring{\ensuremath{\rightarrow}}{->}}
+\newcommand{\textleftrightarrowglyph}{\texorpdfstring{\ensuremath{\leftrightarrow}}{<->}}
+\newcommand{\texthorizontalbarglyph}{\texorpdfstring{---}{-}}
+\newunicodechar{→}{\textrightarrowglyph}
+\newunicodechar{↔}{\textleftrightarrowglyph}
+\newunicodechar{―}{\texthorizontalbarglyph}
+\newunicodechar{₽}{\mbox{руб.}}
+
+\renewcommand{\eg}{т.е.\xspace}
+\providecommand{\cf}{ср.\xspace}
