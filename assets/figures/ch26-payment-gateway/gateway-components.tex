@@ -1,7 +1,3 @@
-\documentclass[tikz,border=2mm]{standalone}
-\input{../templates/figure-preamble}
-
-\begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
   \tikzset{
     stage/.style={
@@ -61,4 +57,3 @@
   \draw[fig/dashed] ($(issuer.west)+(-3.5mm,0)$) .. controls +(-4mm,14mm) and +(-4mm,-14mm) ..
     node[left, font=\fontsize{4.8}{5.3}\selectfont, text=Muted] {reply same path} ($(merchant.west)+(-3.5mm,0)$);
 \end{tikzpicture}
-\end{document}

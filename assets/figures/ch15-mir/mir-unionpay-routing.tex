@@ -1,7 +1,3 @@
-\documentclass[tikz,border=4mm]{standalone}
-\input{../templates/figure-preamble}
-
-\begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
   \node[fig/mcore] (root) at (0,0) {Кобейджинговая\\карта};
   \node[fig/mdecision, below=5.5mm of root] (country) {Терминал\\в России?};
@@ -13,4 +9,3 @@
   \draw[fig/accenta] (country.south) -- (mirroute.north);
   \draw[fig/accentb] (mirroute.south) -- (upiroute.north);
 \end{tikzpicture}
-\end{document}

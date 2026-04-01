@@ -1,7 +1,3 @@
-\documentclass[tikz,border=2mm]{standalone}
-\input{../templates/figure-preamble}
-
-\begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
   \node[fig/mblock, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt] (un) at (0,0) {Генерация UN};
   \node[fig/mblock, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt, below=3.6mm of un] (ia) {INTERNAL AUTH.\\+ UN};
@@ -28,4 +24,3 @@
   \draw[fig/dashed] (verify.south) -- (result.north);
   \draw[fig/lookup] (verify.east) -- (trust.west);
 \end{tikzpicture}
-\end{document}

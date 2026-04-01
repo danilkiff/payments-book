@@ -1,7 +1,3 @@
-\documentclass[tikz,border=4mm]{standalone}
-\input{../templates/figure-preamble}
-
-\begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
   \node[fig/mblock] (client) at (0,0) {Клиент};
   \node[fig/mcore, below=5mm of client] (merchant1) {Мерчант / PISP\\выбор оплаты};
@@ -16,4 +12,3 @@
 
   \node[fig/mnote, below=4.5mm of confirm] {Клиент возвращается из банка, а дальнейший платёж и статусы уже идут по API между PISP и банком.};
 \end{tikzpicture}
-\end{document}

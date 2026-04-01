@@ -1,7 +1,3 @@
-\documentclass[tikz,border=2mm]{standalone}
-\input{../templates/figure-preamble}
-
-\begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
   \node[fig/mblock, minimum width=22mm] (merchant) at (0,0) {Мерчант};
   \node[fig/mblock, minimum width=22mm, below=5mm of merchant] (acquirer) {Эквайер};
@@ -25,4 +21,3 @@
 
   \node[fig/mnote, text width=22mm, anchor=north west] at ($(merchant.west)+(0,-42mm)$) {Маржа эквайера остаётся после выплаты interchange и комиссии сети.};
 \end{tikzpicture}
-\end{document}

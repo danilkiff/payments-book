@@ -1,7 +1,3 @@
-\documentclass[tikz,border=4mm]{standalone}
-\input{../templates/figure-preamble}
-
-\begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
   \tikzset{
     keyroot/.style={fig/core, minimum width=36mm, minimum height=11mm},
@@ -9,7 +5,7 @@
     keysession/.style={fig/block, fill=Soft, minimum width=28mm, minimum height=9mm, font=\scriptsize}
   }
 
-  \node[keyroot] (imk) at (0,0) {Issuer Master Key\\(IMK в HSM)};
+  \node[keyroot] (imk) at (0,0) {\shortstack{Issuer Master Key\\(IMK в HSM)}};
 
   \node[keycard] (card1) at (-6.0,-2.9) {Card Key\\PAN 4561...0892\\PSN 01};
   \node[keycard] (card2) at (0,-2.9) {Card Key\\PAN 5412...3456\\PSN 01};
@@ -40,4 +36,3 @@
 
   \node[fig/note, text width=16.8cm] at (0,-7.8) {IMK хранится в HSM, из него по PAN и PSN выводится Card Key, а уже из Card Key по счётчику ATC выводятся одноразовые Session Key для конкретных EMV-операций.};
 \end{tikzpicture}
-\end{document}

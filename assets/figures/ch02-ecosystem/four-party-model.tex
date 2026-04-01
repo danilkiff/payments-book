@@ -1,7 +1,3 @@
-\documentclass[tikz,border=4mm]{standalone}
-\input{../templates/figure-preamble}
-
-\begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
   \node[fig/block, minimum width=37mm, minimum height=12mm] (holder) at (0,3.1) {Держатель карты};
   \node[fig/block, minimum width=33mm, minimum height=12mm] (merchant) at (8.8,3.1) {Мерчант};
@@ -19,4 +15,3 @@
   \draw[fig/accenta, <->] (issuer.east) -- node[above, font=\scriptsize, text=AccentA!80!black, align=center] {правила, маршрутизация,\\клиринг, settlement} (network.west);
   \draw[fig/accenta, <->] (network.east) -- node[above, font=\scriptsize, text=AccentA!80!black, align=center] {правила, маршрутизация,\\клиринг, settlement} (acquirer.west);
 \end{tikzpicture}
-\end{document}

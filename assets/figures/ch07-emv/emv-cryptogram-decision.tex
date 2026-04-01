@@ -1,7 +1,3 @@
-\documentclass[tikz,border=2mm]{standalone}
-\input{../templates/figure-preamble}
-
-\begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
   \node[fig/mcore, minimum width=22mm] (tvr) at (0,0) {TVR\\{\tiny результаты}};
   \node[fig/mdecision, text width=17mm, below=5.5mm of tvr] (denial) {Denial\\$\neq 0$?};
@@ -18,4 +14,3 @@
 
   \node[fig/mnote, text width=22mm, anchor=north west] at ($(arqc.west)+(0,-8mm)$) {AAC = отказ, ARQC = онлайн, TC = офлайн.};
 \end{tikzpicture}
-\end{document}

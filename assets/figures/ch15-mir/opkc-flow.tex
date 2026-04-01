@@ -1,7 +1,3 @@
-\documentclass[tikz,border=4mm]{standalone}
-\input{../templates/figure-preamble}
-
-\begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
   \node[font=\bfseries\scriptsize, text=AccentA!80!black] at (2.6,1.7) {Авторизация};
   \node[font=\bfseries\scriptsize, text=Warn!85!black] at (8.0,1.7) {Клиринг};
@@ -13,10 +9,10 @@
 
   \node[fig/block, minimum width=18mm] (term) at (1.1,-1.0) {Терминал};
   \node[fig/block, minimum width=22mm] (acq) at (3.4,-1.0) {Банк-\\эквайер};
-  \node[fig/core, minimum width=24mm] (opkc) at (6.9,-1.0) {ОПКЦ\\(НСПК)};
+  \node[fig/core, minimum width=24mm] (opkc) at (6.9,-1.0) {\shortstack{ОПКЦ\\(НСПК)}};
   \node[fig/block, minimum width=22mm] (iss) at (9.9,-1.0) {Банк-\\эмитент};
   \node[fig/sidecar, minimum width=26mm] (netto) at (8.0,-2.9) {нетто-\\позиции};
-  \node[fig/core, minimum width=26mm] (cbr) at (13.1,-1.0) {Банк России\\(расчёт)};
+  \node[fig/core, minimum width=26mm] (cbr) at (13.1,-1.0) {\shortstack{Банк России\\(расчёт)}};
   \node[fig/block, minimum width=22mm] (corr) at (15.6,-1.0) {корсчета\\банков};
 
   \draw[fig/accenta] (term.east) -- (acq.west);
@@ -31,4 +27,3 @@
   \draw[fig/accentb] (cbr.east) -- (corr.west);
   \node[font=\scriptsize, text=Muted] at (14.35,-2.1) {перевод средств};
 \end{tikzpicture}
-\end{document}

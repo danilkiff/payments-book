@@ -1,11 +1,7 @@
-\documentclass[tikz,border=4mm]{standalone}
-\input{../templates/figure-preamble}
-
-\begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
   \node[font=\bfseries] at (0,0) {Держатель};
-  \node[font=\bfseries] at (4.3,0) {Кошелёк\\(телефон)};
-  \node[font=\bfseries] at (8.8,0) {TSP\\(карточная сеть)};
+  \node[font=\bfseries] at (4.3,0) {\shortstack{Кошелёк\\(телефон)}};
+  \node[font=\bfseries] at (8.8,0) {\shortstack{TSP\\(карточная сеть)}};
   \node[font=\bfseries] at (13.1,0) {Эмитент};
 
   \draw[Ink!45, densely dashed] (0,-0.35) -- (0,-8.4);
@@ -21,4 +17,3 @@
   \draw[fig/arrow] (4.3,-6.0) -- node[above, font=\scriptsize, text=Muted] {SE / HCE load} (4.3,-6.9);
   \draw[fig/accentb] (4.3,-7.8) -- node[above, font=\scriptsize, text=AccentB!80!black] {\enquote{Карта добавлена}} (0,-7.8);
 \end{tikzpicture}
-\end{document}
