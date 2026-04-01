@@ -26,8 +26,21 @@
 \usepackage{indentfirst}
 \input{src/figure-styles}
 
+\setcounter{biburlbigbreakpenalty}{100}
+\setcounter{biburlbreakpenalty}{100}
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
+
+\newcommand{\includefigurefragment}[1]{%
+  \begingroup
+    \sffamily
+    \input{#1}%
+  \endgroup
+}
+
 \newcommand{\includefiguretex}[2][width=\linewidth]{%
-  \adjustbox{#1}{\sffamily\input{#2}}%
+  \adjustbox{#1}{\includefigurefragment{#2}}%
 }
 
 \hypersetup{
