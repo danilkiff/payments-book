@@ -20,8 +20,10 @@
 
 %% ── Плавающие объекты и подписи ─────────────────────────────────────────────
 \usepackage{graphicx}
-\usepackage{caption}
-\usepackage{subcaption}
+% caption/subcaption removed: conflicts with kaobook's scrbook captions via
+% expl3 hook recursion in TeX Live 2026 (parameter stack overflow in figure envs)
+% \usepackage{caption}
+% \usepackage{subcaption}
 
 %% ── Листинги кода ────────────────────────────────────────────────────────────
 \usepackage{listings}

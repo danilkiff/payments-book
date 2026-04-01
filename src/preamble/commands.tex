@@ -17,21 +17,21 @@
 
 % "На практике" — практический совет
 \newenvironment{practice}{%
-  \begin{kaobox}[frametitle=На практике]
+  \begin{kaobox}[title=На практике]
 }{%
   \end{kaobox}
 }
 
 % "Важно" — критическое замечание
 \newenvironment{important}{%
-  \begin{kaobox}[frametitle=Важно, backgroundcolor=red!5, frametitlebackgroundcolor=red!20]
+  \begin{kaobox}[title=Важно, colback=red!5, colbacktitle=red!20]
 }{%
   \end{kaobox}
 }
 
 % "Определение" — глоссарийная вставка внутри текста
 \newenvironment{termdef}[1]{%
-  \begin{kaobox}[frametitle=Определение: #1, backgroundcolor=blue!4, frametitlebackgroundcolor=blue!15]
+  \begin{kaobox}[title=Определение: #1, colback=blue!4, colbacktitle=blue!15]
 }{%
   \end{kaobox}
 }
