@@ -128,6 +128,12 @@ PISP сначала создаёт ресурс \texttt{payment-consent} и по
 самых частых ловушек для команды, привыкшей мыслить экранным
 \enquote{платёж подтверждён}.
 
+\begin{figure}[tbp]
+  \centering
+  \includefiguresvg[width=.75\linewidth]{assets/figures/ch19-open-banking/consent-lifecycle}
+  \caption{Жизненный цикл consent в Open Banking UK: статусы PISP и AISP.}~\label{fig:consent-lifecycle}
+\end{figure}
+
 На уровне аутентификации Open Banking UK отдельно поддерживает и
 redirect, и decoupled-подход. Причина техническая: redirect жёстко
 привязан к устройству и каналу, поэтому плохо переносится на сценарии
