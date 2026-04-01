@@ -17,6 +17,8 @@ CLEAN_FILE_PATTERNS := \
 	-name '*.lot' -o \
 	-name '*.out' -o \
 	-name '*.run.xml' -o \
+	-name '*.synctex' -o \
+	-name '*.synctex(busy)' -o \
 	-name '*.synctex.gz' -o \
 	-name '*.synctex.gz(busy)' -o \
 	-name '*.toc' -o \
