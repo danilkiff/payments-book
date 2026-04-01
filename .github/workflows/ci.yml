@@ -20,7 +20,7 @@ jobs:
           args: payments-book.tex
 
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: payments-book-pdf
           path: build/payments-book.pdf
