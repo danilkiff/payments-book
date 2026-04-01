@@ -3,14 +3,31 @@
 %% ── Платёжные термины ────────────────────────────────────────────────────────
 % Единообразное форматирование специфических терминов по всей книге.
 
-\newcommand{\iso}[1]{\textsc{iso\,#1}}           % \iso{8583} → ISO 8583
-\newcommand{\mti}[1]{\texttt{#1}}                 % MTI значение
-\newcommand{\de}[1]{DE\,\texttt{#1}}              % Data Element: \de{55}
-\newcommand{\rc}[1]{\texttt{#1}}                  % Response Code: \rc{05}
-\newcommand{\pan}[1]{\texttt{#1}}                 % PAN/номер карты
-\newcommand{\hex}[1]{\texttt{0x#1}}               % hex-значение
+\DeclareRobustCommand{\codeword}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
+\DeclareRobustCommand{\domain}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
+\DeclareRobustCommand{\endpoint}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
+\DeclareRobustCommand{\filepath}[1]{\texorpdfstring{\path{#1}}{\detokenize{#1}}}
+\DeclareRobustCommand{\iso}[1]{\texorpdfstring{\textsf{ISO~#1}}{ISO #1}}
+\DeclareRobustCommand{\mti}[1]{\codeword{#1}}     % MTI значение
+\DeclareRobustCommand{\de}[1]{DE~\codeword{#1}}   % Data Element: \de{55}
+\DeclareRobustCommand{\rc}[1]{\codeword{#1}}      % Response Code: \rc{05}
+\DeclareRobustCommand{\pan}[1]{\codeword{#1}}     % PAN/номер карты
+\DeclareRobustCommand{\hex}[1]{\codeword{0x#1}}   % hex-значение
 \newcommand{\law}[1]{\textit{#1}}                 % нормативный акт: \law{161-ФЗ}
-\newcommand{\scheme}[1]{\textsc{#1}}              % платёжная схема: \scheme{Visa}
+\DeclareRobustCommand{\scheme}[1]{\texorpdfstring{\textsf{#1}}{#1}}
+
+\pdfstringdefDisableCommands{%
+  \def\codeword#1{#1}%
+  \def\domain#1{#1}%
+  \def\endpoint#1{#1}%
+  \def\filepath#1{#1}%
+  \def\mti#1{#1}%
+  \def\de#1{DE #1}%
+  \def\rc#1{#1}%
+  \def\pan#1{#1}%
+  \def\hex#1{0x#1}%
+  \def\law#1{#1}%
+}
 
 %% ── Специальные блоки ────────────────────────────────────────────────────────
 % Определения, предупреждения и справочные блоки через kaobook environments.
@@ -42,14 +59,21 @@
 
 %% ── Todo-заметки ─────────────────────────────────────────────────────────────
 % Цветовые категории для \todo{}:
+\newcommand{\authoringnote}[1]{%
+  \ifpaymentsbookrelease
+    \relax
+  \else
+    #1%
+  \fi
+}
 \newcommand{\todobox}[4]{%
   \begin{kaobox}[title={#1}, colback=#2, colbacktitle=#3]%
     #4%
   \end{kaobox}%
 }
-\newcommand{\todofig}[1]{\todobox{Рисунок}{blue!8}{blue!35!black}{#1}}
-\newcommand{\todocite}[1]{\todobox{Источник}{green!12}{green!35!black}{#1}}
-\newcommand{\todocheck}[1]{\todobox{Проверить}{orange!18}{orange!55!black}{#1}}
+\newcommand{\todofig}[1]{\authoringnote{\todobox{Рисунок}{blue!8}{blue!35!black}{#1}}}
+\newcommand{\todocite}[1]{\authoringnote{\todobox{Источник}{green!12}{green!35!black}{#1}}}
+\newcommand{\todocheck}[1]{\authoringnote{\todobox{Проверить}{orange!18}{orange!55!black}{#1}}}
 
 %% ── Вспомогательные команды ──────────────────────────────────────────────────
 \newcommand{\textrightarrowglyph}{\texorpdfstring{\ensuremath{\rightarrow}}{->}}

@@ -11,31 +11,20 @@
 \usepackage{amssymb}
 \usepackage{newunicodechar}
 
-%% ── Микротипографика ─────────────────────────────────────────────────────────
-\usepackage{microtype}
-
 %% ── Таблицы ──────────────────────────────────────────────────────────────────
-\usepackage{booktabs}   % профессиональные линейки в таблицах
 \usepackage{longtable}  % таблицы на несколько страниц
 \usepackage{tabularx}   % таблицы с авто-шириной колонок
 
-%% ── Плавающие объекты и подписи ─────────────────────────────────────────────
-\usepackage{graphicx}
-% caption/subcaption removed: conflicts with kaobook's scrbook captions via
-% expl3 hook recursion in TeX Live 2026 (parameter stack overflow in figure envs)
-% \usepackage{caption}
-% \usepackage{subcaption}
-
-%% ── Листинги кода ────────────────────────────────────────────────────────────
-\usepackage{listings}
-\usepackage{xcolor}
-
 %% ── Диаграммы (TikZ) ─────────────────────────────────────────────────────────
-\usepackage{tikz}
+% kaobook already loads xcolor, graphicx, tikz, booktabs, listings, enumitem,
+% microtype, todonotes and the caption/hyperref stack.
 \usetikzlibrary{arrows.meta, positioning, shapes.geometric, fit, backgrounds}
 
 %% ── Sequence diagrams ────────────────────────────────────────────────────────
 \usepackage{pgf-umlsd}
+
+%% ── Цитаты и библиография ────────────────────────────────────────────────────
+\usepackage{csquotes}   % правильные кавычки для русского/английского текста
 
 %% ── Библиография ─────────────────────────────────────────────────────────────
 \usepackage{kaobiblio}
@@ -51,7 +40,4 @@
 }
 
 %% ── Прочее ───────────────────────────────────────────────────────────────────
-\usepackage{enumitem}   % гибкие списки
-\usepackage{csquotes}   % правильные кавычки
-\usepackage{todonotes}  % \todo{} и \missingfigure{}
 \usepackage{pdflscape}  % отдельные страницы в альбомной ориентации

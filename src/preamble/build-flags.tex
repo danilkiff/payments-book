@@ -1,0 +1,7 @@
+% build-flags.tex — переключатели draft/release, задаваемые сборкой.
+
+\newif\ifpaymentsbookrelease
+\paymentsbookreleasefalse
+
+% make release создаёт этот файл в build/aux; draft-сборка его удаляет.
+\InputIfFileExists{build/aux/release-mode.tex}{}{}
