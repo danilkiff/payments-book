@@ -1,4 +1,19 @@
-% frontmatter/pre.tex — служебная страница после титула
+% frontmatter/pre.tex — обложка и служебная страница после титула
+
+\newcommand{\bookcoverimage}{assets/cover.png}
+
+\newcommand{\makebookcover}{%
+  \begingroup
+  \thispagestyle{empty}%
+  \AddToShipoutPictureBG*{%
+    \AtPageLowerLeft{%
+      \includegraphics[width=\paperwidth,height=\paperheight]{\bookcoverimage}%
+    }%
+  }%
+  \null
+  \clearpage
+  \endgroup
+}
 
 \newcommand{\booktitleback}{%
   \begingroup
