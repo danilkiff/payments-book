@@ -1,32 +1,35 @@
-% frontmatter/pre.tex — оборот титульного листа (copyright, лицензия, ссылки)
+% frontmatter/pre.tex — служебная страница после титула
 
-\makeatletter
-\lowertitleback{%
+\newcommand{\booktitleback}{%
+  \begingroup
+  \small
+  \noindent\textcopyright\ 2019--\the\year
 
-\textcopyright\ 2019--\the\year
+  \medskip
 
-\medskip
+  \noindent\ccLogo\ \ccAttribution\ Книга доступна на условиях лицензии
+  Creative Commons Attribution 4.0 International. Полный текст лицензии:
+  \url{https://creativecommons.org/licenses/by/4.0/}
 
-\ccLogo\ \ccAttribution\ Книга доступна на условиях лицензии Creative Commons Attribution 4.0 International.
-Полный текст лицензии: \url{https://creativecommons.org/licenses/by/4.0/}
+  \medskip
 
-\medskip
+  \noindent\textbf{Скачать последнюю версию} \\
+  Актуальная версия книги в формате PDF доступна по адресу\\
+  \url{https://github.com/danilkiff/payments-book/releases}
 
-\textbf{Скачать последнюю версию} \\
-Актуальная версия книги в формате PDF доступна по адресу\\
-\url{https://github.com/danilkiff/payments-book/releases}
+  \medskip
 
-\medskip
+  \noindent\textbf{Ошибки? Обратная связь?} \\
+  Сообщить об ошибке или предложить улучшение можно здесь:\\
+  \url{https://github.com/danilkiff/payments-book/issues}
 
-\textbf{Ошибки? Обратная связь?} \\
-Сообщить об ошибке или предложить улучшение можно здесь:\\
-\url{https://github.com/danilkiff/payments-book/issues}
+  \medskip
 
-\medskip
-
-\textbf{Колофон} \\
-Книга свёрстана в \LaTeX\ с использованием класса \texttt{scrbook} (KOMA-Script).
-Основной шрифт~--- Libertinus. Схемы и диаграммы выполнены в Ti\textit{k}Z.
-
+  \noindent\textbf{Колофон} \\
+  Книга свёрстана в \LaTeX\ с использованием класса \texttt{scrbook}
+  (KOMA-Script). Основной шрифт~--- Libertinus. PDF-издание использует
+  цифровой макет A4 с отдельной колонкой заметок на полях. Схемы
+  и диаграммы выполнены в Ti\textit{k}Z.
+  \par
+  \endgroup
 }
-\makeatother
