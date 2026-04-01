@@ -71,6 +71,10 @@
 \setlength{\emergencystretch}{1.5em}
 \setlist[itemize,enumerate]{leftmargin=*,labelsep=0.55em}
 
+\definecolor{DefinitionInk}{HTML}{5A3797}
+\definecolor{ImportantInk}{HTML}{A1273C}
+\definecolor{PracticeInk}{HTML}{1C56A3}
+
 \newcommand{\booknotebox}[1]{%
   \begingroup
   \setlength{\fboxsep}{4pt}%
@@ -88,24 +92,45 @@
   \endgroup
 }
 
+\newcommand{\colormarginalnote}[5][0pt]{%
+  \leavevmode\marginpar{%
+    \vspace*{#1}%
+    \parbox[t]{\marginparwidth}{%
+      \sffamily
+      \scriptsize
+      \RaggedRight
+      \setlength{\parindent}{0pt}%
+      \setlength{\parskip}{2.5pt}%
+      \color{#5}%
+      \textbf{#2}%
+      \if\relax\detokenize{#3}\relax
+        \par
+      \else
+        \par{\bfseries\footnotesize #3}\par
+      \fi
+      #4%
+    }%
+  }%
+}
+
 \newcommand{\booknote}[2][0pt]{%
   \leavevmode\marginpar{\vspace*{#1}\booknotebox{#2}}%
 }
 
-\newcommand{\marginalnote}[3][0pt]{%
-  \booknote[#1]{\textbf{#2}\par #3}%
+\newcommand{\marginalnote}[4][0pt]{%
+  \colormarginalnote[#1]{#2}{}{#3}{#4}%
 }
 
 \newcommand{\definitionnote}[3][0pt]{%
-  \marginalnote[#1]{#2}{#3}%
+  \colormarginalnote[#1]{Определение}{#2}{#3}{DefinitionInk}%
 }
 
 \newcommand{\importantnote}[2][0pt]{%
-  \marginalnote[#1]{Важно}{#2}%
+  \marginalnote[#1]{Важно}{#2}{ImportantInk}%
 }
 
 \newcommand{\practicenote}[2][0pt]{%
-  \marginalnote[#1]{Практика}{#2}%
+  \marginalnote[#1]{Практика}{#2}{PracticeInk}%
 }
 
 \newcommand{\marginfigure}[3][0pt]{%
