@@ -307,13 +307,14 @@ def _arrow(el: dict, ox: float, oy: float, bound_texts: dict | None = None) -> s
         label_text = bound.get("text", label_text)
     if label_text:
         label_fs = (bound or label).get("fontSize", 13)
+        label_color = (bound or label).get("strokeColor") or color
         lx, ly = mx + lox, my + loy
         for i, line in enumerate(label_text.split("\n")):
             parts.append(
                 f'<text x="{lx:.1f}" y="{ly + i * label_fs * LINE_HEIGHT_FACTOR:.1f}"'
                 f' text-anchor="middle"'
                 f' font-family="{FONT}" font-size="{label_fs}"'
-                f' fill="{color}">{xml_escape(line)}</text>'
+                f' fill="{label_color}">{xml_escape(line)}</text>'
             )
 
     return "\n".join(filter(None, parts))
