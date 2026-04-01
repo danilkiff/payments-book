@@ -3,9 +3,10 @@
 pdf:
 	latexmk payments-book.tex
 
-# Конвертировать assets/figures/**/*.excalidraw → .svg (чистый стиль, без hand-drawn).
+# Нормализовать label-шорткаты и конвертировать .excalidraw → .svg.
 # Запускать после редактирования Excalidraw-файлов, перед make svg.
 excalidraw:
+	python3 scripts/label2bound.py
 	python3 scripts/excalidraw2svg.py
 
 # Конвертировать assets/figures/**/*.svg → .pdf для pdflatex.
