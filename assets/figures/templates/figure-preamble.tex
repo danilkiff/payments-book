@@ -1,9 +1,11 @@
-\usepackage{fontspec}
-\setmainfont{LibertinusSans-Regular.otf}[
-  BoldFont=LibertinusSans-Bold.otf,
-  ItalicFont=LibertinusSans-Italic.otf,
-  BoldItalicFont=LibertinusSans-Bold.otf,
-]
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[main=russian,english]{babel}
+\usepackage{textcomp}
+\usepackage[sfdefault]{libertinus}
+\renewcommand{\ttdefault}{cmtt}
+\DeclareUnicodeCharacter{2014}{---}
+\DeclareUnicodeCharacter{2015}{---}
 
 \usepackage[table]{xcolor}
 \usepackage{array}
