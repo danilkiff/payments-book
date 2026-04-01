@@ -10,12 +10,33 @@ jobs:
   build:
     name: Build PDF
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build PDF
+      - name: Install system deps for cairosvg
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q \
+            libcairo2 libpango-1.0-0 libpangocairo-1.0-0 \
+            libgdk-pixbuf2.0-0 libffi-dev
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python deps
+        run: pip install cairosvg
+
+      - name: excalidraw → SVG
+        run: python3 scripts/excalidraw2svg.py
+
+      - name: SVG → PDF
+        run: python3 scripts/svg2pdf.py
+
+      - name: Build PDF (LaTeX)
         uses: docker://ghcr.io/xu-cheng/texlive-full:20260101
         with:
           entrypoint: latexmk
           args: payments-book.tex
-
