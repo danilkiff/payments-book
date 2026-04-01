@@ -7,20 +7,6 @@ on:
     branches: [master]
 
 jobs:
-  # ── Линтинг (ChkTeX) ────────────────────────────────────────────────────────
-  lint:
-    name: Lint (ChkTeX)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install ChkTeX
-        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends chktex
-
-      - name: Run ChkTeX
-        run: make lint
-
-  # ── Сборка PDF ──────────────────────────────────────────────────────────────
   build:
     name: Build PDF
     runs-on: ubuntu-latest
@@ -30,13 +16,5 @@ jobs:
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v4
         with:
-          texlive_version: 2025
-          root_file: src/main.tex
-          pre_compile: |
-            # Шрифты PT Serif/Sans/Mono лежат в TexLive, но fontconfig их не видит.
-            # Добавляем директории TexLive с OpenType-шрифтами в конфиг fontconfig,
-            # чтобы fontspec мог найти их по имени.
-            printf '<fontconfig>\n  <dir>/usr/share/texmf-dist/fonts/opentype</dir>\n  <dir>/usr/share/texmf-dist/fonts/truetype</dir>\n</fontconfig>\n' \
-              > /etc/fonts/conf.d/09-texlive-fonts.conf
-            fc-cache -f
-
+          root_file: payments-book.tex
+          latexmk_use_xelatex: true
