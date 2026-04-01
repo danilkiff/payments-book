@@ -205,6 +205,55 @@ EMV из главы~\ref{ch:emv} и знакомый карточный жизн
 договоре и какие запасные сценарии должна уметь поддерживать служба
 поддержки.
 
+Сравнительная таблица сводит ключевые параметры.
+
+\begin{table}[tbp]
+  \begingroup
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.15}
+  \makebox[\textwidth][l]{%
+  \begin{tabularx}{\fullwidth}{
+      @{}>{\RaggedRight\arraybackslash}p{0.14\textwidth}
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X@{}
+    }
+    \toprule
+    \rowcolor{Panel}
+    \textbf{Схема} & \textbf{BIN-префиксы}
+    & \textbf{Внутренний interchange}
+    & \textbf{Обязательный приём} & \textbf{Внешний контур} \\
+    \midrule
+    \rowcolor{Soft}
+    Мир & 2200--2204 & По таблицам НСПК
+    & Да (ТСП > 20~млн руб./год)
+    & Кобейдж с UnionPay \\
+    Белкарт & 9112 & По правилам оператора
+    & Да (по ряду категорий ТСП)
+    & Кобейдж с Мир, ранее Maestro \\
+    \rowcolor{Soft}
+    HUMO & 9860 & По правилам НСПК Узбекистана
+    & Да (внутри Узбекистана)
+    & Кобейдж с UnionPay \\
+    UzCard & 8600 & По правилам UzCard
+    & Да (внутри Узбекистана)
+    & Ограниченный \\
+    \rowcolor{Soft}
+    ArCa & 9051 & По правилам ЦБ Армении
+    & Да (внутри Армении)
+    & Кобейдж с Мир, ранее Visa/MC \\
+    ЭЛКАРТ & 9417 (частично) & По правилам оператора
+    & Да (внутри Кыргызстана)
+    & Кобейдж с UnionPay \\
+    \bottomrule
+  \end{tabularx}%
+  }
+  \endgroup
+  \caption{Параметры региональных схем СНГ.}~\label{tab:regional-comparison}
+\end{table}
+
 Региональные схемы стоит
 оценивать вопросом \enquote{какой внутренний платёжный контур мы
 принимаем на себя вместе с этой картой}. Для банка, PSP и мерчанта это
