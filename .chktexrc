@@ -12,10 +12,6 @@ CmdLine
          #      slash character, not a dangling command.
          #      Example: \textbf{M\slash Chip Contactless (MC)}
 
-    -n8  # W8  "Wrong length of dash": hyphens inside \includefiguretex{}
-         #      path arguments are filesystem path separators, not dashes.
-         #      Example: assets/figures/ch11-3ds/3ds-v1-vs-v2
-
     -n12 # W12 "Interword spacing": English rule -- use `\ ' after inline
          #      commands like \emph{...}. Russian typography has no such
          #      convention; the spacing after } is always correct.
