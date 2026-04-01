@@ -1,0 +1,111 @@
+\documentclass[tikz,border=4mm]{standalone}
+
+\usepackage{fontspec}
+\setmainfont{LibertinusSans-Regular.otf}[
+  BoldFont=LibertinusSans-Bold.otf,
+  ItalicFont=LibertinusSans-Italic.otf,
+  BoldItalicFont=LibertinusSans-Bold.otf,
+]
+
+\usepackage{xcolor}
+\usetikzlibrary{arrows.meta, calc, positioning, fit, backgrounds}
+
+\definecolor{Ink}{HTML}{243042}
+\definecolor{Soft}{HTML}{F7F9FC}
+\definecolor{Panel}{HTML}{EEF4FB}
+\definecolor{AccentA}{HTML}{246BCE}
+\definecolor{AccentB}{HTML}{C8463A}
+\definecolor{Muted}{HTML}{5D6B7A}
+
+\tikzset{
+  every node/.style={text=Ink},
+  block/.style={
+    draw=Ink!85,
+    line width=0.5pt,
+    rounded corners=3pt,
+    fill=white,
+    minimum width=31mm,
+    minimum height=9mm,
+    inner sep=3pt,
+    align=center,
+    font=\scriptsize
+  },
+  core/.style={
+    block,
+    minimum height=10mm,
+    fill=Panel
+  },
+  sidecar/.style={
+    draw=Ink!65,
+    line width=0.45pt,
+    rounded corners=3pt,
+    fill=Soft,
+    minimum width=19mm,
+    minimum height=7mm,
+    inner sep=2.5pt,
+    align=center,
+    font=\tiny
+  },
+  flowa/.style={-Latex, line width=1.5pt, draw=AccentA},
+  flowb/.style={-Latex, line width=1.5pt, draw=AccentB},
+  lookup/.style={<->, line width=0.8pt, draw=Ink!65, densely dashed},
+  pilla/.style={
+    fill=AccentA!9,
+    draw=AccentA!45,
+    rounded corners=6pt,
+    inner xsep=4pt,
+    inner ysep=2pt,
+    text=AccentA!80!black,
+    font=\bfseries\tiny
+  },
+  pillb/.style={
+    fill=AccentB!9,
+    draw=AccentB!45,
+    rounded corners=6pt,
+    inner xsep=4pt,
+    inner ysep=2pt,
+    text=AccentB!80!black,
+    font=\bfseries\tiny
+  },
+  note/.style={
+    text width=31mm,
+    align=left,
+    font=\tiny,
+    text=Muted
+  }
+}
+
+\begin{document}
+% Replace labels and tune spacing, but preserve the general top-down structure.
+% This template is optimized for marginalia, not for wide figures in the main text.
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[block] (step1) at (0,0) {Шаг 1};
+  \node[block, below=7.5mm of step1] (step2) {Шаг 2};
+  \node[block, below=7.5mm of step2] (step3) {Шаг 3};
+  \node[core, below=7.5mm of step3] (core) {Ключевой узел};
+  \node[block, below=10.5mm of core] (step5) {Шаг 5};
+
+  \begin{scope}[on background layer]
+    \node[
+      draw=Ink!10,
+      fill=Soft,
+      rounded corners=6pt,
+      fit=(step1) (step2) (step3) (core) (step5),
+      inner xsep=9pt,
+      inner ysep=10pt
+    ] {};
+  \end{scope}
+
+  \draw[flowa] (step1.south) -- (core.north);
+  \draw[flowb] (core.south) -- (step5.north);
+
+  \node[pilla, anchor=west] at ($(step1.east)+(4mm,-1mm)$) {Поток A};
+  \node[pillb, anchor=west] at ($(core.east)+(4mm,-1mm)$) {Поток B};
+
+  \node[sidecar, right=7mm of core] (sidecar) {Служебный\\узел};
+  \draw[lookup] (core.east) -- (sidecar.west);
+  \node[font=\tiny, text=Muted, anchor=north west] at ($(sidecar.south west)+(0,-1.5mm)$) {lookup A $\rightarrow$ B};
+
+  \node[note, below=7mm of step5] {Короткое пояснение под схемой. Если пояснение не помещается без тесноты, это уже не маргинальная схема.};
+\end{tikzpicture}
+\end{document}

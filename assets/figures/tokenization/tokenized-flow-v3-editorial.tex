@@ -1,0 +1,81 @@
+\documentclass[tikz,border=4mm]{standalone}
+
+\usepackage{fontspec}
+\setmainfont{LibertinusSans-Regular.otf}[
+  BoldFont=LibertinusSans-Bold.otf,
+  ItalicFont=LibertinusSans-Italic.otf,
+  BoldItalicFont=LibertinusSans-Bold.otf,
+]
+
+\usepackage{xcolor}
+\usetikzlibrary{arrows.meta, calc, positioning, fit}
+
+\definecolor{Ink}{HTML}{243042}
+\definecolor{Soft}{HTML}{F8FAFD}
+\definecolor{Panel}{HTML}{EEF3FA}
+\definecolor{TokenBlue}{HTML}{225FCA}
+\definecolor{TokenRed}{HTML}{C63F3A}
+\definecolor{Muted}{HTML}{5C6775}
+
+\tikzset{
+  every node/.style={font=\small, text=Ink},
+  block/.style={
+    draw=Ink!90,
+    line width=0.55pt,
+    rounded corners=2.5pt,
+    fill=white,
+    minimum width=25mm,
+    minimum height=11mm,
+    inner sep=4pt,
+    align=center
+  },
+  networkpanel/.style={
+    draw=Ink!90,
+    line width=0.65pt,
+    rounded corners=4pt,
+    fill=Panel,
+    minimum width=33mm,
+    minimum height=22mm,
+    inner sep=0pt
+  },
+  vaultline/.style={line width=0.45pt, draw=Ink!55},
+  dpan/.style={-Latex, line width=1.55pt, draw=TokenBlue},
+  fpan/.style={-Latex, line width=1.55pt, draw=TokenRed},
+  lookup/.style={<->, line width=0.8pt, draw=Ink!65, densely dashed},
+  tag/.style={font=\bfseries\scriptsize},
+  note/.style={
+    draw=Ink!18,
+    rounded corners=5pt,
+    fill=Soft,
+    inner sep=6pt,
+    text width=14.6cm,
+    align=left,
+    font=\scriptsize,
+    text=Muted
+  }
+}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[block] (holder) at (0,0) {Держатель\\(телефон)};
+  \node[block] (merchant) at (3.25,0) {Мерчант};
+  \node[block] (acquirer) at (6.8,0) {Эквайер/PSP};
+  \node[networkpanel] (networkbox) at (10.8,-0.1) {};
+  \node[font=\small\bfseries] at ($(networkbox.north)+(0,-0.52)$) {Карточная сеть};
+  \draw[vaultline] ($(networkbox.west)+(0.18,0)$) -- ($(networkbox.east)+(-0.18,0)$);
+  \node[font=\scriptsize] at ($(networkbox.south)+(0,0.52)$) {Token Vault};
+  \node[block] (issuer) at (14.7,0) {Эмитент};
+
+  \draw[dpan] (holder.east) -- (merchant.west);
+  \draw[dpan] (merchant.east) -- (acquirer.west);
+  \draw[dpan] (acquirer.east) -- ($(networkbox.west)+(0,0.35)$);
+  \draw[fpan] ($(networkbox.east)+(0,0.35)$) -- (issuer.west);
+
+  \draw[lookup] ($(networkbox.center)+(0,0.15)$) -- ($(networkbox.center)+(0,-0.65)$);
+
+  \node[text=TokenBlue!80!black, tag] at ($(holder.east)!0.5!(networkbox.west)+(0,0.96)$) {DPAN};
+  \node[text=TokenRed!80!black, tag] at ($(networkbox.east)!0.5!(issuer.west)+(0,0.96)$) {FPAN + token metadata};
+
+  \node[note] at (7.35,-2.85) {Де-токенизация происходит в карточной сети; мерчант и эквайер видят только DPAN.};
+\end{tikzpicture}
+\end{document}
