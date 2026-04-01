@@ -1,0 +1,25 @@
+\documentclass[varwidth=18cm,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\renewcommand{\arraystretch}{1.28}
+\begin{tabularx}{16.2cm}{
+  >{\raggedright\arraybackslash\bfseries}p{4.4cm}
+  >{\raggedright\arraybackslash}p{4.0cm}
+  Y
+}
+\rowcolor{Panel}
+\textbf{Элемент данных} & \textbf{Категория} & \textbf{Хранение после авторизации} \\
+\rowcolor{Soft}
+PAN & cardholder data & \textcolor{Good}{Да: с защитой, шифрование/токенизация} \\
+Имя держателя & cardholder data & \textcolor{Good}{Да} \\
+\rowcolor{Soft}
+Срок действия & cardholder data & \textcolor{Good}{Да} \\
+Сервисный код & cardholder data & \textcolor{Good}{Да} \\
+\rowcolor{Soft}
+Полные данные Track 1 / Track 2 & SAD & \textcolor{Bad}{Запрещено} \\
+CVV2/CVC2 & SAD & \textcolor{Bad}{Запрещено} \\
+\rowcolor{Soft}
+PIN / PIN-блок & SAD & \textcolor{Bad}{Запрещено} \\
+\end{tabularx}
+\end{document}

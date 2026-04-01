@@ -1,0 +1,44 @@
+\documentclass[varwidth=22cm,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\renewcommand{\arraystretch}{1.2}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[anchor=north west] (tableanchor) at (0,0) {
+    \begin{tabular}{|p{3.2cm}|p{2.5cm}|p{2.5cm}|}
+      \hline
+      \rowcolor{Panel}
+      \textbf{Отправитель / Получатель} & \textbf{Физлицо} & \textbf{Юрлицо} \\
+      \hline
+      \rowcolor{Good!12}
+      \textbf{Физлицо} & C2C (телефон) & C2B (QR) \\
+      \hline
+      \rowcolor{Warn!12}
+      \textbf{Юрлицо} & B2C (выплаты) & B2B (корпоративный) \\
+      \hline
+    \end{tabular}
+  };
+
+  \node[font=\scriptsize, text=Muted, anchor=north west] at ($(tableanchor.south west)+(0,-0.35)$) {Цвет зрелости: зелёный --- запущен, жёлтый --- ограниченный охват.};
+
+  \node[fig/block, minimum width=20mm] (cash) at (13.4,-0.2) {Касса};
+  \node[fig/block, minimum width=22mm] (buyer) at (16.5,-0.2) {Покупатель};
+  \node[fig/block, minimum width=31mm] (app) at (20.4,-0.2) {Приложение банка\\покупателя};
+  \node[fig/core, minimum width=21mm] (nspk) at (24.0,-0.2) {НСПК};
+  \node[fig/block, minimum width=26mm] (merchant) at (27.3,-0.2) {Банк мерчанта};
+
+  \foreach \nodeName in {cash,buyer,app,nspk,merchant} {
+    \draw[Ink!35, densely dashed] (\nodeName.south) -- ++(0,-6.0);
+  }
+
+  \draw[fig/accenta] ($(cash.south)+(0,-0.7)$) -- node[above, font=\scriptsize, text=AccentA!80!black] {генерирует QR} ($(buyer.south)+(0,-0.7)$);
+  \draw[fig/arrow] ($(buyer.south)+(0,-1.7)$) -- node[above, font=\scriptsize, text=Muted] {сканирует смартфоном} ($(app.south)+(0,-1.7)$);
+  \draw[fig/arrow] ($(app.south)+(0,-2.7)$) -- ++(0.0,0) node[above, font=\scriptsize, text=Muted, midway] {показывает сумму};
+  \draw[fig/accenta] ($(buyer.south)+(0,-3.7)$) -- node[above, font=\scriptsize, text=AccentA!80!black] {подтверждение} ($(app.south)+(0,-3.7)$);
+  \draw[fig/accentb] ($(app.south)+(0,-4.7)$) -- node[above, font=\scriptsize, text=AccentB!80!black] {маршрутизация} ($(nspk.south)+(0,-4.7)$);
+  \draw[fig/accentb] ($(nspk.south)+(0,-5.7)$) -- node[above, font=\scriptsize, text=AccentB!80!black] {зачисление} ($(merchant.south)+(0,-5.7)$);
+  \draw[fig/dashed] ($(merchant.south)+(0,-6.7)$) -- node[above, font=\scriptsize, text=Muted] {нотификация «Оплачено»} ($(cash.south)+(0,-6.7)$);
+
+  \node[fig/taga] at (20.4,-8.0) {C2B динамический QR, T < 5 сек};
+\end{tikzpicture}
+\end{document}

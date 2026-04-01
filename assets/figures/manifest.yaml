@@ -1,0 +1,2057 @@
+---
+- id: fig:four-party-model
+  planned_label: fig:four-party-model
+  source_tex: src/parts/part1/ch02-ecosystem.tex
+  source_locator:
+    line: 61
+    excerpt: Четырёхсторонняя модель (four-party model).
+  chapter: Карточная экосистема
+  chapter_slug: ch02-ecosystem
+  kind: flow-wide
+  layout: main-wide
+  asset_base: assets/figures/ch02-ecosystem/four-party-model
+  master_tex: assets/figures/ch02-ecosystem/four-party-model.tex
+  pdf: assets/figures/ch02-ecosystem/four-party-model.pdf
+  prompt: |-
+    Figure ID: fig:four-party-model
+    Source file: src/parts/part1/ch02-ecosystem.tex
+    Figure family: flow-wide
+    Layout: main-wide
+
+    Source placeholder:
+    Четырёхсторонняя модель (four-party model).
+    Прямоугольная схема: сверху слева — «Держатель карты»,
+    сверху справа — «Мерчант», снизу слева — «Эмитент»,
+    по центру снизу — «Карточная сеть» (выделена цветом),
+    снизу справа — «Эквайер». Двунаправленные стрелки:
+    держатель--мерчант (подпись «покупка»),
+    держатель--эмитент (подпись «карта, счёт»),
+    мерчант--эквайер (подпись «терминал, договор»),
+    эмитент--сеть и сеть--эквайер (подпись «правила, маршрутизация,
+    клиринг, settlement»). Стиль: строгий, чёрно-белый
+    с одним акцентным цветом для карточной сети
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 131.8
+      height: 52.8
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Топология держится на одновременном сравнении пяти равноправных ролей; узкая маргиналия исказит горизонтальные связи.
+- id: fig:interchange-flow
+  planned_label: fig:interchange-flow
+  source_tex: src/parts/part1/ch02-ecosystem.tex
+  source_locator:
+    line: 358
+    excerpt: Декомпозиция MSC и движение денег в четырёхсторонней модели.
+  chapter: Карточная экосистема
+  chapter_slug: ch02-ecosystem
+  kind: flow-wide
+  layout: main-wide
+  asset_base: assets/figures/ch02-ecosystem/interchange-flow
+  master_tex: assets/figures/ch02-ecosystem/interchange-flow.tex
+  pdf: assets/figures/ch02-ecosystem/interchange-flow.pdf
+  prompt: |-
+    Figure ID: fig:interchange-flow
+    Source file: src/parts/part1/ch02-ecosystem.tex
+    Figure family: flow-wide
+    Layout: main-wide
+
+    Source placeholder:
+    Декомпозиция MSC и движение денег в четырёхсторонней модели.
+    Горизонтальная цепочка из четырёх блоков слева направо:
+    «Мерчант» → «Эквайер» → «Карточная сеть» (акцентный цвет) → «Эмитент».
+    Стрелка мерчант→эквайер подписана «MSC».
+    Стрелка эквайер→сеть подписана «комиссия сети».
+    Дугообразная стрелка от эквайера к эмитенту поверх сети
+    подписана «interchange».
+    Под блоком эквайера подпись «маржа эквайера».
+    Стиль: строгий, чёрно-белый с одним акцентным цветом
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 166.9
+      height: 38.6
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Простой линейный commission-flow из четырёх узлов можно свернуть в узкий top-down стек без потери смысла.
+- id: fig:three-party-model
+  planned_label: fig:three-party-model
+  source_tex: src/parts/part1/ch02-ecosystem.tex
+  source_locator:
+    line: 475
+    excerpt: Трёхсторонняя модель (three-party / closed-loop).
+  chapter: Карточная экосистема
+  chapter_slug: ch02-ecosystem
+  kind: flow-wide
+  layout: main-wide
+  asset_base: assets/figures/ch02-ecosystem/three-party-model
+  master_tex: assets/figures/ch02-ecosystem/three-party-model.tex
+  pdf: assets/figures/ch02-ecosystem/three-party-model.pdf
+  prompt: |-
+    Figure ID: fig:three-party-model
+    Source file: src/parts/part1/ch02-ecosystem.tex
+    Figure family: flow-wide
+    Layout: main-wide
+
+    Source placeholder:
+    Трёхсторонняя модель (three-party / closed-loop).
+    Треугольная схема: сверху слева — «Держатель карты»,
+    сверху справа — «Мерчант», снизу по центру —
+    «American Express» (акцентный цвет) с подписью внутри блока
+    «эмитент + эквайер + сеть». Двунаправленные стрелки:
+    держатель--мерчант (подпись «покупка»),
+    держатель--Amex (подпись «карта, счёт»),
+    мерчант--Amex (подпись «приём карт, расчёт»).
+    Стиль: аналогичен рис. четырёхсторонней модели для контраста
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 131.8
+      height: 56.8
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Контраст с четырёхсторонней моделью важен именно как широкая peer-to-peer topology, а не как узкая колонка.
+- id: fig:card-data-storage
+  planned_label: fig:card-data-storage
+  source_tex: src/parts/part1/ch03-card-data.tex
+  source_locator:
+    line: 448
+    excerpt: Классификация данных карты с точки зрения хранения (PCI DSS).
+  chapter: Что записано на карте
+  chapter_slug: ch03-card-data
+  kind: comparison-table
+  layout: main-table
+  asset_base: assets/figures/ch03-card-data/card-data-storage
+  master_tex: assets/figures/ch03-card-data/card-data-storage.tex
+  pdf: assets/figures/ch03-card-data/card-data-storage.pdf
+  prompt: |-
+    Figure ID: fig:card-data-storage
+    Source file: src/parts/part1/ch03-card-data.tex
+    Figure family: comparison-table
+    Layout: main-table
+
+    Source placeholder:
+    Классификация данных карты с точки зрения хранения (PCI DSS).
+      Таблица с тремя колонками: «Элемент данных», «Категория»,
+      «Хранение после авторизации». Строки:
+      PAN — cardholder data — да (с защитой, шифрование/токенизация);
+      Имя держателя — cardholder data — да;
+      Срок действия — cardholder data — да;
+      Сервисный код — cardholder data — да;
+      Полные данные Track 1 / Track 2 — SAD — запрещено (красным);
+      CVV2/CVC2 — SAD — запрещено (красным);
+      PIN / PIN-блок — SAD — запрещено (красным).
+      Стиль: строгий, два цвета — зелёный для «да» и красный
+      для «запрещено», без лишних декоративных элементов
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 162.0
+      height: 47.4
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-table
+    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+- id: fig:tx-cancellation-timeline
+  planned_label: fig:tx-cancellation-timeline
+  source_tex: src/parts/part1/ch04-transaction-lifecycle.tex
+  source_locator:
+    line: 420
+    excerpt: Три способа отмены карточного платежа на временно\'{й} шкале.
+  chapter: 'Жизнь транзакции: от касания карты до денег на счёте'
+  chapter_slug: ch04-transaction-lifecycle
+  kind: timeline
+  layout: main-wide
+  asset_base: assets/figures/ch04-transaction-lifecycle/tx-cancellation-timeline
+  master_tex: assets/figures/ch04-transaction-lifecycle/tx-cancellation-timeline.tex
+  pdf: assets/figures/ch04-transaction-lifecycle/tx-cancellation-timeline.pdf
+  prompt: |-
+    Figure ID: fig:tx-cancellation-timeline
+    Source file: src/parts/part1/ch04-transaction-lifecycle.tex
+    Figure family: timeline
+    Layout: main-wide
+
+    Source placeholder:
+    Три способа отмены карточного платежа на временно\'{й} шкале.
+      Горизонтальная шкала с тремя зонами: «Авторизация», «Клиринг»,
+      «Settlement». Три горизонтальных полосы, показывающие окно
+      применимости каждого способа:
+      Reversal — от момента авторизации до начала клиринга (зелёный);
+      Void — от авторизации до settlement (жёлтый);
+      Refund — после settlement (красный, бесконечно вправо).
+      Подписи к каждому: reversal — «отменяет hold, мгновенно»;
+      void — «убирает из клиринга, часы»;
+      refund — «новая транзакция, дни».
+      Стиль: строгий, три цвета для трёх полос
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 166.6
+      height: 41.5
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
+- id: fig:tx-edge-cases
+  planned_label: fig:tx-edge-cases
+  source_tex: src/parts/part1/ch04-transaction-lifecycle.tex
+  source_locator:
+    line: 555
+    excerpt: Сравнительная таблица граничных случаев авторизации.
+  chapter: 'Жизнь транзакции: от касания карты до денег на счёте'
+  chapter_slug: ch04-transaction-lifecycle
+  kind: comparison-table
+  layout: main-table
+  asset_base: assets/figures/ch04-transaction-lifecycle/tx-edge-cases
+  master_tex: assets/figures/ch04-transaction-lifecycle/tx-edge-cases.tex
+  pdf: assets/figures/ch04-transaction-lifecycle/tx-edge-cases.pdf
+  prompt: |-
+    Figure ID: fig:tx-edge-cases
+    Source file: src/parts/part1/ch04-transaction-lifecycle.tex
+    Figure family: comparison-table
+    Layout: main-table
+
+    Source placeholder:
+    Сравнительная таблица граничных случаев авторизации.
+      Таблица с пятью колонками: «Механизм», «Когда сумма известна»,
+      «Онлайн-авторизация», «Кто несёт риск», «Типичный MCC».
+      Строки:
+      Pre-auth — позже — да — эквайер/мерчант — 7011 (гостиницы), 7512 (аренда авто);
+      Incremental auth — постепенно — да (несколько) — эквайер/мерчант — 7011;
+      Partial auth — сразу, но покрытие неполное — да — мерчант — любой (чаще prepaid);
+      Deferred auth — позже — нет (офлайн) — эквайер/мерчант — 4511 (авиа), 7523 (паркинг);
+      Force post — сразу — голосовая — мерчант — любой.
+      Стиль: строгий, компактный, без лишних цветов
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 176.0
+      height: 52.5
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-table
+    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+- id: fig:tx-lifecycle-timeline
+  planned_label: fig:tx-lifecycle-timeline
+  source_tex: src/parts/part1/ch04-transaction-lifecycle.tex
+  source_locator:
+    line: 266
+    excerpt: Временна\'{я} шкала жизни транзакции от tap до зачисления мерчанту.
+  chapter: 'Жизнь транзакции: от касания карты до денег на счёте'
+  chapter_slug: ch04-transaction-lifecycle
+  kind: timeline
+  layout: main-wide
+  asset_base: assets/figures/ch04-transaction-lifecycle/tx-lifecycle-timeline
+  master_tex: assets/figures/ch04-transaction-lifecycle/tx-lifecycle-timeline.tex
+  pdf: assets/figures/ch04-transaction-lifecycle/tx-lifecycle-timeline.pdf
+  prompt: |-
+    Figure ID: fig:tx-lifecycle-timeline
+    Source file: src/parts/part1/ch04-transaction-lifecycle.tex
+    Figure family: timeline
+    Layout: main-wide
+
+    Source placeholder:
+    Временна\'{я} шкала жизни транзакции от tap до зачисления мерчанту.
+      Горизонтальная временна\'{я} шкала слева направо.
+      Три зоны, разделённые вертикальными пунктирными линиями:
+      «Авторизация» (секунды) — иконка терминала, стрелки
+      терминал→эквайер→сеть→эмитент и обратно;
+      «Клиринг» (часы, конец дня) — иконка пакетного файла,
+      стрелка эквайер→сеть→эмитент;
+      «Settlement» (T+1..T+3) — иконка банковских зданий,
+      стрелки с деньгами между банками.
+      Под шкалой подпись: «hold на счёте держателя» (от авторизации
+      до settlement), «зачисление мерчанту» (после settlement).
+      Стиль: строгий, чёрно-белый с одним акцентным цветом
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 159.6
+      height: 40.8
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
+- id: fig:emv-chip-architecture
+  planned_label: fig:emv-chip-architecture
+  source_tex: src/parts/part2/ch07-emv.tex
+  source_locator:
+    line: 89
+    excerpt: Блок-схема архитектуры чипа платёжной карты.
+  chapter: 'EMV: зачем карте процессор'
+  chapter_slug: ch07-emv
+  kind: topology-network
+  layout: main-wide
+  asset_base: assets/figures/ch07-emv/emv-chip-architecture
+  master_tex: assets/figures/ch07-emv/emv-chip-architecture.tex
+  pdf: assets/figures/ch07-emv/emv-chip-architecture.pdf
+  prompt: |-
+    Figure ID: fig:emv-chip-architecture
+    Source file: src/parts/part2/ch07-emv.tex
+    Figure family: topology-network
+    Layout: main-wide
+
+    Source placeholder:
+    Блок-схема архитектуры чипа платёжной карты.
+    Прямоугольники: CPU (центральный), Crypto coprocessor (рядом),
+    ROM (операционная система), EEPROM/Flash (данные, ключи, счётчики),
+    RAM (рабочая память), I/O interface (контактная площадка).
+    Стрелки: двунаправленные шины между CPU и остальными блоками;
+    одна стрелка наружу от I/O к терминалу. Подпись внизу:
+    «Контактная площадка ISO 7816». Стиль: технический, монохромный.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 124.8
+      height: 84.9
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: У схемы короткие подписи компонентов и одна локальная идея; её реально перерисовать как компактный вертикальный architectural sketch.
+- id: fig:emv-cryptogram-decision
+  planned_label: fig:emv-cryptogram-decision
+  source_tex: src/parts/part2/ch07-emv.tex
+  source_locator:
+    line: 459
+    excerpt: Блок-схема принятия решения о типе криптограммы.
+  chapter: 'EMV: зачем карте процессор'
+  chapter_slug: ch07-emv
+  kind: flow-wide
+  layout: main-vertical
+  asset_base: assets/figures/ch07-emv/emv-cryptogram-decision
+  master_tex: assets/figures/ch07-emv/emv-cryptogram-decision.tex
+  pdf: assets/figures/ch07-emv/emv-cryptogram-decision.pdf
+  prompt: |-
+    Figure ID: fig:emv-cryptogram-decision
+    Source file: src/parts/part2/ch07-emv.tex
+    Figure family: flow-wide
+    Layout: main-vertical
+
+    Source placeholder:
+    Блок-схема принятия решения о типе криптограммы.
+    Вход: TVR (результаты проверок). Шаг 1: TVR AND IAC Denial / TAC Denial
+    -> если ненулевой результат, карта генерирует AAC («Отклонение»).
+    Шаг 2: TVR AND IAC Online / TAC Online -> если ненулевой результат,
+    карта генерирует ARQC («Онлайн-авторизация»). Шаг 3: если ни одно
+    условие не сработало, карта генерирует TC («Офлайн-одобрение»).
+    Стиль: вертикальная блок-схема, ромбы для решений, прямоугольники
+    со скруглёнными углами для криптограмм.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 162.7
+      height: 89.2
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Это один decision chain; его естественная форма для поля — узкая вертикаль сверху вниз.
+- id: fig:emv-dda-sequence
+  planned_label: fig:emv-dda-sequence
+  source_tex: src/parts/part2/ch07-emv.tex
+  source_locator:
+    line: 252
+    excerpt: Sequence diagram аутентификации DDA.
+  chapter: 'EMV: зачем карте процессор'
+  chapter_slug: ch07-emv
+  kind: sequence
+  layout: main-wide
+  asset_base: assets/figures/ch07-emv/emv-dda-sequence
+  master_tex: assets/figures/ch07-emv/emv-dda-sequence.tex
+  pdf: assets/figures/ch07-emv/emv-dda-sequence.pdf
+  prompt: |-
+    Figure ID: fig:emv-dda-sequence
+    Source file: src/parts/part2/ch07-emv.tex
+    Figure family: sequence
+    Layout: main-wide
+
+    Source placeholder:
+    Sequence diagram аутентификации DDA.
+    Участники слева направо: Терминал, Карта (ICC). Шаги:
+    (1) Терминал генерирует случайное число (UN).
+    (2) Терминал отправляет INTERNAL AUTHENTICATE с UN.
+    (3) Карта подписывает UN приватным ключом ICC.
+    (4) Карта возвращает подпись (Signed Dynamic Application Data).
+    (5) Терминал извлекает открытый ключ ICC из сертификата
+        (цепочка: CA PK -> Issuer PK -> ICC PK).
+    (6) Терминал проверяет подпись.
+    Над стрелками подписать APDU-команды; справа — вертикальная шкала
+    «Цепочка доверия: CA -> Issuer -> ICC». Стиль: чёрно-белый, строгий.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 136.5
+      height: 72.7
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Участников всего двое, а цепочку доверия можно вынести в боковой rail, поэтому narrow vertical layout реалистичен.
+- id: fig:contactless-kernel-comparison
+  planned_label: fig:contactless-kernel-comparison
+  source_tex: src/parts/part2/ch08-contactless.tex
+  source_locator:
+    line: 156
+    excerpt: 'Сравнительная таблица трёх бесконтактных ядер. Колонки:'
+  chapter: 'Бесконтактные платежи: карта, телефон, кольцо'
+  chapter_slug: ch08-contactless
+  kind: comparison-table
+  layout: main-table
+  asset_base: assets/figures/ch08-contactless/contactless-kernel-comparison
+  master_tex: assets/figures/ch08-contactless/contactless-kernel-comparison.tex
+  pdf: assets/figures/ch08-contactless/contactless-kernel-comparison.pdf
+  prompt: |-
+    Figure ID: fig:contactless-kernel-comparison
+    Source file: src/parts/part2/ch08-contactless.tex
+    Figure family: comparison-table
+    Layout: main-table
+
+    Source placeholder:
+    Сравнительная таблица трёх бесконтактных ядер. Колонки:
+      Параметр, qVSDC (Visa), M/Chip Contactless (MC), Мир бесконтактный.
+      Строки: (1) Аутентификация данных: fDDA / CVC3 или ARQC / ГОСТ 34.10.
+      (2) Тип криптограммы: ARQC / CVC3 или ARQC / ARQC (ГОСТ).
+      (3) Офлайн-одобрение: нет / да (ограниченно) / да.
+      (4) CVM limit (РФ): 3000 руб. / 5000 руб. / по правилам НСПК.
+      (5) Криптография: RSA + 3DES (AES) / RSA + 3DES / ГОСТ (ECC + Кузнечик).
+      Стиль: строгая таблица, заголовки колонок выделены цветом
+      (синий Visa, оранжевый MC, зелёный Мир)
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 196.0
+      height: 34.4
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-table
+    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+- id: fig:contactless-protocol-stack
+  planned_label: fig:contactless-protocol-stack
+  source_tex: src/parts/part2/ch08-contactless.tex
+  source_locator:
+    line: 48
+    excerpt: Стек протоколов бесконтактного платежа. Вертикальная диаграмма
+  chapter: 'Бесконтактные платежи: карта, телефон, кольцо'
+  chapter_slug: ch08-contactless
+  kind: topology-network
+  layout: main-wide
+  asset_base: assets/figures/ch08-contactless/contactless-protocol-stack
+  master_tex: assets/figures/ch08-contactless/contactless-protocol-stack.tex
+  pdf: assets/figures/ch08-contactless/contactless-protocol-stack.pdf
+  prompt: |-
+    Figure ID: fig:contactless-protocol-stack
+    Source file: src/parts/part2/ch08-contactless.tex
+    Figure family: topology-network
+    Layout: main-wide
+
+    Source placeholder:
+    Стек протоколов бесконтактного платежа. Вертикальная диаграмма
+      из четырёх слоёв снизу вверх: (1) Физический уровень: 13,56 МГц,
+      ISO 14443-1/2 (Type A / Type B). (2) Канальный уровень: ISO 14443-3,
+      антиколлизия. (3) Транспортный уровень: ISO 14443-4 (T=CL).
+      (4) Уровень приложения: EMV Contactless Kernel (qVSDC / M/Chip /
+      Мир). Справа от стека — стрелка «APDU-команды» между слоями 3 и 4.
+      Стиль: минималистичный, четыре горизонтальных полосы разного оттенка
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 143.1
+      height: 61.5
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Стек уже концептуально вертикальный; нужен только более узкий набор подписей и более плотная упаковка слоёв.
+- id: fig:contactless-provisioning
+  planned_label: fig:contactless-provisioning
+  source_tex: src/parts/part2/ch08-contactless.tex
+  source_locator:
+    line: 233
+    excerpt: Схема провизионирования мобильного платежа.
+  chapter: 'Бесконтактные платежи: карта, телефон, кольцо'
+  chapter_slug: ch08-contactless
+  kind: sequence
+  layout: main-wide
+  asset_base: assets/figures/ch08-contactless/contactless-provisioning
+  master_tex: assets/figures/ch08-contactless/contactless-provisioning.tex
+  pdf: assets/figures/ch08-contactless/contactless-provisioning.pdf
+  prompt: |-
+    Figure ID: fig:contactless-provisioning
+    Source file: src/parts/part2/ch08-contactless.tex
+    Figure family: sequence
+    Layout: main-wide
+
+    Source placeholder:
+    Схема провизионирования мобильного платежа.
+      Участники слева направо: Держатель, приложение кошелька (телефон), TSP
+      (карточная сеть), Эмитент. Шаги: (1) Держатель вводит PAN в кошелёк.
+      (2) Кошелёк отправляет PAN и данные об устройстве в TSP. (3) TSP запрашивает
+      ID\&V (identification and verification) у эмитента. (4) Эмитент
+      одобряет или запрашивает дополнительную проверку. (5) TSP генерирует DPAN и ключи.
+      (6) DPAN и ключи загружаются в SE / HCE на телефоне. (7) Приложение кошелька
+      показывает «Карта добавлена». Стиль: стандартный sequence diagram,
+      пунктирные линии жизни, стрелки с подписями
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 147.3
+      height: 85.3
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Sequence diagram с несколькими участниками и подписями сообщений не читается в узком поле.
+- id: fig:token-detokenization-flow
+  planned_label: fig:token-detokenization-flow
+  source_tex: src/parts/part2/ch09-tokenization.tex
+  source_locator:
+    line: 217
+    excerpt: Горизонтальная диаграмма потока токенизированной транзакции.
+  chapter: 'Токенизация: PAN, который не PAN'
+  chapter_slug: ch09-tokenization
+  kind: flow-wide
+  layout: main-wide
+  asset_base: assets/figures/ch09-tokenization/token-detokenization-flow
+  master_tex: assets/figures/ch09-tokenization/token-detokenization-flow.tex
+  pdf: assets/figures/ch09-tokenization/token-detokenization-flow.pdf
+  prompt: |-
+    Figure ID: fig:token-detokenization-flow
+    Source file: src/parts/part2/ch09-tokenization.tex
+    Figure family: flow-wide
+    Layout: main-wide
+
+    Source placeholder:
+    Горизонтальная диаграмма потока токенизированной транзакции.
+      Слева направо: Держатель (телефон) → Мерчант → Эквайер/PSP →
+      Карточная сеть → Эмитент. Над верхней стрелкой: «DPAN» (от держателя
+      до сети). Над стрелкой сеть→эмитент: «FPAN + token metadata».
+      Под блоком «Карточная сеть» — подблок «Token Vault» с двусторонней
+      стрелкой (поиск DPAN → FPAN). Цветовое кодирование: DPAN синим,
+      FPAN красным. Подпись: «Де-токенизация происходит в карточной сети;
+      мерчант и эквайер видят только DPAN». Стиль: горизонтальная схема,
+      минималистичный
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 176.2
+      height: 51.9
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: 'Сюжет уже доказан в репо как пригодный к marginal flow: основной поток можно сделать вертикальным, а vault вынести sidecar-узлом.'
+- id: fig:token-network-vs-psp
+  planned_label: fig:token-network-vs-psp
+  source_tex: src/parts/part2/ch09-tokenization.tex
+  source_locator:
+    line: 190
+    excerpt: 'Таблица сравнения: сетевой токен vs PSP-токен. Две колонки:'
+  chapter: 'Токенизация: PAN, который не PAN'
+  chapter_slug: ch09-tokenization
+  kind: comparison-table
+  layout: main-table
+  asset_base: assets/figures/ch09-tokenization/token-network-vs-psp
+  master_tex: assets/figures/ch09-tokenization/token-network-vs-psp.tex
+  pdf: assets/figures/ch09-tokenization/token-network-vs-psp.pdf
+  prompt: |-
+    Figure ID: fig:token-network-vs-psp
+    Source file: src/parts/part2/ch09-tokenization.tex
+    Figure family: comparison-table
+    Layout: main-table
+
+    Source placeholder:
+    Таблица сравнения: сетевой токен vs PSP-токен. Две колонки:
+      «Сетевой токен (VTS / MDES / TSP НСПК)» и «PSP-токен». Строки:
+      Портативность (да / нет), область PCI DSS мерчанта (минимальная / сужена),
+      область PCI DSS PSP (сужена / полная), доля одобрений (выше на 2--4 п.п. /
+      без изменений), жизненный цикл (автообновление / ручное + Account Updater),
+      стоимость интеграции (средняя / низкая). Стиль: строгая таблица,
+      зелёные галочки для преимуществ, красные кресты для недостатков
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 170.7
+      height: 37.6
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-table
+    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+- id: fig:token-tsp-comparison
+  planned_label: fig:token-tsp-comparison
+  source_tex: src/parts/part2/ch09-tokenization.tex
+  source_locator:
+    line: 144
+    excerpt: 'Сравнительная архитектура трёх TSP. Три колонки:'
+  chapter: 'Токенизация: PAN, который не PAN'
+  chapter_slug: ch09-tokenization
+  kind: topology-network
+  layout: main-vertical
+  asset_base: assets/figures/ch09-tokenization/token-tsp-comparison
+  master_tex: assets/figures/ch09-tokenization/token-tsp-comparison.tex
+  pdf: assets/figures/ch09-tokenization/token-tsp-comparison.pdf
+  prompt: |-
+    Figure ID: fig:token-tsp-comparison
+    Source file: src/parts/part2/ch09-tokenization.tex
+    Figure family: topology-network
+    Layout: main-vertical
+
+    Source placeholder:
+    Сравнительная архитектура трёх TSP. Три колонки:
+      VTS (Visa), MDES (Mastercard), TSP НСПК (Мир). В каждой колонке
+      сверху вниз: Token Requestor Interface (API для кошельков/мерчантов),
+      Token Vault (хранилище сопоставления DPAN ↔ FPAN), Issuer Interface
+      (канал к эмитенту для ID\&V и lifecycle). Между колонками —
+      пунктирные линии, показывающие, что архитектурно системы аналогичны,
+      но изолированы. Внизу: подпись «Каждая сеть управляет своим
+      Token Vault независимо». Стиль: три параллельных столбца,
+      цвета схем (синий, оранжевый, зелёный)
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 139.2
+      height: 68.0
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-vertical
+    reason: Сравнение трёх TSP построено как параллельные колонки; без полной ширины теряется сама сравнительная идея.
+- id: fig:crypto-dukpt
+  planned_label: fig:crypto-dukpt
+  source_tex: src/parts/part2/ch10-cryptography.tex
+  source_locator:
+    line: 275
+    excerpt: 'Схема деривации DUKPT. Вверху: BDK (в HSM эквайера).'
+  chapter: Криптография в платежах
+  chapter_slug: ch10-cryptography
+  kind: decision-tree
+  layout: main-vertical
+  asset_base: assets/figures/ch10-cryptography/crypto-dukpt
+  master_tex: assets/figures/ch10-cryptography/crypto-dukpt.tex
+  pdf: assets/figures/ch10-cryptography/crypto-dukpt.pdf
+  prompt: |-
+    Figure ID: fig:crypto-dukpt
+    Source file: src/parts/part2/ch10-cryptography.tex
+    Figure family: decision-tree
+    Layout: main-vertical
+
+    Source placeholder:
+    Схема деривации DUKPT. Вверху: BDK (в HSM эквайера).
+      Стрелка вниз с подписью «деривация по KSN» к IPEK (в терминале,
+      пунктирный контур — уничтожается после инициализации). От IPEK —
+      бинарное дерево ключей: 21 уровень, каждый узел — промежуточный
+      или leaf-ключ. Leaf-ключи = транзакционные ключи (Key 1, Key 2, ...,
+      Key N). Стрелки помечены как «one-way»: от leaf нельзя подняться
+      к IPEK. Внизу: подпись «Каждый транзакционный ключ уникален и
+      уничтожается после использования». Стиль: дерево, растущее вниз,
+      использованные ключи перечёркнуты, неиспользованные — залиты
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 162.4
+      height: 109.2
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Деривация DUKPT — по сути одна цепочка сверху вниз; после сокращения подписей она может лечь в узкую вертикаль.
+- id: fig:crypto-hsm-flow
+  planned_label: fig:crypto-hsm-flow
+  source_tex: src/parts/part2/ch10-cryptography.tex
+  source_locator:
+    line: 171
+    excerpt: Место HSM в авторизационном потоке. Горизонтальная диаграмма
+  chapter: Криптография в платежах
+  chapter_slug: ch10-cryptography
+  kind: flow-wide
+  layout: main-wide
+  asset_base: assets/figures/ch10-cryptography/crypto-hsm-flow
+  master_tex: assets/figures/ch10-cryptography/crypto-hsm-flow.tex
+  pdf: assets/figures/ch10-cryptography/crypto-hsm-flow.pdf
+  prompt: |-
+    Figure ID: fig:crypto-hsm-flow
+    Source file: src/parts/part2/ch10-cryptography.tex
+    Figure family: flow-wide
+    Layout: main-wide
+
+    Source placeholder:
+    Место HSM в авторизационном потоке. Горизонтальная диаграмма
+      слева направо: Терминал → Эквайер → Карточная сеть → Эмитент.
+      Под блоком «Эмитент» (или рядом) — блок HSM, подключённый
+      к авторизационному хосту внутренним каналом. Стрелки: (1) терминал
+      отправляет авторизацию с ARQC; (2) хост эмитента передаёт данные
+      в HSM; (3) HSM деривирует ключ, проверяет ARQC, генерирует ARPC;
+      (4) HSM возвращает результат хосту. Пунктирная граница вокруг HSM
+      с подписью «Ключи никогда не покидают HSM». Стиль: двуцветный
+      (серый для потока, красный для HSM-периметра)
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 208.1
+      height: 71.4
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Это одна авторизационная ось с одним боковым HSM-узлом, хороший кандидат на top-down marginal flow.
+- id: fig:crypto-key-hierarchy
+  planned_label: fig:crypto-key-hierarchy
+  source_tex: src/parts/part2/ch10-cryptography.tex
+  source_locator:
+    line: 219
+    excerpt: 'Дерево иерархии ключей EMV. Корень: Issuer Master Key (IMK)'
+  chapter: Криптография в платежах
+  chapter_slug: ch10-cryptography
+  kind: decision-tree
+  layout: main-vertical
+  asset_base: assets/figures/ch10-cryptography/crypto-key-hierarchy
+  master_tex: assets/figures/ch10-cryptography/crypto-key-hierarchy.tex
+  pdf: assets/figures/ch10-cryptography/crypto-key-hierarchy.pdf
+  prompt: |-
+    Figure ID: fig:crypto-key-hierarchy
+    Source file: src/parts/part2/ch10-cryptography.tex
+    Figure family: decision-tree
+    Layout: main-vertical
+
+    Source placeholder:
+    Дерево иерархии ключей EMV. Корень: Issuer Master Key (IMK)
+      в HSM. Второй уровень: три ветви Card Key, деривированные по PAN +
+      PSN (PAN 4561...0892, PAN 5412...3456, PAN 2200...7890). Третий
+      уровень: для каждого Card Key — несколько Session Key, деривированных
+      по ATC (ATC=0001, ATC=0002, ...). Рядом с каждой стрелкой деривации —
+      подпись входных параметров. Стиль: древовидная структура сверху вниз,
+      монохромный, уровни выделены разной насыщенностью серого
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 184.2
+      height: 88.3
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-vertical
+    reason: Несколько ветвей, примеры PAN и уровни ключей требуют ширины для одновременного сравнения.
+- id: fig:3ds-three-domains
+  planned_label: fig:3ds-three-domains
+  source_tex: src/parts/part2/ch11-3ds.tex
+  source_locator:
+    line: 113
+    excerpt: 'Архитектура трёх доменов 3-D Secure. Три вертикальных блока:'
+  chapter: '3-D Secure: кто отвечает за фрод'
+  chapter_slug: ch11-3ds
+  kind: topology-network
+  layout: main-vertical
+  asset_base: assets/figures/ch11-3ds/3ds-three-domains
+  master_tex: assets/figures/ch11-3ds/3ds-three-domains.tex
+  pdf: assets/figures/ch11-3ds/3ds-three-domains.pdf
+  prompt: |-
+    Figure ID: fig:3ds-three-domains
+    Source file: src/parts/part2/ch11-3ds.tex
+    Figure family: topology-network
+    Layout: main-vertical
+
+    Source placeholder:
+    Архитектура трёх доменов 3-D Secure. Три вертикальных блока:
+      слева — Acquirer Domain (содержит 3DS Server и мерчанта), в центре —
+      Interoperability Domain (содержит DS карточной сети), справа — Issuer
+      Domain (содержит ACS и эмитента). Стрелки: 3DS Server → DS (AReq),
+      DS → ACS (AReq), ACS → DS (ARes), DS → 3DS Server (ARes). Если
+      challenge: дополнительная стрелка ACS ↔ браузер/SDK держателя
+      (CReq/CRes). Подпись: «DS маршрутизирует запросы; ACS принимает
+      решение». Стиль: три цветных зоны, стрелки с подписями сообщений
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 171.2
+      height: 99.3
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-vertical
+    reason: Смысл схемы держится на параллельном сравнении трёх доменов, а не на одной вертикальной оси.
+- id: fig:3ds-v1-vs-v2
+  planned_label: fig:3ds-v1-vs-v2
+  source_tex: src/parts/part2/ch11-3ds.tex
+  source_locator:
+    line: 240
+    excerpt: Сравнение 3DS v1 и v2. Два параллельных sequence diagram.
+  chapter: '3-D Secure: кто отвечает за фрод'
+  chapter_slug: ch11-3ds
+  kind: sequence
+  layout: main-wide
+  asset_base: assets/figures/ch11-3ds/3ds-v1-vs-v2
+  master_tex: assets/figures/ch11-3ds/3ds-v1-vs-v2.tex
+  pdf: assets/figures/ch11-3ds/3ds-v1-vs-v2.pdf
+  prompt: |-
+    Figure ID: fig:3ds-v1-vs-v2
+    Source file: src/parts/part2/ch11-3ds.tex
+    Figure family: sequence
+    Layout: main-wide
+
+    Source placeholder:
+    Сравнение 3DS v1 и v2. Два параллельных sequence diagram.
+      Левый (v1): Держатель → Мерчант → DS → ACS → (redirect/pop-up к
+      держателю, ввод пароля) → ACS → DS → Мерчант → Авторизация.
+      Правый (v2): два варианта. Frictionless: Держатель → Мерчант (3DS
+      Server) → DS → ACS (risk scoring, approve) → DS → 3DS Server →
+      Авторизация. Challenge: то же, но после ACS — стрелка к SDK/iframe
+      (OTP/bio) → ACS → DS → 3DS Server → Авторизация. Подпись: «v1:
+      всегда redirect + пароль; v2: frictionless или challenge
+      (современные методы)». Стиль: двухколоночный, v1 в сером, v2 в
+      цветном
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 180.2
+      height: 100.6
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Sequence diagram с несколькими участниками и подписями сообщений не читается в узком поле.
+- id: fig:pci-cde-boundary
+  planned_label: fig:pci-cde-boundary
+  source_tex: src/parts/part2/ch12-pci-dss.tex
+  source_locator:
+    line: 149
+    excerpt: 'Сетевая диаграмма границ CDE. Три концентрических зоны:'
+  chapter: 'PCI DSS: минимизация того, что нужно защищать'
+  chapter_slug: ch12-pci-dss
+  kind: topology-network
+  layout: main-wide
+  asset_base: assets/figures/ch12-pci-dss/pci-cde-boundary
+  master_tex: assets/figures/ch12-pci-dss/pci-cde-boundary.tex
+  pdf: assets/figures/ch12-pci-dss/pci-cde-boundary.pdf
+  prompt: |-
+    Figure ID: fig:pci-cde-boundary
+    Source file: src/parts/part2/ch12-pci-dss.tex
+    Figure family: topology-network
+    Layout: main-wide
+
+    Source placeholder:
+    Сетевая диаграмма границ CDE. Три концентрических зоны:
+      внутренняя (красная) — CDE: платёжный сервер, БД с PAN, терминалы.
+      Средняя (жёлтая) — connected-to / security-impacting: DNS, NTP,
+      мониторинг, файрвол. Внешняя (зелёная) — вне периметра: CRM,
+      маркетинг, HR-системы. Между зонами — пунктирные линии с подписью
+      «Межсетевой экран / сегментация». Подпись внизу: «Без сегментации
+      всё попадает в периметр». Стиль: три зоны с градиентом от красного
+      к зелёному, строгий
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 143.7
+      height: 125.8
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Параллельные подсистемы, зоны или уровни требуют одновременного обзора по ширине.
+- id: fig:pci-saq-decision
+  planned_label: fig:pci-saq-decision
+  source_tex: src/parts/part2/ch12-pci-dss.tex
+  source_locator:
+    line: 320
+    excerpt: Дерево решений для выбора типа SAQ. Блок-схема сверху
+  chapter: 'PCI DSS: минимизация того, что нужно защищать'
+  chapter_slug: ch12-pci-dss
+  kind: decision-tree
+  layout: main-vertical
+  asset_base: assets/figures/ch12-pci-dss/pci-saq-decision
+  master_tex: assets/figures/ch12-pci-dss/pci-saq-decision.tex
+  pdf: assets/figures/ch12-pci-dss/pci-saq-decision.pdf
+  prompt: |-
+    Figure ID: fig:pci-saq-decision
+    Source file: src/parts/part2/ch12-pci-dss.tex
+    Figure family: decision-tree
+    Layout: main-vertical
+
+    Source placeholder:
+    Дерево решений для выбора типа SAQ. Блок-схема сверху
+      вниз. Стартовый вопрос: «Есть ли электронное хранение CHD?»
+      Да → SAQ D. Нет → следующий вопрос: «Есть ли собственный код
+      на странице оплаты (JS/сервер)?» Да → SAQ A-EP. Нет →
+      «Только redirect на PSP?» Да → SAQ A. Нет → «Виртуальный
+      терминал PSP?» Да → SAQ C-VT. Нет → «IP-терминал без CHD
+      хранения?» Да → SAQ B-IP / SAQ C. Нет → SAQ D. Справа
+      от каждого листа — короткая подпись о характере оценки.
+      Стиль: стандартная
+      блок-схема, ромбы решений, прямоугольники результатов,
+      градиент от зелёного (SAQ A) к красному (SAQ D)
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 239.9
+      height: 146.4
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-vertical
+    reason: Это разветвлённое decision tree с длинными исходами SAQ; узкое поле здесь не сохранит читаемость.
+- id: fig:pci-scope-reduction
+  planned_label: fig:pci-scope-reduction
+  source_tex: src/parts/part2/ch12-pci-dss.tex
+  source_locator:
+    line: 257
+    excerpt: Горизонтальная шкала сужения периметра. Слева
+  chapter: 'PCI DSS: минимизация того, что нужно защищать'
+  chapter_slug: ch12-pci-dss
+  kind: timeline
+  layout: main-wide
+  asset_base: assets/figures/ch12-pci-dss/pci-scope-reduction
+  master_tex: assets/figures/ch12-pci-dss/pci-scope-reduction.tex
+  pdf: assets/figures/ch12-pci-dss/pci-scope-reduction.pdf
+  prompt: |-
+    Figure ID: fig:pci-scope-reduction
+    Source file: src/parts/part2/ch12-pci-dss.tex
+    Figure family: timeline
+    Layout: main-wide
+
+    Source placeholder:
+    Горизонтальная шкала сужения периметра. Слева
+      (максимальный периметр) — SAQ D: «Всё в периметре» (красный). Далее
+      вправо: SAQ D с сегментацией (оранжевый), SAQ C-VT (жёлтый),
+      SAQ B-IP (жёлто-зелёный), SAQ A-EP (светло-зелёный), SAQ A
+      (зелёный). Под каждым пунктом — короткое описание:
+      что используется (P2PE, iFrame, redirect). Стрелка слева направо
+      с подписью «Scope reduction →». Стиль: горизонтальная шкала,
+      градиент от красного к зелёному
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 172.2
+      height: 41.1
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
+- id: fig:visa-direct-flow
+  planned_label: fig:visa-direct-flow
+  source_tex: src/parts/part3/ch13-visa.tex
+  source_locator:
+    line: 257
+    excerpt: Типовой поток Visa Direct (AFT → OCT). Схема
+  chapter: Visa
+  chapter_slug: ch13-visa
+  kind: timeline
+  layout: main-wide
+  asset_base: assets/figures/ch13-visa/visa-direct-flow
+  master_tex: assets/figures/ch13-visa/visa-direct-flow.tex
+  pdf: assets/figures/ch13-visa/visa-direct-flow.pdf
+  prompt: |-
+    Figure ID: fig:visa-direct-flow
+    Source file: src/parts/part3/ch13-visa.tex
+    Figure family: timeline
+    Layout: main-wide
+
+    Source placeholder:
+    Типовой поток Visa Direct (AFT → OCT). Схема
+      последовательности,
+      слева направо: «Отправитель», «Банк-эквайер отправителя»,
+      «VisaNet (BASE I)», «Банк-эмитент получателя», «Получатель».
+      Шаг 1: Отправитель → Эквайер: «AFT (снять деньги)».
+      Шаг 2: Эквайер → VisaNet: «AFT авторизация 0100».
+      Шаг 3: VisaNet → Эмитент получателя: «OCT 0200 (кредит)».
+      Шаг 4: Эмитент → VisaNet → Эквайер: «Ответ 0210».
+      Шаг 5: Эмитент → Получатель: «Уведомление, средства доступны».
+      Временная метка: «T+минуты». Стиль: диаграмма последовательности,
+      вертикальные линии жизни, горизонтальные стрелки с подписями
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 196.2
+      height: 81.7
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
+- id: fig:visanet-base-i-ii
+  planned_label: fig:visanet-base-i-ii
+  source_tex: src/parts/part3/ch13-visa.tex
+  source_locator:
+    line: 54
+    excerpt: Схема двухсетевой архитектуры VisaNet. Горизонтальный
+  chapter: Visa
+  chapter_slug: ch13-visa
+  kind: timeline
+  layout: main-wide
+  asset_base: assets/figures/ch13-visa/visanet-base-i-ii
+  master_tex: assets/figures/ch13-visa/visanet-base-i-ii.tex
+  pdf: assets/figures/ch13-visa/visanet-base-i-ii.pdf
+  prompt: |-
+    Figure ID: fig:visanet-base-i-ii
+    Source file: src/parts/part3/ch13-visa.tex
+    Figure family: timeline
+    Layout: main-wide
+
+    Source placeholder:
+    Схема двухсетевой архитектуры VisaNet. Горизонтальный
+      макет. В центре — блок «VisaNet», разделённый пополам: верхняя
+      половина «BASE I (авторизация)», нижняя «BASE II (клиринг)».
+      Слева — блок «Банк-эквайер» с двумя стрелками: верхняя (сплошная,
+      двунаправленная) к BASE I с подписью «Авторизация 0100→0110»;
+      нижняя (пунктирная, однонаправленная вправо) к BASE II с подписью
+      «TC33-файл, T+0 / T+1». Справа — блок «Банк-эмитент» с аналогичными
+      стрелками. Под схемой временнáя шкала: момент «Авторизация» (стрелка
+      вверх) и момент «Клиринг» (стрелка вверх правее), между ними подпись
+      «несколько часов». Стиль: строгий технический, минимум цветов
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 180.2
+      height: 62.2
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Здесь критично сравнение двух плоскостей BASE I и BASE II; вертикализация ослабит архитектурный контраст.
+- id: fig:banknet-topology
+  planned_label: fig:banknet-topology
+  source_tex: src/parts/part3/ch14-mastercard.tex
+  source_locator:
+    line: 52
+    excerpt: Топология Banknet. Схема в форме овала. По периметру —
+  chapter: Mastercard
+  chapter_slug: ch14-mastercard
+  kind: topology-network
+  layout: main-wide
+  asset_base: assets/figures/ch14-mastercard/banknet-topology
+  master_tex: assets/figures/ch14-mastercard/banknet-topology.tex
+  pdf: assets/figures/ch14-mastercard/banknet-topology.pdf
+  prompt: |-
+    Figure ID: fig:banknet-topology
+    Source file: src/parts/part3/ch14-mastercard.tex
+    Figure family: topology-network
+    Layout: main-wide
+
+    Source placeholder:
+    Топология Banknet. Схема в форме овала. По периметру —
+      блок «Банк-эквайер», затем «Authorization Platform», затем
+      «Банк-эмитент». Ниже отдельная ветка: «IPM» $\rightarrow$ «GCMS»
+      $\rightarrow$ «Settlement». Подпись под всей схемой:
+      «Одна сеть, разные внутренние подсистемы». Не рисовать численные SLA
+      и не привязывать схему к неподтверждённой физической топологии.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 145.2
+      height: 84.4
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Параллельные подсистемы, зоны или уровни требуют одновременного обзора по ширине.
+- id: fig:mc-ipm-structure
+  planned_label: fig:mc-ipm-structure
+  source_tex: src/parts/part3/ch14-mastercard.tex
+  source_locator:
+    line: 139
+    excerpt: Структура IPM-файла Mastercard (DE-карта). Вертикальный
+  chapter: Mastercard
+  chapter_slug: ch14-mastercard
+  kind: topology-network
+  layout: main-vertical
+  asset_base: assets/figures/ch14-mastercard/mc-ipm-structure
+  master_tex: assets/figures/ch14-mastercard/mc-ipm-structure.tex
+  pdf: assets/figures/ch14-mastercard/mc-ipm-structure.pdf
+  prompt: |-
+    Figure ID: fig:mc-ipm-structure
+    Source file: src/parts/part3/ch14-mastercard.tex
+    Figure family: topology-network
+    Layout: main-vertical
+
+    Source placeholder:
+    Структура IPM-файла Mastercard (DE-карта). Вертикальный
+      layout. Схематично показать три уровня: файл IPM, отдельная запись
+      клиринга, поля в логике \iso{8583}. Не рисовать конкретные номера
+      subelements без сверки с актуальным IPM Clearing Formats manual.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 103.4
+      height: 71.8
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Структура `файл -> запись -> поля` естественно укладывается в короткий вертикальный stack.
+- id: fig:mir-unionpay-routing
+  planned_label: fig:mir-unionpay-routing
+  source_tex: src/parts/part3/ch15-mir.tex
+  source_locator:
+    line: 223
+    excerpt: Дерево маршрутизации кобейджинговой карты Мир-UnionPay.
+  chapter: Мир
+  chapter_slug: ch15-mir
+  kind: decision-tree
+  layout: main-vertical
+  asset_base: assets/figures/ch15-mir/mir-unionpay-routing
+  master_tex: assets/figures/ch15-mir/mir-unionpay-routing.tex
+  pdf: assets/figures/ch15-mir/mir-unionpay-routing.pdf
+  prompt: |-
+    Figure ID: fig:mir-unionpay-routing
+    Source file: src/parts/part3/ch15-mir.tex
+    Figure family: decision-tree
+    Layout: main-vertical
+
+    Source placeholder:
+    Дерево маршрутизации кобейджинговой карты Мир-UnionPay.
+      Корень: «Транзакция по кобейджинговой карте». Первый вопрос
+      (ромб): «Страна терминала — Россия?».
+      Ветка «Да»: → «Маршрут через ОПКЦ» → «Правила Мир» → «Settlement НКЦ».
+      Ветка «Нет»: → «Маршрут через UnionPay International» →
+      «Правила UnionPay» → «Settlement UnionPay».
+      Под ветками: «BIN 220xxx → Мир» и «Логотип UnionPay → UPI».
+      Стиль: бинарное дерево, ромбы-решения, прямоугольники-результаты
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 138.2
+      height: 118.7
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Routing tree компактный по идее и может быть переписан как узкое decision tree сверху вниз.
+- id: fig:opkc-flow
+  planned_label: fig:opkc-flow
+  source_tex: src/parts/part3/ch15-mir.tex
+  source_locator:
+    line: 104
+    excerpt: Маршрут транзакции через ОПКЦ. Три горизонтальных этапа.
+  chapter: Мир
+  chapter_slug: ch15-mir
+  kind: timeline
+  layout: main-wide
+  asset_base: assets/figures/ch15-mir/opkc-flow
+  master_tex: assets/figures/ch15-mir/opkc-flow.tex
+  pdf: assets/figures/ch15-mir/opkc-flow.pdf
+  prompt: |-
+    Figure ID: fig:opkc-flow
+    Source file: src/parts/part3/ch15-mir.tex
+    Figure family: timeline
+    Layout: main-wide
+
+    Source placeholder:
+    Маршрут транзакции через ОПКЦ. Три горизонтальных этапа.
+      Этап 1 «Авторизация»: блок «Терминал» → стрелка → «Банк-эквайер» →
+      стрелка → «ОПКЦ (НСПК)» → стрелка → «Банк-эмитент»; обратные стрелки
+      ответа. Этап 2 «Клиринг» (пунктирные стрелки, Т+0/Т+1):
+      «Банк-эквайер» → «ОПКЦ» → нетто-позиции. Этап 3 «Settlement»:
+      «ОПКЦ» → «НКЦ (Банк России)» → перевод средств между
+      корсчетами банков. Стиль: горизонтальная временная шкала,
+      три цветовых зоны (синяя авторизация, жёлтый клиринг, зелёный settlement)
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 165.2
+      height: 61.1
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Три стадии с прямыми и обратными потоками лучше читаются как широкая фазовая схема.
+- id: fig:sbp-architecture
+  planned_label: fig:sbp-architecture
+  source_tex: src/parts/part3/ch18-sbp.tex
+  source_locator:
+    line: 57
+    excerpt: Трёхуровневая схема СБП. Три горизонтальных уровня.
+  chapter: СБП
+  chapter_slug: ch18-sbp
+  kind: topology-network
+  layout: main-wide
+  asset_base: assets/figures/ch18-sbp/sbp-architecture
+  master_tex: assets/figures/ch18-sbp/sbp-architecture.tex
+  pdf: assets/figures/ch18-sbp/sbp-architecture.pdf
+  prompt: |-
+    Figure ID: fig:sbp-architecture
+    Source file: src/parts/part3/ch18-sbp.tex
+    Figure family: topology-network
+    Layout: main-wide
+
+    Source placeholder:
+    Трёхуровневая схема СБП. Три горизонтальных уровня.
+      Верхний (синий): «Банк России» с подписью «Расчёт между корсчетами
+      банков в реальном времени».
+      Средний (жёлтый): «НСПК — Операционный центр» с подписью «Маршрутизация,
+      контроль, адресация по номеру телефона/QR».
+      Нижний (зелёный): четыре блока «Банк-отправитель», «…», «Банк-получатель»,
+      «…» с подписью «Банки-участники СБП».
+      Стрелки: от Пользователя → Банк-отправитель → НСПК → Банк России →
+      Банк-получатель → Получатель.
+      Под схемой: «Время зачисления: секунды».
+      Стиль: три горизонтальных слоя с разными цветами, вертикальные стрелки
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 159.6
+      height: 101.9
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Трёхуровневая архитектура уже иерархична; её можно свести к top-down layout с краткими подписями.
+- id: fig:sbp-scenarios
+  planned_label: fig:sbp-scenarios
+  source_tex: src/parts/part3/ch18-sbp.tex
+  source_locator:
+    line: 152
+    excerpt: Матрица сценариев СБП + flow C2B динамический QR.
+  chapter: СБП
+  chapter_slug: ch18-sbp
+  kind: sequence
+  layout: main-wide
+  asset_base: assets/figures/ch18-sbp/sbp-scenarios
+  master_tex: assets/figures/ch18-sbp/sbp-scenarios.tex
+  pdf: assets/figures/ch18-sbp/sbp-scenarios.pdf
+  prompt: |-
+    Figure ID: fig:sbp-scenarios
+    Source file: src/parts/part3/ch18-sbp.tex
+    Figure family: sequence
+    Layout: main-wide
+
+    Source placeholder:
+    Матрица сценариев СБП + flow C2B динамический QR.
+      Левая часть: таблица 2×3. Строки: «Отправитель: Физлицо / Юрлицо».
+      Столбцы: «Получатель: Физлицо / Юрлицо». Ячейки: C2C (телефон),
+      C2B (QR), B2C (выплаты), B2B (корпоративный). Цвет ячеек по
+      зрелости: зелёный — запущен, жёлтый — ограниченный охват.
+      Правая часть: sequence diagram «C2B динамический QR»:
+      «Касса» генерирует QR → «Покупатель» сканирует смартфоном →
+      «Приложение банка покупателя» показывает сумму → подтверждение →
+      «НСПК» маршрутизирует → «Банк мерчанта» зачисляет → «Касса» получает
+      нотификацию «Оплачено». Время: T < 5 сек.
+      Стиль: таблица + sequence diagram рядом
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 222.8
+      height: 85.1
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Гибрид матрицы и flow требует одновременного обзора строк, колонок и сценарного хвоста; поле для этого слишком узкое.
+- id: fig:fraud-hybrid
+  planned_label: fig:fraud-hybrid
+  source_tex: src/parts/part4/ch19-fraud.tex
+  source_locator:
+    line: 216
+    excerpt: 'Блок-схема «Гибридная система антифрода». Слева направо:'
+  chapter: 'Фрод: кто атакует и как защищаться'
+  chapter_slug: ch19-fraud
+  kind: flow-wide
+  layout: main-wide
+  asset_base: assets/figures/ch19-fraud/fraud-hybrid
+  master_tex: assets/figures/ch19-fraud/fraud-hybrid.tex
+  pdf: assets/figures/ch19-fraud/fraud-hybrid.pdf
+  prompt: |-
+    Figure ID: fig:fraud-hybrid
+    Source file: src/parts/part4/ch19-fraud.tex
+    Figure family: flow-wide
+    Layout: main-wide
+
+    Source placeholder:
+    Блок-схема «Гибридная система антифрода». Слева направо:
+      «Входящая транзакция» → «Pre-screening rules» (красный прямоугольник)
+      → ромб «Очевидный фрод?» → «Да» → «Блок» (красный). «Нет» → «Scoring
+      engine (ML-модель)» (синий прямоугольник) → «Score 0–1000» → «Post-scoring
+      rules» (оранжевый) → три ветви: «Score > 800» → «Блок»; «Score 500–800»
+      → «3DS / дополнительная верификация»; «Score < 500» → «Одобрить» (зелёный).
+      Под scoring engine: «Feature store» с примерами признаков. Справа внизу:
+      «Обратная связь: outcome → обучение модели» (пунктирная стрелка назад
+      к scoring engine). Стиль: строгий технический, минимум цветов.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 257.0
+      height: 83.9
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Это pipeline с одной главной осью и парой sidecar-узлов, хороший кандидат для маргинального vertical flow.
+- id: fig:pisp-flow
+  planned_label: fig:pisp-flow
+  source_tex: src/parts/part3/ch19-open-banking.tex
+  source_locator:
+    line: 103
+    excerpt: 'PISP flow. Участники: клиент, мерчант/PISP, банк клиента.'
+  chapter: Open Banking, A2A и ISO 20022
+  chapter_slug: ch19-open-banking
+  kind: flow-wide
+  layout: main-wide
+  asset_base: assets/figures/ch19-open-banking/pisp-flow
+  master_tex: assets/figures/ch19-open-banking/pisp-flow.tex
+  pdf: assets/figures/ch19-open-banking/pisp-flow.pdf
+  prompt: |-
+    Figure ID: fig:pisp-flow
+    Source file: src/parts/part3/ch19-open-banking.tex
+    Figure family: flow-wide
+    Layout: main-wide
+
+    Source placeholder:
+    PISP flow. Участники: клиент, мерчант/PISP, банк клиента.
+      Шаги: выбор оплаты со счёта; редирект в банк; consent + SCA;
+      выдача токена и возврат клиента; платёж через API; статус
+      исполнения; подтверждение заказа.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 182.1
+      height: 48.7
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Flow можно свернуть в top-down сценарий с одним боковым блоком банка/SCA без потери основной логики.
+- id: fig:compliance-kyb-risk
+  planned_label: fig:compliance-kyb-risk
+  source_tex: src/parts/part4/ch20-compliance-aml.tex
+  source_locator:
+    line: 124
+    excerpt: 'Схема «KYB checklist по категориям риска». Таблица: три'
+  chapter: Комплаенс и AML
+  chapter_slug: ch20-compliance-aml
+  kind: comparison-table
+  layout: main-table
+  asset_base: assets/figures/ch20-compliance-aml/compliance-kyb-risk
+  master_tex: assets/figures/ch20-compliance-aml/compliance-kyb-risk.tex
+  pdf: assets/figures/ch20-compliance-aml/compliance-kyb-risk.pdf
+  prompt: |-
+    Figure ID: fig:compliance-kyb-risk
+    Source file: src/parts/part4/ch20-compliance-aml.tex
+    Figure family: comparison-table
+    Layout: main-table
+
+    Source placeholder:
+    Схема «KYB checklist по категориям риска». Таблица: три
+      колонки — «Низкий риск» (зелёный), «Средний риск» (жёлтый), «Высокий
+      риск» (красный). Строки: примеры MCC (retail, SaaS / travel, crypto обмен /
+      gambling, adult), документы (стандартный пакет / расширенный пакет +
+      лицензии / расширенный + финансовая отчётность), мониторинг после онбординга
+      (квартальный / ежемесячный / еженедельный), rolling reserve (нет / 5--10\% /
+      10--20\%). Стиль: таблица с цветовым кодированием.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 172.0
+      height: 38.3
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-table
+    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+- id: fig:subscriptions-cit-mit
+  planned_label: fig:subscriptions-cit-mit
+  source_tex: src/parts/part4/ch21-subscriptions.tex
+  source_locator:
+    line: 85
+    excerpt: 'Decision tree «CIT или MIT?». Корень: «Инициирована ли транзакция'
+  chapter: Подписки и Card-on-File
+  chapter_slug: ch21-subscriptions
+  kind: decision-tree
+  layout: main-vertical
+  asset_base: assets/figures/ch21-subscriptions/subscriptions-cit-mit
+  master_tex: assets/figures/ch21-subscriptions/subscriptions-cit-mit.tex
+  pdf: assets/figures/ch21-subscriptions/subscriptions-cit-mit.pdf
+  prompt: |-
+    Figure ID: fig:subscriptions-cit-mit
+    Source file: src/parts/part4/ch21-subscriptions.tex
+    Figure family: decision-tree
+    Layout: main-vertical
+
+    Source placeholder:
+    Decision tree «CIT или MIT?». Корень: «Инициирована ли транзакция
+      активным действием клиента прямо сейчас?». Ветвь «Да» → CIT. Под CIT:
+      «3DS применим?» → «Да» → «3DS обязателен / рекомендован». «Нет» → CVV/AVS.
+      Результат CIT: «сохранить NTID». Ветвь «Нет» → MIT. Под MIT:
+      «Тип» → 3 ветви: Recurring (регулярная, фиксированная сумма), Installment
+      (рассрочка), Unscheduled (нерегулярная, переменная). Требование для всех
+      MIT: «передать NTID из CIT + флаги MIT». Справа: «Ошибка: MIT без NTID
+      → эмитент может отклонить или применить SCA-требование». Стиль:
+      минималистичный, с цветовой кодировкой CIT (синий) / MIT (оранжевый).
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 198.9
+      height: 127.0
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-vertical
+    reason: Дерево длинное, с несколькими типами MIT и пояснениями про 3DS/CVV/AVS/NTID; в поле потеряет читаемость.
+- id: fig:recon-exception-waterfall
+  planned_label: fig:recon-exception-waterfall
+  source_tex: src/parts/part4/ch22-reconciliation.tex
+  source_locator:
+    line: 235
+    excerpt: Блок-схема «Exception handling waterfall». Прямоугольник «Входящая
+  chapter: 'Reconciliation: где теряются деньги'
+  chapter_slug: ch22-reconciliation
+  kind: flow-wide
+  layout: main-wide
+  asset_base: assets/figures/ch22-reconciliation/recon-exception-waterfall
+  master_tex: assets/figures/ch22-reconciliation/recon-exception-waterfall.tex
+  pdf: assets/figures/ch22-reconciliation/recon-exception-waterfall.pdf
+  prompt: |-
+    Figure ID: fig:recon-exception-waterfall
+    Source file: src/parts/part4/ch22-reconciliation.tex
+    Figure family: flow-wide
+    Layout: main-wide
+
+    Source placeholder:
+    Блок-схема «Exception handling waterfall». Прямоугольник «Входящая
+      клиринговая запись» → ромб «Есть соответствующая авторизация?». «Нет» →
+      «Unmatched clearing» → ромб «Force post / голос-авт.?» → «Да» → «Ручная
+      верификация» / «Нет» → «Fraud investigation». «Да» от первого ромба →
+      ромб «Суммы совпадают (в пределах допуска)?» → «Нет» → «Amount mismatch»
+      → ромб «В пределах rules (tips, pre-auth delta)?» → «Да» → «Авто-approve»
+      / «Нет» → «Ручная верификация». «Да» от ромба сумм → «Matched → Settlement».
+      Справа колонка: статусы записей — matched, unmatched, mismatch, exception.
+      Стиль: строгий технический.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 269.0
+      height: 99.9
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Waterfall по смыслу уже top-down; в узкой вертикали он будет чище, чем в wide-flow.
+- id: fig:disputes-lifecycle
+  planned_label: fig:disputes-lifecycle
+  source_tex: src/parts/part4/ch23-disputes.tex
+  source_locator:
+    line: 81
+    excerpt: Sequence diagram «Lifecycle диспута Visa VCR». Участники (слева
+  chapter: Disputes и chargebacks
+  chapter_slug: ch23-disputes
+  kind: sequence
+  layout: main-wide
+  asset_base: assets/figures/ch23-disputes/disputes-lifecycle
+  master_tex: assets/figures/ch23-disputes/disputes-lifecycle.tex
+  pdf: assets/figures/ch23-disputes/disputes-lifecycle.pdf
+  prompt: |-
+    Figure ID: fig:disputes-lifecycle
+    Source file: src/parts/part4/ch23-disputes.tex
+    Figure family: sequence
+    Layout: main-wide
+
+    Source placeholder:
+    Sequence diagram «Lifecycle диспута Visa VCR». Участники (слева
+      направо): Держатель карты, Эмитент, Схема (Visa/MC), Эквайер, Мерчант.
+      Пять горизонтальных полос-стадий (сверху вниз): 1) Inquiry: держатель →
+      эмитент (жалоба), эмитент → схема → эквайер (запрос документов), эквайер
+      → мерчант (запрос), мерчант → эквайер (ответ), эквайер → эмитент (ответ).
+      2) First Chargeback: эмитент → схема (дебет, reason code), схема → эквайер
+      (дебет), эквайер → мерчант (уведомление). 3) Representment: мерчант →
+      эквайер (compelling evidence), эквайер → схема (representment), схема →
+      эмитент (передача). 4) Pre-arbitration: эмитент → схема → эквайер
+      (повторный chargeback). 5) Arbitration: схема (решение) → эквайер или
+      эмитент (финал). Стрелки финансовых движений — красные, стрелки документов
+      — синие. Справа на каждой стадии: пометка «кто несёт финансовый риск».
+      Временна́я ось слева: примерные сроки между стадиями.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 206.5
+      height: 169.4
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-wide
+    reason: Sequence diagram с несколькими участниками и подписями сообщений не читается в узком поле.
+- id: fig:decline-codes
+  planned_label: fig:decline-codes
+  source_tex: src/parts/part4/ch24-decline-management.tex
+  source_locator:
+    line: 61
+    excerpt: Таблица «Классификация response codes по типу отказа».
+  chapter: Decline management
+  chapter_slug: ch24-decline-management
+  kind: comparison-table
+  layout: main-table
+  asset_base: assets/figures/ch24-decline-management/decline-codes
+  master_tex: assets/figures/ch24-decline-management/decline-codes.tex
+  pdf: assets/figures/ch24-decline-management/decline-codes.pdf
+  prompt: |-
+    Figure ID: fig:decline-codes
+    Source file: src/parts/part4/ch24-decline-management.tex
+    Figure family: comparison-table
+    Layout: main-table
+
+    Source placeholder:
+    Таблица «Классификация response codes по типу отказа».
+      Три колонки: «Hard decline» (красный), «Soft decline» (оранжевый),
+      «Технический / смена канала» (жёлтый). В каждой колонке: code + краткое
+      описание + рекомендуемое действие. Примеры: Hard — 04 Pick Up (изъять
+      карту, не повторять), 41 Lost Card, 43 Stolen, 54 Expired Card, 14 Invalid
+      Account; Soft — 51 Insufficient Funds, 61 Exceeds Limit, 65 Freq. Limit;
+      Технический — 91 Issuer Unavailable, 96 System Malfunction, 01 Refer.
+      Под таблицей сноска: полный справочник кодов — в онлайн-приложении.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 200.2
+      height: 44.0
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-table
+    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+- id: fig:decline-retry-tree
+  planned_label: fig:decline-retry-tree
+  source_tex: src/parts/part4/ch24-decline-management.tex
+  source_locator:
+    line: 174
+    excerpt: 'Decision tree «Retry logic». Корень: получен response code.'
+  chapter: Decline management
+  chapter_slug: ch24-decline-management
+  kind: decision-tree
+  layout: main-vertical
+  asset_base: assets/figures/ch24-decline-management/decline-retry-tree
+  master_tex: assets/figures/ch24-decline-management/decline-retry-tree.tex
+  pdf: assets/figures/ch24-decline-management/decline-retry-tree.pdf
+  prompt: |-
+    Figure ID: fig:decline-retry-tree
+    Source file: src/parts/part4/ch24-decline-management.tex
+    Figure family: decision-tree
+    Layout: main-vertical
+
+    Source placeholder:
+    Decision tree «Retry logic». Корень: получен response code.
+      Ветвь 1: Hard decline (04, 14, 41, 43, 54) → «Не повторять. Уведомить
+      клиента». Ветвь 2: Технический (91, 96, timeout) → «1 немедленный retry»
+      → если снова ошибка → «Отложить 1 ч, затем по расписанию». Ветвь 3: Soft
+      финансовый (51, 61, 65) → «Ждать 24 ч» → retry → «если снова 51: ждать
+      48–72 ч» → «лимит попыток: соблюдать правила схемы». Ветвь 4: Soft
+      поведенческий (05) → «Попробовать другой канал: токен вместо PAN, другой
+      эквайер» → «если снова 05: ждать 24 ч, лимит попыток». На каждой ветви
+      справа: ссылка на Visa Retry Rules / MC Excessive Attempts. Стиль:
+      строгий, минималистичный, с цветовой кодировкой ветвей.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 245.4
+      height: 151.9
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-vertical
+    reason: Важны точные code groups и retry-правила; для маргиналии слишком плотная логика и длинные листья.
+- id: fig:alt-taxonomy-matrix
+  planned_label: fig:alt-taxonomy-matrix
+  source_tex: src/parts/part4/ch25-alternative-methods.tex
+  source_locator:
+    line: 67
+    excerpt: 'Матрица «Методы оплаты × параметры». Строки: карты, A2A (СБП/PIX),'
+  chapter: 'Альтернативные методы: QR, BNPL, крипто, цифровой рубль'
+  chapter_slug: ch25-alternative-methods
+  kind: comparison-table
+  layout: main-table
+  asset_base: assets/figures/ch25-alternative-methods/alt-taxonomy-matrix
+  master_tex: assets/figures/ch25-alternative-methods/alt-taxonomy-matrix.tex
+  pdf: assets/figures/ch25-alternative-methods/alt-taxonomy-matrix.pdf
+  prompt: |-
+    Figure ID: fig:alt-taxonomy-matrix
+    Source file: src/parts/part4/ch25-alternative-methods.tex
+    Figure family: comparison-table
+    Layout: main-table
+
+    Source placeholder:
+    Матрица «Методы оплаты × параметры». Строки: карты, A2A (СБП/PIX),
+      closed-loop кошелёк, BNPL, cash-based, CBDC (цифровой рубль), crypto.
+      Столбцы: тип (push/pull), финальность платежа (да/нет), chargeback (есть/нет),
+      PCI scope (да/нет), международность (глобальный/региональный/нишевый),
+      скорость (мс / сек / мин / часы / дни), комиссия мерчанта (высокая /
+      средняя / низкая / нет данных). Зелёные ячейки — преимущество, красные —
+      недостаток, серые — нейтрально. Под таблицей: сноска «*данные оценочные,
+      зависят от конкретного провайдера и географии».
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 223.4
+      height: 40.8
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: main-text
+    target_layout: main-table
+    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+- id: todo:ch26-payment-gateway:gateway-components
+  planned_label: fig:gateway-components
+  source_tex: src/parts/part5/ch26-payment-gateway.tex
+  source_locator:
+    line: 100
+    excerpt: 'Блок-схема компонентов платёжного шлюза: запрос мерчанта'
+  chapter: Платёжный шлюз изнутри
+  chapter_slug: ch26-payment-gateway
+  kind: flow-wide
+  layout: main-wide
+  asset_base: assets/figures/ch26-payment-gateway/gateway-components
+  master_tex: assets/figures/ch26-payment-gateway/gateway-components.tex
+  pdf: assets/figures/ch26-payment-gateway/gateway-components.pdf
+  prompt: |-
+    Figure ID: fig:gateway-components
+    Source file: src/parts/part5/ch26-payment-gateway.tex
+    Figure family: flow-wide
+    Layout: main-wide
+
+    Source placeholder:
+    Блок-схема компонентов платёжного шлюза: запрос мерчанта
+      (HTTPS/JSON) → API gateway (валидация, идемпотентность) →
+      risk engine (fraud score, 3DS decision) →
+      routing engine (выбор эквайера) →
+      tokenization vault (PAN → token) →
+      authorization proxy (JSON → ISO 8583) →
+      банк-эквайер → карточная сеть → эмитент;
+      обратный путь ответа пунктиром.
+      Горизонтальный flow слева направо, каждый блок — прямоугольник
+      с подписью, стрелки однонаправленные, кроме обратного пути.
+
+    House style: standalone TikZ/TeX figure for the main text of a serious technical book.
+    Use Libertinus Sans, Ink #243042, Soft #F7F9FC, Panel #EEF4FB, AccentA #246BCE, AccentB #C8463A, Muted #5D6B7A.
+    Lines must stay thin (0.5-0.65pt), corners slightly rounded (2.5-4pt), background white, at most two accent colors.
+    No shadows, gradients, icons, logos, raster assets, decorative effects, or invented facts.
+    Respect the exact labels, block order, flow direction, and terminology from the source placeholder.
+    Output must be a compileable standalone .tex that produces a vector PDF ready for later embedding.
+  status: planned
+  placement_review:
+    bbox_mm:
+      width: 271.4
+      height: 55.8
+    marginalia_limits_mm:
+      width: 45.0
+      height_min: 60.0
+      height_max: 80.0
+    fits_marginalia_now: false
+    recommendation: vertical-relayout-for-marginalia
+    target_layout: marginal-vertical
+    reason: Gateway pipeline линейный; при сокращении подписей его можно сделать узкой вертикальной схемой с обратным ответом как side note.

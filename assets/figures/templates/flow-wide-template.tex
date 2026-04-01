@@ -1,0 +1,21 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[fig/block] (a) at (0,0) {Блок A};
+  \node[fig/block] (b) at (3.6,0) {Блок B};
+  \node[fig/core]  (c) at (7.4,0) {Ключевой\\узел};
+  \node[fig/block] (d) at (11.2,0) {Блок D};
+
+  \begin{scope}[on background layer]
+    \node[fig/group, fit=(a)(b)(c)(d), inner xsep=10pt, inner ysep=10pt] {};
+  \end{scope}
+
+  \draw[fig/arrow] (a.east) -- node[above, font=\scriptsize, text=Muted] {поток 1} (b.west);
+  \draw[fig/accenta] (b.east) -- node[above, font=\scriptsize, text=AccentA!80!black] {поток 2} (c.west);
+  \draw[fig/accentb] (c.east) -- node[above, font=\scriptsize, text=AccentB!80!black] {поток 3} (d.west);
+
+  \node[fig/note, text width=13.2cm] at (5.6,-2.4) {Шаблон для широких flow-диаграмм основного потока. Менять содержимое блоков и стрелок, не меняя house style.};
+\end{tikzpicture}
+\end{document}

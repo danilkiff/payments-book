@@ -1,0 +1,96 @@
+\documentclass[varwidth=24cm,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\scriptsize
+\renewcommand{\arraystretch}{1.16}
+
+\newcommand{\adv}[1]{\cellcolor{Good!14}#1}
+\newcommand{\dis}[1]{\cellcolor{Bad!10}#1}
+\newcommand{\neu}[1]{\cellcolor{Ink!6}#1}
+
+\begin{tabularx}{22.8cm}{
+  >{\raggedright\arraybackslash\bfseries}p{2.8cm}
+  >{\raggedright\arraybackslash}p{1.4cm}
+  >{\raggedright\arraybackslash}p{1.65cm}
+  >{\raggedright\arraybackslash}p{1.55cm}
+  >{\raggedright\arraybackslash}p{1.45cm}
+  >{\raggedright\arraybackslash}p{2.55cm}
+  >{\raggedright\arraybackslash}p{1.8cm}
+  >{\raggedright\arraybackslash}p{2.35cm}
+}
+\rowcolor{Panel}
+Метод оплаты & Тип & Финальность & Chargeback & PCI scope & Международность & Скорость & Комиссия мерчанта \\
+
+Карты &
+\dis{pull} &
+\dis{нет} &
+\dis{есть} &
+\dis{да} &
+\adv{глобальный} &
+\adv{мс} &
+\dis{высокая} \\
+
+A2A (СБП/PIX) &
+\adv{push} &
+\adv{да} &
+\adv{нет} &
+\adv{нет} &
+\neu{региональный} &
+\adv{сек} &
+\adv{низкая} \\
+
+Closed-loop кошелёк &
+\neu{push/pull} &
+\neu{зависит} &
+\neu{ограничен} &
+\adv{нет} &
+\dis{нишевый} &
+\adv{мс} &
+\neu{средняя} \\
+
+BNPL &
+\dis{pull} &
+\dis{нет} &
+\dis{есть} &
+\neu{нет} &
+\neu{региональный} &
+\adv{сек} &
+\neu{средняя} \\
+
+Cash-based &
+\adv{push} &
+\adv{да} &
+\adv{нет} &
+\adv{нет} &
+\dis{нишевый} &
+\dis{часы / дни} &
+\neu{нет данных} \\
+
+CBDC (цифровой рубль) &
+\adv{push} &
+\adv{да} &
+\adv{нет} &
+\adv{нет} &
+\dis{региональный} &
+\neu{сек / мин} &
+\neu{нет данных} \\
+
+Crypto &
+\adv{push} &
+\adv{да} &
+\adv{нет} &
+\adv{нет} &
+\neu{глобальный / нишевый} &
+\neu{мин / часы} &
+\neu{нет данных} \\
+\end{tabularx}
+
+\vspace{4mm}
+\fcolorbox{Ink!18}{Soft}{%
+  \parbox{22.1cm}{%
+    \textcolor{Muted}{Зелёный цвет показывает сравнительное преимущество, красный — ограничение, серый — нейтральную или зависящую от провайдера зону.
+    * Данные оценочные и меняются в зависимости от конкретного провайдера, маршрута и географии.}%
+  }%
+}
+\end{document}

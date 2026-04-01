@@ -1,0 +1,24 @@
+\documentclass[varwidth=19cm,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\renewcommand{\arraystretch}{1.24}
+\begin{tabularx}{17.6cm}{
+  >{\raggedright\arraybackslash\bfseries}p{2.7cm}
+  >{\raggedright\arraybackslash}p{3.2cm}
+  >{\raggedright\arraybackslash}p{2.6cm}
+  >{\raggedright\arraybackslash}p{3.3cm}
+  Y
+}
+\rowcolor{Panel}
+\textbf{Механизм} & \textbf{Когда сумма известна} & \textbf{Онлайн-авторизация} & \textbf{Кто несёт риск} & \textbf{Типичный MCC} \\
+\rowcolor{Soft}
+Pre-auth & позже & да & эквайер/мерчант & 7011 (гостиницы), 7512 (аренда авто) \\
+Incremental auth & постепенно & да (несколько) & эквайер/мерчант & 7011 \\
+\rowcolor{Soft}
+Partial auth & сразу, но покрытие неполное & да & мерчант & любой (чаще prepaid) \\
+Deferred auth & позже & нет (офлайн) & эквайер/мерчант & 4511 (авиа), 7523 (паркинг) \\
+\rowcolor{Soft}
+Force post & сразу & голосовая & мерчант & любой \\
+\end{tabularx}
+\end{document}

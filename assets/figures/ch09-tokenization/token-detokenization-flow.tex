@@ -1,0 +1,53 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    flow/step/.style={fig/mblock, text width=24mm},
+    flow/core/.style={fig/mcore, text width=24mm}
+  }
+
+  \node[flow/step] (holder) at (0,0) {Держатель\\телефона};
+  \node[flow/step, below=5mm of holder] (merchant) {Мерчант};
+  \node[flow/step, below=5mm of merchant] (acquirer) {Эквайер\\или PSP};
+  \node[flow/core, below=5mm of acquirer] (network) {Карточная\\сеть};
+  \node[flow/step, below=5mm of network] (issuer) {Эмитент};
+
+  \node[
+    fig/mside,
+    minimum width=14mm,
+    text width=10mm,
+    right=4mm of network
+  ] (vault) {Token\\Vault};
+
+  \draw[fig/accenta] (holder.south) -- (merchant.north);
+  \draw[fig/accenta] (merchant.south) -- (acquirer.north);
+  \draw[fig/accenta] (acquirer.south) -- (network.north);
+  \draw[fig/accentb] (network.south) -- (issuer.north);
+  \draw[fig/lookup] (network.east) -- (vault.west);
+
+  \node[
+    font=\tiny,
+    fill=white,
+    inner xsep=1.5pt,
+    inner ysep=0.5pt,
+    text=AccentA!80!black
+  ] at ($(merchant.south)!0.5!(acquirer.north)+(0.18,0)$) {DPAN};
+  \node[
+    font=\tiny,
+    fill=white,
+    inner xsep=1pt,
+    inner ysep=0.5pt,
+    text=AccentB!80!black,
+    align=center
+  ] at ($(network.south)!0.5!(issuer.north)+(-0.18,0)$) {FPAN\\+ meta};
+  \node[
+    font=\tiny,
+    text=Muted,
+    align=center
+  ] at ($(vault.south)+(0,-3.5mm)$) {DPAN $\rightarrow$\\FPAN};
+
+  \node[fig/mnote, below=6mm of issuer] {Де-токенизация идёт в карточной сети; мерчант и эквайер видят только DPAN.};
+\end{tikzpicture}
+\end{document}

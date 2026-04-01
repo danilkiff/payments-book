@@ -1,0 +1,27 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[fig/mblock] (step1) at (0,0) {Шаг 1};
+  \node[fig/mblock, below=7mm of step1] (step2) {Шаг 2};
+  \node[fig/mcore, below=7mm of step2] (core) {Ключевой\\узел};
+  \node[fig/mblock, below=8.5mm of core] (step4) {Шаг 4};
+
+  \begin{scope}[on background layer]
+    \node[fig/mgroup, fit=(step1)(step2)(core)(step4), inner xsep=8pt, inner ysep=9pt] {};
+  \end{scope}
+
+  \draw[fig/accenta] (step1.south) -- (step2.north);
+  \draw[fig/accenta] (step2.south) -- (core.north);
+  \draw[fig/accentb] (core.south) -- (step4.north);
+
+  \node[fig/taga, anchor=west] at ($(step2.east)+(3.5mm,0)$) {Поток A};
+  \node[fig/tagb, anchor=west] at ($(core.east)+(3.5mm,0)$) {Поток B};
+
+  \node[fig/mside, right=7mm of core] (side) {Sidecar};
+  \draw[fig/lookup] (core.east) -- (side.west);
+
+  \node[fig/mnote, below=6mm of step4] {Шаблон для узкой маргинальной схемы. Если текст не помещается без тесноты, рисунок надо оставлять в основном потоке.};
+\end{tikzpicture}
+\end{document}

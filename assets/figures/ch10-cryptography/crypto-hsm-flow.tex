@@ -1,0 +1,69 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    hsm/step/.style={fig/mblock, text width=24mm},
+    hsm/core/.style={fig/mcore, text width=24mm}
+  }
+
+  \node[hsm/step] (terminal) at (0,0) {Терминал};
+  \node[hsm/step, below=5mm of terminal] (acquirer) {Эквайер};
+  \node[hsm/step, below=5mm of acquirer] (network) {Карточная\\сеть};
+  \node[hsm/core, below=5mm of network] (issuer) {Хост\\эмитента};
+  \node[
+    fig/mside,
+    minimum width=13mm,
+    text width=9mm,
+    right=4mm of issuer
+  ] (hsm) {HSM};
+
+  \begin{scope}[on background layer]
+    \node[
+      draw=AccentB!55,
+      line width=0.75pt,
+      densely dashed,
+      rounded corners=4pt,
+      fit=(hsm),
+      inner xsep=5pt,
+      inner ysep=5pt
+    ] {};
+  \end{scope}
+
+  \draw[fig/accenta] (terminal.south) -- (acquirer.north);
+  \draw[fig/accenta] (acquirer.south) -- (network.north);
+  \draw[fig/accenta] (network.south) -- (issuer.north);
+  \draw[fig/accentb] (issuer.east) -- (hsm.west);
+  \draw[fig/accentb] ($(hsm.south)+(0,-0.03)$) .. controls +(0,-0.45) and +(0.45,-0.35) .. ($(issuer.south east)+(0.02,-0.02)$);
+
+  \node[
+    font=\tiny,
+    fill=white,
+    inner xsep=1.5pt,
+    inner ysep=0.5pt,
+    text=AccentA!80!black
+  ] at ($(terminal.south)!0.5!(acquirer.north)+(0.2,0)$) {1. ARQC};
+  \node[
+    font=\tiny,
+    fill=white,
+    inner xsep=1pt,
+    inner ysep=0.5pt,
+    text=AccentB!80!black
+  ] at ($(issuer.east)!0.5!(hsm.west)+(0,2.5mm)$) {2. данные};
+  \node[
+    font=\tiny,
+    fill=white,
+    inner xsep=1pt,
+    inner ysep=0.5pt,
+    text=AccentB!80!black
+  ] at ($(issuer.south east)+(5mm,-4mm)$) {4. ARPC};
+  \node[
+    font=\tiny,
+    text=AccentB!80!black,
+    align=center
+  ] at ($(hsm.south)+(0,-3.5mm)$) {ключи не\\выходят};
+
+  \node[fig/mnote, below=8mm of issuer] {3. HSM деривирует ключ, проверяет ARQC и возвращает ARPC.};
+\end{tikzpicture}
+\end{document}

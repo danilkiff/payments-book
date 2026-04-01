@@ -1,0 +1,21 @@
+\documentclass[tikz,border=2mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[fig/mcore, minimum width=22mm] (tvr) at (0,0) {TVR\\{\tiny результаты}};
+  \node[fig/mdecision, text width=17mm, below=5.5mm of tvr] (denial) {Denial\\$\neq 0$?};
+  \node[fig/mdecision, text width=17mm, below=7mm of denial] (online) {Online\\$\neq 0$?};
+  \node[fig/mblock, minimum width=10mm, minimum height=7mm, inner sep=2pt, anchor=east] (aac) at ($(online.west)+(-2mm,4mm)$) {AAC};
+  \node[fig/mblock, minimum width=10mm, minimum height=7mm, inner sep=2pt, below left=5mm and 0.8mm of online] (arqc) {ARQC};
+  \node[fig/mblock, minimum width=10mm, minimum height=7mm, inner sep=2pt, below right=5mm and 0.8mm of online] (tc) {TC};
+
+  \draw[fig/arrow] (tvr.south) -- (denial.north);
+  \draw[fig/accentb] (denial.south west) -- node[left, font=\tiny, text=AccentB!80!black] {Да} (aac.north east);
+  \draw[fig/arrow] (denial.south) -- node[right, font=\tiny, text=Muted] {Нет} (online.north);
+  \draw[fig/accenta] (online.south west) -- node[left, font=\tiny, text=AccentA!80!black] {Да} (arqc.north);
+  \draw[fig/arrow] (online.south east) -- node[right, font=\tiny, text=Muted] {Нет} (tc.north);
+
+  \node[fig/mnote, text width=22mm, anchor=north west] at ($(arqc.west)+(0,-8mm)$) {AAC = отказ, ARQC = онлайн, TC = офлайн.};
+\end{tikzpicture}
+\end{document}

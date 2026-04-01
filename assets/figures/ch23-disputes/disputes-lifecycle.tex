@@ -1,0 +1,66 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    lane/.style={draw=Ink!18, fill=Soft, rounded corners=4pt, minimum width=26mm, minimum height=7mm, align=center, font=\scriptsize\bfseries},
+    stageband/.style={draw=Ink!12, fill=Soft, rounded corners=4pt},
+    risknote/.style={fig/sidecar, text width=28mm, align=left}
+  }
+
+  \node[lane] (cardholder) at (0,0) {Держатель\\карты};
+  \node[lane] (issuer) at (3.3,0) {Эмитент};
+  \node[lane] (scheme) at (6.6,0) {Схема\\(Visa/MC)};
+  \node[lane] (acquirer) at (9.9,0) {Эквайер};
+  \node[lane] (merchant) at (13.2,0) {Мерчант};
+
+  \foreach \x in {0,3.3,6.6,9.9,13.2} {
+    \draw[Ink!25, densely dashed] (\x,-1.0) -- (\x,-16.6);
+  }
+
+  \begin{scope}[on background layer]
+    \node[stageband, fit={( -1.2,-1.4) (14.6,-4.1)}] {};
+    \node[stageband, fit={( -1.2,-4.5) (14.6,-6.7)}] {};
+    \node[stageband, fit={( -1.2,-7.1) (14.6,-9.3)}] {};
+    \node[stageband, fit={( -1.2,-9.7) (14.6,-11.9)}] {};
+    \node[stageband, fit={( -1.2,-12.3) (14.6,-14.5)}] {};
+  \end{scope}
+
+  \node[font=\bfseries\scriptsize, anchor=west] at (-1.0,-1.8) {1) Inquiry};
+  \draw[fig/accenta] (0,-2.2) -- (3.3,-2.2);
+  \draw[fig/accenta] (3.3,-2.7) -- (6.6,-2.7);
+  \draw[fig/accenta] (6.6,-3.2) -- (9.9,-3.2);
+  \draw[fig/accenta] (9.9,-3.7) -- (13.2,-3.7);
+  \draw[fig/accenta] (13.2,-4.2) -- (9.9,-4.2);
+  \draw[fig/accenta] (9.9,-4.7) -- (3.3,-4.7);
+  \node[font=\tiny, text=Muted, anchor=west] at (14.9,-3.0) {Риск: до chargeback деньги ещё не списаны};
+  \node[font=\tiny, text=Muted, anchor=east] at (-1.3,-3.1) {дни};
+
+  \node[font=\bfseries\scriptsize, anchor=west] at (-1.0,-5.2) {2) First Chargeback};
+  \draw[fig/accentb] (3.3,-5.6) -- (6.6,-5.6);
+  \draw[fig/accentb] (6.6,-6.1) -- (9.9,-6.1);
+  \draw[fig/accenta] (9.9,-6.6) -- (13.2,-6.6);
+  \node[font=\tiny, text=Muted, anchor=west] at (14.9,-6.1) {Риск: временно эквайер / мерчант};
+  \node[font=\tiny, text=Muted, anchor=east] at (-1.3,-6.1) {недели};
+
+  \node[font=\bfseries\scriptsize, anchor=west] at (-1.0,-7.8) {3) Representment};
+  \draw[fig/accenta] (13.2,-8.2) -- (9.9,-8.2);
+  \draw[fig/accenta] (9.9,-8.7) -- (6.6,-8.7);
+  \draw[fig/accenta] (6.6,-9.2) -- (3.3,-9.2);
+  \node[font=\tiny, text=Muted, anchor=west] at (14.9,-8.7) {Риск: зависит от compelling evidence};
+  \node[font=\tiny, text=Muted, anchor=east] at (-1.3,-8.7) {ещё недели};
+
+  \node[font=\bfseries\scriptsize, anchor=west] at (-1.0,-10.4) {4) Pre-arbitration};
+  \draw[fig/accentb] (3.3,-10.9) -- (6.6,-10.9);
+  \draw[fig/accentb] (6.6,-11.4) -- (9.9,-11.4);
+  \node[font=\tiny, text=Muted, anchor=west] at (14.9,-11.1) {Риск: спор снова открыт};
+  \node[font=\tiny, text=Muted, anchor=east] at (-1.3,-11.1) {ещё недели};
+
+  \node[font=\bfseries\scriptsize, anchor=west] at (-1.0,-13.0) {5) Arbitration};
+  \draw[fig/accentb] (6.6,-13.5) -- (9.9,-13.5);
+  \draw[fig/accentb] (6.6,-14.0) -- (3.3,-14.0);
+  \node[font=\tiny, text=Muted, anchor=west] at (14.9,-13.7) {Риск: финальное решение схемы};
+  \node[font=\tiny, text=Muted, anchor=east] at (-1.3,-13.7) {месяцы};
+\end{tikzpicture}
+\end{document}

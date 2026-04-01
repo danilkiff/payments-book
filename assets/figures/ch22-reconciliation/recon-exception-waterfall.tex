@@ -1,0 +1,64 @@
+\documentclass[tikz,border=2mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    stage/.style={
+      fig/mblock,
+      minimum width=24mm,
+      text width=20mm,
+      minimum height=7.4mm,
+      inner sep=2.4pt,
+      font=\tiny
+    },
+    decision/.style={
+      fig/mdecision,
+      text width=17mm,
+      aspect=1.6,
+      inner sep=1.5pt
+    },
+    branch/.style={
+      fig/mside,
+      minimum width=13.5mm,
+      text width=12.5mm,
+      inner sep=1.8pt,
+      font=\fontsize{5.2}{5.8}\selectfont
+    }
+  }
+
+  \node[stage] (incoming) at (0,0) {Клиринговая\\запись};
+  \node[decision, below=4.5mm of incoming] (auth) {Есть auth?};
+  \node[decision, below=8mm of auth] (amount) {Суммы\\совпали?};
+  \node[stage, below=5.5mm of amount] (matched) {Matched\\Settlement};
+
+  \node[branch, right=7mm of auth] (unmatched) {Unmatched};
+  \node[branch, below=3mm of unmatched] (forcepost) {Force post\\voice auth?};
+  \node[fig/mnote, below=2.5mm of forcepost, text width=14mm] (forceout)
+    {Yes: manual review\\No: fraud investigation};
+
+  \node[branch, right=7mm of amount] (mismatch) {Mismatch};
+  \node[branch, below=3mm of mismatch] (rules) {Tips /\\pre-auth\\delta?};
+  \node[fig/mnote, below=2.5mm of rules, text width=14mm] (rulesout)
+    {Yes: auto-approve\\No: manual review};
+
+  \node[fig/mnote, below=4mm of matched] (statuses)
+    {Statuses: matched, unmatched, mismatch, exception.};
+
+  \draw[fig/accenta] (incoming.south) -- (auth.north);
+  \draw[fig/accenta] (auth.south) -- node[right, font=\fontsize{5.2}{5.8}\selectfont, text=AccentA!75!black] {Да} (amount.north);
+  \draw[fig/accenta] (amount.south) -- node[right, font=\fontsize{5.2}{5.8}\selectfont, text=Good!70!black] {Да} (matched.north);
+
+  \draw[fig/arrow] (auth.east) -- node[above, font=\fontsize{5.2}{5.8}\selectfont, text=Warn!70!black] {Нет} (unmatched.west);
+  \draw[fig/arrow] (unmatched.south) -- (forcepost.north);
+  \draw[fig/dashed] (forcepost.south) -- (forceout.north);
+
+  \draw[fig/arrow] (amount.east) -- node[above, font=\fontsize{5.2}{5.8}\selectfont, text=Warn!70!black] {Нет} (mismatch.west);
+  \draw[fig/arrow] (mismatch.south) -- (rules.north);
+  \draw[fig/dashed] (rules.south) -- (rulesout.north);
+
+  \begin{scope}[on background layer]
+    \node[fig/mgroup, fit=(incoming)(auth)(amount)(matched), inner xsep=8pt, inner ysep=8pt] {};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

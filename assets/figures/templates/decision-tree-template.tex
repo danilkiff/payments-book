@@ -1,0 +1,17 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[fig/decision] (root) at (0,0) {Стартовый\\вопрос?};
+  \node[fig/result] (yesa) at (-3.7,-2.7) {Ветка A};
+  \node[fig/decision] (nob) at (3.7,-2.7) {Следующий\\вопрос?};
+  \node[fig/result] (leaf1) at (1.2,-5.2) {Исход 1};
+  \node[fig/result] (leaf2) at (6.2,-5.2) {Исход 2};
+
+  \draw[fig/arrow] (root.south west) -- node[left, font=\scriptsize, text=Muted] {Да} (yesa.north);
+  \draw[fig/arrow] (root.south east) -- node[right, font=\scriptsize, text=Muted] {Нет} (nob.north);
+  \draw[fig/arrow] (nob.south west) -- node[left, font=\scriptsize, text=Muted] {Да} (leaf1.north);
+  \draw[fig/arrow] (nob.south east) -- node[right, font=\scriptsize, text=Muted] {Нет} (leaf2.north);
+\end{tikzpicture}
+\end{document}

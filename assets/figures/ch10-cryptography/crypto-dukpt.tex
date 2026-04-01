@@ -1,0 +1,85 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    duk/root/.style={fig/mcore, text width=24mm},
+    duk/main/.style={fig/mblock, text width=24mm},
+    duk/node/.style={
+      draw=Ink!80,
+      line width=0.45pt,
+      rounded corners=2.5pt,
+      fill=white,
+      minimum width=11mm,
+      minimum height=6.5mm,
+      inner sep=2pt,
+      font=\tiny,
+      align=center
+    },
+    duk/leaf/.style={
+      duk/node,
+      minimum width=10mm,
+      minimum height=5.8mm,
+      fill=Panel!45
+    }
+  }
+
+  \node[duk/root] (bdk) at (0,0) {BDK\\в HSM\\эквайера};
+  \node[
+    draw=AccentB!55,
+    line width=0.75pt,
+    densely dashed,
+    rounded corners=4pt,
+    fit=(bdk),
+    inner xsep=5pt,
+    inner ysep=5pt
+  ] {};
+
+  \node[duk/main, below=5mm of bdk] (ipek) {IPEK\\в терминале};
+  \node[
+    draw=Ink!55,
+    line width=0.75pt,
+    densely dashed,
+    rounded corners=4pt,
+    fit=(ipek),
+    inner xsep=5pt,
+    inner ysep=5pt
+  ] (ipekbox) {};
+
+  \node[duk/node, below left=7mm and 4.5mm of ipek] (n1l) {Node\\0};
+  \node[duk/node, below right=7mm and 4.5mm of ipek] (n1r) {Node\\1};
+
+  \node[duk/leaf, below=4mm of n1l] (k1) {Key 1};
+  \node[duk/leaf, below=3.5mm of k1] (k2) {Key 2};
+  \node[duk/leaf, below=4mm of n1r] (k3) {Key 3};
+  \node[duk/leaf, below=3.5mm of k3] (k4) {Key N};
+
+  \draw[fig/accenta] (bdk.south) -- (ipek.north);
+  \draw[fig/arrow] (ipek.south west) -- (n1l.north);
+  \draw[fig/arrow] (ipek.south east) -- (n1r.north);
+  \draw[fig/arrow] (n1l.south) -- (k1.north);
+  \draw[fig/arrow] (k1.south) -- (k2.north);
+  \draw[fig/arrow] (n1r.south) -- (k3.north);
+  \draw[fig/arrow] (k3.south) -- (k4.north);
+
+  \draw[AccentB, line width=0.9pt] ($(k1.north west)+(-0.05,0.05)$) -- ($(k1.south east)+(0.05,-0.05)$);
+  \draw[AccentB, line width=0.9pt] ($(k1.south west)+(-0.05,-0.05)$) -- ($(k1.north east)+(0.05,0.05)$);
+  \draw[AccentB, line width=0.9pt] ($(k2.north west)+(-0.05,0.05)$) -- ($(k2.south east)+(0.05,-0.05)$);
+  \draw[AccentB, line width=0.9pt] ($(k2.south west)+(-0.05,-0.05)$) -- ($(k2.north east)+(0.05,0.05)$);
+
+  \node[
+    font=\tiny,
+    fill=white,
+    inner xsep=1pt,
+    inner ysep=0.5pt,
+    text=AccentA!80!black
+  ] at ($(bdk.south)!0.5!(ipek.north)+(0.28,0)$) {KSN};
+  \node[
+    font=\tiny,
+    text=AccentB!80!black,
+    align=center
+  ] at ($(ipekbox.south)+(0,-3.5mm)$) {IPEK удаляют\\после init};
+  \node[fig/mnote, below=7mm of k2.south west, anchor=west] at ($(k2.south west)+(-1mm,0)$) {Однонаправленное дерево DUKPT порождает одноразовые transaction keys.};
+\end{tikzpicture}
+\end{document}

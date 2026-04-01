@@ -1,0 +1,27 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[fig/arrow] (0,0) -- (15.4,0);
+  \draw[Ink!35, densely dashed] (5.1,-3.05) -- (5.1,1.15);
+  \draw[Ink!35, densely dashed] (10.2,-3.05) -- (10.2,1.15);
+
+  \node[font=\bfseries\scriptsize, text=Muted] at (2.55,0.85) {Авторизация};
+  \node[font=\bfseries\scriptsize, text=Muted] at (7.65,0.85) {Клиринг};
+  \node[font=\bfseries\scriptsize, text=Muted] at (12.8,0.85) {Settlement};
+
+  \node[anchor=east, font=\bfseries\scriptsize] at (-0.15,-0.7) {Reversal};
+  \node[anchor=east, font=\bfseries\scriptsize] at (-0.15,-1.7) {Void};
+  \node[anchor=east, font=\bfseries\scriptsize] at (-0.15,-2.7) {Refund};
+
+  \draw[Good, line width=5.5pt, line cap=round] (0.7,-0.7) -- (4.85,-0.7);
+  \draw[Warn, line width=5.5pt, line cap=round] (0.7,-1.7) -- (10.0,-1.7);
+  \draw[Bad, line width=5.5pt, line cap=round] (10.35,-2.7) -- (15.1,-2.7);
+  \draw[Bad, -Latex, line width=1.2pt] (15.1,-2.7) -- (15.45,-2.7);
+
+  \node[anchor=west, font=\scriptsize, text=Muted] at (5.35,-0.7) {отменяет hold, мгновенно};
+  \node[anchor=west, font=\scriptsize, text=Muted] at (10.35,-1.7) {убирает из клиринга, часы};
+  \node[anchor=west, font=\scriptsize, text=Muted] at (10.35,-2.25) {новая транзакция, дни};
+\end{tikzpicture}
+\end{document}

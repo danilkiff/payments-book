@@ -1,0 +1,69 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    citbox/.style={
+      fig/result,
+      fill=AccentA!10,
+      draw=AccentA!55,
+      text=Ink,
+      minimum width=35mm
+    },
+    mitbox/.style={
+      fig/result,
+      fill=AccentB!10,
+      draw=AccentB!55,
+      text=Ink,
+      minimum width=35mm
+    },
+    warnbox/.style={
+      fig/sidecar,
+      fill=Bad!8,
+      draw=Bad!40,
+      text width=31mm,
+      align=left
+    }
+  }
+
+  \node[fig/decision, text width=42mm] (root) at (0,0)
+    {Инициирована ли транзакция активным действием клиента прямо сейчас?};
+
+  \node[citbox] (cit) at (-4.4,-2.7) {CIT};
+  \node[mitbox] (mit) at (4.4,-2.7) {MIT};
+
+  \draw[fig/accenta] (root.south west) -- node[left, font=\scriptsize, text=AccentA!80!black] {Да} (cit.north);
+  \draw[fig/accentb] (root.south east) -- node[right, font=\scriptsize, text=AccentB!80!black] {Нет} (mit.north);
+
+  \node[fig/decision, text width=28mm] (cit3ds) at (-4.4,-5.1) {3DS применим?};
+  \node[citbox, minimum width=38mm] (cityes) at (-7.5,-7.9) {3DS обязателен\\или рекомендован};
+  \node[citbox, minimum width=28mm] (citno) at (-1.4,-7.9) {CVV / AVS};
+  \node[citbox, minimum width=38mm] (citntid) at (-4.4,-10.7) {Сохранить NTID};
+
+  \draw[fig/accenta] (cit.south) -- (cit3ds.north);
+  \draw[fig/accenta] (cit3ds.south west) -- node[left, font=\scriptsize, text=AccentA!80!black] {Да} (cityes.north);
+  \draw[fig/accenta] (cit3ds.south east) -- node[right, font=\scriptsize, text=AccentA!80!black] {Нет} (citno.north);
+  \draw[fig/accenta] (cityes.south) -- ($(cityes.south)+(0,-0.55)$) -| (citntid.north);
+  \draw[fig/accenta] (citno.south) -- ($(citno.south)+(0,-0.55)$) -| (citntid.north);
+
+  \node[fig/decision, text width=24mm] (mittype) at (4.4,-5.1) {Тип};
+  \node[mitbox, minimum width=28mm] (recurring) at (0.4,-7.9) {Recurring\\фиксированная\\сумма};
+  \node[mitbox, minimum width=28mm] (installment) at (4.4,-7.9) {Installment\\рассрочка};
+  \node[mitbox, minimum width=28mm] (unscheduled) at (8.4,-7.9) {Unscheduled\\переменная\\сумма};
+  \node[mitbox, minimum width=52mm] (mitreq) at (4.4,-10.7) {Передать NTID из CIT\\+ флаги MIT};
+
+  \draw[fig/accentb] (mit.south) -- (mittype.north);
+  \draw[fig/accentb] (mittype.south) -- ($(mittype.south)+(0,-0.4)$);
+  \draw[fig/accentb] ($(mittype.south)+(0,-0.4)$) -- ($(recurring.north)+(0,0.15)$);
+  \draw[fig/accentb] ($(mittype.south)+(0,-0.4)$) -- (installment.north);
+  \draw[fig/accentb] ($(mittype.south)+(0,-0.4)$) -- ($(unscheduled.north)+(0,0.15)$);
+  \draw[fig/accentb] (recurring.south) -- ($(recurring.south)+(0,-0.5)$) -| (mitreq.north);
+  \draw[fig/accentb] (installment.south) -- (mitreq.north);
+  \draw[fig/accentb] (unscheduled.south) -- ($(unscheduled.south)+(0,-0.5)$) -| (mitreq.north);
+
+  \node[warnbox, anchor=west] (warn) at (7.15,-3.1)
+    {Ошибка: MIT без NTID.\newline Эмитент может отклонить транзакцию или применить SCA-требование.};
+  \draw[fig/dashed] (mit.east) -- (warn.west);
+\end{tikzpicture}
+\end{document}

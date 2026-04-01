@@ -1,0 +1,43 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    keyroot/.style={fig/core, minimum width=36mm, minimum height=11mm},
+    keycard/.style={fig/block, fill=Panel!55, minimum width=33mm, minimum height=10mm},
+    keysession/.style={fig/block, fill=Soft, minimum width=28mm, minimum height=9mm, font=\scriptsize}
+  }
+
+  \node[keyroot] (imk) at (0,0) {Issuer Master Key\\(IMK в HSM)};
+
+  \node[keycard] (card1) at (-6.0,-2.9) {Card Key\\PAN 4561...0892\\PSN 01};
+  \node[keycard] (card2) at (0,-2.9) {Card Key\\PAN 5412...3456\\PSN 01};
+  \node[keycard] (card3) at (6.0,-2.9) {Card Key\\PAN 2200...7890\\PSN 02};
+
+  \node[keysession] (s11) at (-7.8,-5.7) {Session Key\\ATC 0001};
+  \node[keysession] (s12) at (-4.2,-5.7) {Session Key\\ATC 0002};
+  \node[font=\Large, text=Muted] at (-6.0,-5.7) {$\cdots$};
+
+  \node[keysession] (s21) at (-1.8,-5.7) {Session Key\\ATC 0001};
+  \node[keysession] (s22) at (1.8,-5.7) {Session Key\\ATC 0002};
+  \node[font=\Large, text=Muted] at (0,-5.7) {$\cdots$};
+
+  \node[keysession] (s31) at (4.2,-5.7) {Session Key\\ATC 0001};
+  \node[keysession] (s32) at (7.8,-5.7) {Session Key\\ATC 0002};
+  \node[font=\Large, text=Muted] at (6.0,-5.7) {$\cdots$};
+
+  \foreach \card/\shift in {card1/-5.7,card2/0.3,card3/6.3} {
+    \draw[fig/arrow] (imk.south) -- node[sloped, above, font=\scriptsize, text=Muted] {PAN + PSN} (\card.north);
+  }
+
+  \draw[fig/arrow] (card1.south west) -- node[left, font=\scriptsize, text=Muted] {ATC 0001} (s11.north);
+  \draw[fig/arrow] (card1.south east) -- node[right, font=\scriptsize, text=Muted] {ATC 0002} (s12.north);
+  \draw[fig/arrow] (card2.south west) -- node[left, font=\scriptsize, text=Muted] {ATC 0001} (s21.north);
+  \draw[fig/arrow] (card2.south east) -- node[right, font=\scriptsize, text=Muted] {ATC 0002} (s22.north);
+  \draw[fig/arrow] (card3.south west) -- node[left, font=\scriptsize, text=Muted] {ATC 0001} (s31.north);
+  \draw[fig/arrow] (card3.south east) -- node[right, font=\scriptsize, text=Muted] {ATC 0002} (s32.north);
+
+  \node[fig/note, text width=16.8cm] at (0,-7.8) {IMK хранится в HSM, из него по PAN и PSN выводится Card Key, а уже из Card Key по счётчику ATC выводятся одноразовые Session Key для конкретных EMV-операций.};
+\end{tikzpicture}
+\end{document}

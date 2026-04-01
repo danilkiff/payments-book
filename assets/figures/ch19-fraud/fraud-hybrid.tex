@@ -1,0 +1,71 @@
+\documentclass[tikz,border=2mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    stage/.style={
+      fig/mblock,
+      minimum width=24mm,
+      text width=20mm,
+      minimum height=7.4mm,
+      inner sep=2.4pt,
+      font=\tiny
+    },
+    core/.style={
+      fig/mcore,
+      minimum width=24mm,
+      text width=20mm,
+      minimum height=7.8mm,
+      inner sep=2.5pt,
+      font=\tiny
+    },
+    decision/.style={
+      fig/mdecision,
+      text width=16mm,
+      aspect=1.6,
+      inner sep=1.5pt
+    },
+    side/.style={
+      fig/mside,
+      minimum width=13.5mm,
+      text width=12.5mm,
+      inner sep=1.8pt,
+      font=\fontsize{5.2}{5.8}\selectfont
+    }
+  }
+
+  \node[stage] (incoming) at (0,0) {Входящая\\транзакция};
+  \node[stage, below=4mm of incoming] (prescreen) {Pre-screening\\rules};
+  \node[decision, below=4.5mm of prescreen] (obvious) {Явный\\фрод?};
+  \node[core, below=5mm of obvious] (scoring) {Scoring\\engine\\ML};
+  \node[stage, below=4mm of scoring] (score) {Score\\0--1000};
+  \node[stage, below=4mm of score] (postrules) {Post-scoring\\rules};
+
+  \node[side, right=7mm of obvious] (blocka) {Блок};
+  \node[side, right=7mm of scoring] (features) {velocity\\device\\geo\\history};
+  \node[side, right=7mm of postrules, yshift=7.5mm] (blockb) {> 800\\Блок};
+  \node[side, right=7mm of postrules] (verify) {500--800\\3DS};
+  \node[side, right=7mm of postrules, yshift=-7.5mm] (approve) {< 500\\OK};
+  \node[fig/mnote, below=4.5mm of postrules] (feedback)
+    {Approved / verified outcomes feed model retraining.};
+
+  \draw[fig/accenta] (incoming.south) -- (prescreen.north);
+  \draw[fig/accenta] (prescreen.south) -- (obvious.north);
+  \draw[fig/arrow] (obvious.east) -- node[above, font=\fontsize{5.2}{5.8}\selectfont, text=Bad!70!black] {Да} (blocka.west);
+  \draw[fig/accenta] (obvious.south) -- node[right, font=\fontsize{5.2}{5.8}\selectfont, text=AccentA!75!black] {Нет} (scoring.north);
+  \draw[fig/accenta] (scoring.south) -- (score.north);
+  \draw[fig/accenta] (score.south) -- (postrules.north);
+
+  \draw[fig/lookup] (features.west) -- (scoring.east);
+  \draw[fig/arrow] (postrules.east) -- (verify.west);
+  \draw[fig/arrow] (postrules.east) -- ++(2mm,0) |- (blockb.west);
+  \draw[fig/arrow] (postrules.east) -- ++(2mm,0) |- (approve.west);
+  \draw[fig/dashed] (approve.west) .. controls +(-7mm,-2mm) and +(6mm,-2mm) .. (feedback.east);
+  \draw[fig/dashed] (feedback.north west) .. controls +(-3mm,7mm) and +(2mm,-5mm) .. (scoring.south east);
+
+  \begin{scope}[on background layer]
+    \node[fig/mgroup, fit=(incoming)(prescreen)(obvious)(scoring)(score)(postrules), inner xsep=8pt, inner ysep=8pt] {};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

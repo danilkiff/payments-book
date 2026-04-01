@@ -1,0 +1,30 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    stage/.style={fig/block, minimum width=24mm, minimum height=14mm, font=\scriptsize, text width=21mm}
+  }
+
+  \draw[fig/arrow, line width=1.25pt] (0,0) -- node[above, font=\bfseries\scriptsize, text=Muted] {Scope reduction $\rightarrow$} (17.2,0);
+
+  \node[stage, fill=Bad!12, draw=Bad!45] (d) at (1.3,-1.8) {SAQ D\\Всё в периметре};
+  \node[stage, fill=orange!14, draw=orange!55!black] (ds) at (4.2,-1.8) {SAQ D +\\сегментация};
+  \node[stage, fill=Warn!12, draw=Warn!50] (cvt) at (7.1,-1.8) {SAQ C-VT\\Virtual terminal};
+  \node[stage, fill=green!16!yellow, draw=green!45!black] (bip) at (10.0,-1.8) {SAQ B-IP\\IP-терминал};
+  \node[stage, fill=green!11, draw=green!45!black] (aep) at (12.9,-1.8) {SAQ A-EP\\JS / page code};
+  \node[stage, fill=Good!14, draw=Good!45] (a) at (15.8,-1.8) {SAQ A\\redirect / iFrame};
+
+  \foreach \node in {d,ds,cvt,bip,aep,a} {
+    \draw[Ink!25, line width=0.45pt] (\node.north) -- +(0,0.85);
+  }
+
+  \node[fig/note, text width=22mm, anchor=north] at (d.south) {Максимальный scope};
+  \node[fig/note, text width=22mm, anchor=north] at (ds.south) {Сужение через сетевую сегментацию};
+  \node[fig/note, text width=22mm, anchor=north] at (cvt.south) {PSP даёт виртуальный терминал};
+  \node[fig/note, text width=22mm, anchor=north] at (bip.south) {P2PE / платёжный терминал};
+  \node[fig/note, text width=22mm, anchor=north] at (aep.south) {Собственный код ещё влияет на страницу};
+  \node[fig/note, text width=22mm, anchor=north] at (a.south) {Минимальный scope у мерчанта};
+\end{tikzpicture}
+\end{document}

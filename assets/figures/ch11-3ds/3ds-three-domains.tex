@@ -1,0 +1,47 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    domaingroup/.style={
+      draw=Ink!20,
+      line width=0.55pt,
+      rounded corners=7pt,
+      minimum width=4.9cm,
+      minimum height=8.2cm,
+      inner sep=8pt
+    },
+    service/.style={fig/block, minimum width=30mm, minimum height=11mm},
+    holder/.style={fig/sidecar, minimum width=26mm, minimum height=10mm}
+  }
+
+  \node[domaingroup, fill=AccentA!8] (acqdom) at (0,0) {};
+  \node[domaingroup, fill=Panel] (interop) at (6.1,0) {};
+  \node[domaingroup, fill=AccentB!8] (issdom) at (12.2,0) {};
+
+  \node[font=\bfseries, text=AccentA!80!black] at ($(acqdom.north)+(0,-0.55)$) {Acquirer Domain};
+  \node[font=\bfseries, text=Ink] at ($(interop.north)+(0,-0.55)$) {Interoperability Domain};
+  \node[font=\bfseries, text=AccentB!80!black] at ($(issdom.north)+(0,-0.55)$) {Issuer Domain};
+
+  \node[service] (merchant) at ($(acqdom.center)+(0,1.35)$) {Мерчант};
+  \node[service] (server3ds) at ($(acqdom.center)+(0,-0.5)$) {3DS Server};
+
+  \node[service, minimum width=26mm] (ds) at ($(interop.center)+(0,0.4)$) {DS};
+
+  \node[service] (acs) at ($(issdom.center)+(0,1.35)$) {ACS};
+  \node[service] (issuer) at ($(issdom.center)+(0,-0.5)$) {Эмитент};
+  \node[holder] (holder) at ($(issdom.south)+(0,0.95)$) {Браузер / SDK\\держателя};
+
+  \draw[fig/arrow] (merchant.south) -- (server3ds.north);
+  \draw[fig/accenta] (server3ds.east) -- node[above, font=\scriptsize, text=AccentA!80!black] {AReq} (ds.west);
+  \draw[fig/accenta] (ds.east) -- node[above, font=\scriptsize, text=AccentA!80!black] {AReq} (acs.west);
+  \draw[fig/accentb] ($(acs.west)+(0,-0.25)$) -- node[below, font=\scriptsize, text=AccentB!80!black] {ARes} ($(ds.east)+(0,-0.25)$);
+  \draw[fig/accentb] ($(ds.west)+(0,-0.25)$) -- node[below, font=\scriptsize, text=AccentB!80!black] {ARes} ($(server3ds.east)+(0,-0.25)$);
+
+  \draw[fig/lookup] (acs.south) -- node[right, font=\scriptsize, text=Muted] {risk / decision} (issuer.north);
+  \draw[fig/dashed] (acs.south) -- node[right, font=\scriptsize, text=Muted] {CReq / CRes} (holder.north);
+
+  \node[fig/note, text width=15.5cm] at (6.1,-5.35) {DS маршрутизирует запросы между доменами, а ACS на стороне эмитента принимает решение по аутентификации. При challenge дополнительно включается браузер или SDK держателя.};
+\end{tikzpicture}
+\end{document}

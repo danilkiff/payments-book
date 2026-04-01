@@ -1,0 +1,59 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    hard/.style={fig/result, fill=Bad!10, draw=Bad!45, minimum width=32mm},
+    tech/.style={fig/result, fill=AccentA!10, draw=AccentA!45, minimum width=32mm},
+    softf/.style={fig/result, fill=Warn!12, draw=Warn!45, minimum width=32mm},
+    softb/.style={fig/result, fill=AccentB!10, draw=AccentB!45, minimum width=32mm},
+    branchnote/.style={
+      fig/sidecar,
+      text width=24mm,
+      align=left
+    }
+  }
+
+  \node[fig/decision, text width=34mm] (root) at (0,0) {Получен\\response code};
+
+  \node[hard] (hard) at (-9.0,-2.7) {Hard decline\\04, 14, 41, 43, 54};
+  \node[tech] (tech) at (-3.0,-2.7) {Технический\\91, 96, timeout};
+  \node[softf] (softf) at (3.0,-2.7) {Soft финансовый\\51, 61, 65};
+  \node[softb] (softb) at (9.0,-2.7) {Soft поведенческий\\05};
+
+  \draw[fig/arrow] (root.south) -- ($(root.south)+(0,-0.4)$);
+  \draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (hard.north);
+  \draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (tech.north);
+  \draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (softf.north);
+  \draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (softb.north);
+
+  \node[hard, minimum width=35mm] (hardstop) at (-9.0,-5.6) {Не повторять.\\Уведомить клиента};
+  \draw[fig/arrow] (hard.south) -- (hardstop.north);
+  \node[branchnote, anchor=west] at (-7.1,-5.6) {Visa Retry Rules /\\MC Excessive Attempts};
+
+  \node[tech, minimum width=35mm] (tech1) at (-3.0,-5.4) {1 немедленный\\retry};
+  \node[tech, minimum width=35mm] (tech2) at (-3.0,-8.1) {Если снова ошибка:\\отложить 1 ч,\newline затем по расписанию};
+  \draw[fig/arrow] (tech.south) -- (tech1.north);
+  \draw[fig/arrow] (tech1.south) -- (tech2.north);
+  \node[branchnote, anchor=west] at (-1.1,-8.1) {Visa Retry Rules /\\MC Excessive Attempts};
+
+  \node[softf, minimum width=35mm] (softf1) at (3.0,-5.4) {Ждать 24 ч};
+  \node[softf, minimum width=35mm] (softf2) at (3.0,-8.1) {Retry};
+  \node[softf, minimum width=35mm] (softf3) at (3.0,-10.8) {Если снова 51:\\ждать 48--72 ч};
+  \node[softf, minimum width=35mm] (softf4) at (3.0,-13.5) {Лимит попыток:\\соблюдать правила схемы};
+  \draw[fig/arrow] (softf.south) -- (softf1.north);
+  \draw[fig/arrow] (softf1.south) -- (softf2.north);
+  \draw[fig/arrow] (softf2.south) -- (softf3.north);
+  \draw[fig/arrow] (softf3.south) -- (softf4.north);
+  \node[branchnote, anchor=west] at (4.95,-13.5) {Visa Retry Rules /\\MC Excessive Attempts};
+
+  \node[softb, minimum width=39mm] (softb1) at (9.0,-5.4) {Другой канал:\\токен вместо PAN,\newline другой эквайер};
+  \node[softb, minimum width=39mm] (softb2) at (9.0,-8.5) {Если снова 05:\\ждать 24 ч};
+  \node[softb, minimum width=39mm] (softb3) at (9.0,-11.6) {Лимит попыток:\\соблюдать правила схемы};
+  \draw[fig/arrow] (softb.south) -- (softb1.north);
+  \draw[fig/arrow] (softb1.south) -- (softb2.north);
+  \draw[fig/arrow] (softb2.south) -- (softb3.north);
+  \node[branchnote, anchor=west] at (11.15,-11.6) {Visa Retry Rules /\\MC Excessive Attempts};
+\end{tikzpicture}
+\end{document}

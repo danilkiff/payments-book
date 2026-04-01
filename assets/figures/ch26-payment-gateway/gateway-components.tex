@@ -1,0 +1,65 @@
+\documentclass[tikz,border=2mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    stage/.style={
+      fig/mblock,
+      minimum width=24mm,
+      text width=20mm,
+      minimum height=7.2mm,
+      inner sep=2.4pt,
+      font=\tiny
+    },
+    rail/.style={
+      fig/mcore,
+      minimum width=24mm,
+      text width=20mm,
+      minimum height=7.2mm,
+      inner sep=2.4pt,
+      font=\tiny
+    },
+    inner/.style={
+      draw=Ink!60,
+      line width=0.45pt,
+      rounded corners=2.5pt,
+      fill=white,
+      minimum width=18mm,
+      minimum height=5.2mm,
+      inner sep=2pt,
+      align=center,
+      font=\fontsize{5.4}{6.0}\selectfont,
+      text=Ink
+    }
+  }
+
+  \node[stage] (merchant) at (0,0) {Запрос\\мерчанта\\HTTPS / JSON};
+
+  \node[inner, below=4mm of merchant] (api) {API gateway};
+  \node[inner, below=2.4mm of api] (risk) {Risk engine};
+  \node[inner, below=2.4mm of risk] (routing) {Routing engine};
+  \node[inner, below=2.4mm of routing] (vault) {Token vault};
+  \node[inner, below=2.4mm of vault] (proxy) {Auth proxy};
+
+  \node[rail, below=5mm of proxy] (acquirer) {Банк-\\эквайер};
+  \node[rail, below=3mm of acquirer] (network) {Карточная\\сеть};
+  \node[rail, below=3mm of network] (issuer) {Эмитент};
+  \node[fig/mnote, below=4mm of issuer] (reply)
+    {Reply goes back up the same path to the merchant.};
+
+  \begin{scope}[on background layer]
+    \node[fig/mgroup, fit=(api)(risk)(routing)(vault)(proxy), inner xsep=7pt, inner ysep=7pt] {};
+  \end{scope}
+
+  \draw[fig/accenta] (merchant.south) -- (api.north);
+  \draw[fig/accenta] (api.south) -- (risk.north);
+  \draw[fig/accenta] (risk.south) -- (routing.north);
+  \draw[fig/accenta] (routing.south) -- (vault.north);
+  \draw[fig/accenta] (vault.south) -- (proxy.north);
+  \draw[fig/accenta] (proxy.south) -- (acquirer.north);
+  \draw[fig/accenta] (acquirer.south) -- (network.north);
+  \draw[fig/accenta] (network.south) -- (issuer.north);
+  \draw[fig/dashed] ($(issuer.west)+(-3.5mm,0)$) .. controls +(-4mm,16mm) and +(-4mm,-16mm) .. ($(merchant.west)+(-3.5mm,0)$);
+\end{tikzpicture}
+\end{document}

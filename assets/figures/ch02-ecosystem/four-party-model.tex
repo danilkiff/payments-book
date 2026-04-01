@@ -1,0 +1,22 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[fig/block, minimum width=37mm, minimum height=12mm] (holder) at (0,3.1) {Держатель карты};
+  \node[fig/block, minimum width=33mm, minimum height=12mm] (merchant) at (8.8,3.1) {Мерчант};
+  \node[fig/block, minimum width=31mm, minimum height=12mm] (issuer) at (0,0) {Эмитент};
+  \node[fig/core, minimum width=36mm, minimum height=14mm] (network) at (4.4,0) {Карточная сеть};
+  \node[fig/block, minimum width=31mm, minimum height=12mm] (acquirer) at (8.8,0) {Эквайер};
+
+  \begin{scope}[on background layer]
+    \node[fig/group, fit=(holder)(merchant)(issuer)(network)(acquirer), inner xsep=12pt, inner ysep=12pt] {};
+  \end{scope}
+
+  \draw[fig/arrow, <->] (holder.east) -- node[above, font=\scriptsize, text=Muted] {покупка} (merchant.west);
+  \draw[fig/arrow, <->] (holder.south) -- node[left, font=\scriptsize, text=Muted, align=center] {карта,\\счёт} (issuer.north);
+  \draw[fig/arrow, <->] (merchant.south) -- node[right, font=\scriptsize, text=Muted, align=center] {терминал,\\договор} (acquirer.north);
+  \draw[fig/accenta, <->] (issuer.east) -- node[above, font=\scriptsize, text=AccentA!80!black, align=center] {правила, маршрутизация,\\клиринг, settlement} (network.west);
+  \draw[fig/accenta, <->] (network.east) -- node[above, font=\scriptsize, text=AccentA!80!black, align=center] {правила, маршрутизация,\\клиринг, settlement} (acquirer.west);
+\end{tikzpicture}
+\end{document}

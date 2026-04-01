@@ -1,0 +1,28 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \tikzset{
+    stack/layer/.style={fig/mblock, text width=24mm},
+    stack/core/.style={fig/mcore, text width=24mm}
+  }
+
+  \node[stack/layer, fill=Soft] (physical) at (0,0) {\textbf{Физический}\\13,56 МГц\\ISO 14443-1/2\\Type A / B};
+  \node[stack/layer, below=5mm of physical] (link) {\textbf{Канальный}\\ISO 14443-3\\антиколлизия};
+  \node[stack/core, below=5mm of link] (transport) {\textbf{Транспорт}\\ISO 14443-4\\T=CL};
+  \node[stack/core, fill=AccentA!8, below=6mm of transport] (application) {\textbf{Приложение}\\EMV Contactless\\Kernel\\qVSDC / M\slash Chip / Мир};
+
+  \draw[fig/accenta] (physical.south) -- (link.north);
+  \draw[fig/accenta] (link.south) -- (transport.north);
+  \draw[fig/accenta] (transport.south) -- (application.north);
+
+  \node[
+    font=\tiny,
+    fill=white,
+    inner xsep=1.5pt,
+    inner ysep=0.5pt,
+    text=AccentA!80!black
+  ] at ($(transport.south)!0.5!(application.north)+(0.2,0)$) {APDU};
+\end{tikzpicture}
+\end{document}

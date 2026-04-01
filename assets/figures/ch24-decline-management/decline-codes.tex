@@ -1,0 +1,40 @@
+\documentclass[varwidth=21cm,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\scriptsize
+\renewcommand{\arraystretch}{1.22}
+
+\begin{tabularx}{19.7cm}{
+  >{\raggedright\arraybackslash}p{6.25cm}
+  >{\raggedright\arraybackslash}p{6.25cm}
+  >{\raggedright\arraybackslash}p{6.25cm}
+}
+\cellcolor{Bad!16}\textbf{Hard decline} &
+\cellcolor{Warn!18}\textbf{Soft decline} &
+\cellcolor{AccentA!14}\textbf{Технический / смена канала} \\
+
+\cellcolor{Bad!4}\textbf{04 Pick Up}\newline изъять карту; не повторять
+\newline\textbf{41 Lost Card}\newline карта утеряна; не повторять
+\newline\textbf{43 Stolen}\newline карта украдена; не повторять
+\newline\textbf{54 Expired Card}\newline карта недействительна; запросить новые реквизиты
+\newline\textbf{14 Invalid Account}\newline ошибочный PAN; проверить данные &
+\cellcolor{Warn!5}\textbf{51 Insufficient Funds}\newline ждать 24 ч, затем retry
+\newline\textbf{61 Exceeds Limit}\newline повторять с задержкой
+\newline\textbf{65 Freq. Limit}\newline дождаться сброса лимита
+\newline\textbf{05 Do Not Honor}\newline ограниченный retry по правилам схем &
+\cellcolor{AccentA!5}\textbf{91 Issuer Unavailable}\newline 1 немедленный retry
+\newline\textbf{96 System Malfunction}\newline отложить на 1 ч, затем по расписанию
+\newline\textbf{01 Refer}\newline сменить канал или запросить контакт с банком
+\newline\textbf{timeout}\newline трактовать как технический отказ \\
+\end{tabularx}
+
+\vspace{4mm}
+
+\fcolorbox{Ink!18}{Soft}{%
+  \parbox{19.1cm}{%
+    \textcolor{Muted}{Полный справочник response codes и актуальные scheme-specific оговорки вынесены в онлайн-приложение.
+    Эта таблица нужна для первичной классификации: что не повторять никогда, что повторять с задержкой, а что лечить сменой канала или маршрута.}%
+  }%
+}
+\end{document}

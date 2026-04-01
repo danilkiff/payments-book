@@ -1,0 +1,25 @@
+\documentclass[tikz,border=4mm]{standalone}
+\input{../templates/figure-preamble}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[font=\bfseries, text=AccentA!80!black] at (-5.1,0.3) {VTS (Visa)};
+  \node[font=\bfseries, text=AccentB!80!black] at (0,0.3) {MDES (Mastercard)};
+  \node[font=\bfseries, text=Good!55!black] at (5.1,0.3) {TSP НСПК (Мир)};
+
+  \foreach \x/\fillc/\titlea/\titleb/\titlec in {
+    -5.1/AccentA!8/{Token Requestor\\Interface}/{Token Vault}/{Issuer Interface},
+    0/AccentB!8/{Token Requestor\\Interface}/{Token Vault}/{Issuer Interface},
+    5.1/Good!10/{Token Requestor\\Interface}/{Token Vault}/{Issuer Interface}
+  } {
+    \node[draw=Ink!88,line width=0.55pt,rounded corners=3pt,fill=\fillc,minimum width=3.7cm,minimum height=1.05cm,align=center] at (\x,-1.0) {\titlea};
+    \node[draw=Ink!88,line width=0.55pt,rounded corners=3pt,fill=Panel,minimum width=3.7cm,minimum height=1.05cm,align=center] at (\x,-2.6) {\titleb};
+    \node[draw=Ink!88,line width=0.55pt,rounded corners=3pt,fill=Soft,minimum width=3.7cm,minimum height=1.05cm,align=center] at (\x,-4.2) {\titlec};
+  }
+
+  \draw[fig/dashed] (-2.6,-1.0) -- (-2.6,-4.2);
+  \draw[fig/dashed] (2.6,-1.0) -- (2.6,-4.2);
+
+  \node[fig/note, text width=12.8cm, align=center] at (0,-6.0) {Каждая сеть управляет своим Token Vault независимо.};
+\end{tikzpicture}
+\end{document}
