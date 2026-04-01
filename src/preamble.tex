@@ -1,9 +1,6 @@
-% Project preamble for a plain scrbook/KOMA build.
-% XeTeX in this environment does not resolve the TeX Live Libertinus family
-% names reliably, so we load the font stack explicitly by file.
+% Project preamble for a near-vanilla scrbook/KOMA build.
 
 \usepackage{fontspec}
-\usepackage[dvipsnames,table]{xcolor}
 \usepackage{amssymb}
 \usepackage{unicode-math}
 \usepackage{microtype}
@@ -33,55 +30,17 @@
 
 \usepackage{newunicodechar}
 \usepackage{graphicx}
-\usepackage{longtable}
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{booktabs}
-\usepackage{pgf-umlsd}
-\usepackage{tikz}
-\usepackage[most]{tcolorbox}
-\usepackage{placeins}
-\usepackage{needspace}
-\usepackage{xspace}
 \usepackage{csquotes}
-\usepackage{pdflscape}
 \usepackage[backend=biber,style=numeric-comp,sorting=nyt]{biblatex}
-\usepackage{bookmark}
 \usepackage{hyperref}
-\usepackage[automark]{scrlayer-scrpage}
-
-\usetikzlibrary{arrows.meta, backgrounds, fit, positioning, shapes.geometric, svg.path}
-
-\clearpairofpagestyles
-\automark[section]{chapter}
-\ihead{\headmark}
-\ohead{\pagemark}
-\ihead*{\headmark}
-\ohead*{\pagemark}
-\renewcommand*\chaptermarkformat{\thechapter\autodot\enskip}
-\renewcommand*\sectionmarkformat{\thesection\autodot\enskip}
-\pagestyle{scrheadings}
-\setkomafont{pageheadfoot}{\normalfont\small}
-\setkomafont{disposition}{\normalfont\bfseries}
-\setkomafont{chapter}{\normalfont\bfseries\Huge}
-\setkomafont{section}{\normalfont\bfseries\Large}
-\setkomafont{subsection}{\normalfont\bfseries\large}
-\setkomafont{part}{\normalfont\bfseries\Huge}
-\renewcommand*\chapterformat{%
-  \mbox{\fontsize{38}{42}\selectfont\thechapter\autodot\enskip}%
-}
-\raggedbottom
-\setlength{\emergencystretch}{1.5em}
 
 \hypersetup{
   pdftitle={Платёжный стек},
   pdfauthor={},
-  colorlinks=true,
-  linkcolor=RoyalBlue,
-  citecolor=ForestGreen,
-  urlcolor=Maroon,
-  bookmarksopen=true,
+  hidelinks,
 }
 
 \setcounter{tocdepth}{1}
-\renewcommand{\arraystretch}{1.25}
