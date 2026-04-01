@@ -33,11 +33,12 @@ V.I.P. System для авторизационных сервисов, а \textbf
 к пропускной способности клиринговой инфраструктуры. Архитектурное
 разделение позволяет масштабировать каждую часть независимо.
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguretex[width=\linewidth]{assets/figures/ch13-visa/visanet-base-i-ii}
-  \caption{Двухконтурная архитектура VisaNet: BASE I и BASE II.}~\label{fig:visanet-base-i-ii}
-\end{figure}
+% TODO_ILLUSTRATE: Двухконтурная архитектура VisaNet: BASE I и BASE II.
+%\begin{figure}[tbp]
+%  \centering
+%  \includefiguretex[width=\linewidth]{assets/figures/ch13-visa/visanet-base-i-ii}
+%  \caption{Двухконтурная архитектура VisaNet: BASE I и BASE II.}~\label{fig:visanet-base-i-ii}
+%\end{figure}
 
 Для разработчика платёжного шлюза практическое следствие таково:
 авторизационный запрос уходит по ISO~8583 в реальном времени,
@@ -217,11 +218,12 @@ OCT)} -- зачисление на счёт, связанный с картой 
 начинается ответственность конкретного участника программы. Поэтому
 Visa Direct -- самостоятельный операционный слой внутри правил сети.
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguretex[width=\linewidth]{assets/figures/ch13-visa/visa-direct-flow}
-  \caption{Типовой поток Visa Direct: AFT и OCT.}~\label{fig:visa-direct-flow}
-\end{figure}
+% TODO_ILLUSTRATE: Типовой поток Visa Direct: AFT и OCT.
+%\begin{figure}[tbp]
+%  \centering
+%  \includefiguretex[width=\linewidth]{assets/figures/ch13-visa/visa-direct-flow}
+%  \caption{Типовой поток Visa Direct: AFT и OCT.}~\label{fig:visa-direct-flow}
+%\end{figure}
 
 Visa Direct расширяет карточную сеть в сторону исходящих выплат.
 Формат сообщений здесь важен, но ещё важнее эксплуатационная рамка:

@@ -60,11 +60,11 @@ Unavailable и \texttt{96} -- System Malfunction говорят скорее о 
 дополнительное действие со стороны держателя либо
 эмитента~\cite{visa-core-rules}.
 
-\begin{figure}[tbp]
+\begin{table}[tbp]
   \centering
   \includefiguretex[width=\linewidth]{assets/figures/ch25-decline-management/decline-codes}
   \caption{Рабочая классификация кодов ответа по следующему действию.}~\label{fig:decline-codes}
-\end{figure}
+\end{table}
 
 Вывод из этой схемы простой: сначала нужно определить обратимость
 отказа, и только потом решать, стоит ли повторять попытку. Код ответа
@@ -163,11 +163,12 @@ strategies~\cite{mc-bill-pay-solutions}.
 не равен простому повтору
 PAN-запроса~\cite{visa-vts,visa-tokenization-security,mc-acquirers-psps,mc-pop}.
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguretex[width=\linewidth]{assets/figures/ch25-decline-management/decline-retry-tree}
-  \caption{Рабочая схема действий после отказа в авторизации.}~\label{fig:decline-retry-tree}
-\end{figure}
+% TODO_ILLUSTRATE: Рабочая схема действий после отказа в авторизации.
+%\begin{figure}[tbp]
+%  \centering
+%  \includefiguretex[width=\linewidth]{assets/figures/ch25-decline-management/decline-retry-tree}
+%  \caption{Рабочая схема действий после отказа в авторизации.}~\label{fig:decline-retry-tree}
+%\end{figure}
 
 Хорошая логика повторов уменьшает число бессмысленных попыток, а
 снижение самих отказов -- отдельная задача. Смешивать эти два

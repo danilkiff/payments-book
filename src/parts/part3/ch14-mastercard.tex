@@ -24,11 +24,12 @@ Authorization Platform, системой Global Clearing Management System
 и разные задачи разведены по специализированным подсистемам
 с собственными форматами и жизненными циклами.
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguretex[width=\linewidth]{assets/figures/ch14-mastercard/banknet-topology}
-  \caption{Топология логических подсистем сетевого периметра Mastercard.}~\label{fig:banknet-topology}
-\end{figure}
+% TODO_ILLUSTRATE: Топология логических подсистем сетевого периметра Mastercard.
+%\begin{figure}[tbp]
+%  \centering
+%  \includefiguretex[width=\linewidth]{assets/figures/ch14-mastercard/banknet-topology}
+%  \caption{Топология логических подсистем сетевого периметра Mastercard.}~\label{fig:banknet-topology}
+%\end{figure}
 
 Такое описание упрощает разговор об архитектуре, но не отменяет
 различий между потоками. Авторизация,
@@ -97,11 +98,21 @@ Mastercard; публичные материалы сети надёжно
 подтверждают сам формат IPM и роль GCMS, но не дают полного атласа
 полей для построчного разбора.
 
-\begin{figure}[tbp]
+\begin{table}[tbp]
   \centering
-  \includefiguretex[width=.45\textwidth]{assets/figures/ch14-mastercard/mc-ipm-structure}
   \caption{Структура IPM-обмена Mastercard.}~\label{fig:mc-ipm-structure}
-\end{figure}
+  \begin{tabular}{@{}ll@{}}
+    \toprule
+    \textbf{Уровень}              & \textbf{Описание}                                          \\
+    \midrule
+    IPM-файл                      & Контейнер клирингового обмена                              \\
+    Клиринговая запись            & Единица обмена внутри файла                                \\
+    Message header                & Служебный заголовок записи                                 \\
+    ISO 8583 data elements        & Элементы данных транзакции                                 \\
+    Fees / adjustments            & Комиссии и корректировки                                   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 Одна деталь из публичных правил особенно важна для реальной
 эксплуатации. Код рекомендации мерчанту (Merchant Advice Code, MAC)

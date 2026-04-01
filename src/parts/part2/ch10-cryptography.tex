@@ -163,11 +163,12 @@ ARPC, верификация PIN, когда PIN-блок расшифровыв
 между зонами безопасности, генерация и проверка CVV/CVV2,
 подготовка ключей при персонализации карт и вычисление MAC
 для защиты ISO~8583-сообщений.
-\begin{figure}[tbp]
-  \centering
-  \includefiguretex[width=.45\textwidth]{assets/figures/ch10-cryptography/crypto-hsm-flow}
-  \caption{Место HSM в авторизационном потоке.}~\label{fig:crypto-hsm-flow}
-\end{figure}
+% TODO_ILLUSTRATE: Место HSM в авторизационном потоке.
+%\begin{figure}[tbp]
+%  \centering
+%  \includefiguretex[width=.45\textwidth]{assets/figures/ch10-cryptography/crypto-hsm-flow}
+%  \caption{Место HSM в авторизационном потоке.}~\label{fig:crypto-hsm-flow}
+%\end{figure}
 
 В реальной инфраструктуре HSM почти никогда не стоит в системе
 в одиночку: его включают в отказоустойчивый пул, который обслуживает
@@ -209,11 +210,12 @@ ARPC, верификация PIN, когда PIN-блок расшифровыв
     транзакции и используется для вычисления криптограммы.
 \end{enumerate}
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguretex[width=\linewidth]{assets/figures/ch10-cryptography/crypto-key-hierarchy}
-  \caption{Иерархия ключей EMV от мастер-ключа до сессионного ключа.}~\label{fig:crypto-key-hierarchy}
-\end{figure}
+% TODO_ILLUSTRATE: Иерархия ключей EMV от мастер-ключа до сессионного ключа.
+%\begin{figure}[tbp]
+%  \centering
+%  \includefiguretex[width=\linewidth]{assets/figures/ch10-cryptography/crypto-key-hierarchy}
+%  \caption{Иерархия ключей EMV от мастер-ключа до сессионного ключа.}~\label{fig:crypto-key-hierarchy}
+%\end{figure}
 
 Деривация работает как односторонняя функция: зная мастер-ключ,
 можно вычислить ключ любой карты; зная ключ карты, можно вычислить
@@ -265,11 +267,12 @@ Base Derivation Key (BDK) порождает уникальные начальн
     применяется.
 \end{enumerate}
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguretex[width=.45\textwidth]{assets/figures/ch10-cryptography/crypto-dukpt}
-  \caption{Схема деривации DUKPT.}~\label{fig:crypto-dukpt}
-\end{figure}
+% TODO_ILLUSTRATE: Схема деривации DUKPT.
+%\begin{figure}[tbp]
+%  \centering
+%  \includefiguretex[width=.45\textwidth]{assets/figures/ch10-cryptography/crypto-dukpt}
+%  \caption{Схема деривации DUKPT.}~\label{fig:crypto-dukpt}
+%\end{figure}
 
 Дерево деривации DUKPT устроено так, что
 каждый транзакционный ключ порождается из промежуточных узлов
