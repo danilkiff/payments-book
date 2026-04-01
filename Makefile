@@ -14,6 +14,11 @@ pdf: ## Основная сборка
 watch: ## Инкрементальная сборка с авто-перекомпиляцией при изменении файлов
 	latexmk -r .latexmkrc -pvc $(MAIN)
 
+verify: pdf ## Собрать и показать статус
+	@grep 'Output written' build/aux/main.log | sed 's/.*(\([0-9]*\) pages.*/Pages: \1/'
+	@printf "Errors: "; grep -c '^!' build/aux/main.log || true
+	@printf "Todo items: "; grep -roc '\\todo\(fig\|cite\|check\)' src/parts/ | awk -F: '{s+=$$2} END {print s}'
+
 clean: ## Удалить промежуточные файлы (оставить PDF)
 	latexmk -r .latexmkrc -c $(MAIN)
 	@rm -rf $(BUILD)/aux
