@@ -42,11 +42,33 @@
 \renewcommand{\eg}{т.е.\xspace}
 \providecommand{\cf}{ср.\xspace}
 
-\NewDocumentEnvironment{chaptersummary}{}{%
+\newsavebox{\chaptersummarybox}
+\newlength{\chaptersummaryfullwidth}
+\newlength{\chaptersummaryneededspace}
+
+\NewDocumentEnvironment{chaptersummary}{+b}{%
   \FloatBarrier
-  \Needspace{12\baselineskip}
-  \begin{widepar}
-  \section*{Итоги главы}
-}{%
-  \end{widepar}
-}
+  \par
+  \begingroup
+  \setlength{\chaptersummaryfullwidth}{\dimexpr\textwidth+\marginparwidth+\marginparsep\relax}
+  \sbox{\chaptersummarybox}{%
+    \begin{minipage}{\chaptersummaryfullwidth}
+      #1
+    \end{minipage}%
+  }%
+  \setlength{\chaptersummaryneededspace}{%
+    \dimexpr\ht\chaptersummarybox+\dp\chaptersummarybox+4\baselineskip\relax
+  }%
+  \ifdim\chaptersummaryneededspace>\textheight
+    \section*{Итоги главы}
+    #1
+  \else
+    \Needspace{\chaptersummaryneededspace}
+    \begin{widepar}
+    \section*{Итоги главы}
+    \usebox{\chaptersummarybox}
+    \end{widepar}
+  \fi
+  \par
+  \endgroup
+}{}
