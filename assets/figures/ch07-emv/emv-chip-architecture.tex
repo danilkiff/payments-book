@@ -1,21 +1,21 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-  \node[fig/mblock, minimum width=22mm] (rom) at (0,0) {ROM\\{\tiny ОС}};
-  \node[fig/mcore, minimum width=22mm, below=5mm of rom] (cpu) {CPU};
-  \node[fig/mblock, minimum width=22mm, below=5mm of cpu] (ram) {RAM\\{\tiny рабочая}};
-  \node[fig/mblock, minimum width=22mm, below=5mm of ram] (eeprom) {EEPROM / Flash\\{\tiny ключи, счётчики}};
-  \node[fig/mside, minimum width=12mm, right=3mm of cpu] (crypto) {Crypto\\coproc.};
-  \node[fig/mblock, minimum width=22mm, below=5mm of eeprom] (io) {I/O interface};
+	\node[fig/mblock, minimum width=22mm] (rom) at (0,0) {ROM\\{\tiny ОС}};
+	\node[fig/mcore, minimum width=22mm, below=5mm of rom] (cpu) {CPU};
+	\node[fig/mblock, minimum width=22mm, below=5mm of cpu] (ram) {RAM\\{\tiny рабочая}};
+	\node[fig/mblock, minimum width=22mm, below=5mm of ram] (eeprom) {EEPROM / Flash\\{\tiny ключи, счётчики}};
+	\node[fig/mside, minimum width=12mm, right=3mm of cpu] (crypto) {Crypto\\coproc.};
+	\node[fig/mblock, minimum width=22mm, below=5mm of eeprom] (io) {I/O interface};
 
-  \begin{scope}[on background layer]
-    \node[fig/mgroup, fit=(rom)(cpu)(ram)(eeprom)(crypto)(io), inner xsep=7pt, inner ysep=8pt] {};
-  \end{scope}
+	\begin{scope}[on background layer]
+		\node[fig/mgroup, fit=(rom)(cpu)(ram)(eeprom)(crypto)(io), inner xsep=7pt, inner ysep=8pt] {};
+	\end{scope}
 
-  \draw[fig/lookup] (rom.south) -- (cpu.north);
-  \draw[fig/lookup] (cpu.south) -- (ram.north);
-  \draw[fig/lookup] (ram.south) -- (eeprom.north);
-  \draw[fig/lookup] (eeprom.south) -- (io.north);
-  \draw[fig/lookup] (cpu.east) -- (crypto.west);
-  \draw[fig/accenta] (io.south) -- ++(0,-5mm);
+	\draw[fig/lookup] (rom.south) -- (cpu.north);
+	\draw[fig/lookup] (cpu.south) -- (ram.north);
+	\draw[fig/lookup] (ram.south) -- (eeprom.north);
+	\draw[fig/lookup] (eeprom.south) -- (io.north);
+	\draw[fig/lookup] (cpu.east) -- (crypto.west);
+	\draw[fig/accenta] (io.south) -- ++(0,-5mm);
 
-  \node[fig/mnote, anchor=north west] at ($(io.west)+(0,-8mm)$) {Контактная площадка ISO 7816};
+	\node[fig/mnote, anchor=north west] at ($(io.west)+(0,-8mm)$) {Контактная площадка ISO 7816};
 \end{tikzpicture}

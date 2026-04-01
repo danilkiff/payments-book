@@ -1,46 +1,46 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-  \tikzset{
-    lifeline/.style={draw=Ink!35, line width=0.45pt, densely dashed},
-    headvone/.style={fig/block, fill=Soft, minimum width=20mm, minimum height=8mm, font=\scriptsize},
-    headvtwo/.style={fig/block, fill=Panel, minimum width=22mm, minimum height=8mm, font=\scriptsize},
-    msgone/.style={-Latex, line width=0.95pt, draw=Ink!65},
-    msgtwo/.style={-Latex, line width=1.15pt, draw=AccentA},
-    chall/.style={-Latex, line width=1.0pt, draw=AccentB}
-  }
+	\tikzset{
+		lifeline/.style={draw=Ink!35, line width=0.45pt, densely dashed},
+		headvone/.style={fig/block, fill=Soft, minimum width=20mm, minimum height=8mm, font=\scriptsize},
+		headvtwo/.style={fig/block, fill=Panel, minimum width=22mm, minimum height=8mm, font=\scriptsize},
+		msgone/.style={-Latex, line width=0.95pt, draw=Ink!65},
+		msgtwo/.style={-Latex, line width=1.15pt, draw=AccentA},
+		chall/.style={-Latex, line width=1.0pt, draw=AccentB}
+	}
 
-  \node[font=\bfseries, text=Muted] at (3.6,0) {3DS v1};
-  \node[font=\bfseries, text=AccentA!85!black] at (12.6,0) {3DS v2};
+	\node[font=\bfseries, text=Muted] at (3.6,0) {3DS v1};
+	\node[font=\bfseries, text=AccentA!85!black] at (12.6,0) {3DS v2};
 
-  \foreach \x/\name in {0.5/Держатель,2.8/Мерчант,5.1/DS,7.4/ACS} {
-    \node[headvone] at (\x,-0.9) {\name};
-    \draw[lifeline] (\x,-1.35) -- (\x,-8.6);
-  }
+	\foreach \x/\name in {0.5/Держатель,2.8/Мерчант,5.1/DS,7.4/ACS} {
+			\node[headvone] at (\x,-0.9) {\name};
+			\draw[lifeline] (\x,-1.35) -- (\x,-8.6);
+		}
 
-  \foreach \x/\name in {9.0/Держатель,11.3/3DS Server,13.9/DS,16.4/ACS} {
-    \node[headvtwo] at (\x,-0.9) {\name};
-    \draw[lifeline] (\x,-1.35) -- (\x,-8.6);
-  }
+	\foreach \x/\name in {9.0/Держатель,11.3/3DS Server,13.9/DS,16.4/ACS} {
+			\node[headvtwo] at (\x,-0.9) {\name};
+			\draw[lifeline] (\x,-1.35) -- (\x,-8.6);
+		}
 
-  \draw[msgone] (0.5,-2.0) -- node[above, font=\tiny, text=Muted] {старт оплаты} (2.8,-2.0);
-  \draw[msgone] (2.8,-2.7) -- node[above, font=\tiny, text=Muted] {3DS req} (5.1,-2.7);
-  \draw[msgone] (5.1,-3.4) -- node[above, font=\tiny, text=Muted] {PAReq} (7.4,-3.4);
-  \draw[msgone] (7.4,-4.2) -- node[above, font=\tiny, text=Muted] {redirect / pop-up} (0.5,-4.2);
-  \draw[msgone] (0.5,-5.0) -- node[above, font=\tiny, text=Muted] {пароль} (7.4,-5.0);
-  \draw[msgone] (7.4,-5.8) -- node[above, font=\tiny, text=Muted] {PARes} (5.1,-5.8);
-  \draw[msgone] (5.1,-6.5) -- node[above, font=\tiny, text=Muted] {результат} (2.8,-6.5);
-  \draw[msgone] (2.8,-7.3) -- node[above, font=\tiny, text=Muted] {авторизация} (7.4,-7.3);
+	\draw[msgone] (0.5,-2.0) -- node[above, font=\tiny, text=Muted] {старт оплаты} (2.8,-2.0);
+	\draw[msgone] (2.8,-2.7) -- node[above, font=\tiny, text=Muted] {3DS req} (5.1,-2.7);
+	\draw[msgone] (5.1,-3.4) -- node[above, font=\tiny, text=Muted] {PAReq} (7.4,-3.4);
+	\draw[msgone] (7.4,-4.2) -- node[above, font=\tiny, text=Muted] {redirect / pop-up} (0.5,-4.2);
+	\draw[msgone] (0.5,-5.0) -- node[above, font=\tiny, text=Muted] {пароль} (7.4,-5.0);
+	\draw[msgone] (7.4,-5.8) -- node[above, font=\tiny, text=Muted] {PARes} (5.1,-5.8);
+	\draw[msgone] (5.1,-6.5) -- node[above, font=\tiny, text=Muted] {результат} (2.8,-6.5);
+	\draw[msgone] (2.8,-7.3) -- node[above, font=\tiny, text=Muted] {авторизация} (7.4,-7.3);
 
-  \draw[msgtwo] (9.0,-2.0) -- node[above, font=\tiny, text=AccentA!80!black] {старт оплаты} (11.3,-2.0);
-  \draw[msgtwo] (11.3,-2.7) -- node[above, font=\tiny, text=AccentA!80!black] {AReq} (13.9,-2.7);
-  \draw[msgtwo] (13.9,-3.4) -- node[above, font=\tiny, text=AccentA!80!black] {AReq} (16.4,-3.4);
-  \draw[msgtwo] (16.4,-4.2) -- node[above, font=\tiny, text=AccentA!80!black] {frictionless ARes} (11.3,-4.2);
-  \draw[msgtwo] (11.3,-5.0) -- node[above, font=\tiny, text=AccentA!80!black] {авторизация} (16.4,-5.0);
+	\draw[msgtwo] (9.0,-2.0) -- node[above, font=\tiny, text=AccentA!80!black] {старт оплаты} (11.3,-2.0);
+	\draw[msgtwo] (11.3,-2.7) -- node[above, font=\tiny, text=AccentA!80!black] {AReq} (13.9,-2.7);
+	\draw[msgtwo] (13.9,-3.4) -- node[above, font=\tiny, text=AccentA!80!black] {AReq} (16.4,-3.4);
+	\draw[msgtwo] (16.4,-4.2) -- node[above, font=\tiny, text=AccentA!80!black] {frictionless ARes} (11.3,-4.2);
+	\draw[msgtwo] (11.3,-5.0) -- node[above, font=\tiny, text=AccentA!80!black] {авторизация} (16.4,-5.0);
 
-  \draw[chall] (16.4,-6.0) -- node[above, font=\tiny, text=AccentB!80!black] {challenge} (9.0,-6.0);
-  \draw[chall] (9.0,-6.8) -- node[above, font=\tiny, text=AccentB!80!black] {OTP / bio} (16.4,-6.8);
-  \draw[chall] (16.4,-7.6) -- node[above, font=\tiny, text=AccentB!80!black] {ARes} (11.3,-7.6);
-  \draw[msgtwo] (11.3,-8.3) -- node[above, font=\tiny, text=AccentA!80!black] {авторизация} (16.4,-8.3);
+	\draw[chall] (16.4,-6.0) -- node[above, font=\tiny, text=AccentB!80!black] {challenge} (9.0,-6.0);
+	\draw[chall] (9.0,-6.8) -- node[above, font=\tiny, text=AccentB!80!black] {OTP / bio} (16.4,-6.8);
+	\draw[chall] (16.4,-7.6) -- node[above, font=\tiny, text=AccentB!80!black] {ARes} (11.3,-7.6);
+	\draw[msgtwo] (11.3,-8.3) -- node[above, font=\tiny, text=AccentA!80!black] {авторизация} (16.4,-8.3);
 
-  \node[fig/note, text width=6.8cm, anchor=north west] at (-0.2,-9.0) {v1 почти всегда опирается на redirect и пароль.};
-  \node[fig/note, text width=8.0cm, anchor=north west] at (8.2,-9.0) {v2 поддерживает frictionless-путь и challenge через современные каналы вроде SDK, iframe, OTP или биометрии.};
+	\node[fig/note, text width=6.8cm, anchor=north west] at (-0.2,-9.0) {v1 почти всегда опирается на redirect и пароль.};
+	\node[fig/note, text width=8.0cm, anchor=north west] at (8.2,-9.0) {v2 поддерживает frictionless-путь и challenge через современные каналы вроде SDK, iframe, OTP или биометрии.};
 \end{tikzpicture}

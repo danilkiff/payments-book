@@ -1,26 +1,26 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-  \node[fig/mblock, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt] (un) at (0,0) {Генерация UN};
-  \node[fig/mblock, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt, below=3.6mm of un] (ia) {INTERNAL AUTH.\\+ UN};
-  \node[fig/mblock, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt, below=3.6mm of ia] (sign) {Подпись UN};
-  \node[fig/mcore, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt, below=3.6mm of sign] (sdad) {SDAD};
-  \node[fig/mblock, minimum width=22mm, minimum height=8mm, inner sep=2.2pt, below=3.6mm of sdad] (verify) {Извлечь ICC PK\\и проверить SDAD};
-  \node[fig/mcore, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt, below=3.6mm of verify] (result) {Результат DDA};
-  \node[fig/mside, minimum width=9mm, inner sep=1.6pt, anchor=west] (trust) at ($(verify.east)+(2mm,0)$) {CA PK\\$\downarrow$\\Issuer PK\\$\downarrow$\\ICC PK};
+	\node[fig/mblock, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt] (un) at (0,0) {Генерация UN};
+	\node[fig/mblock, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt, below=3.6mm of un] (ia) {INTERNAL AUTH.\\+ UN};
+	\node[fig/mblock, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt, below=3.6mm of ia] (sign) {Подпись UN};
+	\node[fig/mcore, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt, below=3.6mm of sign] (sdad) {SDAD};
+	\node[fig/mblock, minimum width=22mm, minimum height=8mm, inner sep=2.2pt, below=3.6mm of sdad] (verify) {Извлечь ICC PK\\и проверить SDAD};
+	\node[fig/mcore, minimum width=22mm, minimum height=7.5mm, inner sep=2.2pt, below=3.6mm of verify] (result) {Результат DDA};
+	\node[fig/mside, minimum width=9mm, inner sep=1.6pt, anchor=west] (trust) at ($(verify.east)+(2mm,0)$) {CA PK\\$\downarrow$\\Issuer PK\\$\downarrow$\\ICC PK};
 
-  \node[font=\tiny, text=Muted, anchor=east] at ($(un.west)+(-1.6mm,0)$) {Терм.};
-  \node[font=\tiny, text=Muted, anchor=east] at ($(ia.west)+(-1.6mm,0)$) {Терм.};
-  \node[font=\tiny, text=Muted, anchor=east] at ($(sign.west)+(-1.6mm,0)$) {Карта};
-  \node[font=\tiny, text=Muted, anchor=east] at ($(sdad.west)+(-1.6mm,0)$) {ICC};
-  \node[font=\tiny, text=Muted, anchor=east] at ($(verify.west)+(-1.6mm,0)$) {Терм.};
+	\node[font=\tiny, text=Muted, anchor=east] at ($(un.west)+(-1.6mm,0)$) {Терм.};
+	\node[font=\tiny, text=Muted, anchor=east] at ($(ia.west)+(-1.6mm,0)$) {Терм.};
+	\node[font=\tiny, text=Muted, anchor=east] at ($(sign.west)+(-1.6mm,0)$) {Карта};
+	\node[font=\tiny, text=Muted, anchor=east] at ($(sdad.west)+(-1.6mm,0)$) {ICC};
+	\node[font=\tiny, text=Muted, anchor=east] at ($(verify.west)+(-1.6mm,0)$) {Терм.};
 
-  \begin{scope}[on background layer]
-    \node[fig/mgroup, fit=(un)(ia)(sign)(sdad)(verify)(result)(trust), inner xsep=7pt, inner ysep=8pt] {};
-  \end{scope}
+	\begin{scope}[on background layer]
+		\node[fig/mgroup, fit=(un)(ia)(sign)(sdad)(verify)(result)(trust), inner xsep=7pt, inner ysep=8pt] {};
+	\end{scope}
 
-  \draw[fig/accenta] (un.south) -- (ia.north);
-  \draw[fig/accenta] (ia.south) -- (sign.north);
-  \draw[fig/accentb] (sign.south) -- (sdad.north);
-  \draw[fig/arrow] (sdad.south) -- (verify.north);
-  \draw[fig/dashed] (verify.south) -- (result.north);
-  \draw[fig/lookup] (verify.east) -- (trust.west);
+	\draw[fig/accenta] (un.south) -- (ia.north);
+	\draw[fig/accenta] (ia.south) -- (sign.north);
+	\draw[fig/accentb] (sign.south) -- (sdad.north);
+	\draw[fig/arrow] (sdad.south) -- (verify.north);
+	\draw[fig/dashed] (verify.south) -- (result.north);
+	\draw[fig/lookup] (verify.east) -- (trust.west);
 \end{tikzpicture}

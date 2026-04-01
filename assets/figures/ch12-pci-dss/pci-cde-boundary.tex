@@ -1,36 +1,36 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-  \tikzset{
-    zone/.style={draw=Ink!35, line width=0.55pt},
-    zonelabel/.style={font=\bfseries\small, text=Ink},
-    asset/.style={fig/block, minimum width=30mm, minimum height=9mm, font=\scriptsize}
-  }
+	\tikzset{
+		zone/.style={draw=Ink!35, line width=0.55pt},
+		zonelabel/.style={font=\bfseries\small, text=Ink},
+		asset/.style={fig/block, minimum width=30mm, minimum height=9mm, font=\scriptsize}
+	}
 
-  \draw[zone, fill=Good!12] (0,0) circle (5.2cm);
-  \draw[zone, dashed] (0,0) circle (3.6cm);
-  \draw[zone, fill=Warn!13] (0,0) circle (3.6cm);
-  \draw[zone, dashed] (0,0) circle (2.1cm);
-  \draw[zone, fill=Bad!12] (0,0) circle (2.1cm);
+	\draw[zone, fill=Good!12] (0,0) circle (5.2cm);
+	\draw[zone, dashed] (0,0) circle (3.6cm);
+	\draw[zone, fill=Warn!13] (0,0) circle (3.6cm);
+	\draw[zone, dashed] (0,0) circle (2.1cm);
+	\draw[zone, fill=Bad!12] (0,0) circle (2.1cm);
 
-  \node[asset, fill=white] at (0,0.8) {Платёжный сервер};
-  \node[asset, fill=white, minimum width=26mm] at (-1.1,-0.7) {БД с PAN};
-  \node[asset, fill=white, minimum width=22mm] at (1.2,-0.7) {Терминалы};
+	\node[asset, fill=white] at (0,0.8) {Платёжный сервер};
+	\node[asset, fill=white, minimum width=26mm] at (-1.1,-0.7) {БД с PAN};
+	\node[asset, fill=white, minimum width=22mm] at (1.2,-0.7) {Терминалы};
 
-  \node[asset, minimum width=22mm] at (-2.8,2.2) {DNS};
-  \node[asset, minimum width=22mm] at (2.7,2.0) {NTP};
-  \node[asset, minimum width=27mm] at (-3.0,-2.2) {Мониторинг};
-  \node[asset, minimum width=24mm] at (2.8,-2.0) {Файрвол};
+	\node[asset, minimum width=22mm] at (-2.8,2.2) {DNS};
+	\node[asset, minimum width=22mm] at (2.7,2.0) {NTP};
+	\node[asset, minimum width=27mm] at (-3.0,-2.2) {Мониторинг};
+	\node[asset, minimum width=24mm] at (2.8,-2.0) {Файрвол};
 
-  \node[asset, minimum width=24mm] at (-4.8,4.0) {CRM};
-  \node[asset, minimum width=29mm] at (4.8,4.0) {Маркетинг};
-  \node[asset, minimum width=27mm] at (0,-5.0) {HR-системы};
+	\node[asset, minimum width=24mm] at (-4.8,4.0) {CRM};
+	\node[asset, minimum width=29mm] at (4.8,4.0) {Маркетинг};
+	\node[asset, minimum width=27mm] at (0,-5.0) {HR-системы};
 
-  \node[zonelabel, text=Bad!80!black] at (0,1.85) {CDE};
-  \node[zonelabel, text=Warn!70!black] at (0,3.25) {connected-to / security-impacting};
-  \node[zonelabel, text=Good!55!black] at (0,4.95) {вне периметра};
+	\node[zonelabel, text=Bad!80!black] at (0,1.85) {CDE};
+	\node[zonelabel, text=Warn!70!black] at (0,3.25) {connected-to / security-impacting};
+	\node[zonelabel, text=Good!55!black] at (0,4.95) {вне периметра};
 
-  \node[font=\scriptsize, text=Muted, align=center] at (6.9,0.2) {Межсетевой экран /\\сегментация};
-  \draw[fig/dashed] (5.8,0.9) -- (3.6,0.9);
-  \draw[fig/dashed] (5.8,-0.9) -- (2.1,-0.9);
+	\node[font=\scriptsize, text=Muted, align=center] at (6.9,0.2) {Межсетевой экран /\\сегментация};
+	\draw[fig/dashed] (5.8,0.9) -- (3.6,0.9);
+	\draw[fig/dashed] (5.8,-0.9) -- (2.1,-0.9);
 
-  \node[fig/note, text width=12.4cm] at (0,-6.9) {Без сегментации соседние инфраструктурные сервисы и бизнес-системы тоже попадают в периметр PCI DSS, поэтому границы CDE всегда нужно проектировать как архитектурное решение, а не как список серверов.};
+	\node[fig/note, text width=12.4cm] at (0,-6.9) {Без сегментации соседние инфраструктурные сервисы и бизнес-системы тоже попадают в периметр PCI DSS, поэтому границы CDE всегда нужно проектировать как архитектурное решение, а не как список серверов.};
 \end{tikzpicture}

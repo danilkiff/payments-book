@@ -1,11 +1,11 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-  \node[fig/mcore] (root) at (0,0) {Кобейджинговая\\карта};
-  \node[fig/mdecision, below=5.5mm of root] (country) {Терминал\\в России?};
+	\node[fig/mcore] (root) at (0,0) {Кобейджинговая\\карта};
+	\node[fig/mdecision, below=5.5mm of root] (country) {Терминал\\в России?};
 
-  \node[fig/mcore, below=6mm of country] (mirroute) {Да: ОПКЦ\\правила Мир\\расчёт Банк России};
-  \node[fig/mcore, below=6mm of mirroute] (upiroute) {Нет: UPI\\правила UnionPay\\сеть UnionPay};
+	\node[fig/mcore, below=6mm of country] (mirroute) {Да: ОПКЦ\\правила Мир\\расчёт Банк России};
+	\node[fig/mcore, below=6mm of mirroute] (upiroute) {Нет: UPI\\правила UnionPay\\сеть UnionPay};
 
-  \draw[fig/arrow] (root.south) -- (country.north);
-  \draw[fig/accenta] (country.south) -- (mirroute.north);
-  \draw[fig/accentb] (mirroute.south) -- (upiroute.north);
+	\draw[fig/arrow] (root.south) -- (country.north);
+	\draw[fig/accenta] (country.south) -- (mirroute.north);
+	\draw[fig/accentb] (mirroute.south) -- (upiroute.north);
 \end{tikzpicture}
