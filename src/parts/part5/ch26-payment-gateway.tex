@@ -453,7 +453,6 @@ elements:
         Terminal Identification) — 8-символьный код;
   \item MCC мерчанта → \de{18} (Merchant Type) — 4-значный код.
 \end{itemize}
-
 Кроме того, шлюз генерирует поля, которых нет в API-запросе
 мерчанта, но которые требуются протоколом: \de{11} (STAN) —
 уникальный 6-значный номер транзакции, \de{7} (Transmission Date
@@ -507,8 +506,7 @@ pre-authorization) — сначала во внутреннее событие
 а сам шлюз лучше мыслить как boundary-слой, а не как место,
 где живёт окончательная правда о деньгах.
 
-\section*{Итоги главы}
-
+\begin{chaptersummary}
 \begin{itemize}
   \item Платёжный шлюз — это не один endpoint, а конвейер.
         В его ядре: API gateway, risk engine, routing engine,
@@ -532,3 +530,5 @@ pre-authorization) — сначала во внутреннее событие
         состояния, postings и payout-правила должны жить во внутреннем
         ledger, а не в статусах API.
 \end{itemize}
+\end{chaptersummary}
+
