@@ -5,33 +5,30 @@ MAIN     := src/main.tex
 BUILD    := build
 PDF      := $(BUILD)/main.pdf
 
-.PHONY: all pdf clean clean-all watch
+.PHONY: pdf clean clean-all watch
 
-## Основная сборка
-all: pdf
-
-pdf:
+pdf: ## Основная сборка
 	latexmk -r .latexmkrc $(MAIN)
 	@echo "✓  PDF: $(PDF)"
 
-## Инкрементальная сборка с авто-перекомпиляцией при изменении файлов
-watch:
+watch: ## Инкрементальная сборка с авто-перекомпиляцией при изменении файлов
 	latexmk -r .latexmkrc -pvc $(MAIN)
 
-## Удалить промежуточные файлы (оставить PDF)
-clean:
+clean: ## Удалить промежуточные файлы (оставить PDF)
 	latexmk -r .latexmkrc -c $(MAIN)
 	@rm -rf $(BUILD)/aux
 
-## Удалить всё включая PDF
-clean-all:
+clean-all: ## Удалить всё включая PDF
 	latexmk -r .latexmkrc -C $(MAIN)
 	@rm -rf $(BUILD)
 
-## Показать список всех .tex файлов
-list:
+list: ## Показать список всех .tex файлов
 	@find src -name '*.tex' | sort
 
-## Проверить линтером (ChkTeX)
-lint:
+lint: ## Проверить линтером (ChkTeX)
 	@find src -name '*.tex' -exec chktex -q {} \;
+
+help: ## Показать справку
+	@grep -E '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
+
+.DEFAULT_GOAL := help
