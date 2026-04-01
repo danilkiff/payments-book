@@ -29,6 +29,7 @@
 \usepackage{indentfirst}
 \usepackage{eso-pic}
 \usepackage{ccicons}
+\usepackage{soul}
 \input{src/figure-styles}            % загружает xcolor[table] — до tcolorbox
 \usepackage[skins,breakable]{tcolorbox}
 
@@ -75,6 +76,15 @@ itemsep=0pt,topsep=0pt,partopsep=0pt}
 \definecolor{DefinitionInk}{HTML}{5A3797}
 \definecolor{ImportantInk}{HTML}{A1273C}
 \definecolor{PracticeInk}{HTML}{1C56A3}
+\definecolor{MarkerYellow}{HTML}{FFF2A8}
+
+% --- Текстовый маркер ---
+\DeclareRobustCommand{\highlight}[1]{%
+  \begingroup
+  \sethlcolor{MarkerYellow}%
+  \hl{#1}%
+  \endgroup
+}
 
 % --- Базовый стиль tcolorbox ---
 \tcbset{
