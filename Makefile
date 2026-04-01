@@ -29,11 +29,13 @@ CLEAN_FILE_PATTERNS := \
 .PHONY: pdf clean
 
 pdf:
-	latexmk -silent -xelatex $(BOOK)
+	@latexmk -silent -xelatex $(BOOK)
+	@echo "[OK] Build completed: $(BOOK_PDF)"
 
 clean:
-	latexmk -C $(BOOK)
-	find . -path './.git' -prune -o -type f \( $(CLEAN_FILE_PATTERNS) \) -exec rm -f {} +
-	rm -rf build $(BOOK_PDF)
+	@latexmk -silent -C $(BOOK)
+	@find . -path './.git' -prune -o -type f \( $(CLEAN_FILE_PATTERNS) \) -exec rm -f {} +
+	@rm -rf build $(BOOK_PDF)
+	@echo "[OK] Cleanup completed"
 
 .DEFAULT_GOAL := pdf
