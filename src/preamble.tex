@@ -1,49 +1,34 @@
 % Minimal project preamble kept close to stock kaobook.
+% XeTeX in this environment does not resolve the TeX Live Libertinus family
+% names used by kaobook, so we load the same font stack explicitly by file.
 
 \usepackage{fontspec}
+\usepackage{amssymb}
+\usepackage{unicode-math}
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont{DejaVuSerif.ttf}[
-  BoldFont=DejaVuSerif-Bold.ttf,
-  ItalicFont=DejaVuSerif-Italic.ttf,
-  BoldItalicFont=DejaVuSerif-BoldItalic.ttf,
+\setmainfont{LibertinusSerif-Regular.otf}[
+  BoldFont=LibertinusSerif-Bold.otf,
+  ItalicFont=LibertinusSerif-Italic.otf,
+  BoldItalicFont=LibertinusSerif-BoldItalic.otf,
+  Scale=1.04,
 ]
-\setsansfont{DejaVuSans.ttf}[
-  BoldFont=DejaVuSans-Bold.ttf,
-  ItalicFont=DejaVuSans-Oblique.ttf,
-  BoldItalicFont=DejaVuSans-BoldOblique.ttf,
+\setsansfont{LibertinusSans-Regular.otf}[
+  BoldFont=LibertinusSans-Bold.otf,
+  ItalicFont=LibertinusSans-Italic.otf,
+  BoldItalicFont=LibertinusSans-Bold.otf,
 ]
-\setmonofont{DejaVuSansMono.ttf}[
-  BoldFont=DejaVuSansMono-Bold.ttf,
-  ItalicFont=DejaVuSansMono-Oblique.ttf,
-  BoldItalicFont=DejaVuSansMono-BoldOblique.ttf,
-  Scale=.9,
+\setmonofont{LibertinusMono-Regular.otf}[
+  BoldFont=LibertinusMono-Regular.otf,
+  ItalicFont=LibertinusMono-Regular.otf,
+  BoldItalicFont=LibertinusMono-Regular.otf,
+  Scale=.89,
 ]
+\setmathfont{LibertinusMath-Regular.otf}
 
 \usepackage{polyglossia}
 \setdefaultlanguage{russian}
 \setotherlanguage{english}
 
-\newfontfamily\cyrillicfont[
-  BoldFont=DejaVuSerif-Bold.ttf,
-  ItalicFont=DejaVuSerif-Italic.ttf,
-  BoldItalicFont=DejaVuSerif-BoldItalic.ttf,
-  Script=Cyrillic,
-]{DejaVuSerif.ttf}
-\newfontfamily\cyrillicfontsf[
-  BoldFont=DejaVuSans-Bold.ttf,
-  ItalicFont=DejaVuSans-Oblique.ttf,
-  BoldItalicFont=DejaVuSans-BoldOblique.ttf,
-  Script=Cyrillic,
-]{DejaVuSans.ttf}
-\newfontfamily\cyrillicfonttt[
-  BoldFont=DejaVuSansMono-Bold.ttf,
-  ItalicFont=DejaVuSansMono-Oblique.ttf,
-  BoldItalicFont=DejaVuSansMono-BoldOblique.ttf,
-  Scale=.9,
-]{DejaVuSansMono.ttf}
-
-\usepackage{amssymb}
-\usepackage{amsmath}
 \usepackage{newunicodechar}
 \usepackage{longtable}
 \usepackage{tabularx}
