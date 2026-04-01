@@ -1,6 +1,6 @@
 # ── Артефакты сборки LaTeX ──────────────────────────────────────────────────
 build/
-payments-book.pdf
+payments-book.*
 *.aux
 *.bbl
 *.bcf
