@@ -5,9 +5,11 @@
 % Keep the preamble focused on functionality; visual defaults come from KOMA.
 
 \usepackage[T2A,T1]{fontenc}
+\usepackage{type1ec}
 \usepackage[utf8]{inputenc}
 \usepackage[main=russian,english]{babel}
-\usepackage{libertinus}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmr}
 \renewcommand{\ttdefault}{cmtt}
 
 \usepackage[
@@ -49,7 +51,7 @@
 \makeatletter
 \newcommand{\includefigurefragment}[1]{%
   \begingroup
-  \sffamily
+  \rmfamily
   \@input{#1}%
   \endgroup
 }
@@ -64,6 +66,21 @@
   pdfauthor={},
   hidelinks,
 }
+
+% Keep KOMA-managed display elements in the same family as the body text.
+\addtokomafont{disposition}{\rmfamily}
+\addtokomafont{part}{\rmfamily}
+\addtokomafont{partnumber}{\rmfamily}
+\addtokomafont{chapter}{\rmfamily}
+\addtokomafont{chapterprefix}{\rmfamily}
+\addtokomafont{title}{\rmfamily}
+\addtokomafont{subtitle}{\rmfamily}
+\addtokomafont{author}{\rmfamily}
+\addtokomafont{date}{\rmfamily}
+\addtokomafont{pagehead}{\rmfamily}
+\addtokomafont{pagenumber}{\rmfamily}
+\addtokomafont{caption}{\rmfamily}
+\addtokomafont{captionlabel}{\rmfamily}
 
 \raggedbottom
 \extrafloats{200}
@@ -84,7 +101,7 @@
   \setlength{\fboxrule}{0.4pt}%
   \fbox{%
     \parbox[t]{\dimexpr\marginparwidth-2\fboxsep-2\fboxrule\relax}{%
-      \sffamily
+      \rmfamily
       \scriptsize
       \RaggedRight
       \setlength{\parindent}{0pt}%
@@ -99,7 +116,7 @@
   \leavevmode\marginpar{%
     \vspace*{#1}%
     \parbox[t]{\marginparwidth}{%
-      \sffamily
+      \rmfamily
       \scriptsize
       \RaggedRight
       \setlength{\parindent}{0pt}%
