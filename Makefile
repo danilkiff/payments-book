@@ -6,7 +6,7 @@ BUILD    := build
 PDF      := $(BUILD)/main.pdf
 LATEXMK  := $(shell command -v latexmk 2>/dev/null || { test -x /Library/TeX/texbin/latexmk && echo /Library/TeX/texbin/latexmk; })
 
-.PHONY: pdf clean clean-all watch
+.PHONY: pdf clean clean-all watch terms-audit
 
 pdf: ## Основная сборка
 	$(LATEXMK) -r .latexmkrc $(MAIN)
@@ -19,6 +19,9 @@ verify: pdf ## Собрать и показать статус
 	@grep 'Output written' build/aux/main.log | sed 's/.*(\([0-9]*\) pages.*/Pages: \1/'
 	@printf "Errors: "; grep -c '^!' build/aux/main.log || true
 	@printf "Todo items: "; grep -roc '\\todo\(fig\|cite\|check\)' src/parts/ | awk -F: '{s+=$$2} END {print s}'
+
+terms-audit: ## Проверить термины и зависимости определений (CHAPTER=path/to/file.tex)
+	@python3 scripts/term_audit.py $(CHAPTER)
 
 clean: ## Удалить промежуточные файлы (оставить PDF)
 	$(LATEXMK) -r .latexmkrc -c $(MAIN)
