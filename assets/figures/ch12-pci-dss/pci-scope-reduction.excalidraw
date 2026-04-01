@@ -3,13 +3,13 @@
   "version": 2,
   "source": "claude-code",
   "elements": [
-    {"type":"arrow","id":"axis","x":20,"y":30,"width":675,"height":0,"points":[[0,0],[675,0]],"endArrowhead":"arrow","strokeColor":"#adb5bd","strokeWidth":2,"label":{"text":"Scope reduction →","fontSize":11}},
-    {"type":"rectangle","id":"d","x":30,"y":48,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#ffc9c9","fillStyle":"solid","strokeColor":"#ef4444","strokeWidth":1.5,"label":{"text":"SAQ D\nВсё в периметре","fontSize":10}},
-    {"type":"rectangle","id":"ds","x":146,"y":48,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#ffd8a8","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":1.5,"label":{"text":"SAQ D\n+ сегментация","fontSize":10}},
-    {"type":"rectangle","id":"cvt","x":262,"y":48,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#fff3bf","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":1.5,"label":{"text":"SAQ C-VT\nVirtual terminal","fontSize":10}},
-    {"type":"rectangle","id":"bip","x":378,"y":48,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#d9fce5","fillStyle":"solid","strokeColor":"#22c55e","strokeWidth":1.5,"label":{"text":"SAQ B-IP\nIP-терминал","fontSize":10}},
-    {"type":"rectangle","id":"aep","x":494,"y":48,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#d3f9d8","fillStyle":"solid","strokeColor":"#22c55e","strokeWidth":1.5,"label":{"text":"SAQ A-EP\nJS / page code","fontSize":10}},
-    {"type":"rectangle","id":"a","x":610,"y":48,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#d3f9d8","fillStyle":"solid","strokeColor":"#22c55e","strokeWidth":1.5,"label":{"text":"SAQ A\nredirect / iFrame","fontSize":10}}
+    {"type":"arrow","id":"axis","x":20,"y":20,"width":675,"height":0,"points":[[0,0],[675,0]],"endArrowhead":"arrow","strokeColor":"#adb5bd","strokeWidth":2,"label":{"text":"Scope reduction →","fontSize":11}},
+    {"type":"rectangle","id":"d","x":30,"y":38,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#ffc9c9","fillStyle":"solid","strokeColor":"#ef4444","strokeWidth":1.5,"label":{"text":"SAQ D\nВсё в периметре","fontSize":10}},
+    {"type":"rectangle","id":"ds","x":146,"y":38,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#ffd8a8","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":1.5,"label":{"text":"SAQ D\n+ сегментация","fontSize":10}},
+    {"type":"rectangle","id":"cvt","x":262,"y":38,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#fff3bf","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":1.5,"label":{"text":"SAQ C-VT\nVirtual terminal","fontSize":10}},
+    {"type":"rectangle","id":"bip","x":378,"y":38,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#d9fce5","fillStyle":"solid","strokeColor":"#22c55e","strokeWidth":1.5,"label":{"text":"SAQ B-IP\nIP-терминал","fontSize":10}},
+    {"type":"rectangle","id":"aep","x":494,"y":38,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#d3f9d8","fillStyle":"solid","strokeColor":"#22c55e","strokeWidth":1.5,"label":{"text":"SAQ A-EP\nJS / page code","fontSize":10}},
+    {"type":"rectangle","id":"a","x":610,"y":38,"width":88,"height":52,"roundness":{"type":3},"backgroundColor":"#d3f9d8","fillStyle":"solid","strokeColor":"#22c55e","strokeWidth":1.5,"label":{"text":"SAQ A\nredirect / iFrame","fontSize":10}}
   ],
   "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
   "files": {}

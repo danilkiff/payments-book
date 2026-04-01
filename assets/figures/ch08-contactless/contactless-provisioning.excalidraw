@@ -3,17 +3,17 @@
   "version": 2,
   "source": "claude-code",
   "elements": [
-    {"type":"text","id":"h1","x":100,"y":20,"text":"Держатель","fontSize":14,"strokeColor":"#1e1e1e","textAlign":"center"},
-    {"type":"text","id":"h2","x":330,"y":16,"text":"Кошелёк\n(телефон)","fontSize":14,"strokeColor":"#1e1e1e","textAlign":"center"},
-    {"type":"text","id":"h3","x":590,"y":16,"text":"TSP\n(карточная сеть)","fontSize":14,"strokeColor":"#1e1e1e","textAlign":"center"},
-    {"type":"text","id":"h4","x":820,"y":20,"text":"Эмитент","fontSize":14,"strokeColor":"#1e1e1e","textAlign":"center"},
-    {"type":"arrow","id":"m1","x":100,"y":80,"width":230,"height":0,"points":[[0,0],[230,0]],"endArrowhead":"arrow","label":{"text":"PAN","fontSize":12}},
-    {"type":"arrow","id":"m2","x":330,"y":140,"width":260,"height":0,"points":[[0,0],[260,0]],"endArrowhead":"arrow","strokeColor":"#4a9eed","label":{"text":"PAN + device data","fontSize":12}},
-    {"type":"arrow","id":"m3","x":590,"y":200,"width":230,"height":0,"points":[[0,0],[230,0]],"endArrowhead":"arrow","label":{"text":"ID&V request","fontSize":12}},
-    {"type":"arrow","id":"m4","x":820,"y":260,"width":-230,"height":0,"points":[[0,0],[-230,0]],"endArrowhead":"arrow","label":{"text":"approve / extra verification","fontSize":12}},
-    {"type":"arrow","id":"m5","x":590,"y":320,"width":-260,"height":0,"points":[[0,0],[-260,0]],"endArrowhead":"arrow","strokeColor":"#4a9eed","label":{"text":"DPAN + keys","fontSize":12}},
-    {"type":"arrow","id":"m6","x":330,"y":380,"width":0,"height":40,"points":[[0,0],[0,40]],"endArrowhead":"arrow","label":{"text":"SE / HCE load","fontSize":12}},
-    {"type":"arrow","id":"m7","x":330,"y":460,"width":-230,"height":0,"points":[[0,0],[-230,0]],"endArrowhead":"arrow","strokeColor":"#8b5cf6","label":{"text":"«Карта добавлена»","fontSize":12}}
+    {"type":"text","id":"h1","x":20,"y":22,"text":"Держатель","fontSize":14,"strokeColor":"#1e1e1e","textAlign":"center"},
+    {"type":"text","id":"h2","x":250,"y":18,"text":"Кошелёк\n(телефон)","fontSize":14,"strokeColor":"#1e1e1e","textAlign":"center"},
+    {"type":"text","id":"h3","x":510,"y":18,"text":"TSP\n(карточная сеть)","fontSize":14,"strokeColor":"#1e1e1e","textAlign":"center"},
+    {"type":"text","id":"h4","x":740,"y":22,"text":"Эмитент","fontSize":14,"strokeColor":"#1e1e1e","textAlign":"center"},
+    {"type":"arrow","id":"m1","x":20,"y":84,"width":230,"height":0,"points":[[0,0],[230,0]],"endArrowhead":"arrow","strokeColor":"#1e1e1e","label":{"text":"PAN","fontSize":12}},
+    {"type":"arrow","id":"m2","x":250,"y":144,"width":260,"height":0,"points":[[0,0],[260,0]],"endArrowhead":"arrow","strokeColor":"#4a9eed","label":{"text":"PAN + device data","fontSize":12}},
+    {"type":"arrow","id":"m3","x":510,"y":204,"width":230,"height":0,"points":[[0,0],[230,0]],"endArrowhead":"arrow","strokeColor":"#1e1e1e","label":{"text":"ID&V request","fontSize":12}},
+    {"type":"arrow","id":"m4","x":740,"y":264,"width":-230,"height":0,"points":[[0,0],[-230,0]],"endArrowhead":"arrow","strokeColor":"#1e1e1e","label":{"text":"approve / extra verification","fontSize":12}},
+    {"type":"arrow","id":"m5","x":510,"y":324,"width":-260,"height":0,"points":[[0,0],[-260,0]],"endArrowhead":"arrow","strokeColor":"#4a9eed","label":{"text":"DPAN + keys","fontSize":12}},
+    {"type":"arrow","id":"m6","x":250,"y":384,"width":0,"height":40,"points":[[0,0],[0,40]],"endArrowhead":"arrow","strokeColor":"#1e1e1e","label":{"text":"SE / HCE load","fontSize":12}},
+    {"type":"arrow","id":"m7","x":250,"y":464,"width":-230,"height":0,"points":[[0,0],[-230,0]],"endArrowhead":"arrow","strokeColor":"#8b5cf6","label":{"text":"«Карта добавлена»","fontSize":12}}
   ],
   "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
   "files": {}

@@ -16,6 +16,7 @@
     {"type":"arrow","id":"a1","x":94,"y":93,"width":13,"height":0,"points":[[0,0],[13,0]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
     {"type":"arrow","id":"a2","x":179,"y":93,"width":13,"height":0,"points":[[0,0],[13,0]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
     {"type":"arrow","id":"a3","x":252,"y":93,"width":13,"height":0,"points":[[0,0],[13,0]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"arrow","id":"a-reply","x":335,"y":114,"width":323,"height":24,"points":[[0,0],[-323,24]],"endArrowhead":"arrow","strokeColor":"#555555","strokeStyle":"dashed","label":{"text":"ответ","fontSize":11}},
     {"type":"rectangle","id":"acq2","x":397,"y":72,"width":75,"height":42,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","label":{"text":"Эквайер","fontSize":13}},
     {"type":"rectangle","id":"batch","x":485,"y":72,"width":72,"height":42,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","label":{"text":"Пакет","fontSize":13}},
     {"type":"rectangle","id":"net2","x":570,"y":72,"width":60,"height":42,"roundness":{"type":3},"backgroundColor":"#e5dbff","fillStyle":"solid","strokeColor":"#8b5cf6","label":{"text":"Сеть","fontSize":13}},
@@ -27,7 +28,11 @@
     {"type":"rectangle","id":"bankb","x":831,"y":72,"width":72,"height":42,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","label":{"text":"Банк B","fontSize":13}},
     {"type":"rectangle","id":"merch","x":917,"y":72,"width":85,"height":42,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","label":{"text":"Мерчант","fontSize":13}},
     {"type":"arrow","id":"a7","x":817,"y":93,"width":14,"height":0,"points":[[0,0],[14,0]],"endArrowhead":"arrow","strokeColor":"#f59e0b","label":{"text":"деньги","fontSize":11}},
-    {"type":"arrow","id":"a8","x":903,"y":93,"width":14,"height":0,"points":[[0,0],[14,0]],"endArrowhead":"arrow"}
+    {"type":"arrow","id":"a8","x":903,"y":93,"width":14,"height":0,"points":[[0,0],[14,0]],"endArrowhead":"arrow"},
+    {"type":"rectangle","id":"hold-bar","x":12,"y":271,"width":698,"height":12,"roundness":{"type":3},"backgroundColor":"#93c5fd","fillStyle":"solid","strokeColor":"none"},
+    {"type":"text","id":"hold-label","x":361,"y":290,"text":"hold на счёте держателя","fontSize":12,"strokeColor":"#3b82f6","textAlign":"center"},
+    {"type":"rectangle","id":"settle-bar","x":735,"y":288,"width":320,"height":12,"roundness":{"type":3},"backgroundColor":"#f59e0b","fillStyle":"solid","strokeColor":"none"},
+    {"type":"text","id":"settle-label","x":895,"y":308,"text":"зачисление мерчанту","fontSize":12,"strokeColor":"#b45309","textAlign":"center"}
   ],
   "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
   "files": {}
