@@ -12,3 +12,6 @@ $silent = 1;
 
 # Флаги компилятора: ошибки с номерами строк, остановка на первой ошибке, без интерактива
 $pdflatex = 'pdflatex -file-line-error -halt-on-error -interaction=nonstopmode %O %S';
+
+# Запускать biber для обработки библиографии (biblatex)
+$bibtex_use = 2;
