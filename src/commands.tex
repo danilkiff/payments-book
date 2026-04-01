@@ -41,3 +41,12 @@
 
 \renewcommand{\eg}{т.е.\xspace}
 \providecommand{\cf}{ср.\xspace}
+
+\NewDocumentEnvironment{chaptersummary}{}{%
+  \FloatBarrier
+  \Needspace{12\baselineskip}
+  \begin{widepar}
+  \section*{Итоги главы}
+}{%
+  \end{widepar}
+}
