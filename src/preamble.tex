@@ -10,6 +10,16 @@
 \usepackage{libertinus}
 \renewcommand{\ttdefault}{cmtt}
 
+\usepackage[
+  includeheadfoot,
+  left=16mm,
+  textwidth=132mm,
+  top=18mm,
+  bottom=22mm,
+  marginparsep=6mm,
+  marginparwidth=40mm,
+  heightrounded,
+]{geometry}
 \usepackage{graphicx}
 \usepackage{adjustbox}
 \usepackage{tabularx}
@@ -22,6 +32,7 @@
 \usepackage{enumitem}
 \usepackage{needspace}
 \usepackage{float}
+\usepackage{marginfix}
 \usepackage{xurl}
 \usepackage{indentfirst}
 \usepackage{ccicons}
@@ -52,9 +63,52 @@
   hidelinks,
 }
 
+\raggedbottom
 \setlength{\parindent}{1.25em}
 \setlength{\parskip}{0pt}
+\setlength{\marginparpush}{8pt}
+\setlength{\emergencystretch}{1.5em}
 \setlist[itemize,enumerate]{leftmargin=*,labelsep=0.55em}
+
+\newcommand{\booknotebox}[1]{%
+  \begingroup
+  \setlength{\fboxsep}{5pt}%
+  \colorbox{Soft}{%
+    \parbox[t]{\dimexpr\marginparwidth-2\fboxsep\relax}{%
+      \sffamily
+      \footnotesize
+      \RaggedRight
+      \setlength{\parindent}{0pt}%
+      \setlength{\parskip}{3pt}%
+      #1%
+    }%
+  }%
+  \endgroup
+}
+
+\newcommand{\booknote}[2][0pt]{%
+  \leavevmode\marginpar{\vspace*{#1}\booknotebox{#2}}%
+}
+
+\newcommand{\definitionnote}[3][0pt]{%
+  \booknote[#1]{\textbf{#2}\par #3}%
+}
+
+\newcommand{\marginfigure}[3][0pt]{%
+  \booknote[#1]{%
+    \centering
+    #2\par
+    \smallskip
+    \RaggedRight
+    #3%
+  }%
+}
+
+\newcommand{\sidefootnote}[2][0pt]{%
+  \refstepcounter{footnote}%
+  \textsuperscript{\thefootnote}%
+  \booknote[#1]{\textsuperscript{\thefootnote}\enspace #2}%
+}
 
 \newcommand{\chapterSummary}{%
   \Needspace*{8\baselineskip}%
