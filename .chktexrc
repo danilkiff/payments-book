@@ -1,0 +1,32 @@
+## ChkTeX project configuration for payments-book
+## chktex reads this file automatically from the project root.
+##
+## All suppressed warnings are false positives for a Russian-language
+## technical book; English-centric typography rules do not apply.
+
+## Default command-line flags applied on every run.
+## -nN mutes warning number N.
+CmdLine
+{
+    -n1  # W1  "Command terminated with space": \slash is a typographic
+         #      slash character, not a dangling command.
+         #      Example: \textbf{M\slash Chip Contactless (MC)}
+
+    -n8  # W8  "Wrong length of dash": hyphens inside \includefiguretex{}
+         #      path arguments are filesystem path separators, not dashes.
+         #      Example: assets/figures/ch11-3ds/3ds-v1-vs-v2
+
+    -n12 # W12 "Interword spacing": English rule -- use `\ ' after inline
+         #      commands like \emph{...}. Russian typography has no such
+         #      convention; the spacing after } is always correct.
+
+    -n13 # W13 "Intersentence spacing": English rule -- use \@ before
+         #      sentence-ending periods in abbreviations. Russian
+         #      typography uses uniform spacing after every period.
+         #      Fires 163 times across the book.
+
+    -n29 # W29 "$\times$ may look prettier here": fires on hex literals
+         #      such as 0x80, 0x40 inside \texttt{} -- the `x' is part
+         #      of hexadecimal notation, not a multiplication sign.
+         #      Fires 40 times in ch07-emv.tex (TVR field section).
+}
