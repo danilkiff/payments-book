@@ -139,6 +139,27 @@ IIN, а переход к нему был запущен ревизией ISO~78
 для примера). В реальном PAN контрольная цифра подбирается эмитентом
 так, чтобы итоговая сумма оказалась кратна десяти.
 
+\practicenote{%
+В платёжной форме обычно достаточно проверить уже введённый PAN,
+не вычисляя контрольную цифру. Компактная проверка на Python может
+выглядеть так:
+
+{\ttfamily\footnotesize
+def luhn\_valid(pan: str) -> bool:\par % chktex 36
+\quad total = 0\par
+\quad double = False\par
+\quad for ch in reversed(pan):\par % chktex 36
+\qquad digit = int(ch)\par % chktex 36
+\qquad if double:\par
+\qquad\quad digit *= 2\par
+\qquad\quad if digit > 9:\par
+\qquad\qquad digit -= 9\par
+\qquad total += digit\par
+\qquad double = not double\par
+\quad return total \% 10 == 0\par
+}%
+}
+
 \importantnote{%
 Алгоритм Луна хорошо отсеивает опечатки и часть типичных
 перестановок соседних цифр, но это
