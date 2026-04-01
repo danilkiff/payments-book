@@ -1,10 +1,12 @@
-% Minimal project preamble kept close to stock kaobook.
+% Project preamble for a plain scrbook/KOMA build.
 % XeTeX in this environment does not resolve the TeX Live Libertinus family
-% names used by kaobook, so we load the same font stack explicitly by file.
+% names reliably, so we load the font stack explicitly by file.
 
 \usepackage{fontspec}
+\usepackage[dvipsnames,table]{xcolor}
 \usepackage{amssymb}
 \usepackage{unicode-math}
+\usepackage{microtype}
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont{LibertinusSerif-Regular.otf}[
   BoldFont=LibertinusSerif-Bold.otf,
@@ -30,14 +32,46 @@
 \setotherlanguage{english}
 
 \usepackage{newunicodechar}
+\usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{booktabs}
 \usepackage{pgf-umlsd}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{placeins}
+\usepackage{needspace}
+\usepackage{xspace}
 \usepackage{csquotes}
-\usepackage{kaobiblio}
 \usepackage{pdflscape}
+\usepackage[backend=biber,style=numeric-comp,sorting=nyt]{biblatex}
+\usepackage{bookmark}
+\usepackage{hyperref}
+\usepackage[automark]{scrlayer-scrpage}
 
 \usetikzlibrary{arrows.meta, backgrounds, fit, positioning, shapes.geometric, svg.path}
+
+\clearpairofpagestyles
+\automark[section]{chapter}
+\ihead{\headmark}
+\ohead{\pagemark}
+\ihead*{\headmark}
+\ohead*{\pagemark}
+\renewcommand*\chaptermarkformat{\thechapter\autodot\enskip}
+\renewcommand*\sectionmarkformat{\thesection\autodot\enskip}
+\pagestyle{scrheadings}
+\setkomafont{pageheadfoot}{\normalfont\small}
+\setkomafont{disposition}{\normalfont\bfseries}
+\setkomafont{chapter}{\normalfont\bfseries\Huge}
+\setkomafont{section}{\normalfont\bfseries\Large}
+\setkomafont{subsection}{\normalfont\bfseries\large}
+\setkomafont{part}{\normalfont\bfseries\Huge}
+\renewcommand*\chapterformat{%
+  \mbox{\fontsize{38}{42}\selectfont\thechapter\autodot\enskip}%
+}
+\raggedbottom
+\setlength{\emergencystretch}{1.5em}
 
 \hypersetup{
   pdftitle={Платёжный стек},
@@ -46,8 +80,8 @@
   linkcolor=RoyalBlue,
   citecolor=ForestGreen,
   urlcolor=Maroon,
+  bookmarksopen=true,
 }
 
-\setcounter{margintocdepth}{1}
 \setcounter{tocdepth}{1}
 \renewcommand{\arraystretch}{1.25}
