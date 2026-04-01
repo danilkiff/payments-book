@@ -15,3 +15,7 @@ pip install uv
 uv pip install cairosvg
 make pdf
 ```
+
+## Лицензия
+
+Текст книги распространяется на условиях [CC BY-NC 4.0](LICENSE).
