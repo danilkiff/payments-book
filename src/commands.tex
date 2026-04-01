@@ -59,10 +59,16 @@
   {\footnotesize\noindent\fullcite{#1}\par}%
 }
 
+\newcommand{\textnumeroglyph}{\texorpdfstring{\textnumero}{No.}}
+\newcommand{\texttimesglyph}{\texorpdfstring{\ensuremath{\times}}{x}}
 \newcommand{\textrightarrowglyph}{\texorpdfstring{\ensuremath{\rightarrow}}{->}}
 \newcommand{\textleftrightarrowglyph}{\texorpdfstring{\ensuremath{\leftrightarrow}}{<->}}
 \newcommand{\texthorizontalbarglyph}{\texorpdfstring{---}{-}}
-\newunicodechar{→}{\textrightarrowglyph}
-\newunicodechar{↔}{\textleftrightarrowglyph}
-\newunicodechar{―}{\texthorizontalbarglyph}
-\newunicodechar{₽}{\mbox{руб.}}
+\DeclareUnicodeCharacter{2014}{\texthorizontalbarglyph}
+\DeclareUnicodeCharacter{2015}{\texthorizontalbarglyph}
+\DeclareUnicodeCharacter{2192}{\textrightarrowglyph}
+\DeclareUnicodeCharacter{2194}{\textleftrightarrowglyph}
+\DeclareUnicodeCharacter{00D7}{\texttimesglyph}
+\DeclareUnicodeCharacter{2116}{\textnumeroglyph}
+\DeclareUnicodeCharacter{2019}{'}
+\DeclareUnicodeCharacter{20BD}{\mbox{руб.}}
