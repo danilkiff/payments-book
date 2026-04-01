@@ -1,10 +1,15 @@
-.PHONY: pdf svg clean fmt check
+.PHONY: pdf excalidraw svg clean fmt check
 
 pdf:
 	latexmk payments-book.tex
 
-# Конвертировать все assets/figures/**/*.svg → .pdf для pdflatex.
-# Запускать после сохранения новых Excalidraw-фигур, перед make pdf.
+# Конвертировать assets/figures/**/*.excalidraw → .svg (чистый стиль, без hand-drawn).
+# Запускать после редактирования Excalidraw-файлов, перед make svg.
+excalidraw:
+	python3 scripts/excalidraw2svg.py
+
+# Конвертировать assets/figures/**/*.svg → .pdf для pdflatex.
+# Полная цепочка: make excalidraw && make svg && make pdf.
 svg:
 	python3 scripts/svg2pdf.py
 
