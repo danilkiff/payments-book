@@ -1,0 +1,14 @@
+# latexindent config for «Платёжный стек»
+# Форматирование + перенос строк на 120 колонок
+
+defaultIndent: "  "
+
+modifyLineBreaks:
+  removeParagraphLineBreaks:
+    all:
+      heading: 0
+      body: 1
+  textWrapOptions:
+    columns: 120
+    huge: overflow
+    tabstop: 2
