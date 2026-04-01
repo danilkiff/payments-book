@@ -16,14 +16,12 @@
 ]
 
 %% Моноширинный шрифт — для листингов кода, hex-дампов, идентификаторов.
-%% Требует установки: https://github.com/tonsky/FiraCode
-\setmonofont{Fira Code}[
-  Scale          = 0.88,
-  Contextuals    = Alternate,   % лигатуры кода: -> => !=
+%% PT Mono входит в стандартный набор macOS.
+\setmonofont{PT Mono}[
+  Scale = 0.88,
 ]
 
-%% Запасной вариант: если PT Serif не установлен, XeLaTeX возьмёт Latin Modern.
-%% Раскомментируйте строки ниже, чтобы использовать системные шрифты:
-% \setmainfont{Times New Roman}
-% \setsansfont{Arial}
-% \setmonofont{Courier New}
+%% Явные объявления кириллических шрифтов для polyglossia.
+\newfontfamily\cyrillicfont{PT Serif}[Ligatures=TeX, Script=Cyrillic]
+\newfontfamily\cyrillicfontsf{PT Sans}[Ligatures=TeX, Script=Cyrillic]
+\newfontfamily\cyrillicfonttt{PT Mono}[Scale=0.88]
