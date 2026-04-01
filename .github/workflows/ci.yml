@@ -14,6 +14,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Docker-шаг (texlive-full) запускается от root и создаёт build/ с owner=root.
+      # Если каталог уже существует и принадлежит runner, root пишет файлы внутрь,
+      # но владелец каталога остаётся runner — последующие шаги могут в него писать.
+      - name: Prepare build dir
+        run: mkdir -p build
+
       - name: Install system deps for cairosvg
         run: |
           sudo apt-get update -q
@@ -37,3 +43,10 @@ jobs:
         with:
           entrypoint: latexmk
           args: payments-book.tex
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: book-pdf
+          path: build/payments-book.pdf
+          retention-days: 30
