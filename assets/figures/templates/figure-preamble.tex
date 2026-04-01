@@ -1,9 +1,7 @@
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[main=russian,english]{babel}
-\usepackage{textcomp}
 \usepackage[sfdefault]{libertinus}
-\renewcommand{\ttdefault}{cmtt}
 \DeclareUnicodeCharacter{2014}{---}
 \DeclareUnicodeCharacter{2015}{---}
 
@@ -12,67 +10,64 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{tikz}
-\usepackage{pgf-umlsd}
-\usetikzlibrary{arrows.meta, backgrounds, calc, fit, matrix, positioning, shapes.geometric, trees}
+\usetikzlibrary{arrows.meta, backgrounds, calc, fit, positioning, shapes.geometric}
 
-\definecolor{Ink}{HTML}{243042}
-\definecolor{Soft}{HTML}{F7F9FC}
-\definecolor{Panel}{HTML}{EEF4FB}
-\definecolor{AccentA}{HTML}{246BCE}
-\definecolor{AccentB}{HTML}{C8463A}
-\definecolor{Muted}{HTML}{5D6B7A}
-\definecolor{Good}{HTML}{2D7A46}
-\definecolor{Warn}{HTML}{C9871E}
-\definecolor{Bad}{HTML}{B43B3B}
+\definecolor{Ink}{HTML}{1F1F1F}
+\definecolor{Soft}{HTML}{F7F7F7}
+\definecolor{Panel}{HTML}{EBEBEB}
+\definecolor{AccentA}{HTML}{4F4F4F}
+\definecolor{AccentB}{HTML}{7A7A7A}
+\definecolor{Muted}{HTML}{666666}
+\definecolor{Good}{HTML}{606060}
+\definecolor{Warn}{HTML}{8A8A8A}
+\definecolor{Bad}{HTML}{353535}
 
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
 \tikzset{
   every node/.style={text=Ink, font=\small},
-  fig/block/.style={
-    draw=Ink!88,
-    line width=0.55pt,
-    rounded corners=3pt,
+  fig/box/.style={
+    draw=Ink!70,
+    line width=0.5pt,
+    rounded corners=2pt,
     fill=white,
+    align=center,
+    inner sep=3pt
+  },
+  fig/block/.style={
+    fig/box,
     minimum width=26mm,
-    minimum height=10.5mm,
-    inner sep=4pt,
-    align=center
+    minimum height=10mm
   },
   fig/core/.style={
     fig/block,
     fill=Panel
   },
   fig/sidecar/.style={
-    draw=Ink!65,
-    line width=0.5pt,
-    rounded corners=3pt,
+    fig/box,
     fill=Soft,
-    inner sep=3pt,
     minimum width=20mm,
     minimum height=8mm,
-    align=center,
     font=\scriptsize
   },
   fig/group/.style={
-    draw=Ink!10,
+    draw=Ink!20,
     fill=Soft,
-    rounded corners=6pt
+    rounded corners=4pt
   },
-  fig/arrow/.style={-Latex, line width=1.15pt, draw=Ink!70},
-  fig/accenta/.style={-Latex, line width=1.45pt, draw=AccentA},
-  fig/accentb/.style={-Latex, line width=1.45pt, draw=AccentB},
-  fig/dashed/.style={-Latex, line width=1.0pt, draw=Ink!55, densely dashed},
-  fig/lookup/.style={<->, line width=0.8pt, draw=Ink!60, densely dashed},
+  fig/arrow/.style={-Latex, line width=0.9pt, draw=Ink!70},
+  fig/accenta/.style={fig/arrow, draw=AccentA},
+  fig/accentb/.style={fig/arrow, draw=AccentB},
+  fig/dashed/.style={-Latex, line width=0.8pt, draw=Ink!55, densely dashed},
+  fig/lookup/.style={<->, line width=0.7pt, draw=Ink!55, densely dashed},
   fig/decision/.style={
-    draw=Ink!88,
-    line width=0.55pt,
+    draw=Ink!70,
+    line width=0.5pt,
     diamond,
-    aspect=2.1,
-    rounded corners=1.5pt,
+    aspect=2,
     fill=white,
     align=center,
-    inner sep=2.5pt,
+    inner sep=2pt,
     text width=28mm,
     font=\scriptsize
   },
@@ -83,41 +78,35 @@
     fill=Panel
   },
   fig/taga/.style={
-    fill=AccentA!9,
-    draw=AccentA!42,
-    rounded corners=6pt,
-    inner xsep=4.5pt,
+    fill=Soft,
+    draw=Ink!35,
+    rounded corners=4pt,
+    inner xsep=4pt,
     inner ysep=2pt,
-    text=AccentA!78!black,
     font=\bfseries\scriptsize
   },
   fig/tagb/.style={
-    fill=AccentB!9,
-    draw=AccentB!42,
-    rounded corners=6pt,
-    inner xsep=4.5pt,
+    fill=Panel,
+    draw=Ink!45,
+    rounded corners=4pt,
+    inner xsep=4pt,
     inner ysep=2pt,
-    text=AccentB!78!black,
     font=\bfseries\scriptsize
   },
   fig/note/.style={
-    draw=Ink!18,
+    draw=Ink!20,
     fill=Soft,
-    rounded corners=5pt,
-    inner sep=6pt,
+    rounded corners=4pt,
+    inner sep=5pt,
     text=Muted,
     font=\scriptsize,
     align=left
   },
   fig/mblock/.style={
-    draw=Ink!88,
-    line width=0.5pt,
-    rounded corners=3pt,
-    fill=white,
+    fig/box,
     minimum width=31mm,
     minimum height=8.5mm,
-    inner sep=3pt,
-    align=center,
+    inner sep=2.5pt,
     font=\scriptsize
   },
   fig/mcore/.style={
@@ -126,24 +115,20 @@
     fill=Panel
   },
   fig/mside/.style={
-    draw=Ink!65,
-    line width=0.45pt,
-    rounded corners=3pt,
+    fig/box,
     fill=Soft,
     minimum width=18mm,
     minimum height=6.5mm,
-    inner sep=2.5pt,
-    align=center,
+    inner sep=2pt,
     font=\tiny
   },
   fig/mdecision/.style={
-    draw=Ink!88,
+    draw=Ink!70,
     line width=0.5pt,
     diamond,
     aspect=1.9,
-    rounded corners=1.2pt,
     fill=white,
-    inner sep=2pt,
+    inner sep=1.8pt,
     align=center,
     text width=23mm,
     font=\tiny
@@ -155,8 +140,10 @@
     text=Muted
   },
   fig/mgroup/.style={
-    draw=Ink!10,
+    draw=Ink!20,
     fill=Soft,
-    rounded corners=6pt
+    rounded corners=4pt
   }
 }
+% Compatibility layer: keep old style/color names valid, but the shared
+% vocabulary stays intentionally small and neutral.
