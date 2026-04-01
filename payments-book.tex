@@ -22,6 +22,15 @@
 \addbibresource{assets/bibliography.bib}
 
 \begin{document}
+\newgeometry{
+  left=16mm,
+  textwidth=178mm,
+  top=18mm,
+  bottom=22mm,
+  marginparsep=0mm,
+  marginparwidth=0mm,
+  heightrounded,
+}
 \input{src/frontmatter/pre}
 \maketitle
 \clearpage
@@ -34,6 +43,7 @@
 \input{src/frontmatter/preface}
 \input{src/frontmatter/toc}
 
+\restoregeometry
 \mainmatter\par\input{src/parts/part1/index}
 \input{src/parts/part2/index}
 \input{src/parts/part3/index}
@@ -42,6 +52,15 @@
 
 \backmatter\par\input{src/backmatter/epilogue}
 \input{src/backmatter/source-map}
+\newgeometry{
+  left=16mm,
+  textwidth=178mm,
+  top=18mm,
+  bottom=22mm,
+  marginparsep=0mm,
+  marginparwidth=0mm,
+  heightrounded,
+}
 \input{src/backmatter/bibliography}
 
 \end{document}
