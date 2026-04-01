@@ -1,6 +1,5 @@
 % Пакеты LaTeX и глобальные настройки книги.
 % Редактору: этот файл не нужно трогать при добавлении глав или фигур.
-% Стили TikZ живут в src/figure-styles.tex (подключаются отсюда же).
 
 % --- Кодировки и язык ---
 \usepackage[T2A,T1]{fontenc}
@@ -56,6 +55,10 @@
 \setlength{\emergencystretch}{1.5em}
 \setlist[itemize,enumerate]{leftmargin=*,labelsep=0.55em,
   itemsep=0pt,topsep=0pt,partopsep=0pt}
+
+% --- Команда включения фигур ---
+% \includefiguresvg[width=<dim>]{path-without-ext}  — Excalidraw-SVG → PDF
+\newcommand{\includefiguresvg}[2][width=\linewidth]{\includegraphics[#1]{#2.pdf}}
 
 % --- \fullwidth: после удаления колонки полей равен \textwidth ---
 % \AtBeginDocument нужен: KOMA финализирует \textwidth только в \begin{document}
