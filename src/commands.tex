@@ -31,6 +31,66 @@
   {\footnotesize\noindent\fullcite{#1}\par}%
 }
 
+\makeatletter
+
+\newtcolorbox{margincalloutbox}[2][]{%
+  nobeforeafter,
+  sharp corners,
+  boxrule=0pt,
+  titlerule=.4pt,
+  left=4pt,
+  right=4pt,
+  top=2pt,
+  bottom=2pt,
+  lefttitle=4pt,
+  righttitle=4pt,
+  toptitle=2pt,
+  bottomtitle=2pt,
+  width=\linewidth,
+  colback=RoyalBlue!25!White,
+  colbacktitle=RoyalBlue!25!White,
+  coltitle=black,
+  colframe=black,
+  fonttitle=\bfseries\footnotesize,
+  before upper={\@margin@par},
+  title={#2},
+  #1
+}
+
+\NewDocumentCommand{\margincallout@place}{ o m m +m }{%
+  \IfNoValueTF{#1}{%
+    \marginnote{%
+      \begin{minipage}{\marginparwidth}%
+        \begin{margincalloutbox}[#2]{#3}%
+          #4%
+        \end{margincalloutbox}%
+      \end{minipage}%
+    }%
+  }{%
+    \marginnote[#1]{%
+      \begin{minipage}{\marginparwidth}%
+        \begin{margincalloutbox}[#2]{#3}%
+          #4%
+        \end{margincalloutbox}%
+      \end{minipage}%
+    }%
+  }%
+}
+
+\NewDocumentCommand{\margindefinition}{ o m +m }{%
+  \margincallout@place[#1]{colback=blue!4,colbacktitle=blue!15}{Определение: #2}{#3}%
+}
+
+\NewDocumentCommand{\marginimportant}{ o +m }{%
+  \margincallout@place[#1]{colback=red!5,colbacktitle=red!20}{Важно}{#2}%
+}
+
+\NewDocumentCommand{\marginpractice}{ o +m }{%
+  \margincallout@place[#1]{}{На практике}{#2}%
+}
+
+\makeatother
+
 \newcommand{\textrightarrowglyph}{\texorpdfstring{\ensuremath{\rightarrow}}{->}}
 \newcommand{\textleftrightarrowglyph}{\texorpdfstring{\ensuremath{\leftrightarrow}}{<->}}
 \newcommand{\texthorizontalbarglyph}{\texorpdfstring{---}{-}}
