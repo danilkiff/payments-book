@@ -1,7 +1,8 @@
 
 \chapter{Криптография в платежах}
 \label{ch:crypto}
-\begin{chapteroverview}
+\begin{quote}
+  \itshape
   В главе \ref{ch:emv} мы видели, что чип вычисляет криптограмму,
   но не углублялись в то, \emph{как} именно. Здесь мы разберём
   криптографические примитивы, на которых держится платёжная
@@ -10,7 +11,7 @@
   иерархию ключей, DUKPT, форматы PIN-блока и Key Ceremony.
   Отдельный раздел посвящён российскому ГОСТ-контуру в платёжном
   приложении Мир.
-\end{chapteroverview}
+\end{quote}
 
 В криптографии полезно начинать не с названий алгоритмов, а
 с неприятных эксплуатационных вопросов. Что произойдёт, если
@@ -185,12 +186,12 @@ ARPC, верификация PIN, когда PIN-блок расшифровыв
 между зонами безопасности, генерация и проверка CVV/CVV2,
 подготовка ключей при персонализации карт и вычисление MAC
 для защиты \iso{8583}-сообщений.
-\begin{narrowfigure}
+\begin{figure}[tbp]
   \centering
-  \includegraphics[width=\linewidth]{assets/figures/ch10-cryptography/crypto-hsm-flow.pdf}
+  \includegraphics[width=.45\textwidth]{assets/figures/ch10-cryptography/crypto-hsm-flow.pdf}
   \caption{Место HSM в авторизационном потоке.}
   \label{fig:crypto-hsm-flow}
-\end{narrowfigure}
+\end{figure}
 
 В реальной инфраструктуре HSM почти никогда не стоит в системе
 в одиночку: его включают в отказоустойчивый пул, который обслуживает
@@ -291,12 +292,12 @@ Base Derivation Key (BDK) порождает уникальные начальн
         применяется.
 \end{enumerate}
 
-\begin{narrowfigure}
+\begin{figure}[tbp]
   \centering
-  \includegraphics[width=\linewidth]{assets/figures/ch10-cryptography/crypto-dukpt.pdf}
+  \includegraphics[width=.45\textwidth]{assets/figures/ch10-cryptography/crypto-dukpt.pdf}
   \caption{Схема деривации DUKPT.}
   \label{fig:crypto-dukpt}
-\end{narrowfigure}
+\end{figure}
 
 Почему это работает? Дерево деривации DUKPT устроено так, что
 каждый транзакционный ключ порождается из промежуточных узлов
@@ -364,9 +365,9 @@ Format 4 --- подход на основе AES для новых систем. 
 нужно сверять по текущему бюллетеню, а не по памяти
 \cite{pci-format4-suspension}\cite{pci-format4-supplement}.
 
-\begin{importantcallout}
+\paragraph{Важно.}
 Поддержку Format 4 нельзя фиксировать по памяти: сроки в PCI PIN Security пересматривались. Новый процессинг надо проектировать так, чтобы пережить и AES-контур, и совместимость с унаследованным парком терминалов.
-\end{importantcallout}
+
 
 \subsection*{Перешифрование PIN-блока (PIN translation)}
 
@@ -394,7 +395,7 @@ Format 4 --- подход на основе AES для новых систем. 
 исключающим возможность того, чтобы один человек когда-либо увидел
 ключ целиком \cite{pci-pin-security}.
 
-\begin{practicecallout}
+\paragraph{Практика.}
   Key Ceremony обычно проводят в защищённой комнате, где соблюдены
   контроль доступа и наблюдение за процедурой. Главный смысл церемонии
   --- в том, чтобы ни один человек не увидел
@@ -415,7 +416,7 @@ Format 4 --- подход на основе AES для новых систем. 
   с ключом не выполняется одним человеком, и \emph{split knowledge} —
   ни один человек не знает полный ключ. Нарушение любого из этих
   принципов — инцидент безопасности, требующий перегенерации ключа.
-\end{practicecallout}
+
 
 \subsection*{Загрузка ключей в терминалы (key injection)}
 
@@ -482,11 +483,11 @@ Format 4 --- подход на основе AES для новых систем. 
 что криптографическая совместимость с карточным миром не означает
 криптографической тождественности.
 
-\begin{practicecallout}
+\paragraph{Практика.}
 Если процессинг работает с картами Мир, HSM и прилегающий контур должны поддерживать ГОСТ-алгоритмы, а не только RSA/3DES/AES. Речь идёт не о косметической особенности, а об инфраструктурном требовании локального криптографического контура.
-\end{practicecallout}
 
-\begin{chaptersummary}
+
+\section*{Итоги главы}
 \begin{itemize}
   \item В платёжной инфраструктуре сочетаются два класса криптографии:
         симметричная отвечает за быстрые операции внутри доверенного
@@ -510,4 +511,4 @@ Format 4 --- подход на основе AES для новых систем. 
         процессинг требует не только общего карточного, но и
         ГОСТ-совместимого криптографического стека.
 \end{itemize}
-\end{chaptersummary}
+

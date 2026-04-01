@@ -1,7 +1,8 @@
 
 \chapter{Mastercard}
 \label{ch:mastercard}
-\begin{chapteroverview}
+\begin{quote}
+  \itshape
   \scheme{Mastercard} часто воспринимается как зеркало \scheme{Visa}:
   та же четырёхсторонняя модель, тот же стандарт EMV, те же
   таблицы interchange. Но инженер быстро упирается в места, где
@@ -15,7 +16,7 @@
   Ниже последовательно разберём, какую задачу решает каждый
   из этих механизмов, как он устроен и где сравнение с \scheme{Visa}
   уже начинает вводить в заблуждение.
-\end{chapteroverview}
+\end{quote}
 
 Эта глава задумана как зеркальная пара к предыдущей.
 Нас интересует не \scheme{Mastercard} сама по себе,
@@ -92,9 +93,9 @@ presentment) в формате IPM; именно эту сущность и ну
 с клиринговым конвейером \scheme{Visa}, а не пытаться
 мысленно свести IPM к \enquote{тому же самому сообщению, только позже}.
 
-\begin{importantcallout}
+\paragraph{Важно.}
 Dual message у \scheme{Visa} и \scheme{Mastercard} похож по идее, но инженерная единица клиринга разная: у одной сети BASE II/TC33, у другой GCMS/IPM. Ошибка начинается, когда IPM трактуют как переименованный TC33.
-\end{importantcallout}
+
 
 Для разработчика из этого следует вполне конкретное ограничение:
 клиринговый конвейер \scheme{Mastercard} нельзя строить как простую
@@ -131,12 +132,12 @@ IPM --- Integrated Product Messages,
 подтверждают сам формат IPM и роль GCMS, но не дают полного атласа
 полей для построчного разбора.
 
-\begin{narrowfigure}
+\begin{figure}[tbp]
   \centering
-  \includegraphics[width=\linewidth]{assets/figures/ch14-mastercard/mc-ipm-structure.pdf}
+  \includegraphics[width=.45\textwidth]{assets/figures/ch14-mastercard/mc-ipm-structure.pdf}
   \caption{Структура IPM-обмена Mastercard.}
   \label{fig:mc-ipm-structure}
-\end{narrowfigure}
+\end{figure}
 
 Одна деталь из публичных правил особенно важна для реальной
 эксплуатации. Код рекомендации мерчанту (Merchant Advice Code, MAC)
@@ -201,15 +202,15 @@ DSRP ценен не тем, что превращает удалённый пл
 EMV, значит Mastercard заработает автоматически} слишком оптимистично.
 Нужны именно схема-специфичные требования и их проверка.
 
-\begin{importantcallout}
+\paragraph{Важно.}
 M/Chip лучше понимать как семейство требований \scheme{Mastercard}, а не как короткий список профилей. Для эквайера и вендора терминалов важен конкретный набор тестов, сертификатов и поведенческих требований.
-\end{importantcallout}
 
-\sourcecallout{если понадобится точная и актуальная матрица
+
+\paragraph{Проверка по первоисточнику.}
+если понадобится точная и актуальная матрица
   профилей M/Chip и областей их применения, сверять текущие
   M/Chip Requirements for Contact and Contactless через
-  Mastercard Connect; в открытом доступе полной матрицы нет.}
-
+  Mastercard Connect; в открытом доступе полной матрицы нет.
 \section{Mastercard Send}
 \label{sec:mc-send}
 
@@ -237,7 +238,7 @@ real-time характер сервиса и вариативность кана
 нельзя обещать одинаковый SLA для всех рынков только потому,
 что бренд сервиса один и тот же.
 
-\begin{practicecallout}
+\paragraph{Практика.}
   При построении платформы выплат через Mastercard Send важно заранее
   проверить не только наличие у сети нужного платёжного коридора,
   но и готовность банка или провайдера-получателя принимать такие
@@ -246,7 +247,7 @@ real-time характер сервиса и вариативность кана
   доступность средств получателю --- не одно и то же. Для платформ
   выплат это различие критично: именно на нём ломаются обещания
   \enquote{деньги за минуту}.
-\end{practicecallout}
+
 
 \section{ABU: автоматическое обновление данных карты}
 \label{sec:mc-abu}
@@ -318,7 +319,7 @@ ABU и VAU остаются разными сервисами с разными 
 привязывать именно к такой конкретной региональной таблице
 \cite{mc-interchange-us}.
 
-\begin{practicecallout}
+\paragraph{Практика.}
   При сравнении interchange \scheme{Mastercard} и \scheme{Visa} для конкретного
   мерчанта ключевой параметр --- не название сети само по себе,
   а фактический микс продуктов и качество данных в транзакции.
@@ -327,7 +328,7 @@ ABU и VAU остаются разными сервисами с разными 
   выполнила ли транзакция квалифицирующие условия. Если спорить
   со ставкой раньше этих четырёх шагов, разговор почти всегда
   уходит в догадки.
-\end{practicecallout}
+
 
 \section{Архитектурные отличия от Visa}
 \label{sec:mc-vs-visa}
@@ -337,7 +338,7 @@ ABU и VAU остаются разными сервисами с разными 
 или исторические, но несколько из них существенны именно с инженерной
 точки зрения.
 
-\begin{infobox}[title=Архитектурные отличия Mastercard и Visa]
+\paragraph{Архитектурные отличия Mastercard и Visa.}
   \centering
   \begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash}p{0.26\textwidth}>{\RaggedRight\arraybackslash}X>{\RaggedRight\arraybackslash}X@{}}
     \toprule
@@ -352,7 +353,7 @@ ABU и VAU остаются разными сервисами с разными 
     Обновление реквизитов & Automatic Billing Updater (ABU)  & Visa Account Updater (VAU)                    \\
     \bottomrule
   \end{tabularx}
-\end{infobox}
+
 
 Наиболее существенны различия в клиринговой модели и формате обмена.
 Разработчик, который переносит систему обработки клиринга с одной
@@ -370,7 +371,7 @@ ABU и VAU остаются разными сервисами с разными 
   и клиринг разделены во времени} верна для обеих схем; детали
 этого разделения --- разные.
 
-\begin{practicecallout}
+\paragraph{Практика.}
   При работе с IPM-сообщениями \scheme{Mastercard} для диагностики отказов
   нужно смотреть не только на сам факт отказа, но и на код
   рекомендации мерчанту (Merchant Advice Code) в авторизационном
@@ -379,9 +380,9 @@ ABU и VAU остаются разными сервисами с разными 
   IPM нужен для клиринга и последующей обработки, а оперативная
   логика повторов часто определяется ещё на авторизационном шаге
   \cite{mc-tpr}.
-\end{practicecallout}
 
-\begin{chaptersummary}
+
+\section*{Итоги главы}
 \begin{itemize}
   \item Публичные материалы \scheme{Mastercard} описывают единый сетевой периметр через Authorization Platform, GCMS и расчётную систему SAM; авторизация, clearing и settlement внутри него разведены по разным подсистемам.
   \item Модель dual message в \scheme{Mastercard} нельзя описывать через аналогию с TC33: клиринговый обмен идёт в формате IPM через GCMS.
@@ -392,4 +393,4 @@ ABU и VAU остаются разными сервисами с разными 
   \item ABU автоматически обновляет платёжные реквизиты для сценариев хранения реквизитов и рекуррентных списаний; аналог \scheme{Visa} --- VAU.
   \item Interchange у \scheme{Mastercard} определяется регионом, продуктом, MCC и качеством данных; без привязки к конкретной таблице численные сравнения с \scheme{Visa} ненадёжны.
 \end{itemize}
-\end{chaptersummary}
+
