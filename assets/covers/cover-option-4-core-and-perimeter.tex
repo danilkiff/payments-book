@@ -1,0 +1,86 @@
+\documentclass{article}
+\input{templates/cover-preamble}
+\input{templates/cover-library}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{coverart}
+  \fill[CoverMist] (0,0) rectangle (\CoverWidth,\CoverHeight);
+
+  \fill[CoverUltra!18, opacity=0.10]
+    (6.1,19.5) .. controls (8.8,23.8) and (14.7,25.0) .. (18.1,22.4)
+    .. controls (20.4,20.7) and (20.8,17.2) .. (19.0,14.8)
+    .. controls (16.7,11.8) and (11.2,10.6) .. (8.0,12.3)
+    .. controls (5.0,13.9) and (4.6,16.8) .. cycle;
+  \fill[CoverLavender!28, opacity=0.11]
+    (8.7,11.4) .. controls (11.5,13.7) and (15.0,13.5) .. (17.4,11.5)
+    .. controls (19.4,9.9) and (19.9,7.0) .. (18.7,4.9)
+    .. controls (17.4,2.5) and (13.8,1.3) .. (10.8,1.8)
+    .. controls (8.1,2.3) and (6.5,4.1) .. cycle;
+
+  \coordinate (core) at (12.0,16.1);
+
+  \fill[CoverUltra!16, opacity=0.14] (core) circle[radius=5.2];
+  \fill[CoverLavender!16, opacity=0.10] (core) circle[radius=3.7];
+
+  \foreach \radius/\colorname in {5.2/CoverIndigo!28,4.2/CoverIndigo!34,3.1/CoverLavender!46,2.0/CoverUltra!56}{
+    \draw[draw=\colorname, line width=0.52pt] (core) circle[radius=\radius];
+  }
+
+  \foreach \angle in {8,38,70,104,136,166,198,230,262,296,326}{
+    \draw[cover/fine] (core) -- ++(\angle:5.2);
+  }
+
+  \foreach \angle in {18,78,138,198,258,318}{
+    \draw[cover/mesh]
+      ($(core)+(\angle:3.1)$) -- ($(core)+(\angle+42:3.1)$) -- ($(core)+(\angle+84:3.1)$)
+      -- ($(core)+(\angle+126:3.1)$) -- ($(core)+(\angle+168:3.1)$) -- cycle;
+  }
+
+  \foreach \angle in {15,42,71,96,128,159,192,226,258,291,322,346}{
+    \fill[white, opacity=0.96] ($(core)+(\angle:5.2)$) circle[radius=0.12];
+    \draw[cover/line, draw=CoverIndigo!62] ($(core)+(\angle:5.2)$) circle[radius=0.12];
+  }
+
+  \coordinate (p1) at ($(core)+(14:7.0)$);
+  \coordinate (p2) at ($(core)+(52:7.7)$);
+  \coordinate (p3) at ($(core)+(110:8.2)$);
+  \coordinate (p4) at ($(core)+(166:7.4)$);
+  \coordinate (p5) at ($(core)+(224:7.9)$);
+  \coordinate (p6) at ($(core)+(278:8.3)$);
+  \coordinate (p7) at ($(core)+(332:7.5)$);
+
+  \foreach \point in {p1,p2,p3,p4,p5,p6,p7}{
+    \fill[CoverUltra, opacity=0.08] (\point) circle[radius=0.9];
+    \fill[white, opacity=0.96] (\point) circle[radius=0.13];
+    \draw[cover/line, draw=CoverIndigo!62] (\point) circle[radius=0.13];
+  }
+
+  \foreach \from/\to in {core/p1,core/p2,core/p3,core/p4,core/p5,core/p6,core/p7,p1/p2,p2/p3,p3/p4,p4/p5,p5/p6,p6/p7,p7/p1,p1/p3,p2/p4,p4/p6,p5/p7}{
+    \draw[cover/mesh] (\from) -- (\to);
+  }
+
+  \draw[cover/trace] (p3) -- ++(-1.4,0) -- ++(0,2.0) -- ++(-2.2,0);
+  \draw[cover/trace] (p5) -- ++(-1.3,-1.3) -- ++(-2.2,0);
+  \draw[cover/trail] (p1) -- ++(1.8,0) -- ++(0,2.0) -- ++(1.6,0);
+  \draw[cover/trail] (p7) -- ++(2.0,-0.1) -- ++(0,-2.4) -- ++(-1.4,0);
+  \draw[cover/trail] (p6) -- ++(0,-1.6) -- ++(-1.5,0) -- ++(0,-1.4);
+
+  \foreach \x/\y/\w/\h/\o in {
+    4.1/22.8/3.8/1.8/0.08,
+    5.0/8.6/4.2/2.0/0.09,
+    18.0/11.1/4.0/1.9/0.08
+  }{
+    \draw[cover/dashed, rounded corners=4pt]
+      (\x-\w/2,\y-\h/2) rectangle (\x+\w/2,\y+\h/2);
+  }
+
+  \draw[cover/dashed] (2.0,24.4) .. controls (5.2,22.7) and (8.8,20.7) .. (10.1,18.5);
+  \draw[cover/dashed] (5.3,3.3) .. controls (8.5,6.7) and (11.0,9.6) .. (14.4,12.1);
+  \draw[cover/fine] (1.8,20.2) -- (19.2,13.4);
+  \draw[cover/fine] (6.2,27.6) -- (16.4,2.0);
+
+  \fill[white, opacity=0.58]
+    (0.0,0.0) rectangle (21.0,2.0);
+\end{coverart}
+\end{document}

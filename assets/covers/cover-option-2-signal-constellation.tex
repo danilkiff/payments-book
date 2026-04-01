@@ -1,0 +1,105 @@
+\documentclass{article}
+\input{templates/cover-preamble}
+\input{templates/cover-library}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{coverart}
+  \fill[CoverHaze] (0,0) rectangle (\CoverWidth,\CoverHeight);
+
+  \fill[CoverUltra!20, opacity=0.10]
+    (0.2,18.5) .. controls (4.5,22.8) and (10.4,23.3) .. (14.1,20.6)
+    .. controls (17.0,18.5) and (18.2,15.5) .. (16.6,13.1)
+    .. controls (14.9,10.5) and (10.7,10.0) .. (7.4,11.5)
+    .. controls (4.2,12.9) and (1.2,15.1) .. cycle;
+  \fill[CoverLavender!26, opacity=0.11]
+    (8.3,8.6) .. controls (11.0,10.8) and (15.7,11.0) .. (18.3,9.2)
+    .. controls (20.2,7.8) and (21.0,5.6) .. (20.1,3.8)
+    .. controls (18.6,1.1) and (13.1,0.8) .. (9.7,2.5)
+    .. controls (6.5,4.1) and (6.3,6.6) .. cycle;
+  \fill[CoverMauve!18, opacity=0.10]
+    (4.9,28.2) .. controls (8.1,29.7) and (12.9,29.4) .. (15.1,27.5)
+    .. controls (16.4,26.4) and (16.7,24.8) .. (15.7,23.7)
+    .. controls (13.8,21.5) and (8.5,21.5) .. (5.6,23.4)
+    .. controls (4.2,24.3) and (3.8,26.4) .. cycle;
+
+  \foreach \segment/\blur in {
+    {(0.8,7.4) .. controls (3.1,9.7) and (5.8,11.0) .. (8.7,12.6)
+      .. controls (11.4,14.0) and (12.9,15.8) .. (15.2,18.3)
+      .. controls (17.6,20.8) and (18.8,23.0) .. (20.3,26.6)}/0.11,
+    {(1.6,15.1) .. controls (4.3,16.0) and (7.0,16.1) .. (9.8,17.2)
+      .. controls (12.2,18.1) and (14.2,20.0) .. (16.9,21.6)
+      .. controls (18.3,22.5) and (19.7,22.9) .. (20.7,23.1)}/0.08,
+    {(2.0,3.8) .. controls (4.4,6.5) and (7.3,8.4) .. (10.3,9.2)
+      .. controls (13.4,10.0) and (16.2,11.4) .. (18.9,13.6)
+      .. controls (19.6,14.2) and (20.2,15.2) .. (20.6,16.8)}/0.09,
+    {(0.3,23.7) .. controls (3.5,22.4) and (6.2,21.5) .. (8.5,20.4)
+      .. controls (11.9,18.6) and (14.1,16.4) .. (16.6,13.0)
+      .. controls (18.0,11.1) and (19.0,8.9) .. (20.8,5.0)}/0.07
+  }{
+    \draw[draw=CoverUltra!26, line width=5.0pt, opacity=\blur] \segment;
+  }
+
+  \draw[cover/trail] (0.8,7.4) .. controls (3.1,9.7) and (5.8,11.0) .. (8.7,12.6)
+    .. controls (11.4,14.0) and (12.9,15.8) .. (15.2,18.3)
+    .. controls (17.6,20.8) and (18.8,23.0) .. (20.3,26.6);
+  \draw[cover/trail, draw=CoverIndigo!62] (1.6,15.1) .. controls (4.3,16.0) and (7.0,16.1) .. (9.8,17.2)
+    .. controls (12.2,18.1) and (14.2,20.0) .. (16.9,21.6)
+    .. controls (18.3,22.5) and (19.7,22.9) .. (20.7,23.1);
+  \draw[cover/mesh] (2.0,3.8) .. controls (4.4,6.5) and (7.3,8.4) .. (10.3,9.2)
+    .. controls (13.4,10.0) and (16.2,11.4) .. (18.9,13.6)
+    .. controls (19.6,14.2) and (20.2,15.2) .. (20.6,16.8);
+  \draw[cover/mesh, draw=CoverLavender!72] (0.3,23.7) .. controls (3.5,22.4) and (6.2,21.5) .. (8.5,20.4)
+    .. controls (11.9,18.6) and (14.1,16.4) .. (16.6,13.0)
+    .. controls (18.0,11.1) and (19.0,8.9) .. (20.8,5.0);
+
+  \foreach \p/\q in {
+    2.1/8.6, 4.5/10.5, 6.8/11.7, 9.2/13.1, 11.9/15.5, 14.0/17.0, 16.1/19.5, 18.1/22.2,
+    3.0/15.6, 6.2/16.1, 9.0/16.9, 12.5/18.7, 15.3/20.9, 18.8/22.7,
+    4.0/6.1, 7.1/8.0, 10.5/9.3, 14.6/10.8, 17.2/12.3, 19.5/15.0,
+    2.0/23.0, 5.0/22.0, 8.7/20.1, 12.8/17.5, 15.5/14.1, 18.6/9.6
+  }{
+    \fill[CoverUltra, opacity=0.09] (\p,\q) circle[radius=0.45];
+    \fill[white, opacity=0.95] (\p,\q) circle[radius=0.11];
+    \draw[cover/line, draw=CoverIndigo!62] (\p,\q) circle[radius=0.11];
+  }
+
+  \foreach \a/\b/\c/\d in {
+    4.5/10.5/3.0/15.6,
+    6.8/11.7/9.0/16.9,
+    9.2/13.1/12.5/18.7,
+    11.9/15.5/15.3/20.9,
+    14.0/17.0/18.8/22.7,
+    4.0/6.1/2.1/8.6,
+    7.1/8.0/6.2/16.1,
+    10.5/9.3/12.8/17.5,
+    14.6/10.8/15.5/14.1,
+    17.2/12.3/18.6/9.6,
+    8.7/20.1/6.2/16.1,
+    12.8/17.5/14.0/17.0
+  }{
+    \draw[cover/fine] (\a,\b) -- (\c,\d);
+  }
+
+  \draw[cover/trace]
+    (4.5,10.5) -- (5.8,10.5) -- (5.8,9.0) -- (8.0,9.0) -- (8.0,7.1);
+  \draw[cover/trace]
+    (10.5,9.3) -- (10.5,11.2) -- (13.4,11.2) -- (13.4,13.6);
+  \draw[cover/trail]
+    (8.7,20.1) -- (10.8,20.1) -- (10.8,22.4) -- (13.8,22.4);
+  \draw[cover/trail]
+    (14.0,17.0) -- (14.0,14.8) -- (16.0,14.8) -- (16.0,12.3);
+
+  \foreach \x/\y/\w/\h/\o in {
+    6.8/11.7/4.0/1.8/0.10,
+    12.4/18.6/4.4/2.0/0.08,
+    15.8/11.1/3.8/1.7/0.09
+  }{
+    \draw[cover/dashed, rounded corners=4pt]
+      (\x-\w/2,\y-\h/2) rectangle (\x+\w/2,\y+\h/2);
+  }
+
+  \fill[white, opacity=0.62]
+    (0.0,0.0) rectangle (21.0,2.1);
+\end{coverart}
+\end{document}

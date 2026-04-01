@@ -1,0 +1,62 @@
+\newcommand{\CoverWidth}{21}
+\newcommand{\CoverHeight}{29.7}
+
+\tikzset{
+  cover/mesh/.style={
+    draw=CoverIndigo!72,
+    line width=0.58pt,
+    line cap=round,
+    line join=round
+  },
+  cover/line/.style={
+    draw=CoverInk!48,
+    line width=0.34pt,
+    line cap=round,
+    line join=round
+  },
+  cover/fine/.style={
+    draw=CoverInk!24,
+    line width=0.20pt,
+    line cap=round,
+    line join=round
+  },
+  cover/trace/.style={
+    draw=CoverUltra!74,
+    line width=0.88pt,
+    line cap=round,
+    line join=round
+  },
+  cover/trail/.style={
+    draw=CoverUltra!55,
+    line width=0.64pt,
+    line cap=round,
+    line join=round
+  },
+  cover/dashed/.style={
+    draw=CoverSmoke!42,
+    line width=0.30pt,
+    densely dashed,
+    line cap=round,
+    line join=round
+  },
+  cover/node/.style={
+    circle,
+    draw=CoverIndigo!58,
+    fill=white,
+    line width=0.34pt,
+    inner sep=1.1pt
+  },
+  cover/shard/.style={
+    draw=CoverIndigo!34,
+    line width=0.48pt,
+    rounded corners=1.5pt
+  }
+}
+
+\newenvironment{coverart}{
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \path[use as bounding box] (0,0) rectangle (\CoverWidth,\CoverHeight);
+    \fill[white] (0,0) rectangle (\CoverWidth,\CoverHeight);
+}{
+  \end{tikzpicture}
+}

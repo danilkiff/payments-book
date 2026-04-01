@@ -1,0 +1,96 @@
+\documentclass{article}
+\input{templates/cover-preamble}
+\input{templates/cover-library}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{coverart}
+  \fill[CoverMist] (0,0) rectangle (\CoverWidth,\CoverHeight);
+
+  \fill[CoverLavender!36, opacity=0.16]
+    (1.0,26.9) .. controls (3.8,29.5) and (8.9,29.0) .. (10.3,26.4)
+    .. controls (11.4,24.2) and (9.8,21.6) .. (7.2,20.9)
+    .. controls (4.5,20.2) and (1.8,21.4) .. (1.0,24.0)
+    .. controls (0.4,25.4) and (0.3,26.2) .. cycle;
+  \fill[CoverUltra!32, opacity=0.15]
+    (11.8,10.7) .. controls (15.3,12.9) and (19.8,12.0) .. (20.4,8.8)
+    .. controls (20.9,6.0) and (18.9,2.5) .. (15.6,1.7)
+    .. controls (12.9,1.1) and (10.2,2.1) .. (9.7,4.8)
+    .. controls (9.1,7.6) and (9.5,9.0) .. cycle;
+  \fill[CoverMauve!32, opacity=0.12]
+    (5.1,15.8) .. controls (7.7,18.9) and (12.0,18.8) .. (13.6,16.2)
+    .. controls (15.0,13.9) and (13.9,10.8) .. (11.3,9.8)
+    .. controls (8.8,8.9) and (5.7,10.3) .. (4.6,12.8)
+    .. controls (4.0,14.2) and (4.2,14.9) .. cycle;
+
+  \coordinate (a) at (3.1,23.9);
+  \coordinate (b) at (5.9,25.6);
+  \coordinate (c) at (9.1,25.0);
+  \coordinate (d) at (12.2,23.1);
+  \coordinate (e) at (15.6,22.7);
+  \coordinate (f) at (17.6,19.8);
+  \coordinate (g) at (15.1,17.2);
+  \coordinate (h) at (11.6,16.2);
+  \coordinate (i) at (8.6,17.3);
+  \coordinate (j) at (5.2,18.2);
+  \coordinate (k) at (3.3,20.6);
+  \coordinate (l) at (7.1,21.1);
+  \coordinate (m) at (10.2,20.5);
+  \coordinate (n) at (13.1,19.8);
+  \coordinate (o) at (7.7,13.3);
+  \coordinate (p) at (11.8,12.2);
+  \coordinate (q) at (14.6,10.8);
+  \coordinate (r) at (16.1,8.6);
+  \coordinate (s) at (12.8,7.1);
+  \coordinate (t) at (8.8,8.4);
+  \coordinate (u) at (6.1,10.5);
+
+  \foreach \na/\nb/\nc in {a/b/l,b/c/l,c/d/m,d/e/n,k/l/j,l/m/i,m/n/h,n/g/h,j/l/i,i/m/h,h/n/g,j/i/o,i/o/p,i/h/p,h/p/q,h/g/q,o/u/t,o/t/p,p/t/s,p/s/q,q/s/r}{
+    \fill[CoverLavender!24, opacity=0.18] (\na) -- (\nb) -- (\nc) -- cycle;
+  }
+
+  \foreach \from/\to in {a/b,a/k,a/l,b/c,b/l,c/d,c/l,c/m,d/e,d/m,d/n,e/f,e/n,f/g,g/h,g/n,g/q,h/i,h/m,h/p,i/j,i/l,i/o,j/k,j/l,j/o,k/l,l/m,m/n,o/p,o/u,o/t,p/q,p/s,p/t,q/r,q/s,s/t,t/u}{
+    \draw[cover/mesh] (\from) -- (\to);
+  }
+
+  \draw[cover/fine] (1.1,24.9) -- (18.9,18.5);
+  \draw[cover/fine] (2.0,19.1) -- (16.7,24.0);
+  \draw[cover/fine] (5.9,11.0) -- (16.8,7.8);
+  \draw[cover/fine] (10.3,26.7) -- (12.5,6.4);
+  \draw[cover/dashed] (2.7,14.7) -- (18.6,10.5);
+  \draw[cover/dashed] (4.5,27.4) -- (18.3,15.0);
+
+  \draw[cover/trace]
+    (5.9,25.6) -- (7.4,25.6) -- (7.4,23.9) -- (9.1,23.9) -- (9.1,22.0);
+  \draw[cover/trace]
+    (11.8,12.2) -- (13.6,12.2) -- (13.6,14.8) -- (15.8,14.8);
+  \draw[cover/trace]
+    (6.1,10.5) -- (6.1,8.9) -- (7.4,8.9) -- (7.4,6.7) -- (10.0,6.7);
+  \draw[cover/trail]
+    (3.3,20.6) -- (2.0,20.6) -- (2.0,17.4) -- (4.5,17.4);
+  \draw[cover/trail]
+    (15.6,22.7) -- (15.6,24.8) -- (18.4,24.8) -- (18.4,22.3);
+
+  \foreach \x/\y/\r/\c/\o in {
+    3.1/23.9/0.50/CoverLavender/0.16,
+    9.1/25.0/0.66/CoverUltra/0.14,
+    15.6/22.7/0.56/CoverLavender/0.13,
+    11.6/16.2/0.84/CoverUltra/0.11,
+    7.7/13.3/0.88/CoverLavender/0.11,
+    14.6/10.8/1.00/CoverUltra/0.10
+  }{
+    \fill[\c, opacity=\o] (\x,\y) circle[radius=\r];
+  }
+
+  \foreach \n in {a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u}{
+    \fill[white, opacity=0.96] (\n) circle[radius=0.11];
+    \draw[cover/line, draw=CoverIndigo!62] (\n) circle[radius=0.11];
+  }
+
+  \fill[white, opacity=0.55]
+    (6.3,4.5) .. controls (8.1,5.5) and (10.9,5.8) .. (12.4,4.8)
+    .. controls (13.7,4.0) and (14.3,2.8) .. (14.0,1.7)
+    -- (0.0,1.7) -- (0.0,4.0)
+    .. controls (1.9,4.6) and (4.2,4.1) .. (6.3,4.5) -- cycle;
+\end{coverart}
+\end{document}
