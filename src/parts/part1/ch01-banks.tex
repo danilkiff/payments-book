@@ -2,7 +2,7 @@
 \chapter{Деньги между банками}
 \label{ch:banks}
 
-\begin{kaobox}[frametitle=Что вы узнаете из этой главы]
+\begin{kaobox}[title=Что вы узнаете из этой главы]
 Прежде чем разбирать карточную транзакцию, стоит понять, как
 деньги вообще перемещаются от одного банка к~другому: какие формы
 денег существуют в~российском праве, что такое корреспондентский
@@ -199,15 +199,30 @@
 
 \begin{figure}[htbp]
   \centering
-  \begin{sequencediagram}
-    \newthread{banka}{Банк~А}
-    \newinst{cbr}{Банк~России}
-    \newinst{bankb}{Банк~Б}
-    \begin{call}{banka}{Платёжное поручение}{cbr}{Подтверждение расчёта}
-      \begin{call}{cbr}{Уведомление о~зачислении}{bankb}{}
-      \end{call}
-    \end{call}
-  \end{sequencediagram}
+  \begin{tikzpicture}[
+      actor/.style={rectangle, draw, minimum width=2.2cm, minimum height=0.7cm, align=center, font=\small},
+      arr/.style={-{Stealth}, thick},
+      retarr/.style={{Stealth}-, thick, dashed},
+      every node/.style={font=\small}
+    ]
+    % Actors
+    \node[actor] (banka)  at (0,0)   {Банк А};
+    \node[actor] (cbr)    at (5,0)   {Банк России};
+    \node[actor] (bankb)  at (10,0)  {Банк Б};
+    % Lifelines
+    \draw[dashed] (banka.south)  -- ++(0,-6);
+    \draw[dashed] (cbr.south)    -- ++(0,-6);
+    \draw[dashed] (bankb.south)  -- ++(0,-6);
+    % Message 1: A -> CBR
+    \draw[arr] (0,-1) -- node[above]{\strut Платёжное поручение} (5,-1);
+    % Message 2: CBR -> B
+    \draw[arr] (5,-2.5) -- node[above]{\strut Уведомление о зачислении} (10,-2.5);
+    % Message 3: B -> CBR (empty return)
+    \draw[retarr] (5,-3.5) -- (10,-3.5);
+    % Message 4: CBR -> A
+    \draw[retarr] node[below, pos=0.5]{\strut Подтверждение расчёта}
+      (0,-4.5) -- (5,-4.5);
+  \end{tikzpicture}
   \caption{Межбанковский перевод через платёжную систему Банка~России:
     банк~А инструктирует ЦБ, который одной атомарной проводкой
     переносит средства с~корреспондентского счёта банка~А
