@@ -1,15 +1,15 @@
-% commands.tex — кастомные макросы для книги о платёжном стеке
+% commands.tex - кастомные макросы для книги о платёжном стеке
 
-%% ── Платёжные термины ────────────────────────────────────────────────────────
+%% Платёжные термины
 % Единообразное форматирование специфических терминов по всей книге.
 
 \DeclareRobustCommand{\codeword}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
 \DeclareRobustCommand{\domain}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
 \DeclareRobustCommand{\endpoint}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
 \DeclareRobustCommand{\filepath}[1]{\texorpdfstring{\path{#1}}{\detokenize{#1}}}
-\DeclareRobustCommand{\iso}[1]{\texorpdfstring{\textsf{ISO~#1}}{ISO #1}}
+\DeclareRobustCommand{\iso}[1]{\texorpdfstring{\textsf{ISO #1}}{ISO #1}}
 \DeclareRobustCommand{\mti}[1]{\codeword{#1}}     % MTI значение
-\DeclareRobustCommand{\de}[1]{DE~\codeword{#1}}   % Data Element: \de{55}
+\DeclareRobustCommand{\de}[1]{DE \codeword{#1}}   % Data Element: \de{55}
 \DeclareRobustCommand{\rc}[1]{\codeword{#1}}      % Response Code: \rc{05}
 \DeclareRobustCommand{\pan}[1]{\codeword{#1}}     % PAN/номер карты
 \DeclareRobustCommand{\hex}[1]{\codeword{0x#1}}   % hex-значение
@@ -29,7 +29,7 @@
   \def\law#1{#1}%
 }
 
-%% ── Специальные блоки ────────────────────────────────────────────────────────
+%% Специальные блоки
 % Определения, предупреждения и справочные блоки через kaobook environments.
 
 % "На практике" — практический совет
@@ -53,18 +53,18 @@
   \end{kaobox}
 }
 
-%% ── Термины, глоссарий и указатель ───────────────────────────────────────────
+%% Термины, глоссарий и указатель
 % Используйте \term{pan}, \term[алгоритму Луна]{luhn}, \Term{emv}, \termmargin{pan}.
 % Определения и настройки находятся в preamble/terms.tex.
 
-%% ── Аннотированные источники ────────────────────────────────────────────────
+%% Аннотированные источники
 % Для списков ключевых документов в основном потоке текста.
 \newcommand{\sourcebib}[1]{%
   \par\smallskip
   {\footnotesize\noindent\fullcite{#1}\par}%
 }
 
-%% ── Todo-заметки ─────────────────────────────────────────────────────────────
+%% Todo-заметки
 % Цветовые категории для \todo{}:
 \newcommand{\authoringnote}[1]{%
   \ifpaymentsbookrelease
@@ -82,13 +82,13 @@
 \newcommand{\todocite}[1]{\authoringnote{\todobox{Источник}{green!12}{green!35!black}{#1}}}
 \newcommand{\todocheck}[1]{\authoringnote{\todobox{Проверить}{orange!18}{orange!55!black}{#1}}}
 
-%% ── Вспомогательные команды ──────────────────────────────────────────────────
+%% Вспомогательные команды
 \newcommand{\textrightarrowglyph}{\texorpdfstring{\ensuremath{\rightarrow}}{->}}
 \newcommand{\textleftrightarrowglyph}{\texorpdfstring{\ensuremath{\leftrightarrow}}{<->}}
-\newcommand{\texthorizontalbarglyph}{\texorpdfstring{\textemdash}{---}}
+\newcommand{\texthorizontalbarglyph}{\texorpdfstring{—}{-}}
 \newunicodechar{→}{\textrightarrowglyph}
 \newunicodechar{↔}{\textleftrightarrowglyph}
 \newunicodechar{―}{\texthorizontalbarglyph}
 \newcommand{\tbd}{\textcolor{gray}{\textit{[раздел в работе]}}}
-\renewcommand{\eg}{т.\,е.\ }
-\newcommand{\cf}{ср.\ }
+\renewcommand{\eg}{т.е. }
+\newcommand{\cf}{ср. }
