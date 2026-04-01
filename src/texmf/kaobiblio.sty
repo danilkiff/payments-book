@@ -147,13 +147,13 @@
 
 % Command to format the marginnote created for cited items
 \NewDocumentCommand{\formatmargincitation}{m}{% The parameter is a single citation key
-	\parencite{#1}: \citeauthor*{#1} (\iffieldundef{year}{\bibsstring{nodate}}{\printfield{year}}), \citefield{#1}[emph]{title}%
+	\citeauthor*{#1}\addcomma\space\iffieldundef{year}{\bibsstring{nodate}}{\printfield{year}}%
 }
 
 % Command to format the marginnote created for supercited items
 \NewDocumentCommand{\formatmarginsupercitation}{m}{% The parameter is a single citation key
-	\supercite{#1} \citeauthor*{#1} (\iffieldundef{year}{\bibsstring{nodate}}{\printfield{year}})%
-}
+	\supercite{#1}\space\citeauthor*{#1}\addcomma\space\iffieldundef{year}{\bibsstring{nodate}}{\printfield{year}}%
+}	
 
 % Global vertical-shift register for margin notes.
 % Set by \sidecite / \sidetextcite / \sideparencite before calling the
