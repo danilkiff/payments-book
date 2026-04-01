@@ -20,6 +20,11 @@
 %% ── Библиография ──────────────────────────────────────────────────────────────
 \addbibresource{assets/bibliography.bib}
 
+% Pre-load math fonts to avoid microtype/expl3 stack overflow inside figures
+% (TeX Live 2026 bug: font config files loaded inside figure environments
+% trigger recursive \@popfilename → \ExplSyntaxOff calls)
+\AtBeginDocument{\setbox0=\hbox{$\alpha$}}
+
 %% ════════════════════════════════════════════════════════════════════════════
 \begin{document}
 %% ── Титульные страницы ────────────────────────────────────────────────────────
