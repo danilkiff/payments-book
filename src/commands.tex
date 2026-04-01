@@ -31,6 +31,54 @@
   {\footnotesize\noindent\fullcite{#1}\par}%
 }
 
+\definecolor{CalloutBlueInk}{HTML}{3E5AA8}
+\definecolor{CalloutVioletInk}{HTML}{6B5EA7}
+\definecolor{CalloutRedInk}{HTML}{B24D4B}
+
+\DeclareRobustCommand{\callouticonbase}[1]{%
+  \tikz[
+    baseline=-0.58ex,
+    x=.056em,
+    y=-.056em,
+    line width=.19ex,
+    line cap=round,
+    line join=round
+  ]{#1}%
+}
+
+\DeclareRobustCommand{\callouticonoverview}{%
+  \callouticonbase{%
+    \draw svg{M13 5h8};
+    \draw svg{M13 9h5};
+    \draw svg{M13 15h8};
+    \draw svg{M13 19h5};
+    \draw svg{M3 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4};
+    \draw svg{M3 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4};
+  }%
+}
+
+\DeclareRobustCommand{\callouticonpractice}{%
+  \callouticonbase{%
+    \draw svg{M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5};
+  }%
+}
+
+\DeclareRobustCommand{\callouticonimportant}{%
+  \callouticonbase{%
+    \draw svg{M12 9v4};
+    \draw svg{M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0};
+    \fill (12,16) circle[radius=.9];
+  }%
+}
+
+\DeclareRobustCommand{\callouticonsource}{%
+  \callouticonbase{%
+    \draw svg{M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12};
+    \draw svg{M19 16h-12a2 2 0 0 0 -2 2};
+    \draw svg{M9 8h6};
+  }%
+}
+
 \makeatletter
 
 \newtcolorbox{margincalloutbox}[2][]{%
@@ -81,12 +129,109 @@
   \margincallout@place[#1]{colback=blue!4,colbacktitle=blue!15}{Определение: #2}{#3}%
 }
 
+\newcommand{\callouticonslot}[2]{%
+  \makebox[2.8em][l]{\begingroup\color{#1}#2\endgroup}%
+}
+
+\newcommand{\margincallouticonslot}[2]{%
+  \makebox[2.4em][l]{\begingroup\color{#1}\scalebox{0.82}{#2}\endgroup}%
+}
+
+\newtcolorbox{oreillycalloutbox}[3][]{%
+  enhanced jigsaw,
+  breakable,
+  frame hidden,
+  colback=white,
+  boxrule=0pt,
+  boxsep=0pt,
+  left=3.1em,
+  right=0pt,
+  top=0pt,
+  bottom=0pt,
+  before skip=.9\topskip,
+  after skip=.9\topskip,
+  before upper={\parindent0pt\relax},
+  overlay unbroken and first={%
+    \node[
+      anchor=north west,
+      inner sep=0pt,
+      outer sep=0pt
+    ] at ([yshift=-.1\baselineskip]frame.north west) {\callouticonslot{#2}{#3}};
+  },
+  overlay middle and last={},
+  #1
+}
+
+\NewDocumentEnvironment{chapteroverview}{+b}{%
+  \begin{oreillycalloutbox}{CalloutVioletInk}{\callouticonoverview}%
+    #1%
+  \end{oreillycalloutbox}%
+}{}
+
+\NewDocumentEnvironment{practicecallout}{+b}{%
+  \begin{oreillycalloutbox}{CalloutBlueInk}{\callouticonpractice}%
+    #1%
+  \end{oreillycalloutbox}%
+}{}
+
+\NewDocumentEnvironment{importantcallout}{+b}{%
+  \begin{oreillycalloutbox}{CalloutRedInk}{\callouticonimportant}%
+    #1%
+  \end{oreillycalloutbox}%
+}{}
+
+\NewDocumentCommand{\sourcecallout}{+m}{%
+  \begin{oreillycalloutbox}{CalloutRedInk}{\callouticonsource}%
+    #1%
+  \end{oreillycalloutbox}%
+}
+
+\NewDocumentCommand{\marginoreillycallout@place}{ o m m +m }{%
+  \IfNoValueTF{#1}{%
+    \marginnote{%
+      \begin{minipage}{\marginparwidth}%
+        \raggedright
+        \setlength{\parindent}{0pt}%
+        \begin{minipage}[t]{2.4em}%
+          \vspace{0pt}%
+          \raggedright
+          \margincallouticonslot{#2}{#3}%
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[t]{\dimexpr\linewidth-2.8em\relax}%
+          \vspace{0pt}%
+          \footnotesize
+          #4%
+        \end{minipage}%
+      \end{minipage}%
+    }%
+  }{%
+    \marginnote[#1]{%
+      \begin{minipage}{\marginparwidth}%
+        \raggedright
+        \setlength{\parindent}{0pt}%
+        \begin{minipage}[t]{2.4em}%
+          \vspace{0pt}%
+          \raggedright
+          \margincallouticonslot{#2}{#3}%
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[t]{\dimexpr\linewidth-2.8em\relax}%
+          \vspace{0pt}%
+          \footnotesize
+          #4%
+        \end{minipage}%
+      \end{minipage}%
+    }%
+  }%
+}
+
 \NewDocumentCommand{\marginimportant}{ o +m }{%
-  \margincallout@place[#1]{colback=red!5,colbacktitle=red!20}{Важно}{#2}%
+  \marginoreillycallout@place[#1]{CalloutRedInk}{\callouticonimportant}{#2}%
 }
 
 \NewDocumentCommand{\marginpractice}{ o +m }{%
-  \margincallout@place[#1]{}{На практике}{#2}%
+  \marginoreillycallout@place[#1]{CalloutBlueInk}{\callouticonpractice}{#2}%
 }
 
 \makeatother
