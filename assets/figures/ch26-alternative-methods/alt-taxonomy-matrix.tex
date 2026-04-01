@@ -1,15 +1,16 @@
+\begingroup
 \scriptsize
 \renewcommand{\arraystretch}{1.16}
 
-\begin{tabularx}{22.8cm}{
-		>{\raggedright\arraybackslash\bfseries}p{2.8cm}
-		>{\raggedright\arraybackslash}p{1.4cm}
-		>{\raggedright\arraybackslash}p{1.65cm}
-		>{\raggedright\arraybackslash}p{1.55cm}
-		>{\raggedright\arraybackslash}p{1.45cm}
-		>{\raggedright\arraybackslash}p{2.55cm}
-		>{\raggedright\arraybackslash}p{1.8cm}
-		>{\raggedright\arraybackslash}p{2.35cm}
+\begin{tabularx}{\textwidth}{
+		>{\raggedright\arraybackslash\bfseries}p{0.180\textwidth}
+		>{\raggedright\arraybackslash}p{0.089\textwidth}
+		>{\raggedright\arraybackslash}p{0.106\textwidth}
+		>{\raggedright\arraybackslash}p{0.100\textwidth}
+		>{\raggedright\arraybackslash}p{0.094\textwidth}
+		>{\raggedright\arraybackslash}p{0.164\textwidth}
+		>{\raggedright\arraybackslash}p{0.116\textwidth}
+		>{\raggedright\arraybackslash}p{0.151\textwidth}
 	}
 	\rowcolor{Panel}
 	Метод оплаты               & Тип & Финальность & Chargeback & PCI scope & Международность & Скорость & Комиссия мерчанта \\
@@ -75,13 +76,13 @@
 	\cellcolor{Good!14}нет     &
 	\cellcolor{Ink!6}глобальный / нишевый &
 	\cellcolor{Ink!6}мин / часы &
-	\cellcolor{Ink!6}нет данных                                                                                                   \\
+	\cellcolor{Ink!6}нет данных                                                                                                   \\[0.45ex]
 \end{tabularx}
 
-\vspace{4mm}
 \fcolorbox{Ink!18}{Soft}{%
-	\parbox{22.1cm}{%
+	\parbox{\textwidth}{%
 		\textcolor{Muted}{Зелёный цвет показывает сравнительное преимущество, красный -- ограничение, серый -- нейтральную или зависящую от провайдера зону.
 			* Данные оценочные и меняются в зависимости от конкретного провайдера, маршрута и географии.}%
 	}%
 }
+\endgroup

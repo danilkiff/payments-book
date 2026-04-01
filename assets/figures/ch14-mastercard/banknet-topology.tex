@@ -3,8 +3,8 @@
 		draw=Ink!88,
 		line width=0.6pt,
 		ellipse,
-		minimum width=14.5cm,
-		minimum height=7.0cm
+			minimum width=0.95\textwidth,
+			minimum height=0.45\textwidth
 	] (ring) at (0,0.6) {};
 
 	\node[fig/block, minimum width=30mm] (acq) at (-4.9,1.7) {Банк-эквайер};
@@ -23,5 +23,5 @@
 	\draw[fig/dashed] (gcms.east) -- (settlement.west);
 	\node[font=\scriptsize, text=Muted] at (-1.45,-1.35) {внутренняя клиринговая ветка};
 
-	\node[fig/note, text width=8.6cm, align=center] at (0,-4.0) {Одна сеть, разные внутренние подсистемы.};
+		\node[fig/note, text width=0.56\textwidth, align=center] at (0,-4.0) {Одна сеть, разные внутренние подсистемы.};
 \end{tikzpicture}

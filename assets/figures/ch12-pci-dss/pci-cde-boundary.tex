@@ -5,11 +5,11 @@
 		asset/.style={fig/block, minimum width=30mm, minimum height=9mm, font=\scriptsize}
 	}
 
-	\draw[zone, fill=Good!12] (0,0) circle (5.2cm);
-	\draw[zone, dashed] (0,0) circle (3.6cm);
-	\draw[zone, fill=Warn!13] (0,0) circle (3.6cm);
-	\draw[zone, dashed] (0,0) circle (2.1cm);
-	\draw[zone, fill=Bad!12] (0,0) circle (2.1cm);
+		\draw[zone, fill=Good!12] (0,0) circle (0.42\textwidth);
+		\draw[zone, dashed] (0,0) circle (0.29\textwidth);
+		\draw[zone, fill=Warn!13] (0,0) circle (0.29\textwidth);
+		\draw[zone, dashed] (0,0) circle (0.17\textwidth);
+	\draw[zone, fill=Bad!12] (0,0) circle (0.17\textwidth);
 
 	\node[asset, fill=white] at (0,0.8) {Платёжный сервер};
 	\node[asset, fill=white, minimum width=26mm] at (-1.1,-0.7) {БД с PAN};
@@ -32,5 +32,5 @@
 	\draw[fig/dashed] (5.8,0.9) -- (3.6,0.9);
 	\draw[fig/dashed] (5.8,-0.9) -- (2.1,-0.9);
 
-	\node[fig/note, text width=12.4cm] at (0,-6.9) {Без сегментации соседние инфраструктурные сервисы и бизнес-системы тоже попадают в периметр PCI DSS, поэтому границы CDE всегда нужно проектировать как архитектурное решение, а не как список серверов.};
+		\node[fig/note, text width=0.98\textwidth] at (0,-6.9) {Без сегментации соседние инфраструктурные сервисы и бизнес-системы тоже попадают в периметр PCI DSS, поэтому границы CDE всегда нужно проектировать как архитектурное решение, а не как список серверов.};
 \end{tikzpicture}

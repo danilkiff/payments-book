@@ -1,11 +1,12 @@
+\begingroup
 \scriptsize
 \renewcommand{\arraystretch}{1.28}
 
-\begin{tabularx}{16.8cm}{
-		>{\raggedright\arraybackslash\bfseries}p{3.2cm}
-		>{\raggedright\arraybackslash}p{4.45cm}
-		>{\raggedright\arraybackslash}p{4.45cm}
-		>{\raggedright\arraybackslash}p{4.45cm}
+\begin{tabularx}{\textwidth}{
+		>{\raggedright\arraybackslash\bfseries}p{0.190\textwidth}
+		>{\raggedright\arraybackslash}p{0.264\textwidth}
+		>{\raggedright\arraybackslash}p{0.264\textwidth}
+		>{\raggedright\arraybackslash}p{0.264\textwidth}
 	}
 	\rowcolor{Panel}
 	Критерий                                 &
@@ -33,14 +34,14 @@
 	Rolling reserve                          &
 	нет                                      &
 	5--10\%                                  &
-	10--20\%                                          \\
+	10--20\%                                          \\[0.45ex]
 \end{tabularx}
 
-\vspace{4mm}
 
 \fcolorbox{Ink!18}{Soft}{%
-	\parbox{16.15cm}{%
+	\parbox{\textwidth}{%
 		\textcolor{Muted}{Цвет кодирует не "хорошо/плохо", а глубину due diligence: чем выше риск-профиль
 			мерчанта, тем шире пакет документов, плотнее пост-онбординг мониторинг и вероятнее rolling reserve.}%
 	}%
 }
+\endgroup
