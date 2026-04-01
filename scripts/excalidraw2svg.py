@@ -183,7 +183,7 @@ def _standalone_text(el: dict, ox: float, oy: float) -> str:
 
 # ── Shape rendering ───────────────────────────────────────────────────────────
 
-def _shape(el: dict, ox: float, oy: float) -> str:
+def _shape(el: dict, ox: float, oy: float, bound_texts: dict | None = None) -> str:
     t = el.get("type")
     x = el.get("x", 0) - ox
     y = el.get("y", 0) - oy
@@ -198,10 +198,17 @@ def _shape(el: dict, ox: float, oy: float) -> str:
     opacity = el.get("opacity", 100)
     fo, so = _opacity_attrs(opacity)
 
+    # Label: prefer bound text element (native Excalidraw format), fall back to
+    # the `label` shorthand used by the MCP tool.
     label = el.get("label") or {}
     label_text = label.get("text", "")
     label_fs = label.get("fontSize", 16)
     label_fw = "bold" if label.get("fontWeight") == "bold" else "normal"
+
+    bound = (bound_texts or {}).get(el.get("id", ""))
+    if bound:
+        label_text = bound.get("text", label_text)
+        label_fs = bound.get("fontSize", label_fs)
 
     parts = []
 
@@ -241,7 +248,7 @@ def _shape(el: dict, ox: float, oy: float) -> str:
 
 # ── Arrow / Line rendering ────────────────────────────────────────────────────
 
-def _arrow(el: dict, ox: float, oy: float) -> str:
+def _arrow(el: dict, ox: float, oy: float, bound_texts: dict | None = None) -> str:
     t = el.get("type")
     x0 = el.get("x", 0) - ox
     y0 = el.get("y", 0) - oy
@@ -294,8 +301,11 @@ def _arrow(el: dict, ox: float, oy: float) -> str:
 
     label = el.get("label") or {}
     label_text = label.get("text", "")
+    bound = (bound_texts or {}).get(el.get("id", ""))
+    if bound:
+        label_text = bound.get("text", label_text)
     if label_text:
-        label_fs = label.get("fontSize", 13)
+        label_fs = (bound or label).get("fontSize", 13)
         lx, ly = mx + lox, my + loy
         for i, line in enumerate(label_text.split("\n")):
             parts.append(
@@ -318,6 +328,15 @@ def excalidraw_to_svg(data: dict) -> str:
     if not elements:
         return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"></svg>'
 
+    # Build map: parent_id → text element (native Excalidraw bound-text format).
+    # These are rendered as part of their container, not as standalone text.
+    bound_texts: dict[str, dict] = {
+        e["containerId"]: e
+        for e in elements
+        if e.get("type") == "text" and e.get("containerId")
+    }
+    bound_ids = {e["id"] for e in bound_texts.values()}
+
     min_x, min_y, total_w, total_h = _bbox(elements)
     ox = min_x - PADDING
     oy = min_y - PADDING
@@ -335,11 +354,13 @@ def excalidraw_to_svg(data: dict) -> str:
         svg_parts.append(defs)
 
     for el in elements:
+        if el.get("id") in bound_ids:
+            continue  # rendered by its container
         t = el.get("type")
         if t in ("rectangle", "ellipse", "diamond"):
-            rendered = _shape(el, ox, oy)
+            rendered = _shape(el, ox, oy, bound_texts)
         elif t in ("arrow", "line"):
-            rendered = _arrow(el, ox, oy)
+            rendered = _arrow(el, ox, oy, bound_texts)
         elif t == "text":
             rendered = _standalone_text(el, ox, oy)
         else:
