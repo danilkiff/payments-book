@@ -1,4 +1,4 @@
-% Small semantic helpers that simplify writing without adding build machinery.
+% Small semantic helpers and a lightweight compatibility layer for the book.
 
 \DeclareRobustCommand{\codeword}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
 \DeclareRobustCommand{\domain}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
@@ -79,62 +79,8 @@
   }%
 }
 
-\makeatletter
-
-\newtcolorbox{margincalloutbox}[2][]{%
-  nobeforeafter,
-  sharp corners,
-  boxrule=0pt,
-  titlerule=.4pt,
-  left=4pt,
-  right=4pt,
-  top=2pt,
-  bottom=2pt,
-  lefttitle=4pt,
-  righttitle=4pt,
-  toptitle=2pt,
-  bottomtitle=2pt,
-  width=\linewidth,
-  colback=RoyalBlue!25!White,
-  colbacktitle=RoyalBlue!25!White,
-  coltitle=black,
-  colframe=black,
-  fonttitle=\bfseries\footnotesize,
-  before upper={\@margin@par},
-  title={#2},
-  #1
-}
-
-\NewDocumentCommand{\margincallout@place}{ o m m +m }{%
-  \IfNoValueTF{#1}{%
-    \marginnote{%
-      \begin{minipage}{\marginparwidth}%
-        \begin{margincalloutbox}[#2]{#3}%
-          #4%
-        \end{margincalloutbox}%
-      \end{minipage}%
-    }%
-  }{%
-    \marginnote[#1]{%
-      \begin{minipage}{\marginparwidth}%
-        \begin{margincalloutbox}[#2]{#3}%
-          #4%
-        \end{margincalloutbox}%
-      \end{minipage}%
-    }%
-  }%
-}
-
-\NewDocumentCommand{\margindefinition}{ o m +m }{%
-  \margincallout@place[#1]{colback=blue!4,colbacktitle=blue!15}{Определение: #2}{#3}%
-}
-
 \newcommand{\callouticonslot}[2]{%
   \makebox[2.8em][l]{\begingroup\color{#1}#2\endgroup}%
-}
-
-\newcommand{\margincallouticonslot}[2]{%
-  \makebox[2.4em][l]{\begingroup\color{#1}\scalebox{0.82}{#2}\endgroup}%
 }
 
 \newtcolorbox{oreillycalloutbox}[3][]{%
@@ -162,6 +108,29 @@
   #1
 }
 
+\newtcolorbox{kaobox}[1][]{%
+  enhanced jigsaw,
+  breakable,
+  sharp corners,
+  colback=white,
+  colbacktitle=black!5,
+  coltitle=black,
+  colframe=black!35,
+  boxrule=.5pt,
+  titlerule=.5pt,
+  boxsep=0pt,
+  left=1em,
+  right=1em,
+  top=.8em,
+  bottom=.8em,
+  lefttitle=1em,
+  righttitle=1em,
+  toptitle=.55em,
+  bottomtitle=.55em,
+  fonttitle=\bfseries,
+  #1
+}
+
 \NewDocumentEnvironment{chapteroverview}{+b}{%
   \begin{oreillycalloutbox}{CalloutVioletInk}{\callouticonoverview}%
     #1%
@@ -186,55 +155,44 @@
   \end{oreillycalloutbox}%
 }
 
-\NewDocumentCommand{\marginoreillycallout@place}{ o m m +m }{%
-  \IfNoValueTF{#1}{%
-    \marginnote{%
-      \begin{minipage}{\marginparwidth}%
-        \raggedright
-        \setlength{\parindent}{0pt}%
-        \begin{minipage}[t]{2.4em}%
-          \vspace{0pt}%
-          \raggedright
-          \margincallouticonslot{#2}{#3}%
-        \end{minipage}%
-        \hfill
-        \begin{minipage}[t]{\dimexpr\linewidth-2.8em\relax}%
-          \vspace{0pt}%
-          \footnotesize
-          #4%
-        \end{minipage}%
-      \end{minipage}%
-    }%
-  }{%
-    \marginnote[#1]{%
-      \begin{minipage}{\marginparwidth}%
-        \raggedright
-        \setlength{\parindent}{0pt}%
-        \begin{minipage}[t]{2.4em}%
-          \vspace{0pt}%
-          \raggedright
-          \margincallouticonslot{#2}{#3}%
-        \end{minipage}%
-        \hfill
-        \begin{minipage}[t]{\dimexpr\linewidth-2.8em\relax}%
-          \vspace{0pt}%
-          \footnotesize
-          #4%
-        \end{minipage}%
-      \end{minipage}%
-    }%
-  }%
+% Compatibility shims for the old manuscript API.
+\providecommand{\newmarginnote}[2]{}
+\NewDocumentCommand{\margintoc}{}{}
+\NewDocumentCommand{\sidenote}{+m}{\footnote{#1}}
+\NewDocumentCommand{\sidecite}{o o o m}{\cite{#4}}
+\NewDocumentCommand{\sidesupercite}{o o o m}{\supercite{#4}}
+\NewDocumentCommand{\sidetextcite}{o o o m}{\textcite{#4}}
+\NewDocumentCommand{\sideparencite}{s o o o m}{%
+  \IfBooleanTF{#1}{\parencite*{#5}}{\parencite{#5}}%
+}
+
+\NewDocumentEnvironment{marginfigure}{}{%
+  \begin{figure}[tbp]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+      \centering
+}{%
+    \end{minipage}
+  \end{figure}
+}
+
+\NewDocumentCommand{\margindefinition}{ o m +m }{%
+  \begin{oreillycalloutbox}{CalloutVioletInk}{\callouticonoverview}%
+    \textbf{Определение: #2.} #3%
+  \end{oreillycalloutbox}%
 }
 
 \NewDocumentCommand{\marginimportant}{ o +m }{%
-  \marginoreillycallout@place[#1]{CalloutRedInk}{\callouticonimportant}{#2}%
+  \begin{importantcallout}
+    #2%
+  \end{importantcallout}%
 }
 
 \NewDocumentCommand{\marginpractice}{ o +m }{%
-  \marginoreillycallout@place[#1]{CalloutBlueInk}{\callouticonpractice}{#2}%
+  \begin{practicecallout}
+    #2%
+  \end{practicecallout}%
 }
-
-\makeatother
 
 \newcommand{\textrightarrowglyph}{\texorpdfstring{\ensuremath{\rightarrow}}{->}}
 \newcommand{\textleftrightarrowglyph}{\texorpdfstring{\ensuremath{\leftrightarrow}}{<->}}
@@ -244,36 +202,12 @@
 \newunicodechar{―}{\texthorizontalbarglyph}
 \newunicodechar{₽}{\mbox{руб.}}
 
-\renewcommand{\eg}{т.е.\xspace}
+\providecommand{\eg}{т.е.\xspace}
 \providecommand{\cf}{ср.\xspace}
-
-\newsavebox{\chaptersummarybox}
-\newlength{\chaptersummaryfullwidth}
-\newlength{\chaptersummaryneededspace}
 
 \NewDocumentEnvironment{chaptersummary}{+b}{%
   \FloatBarrier
-  \par
-  \begingroup
-  \setlength{\chaptersummaryfullwidth}{\dimexpr\textwidth+\marginparwidth+\marginparsep\relax}
-  \sbox{\chaptersummarybox}{%
-    \begin{minipage}{\chaptersummaryfullwidth}
-      #1
-    \end{minipage}%
-  }%
-  \setlength{\chaptersummaryneededspace}{%
-    \dimexpr\ht\chaptersummarybox+\dp\chaptersummarybox+4\baselineskip\relax
-  }%
-  \ifdim\chaptersummaryneededspace>\textheight
-    \section*{Итоги главы}
-    #1
-  \else
-    \Needspace{\chaptersummaryneededspace}
-    \begin{widepar}
-    \section*{Итоги главы}
-    \usebox{\chaptersummarybox}
-    \end{widepar}
-  \fi
-  \par
-  \endgroup
+  \Needspace{8\baselineskip}
+  \section*{Итоги главы}
+  #1
 }{}
