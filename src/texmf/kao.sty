@@ -477,11 +477,7 @@
 \let\oldmarginnote\marginnote%
 \RenewDocumentCommand\marginnote{ o m }{%
 	\IfNoValueOrEmptyTF{#1}{%
-		\IfInFloatingEnvir{%
-			\oldmarginnote{#2}%
-		}{%
-			\marginpar{\@margin@par#2}%
-		}%
+		\oldmarginnote{#2}%
 	}{%
 		\oldmarginnote{#2}[\kao@if@nblskip{#1}{\@cdr#1\@nil\baselineskip}{#1}]%
 	}%
@@ -592,7 +588,7 @@
 
 % The marginfix package prevents the margin notes to stay aligned with the main text, so it cannot be used. However, we define the \marginskip command, which is the only command we need from that package.
 \newcommand\marginskip[1]{%
-	\marginpar{\@margin@par\vspace{#1 - \baselineskip}}% We subtract the \baselineskip that we have in margin pars.
+	\oldmarginnote{\@margin@par\vspace{#1 - \baselineskip}}% Keep margin spacing without creating a float insertion.
 }
 
 \newlength{\kaomarginskipabove} % Specify the space above a marginfigure, margintable or marginlisting
