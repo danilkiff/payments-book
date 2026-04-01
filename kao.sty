@@ -647,54 +647,9 @@
 % Change the position of the captions
 \DeclareFloatSeparators{marginparsep}{\hskip\marginparsep}%
 
-% Detect whether there is a caption in the current environment by switching the kaocaption toggle when \caption is called. If there is no caption, reset the floatsetup. Without this fix, the floatrow package will align the environment to the main text if there is a caption, but to the margin if there is no caption.
-\newtoggle{kaocaption}
-\AtBeginEnvironment{figure}{%
-	\let\oldcaption\caption%
-	\RenewDocumentCommand{\caption}{s o m}{%
-		\IfBooleanTF{#1}{%
-			\oldcaption*{#3}%
-		}{%
-			\IfValueTF{#2}{%
-				\oldcaption[#2]{#3}%
-			}{%
-				\oldcaption{#3}%
-			}%
-		}%
-		\toggletrue{kaocaption}%
-	}%
-}
-\AtEndEnvironment{figure}{%
-	\iftoggle{kaocaption}{%
-	}{%
-		\RawFloats%
-		\centering%
-	}%
-	\togglefalse{kaocaption}%
-}
-\AtBeginEnvironment{table}{%
-	\let\oldcaption\caption%
-	\RenewDocumentCommand{\caption}{s o m}{%
-		\IfBooleanTF{#1}{%
-			\oldcaption*{#3}%
-		}{%
-			\IfValueTF{#2}{%
-				\oldcaption[#2]{#3}%
-			}{%
-				\oldcaption{#3}%
-			}%
-		}%
-		\toggletrue{kaocaption}%
-	}%
-}
-\AtEndEnvironment{table}{%
-	\iftoggle{kaocaption}{%
-	}{%
-		\RawFloats%
-		\centering%
-	}%
-	\togglefalse{kaocaption}%
-}
+% Legacy caption-rewriting hooks were causing recursive expansion on
+% recent TeX Live releases when figures/tables used \caption. Keep the
+% floatrow layout configuration below, but leave \caption itself alone.
 
 % Change the formatting of the captions
 \addtokomafont{captionlabel}{\bfseries} % Bold font for the figure label
