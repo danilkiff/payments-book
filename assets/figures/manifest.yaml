@@ -46,6 +46,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
@@ -59,7 +60,7 @@
   chapter: Карточная экосистема
   chapter_slug: ch02-ecosystem
   kind: flow-wide
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch02-ecosystem/interchange-flow
   master_tex: assets/figures/ch02-ecosystem/interchange-flow.tex
   pdf: assets/figures/ch02-ecosystem/interchange-flow.pdf
@@ -89,16 +90,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 166.9
-      height: 38.6
+      width: 41.4
+      height: 56.5
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Простой линейный commission-flow из четырёх узлов можно свернуть в узкий top-down стек без потери смысла.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:three-party-model
   planned_label: fig:three-party-model
   source_tex: src/parts/part1/ch02-ecosystem.tex
@@ -144,6 +146,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
@@ -196,10 +199,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-table
-    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+    reason: таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
 - id: fig:tx-cancellation-timeline
   planned_label: fig:tx-cancellation-timeline
   source_tex: src/parts/part1/ch04-transaction-lifecycle.tex
@@ -247,10 +251,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
-    reason: Временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
+    reason: временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
 - id: fig:tx-edge-cases
   planned_label: fig:tx-edge-cases
   source_tex: src/parts/part1/ch04-transaction-lifecycle.tex
@@ -297,10 +302,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-table
-    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+    reason: таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
 - id: fig:tx-lifecycle-timeline
   planned_label: fig:tx-lifecycle-timeline
   source_tex: src/parts/part1/ch04-transaction-lifecycle.tex
@@ -349,10 +355,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
-    reason: Временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
+    reason: временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
 - id: fig:emv-chip-architecture
   planned_label: fig:emv-chip-architecture
   source_tex: src/parts/part2/ch07-emv.tex
@@ -362,7 +369,7 @@
   chapter: 'EMV: зачем карте процессор'
   chapter_slug: ch07-emv
   kind: topology-network
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch07-emv/emv-chip-architecture
   master_tex: assets/figures/ch07-emv/emv-chip-architecture.tex
   pdf: assets/figures/ch07-emv/emv-chip-architecture.pdf
@@ -390,16 +397,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 124.8
-      height: 84.9
+      width: 42.4
+      height: 73.6
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: У схемы короткие подписи компонентов и одна локальная идея; её реально перерисовать как компактный вертикальный architectural sketch.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:emv-cryptogram-decision
   planned_label: fig:emv-cryptogram-decision
   source_tex: src/parts/part2/ch07-emv.tex
@@ -409,7 +417,7 @@
   chapter: 'EMV: зачем карте процессор'
   chapter_slug: ch07-emv
   kind: flow-wide
-  layout: main-vertical
+  layout: marginal-vertical
   asset_base: assets/figures/ch07-emv/emv-cryptogram-decision
   master_tex: assets/figures/ch07-emv/emv-cryptogram-decision.tex
   pdf: assets/figures/ch07-emv/emv-cryptogram-decision.pdf
@@ -438,16 +446,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 162.7
-      height: 89.2
+      width: 44.3
+      height: 69.8
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Это один decision chain; его естественная форма для поля — узкая вертикаль сверху вниз.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:emv-dda-sequence
   planned_label: fig:emv-dda-sequence
   source_tex: src/parts/part2/ch07-emv.tex
@@ -457,7 +466,7 @@
   chapter: 'EMV: зачем карте процессор'
   chapter_slug: ch07-emv
   kind: sequence
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch07-emv/emv-dda-sequence
   master_tex: assets/figures/ch07-emv/emv-dda-sequence.tex
   pdf: assets/figures/ch07-emv/emv-dda-sequence.pdf
@@ -489,16 +498,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 136.5
-      height: 72.7
+      width: 43.1
+      height: 70.3
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Участников всего двое, а цепочку доверия можно вынести в боковой rail, поэтому narrow vertical layout реалистичен.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:contactless-kernel-comparison
   planned_label: fig:contactless-kernel-comparison
   source_tex: src/parts/part2/ch08-contactless.tex
@@ -544,10 +554,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-table
-    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+    reason: таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
 - id: fig:contactless-protocol-stack
   planned_label: fig:contactless-protocol-stack
   source_tex: src/parts/part2/ch08-contactless.tex
@@ -557,7 +568,7 @@
   chapter: 'Бесконтактные платежи: карта, телефон, кольцо'
   chapter_slug: ch08-contactless
   kind: topology-network
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch08-contactless/contactless-protocol-stack
   master_tex: assets/figures/ch08-contactless/contactless-protocol-stack.tex
   pdf: assets/figures/ch08-contactless/contactless-protocol-stack.pdf
@@ -585,16 +596,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 143.1
-      height: 61.5
+      width: 31.2
+      height: 63.8
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Стек уже концептуально вертикальный; нужен только более узкий набор подписей и более плотная упаковка слоёв.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:contactless-provisioning
   planned_label: fig:contactless-provisioning
   source_tex: src/parts/part2/ch08-contactless.tex
@@ -640,10 +652,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
-    reason: Sequence diagram с несколькими участниками и подписями сообщений не читается в узком поле.
+    reason: sequence diagram с несколькими участниками и подписями сообщений не читается в узком поле.
 - id: fig:token-detokenization-flow
   planned_label: fig:token-detokenization-flow
   source_tex: src/parts/part2/ch09-tokenization.tex
@@ -653,7 +666,7 @@
   chapter: 'Токенизация: PAN, который не PAN'
   chapter_slug: ch09-tokenization
   kind: flow-wide
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch09-tokenization/token-detokenization-flow
   master_tex: assets/figures/ch09-tokenization/token-detokenization-flow.tex
   pdf: assets/figures/ch09-tokenization/token-detokenization-flow.pdf
@@ -683,16 +696,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 176.2
-      height: 51.9
+      width: 31.2
+      height: 84.9
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: 'Сюжет уже доказан в репо как пригодный к marginal flow: основной поток можно сделать вертикальным, а vault вынести sidecar-узлом.'
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию; высота выше типовых 80 мм, но ещё приемлема для сложной схемы.
 - id: fig:token-network-vs-psp
   planned_label: fig:token-network-vs-psp
   source_tex: src/parts/part2/ch09-tokenization.tex
@@ -736,10 +750,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-table
-    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+    reason: таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
 - id: fig:token-tsp-comparison
   planned_label: fig:token-tsp-comparison
   source_tex: src/parts/part2/ch09-tokenization.tex
@@ -785,6 +800,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-vertical
@@ -798,7 +814,7 @@
   chapter: Криптография в платежах
   chapter_slug: ch10-cryptography
   kind: decision-tree
-  layout: main-vertical
+  layout: marginal-vertical
   asset_base: assets/figures/ch10-cryptography/crypto-dukpt
   master_tex: assets/figures/ch10-cryptography/crypto-dukpt.tex
   pdf: assets/figures/ch10-cryptography/crypto-dukpt.pdf
@@ -828,16 +844,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 162.4
-      height: 109.2
+      width: 35.0
+      height: 75.2
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Деривация DUKPT — по сути одна цепочка сверху вниз; после сокращения подписей она может лечь в узкую вертикаль.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:crypto-hsm-flow
   planned_label: fig:crypto-hsm-flow
   source_tex: src/parts/part2/ch10-cryptography.tex
@@ -847,7 +864,7 @@
   chapter: Криптография в платежах
   chapter_slug: ch10-cryptography
   kind: flow-wide
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch10-cryptography/crypto-hsm-flow
   master_tex: assets/figures/ch10-cryptography/crypto-hsm-flow.tex
   pdf: assets/figures/ch10-cryptography/crypto-hsm-flow.pdf
@@ -877,16 +894,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 208.1
-      height: 71.4
+      width: 31.2
+      height: 72.3
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Это одна авторизационная ось с одним боковым HSM-узлом, хороший кандидат на top-down marginal flow.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:crypto-key-hierarchy
   planned_label: fig:crypto-key-hierarchy
   source_tex: src/parts/part2/ch10-cryptography.tex
@@ -930,6 +948,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-vertical
@@ -978,6 +997,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-vertical
@@ -1028,10 +1048,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
-    reason: Sequence diagram с несколькими участниками и подписями сообщений не читается в узком поле.
+    reason: sequence diagram с несколькими участниками и подписями сообщений не читается в узком поле.
 - id: fig:pci-cde-boundary
   planned_label: fig:pci-cde-boundary
   source_tex: src/parts/part2/ch12-pci-dss.tex
@@ -1076,10 +1097,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
-    reason: Параллельные подсистемы, зоны или уровни требуют одновременного обзора по ширине.
+    reason: параллельные подсистемы, зоны или уровни требуют одновременного обзора по ширине.
 - id: fig:pci-saq-decision
   planned_label: fig:pci-saq-decision
   source_tex: src/parts/part2/ch12-pci-dss.tex
@@ -1127,6 +1149,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-vertical
@@ -1175,10 +1198,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
-    reason: Временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
+    reason: временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
 - id: fig:visa-direct-flow
   planned_label: fig:visa-direct-flow
   source_tex: src/parts/part3/ch13-visa.tex
@@ -1226,10 +1250,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
-    reason: Временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
+    reason: временная ось теряет смысл при сжатии до узкой маргиналии; фазы и подписи нужно видеть одновременно.
 - id: fig:visanet-base-i-ii
   planned_label: fig:visanet-base-i-ii
   source_tex: src/parts/part3/ch13-visa.tex
@@ -1276,6 +1301,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
@@ -1322,10 +1348,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
-    reason: Параллельные подсистемы, зоны или уровни требуют одновременного обзора по ширине.
+    reason: параллельные подсистемы, зоны или уровни требуют одновременного обзора по ширине.
 - id: fig:mc-ipm-structure
   planned_label: fig:mc-ipm-structure
   source_tex: src/parts/part3/ch14-mastercard.tex
@@ -1335,7 +1362,7 @@
   chapter: Mastercard
   chapter_slug: ch14-mastercard
   kind: topology-network
-  layout: main-vertical
+  layout: marginal-vertical
   asset_base: assets/figures/ch14-mastercard/mc-ipm-structure
   master_tex: assets/figures/ch14-mastercard/mc-ipm-structure.tex
   pdf: assets/figures/ch14-mastercard/mc-ipm-structure.pdf
@@ -1360,16 +1387,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 103.4
-      height: 71.8
+      width: 36.2
+      height: 76.7
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Структура `файл -> запись -> поля` естественно укладывается в короткий вертикальный stack.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:mir-unionpay-routing
   planned_label: fig:mir-unionpay-routing
   source_tex: src/parts/part3/ch15-mir.tex
@@ -1379,7 +1407,7 @@
   chapter: Мир
   chapter_slug: ch15-mir
   kind: decision-tree
-  layout: main-vertical
+  layout: marginal-vertical
   asset_base: assets/figures/ch15-mir/mir-unionpay-routing
   master_tex: assets/figures/ch15-mir/mir-unionpay-routing.tex
   pdf: assets/figures/ch15-mir/mir-unionpay-routing.pdf
@@ -1408,16 +1436,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 138.2
-      height: 118.7
+      width: 33.0
+      height: 64.8
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Routing tree компактный по идее и может быть переписан как узкое decision tree сверху вниз.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:opkc-flow
   planned_label: fig:opkc-flow
   source_tex: src/parts/part3/ch15-mir.tex
@@ -1462,6 +1491,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
@@ -1475,7 +1505,7 @@
   chapter: СБП
   chapter_slug: ch18-sbp
   kind: topology-network
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch18-sbp/sbp-architecture
   master_tex: assets/figures/ch18-sbp/sbp-architecture.tex
   pdf: assets/figures/ch18-sbp/sbp-architecture.pdf
@@ -1507,16 +1537,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 159.6
-      height: 101.9
+      width: 37.0
+      height: 78.3
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Трёхуровневая архитектура уже иерархична; её можно свести к top-down layout с краткими подписями.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:sbp-scenarios
   planned_label: fig:sbp-scenarios
   source_tex: src/parts/part3/ch18-sbp.tex
@@ -1564,6 +1595,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
@@ -1577,7 +1609,7 @@
   chapter: 'Фрод: кто атакует и как защищаться'
   chapter_slug: ch19-fraud
   kind: flow-wide
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch19-fraud/fraud-hybrid
   master_tex: assets/figures/ch19-fraud/fraud-hybrid.tex
   pdf: assets/figures/ch19-fraud/fraud-hybrid.pdf
@@ -1607,16 +1639,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 257.0
-      height: 83.9
+      width: 41.9
+      height: 76.4
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Это pipeline с одной главной осью и парой sidecar-узлов, хороший кандидат для маргинального vertical flow.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:pisp-flow
   planned_label: fig:pisp-flow
   source_tex: src/parts/part3/ch19-open-banking.tex
@@ -1626,7 +1659,7 @@
   chapter: Open Banking, A2A и ISO 20022
   chapter_slug: ch19-open-banking
   kind: flow-wide
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch19-open-banking/pisp-flow
   master_tex: assets/figures/ch19-open-banking/pisp-flow.tex
   pdf: assets/figures/ch19-open-banking/pisp-flow.pdf
@@ -1651,16 +1684,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 182.1
-      height: 48.7
+      width: 31.2
+      height: 77.0
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Flow можно свернуть в top-down сценарий с одним боковым блоком банка/SCA без потери основной логики.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:compliance-kyb-risk
   planned_label: fig:compliance-kyb-risk
   source_tex: src/parts/part4/ch20-compliance-aml.tex
@@ -1704,10 +1738,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-table
-    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+    reason: таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
 - id: fig:subscriptions-cit-mit
   planned_label: fig:subscriptions-cit-mit
   source_tex: src/parts/part4/ch21-subscriptions.tex
@@ -1753,6 +1788,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-vertical
@@ -1766,7 +1802,7 @@
   chapter: 'Reconciliation: где теряются деньги'
   chapter_slug: ch22-reconciliation
   kind: flow-wide
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch22-reconciliation/recon-exception-waterfall
   master_tex: assets/figures/ch22-reconciliation/recon-exception-waterfall.tex
   pdf: assets/figures/ch22-reconciliation/recon-exception-waterfall.pdf
@@ -1796,16 +1832,17 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 269.0
-      height: 99.9
+      width: 42.3
+      height: 68.4
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Waterfall по смыслу уже top-down; в узкой вертикали он будет чище, чем в wide-flow.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.
 - id: fig:disputes-lifecycle
   planned_label: fig:disputes-lifecycle
   source_tex: src/parts/part4/ch23-disputes.tex
@@ -1855,10 +1892,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-wide
-    reason: Sequence diagram с несколькими участниками и подписями сообщений не читается в узком поле.
+    reason: sequence diagram с несколькими участниками и подписями сообщений не читается в узком поле.
 - id: fig:decline-codes
   planned_label: fig:decline-codes
   source_tex: src/parts/part4/ch24-decline-management.tex
@@ -1903,10 +1941,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-table
-    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+    reason: таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
 - id: fig:decline-retry-tree
   planned_label: fig:decline-retry-tree
   source_tex: src/parts/part4/ch24-decline-management.tex
@@ -1953,6 +1992,7 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-vertical
@@ -2001,10 +2041,11 @@
       width: 45.0
       height_min: 60.0
       height_max: 80.0
+      height_hard_max: 96.0
     fits_marginalia_now: false
     recommendation: main-text
     target_layout: main-table
-    reason: Таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
+    reason: таблица или матрица с несколькими колонками и полными заголовками требует ширины основного текста.
 - id: todo:ch26-payment-gateway:gateway-components
   planned_label: fig:gateway-components
   source_tex: src/parts/part5/ch26-payment-gateway.tex
@@ -2014,7 +2055,7 @@
   chapter: Платёжный шлюз изнутри
   chapter_slug: ch26-payment-gateway
   kind: flow-wide
-  layout: main-wide
+  layout: marginal-vertical
   asset_base: assets/figures/ch26-payment-gateway/gateway-components
   master_tex: assets/figures/ch26-payment-gateway/gateway-components.tex
   pdf: assets/figures/ch26-payment-gateway/gateway-components.pdf
@@ -2045,13 +2086,14 @@
   status: planned
   placement_review:
     bbox_mm:
-      width: 271.4
-      height: 55.8
+      width: 43.1
+      height: 67.5
     marginalia_limits_mm:
       width: 45.0
       height_min: 60.0
       height_max: 80.0
-    fits_marginalia_now: false
-    recommendation: vertical-relayout-for-marginalia
+      height_hard_max: 96.0
+    fits_marginalia_now: true
+    recommendation: margin-ok
     target_layout: marginal-vertical
-    reason: Gateway pipeline линейный; при сокращении подписей его можно сделать узкой вертикальной схемой с обратным ответом как side note.
+    reason: Текущий vertical relayout уже помещается в узкую маргиналию и остаётся в типовом диапазоне высоты.

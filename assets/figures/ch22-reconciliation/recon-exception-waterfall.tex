@@ -6,10 +6,10 @@
   \tikzset{
     stage/.style={
       fig/mblock,
-      minimum width=24mm,
-      text width=20mm,
-      minimum height=7.4mm,
-      inner sep=2.4pt,
+      minimum width=22mm,
+      text width=18mm,
+      minimum height=6.8mm,
+      inner sep=2.1pt,
       font=\tiny
     },
     decision/.style={
@@ -20,29 +20,29 @@
     },
     branch/.style={
       fig/mside,
-      minimum width=13.5mm,
-      text width=12.5mm,
-      inner sep=1.8pt,
-      font=\fontsize{5.2}{5.8}\selectfont
+      minimum width=11mm,
+      text width=10mm,
+      inner sep=1.5pt,
+      font=\fontsize{4.8}{5.3}\selectfont
     }
   }
 
   \node[stage] (incoming) at (0,0) {Клиринговая\\запись};
-  \node[decision, below=4.5mm of incoming] (auth) {Есть auth?};
-  \node[decision, below=8mm of auth] (amount) {Суммы\\совпали?};
-  \node[stage, below=5.5mm of amount] (matched) {Matched\\Settlement};
+  \node[decision, below=3.5mm of incoming] (auth) {Есть auth?};
+  \node[decision, below=6mm of auth] (amount) {Суммы\\совпали?};
+  \node[stage, below=4.5mm of amount] (matched) {Matched\\settlement};
 
-  \node[branch, right=7mm of auth] (unmatched) {Unmatched};
-  \node[branch, below=3mm of unmatched] (forcepost) {Force post\\voice auth?};
-  \node[fig/mnote, below=2.5mm of forcepost, text width=14mm] (forceout)
-    {Yes: manual review\\No: fraud investigation};
+  \node[branch, right=3mm of auth] (unmatched) {Unmatched};
+  \node[branch, below=2mm of unmatched] (forcepost) {Force post\\voice?};
+  \node[fig/mnote, below=2mm of forcepost, text width=11mm] (forceout)
+    {Yes: manual\\No: fraud};
 
-  \node[branch, right=7mm of amount] (mismatch) {Mismatch};
-  \node[branch, below=3mm of mismatch] (rules) {Tips /\\pre-auth\\delta?};
-  \node[fig/mnote, below=2.5mm of rules, text width=14mm] (rulesout)
-    {Yes: auto-approve\\No: manual review};
+  \node[branch, right=3mm of amount] (mismatch) {Mismatch};
+  \node[branch, below=2mm of mismatch] (rules) {Tips /\\delta?};
+  \node[fig/mnote, below=2mm of rules, text width=11mm] (rulesout)
+    {Yes: auto\\No: manual};
 
-  \node[fig/mnote, below=4mm of matched] (statuses)
+  \node[fig/mnote, below=3mm of matched] (statuses)
     {Statuses: matched, unmatched, mismatch, exception.};
 
   \draw[fig/accenta] (incoming.south) -- (auth.north);

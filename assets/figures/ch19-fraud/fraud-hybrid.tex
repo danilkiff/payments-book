@@ -6,18 +6,18 @@
   \tikzset{
     stage/.style={
       fig/mblock,
-      minimum width=24mm,
-      text width=20mm,
-      minimum height=7.4mm,
-      inner sep=2.4pt,
+      minimum width=22mm,
+      text width=18mm,
+      minimum height=6.8mm,
+      inner sep=2.1pt,
       font=\tiny
     },
     core/.style={
       fig/mcore,
-      minimum width=24mm,
-      text width=20mm,
-      minimum height=7.8mm,
-      inner sep=2.5pt,
+      minimum width=22mm,
+      text width=18mm,
+      minimum height=7.0mm,
+      inner sep=2.2pt,
       font=\tiny
     },
     decision/.style={
@@ -28,27 +28,25 @@
     },
     side/.style={
       fig/mside,
-      minimum width=13.5mm,
-      text width=12.5mm,
-      inner sep=1.8pt,
-      font=\fontsize{5.2}{5.8}\selectfont
+      minimum width=11mm,
+      text width=10mm,
+      inner sep=1.5pt,
+      font=\fontsize{4.8}{5.3}\selectfont
     }
   }
 
   \node[stage] (incoming) at (0,0) {Входящая\\транзакция};
-  \node[stage, below=4mm of incoming] (prescreen) {Pre-screening\\rules};
-  \node[decision, below=4.5mm of prescreen] (obvious) {Явный\\фрод?};
-  \node[core, below=5mm of obvious] (scoring) {Scoring\\engine\\ML};
-  \node[stage, below=4mm of scoring] (score) {Score\\0--1000};
-  \node[stage, below=4mm of score] (postrules) {Post-scoring\\rules};
+  \node[stage, below=3mm of incoming] (prescreen) {Pre-screen\\rules};
+  \node[decision, below=3.5mm of prescreen] (obvious) {Явный\\фрод?};
+  \node[core, below=4mm of obvious] (scoring) {ML\\scoring};
+  \node[stage, below=3mm of scoring] (score) {Score\\0--1000};
+  \node[stage, below=3mm of score] (postrules) {Post-score\\rules};
 
-  \node[side, right=7mm of obvious] (blocka) {Блок};
-  \node[side, right=7mm of scoring] (features) {velocity\\device\\geo\\history};
-  \node[side, right=7mm of postrules, yshift=7.5mm] (blockb) {> 800\\Блок};
-  \node[side, right=7mm of postrules] (verify) {500--800\\3DS};
-  \node[side, right=7mm of postrules, yshift=-7.5mm] (approve) {< 500\\OK};
-  \node[fig/mnote, below=4.5mm of postrules] (feedback)
-    {Approved / verified outcomes feed model retraining.};
+  \node[side, right=3mm of obvious] (blocka) {Блок};
+  \node[side, right=3mm of scoring] (features) {velocity\\device\\geo\\history};
+  \node[side, right=3mm of postrules, yshift=6.5mm] (blockb) {> 800\\Блок};
+  \node[side, right=3mm of postrules] (verify) {500--800\\3DS};
+  \node[side, right=3mm of postrules, yshift=-6.5mm] (approve) {< 500\\OK};
 
   \draw[fig/accenta] (incoming.south) -- (prescreen.north);
   \draw[fig/accenta] (prescreen.south) -- (obvious.north);
@@ -59,10 +57,10 @@
 
   \draw[fig/lookup] (features.west) -- (scoring.east);
   \draw[fig/arrow] (postrules.east) -- (verify.west);
-  \draw[fig/arrow] (postrules.east) -- ++(2mm,0) |- (blockb.west);
-  \draw[fig/arrow] (postrules.east) -- ++(2mm,0) |- (approve.west);
-  \draw[fig/dashed] (approve.west) .. controls +(-7mm,-2mm) and +(6mm,-2mm) .. (feedback.east);
-  \draw[fig/dashed] (feedback.north west) .. controls +(-3mm,7mm) and +(2mm,-5mm) .. (scoring.south east);
+  \draw[fig/arrow] (postrules.east) -- ++(1.6mm,0) |- (blockb.west);
+  \draw[fig/arrow] (postrules.east) -- ++(1.6mm,0) |- (approve.west);
+  \draw[fig/dashed] (approve.west) .. controls +(-6mm,-2mm) and +(5mm,-1mm) ..
+    node[below, font=\fontsize{4.8}{5.3}\selectfont, text=Muted] {feedback to ML} (scoring.east);
 
   \begin{scope}[on background layer]
     \node[fig/mgroup, fit=(incoming)(prescreen)(obvious)(scoring)(score)(postrules), inner xsep=8pt, inner ysep=8pt] {};

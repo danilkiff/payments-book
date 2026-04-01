@@ -12,20 +12,19 @@
   \node[flow/step, below=5mm of holder] (merchant) {Мерчант};
   \node[flow/step, below=5mm of merchant] (acquirer) {Эквайер\\или PSP};
   \node[flow/core, below=5mm of acquirer] (network) {Карточная\\сеть};
-  \node[flow/step, below=5mm of network] (issuer) {Эмитент};
-
   \node[
     fig/mside,
-    minimum width=14mm,
-    text width=10mm,
-    right=4mm of network
+    minimum width=16mm,
+    text width=12mm,
+    below=4mm of network
   ] (vault) {Token\\Vault};
+  \node[flow/step, below=4mm of vault] (issuer) {Эмитент};
 
   \draw[fig/accenta] (holder.south) -- (merchant.north);
   \draw[fig/accenta] (merchant.south) -- (acquirer.north);
   \draw[fig/accenta] (acquirer.south) -- (network.north);
-  \draw[fig/accentb] (network.south) -- (issuer.north);
-  \draw[fig/lookup] (network.east) -- (vault.west);
+  \draw[fig/lookup] (network.south) -- (vault.north);
+  \draw[fig/accentb] (vault.south) -- (issuer.north);
 
   \node[
     font=\tiny,
@@ -41,12 +40,12 @@
     inner ysep=0.5pt,
     text=AccentB!80!black,
     align=center
-  ] at ($(network.south)!0.5!(issuer.north)+(-0.18,0)$) {FPAN\\+ meta};
+  ] at ($(vault.south)!0.5!(issuer.north)+(-0.18,0)$) {FPAN\\+ meta};
   \node[
     font=\tiny,
     text=Muted,
     align=center
-  ] at ($(vault.south)+(0,-3.5mm)$) {DPAN $\rightarrow$\\FPAN};
+  ] at ($(network.south)!0.5!(vault.north)+(8mm,0)$) {DPAN $\rightarrow$\\FPAN};
 
   \node[fig/mnote, below=6mm of issuer] {Де-токенизация идёт в карточной сети; мерчант и эквайер видят только DPAN.};
 \end{tikzpicture}

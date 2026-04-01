@@ -36,7 +36,7 @@
     inner ysep=5pt
   ] {};
 
-  \node[duk/main, below=5mm of bdk] (ipek) {IPEK\\в терминале};
+  \node[duk/main, text width=22mm, below=5mm of bdk] (ipek) {IPEK\\в терминале};
   \node[
     draw=Ink!55,
     line width=0.75pt,
@@ -47,21 +47,23 @@
     inner ysep=5pt
   ] (ipekbox) {};
 
-  \node[duk/node, below left=7mm and 4.5mm of ipek] (n1l) {Node\\0};
-  \node[duk/node, below right=7mm and 4.5mm of ipek] (n1r) {Node\\1};
+  \node[duk/main, text width=22mm, below=7mm of ipek] (tree) {Дерево\\21 уровней};
+  \coordinate (leafrow) at ($(tree.south)+(0,-8mm)$);
+  \node[duk/leaf] (k1) at ($(leafrow)+(-5mm,0)$) {Key 1};
+  \node[duk/leaf] (k2) at ($(leafrow)+(5mm,0)$) {Key 2};
+  \node[duk/leaf] (k3) at ($(leafrow)+(-5mm,-8mm)$) {Key 3};
+  \node[duk/leaf] (k4) at ($(leafrow)+(5mm,-8mm)$) {Key N};
 
-  \node[duk/leaf, below=4mm of n1l] (k1) {Key 1};
-  \node[duk/leaf, below=3.5mm of k1] (k2) {Key 2};
-  \node[duk/leaf, below=4mm of n1r] (k3) {Key 3};
-  \node[duk/leaf, below=3.5mm of k3] (k4) {Key N};
+  \begin{scope}[on background layer]
+    \node[fig/mgroup, fit=(k1)(k2)(k3)(k4), inner xsep=5pt, inner ysep=5pt] (leafbox) {};
+  \end{scope}
 
   \draw[fig/accenta] (bdk.south) -- (ipek.north);
-  \draw[fig/arrow] (ipek.south west) -- (n1l.north);
-  \draw[fig/arrow] (ipek.south east) -- (n1r.north);
-  \draw[fig/arrow] (n1l.south) -- (k1.north);
-  \draw[fig/arrow] (k1.south) -- (k2.north);
-  \draw[fig/arrow] (n1r.south) -- (k3.north);
-  \draw[fig/arrow] (k3.south) -- (k4.north);
+  \draw[fig/arrow] (ipek.south) -- (tree.north);
+  \draw[fig/arrow] (tree.south west) -- (k1.north);
+  \draw[fig/arrow] (tree.south east) -- (k2.north);
+  \draw[fig/arrow] (k1.south) -- (k3.north);
+  \draw[fig/arrow] (k2.south) -- (k4.north);
 
   \draw[AccentB, line width=0.9pt] ($(k1.north west)+(-0.05,0.05)$) -- ($(k1.south east)+(0.05,-0.05)$);
   \draw[AccentB, line width=0.9pt] ($(k1.south west)+(-0.05,-0.05)$) -- ($(k1.north east)+(0.05,0.05)$);
@@ -80,6 +82,6 @@
     text=AccentB!80!black,
     align=center
   ] at ($(ipekbox.south)+(0,-3.5mm)$) {IPEK удаляют\\после init};
-  \node[fig/mnote, below=7mm of k2.south west, anchor=west] at ($(k2.south west)+(-1mm,0)$) {Однонаправленное дерево DUKPT порождает одноразовые transaction keys.};
+  \node[fig/mnote, text width=29mm, below=6mm of leafbox] {DUKPT порождает\\одноразовые\\ключи транзакций.};
 \end{tikzpicture}
 \end{document}
