@@ -138,7 +138,7 @@ MPA и опирается на ГОСТ-криптографию в цепочк
     \textbf{M\slash Chip Contactless (MC)} & \textbf{Мир бесконтактный}\\
     \textbf{Аутентификация данных} & fDDA & CVC3 или ARQC & ГОСТ 34.10\\
     \textbf{Тип криптограммы} & ARQC & CVC3 или ARQC & ARQC (ГОСТ)\\
-    \textbf{Офлайн-одобрение} & нет & да (ограниченно) & да\\
+    \textbf{Офлайн-одобрение} & нет (предпочтительно)\footnotemark & да (ограниченно) & да\\
     \textbf{CVM limit} & задаётся схемой по рынку & задаётся схемой по рынку & по правилам НСПК\\
     \textbf{Криптография} & RSA + 3DES (AES) & RSA + 3DES & ГОСТ (ECC
     + Кузнечик)\\
@@ -146,6 +146,8 @@ MPA и опирается на ГОСТ-криптографию в цепочк
   \endgroup
   \caption{Сравнение основных бесконтактных ядер.}~\label{tab:contactless-kernel-comparison}
 \end{table}
+\footnotetext{Visa Quick Chip предпочитает онлайн-режим, однако fDDA позволяет qVSDC
+  работать офлайн при соответствующей конфигурации терминала и карты.}
 
 \section{Мобильные платежи: SE, HCE и провизионирование токена}~\label{sec:contactless-mobile}
 
