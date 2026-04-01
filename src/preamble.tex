@@ -1,0 +1,67 @@
+% Minimal project preamble kept close to stock kaobook.
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{DejaVuSerif.ttf}[
+  BoldFont=DejaVuSerif-Bold.ttf,
+  ItalicFont=DejaVuSerif-Italic.ttf,
+  BoldItalicFont=DejaVuSerif-BoldItalic.ttf,
+]
+\setsansfont{DejaVuSans.ttf}[
+  BoldFont=DejaVuSans-Bold.ttf,
+  ItalicFont=DejaVuSans-Oblique.ttf,
+  BoldItalicFont=DejaVuSans-BoldOblique.ttf,
+]
+\setmonofont{DejaVuSansMono.ttf}[
+  BoldFont=DejaVuSansMono-Bold.ttf,
+  ItalicFont=DejaVuSansMono-Oblique.ttf,
+  BoldItalicFont=DejaVuSansMono-BoldOblique.ttf,
+  Scale=.9,
+]
+
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+
+\newfontfamily\cyrillicfont[
+  BoldFont=DejaVuSerif-Bold.ttf,
+  ItalicFont=DejaVuSerif-Italic.ttf,
+  BoldItalicFont=DejaVuSerif-BoldItalic.ttf,
+  Script=Cyrillic,
+]{DejaVuSerif.ttf}
+\newfontfamily\cyrillicfontsf[
+  BoldFont=DejaVuSans-Bold.ttf,
+  ItalicFont=DejaVuSans-Oblique.ttf,
+  BoldItalicFont=DejaVuSans-BoldOblique.ttf,
+  Script=Cyrillic,
+]{DejaVuSans.ttf}
+\newfontfamily\cyrillicfonttt[
+  BoldFont=DejaVuSansMono-Bold.ttf,
+  ItalicFont=DejaVuSansMono-Oblique.ttf,
+  BoldItalicFont=DejaVuSansMono-BoldOblique.ttf,
+  Scale=.9,
+]{DejaVuSansMono.ttf}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{newunicodechar}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{pgf-umlsd}
+\usepackage{csquotes}
+\usepackage{kaobiblio}
+\usepackage{pdflscape}
+
+\usetikzlibrary{arrows.meta, backgrounds, fit, positioning, shapes.geometric}
+
+\hypersetup{
+  pdftitle={Платёжный стек},
+  pdfauthor={},
+  colorlinks=true,
+  linkcolor=RoyalBlue,
+  citecolor=ForestGreen,
+  urlcolor=Maroon,
+}
+
+\setcounter{tocdepth}{1}
+\renewcommand{\arraystretch}{1.25}
