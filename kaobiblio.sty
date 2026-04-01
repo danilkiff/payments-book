@@ -147,38 +147,18 @@
 
 % Command to format the marginnote created for cited items
 \NewDocumentCommand{\formatmargincitation}{m}{% The parameter is a single citation key
-	\citeauthor*{#1}\addcomma\space\iffieldundef{year}{\bibsstring{nodate}}{\printfield{year}}%
+	\parencite{#1}: \citeauthor*{#1} (\iffieldundef{year}{\bibsstring{nodate}}{\printfield{year}}), \citefield{#1}[emph]{title}%
 }
 
 % Command to format the marginnote created for supercited items
 \NewDocumentCommand{\formatmarginsupercitation}{m}{% The parameter is a single citation key
-	\supercite{#1}\space\citeauthor*{#1}\addcomma\space\iffieldundef{year}{\bibsstring{nodate}}{\printfield{year}}%
-}	
-
-% Global vertical-shift register for margin notes.
-% Set by \sidecite / \sidetextcite / \sideparencite before calling the
-% pre-defined cite commands. Avoids calling \DeclareCiteCommand or
-% \RenewDocumentCommand inside the document body (which caused an expl3
-% parameter-stack overflow in TeX Live 2026).
-\newcommand{\kaobiblio@vshift}{}
-
-% \kaobiblio@marginnote reads the shift from \kaobiblio@vshift at call time.
-\newcommand{\kaobiblio@marginnote}[1]{%
-	\ifx\kaobiblio@vshift\empty
-		\marginnote{#1}%
-	\else
-		\expandafter\marginnote\expandafter[\kaobiblio@vshift]{#1}%
-	\fi
+	\supercite{#1} \citeauthor*{#1} (\iffieldundef{year}{\bibsstring{nodate}}{\printfield{year}})%
 }
 
-% Pre-define \kaobiblio@sidecite once (not inside each \sidecite call).
-\DeclareCiteCommand{\kaobiblio@sidecite}[\kaobiblio@marginnote]{%
-}{%
-	\formatmargincitation{\thefield{entrykey}}%
-}{%
-	\\% separator between multiple citations
-}{%
-}%
+% The following command needs to be redefined every time \sidecite is called in order for \DeclareCiteCommand's wrapper to work correctly
+\NewDocumentCommand{\kaobiblio@marginnote}{m}{%
+	\marginnote{#1}%
+}
 
 % biblatex-like commands that also print a citation in the margin
 % Usage:
@@ -193,9 +173,16 @@
 % Third optional argument: postnote
 % Mandatory argument: citation key
 \NewDocumentCommand{\sidecite}{o o o m}{%
-	\IfNoValueTF{#1}%
-		{\renewcommand{\kaobiblio@vshift}{}}%
-		{\renewcommand{\kaobiblio@vshift}{#1}}%
+	\RenewDocumentCommand{\kaobiblio@marginnote}{m}{%
+		\marginnote[#1]{##1}%
+	}%
+	\DeclareCiteCommand{\kaobiblio@sidecite}[\kaobiblio@marginnote]{%
+	}{%
+		\formatmargincitation{\thefield{entrykey}}%
+	}{%
+		\\% separator between multiple citations
+	}{%
+	}%
 	% With this we print the marker in the text and add the item to the bibliography at the end
 	\IfNoValueOrEmptyTF{#2}%
 	{\def\@tempa{\cite{#4}\kaobiblio@sidecite{#4}}}%
@@ -218,18 +205,17 @@
 % Second optional argument: postnote if the third argument isn't specified; prenote if the third argument is specified (same pattern as the \textcite command)
 % Third optional argument: postnote
 % Mandatory argument: citation key
-\DeclareCiteCommand{\kaobiblio@sidesupercite}[\kaobiblio@marginnote]{%
-}{%
-	\formatmarginsupercitation{\thefield{entrykey}}%
-}{%
-	\\% separator between multiple citations
-}{%
-}%
-
 \NewDocumentCommand{\sidesupercite}{o o o m}{%
-	\IfNoValueTF{#1}%
-		{\renewcommand{\kaobiblio@vshift}{}}%
-		{\renewcommand{\kaobiblio@vshift}{#1}}%
+	\RenewDocumentCommand{\kaobiblio@marginnote}{m}{%
+		\marginnote[#1]{##1}%
+	}%
+	\DeclareCiteCommand{\kaobiblio@sidesupercite}[\kaobiblio@marginnote]{%
+	}{%
+		\formatmarginsupercitation{\thefield{entrykey}}%
+	}{%
+		\\% separator between multiple citations
+	}{%
+	}%
 	% With this we print the marker in the text and add the item to the bibliography at the end
 	\IfNoValueOrEmptyTF{#2}%
 	{\def\@tempa{\supercite{#4}\kaobiblio@sidesupercite{#4}}}%
@@ -249,9 +235,16 @@
 % Third optional argument: postnote
 % Mandatory argument: citation key
 \NewDocumentCommand{\sidetextcite}{o o o m}{%
-	\IfNoValueTF{#1}%
-		{\renewcommand{\kaobiblio@vshift}{}}%
-		{\renewcommand{\kaobiblio@vshift}{#1}}%
+	\RenewDocumentCommand{\kaobiblio@marginnote}{m}{%
+		\marginnote[#1]{##1}%
+	}%
+	\DeclareCiteCommand{\kaobiblio@sidecite}[\kaobiblio@marginnote]{%
+	}{%
+		\formatmargincitation{\thefield{entrykey}}%
+	}{%
+		\\% separator between multiple citations
+	}{%
+	}%
 	% With this we print the marker in the text and add the item to the bibliography at the end
 	\IfNoValueOrEmptyTF{#2}%
 		{\def\@tempa{\textcite{#4}\kaobiblio@sidecite{#4}}}%
@@ -276,9 +269,16 @@
 % Fourth optional argument: postnote
 % Mandatory argument: citation key
 \NewDocumentCommand{\sideparencite}{s o o o m}{%
-	\IfNoValueTF{#2}%
-		{\renewcommand{\kaobiblio@vshift}{}}%
-		{\renewcommand{\kaobiblio@vshift}{#2}}%
+	\RenewDocumentCommand{\kaobiblio@marginnote}{m}{%
+		\marginnote[#2]{##1}%
+	}%
+	\DeclareCiteCommand{\kaobiblio@sidecite}[\kaobiblio@marginnote]{%
+	}{%
+		\formatmargincitation{\thefield{entrykey}}%
+	}{%
+		\\% separator between multiple citations
+	}{%
+	}%
 	% With this we print the marker in the text and add the item to the bibliography at the end
 	\IfBooleanTF#1%
 		{\IfNoValueOrEmptyTF{#3}%

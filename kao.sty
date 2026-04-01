@@ -477,7 +477,11 @@
 \let\oldmarginnote\marginnote%
 \RenewDocumentCommand\marginnote{ o m }{%
 	\IfNoValueOrEmptyTF{#1}{%
-		\oldmarginnote{#2}%
+		\IfInFloatingEnvir{%
+			\oldmarginnote{#2}%
+		}{%
+			\marginpar{\@margin@par#2}%
+		}%
 	}{%
 		\oldmarginnote{#2}[\kao@if@nblskip{#1}{\@cdr#1\@nil\baselineskip}{#1}]%
 	}%
@@ -588,7 +592,7 @@
 
 % The marginfix package prevents the margin notes to stay aligned with the main text, so it cannot be used. However, we define the \marginskip command, which is the only command we need from that package.
 \newcommand\marginskip[1]{%
-	\oldmarginnote{\@margin@par\vspace{#1 - \baselineskip}}% Keep margin spacing without creating a float insertion.
+	\marginpar{\@margin@par\vspace{#1 - \baselineskip}}% We subtract the \baselineskip that we have in margin pars.
 }
 
 \newlength{\kaomarginskipabove} % Specify the space above a marginfigure, margintable or marginlisting
@@ -645,14 +649,20 @@
 
 % Detect whether there is a caption in the current environment by switching the kaocaption toggle when \caption is called. If there is no caption, reset the floatsetup. Without this fix, the floatrow package will align the environment to the main text if there is a caption, but to the margin if there is no caption.
 \newtoggle{kaocaption}
-% Fixed for TeX Live 2026: replaced \RenewDocumentCommand inside
-% \AtBeginEnvironment with plain \def to avoid expl3 parameter-stack overflow.
-% The original \caption from the caption package already handles *, [short],
-% and {text} variants via \@ifstar / \@ifnextchar, so the wrapper only needs
-% to set the kaocaption toggle before delegating to \oldcaption.
 \AtBeginEnvironment{figure}{%
 	\let\oldcaption\caption%
-	\def\caption{\toggletrue{kaocaption}\oldcaption}%
+	\RenewDocumentCommand{\caption}{s o m}{%
+		\IfBooleanTF{#1}{%
+			\oldcaption*{#3}%
+		}{%
+			\IfValueTF{#2}{%
+				\oldcaption[#2]{#3}%
+			}{%
+				\oldcaption{#3}%
+			}%
+		}%
+		\toggletrue{kaocaption}%
+	}%
 }
 \AtEndEnvironment{figure}{%
 	\iftoggle{kaocaption}{%
@@ -664,7 +674,18 @@
 }
 \AtBeginEnvironment{table}{%
 	\let\oldcaption\caption%
-	\def\caption{\toggletrue{kaocaption}\oldcaption}%
+	\RenewDocumentCommand{\caption}{s o m}{%
+		\IfBooleanTF{#1}{%
+			\oldcaption*{#3}%
+		}{%
+			\IfValueTF{#2}{%
+				\oldcaption[#2]{#3}%
+			}{%
+				\oldcaption{#3}%
+			}%
+		}%
+		\toggletrue{kaocaption}%
+	}%
 }
 \AtEndEnvironment{table}{%
 	\iftoggle{kaocaption}{%
@@ -1153,7 +1174,7 @@
 {\ifthenelse%
 	{\equal{tex}{\kao@fontmethod}}{\kao@fontmethodTex}%
 {\ifthenelse%
-	{\equal{none}{\kao@fontmethod}}{}% none: font setup delegated to user preamble
+	{\equal{none}{\kao@fontmethod}}{}%
 {
 	\PackageError{kao}{%
 		Invalid fontmethod choice \kao@fontmethod.%
@@ -1168,8 +1189,6 @@
 \linespread{1.07} % Give Palatino more leading (space between lines)
 
 % Fix for the subequation environment (https://tex.stackexchange.com/questions/27053/too-much-space-between-full-paragraph-and-subequations-env)
-% Deferred to AtBeginDocument because etoolbox/preto in TeX Live 2026 creates a
-% placeholder for undefined commands, which conflicts with amsmath's \newenvironment.
 \AtBeginDocument{\preto\subequations{\ifhmode\unskip\fi}}
 
 %----------------------------------------------------------------------------------------
