@@ -5,9 +5,13 @@
 ```bash
 # macOS
 brew install mactex tex-fmt
+brew install uv
+uv pip install cairosvg
 make pdf
 
 # Ubuntu
 sudo apt install texlive-full tex-fmt  # tex-fmt: Ubuntu 25.10+
+pip install uv
+uv pip install cairosvg
 make pdf
 ```
