@@ -20,7 +20,10 @@
 %   \term{label}
 %   \term[кастомный текст]{label}
 %   \Term{label}
-% Звёздочная форма подавляет заметку на полях:
+% Для редкой явной заметки на полях используйте:
+%   \termmargin{label}
+%   \termnote{label}
+% Звёздочная форма сохранена для обратной совместимости:
 %   \term*{label}
 
 \NewDocumentCommand{\DeclareTerm}{m m m m m}{%
@@ -37,29 +40,43 @@
   \index{\glsentrysort{#1}@\glsentryname{#1}}%
 }
 
-\newcommand{\termnote}[1]{%
-  \marginnote{%
-    \footnotesize
-    \textbf{\glsentryname{#1}}\\
-    \glsentryuseri{#1}%
+\newcommand{\termmargintext}[1]{%
+  \footnotesize
+  \textbf{\glsentryname{#1}}\\
+  \glsentryuseri{#1}%
+}
+
+\NewDocumentCommand{\termmargin}{o m}{%
+  \IfNoValueTF{#1}{%
+    \marginnote{\termmargintext{#2}}%
+  }{%
+    \marginnote[#1]{\termmargintext{#2}}%
+  }%
+}
+
+\NewDocumentCommand{\termnote}{o m}{%
+  \IfNoValueTF{#1}{%
+    \termmargin{#2}%
+  }{%
+    \termmargin[#1]{#2}%
   }%
 }
 
 \NewDocumentCommand{\term}{s o m}{%
   \termindex{#3}%
   \IfNoValueTF{#2}{%
-    \ifglsused{#3}{\gls{#3}}{\gls{#3}\IfBooleanF{#1}{\termnote{#3}}}%
+    \gls{#3}%
   }{%
-    \ifglsused{#3}{\glslink{#3}{#2}}{\glslink{#3}{#2}\IfBooleanF{#1}{\termnote{#3}}}%
+    \glslink{#3}{#2}%
   }%
 }
 
 \NewDocumentCommand{\Term}{s o m}{%
   \termindex{#3}%
   \IfNoValueTF{#2}{%
-    \ifglsused{#3}{\Gls{#3}}{\Gls{#3}\IfBooleanF{#1}{\termnote{#3}}}%
+    \Gls{#3}%
   }{%
-    \ifglsused{#3}{\Glslink{#3}{#2}}{\Glslink{#3}{#2}\IfBooleanF{#1}{\termnote{#3}}}%
+    \Glslink{#3}{#2}%
   }%
 }
 
