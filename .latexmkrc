@@ -1,3 +1,19 @@
+# Максимальное число повторных компиляций за один запуск latexmk.
+# LaTeX — многопроходный компилятор: первый проход собирает структуру,
+# следующие — разрешают ссылки, оглавление, библиографию.
+# 8 проходов хватает даже для чистой сборки с нуля.
 $max_repeat = 8;
 
-# A clean build needs a few extra passes while the TOC and bibliography settle.
+# Режим вывода: 1 = PDF через pdflatex (не DVI, не XeLaTeX).
+$pdf_mode = 1;
+
+# Каталог для всех артефактов сборки (.aux, .log, .pdf и др.).
+# Держит корень репозитория чистым.
+$out_dir = 'build';
+
+# Команда компилятора с явными флагами:
+#   -file-line-error  — ошибки в формате «файл:строка», удобно для редакторов
+#   -halt-on-error    — остановиться на первой ошибке, не ждать ввода
+#   -interaction=nonstopmode — не интерактивный режим, для CI
+#   %O %S             — плейсхолдеры latexmk: опции и исходный файл
+$pdflatex = 'pdflatex -file-line-error -halt-on-error -interaction=nonstopmode %O %S';
