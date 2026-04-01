@@ -1,22 +1,44 @@
 % frontmatter/titlepage.tex
 
 \begin{titlepage}
-  \begin{center}
-    \vspace*{4cm}
+  \thispagestyle{empty}
 
-    {\Huge\bfseries Платёжный стек}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south west, inner sep=0pt] at (current page.south west) {%
+      \includegraphics[
+        width=\paperwidth,
+        height=\paperheight,
+        keepaspectratio=false
+      ]{assets/covers/rendered/cover-option-4-core-and-perimeter.pdf}%
+    };
 
-    \vspace{1em}
+    \node[
+      anchor=north,
+      align=center,
+      text=black!82
+    ] (cover-title) at ([yshift=-41mm]current page.north) {%
+      {\fontsize{29}{33}\selectfont\bfseries Платёжный стек}
+    };
 
-    {\LARGE Как устроены карточные платежи,\\
-      СБП и всё между ними}
+    \node[
+      anchor=north,
+      align=center,
+      text width=0.62\paperwidth,
+      text=black!80
+    ] at ([yshift=-7mm]cover-title.south) {%
+      {\fontsize{16}{20}\selectfont
+        Как устроены карточные платежи,\\
+        СБП и всё между ними}
+    };
 
-    \vspace{4cm}
+    \node[
+      anchor=south,
+      align=center,
+      text=black!80
+    ] at ([yshift=12mm]current page.south) {%
+      {\large \the\year}
+    };
+  \end{tikzpicture}
 
-    % {\Large Имя Автора}
-
-    \vfill
-
-    {\large \the\year}
-  \end{center}
+  \null
 \end{titlepage}
