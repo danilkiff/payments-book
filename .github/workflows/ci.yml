@@ -17,4 +17,4 @@ jobs:
         uses: docker://ghcr.io/xu-cheng/texlive-full:20260101
         with:
           entrypoint: latexmk
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=build payments-book.tex
+          args: payments-book.tex
