@@ -37,23 +37,6 @@ make clean
 ## Фигуры
 
 - Источником правды для фигуры считается `assets/figures/<chapter>/<name>.tex`.
-- `assets/figures/<chapter>/<name>.pdf` — локальный артефакт сборки. Он нужен книге, но не хранится в репозитории.
-- Общий шаблон фигур в `assets/figures/templates/figure-preamble.tex` намеренно простой и совместимый с текущими исходниками.
-- `make pdf` сам пересобирает figure PDF перед сборкой книги.
-
-Если нужно пересобрать только фигуры:
-
-```bash
-make figures
-```
-
-Пример ручной пересборки фигуры:
-
-```bash
-cd assets/figures/ch07-emv
-mkdir -p build
-latexmk -pdf -outdir=build emv-chip-architecture.tex
-cp build/emv-chip-architecture.pdf emv-chip-architecture.pdf
-```
-
-Локальный `build/` рядом с фигурой и соседний `.pdf` считаются временными артефактами. Их можно убрать через `make clean`.
+- Книга подключает figure `.tex` напрямую; промежуточный `assets/figures/<chapter>/<name>.pdf` больше не нужен.
+- Общие стили фигур живут в `src/figure-styles.tex` и подключаются через основной preamble книги.
+- `make clean` очищает текущую сборку книги; старые локальные артефакты figure-сборки от прежнего workflow при необходимости можно удалить отдельно.
