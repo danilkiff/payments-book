@@ -4,15 +4,16 @@
 MAIN     := src/main.tex
 BUILD    := build
 PDF      := $(BUILD)/main.pdf
+LATEXMK  := $(shell command -v latexmk 2>/dev/null || { test -x /Library/TeX/texbin/latexmk && echo /Library/TeX/texbin/latexmk; })
 
 .PHONY: pdf clean clean-all watch
 
 pdf: ## Основная сборка
-	latexmk -r .latexmkrc $(MAIN)
+	$(LATEXMK) -r .latexmkrc $(MAIN)
 	@echo "✓  PDF: $(PDF)"
 
 watch: ## Инкрементальная сборка с авто-перекомпиляцией при изменении файлов
-	latexmk -r .latexmkrc -pvc $(MAIN)
+	$(LATEXMK) -r .latexmkrc -pvc $(MAIN)
 
 verify: pdf ## Собрать и показать статус
 	@grep 'Output written' build/aux/main.log | sed 's/.*(\([0-9]*\) pages.*/Pages: \1/'
@@ -20,11 +21,11 @@ verify: pdf ## Собрать и показать статус
 	@printf "Todo items: "; grep -roc '\\todo\(fig\|cite\|check\)' src/parts/ | awk -F: '{s+=$$2} END {print s}'
 
 clean: ## Удалить промежуточные файлы (оставить PDF)
-	latexmk -r .latexmkrc -c $(MAIN)
+	$(LATEXMK) -r .latexmkrc -c $(MAIN)
 	@rm -rf $(BUILD)/aux
 
 clean-all: ## Удалить всё включая PDF
-	latexmk -r .latexmkrc -C $(MAIN)
+	$(LATEXMK) -r .latexmkrc -C $(MAIN)
 	@rm -rf $(BUILD)
 
 list: ## Показать список всех .tex файлов
