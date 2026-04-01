@@ -12,6 +12,32 @@
 \DeclareRobustCommand{\hex}[1]{\codeword{0x#1}}
 \newcommand{\law}[1]{\textit{#1}}
 \DeclareRobustCommand{\scheme}[1]{\texorpdfstring{\textsf{#1}}{#1}}
+\DeclareRobustCommand{\idx}[2][]{%
+  #2%
+  \if\relax\detokenize{#1}\relax
+    \index{#2}%
+  \else
+    \index{#1}%
+  \fi
+}
+\DeclareRobustCommand{\idxdef}[2][]{%
+  #2%
+  \if\relax\detokenize{#1}\relax
+    \index{#2|textbf}%
+  \else
+    \index{#1|textbf}%
+  \fi
+}
+% Centralized cross-references live in the backmatter index file, so they need
+% an immediate write to survive \printindex closing the named imakeidx stream.
+\newcommand{\idximmediateentry}[1]{%
+  \begingroup
+  \expandafter\immediate\expandafter\write\csname\jobname @idxfile\endcsname{%
+    \string\indexentry{#1}{\thepage}}%
+  \endgroup
+}
+\newcommand{\idxsee}[2]{\idximmediateentry{#1|see{#2}}}
+\newcommand{\idxseealso}[2]{\idximmediateentry{#1|seealso{#2}}}
 
 \pdfstringdefDisableCommands{%
   \def\codeword#1{#1}%
@@ -24,6 +50,8 @@
   \def\pan#1{#1}%
   \def\hex#1{0x#1}%
   \def\law#1{#1}%
+  \def\idx#1#2{#2}%
+  \def\idxdef#1#2{#2}%
 }
 
 \newcommand{\sourcebib}[1]{%
