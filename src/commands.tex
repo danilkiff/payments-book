@@ -1,4 +1,4 @@
-% Small semantic helpers and a lightweight compatibility layer for the book.
+% Small semantic helpers and reusable callout/layout primitives for the book.
 
 \DeclareRobustCommand{\codeword}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
 \DeclareRobustCommand{\domain}[1]{\texorpdfstring{\nolinkurl{#1}}{\detokenize{#1}}}
@@ -108,7 +108,7 @@
   #1
 }
 
-\newtcolorbox{kaobox}[1][]{%
+\newtcolorbox{infobox}[1][]{%
   enhanced jigsaw,
   breakable,
   sharp corners,
@@ -155,18 +155,7 @@
   \end{oreillycalloutbox}%
 }
 
-% Compatibility shims for the old manuscript API.
-\providecommand{\newmarginnote}[2]{}
-\NewDocumentCommand{\margintoc}{}{}
-\NewDocumentCommand{\sidenote}{+m}{\footnote{#1}}
-\NewDocumentCommand{\sidecite}{o o o m}{\cite{#4}}
-\NewDocumentCommand{\sidesupercite}{o o o m}{\supercite{#4}}
-\NewDocumentCommand{\sidetextcite}{o o o m}{\textcite{#4}}
-\NewDocumentCommand{\sideparencite}{s o o o m}{%
-  \IfBooleanTF{#1}{\parencite*{#5}}{\parencite{#5}}%
-}
-
-\NewDocumentEnvironment{marginfigure}{}{%
+\NewDocumentEnvironment{narrowfigure}{}{%
   \begin{figure}[tbp]
     \centering
     \begin{minipage}{0.45\textwidth}
@@ -176,22 +165,10 @@
   \end{figure}
 }
 
-\NewDocumentCommand{\margindefinition}{ o m +m }{%
+\NewDocumentCommand{\definitioncallout}{ o m +m }{%
   \begin{oreillycalloutbox}{CalloutVioletInk}{\callouticonoverview}%
     \textbf{Определение: #2.} #3%
   \end{oreillycalloutbox}%
-}
-
-\NewDocumentCommand{\marginimportant}{ o +m }{%
-  \begin{importantcallout}
-    #2%
-  \end{importantcallout}%
-}
-
-\NewDocumentCommand{\marginpractice}{ o +m }{%
-  \begin{practicecallout}
-    #2%
-  \end{practicecallout}%
 }
 
 \newcommand{\textrightarrowglyph}{\texorpdfstring{\ensuremath{\rightarrow}}{->}}
