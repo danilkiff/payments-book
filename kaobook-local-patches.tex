@@ -1,7 +1,5 @@
 % Keep the vendored kaobook files pristine; project-specific fixes live here.
 
-\makeatletter
-
 % Disable kaobook's caption-rewriting environment hooks.
 % They recurse on recent TeX Live releases and are not worth preserving here.
 \csdef{@begin@figure@hook}{}
@@ -9,102 +7,40 @@
 \csdef{@begin@table@hook}{}
 \csdef{@end@table@hook}{}
 
-% Avoid redefining cite commands inside the document body on every \sidecite.
+% Use the margin for kaobook navigation, not duplicated bibliography cards.
 \AfterEndPreamble{%
-  \providecommand{\kaobiblio@vshift}{}%
-  \RenewDocumentCommand{\kaobiblio@marginnote}{m}{%
-    \ifx\kaobiblio@vshift\empty
-      \marginnote{#1}%
-    \else
-      \expandafter\marginnote\expandafter[\kaobiblio@vshift]{#1}%
-    \fi
-  }%
-  \DeclareCiteCommand{\kaobiblio@sidecite}[\kaobiblio@marginnote]{%
-  }{%
-    \formatmargincitation{\thefield{entrykey}}%
-  }{%
-    \\%
-  }{%
-  }%
-  \DeclareCiteCommand{\kaobiblio@sidesupercite}[\kaobiblio@marginnote]{%
-  }{%
-    \formatmarginsupercitation{\thefield{entrykey}}%
-  }{%
-    \\%
-  }{%
-  }%
   \RenewDocumentCommand{\sidecite}{o o o m}{%
-    \IfNoValueTF{#1}%
-      {\renewcommand{\kaobiblio@vshift}{}}%
-      {\renewcommand{\kaobiblio@vshift}{#1}}%
     \IfNoValueOrEmptyTF{#2}%
-      {\def\@tempa{\cite{#4}\kaobiblio@sidecite{#4}}}%
+      {\cite{#4}}%
       {\IfNoValueOrEmptyTF{#3}%
-        {\IfNoValueTF{#3}%
-          {\def\@tempa{\cite[#2]{#4}\kaobiblio@sidecite{#4}}}%
-          {\def\@tempa{\cite[#2][]{#4}\kaobiblio@sidecite{#4}}}}%
-        {\def\@tempa{\cite[#2][#3]{#4}\kaobiblio@sidecite{#4}}}}%
-    \ifkaobiblio@addspace
-      \unskip~\@tempa%
-    \else
-      \@tempa%
-    \fi
+        {\IfNoValueTF{#3}{\cite[#2]{#4}}{\cite[#2][]{#4}}}%
+        {\cite[#2][#3]{#4}}}%
   }%
   \RenewDocumentCommand{\sidesupercite}{o o o m}{%
-    \IfNoValueTF{#1}%
-      {\renewcommand{\kaobiblio@vshift}{}}%
-      {\renewcommand{\kaobiblio@vshift}{#1}}%
     \IfNoValueOrEmptyTF{#2}%
-      {\def\@tempa{\supercite{#4}\kaobiblio@sidesupercite{#4}}}%
+      {\supercite{#4}}%
       {\IfNoValueOrEmptyTF{#3}%
-        {\IfNoValueTF{#3}%
-          {\def\@tempa{\supercite[#2]{#4}\kaobiblio@sidesupercite{#4}}}%
-          {\def\@tempa{\supercite[#2][]{#4}\kaobiblio@sidesupercite{#4}}}}%
-        {\def\@tempa{\supercite[#2][#3]{#4}\kaobiblio@sidesupercite{#4}}}}%
-    \@tempa%
+        {\IfNoValueTF{#3}{\supercite[#2]{#4}}{\supercite[#2][]{#4}}}%
+        {\supercite[#2][#3]{#4}}}%
   }%
   \RenewDocumentCommand{\sidetextcite}{o o o m}{%
-    \IfNoValueTF{#1}%
-      {\renewcommand{\kaobiblio@vshift}{}}%
-      {\renewcommand{\kaobiblio@vshift}{#1}}%
     \IfNoValueOrEmptyTF{#2}%
-      {\def\@tempa{\textcite{#4}\kaobiblio@sidecite{#4}}}%
+      {\textcite{#4}}%
       {\IfNoValueOrEmptyTF{#3}%
-        {\IfNoValueTF{#3}%
-          {\def\@tempa{\textcite[#2]{#4}\kaobiblio@sidecite{#4}}}%
-          {\def\@tempa{\textcite[#2][]{#4}\kaobiblio@sidecite{#4}}}}%
-        {\def\@tempa{\textcite[#2][#3]{#4}\kaobiblio@sidecite{#4}}}}%
-    \ifkaobiblio@addspace
-      \unskip~\@tempa%
-    \else
-      \@tempa%
-    \fi
+        {\IfNoValueTF{#3}{\textcite[#2]{#4}}{\textcite[#2][]{#4}}}%
+        {\textcite[#2][#3]{#4}}}%
   }%
   \RenewDocumentCommand{\sideparencite}{s o o o m}{%
-    \IfNoValueTF{#2}%
-      {\renewcommand{\kaobiblio@vshift}{}}%
-      {\renewcommand{\kaobiblio@vshift}{#2}}%
-    \IfBooleanTF#1%
+    \IfBooleanTF{#1}%
       {\IfNoValueOrEmptyTF{#3}%
-        {\def\@tempa{\parencite*{#5}\kaobiblio@sidecite{#5}}}%
+        {\parencite*{#5}}%
         {\IfNoValueOrEmptyTF{#4}%
-          {\IfNoValueTF{#4}%
-            {\def\@tempa{\parencite*[#3]{#5}\kaobiblio@sidecite{#5}}}%
-            {\def\@tempa{\parencite*[#3][]{#5}\kaobiblio@sidecite{#5}}}}%
-          {\def\@tempa{\parencite*[#3][#4]{#5}\kaobiblio@sidecite{#5}}}}}%
+          {\IfNoValueTF{#4}{\parencite*[#3]{#5}}{\parencite*[#3][]{#5}}}%
+          {\parencite*[#3][#4]{#5}}}}%
       {\IfNoValueOrEmptyTF{#3}%
-        {\def\@tempa{\parencite{#5}\kaobiblio@sidecite{#5}}}%
+        {\parencite{#5}}%
         {\IfNoValueOrEmptyTF{#4}%
-          {\IfNoValueTF{#4}%
-            {\def\@tempa{\parencite[#3]{#5}\kaobiblio@sidecite{#5}}}%
-            {\def\@tempa{\parencite[#3][]{#5}\kaobiblio@sidecite{#5}}}}%
-          {\def\@tempa{\parencite[#3][#4]{#5}\kaobiblio@sidecite{#5}}}}}%
-    \ifkaobiblio@addspace
-      \unskip~\@tempa%
-    \else
-      \@tempa%
-    \fi
+          {\IfNoValueTF{#4}{\parencite[#3]{#5}}{\parencite[#3][]{#5}}}%
+          {\parencite[#3][#4]{#5}}}}%
   }%
 }
-
-\makeatother
