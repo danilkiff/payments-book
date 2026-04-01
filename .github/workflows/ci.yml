@@ -13,8 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Compile LaTeX
-        uses: docker://ghcr.io/xu-cheng/texlive-alpine:20260101
+      - name: Build PDF
+        uses: xu-cheng/texlive-action@v3
         with:
-          entrypoint: latexmk
-          args: -xelatex payments-book.tex
+          os: debian
+          run: |
+            export DEBIAN_FRONTEND=noninteractive
+            apt-get update -y
+            apt-get install -y make
+            make pdf
