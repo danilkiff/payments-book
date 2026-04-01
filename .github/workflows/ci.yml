@@ -13,9 +13,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install TeX dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+            latexmk \
+            biber \
+            texlive-lang-cyrillic \
+            texlive-latex-extra \
+            texlive-latex-recommended \
+            texlive-pictures \
+            texlive-fonts-extra
+
       - name: Build PDF
-        uses: xu-cheng/latex-action@v4
-        with:
-          root_file: payments-book.tex
-          os: debian
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=build
+        run: make
