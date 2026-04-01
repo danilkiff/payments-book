@@ -1,8 +1,6 @@
 # ── Артефакты сборки LaTeX ──────────────────────────────────────────────────
 build/
 payments-book.pdf
-payments-book.synctex
-payments-book.synctex(busy)
 *.aux
 *.bbl
 *.bcf
@@ -12,10 +10,7 @@ payments-book.synctex(busy)
 *.log
 *.out
 *.run.xml
-*.synctex
-*.synctex(busy)
-*.synctex.gz
-*.synctex.gz(busy)
+*.synctex*
 *.xdv
 *.toc
 *.lof
