@@ -64,22 +64,24 @@
 }
 
 \raggedbottom
+\extrafloats{200}
 \setlength{\parindent}{1.25em}
 \setlength{\parskip}{0pt}
-\setlength{\marginparpush}{8pt}
+\setlength{\marginparpush}{4pt}
 \setlength{\emergencystretch}{1.5em}
 \setlist[itemize,enumerate]{leftmargin=*,labelsep=0.55em}
 
 \newcommand{\booknotebox}[1]{%
   \begingroup
-  \setlength{\fboxsep}{5pt}%
-  \colorbox{Soft}{%
-    \parbox[t]{\dimexpr\marginparwidth-2\fboxsep\relax}{%
+  \setlength{\fboxsep}{4pt}%
+  \setlength{\fboxrule}{0.4pt}%
+  \fbox{%
+    \parbox[t]{\dimexpr\marginparwidth-2\fboxsep-2\fboxrule\relax}{%
       \sffamily
-      \footnotesize
+      \scriptsize
       \RaggedRight
       \setlength{\parindent}{0pt}%
-      \setlength{\parskip}{3pt}%
+      \setlength{\parskip}{2pt}%
       #1%
     }%
   }%
@@ -90,8 +92,20 @@
   \leavevmode\marginpar{\vspace*{#1}\booknotebox{#2}}%
 }
 
-\newcommand{\definitionnote}[3][0pt]{%
+\newcommand{\marginalnote}[3][0pt]{%
   \booknote[#1]{\textbf{#2}\par #3}%
+}
+
+\newcommand{\definitionnote}[3][0pt]{%
+  \marginalnote[#1]{#2}{#3}%
+}
+
+\newcommand{\importantnote}[2][0pt]{%
+  \marginalnote[#1]{Важно}{#2}%
+}
+
+\newcommand{\practicenote}[2][0pt]{%
+  \marginalnote[#1]{Практика}{#2}%
 }
 
 \newcommand{\marginfigure}[3][0pt]{%
