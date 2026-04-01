@@ -18,3 +18,11 @@ jobs:
         with:
           entrypoint: latexmk
           args: payments-book.tex
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: payments-book-pdf
+          path: build/payments-book.pdf
+          if-no-files-found: error
+          retention-days: 30
