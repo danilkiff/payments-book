@@ -334,30 +334,3 @@ Processing Rules, например, упоминают Minimum Average Approval 
 сравнительно узкий класс транзакций с особыми характеристиками.
 
 }
-\chapterSummary\par
-\begin{itemize}
-  \item Разделение на мягкие и жёсткие отказы полезно как операционная
-    модель, но правила схем устроены тоньше: у Visa есть
-    категории never approve / cannot approve at this time / data
-    quality / generic, а Mastercard отдельно запрещает часть
-    повторов той же CNP-операции.
-  \item \texttt{05} Do Not Honor скрывает причину отказа; \texttt{54}
-    Expired Card в card-on-file-потоке чаще всего означает вопрос
-    обновлённых реквизитов, токенов и updater-сервисов.
-  \item Visa Transaction Retry Rules and Excessive Attempt Restrictions
-    и Mastercard Excessive Attempts Rules задают внешние границы
-    повторов; схемы ограничивают число попыток и типы отказов, для
-    которых повтор допустим.
-  \item Сетевой токен (network token) даёт эмитенту более управляемый
-    контекст, а у Visa и Mastercard публичные
-    материалы прямо связывают tokenization с ростом approval rate;
-    это улучшение сигнала.
-  \item Маршрутизация и payment optimization образуют реальный слой
-    acceptance stack; использовать его нужно внутри правил схем,
-    маршрутизации и interchange.
-  \item Долю одобрений имеет смысл читать только в разрезах:
-    география, тип транзакции, контекст сохранённого реквизита, PAN или
-    токен, внутренний рынок или трансграничный поток; одно
-    агрегированное число почти всегда скрывает разные механизмы
-    отказов.
-\end{itemize}
