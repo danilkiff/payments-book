@@ -7,12 +7,12 @@
   та же четырёхсторонняя модель, тот же стандарт EMV, те же
   таблицы interchange. Но инженер быстро упирается в места, где
   аналогия перестаёт помогать: единый сетевой периметр Mastercard,
-  клиринг через систему Global Clearing Management System (GCMS)
+  клиринг через систему \idxdef[GCMS]{Global Clearing Management System (GCMS)}
   и сообщения Integrated Product Messages (IPM), токенизацию через
   Mastercard Digital Enablement Service (MDES) и механизм защищённой
-  удалённой оплаты Digital Secure Remote Payment (DSRP), собственные
+  удалённой оплаты \idxdef[DSRP]{Digital Secure Remote Payment (DSRP)}, собственные
   чиповые требования M/Chip и сервис автоматического обновления
-  реквизитов Automatic Billing Updater (ABU).
+  реквизитов \idxdef[ABU]{Automatic Billing Updater (ABU)}.
   Ниже последовательно разберём, какую задачу решает каждый
   из этих механизмов, как он устроен и где сравнение с \scheme{Visa}
   уже начинает вводить в заблуждение.
@@ -393,4 +393,3 @@ ABU и VAU остаются разными сервисами с разными 
   \item ABU автоматически обновляет платёжные реквизиты для сценариев хранения реквизитов и рекуррентных списаний; аналог \scheme{Visa} --- VAU.
   \item Interchange у \scheme{Mastercard} определяется регионом, продуктом, MCC и качеством данных; без привязки к конкретной таблице численные сравнения с \scheme{Visa} ненадёжны.
 \end{itemize}
-
