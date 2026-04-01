@@ -13,24 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install TeX dependencies
-        run: |
-          sudo apt-get update -qq
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq \
-            cm-super \
-            latexmk \
-            biber \
-            texlive-lang-cyrillic \
-            texlive-latex-extra \
-            texlive-latex-recommended \
-            texlive-fonts-extra-links \
-            texlive-pictures \
-            texlive-fonts-extra
-
       - name: Build PDF
-        run: make
-
-      - name: Show LaTeX log on failure
-        if: failure()
-        run: |
-          test -f build/payments-book.log && tail -n 200 build/payments-book.log || true
+        uses: docker://ghcr.io/xu-cheng/texlive-full:20260101
+        with:
+          entrypoint: latexmk
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=build payments-book.tex
