@@ -113,6 +113,18 @@ end
 
 manifest = YAML.load_file(MANIFEST_PATH)
 
+if manifest.empty?
+  File.write(MANIFEST_PATH, manifest.to_yaml(line_width: -1))
+  File.write(REPORT_PATH, <<~TEXT)
+    # Figure Placement Audit
+
+    - No active figure placeholders remain.
+  TEXT
+  puts "Updated #{MANIFEST_PATH.relative_path_from(ROOT)}"
+  puts "Wrote #{REPORT_PATH.relative_path_from(ROOT)}"
+  exit 0
+end
+
 manifest.each do |entry|
   dims = bbox_mm(ROOT.join(entry.fetch("pdf")))
   if VERTICAL_RELAYOUT.key?(entry["id"]) && dims["width"] <= MARGIN_WIDTH_MM

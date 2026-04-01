@@ -9,7 +9,6 @@ manifest = YAML.load_file(ROOT.join("assets/figures/manifest.yaml"))
 
 errors = []
 ids = manifest.map { |entry| entry["id"] }
-errors << "Expected 42 manifest entries, got #{manifest.size}" unless manifest.size == 42
 errors << "Duplicate figure ids detected" unless ids.uniq.size == ids.size
 
 manifest.each do |entry|
@@ -20,7 +19,11 @@ manifest.each do |entry|
 end
 
 if errors.empty?
-  puts "OK: #{manifest.size} manifest entries, all master_tex/pdf files exist."
+  if manifest.empty?
+    puts "OK: no active figure placeholders remain."
+  else
+    puts "OK: #{manifest.size} manifest entries, all master_tex/pdf files exist."
+  end
 else
   errors.each { |error| warn error }
   abort "Figure coverage check failed with #{errors.size} issue(s)."

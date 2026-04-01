@@ -19,7 +19,8 @@ TEXT
 PATTERNS = [
   /\\todo\[inline\]\{Рисунок:/,
   /% TODO: Рисунок:/,
-  /% TODO\(figure\):/
+  /% TODO\(figure\):/,
+  /% TODO figure:/
 ].freeze
 
 def chapter_title(lines)
@@ -66,6 +67,7 @@ def clean_placeholder(block)
     stripped = line.sub(/^\s*%+\s?/, "")
     stripped = stripped.sub(/^TODO:\s*Рисунок:\s*/, "")
     stripped = stripped.sub(/^TODO\(figure\):\s*/, "")
+    stripped = stripped.sub(/^TODO figure:\s*/, "")
     stripped = stripped.sub(/^\\todo\[inline\]\{Рисунок:\s*/, "")
     stripped = stripped.sub(/^Рисунок:\s*/, "")
     stripped = stripped.sub(/\}\s*$/, "")
@@ -187,8 +189,6 @@ Dir[ROOT.join("src/parts/**/*.tex").to_s].sort.each do |path|
     }
   end
 end
-
-raise "Expected 42 figure entries, got #{entries.size}" unless entries.size == 42
 
 ids = entries.map { |entry| entry["id"] }
 raise "Duplicate figure ids detected" unless ids.uniq.size == ids.size

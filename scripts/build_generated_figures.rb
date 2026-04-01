@@ -24,7 +24,14 @@ selected = entries.select do |entry|
     filters.include?(entry["planned_label"])
 end
 
-abort "No manifest entries matched filters: #{filters.join(', ')}" if selected.empty?
+if selected.empty?
+  if filters.empty?
+    puts "No active figure placeholders remain."
+    exit 0
+  end
+
+  abort "No manifest entries matched filters: #{filters.join(', ')}"
+end
 
 selected.each do |entry|
   master_tex = ROOT.join(entry.fetch("master_tex"))
