@@ -33,6 +33,9 @@ list: ## Показать список всех .tex файлов
 lint: ## Проверить линтером (ChkTeX)
 	@find src -name '*.tex' -exec chktex -q {} \;
 
+fmt: ## Форматировать все .tex файлы (latexindent)
+	@find src -name '*.tex' -exec latexindent -l=.latexindent.yaml -s {} -o {} \;
+
 help: ## Показать справку
 	@grep -E '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
