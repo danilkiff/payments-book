@@ -57,95 +57,95 @@ Visa, Mastercard, Мир, UnionPay и AmEx.
   \setlength{\tabcolsep}{2pt}
   \renewcommand{\arraystretch}{1.2}
   \makebox[\textwidth][l]{%
-  \begin{minipage}{\fullwidth}
-  \begin{tabularx}{\fullwidth}{
-      @{}>{\RaggedRight\arraybackslash\bfseries}p{0.170\fullwidth}
-      >{\RaggedRight\arraybackslash}p{0.075\fullwidth}
-      >{\RaggedRight\arraybackslash}p{0.095\fullwidth}
-      >{\RaggedRight\arraybackslash}p{0.090\fullwidth}
-      >{\RaggedRight\arraybackslash}p{0.085\fullwidth}
-      >{\RaggedRight\arraybackslash}p{0.145\fullwidth}
-      >{\RaggedRight\arraybackslash}p{0.100\fullwidth}
-      >{\RaggedRight\arraybackslash}p{0.155\fullwidth}@{}
-    }
-    \toprule
-    \rowcolor{Panel}
-    Метод оплаты & Тип & Финальность & Чарджбэк & PCI
-    scope & Международность & Скорость & Комиссия ТСП \\
-    \midrule
-    \rowcolor{Soft}
-    Карты &
-    \cellcolor{Bad!10}pull &
-    \cellcolor{Bad!10}нет &
-    \cellcolor{Bad!10}есть &
-    \cellcolor{Bad!10}да &
-    \cellcolor{Good!14}глобальный &
-    \cellcolor{Good!14}мс &
-    \cellcolor{Bad!10}высокая \\
-    A2A (СБП/PIX) &
-    \cellcolor{Good!14}push &
-    \cellcolor{Good!14}да &
-    \cellcolor{Good!14}нет &
-    \cellcolor{Good!14}нет &
-    \cellcolor{Ink!6}региональный &
-    \cellcolor{Good!14}сек &
-    \cellcolor{Good!14}низкая \\
-    \rowcolor{Soft}
-    Closed-loop кошелёк &
-    \cellcolor{Ink!6}push/pull &
-    \cellcolor{Ink!6}зависит &
-    \cellcolor{Ink!6}ограничен &
-    \cellcolor{Good!14}нет &
-    \cellcolor{Bad!10}нишевый &
-    \cellcolor{Good!14}мс &
-    \cellcolor{Ink!6}средняя \\
-    BNPL &
-    \cellcolor{Bad!10}pull &
-    \cellcolor{Bad!10}нет &
-    \cellcolor{Bad!10}есть &
-    \cellcolor{Ink!6}нет &
-    \cellcolor{Ink!6}региональный &
-    \cellcolor{Good!14}сек &
-    \cellcolor{Ink!6}средняя \\
-    \rowcolor{Soft}
-    Cash-based &
-    \cellcolor{Good!14}push &
-    \cellcolor{Good!14}да &
-    \cellcolor{Good!14}нет &
-    \cellcolor{Good!14}нет &
-    \cellcolor{Bad!10}нишевый &
-    \cellcolor{Bad!10}часы / дни &
-    \cellcolor{Ink!6}нет данных \\
-    CBDC (цифровой рубль) &
-    \cellcolor{Good!14}push &
-    \cellcolor{Good!14}да &
-    \cellcolor{Good!14}нет &
-    \cellcolor{Good!14}нет &
-    \cellcolor{Bad!10}региональный &
-    \cellcolor{Ink!6}сек / мин &
-    \cellcolor{Ink!6}нет данных \\
-    \rowcolor{Soft}
-    Crypto &
-    \cellcolor{Good!14}push &
-    \cellcolor{Good!14}да &
-    \cellcolor{Good!14}нет &
-    \cellcolor{Good!14}нет &
-    \cellcolor{Ink!6}глобальный / нишевый &
-    \cellcolor{Ink!6}мин / часы &
-    \cellcolor{Ink!6}нет данных \\
-    \bottomrule
-  \end{tabularx}
-  \par\smallskip
-  \fcolorbox{Ink!18}{Soft}{%
-    \parbox{\dimexpr\fullwidth-2\fboxsep-2\fboxrule\relax}{%
-      \textcolor{Muted}{Зелёный цвет показывает сравнительное
-        преимущество, красный указывает на ограничение, серый на нейтральную или
-        зависящую от провайдера зону.
-        * Данные оценочные и меняются в зависимости от конкретного
-      провайдера, маршрута и географии.}%
-    }%
-  }
-  \end{minipage}%
+    \begin{minipage}{\fullwidth}
+      \begin{tabularx}{\fullwidth}{
+          @{}>{\RaggedRight\arraybackslash\bfseries}p{0.170\fullwidth}
+          >{\RaggedRight\arraybackslash}p{0.075\fullwidth}
+          >{\RaggedRight\arraybackslash}p{0.095\fullwidth}
+          >{\RaggedRight\arraybackslash}p{0.090\fullwidth}
+          >{\RaggedRight\arraybackslash}p{0.085\fullwidth}
+          >{\RaggedRight\arraybackslash}p{0.145\fullwidth}
+          >{\RaggedRight\arraybackslash}p{0.100\fullwidth}
+          >{\RaggedRight\arraybackslash}p{0.155\fullwidth}@{}
+        }
+        \toprule
+        \rowcolor{Panel}
+        Метод оплаты & Тип & Финальность & Чарджбэк & PCI
+        scope & Международность & Скорость & Комиссия ТСП \\
+        \midrule
+        \rowcolor{Soft}
+        Карты &
+        \cellcolor{Bad!10}pull &
+        \cellcolor{Bad!10}нет &
+        \cellcolor{Bad!10}есть &
+        \cellcolor{Bad!10}да &
+        \cellcolor{Good!14}глобальный &
+        \cellcolor{Good!14}мс &
+        \cellcolor{Bad!10}высокая \\
+        A2A (СБП/PIX) &
+        \cellcolor{Good!14}push &
+        \cellcolor{Good!14}да &
+        \cellcolor{Good!14}нет &
+        \cellcolor{Good!14}нет &
+        \cellcolor{Ink!6}региональный &
+        \cellcolor{Good!14}сек &
+        \cellcolor{Good!14}низкая \\
+        \rowcolor{Soft}
+        Closed-loop кошелёк &
+        \cellcolor{Ink!6}push/pull &
+        \cellcolor{Ink!6}зависит &
+        \cellcolor{Ink!6}ограничен &
+        \cellcolor{Good!14}нет &
+        \cellcolor{Bad!10}нишевый &
+        \cellcolor{Good!14}мс &
+        \cellcolor{Ink!6}средняя \\
+        BNPL &
+        \cellcolor{Bad!10}pull &
+        \cellcolor{Bad!10}нет &
+        \cellcolor{Bad!10}есть &
+        \cellcolor{Ink!6}нет &
+        \cellcolor{Ink!6}региональный &
+        \cellcolor{Good!14}сек &
+        \cellcolor{Ink!6}средняя \\
+        \rowcolor{Soft}
+        Cash-based &
+        \cellcolor{Good!14}push &
+        \cellcolor{Good!14}да &
+        \cellcolor{Good!14}нет &
+        \cellcolor{Good!14}нет &
+        \cellcolor{Bad!10}нишевый &
+        \cellcolor{Bad!10}часы / дни &
+        \cellcolor{Ink!6}нет данных \\
+        CBDC (цифровой рубль) &
+        \cellcolor{Good!14}push &
+        \cellcolor{Good!14}да &
+        \cellcolor{Good!14}нет &
+        \cellcolor{Good!14}нет &
+        \cellcolor{Bad!10}региональный &
+        \cellcolor{Ink!6}сек / мин &
+        \cellcolor{Ink!6}нет данных \\
+        \rowcolor{Soft}
+        Crypto &
+        \cellcolor{Good!14}push &
+        \cellcolor{Good!14}да &
+        \cellcolor{Good!14}нет &
+        \cellcolor{Good!14}нет &
+        \cellcolor{Ink!6}глобальный / нишевый &
+        \cellcolor{Ink!6}мин / часы &
+        \cellcolor{Ink!6}нет данных \\
+        \bottomrule
+      \end{tabularx}
+      \par\smallskip
+      \fcolorbox{Ink!18}{Soft}{%
+        \parbox{\dimexpr\fullwidth-2\fboxsep-2\fboxrule\relax}{%
+          \textcolor{Muted}{Зелёный цвет показывает сравнительное
+            преимущество, красный указывает на ограничение, серый на нейтральную или
+            зависящую от провайдера зону.
+            * Данные оценочные и меняются в зависимости от конкретного
+          провайдера, маршрута и географии.}%
+        }%
+      }
+    \end{minipage}%
   }
   \endgroup
   \caption{\enquote{Методы оплаты / параметры}}\label{fig:alt-taxonomy-matrix}
@@ -290,35 +290,35 @@ PIX работает как push-платёж, и перевод финален 
   \setlength{\tabcolsep}{3pt}
   \renewcommand{\arraystretch}{1.2}
   \makebox[\textwidth][l]{%
-  \begin{minipage}{\fullwidth}
-  \begin{tabularx}{\fullwidth}{
-      @{}>{\RaggedRight\arraybackslash\bfseries}p{0.16\fullwidth}
-      >{\RaggedRight\arraybackslash}p{0.27\fullwidth}
-      >{\RaggedRight\arraybackslash}p{0.27\fullwidth}
-      >{\RaggedRight\arraybackslash}p{0.27\fullwidth}@{}
-    }
-    \toprule
-    \rowcolor{Panel}
-    & СБП & Alipay / WeChat Pay & PIX \\
-    \midrule
-    \rowcolor{Soft}
-    Контур & A2A-перевод (межбанковский) & Замкнутый кошелёк & A2A-перевод (межбанковский) \\
-    Оператор & НСПК (Банк России) & Ant Group / Tencent & Banco Central do Brasil \\
-    \rowcolor{Soft}
-    Расчёт & Через НСПК, секунды & Внутри реестра оператора & SPI при BCB, секунды \\
-    Финальность & Мгновенная (push) & Мгновенная (внутри контура) & Мгновенная (push) \\
-    \rowcolor{Soft}
-    Чарджбэк & Нет & Правила оператора & Нет \\
-    Статический QR & Да & Да & Да \\
-    \rowcolor{Soft}
-    Динамический QR & Да & Да & Да \\
-    Основной QR-режим & MPM & MPM + CPM & MPM \\
-    \rowcolor{Soft}
-    Комиссия С2B & 0{,}4--0{,}7\% (регулятор) & Устанавливает оператор & 0\% (физ.\ лица) \\
-    Трансграничность & Региональный & Федерация кошельков & Региональный \\
-    \bottomrule
-  \end{tabularx}
-  \end{minipage}%
+    \begin{minipage}{\fullwidth}
+      \begin{tabularx}{\fullwidth}{
+          @{}>{\RaggedRight\arraybackslash\bfseries}p{0.16\fullwidth}
+          >{\RaggedRight\arraybackslash}p{0.27\fullwidth}
+          >{\RaggedRight\arraybackslash}p{0.27\fullwidth}
+          >{\RaggedRight\arraybackslash}p{0.27\fullwidth}@{}
+        }
+        \toprule
+        \rowcolor{Panel}
+        & СБП & Alipay / WeChat Pay & PIX \\
+        \midrule
+        \rowcolor{Soft}
+        Контур & A2A-перевод (межбанковский) & Замкнутый кошелёк & A2A-перевод (межбанковский) \\
+        Оператор & НСПК (Банк России) & Ant Group / Tencent & Banco Central do Brasil \\
+        \rowcolor{Soft}
+        Расчёт & Через НСПК, секунды & Внутри реестра оператора & SPI при BCB, секунды \\
+        Финальность & Мгновенная (push) & Мгновенная (внутри контура) & Мгновенная (push) \\
+        \rowcolor{Soft}
+        Чарджбэк & Нет & Правила оператора & Нет \\
+        Статический QR & Да & Да & Да \\
+        \rowcolor{Soft}
+        Динамический QR & Да & Да & Да \\
+        Основной QR-режим & MPM & MPM + CPM & MPM \\
+        \rowcolor{Soft}
+        Комиссия С2B & 0{,}4--0{,}7\% (регулятор) & Устанавливает оператор & 0\% (физ.\ лица) \\
+        Трансграничность & Региональный & Федерация кошельков & Региональный \\
+        \bottomrule
+      \end{tabularx}
+    \end{minipage}%
   }
   \endgroup
   \caption{Три модели QR-платежей}\label{tab:qr-three-models}
@@ -493,9 +493,9 @@ BNPL-провайдера проверьте его регуляторный с�
 интеграции.
 
 \practicenote{%
-При выборе BNPL-провайдера проверьте долю одобрений среди вашей
-аудитории и регуляторный статус провайдера
-(для России -- наличие в реестре ОСР).
+  При выборе BNPL-провайдера проверьте долю одобрений среди вашей
+  аудитории и регуляторный статус провайдера
+  (для России -- наличие в реестре ОСР).
 
 }
 \section{Цифровой рубль: архитектура и сценарии}\label{sec:alt-digital-ruble}
@@ -624,9 +624,9 @@ A2A, доступность для небанковских клиентов в 
 QR и регуляторных требований.
 
 \practicenote{%
-При локализации в новой стране СНГ проверьте BIN-распределение
-трафика, наличие массового локального A2A-метода и требования к
-обязательному приёму локальных карт. Эти факторы обычно сильнее
-всего меняют экономику и конверсию.
+  При локализации в новой стране СНГ проверьте BIN-распределение
+  трафика, наличие массового локального A2A-метода и требования к
+  обязательному приёму локальных карт. Эти факторы обычно сильнее
+  всего меняют экономику и конверсию.
 
 }

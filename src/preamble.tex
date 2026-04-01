@@ -56,7 +56,7 @@
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 \setlength{\emergencystretch}{1.5em}
 \setlist[itemize,enumerate]{leftmargin=*,labelsep=0.55em,
-  itemsep=0pt,topsep=0pt,partopsep=0pt}
+itemsep=0pt,topsep=0pt,partopsep=0pt}
 
 % --- Команда включения фигур ---
 % \includefiguresvg[width=<dim>]{path-without-ext}  — Excalidraw-SVG → PDF
@@ -94,35 +94,41 @@
 % --- Заметки (API совместим с главами; [offset] принимается, игнорируется) ---
 \newcommand{\definitionnote}[3][0pt]{%
   \begin{tcolorbox}[notebox,
-    colframe=DefinitionInk, colback=DefinitionInk!6,
-    title={\bfseries Определение: #2}, coltitle=DefinitionInk,
-  ]#3\end{tcolorbox}}
+      colframe=DefinitionInk, colback=DefinitionInk!6,
+      title={\bfseries Определение: #2}, coltitle=DefinitionInk,
+    ]#3
+\end{tcolorbox}}
 
 \newcommand{\importantnote}[2][0pt]{%
   \begin{tcolorbox}[notebox,
-    colframe=ImportantInk, colback=ImportantInk!6,
-    title={\bfseries Важно}, coltitle=ImportantInk,
-  ]#2\end{tcolorbox}}
+      colframe=ImportantInk, colback=ImportantInk!6,
+      title={\bfseries Важно}, coltitle=ImportantInk,
+    ]#2
+\end{tcolorbox}}
 
 \newcommand{\practicenote}[2][0pt]{%
   \begin{tcolorbox}[notebox,
-    colframe=PracticeInk, colback=PracticeInk!6,
-    title={\bfseries Практика}, coltitle=PracticeInk,
-  ]#2\end{tcolorbox}}
+      colframe=PracticeInk, colback=PracticeInk!6,
+      title={\bfseries Практика}, coltitle=PracticeInk,
+    ]#2
+\end{tcolorbox}}
 
 \newcommand{\booknote}[2][0pt]{%
   \begin{tcolorbox}[notebox, colframe=black!50, colback=black!4,
-  ]#2\end{tcolorbox}}
+    ]#2
+\end{tcolorbox}}
 
 \newcommand{\marginalnote}[4][0pt]{%
   \begin{tcolorbox}[notebox,
-    colframe=#4, colback=#4!6,
-    title={\bfseries #2}, coltitle=#4,
-  ]#3\end{tcolorbox}}
+      colframe=#4, colback=#4!6,
+      title={\bfseries #2}, coltitle=#4,
+    ]#3
+\end{tcolorbox}}
 
 \newcommand{\marginfigure}[3][0pt]{%
   \begin{tcolorbox}[notebox, colframe=black!40, colback=black!3,
-  ]\centering#2\par\smallskip\RaggedRight#3\end{tcolorbox}}
+    ]\centering#2\par\smallskip\RaggedRight#3
+\end{tcolorbox}}
 
 % \sidefootnote → стандартный footnote; [offset] игнорируется
 \newcommand{\sidefootnote}[2][0pt]{\footnote{#2}}

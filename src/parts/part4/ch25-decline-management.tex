@@ -63,50 +63,50 @@ Unavailable и \texttt{96}: System Malfunction говорят скорее о д
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
   \makebox[\textwidth][l]{%
-  \begin{minipage}{\fullwidth}
-  \begin{tabularx}{\fullwidth}{@{}Y Y Y@{}}
-    \toprule
-    \cellcolor{Bad!16}\textbf{Не повторять ту же операцию}
-    &
-    \cellcolor{Warn!18}\textbf{Нужны новые данные / пауза}
-    &
-    \cellcolor{AccentA!14}\textbf{Технический / другой путь}
-    \\
-    \midrule
-    \cellcolor{Bad!4}\textbf{04 Pick Up}\newline stop; запросить другой credential
-    \newline\textbf{14 Invalid Account}\newline проверить PAN
-    \newline\textbf{41 Lost Card}\newline карта утеряна; stop
-    \newline\textbf{43 Stolen Card}\newline карта украдена; stop
-    &
-    \cellcolor{Warn!5}\textbf{54 Expired Card}\newline обновить expiry
-    / PAN; в Mastercard CNP не повторять тот же PAN+expiry
-    \newline\textbf{51 Insufficient Funds}\newline пауза; не делать blind loop
-    \newline\textbf{61 Exceeds Limit}\newline проверить сумму и лимит
-    \newline\textbf{62 Restricted Card}\newline смотреть контекст и правила схемы
-    \newline\textbf{65 Freq. Limit}\newline дождаться сброса лимита
-    \newline\textbf{05 Do Not Honor}\newline общий отказ; только в
-    пределах caps &
-    \cellcolor{AccentA!5}\textbf{91 Issuer Unavailable}\newline
-    проблема доступности route / issuer
-    \newline\textbf{96 System Malfunction}\newline технический сбой;
-    сначала final state
-    \newline\textbf{01 Refer}\newline нужен иной канал или действие банка
-    \newline\textbf{timeout}\newline подтвердить финальный статус,
-    затем controlled retry \\
-    \bottomrule
-  \end{tabularx}
-  \par\smallskip
-  \fcolorbox{Ink!18}{Soft}{%
-    \parbox{\dimexpr\fullwidth-2\fboxsep-2\fboxrule\relax}{%
-      \textcolor{Muted}{Точная схема сложнее этой таблицы: Visa делит
-        коды отказов на Category~1/2/3/4,
-        а Mastercard отдельно запрещает часть CNP retries. Здесь
-        показан только первый операционный вопрос:
-        прекращать операцию, обновлять данные или работать с доступностью
-      маршрута.}%
-    }%
-  }
-  \end{minipage}%
+    \begin{minipage}{\fullwidth}
+      \begin{tabularx}{\fullwidth}{@{}Y Y Y@{}}
+        \toprule
+        \cellcolor{Bad!16}\textbf{Не повторять ту же операцию}
+        &
+        \cellcolor{Warn!18}\textbf{Нужны новые данные / пауза}
+        &
+        \cellcolor{AccentA!14}\textbf{Технический / другой путь}
+        \\
+        \midrule
+        \cellcolor{Bad!4}\textbf{04 Pick Up}\newline stop; запросить другой credential
+        \newline\textbf{14 Invalid Account}\newline проверить PAN
+        \newline\textbf{41 Lost Card}\newline карта утеряна; stop
+        \newline\textbf{43 Stolen Card}\newline карта украдена; stop
+        &
+        \cellcolor{Warn!5}\textbf{54 Expired Card}\newline обновить expiry
+        / PAN; в Mastercard CNP не повторять тот же PAN+expiry
+        \newline\textbf{51 Insufficient Funds}\newline пауза; не делать blind loop
+        \newline\textbf{61 Exceeds Limit}\newline проверить сумму и лимит
+        \newline\textbf{62 Restricted Card}\newline смотреть контекст и правила схемы
+        \newline\textbf{65 Freq. Limit}\newline дождаться сброса лимита
+        \newline\textbf{05 Do Not Honor}\newline общий отказ; только в
+        пределах caps &
+        \cellcolor{AccentA!5}\textbf{91 Issuer Unavailable}\newline
+        проблема доступности route / issuer
+        \newline\textbf{96 System Malfunction}\newline технический сбой;
+        сначала final state
+        \newline\textbf{01 Refer}\newline нужен иной канал или действие банка
+        \newline\textbf{timeout}\newline подтвердить финальный статус,
+        затем controlled retry \\
+        \bottomrule
+      \end{tabularx}
+      \par\smallskip
+      \fcolorbox{Ink!18}{Soft}{%
+        \parbox{\dimexpr\fullwidth-2\fboxsep-2\fboxrule\relax}{%
+          \textcolor{Muted}{Точная схема сложнее этой таблицы: Visa делит
+            коды отказов на Category~1/2/3/4,
+            а Mastercard отдельно запрещает часть CNP retries. Здесь
+            показан только первый операционный вопрос:
+            прекращать операцию, обновлять данные или работать с доступностью
+          маршрута.}%
+        }%
+      }
+    \end{minipage}%
   }
   \endgroup
   \caption{Рабочая классификация кодов ответа по следующему действию.}\label{fig:decline-codes}
@@ -181,12 +181,12 @@ SCA. Поток после такого отказа: шлюз получает 
 конверсией~\cite{mc-tpr}.
 
 \practicenote{%
-Хороший мониторинг отказов сегментирует коды ответа не по двум
-группам, а хотя бы по трём-четырём: жёсткие, мягкие финансовые,
-мягкие поведенческие и технические. Сводный дашборд с одним числом
-доли отказов скрывает структуру: 15\% отказов, половина из которых
-приходится на технические коды, означают совсем другую задачу, чем
-те же 15\% при преобладании необратимых отказов.
+  Хороший мониторинг отказов сегментирует коды ответа не по двум
+  группам, а хотя бы по трём-четырём: жёсткие, мягкие финансовые,
+  мягкие поведенческие и технические. Сводный дашборд с одним числом
+  доли отказов скрывает структуру: 15\% отказов, половина из которых
+  приходится на технические коды, означают совсем другую задачу, чем
+  те же 15\% при преобладании необратимых отказов.
 
 }
 \section{Повторы после отказа: время, частота, каналы}\label{sec:decline-retry}
@@ -398,17 +398,17 @@ BIN-маршрут или устаревшие реквизиты в card-on-fil
 видит обычный CNP-запрос, а не продолжение уже данного согласия~\cite{visa-scf,mc-scf}.
 
 \importantnote{%
-Долю одобрений нельзя читать одним числом по продукту. Метод только
-один: смотреть разрезы по странам, вертикалям и типам интеграции,
-иначе реальные причины отказов прячутся внутри агрегата.
+  Долю одобрений нельзя читать одним числом по продукту. Метод только
+  один: смотреть разрезы по странам, вертикалям и типам интеграции,
+  иначе реальные причины отказов прячутся внутри агрегата.
 
 }
 \practicenote{%
-Измеряйте долю одобрений раздельно по сегментам: новые и вернувшиеся
-клиенты, карты с 3DS и без неё, PAN и токен, внутренний рынок и
-трансграничные операции. Агрегированная метрика почти бесполезна для
-оптимизации. Сегментация быстро показывает, где сосредоточены
-отказы: как правило, основную массу проблем даёт не весь поток, а
-сравнительно узкий класс транзакций с особыми характеристиками.
+  Измеряйте долю одобрений раздельно по сегментам: новые и вернувшиеся
+  клиенты, карты с 3DS и без неё, PAN и токен, внутренний рынок и
+  трансграничные операции. Агрегированная метрика почти бесполезна для
+  оптимизации. Сегментация быстро показывает, где сосредоточены
+  отказы: как правило, основную массу проблем даёт не весь поток, а
+  сравнительно узкий класс транзакций с особыми характеристиками.
 
 }
