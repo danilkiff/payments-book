@@ -441,12 +441,12 @@ Webhook необходим потому, что~синхронный ответ 
 \section{От Stripe API к~\iso{8583}}
 \label{sec:gw-api-to-iso}
 
-Для~разработчика, интегрирующего платёжный шлюз, транзакция~---
-это~JSON-объект: \codeword{amount}, \codeword{currency},
-\codeword{payment_method}, \codeword{description}. Но~банк-эквайер
-и~карточная сеть говорят на~другом языке~---
-\iso{8583}~(см.~главу~\ref{ch:iso8583}), и~одна из~ключевых
-функций шлюза~--- трансляция между этими двумя мирами.
+Для~разработчика транзакция сначала выглядит как~JSON-объект:
+\codeword{amount}, \codeword{currency}, \codeword{payment_method},
+\codeword{description}. Для~банка-эквайера и~карточной сети
+та~же операция уже выглядит как~сообщение
+\iso{8583}~(см.~главу~\ref{ch:iso8583}). Одна из~ключевых
+функций шлюза~--- перевести одно представление в~другое.
 
 Рассмотрим, как~типичный API-запрос на~создание платежа
 превращается в~авторизационное сообщение. Мерчант отправляет
@@ -527,10 +527,11 @@ API~--- это~один или~несколько сообщений на~уро
 \section*{Итоги главы}
 
 \begin{itemize}
-  \item Платёжный шлюз состоит из~пяти ключевых компонентов:
-        API gateway, risk engine, routing engine, tokenization vault
-        и~authorization proxy; порядок их~вызова определяет
-        и~конверсию, и~PCI scope системы.
+  \item Платёжный шлюз~--- это~не~один endpoint, а~конвейер.
+        В~его ядре: API gateway, risk engine, routing engine,
+        tokenization vault и~authorization proxy.
+  \item Порядок вызова этих компонентов влияет и~на~конверсию,
+        и~на~PCI scope системы.
   \item Smart routing оптимизирует три конфликтующие оси~---
         стоимость, approval rate и~латентность; cascade routing~---
         повторная отправка другому эквайеру при~soft decline~---
