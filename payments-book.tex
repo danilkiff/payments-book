@@ -3,21 +3,17 @@
 
 \documentclass[
   b5paper,
-  fontsize=10pt,
-  twoside=true,
+  10pt,
+  twoside,
   open=any,
-  secnumdepth=1,
-  fontmethod=none, % Stock kaobook fonts are loaded explicitly in src/preamble.tex.
-]{kaobook}
+  numbers=noenddot,
+  headings=big,
+  chapterprefix=false,
+  DIV=11,
+]{scrbook}
 
-\input{kaobook-local-patches}
 \input{src/preamble}
 \input{src/commands}
-
-% kaobook scales A4 geometry proportionally for b5paper, which lands slightly
-% under the ISO B5 trim size. Keep the stock layout logic, but pin the final
-% page box to exact B5 dimensions.
-\geometry{paperwidth=176mm,paperheight=250mm}
 
 \addbibresource{assets/bibliography.bib}
 
