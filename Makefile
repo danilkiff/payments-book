@@ -7,4 +7,4 @@ clean:
 	latexmk -C payments-book.tex
 
 fmt:
-	find src -name '*.tex' | xargs tex-fmt
+	find src assets/figures -name '*.tex' | xargs tex-fmt
