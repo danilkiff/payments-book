@@ -13,8 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Compile LaTeX
-        uses: docker://ghcr.io/xu-cheng/texlive-alpine:20260101
+      - name: Build PDF
+        uses: xu-cheng/latex-action@v4
         with:
-          entrypoint: sh
-          args: -lc "mkdir -p build && latexmk -xelatex -outdir=build payments-book.tex"
+          root_file: payments-book.tex
+          os: debian
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=build
