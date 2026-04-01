@@ -1,29 +1,37 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-	\node[font=\bfseries\scriptsize, text=AccentA!80!black] at (2.6,1.7) {Авторизация};
-	\node[font=\bfseries\scriptsize, text=Warn!85!black] at (8.0,1.7) {Клиринг};
-	\node[font=\bfseries\scriptsize, text=Good!80!black] at (13.6,1.7) {Расчёт};
+  \node[font=\bfseries\scriptsize, text=AccentA!80!black] at
+  (2.6,1.7) {Авторизация};
+  \node[font=\bfseries\scriptsize, text=Warn!85!black] at (8.0,1.7) {Клиринг};
+  \node[font=\bfseries\scriptsize, text=Good!80!black] at (13.6,1.7) {Расчёт};
 
-	\fill[AccentA!8, rounded corners=5pt] (0.2,0.5) rectangle (5.0,-4.3);
-	\fill[Warn!10, rounded corners=5pt] (5.4,0.5) rectangle (10.6,-4.3);
-	\fill[Good!10, rounded corners=5pt] (11.0,0.5) rectangle (16.3,-4.3);
+  \fill[AccentA!8, rounded corners=5pt] (0.2,0.5) rectangle (5.0,-4.3);
+  \fill[Warn!10, rounded corners=5pt] (5.4,0.5) rectangle (10.6,-4.3);
+  \fill[Good!10, rounded corners=5pt] (11.0,0.5) rectangle (16.3,-4.3);
 
-	\node[fig/block, minimum width=18mm] (term) at (1.1,-1.0) {Терминал};
-	\node[fig/block, minimum width=22mm] (acq) at (3.4,-1.0) {Банк-\\эквайер};
-	\node[fig/core, minimum width=24mm] (opkc) at (6.9,-1.0) {\shortstack{ОПКЦ\\(НСПК)}};
-	\node[fig/block, minimum width=22mm] (iss) at (9.9,-1.0) {Банк-\\эмитент};
-	\node[fig/sidecar, minimum width=26mm] (netto) at (8.0,-2.9) {нетто-\\позиции};
-	\node[fig/core, minimum width=26mm] (cbr) at (13.1,-1.0) {\shortstack{Банк России\\(расчёт)}};
-	\node[fig/block, minimum width=22mm] (corr) at (15.6,-1.0) {корсчета\\банков};
+  \node[fig/block, minimum width=18mm] (term) at (1.1,-1.0) {Терминал};
+  \node[fig/block, minimum width=22mm] (acq) at (3.4,-1.0) {Банк-\\эквайер};
+  \node[fig/core, minimum width=24mm] (opkc) at (6.9,-1.0)
+  {\shortstack{ОПКЦ\\(НСПК)}};
+  \node[fig/block, minimum width=22mm] (iss) at (9.9,-1.0) {Банк-\\эмитент};
+  \node[fig/sidecar, minimum width=26mm] (netto) at (8.0,-2.9)
+  {нетто-\\позиции};
+  \node[fig/core, minimum width=26mm] (cbr) at (13.1,-1.0)
+  {\shortstack{Банк России\\(расчёт)}};
+  \node[fig/block, minimum width=22mm] (corr) at (15.6,-1.0) {корсчета\\банков};
 
-	\draw[fig/accenta] (term.east) -- (acq.west);
-	\draw[fig/accenta] (acq.east) -- (opkc.west);
-	\draw[fig/accenta] (opkc.east) -- (iss.west);
-	\draw[<-, line width=1.1pt, draw=AccentA] ($(term.south)+(0,-0.5)$) -- ($(iss.south)+(0,-0.5)$);
+  \draw[fig/accenta] (term.east) -- (acq.west);
+  \draw[fig/accenta] (acq.east) -- (opkc.west);
+  \draw[fig/accenta] (opkc.east) -- (iss.west);
+  \draw[<-, line width=1.1pt, draw=AccentA] ($(term.south)+(0,-0.5)$)
+  -- ($(iss.south)+(0,-0.5)$);
 
-	\draw[->, line width=1.0pt, draw=Warn!85!black, densely dashed] ($(acq.south)+(0,-0.1)$) -- node[above, font=\scriptsize, text=Muted] {T+0 / T+1} ($(opkc.south)+(0,-0.1)$);
-	\draw[->, line width=1.0pt, draw=Warn!85!black, densely dashed] ($(opkc.south)+(0,-0.55)$) -- (netto.west);
+  \draw[->, line width=1.0pt, draw=Warn!85!black, densely dashed]
+  ($(acq.south)+(0,-0.1)$) -- node[above, font=\scriptsize,
+  text=Muted] {T+0 / T+1} ($(opkc.south)+(0,-0.1)$);
+  \draw[->, line width=1.0pt, draw=Warn!85!black, densely dashed]
+  ($(opkc.south)+(0,-0.55)$) -- (netto.west);
 
-	\draw[fig/accentb] ($(opkc.east)+(0,-2.0)$) -- (cbr.west);
-	\draw[fig/accentb] (cbr.east) -- (corr.west);
-	\node[font=\scriptsize, text=Muted] at (14.35,-2.1) {перевод средств};
+  \draw[fig/accentb] ($(opkc.east)+(0,-2.0)$) -- (cbr.west);
+  \draw[fig/accentb] (cbr.east) -- (corr.west);
+  \node[font=\scriptsize, text=Muted] at (14.35,-2.1) {перевод средств};
 \end{tikzpicture}

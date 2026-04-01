@@ -1,43 +1,63 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-	\draw[fig/arrow] (0,0) -- (15.2,0);
-	\draw[Ink!35, densely dashed] (5.1,-2.6) -- (5.1,1.25);
-	\draw[Ink!35, densely dashed] (10.2,-2.6) -- (10.2,1.25);
+  \draw[fig/arrow] (0,0) -- (15.2,0);
+  \draw[Ink!35, densely dashed] (5.1,-2.6) -- (5.1,1.25);
+  \draw[Ink!35, densely dashed] (10.2,-2.6) -- (10.2,1.25);
 
-	\node[font=\bfseries\scriptsize, text=Muted] at (2.55,0.95) {Авторизация (секунды)};
-	\node[font=\bfseries\scriptsize, text=Muted] at (7.65,0.95) {Клиринг (часы, конец дня)};
-	\node[font=\bfseries\scriptsize, text=Muted] at (12.7,0.95) {Settlement (T+1..T+3)};
+  \node[font=\bfseries\scriptsize, text=Muted] at (2.55,0.95)
+  {Авторизация (секунды)};
+  \node[font=\bfseries\scriptsize, text=Muted] at (7.65,0.95)
+  {Клиринг (часы, конец дня)};
+  \node[font=\bfseries\scriptsize, text=Muted] at (12.7,0.95)
+  {Settlement (T+1..T+3)};
 
-	\node[fig/block, minimum width=18mm, minimum height=9mm] (term) at (1.1,-0.7) {Терминал};
-	\node[fig/block, minimum width=18mm, minimum height=9mm] (acq1) at (2.85,-0.7) {Эквайер};
-	\node[fig/core, minimum width=21mm, minimum height=9mm] (net1) at (4.6,-0.7) {Сеть};
-	\node[fig/block, minimum width=18mm, minimum height=9mm] (iss1) at (6.35,-0.7) {Эмитент};
+  \node[fig/block, minimum width=18mm, minimum height=9mm] (term) at
+  (1.1,-0.7) {Терминал};
+  \node[fig/block, minimum width=18mm, minimum height=9mm] (acq1) at
+  (2.85,-0.7) {Эквайер};
+  \node[fig/core, minimum width=21mm, minimum height=9mm] (net1) at
+  (4.6,-0.7) {Сеть};
+  \node[fig/block, minimum width=18mm, minimum height=9mm] (iss1) at
+  (6.35,-0.7) {Эмитент};
 
-	\draw[fig/accenta] (term.east) -- (acq1.west);
-	\draw[fig/accenta] (acq1.east) -- (net1.west);
-	\draw[fig/accenta] (net1.east) -- (iss1.west);
-	\draw[fig/dashed] ($(iss1.south)+(0,-0.1)$) to[bend right=18] ($(net1.south)+(0,-0.1)$);
-	\draw[fig/dashed] ($(net1.south)+(0,-0.1)$) to[bend right=18] ($(acq1.south)+(0,-0.1)$);
-	\draw[fig/dashed] ($(acq1.south)+(0,-0.1)$) to[bend right=18] ($(term.south)+(0,-0.1)$);
+  \draw[fig/accenta] (term.east) -- (acq1.west);
+  \draw[fig/accenta] (acq1.east) -- (net1.west);
+  \draw[fig/accenta] (net1.east) -- (iss1.west);
+  \draw[fig/dashed] ($(iss1.south)+(0,-0.1)$) to[bend right=18]
+  ($(net1.south)+(0,-0.1)$);
+  \draw[fig/dashed] ($(net1.south)+(0,-0.1)$) to[bend right=18]
+  ($(acq1.south)+(0,-0.1)$);
+  \draw[fig/dashed] ($(acq1.south)+(0,-0.1)$) to[bend right=18]
+  ($(term.south)+(0,-0.1)$);
 
-	\node[fig/block, minimum width=18mm, minimum height=9mm] (batch) at (7.65,-0.7) {Пакетный\\файл};
-	\node[fig/block, minimum width=18mm, minimum height=9mm] (acq2) at (6.0,-0.7) {Эквайер};
-	\node[fig/core, minimum width=21mm, minimum height=9mm] (net2) at (9.3,-0.7) {Сеть};
-	\node[fig/block, minimum width=18mm, minimum height=9mm] (iss2) at (11.0,-0.7) {Эмитент};
+  \node[fig/block, minimum width=18mm, minimum height=9mm] (batch) at
+  (7.65,-0.7) {Пакетный\\файл};
+  \node[fig/block, minimum width=18mm, minimum height=9mm] (acq2) at
+  (6.0,-0.7) {Эквайер};
+  \node[fig/core, minimum width=21mm, minimum height=9mm] (net2) at
+  (9.3,-0.7) {Сеть};
+  \node[fig/block, minimum width=18mm, minimum height=9mm] (iss2) at
+  (11.0,-0.7) {Эмитент};
 
-	\draw[fig/arrow] (acq2.east) -- (batch.west);
-	\draw[fig/accenta] (batch.east) -- (net2.west);
-	\draw[fig/arrow] (net2.east) -- (iss2.west);
+  \draw[fig/arrow] (acq2.east) -- (batch.west);
+  \draw[fig/accenta] (batch.east) -- (net2.west);
+  \draw[fig/arrow] (net2.east) -- (iss2.west);
 
-	\node[fig/block, minimum width=17mm, minimum height=9mm] (banka) at (11.7,-0.7) {Банк\\A};
-	\node[fig/block, minimum width=17mm, minimum height=9mm] (bankb) at (13.5,-0.7) {Банк\\B};
-	\node[fig/block, minimum width=17mm, minimum height=9mm] (merchant) at (15.1,-0.7) {Мерчант};
+  \node[fig/block, minimum width=17mm, minimum height=9mm] (banka) at
+  (11.7,-0.7) {Банк\\A};
+  \node[fig/block, minimum width=17mm, minimum height=9mm] (bankb) at
+  (13.5,-0.7) {Банк\\B};
+  \node[fig/block, minimum width=17mm, minimum height=9mm] (merchant)
+  at (15.1,-0.7) {Мерчант};
 
-	\draw[fig/accentb] (banka.east) -- node[above, font=\scriptsize, text=AccentB!80!black] {деньги} (bankb.west);
-	\draw[fig/arrow] (bankb.east) -- (merchant.west);
+  \draw[fig/accentb] (banka.east) -- node[above, font=\scriptsize,
+  text=AccentB!80!black] {деньги} (bankb.west);
+  \draw[fig/arrow] (bankb.east) -- (merchant.west);
 
-	\draw[AccentA!80, line width=2.1pt] (0.65,-1.95) -- (12.5,-1.95);
-	\node[anchor=west, font=\scriptsize, text=AccentA!80!black] at (0.8,-2.3) {hold на счёте держателя};
+  \draw[AccentA!80, line width=2.1pt] (0.65,-1.95) -- (12.5,-1.95);
+  \node[anchor=west, font=\scriptsize, text=AccentA!80!black] at
+  (0.8,-2.3) {hold на счёте держателя};
 
-	\draw[AccentB!80, line width=2.1pt] (12.25,-2.45) -- (15.2,-2.45);
-	\node[anchor=west, font=\scriptsize, text=AccentB!80!black] at (12.35,-2.8) {зачисление мерчанту};
+  \draw[AccentB!80, line width=2.1pt] (12.25,-2.45) -- (15.2,-2.45);
+  \node[anchor=west, font=\scriptsize, text=AccentB!80!black] at
+  (12.35,-2.8) {зачисление мерчанту};
 \end{tikzpicture}

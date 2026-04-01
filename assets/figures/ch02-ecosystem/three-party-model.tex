@@ -1,13 +1,23 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-	\node[fig/block, minimum width=37mm, minimum height=12mm] (holder) at (0,3.4) {Держатель карты};
-	\node[fig/block, minimum width=33mm, minimum height=12mm] (merchant) at (8.8,3.4) {Мерчант};
-	\node[fig/core, minimum width=45mm, minimum height=16mm, align=center] (amex) at (4.4,0) {American Express\\[-1pt]\scriptsize эмитент + эквайер + сеть};
+  \node[fig/block, minimum width=37mm, minimum height=12mm] (holder)
+  at (0,3.4) {Держатель карты};
+  \node[fig/block, minimum width=33mm, minimum height=12mm]
+  (merchant) at (8.8,3.4) {Мерчант};
+  \node[fig/core, minimum width=45mm, minimum height=16mm,
+  align=center] (amex) at (4.4,0) {American
+  Express\\[-1pt]\scriptsize эмитент + эквайер + сеть};
 
-	\begin{scope}[on background layer]
-		\node[fig/group, fit=(holder)(merchant)(amex), inner xsep=12pt, inner ysep=12pt] {};
-	\end{scope}
+  \begin{scope}[on background layer]
+    \node[fig/group, fit=(holder)(merchant)(amex), inner xsep=12pt,
+    inner ysep=12pt] {};
+  \end{scope}
 
-	\draw[fig/arrow, <->] (holder.east) -- node[above, font=\scriptsize, text=Muted] {покупка} (merchant.west);
-	\draw[fig/accenta, <->] (holder.south east) -- node[left, font=\scriptsize, text=AccentA!80!black, align=center] {карта,\\счёт} (amex.north west);
-	\draw[fig/accenta, <->] (merchant.south west) -- node[right, font=\scriptsize, text=AccentA!80!black, align=center] {приём карт,\\расчёт} (amex.north east);
+  \draw[fig/arrow, <->] (holder.east) -- node[above,
+  font=\scriptsize, text=Muted] {покупка} (merchant.west);
+  \draw[fig/accenta, <->] (holder.south east) -- node[left,
+  font=\scriptsize, text=AccentA!80!black, align=center]
+  {карта,\\счёт} (amex.north west);
+  \draw[fig/accenta, <->] (merchant.south west) -- node[right,
+  font=\scriptsize, text=AccentA!80!black, align=center] {приём
+  карт,\\расчёт} (amex.north east);
 \end{tikzpicture}

@@ -1,46 +1,63 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-	\tikzset{
-		leafgood/.style={fig/result, draw=Good!45, fill=Good!12},
-		leafwarn/.style={fig/result, draw=Warn!45, fill=Warn!12},
-		leafbad/.style={fig/result, draw=Bad!45, fill=Bad!12},
-		note/.style={font=\scriptsize, text=Muted, align=left}
-	}
+  \tikzset{
+    leafgood/.style={fig/result, draw=Good!45, fill=Good!12},
+    leafwarn/.style={fig/result, draw=Warn!45, fill=Warn!12},
+    leafbad/.style={fig/result, draw=Bad!45, fill=Bad!12},
+    note/.style={font=\scriptsize, text=Muted, align=left}
+  }
 
-	\node[fig/decision] (q1) at (0,0) {Есть ли\\электронное\\хранение CHD?};
-	\node[leafbad] (saqd1) at (-5.0,-2.6) {SAQ D};
-	\node[fig/decision] (q2) at (2.8,-2.6) {Есть ли\\собственный код\\на странице оплаты?};
+  \node[fig/decision] (q1) at (0,0) {Есть ли\\электронное\\хранение CHD?};
+  \node[leafbad] (saqd1) at (-5.0,-2.6) {SAQ D};
+  \node[fig/decision] (q2) at (2.8,-2.6) {Есть ли\\собственный
+  код\\на странице оплаты?};
 
-	\node[leafwarn] (saqaep) at (0.2,-5.2) {SAQ A-EP};
-	\node[fig/decision] (q3) at (5.5,-5.2) {Только redirect\\на PSP?};
+  \node[leafwarn] (saqaep) at (0.2,-5.2) {SAQ A-EP};
+  \node[fig/decision] (q3) at (5.5,-5.2) {Только redirect\\на PSP?};
 
-	\node[leafgood] (saqa) at (3.4,-7.8) {SAQ A};
-	\node[fig/decision] (q4) at (7.9,-7.8) {Виртуальный\\терминал PSP?};
+  \node[leafgood] (saqa) at (3.4,-7.8) {SAQ A};
+  \node[fig/decision] (q4) at (7.9,-7.8) {Виртуальный\\терминал PSP?};
 
-	\node[leafwarn] (saqcvt) at (6.0,-10.4) {SAQ C-VT};
-	\node[fig/decision] (q5) at (10.6,-10.4) {IP-терминал\\без хранения CHD?};
+  \node[leafwarn] (saqcvt) at (6.0,-10.4) {SAQ C-VT};
+  \node[fig/decision] (q5) at (10.6,-10.4) {IP-терминал\\без хранения CHD?};
 
-	\node[leafwarn] (saqbip) at (8.8,-13.0) {SAQ B-IP / SAQ C};
-	\node[leafbad] (saqd2) at (12.4,-13.0) {SAQ D};
+  \node[leafwarn] (saqbip) at (8.8,-13.0) {SAQ B-IP / SAQ C};
+  \node[leafbad] (saqd2) at (12.4,-13.0) {SAQ D};
 
-	\draw[fig/arrow] (q1.south west) -- node[left, font=\scriptsize, text=Muted] {Да} (saqd1.north);
-	\draw[fig/arrow] (q1.south east) -- node[right, font=\scriptsize, text=Muted] {Нет} (q2.north);
+  \draw[fig/arrow] (q1.south west) -- node[left, font=\scriptsize,
+  text=Muted] {Да} (saqd1.north);
+  \draw[fig/arrow] (q1.south east) -- node[right, font=\scriptsize,
+  text=Muted] {Нет} (q2.north);
 
-	\draw[fig/arrow] (q2.south west) -- node[left, font=\scriptsize, text=Muted] {Да} (saqaep.north);
-	\draw[fig/arrow] (q2.south east) -- node[right, font=\scriptsize, text=Muted] {Нет} (q3.north);
+  \draw[fig/arrow] (q2.south west) -- node[left, font=\scriptsize,
+  text=Muted] {Да} (saqaep.north);
+  \draw[fig/arrow] (q2.south east) -- node[right, font=\scriptsize,
+  text=Muted] {Нет} (q3.north);
 
-	\draw[fig/arrow] (q3.south west) -- node[left, font=\scriptsize, text=Muted] {Да} (saqa.north);
-	\draw[fig/arrow] (q3.south east) -- node[right, font=\scriptsize, text=Muted] {Нет} (q4.north);
+  \draw[fig/arrow] (q3.south west) -- node[left, font=\scriptsize,
+  text=Muted] {Да} (saqa.north);
+  \draw[fig/arrow] (q3.south east) -- node[right, font=\scriptsize,
+  text=Muted] {Нет} (q4.north);
 
-	\draw[fig/arrow] (q4.south west) -- node[left, font=\scriptsize, text=Muted] {Да} (saqcvt.north);
-	\draw[fig/arrow] (q4.south east) -- node[right, font=\scriptsize, text=Muted] {Нет} (q5.north);
+  \draw[fig/arrow] (q4.south west) -- node[left, font=\scriptsize,
+  text=Muted] {Да} (saqcvt.north);
+  \draw[fig/arrow] (q4.south east) -- node[right, font=\scriptsize,
+  text=Muted] {Нет} (q5.north);
 
-	\draw[fig/arrow] (q5.south west) -- node[left, font=\scriptsize, text=Muted] {Да} (saqbip.north);
-	\draw[fig/arrow] (q5.south east) -- node[right, font=\scriptsize, text=Muted] {Нет} (saqd2.north);
+  \draw[fig/arrow] (q5.south west) -- node[left, font=\scriptsize,
+  text=Muted] {Да} (saqbip.north);
+  \draw[fig/arrow] (q5.south east) -- node[right, font=\scriptsize,
+  text=Muted] {Нет} (saqd2.north);
 
-	\node[note, anchor=west] at ($(saqd1.east)+(0.4,0)$) {полная оценка\\и полный scope};
-	\node[note, anchor=west] at ($(saqaep.east)+(0.4,0)$) {страница под контролем\\мерчанта};
-	\node[note, anchor=west] at ($(saqa.east)+(0.4,0)$) {redirect / iframe\\минимизирует scope};
-	\node[note, anchor=west] at ($(saqcvt.east)+(0.4,0)$) {оператор вводит данные\\в hosted terminal};
-	\node[note, anchor=west] at ($(saqbip.east)+(0.4,0)$) {аппаратный канал\\без CHD storage};
-	\node[note, anchor=west] at ($(saqd2.east)+(0.4,0)$) {если путь не укладывается\\в упрощённые анкеты};
+  \node[note, anchor=west] at ($(saqd1.east)+(0.4,0)$) {полная
+  оценка\\и полный scope};
+  \node[note, anchor=west] at ($(saqaep.east)+(0.4,0)$) {страница под
+  контролем\\мерчанта};
+  \node[note, anchor=west] at ($(saqa.east)+(0.4,0)$) {redirect /
+  iframe\\минимизирует scope};
+  \node[note, anchor=west] at ($(saqcvt.east)+(0.4,0)$) {оператор
+  вводит данные\\в hosted terminal};
+  \node[note, anchor=west] at ($(saqbip.east)+(0.4,0)$) {аппаратный
+  канал\\без CHD storage};
+  \node[note, anchor=west] at ($(saqd2.east)+(0.4,0)$) {если путь не
+  укладывается\\в упрощённые анкеты};
 \end{tikzpicture}

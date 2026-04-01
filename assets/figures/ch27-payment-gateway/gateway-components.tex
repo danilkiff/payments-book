@@ -1,59 +1,62 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-	\tikzset{
-		stage/.style={
-				fig/mblock,
-				minimum width=24mm,
-				text width=20mm,
-				minimum height=6.4mm,
-				inner sep=2.0pt,
-				font=\tiny
-			},
-		rail/.style={
-				fig/mcore,
-				minimum width=24mm,
-				text width=20mm,
-				minimum height=6.4mm,
-				inner sep=2.0pt,
-				font=\tiny
-			},
-		inner/.style={
-				draw=Ink!60,
-				line width=0.45pt,
-				rounded corners=2.5pt,
-				fill=white,
-				minimum width=18mm,
-				minimum height=4.4mm,
-				inner sep=1.7pt,
-				align=center,
-				font=\fontsize{5.1}{5.6}\selectfont,
-				text=Ink
-			}
-	}
+  \tikzset{
+    stage/.style={
+      fig/mblock,
+      minimum width=24mm,
+      text width=20mm,
+      minimum height=6.4mm,
+      inner sep=2.0pt,
+      font=\tiny
+    },
+    rail/.style={
+      fig/mcore,
+      minimum width=24mm,
+      text width=20mm,
+      minimum height=6.4mm,
+      inner sep=2.0pt,
+      font=\tiny
+    },
+    inner/.style={
+      draw=Ink!60,
+      line width=0.45pt,
+      rounded corners=2.5pt,
+      fill=white,
+      minimum width=18mm,
+      minimum height=4.4mm,
+      inner sep=1.7pt,
+      align=center,
+      font=\fontsize{5.1}{5.6}\selectfont,
+      text=Ink
+    }
+  }
 
-	\node[stage] (merchant) at (0,0) {Запрос\\мерчанта\\HTTPS / JSON};
+  \node[stage] (merchant) at (0,0) {Запрос\\мерчанта\\HTTPS / JSON};
 
-	\node[inner, below=3mm of merchant] (api) {API gateway};
-	\node[inner, below=1.8mm of api] (risk) {Risk engine};
-	\node[inner, below=1.8mm of risk] (routing) {Routing engine};
-	\node[inner, below=1.8mm of routing] (vault) {Token vault};
-	\node[inner, below=1.8mm of vault] (proxy) {Auth proxy};
+  \node[inner, below=3mm of merchant] (api) {API gateway};
+  \node[inner, below=1.8mm of api] (risk) {Risk engine};
+  \node[inner, below=1.8mm of risk] (routing) {Routing engine};
+  \node[inner, below=1.8mm of routing] (vault) {Token vault};
+  \node[inner, below=1.8mm of vault] (proxy) {Auth proxy};
 
-	\node[rail, below=3.5mm of proxy] (acquirer) {Банк-\\эквайер};
-	\node[rail, below=2mm of acquirer] (network) {Карточная\\сеть};
-	\node[rail, below=2mm of network] (issuer) {Эмитент};
+  \node[rail, below=3.5mm of proxy] (acquirer) {Банк-\\эквайер};
+  \node[rail, below=2mm of acquirer] (network) {Карточная\\сеть};
+  \node[rail, below=2mm of network] (issuer) {Эмитент};
 
-	\begin{scope}[on background layer]
-		\node[fig/mgroup, fit=(api)(risk)(routing)(vault)(proxy), inner xsep=7pt, inner ysep=7pt] {};
-	\end{scope}
+  \begin{scope}[on background layer]
+    \node[fig/mgroup, fit=(api)(risk)(routing)(vault)(proxy), inner
+    xsep=7pt, inner ysep=7pt] {};
+  \end{scope}
 
-	\draw[fig/accenta] (merchant.south) -- (api.north);
-	\draw[fig/accenta] (api.south) -- (risk.north);
-	\draw[fig/accenta] (risk.south) -- (routing.north);
-	\draw[fig/accenta] (routing.south) -- (vault.north);
-	\draw[fig/accenta] (vault.south) -- (proxy.north);
-	\draw[fig/accenta] (proxy.south) -- (acquirer.north);
-	\draw[fig/accenta] (acquirer.south) -- (network.north);
-	\draw[fig/accenta] (network.south) -- (issuer.north);
-	\draw[fig/dashed] ($(issuer.west)+(-3.5mm,0)$) .. controls +(-4mm,14mm) and +(-4mm,-14mm) ..
-		node[left, font=\fontsize{4.8}{5.3}\selectfont, text=Muted] {reply same path} ($(merchant.west)+(-3.5mm,0)$);
+  \draw[fig/accenta] (merchant.south) -- (api.north);
+  \draw[fig/accenta] (api.south) -- (risk.north);
+  \draw[fig/accenta] (risk.south) -- (routing.north);
+  \draw[fig/accenta] (routing.south) -- (vault.north);
+  \draw[fig/accenta] (vault.south) -- (proxy.north);
+  \draw[fig/accenta] (proxy.south) -- (acquirer.north);
+  \draw[fig/accenta] (acquirer.south) -- (network.north);
+  \draw[fig/accenta] (network.south) -- (issuer.north);
+  \draw[fig/dashed] ($(issuer.west)+(-3.5mm,0)$) .. controls
+  +(-4mm,14mm) and +(-4mm,-14mm) ..
+  node[left, font=\fontsize{4.8}{5.3}\selectfont, text=Muted] {reply
+  same path} ($(merchant.west)+(-3.5mm,0)$);
 \end{tikzpicture}

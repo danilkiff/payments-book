@@ -1,50 +1,64 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-	\tikzset{
-		hard/.style={fig/result, fill=Bad!10, draw=Bad!45, minimum width=32mm},
-		tech/.style={fig/result, fill=AccentA!10, draw=AccentA!45, minimum width=32mm},
-		dataq/.style={fig/result, fill=AccentB!10, draw=AccentB!45, minimum width=32mm},
-		softf/.style={fig/result, fill=Warn!12, draw=Warn!45, minimum width=32mm},
-		branchnote/.style={
-				fig/sidecar,
-				text width=25mm,
-				align=left
-			}
-	}
+  \tikzset{
+    hard/.style={fig/result, fill=Bad!10, draw=Bad!45, minimum width=32mm},
+    tech/.style={fig/result, fill=AccentA!10, draw=AccentA!45,
+    minimum width=32mm},
+    dataq/.style={fig/result, fill=AccentB!10, draw=AccentB!45,
+    minimum width=32mm},
+    softf/.style={fig/result, fill=Warn!12, draw=Warn!45, minimum width=32mm},
+    branchnote/.style={
+      fig/sidecar,
+      text width=25mm,
+      align=left
+    }
+  }
 
-	\node[fig/decision, text width=34mm] (root) at (0,0) {Получен\\decline code};
+  \node[fig/decision, text width=34mm] (root) at (0,0) {Получен\\decline code};
 
-	\node[hard] (hard) at (-9.0,-2.7) {Stop\\04, 14, 41, 43};
-	\node[dataq] (dataq) at (-3.0,-2.7) {Data quality\\54};
-	\node[softf] (softf) at (3.0,-2.7) {Recoverable\\51, 61, 62, 65, 05};
-	\node[tech] (tech) at (9.0,-2.7) {Технический\\91, 96, timeout};
+  \node[hard] (hard) at (-9.0,-2.7) {Stop\\04, 14, 41, 43};
+  \node[dataq] (dataq) at (-3.0,-2.7) {Data quality\\54};
+  \node[softf] (softf) at (3.0,-2.7) {Recoverable\\51, 61, 62, 65, 05};
+  \node[tech] (tech) at (9.0,-2.7) {Технический\\91, 96, timeout};
 
-	\draw[fig/arrow] (root.south) -- ($(root.south)+(0,-0.4)$);
-	\draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (hard.north);
-	\draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (dataq.north);
-	\draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (softf.north);
-	\draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (tech.north);
+  \draw[fig/arrow] (root.south) -- ($(root.south)+(0,-0.4)$);
+  \draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (hard.north);
+  \draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (dataq.north);
+  \draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (softf.north);
+  \draw[fig/arrow] ($(root.south)+(0,-0.4)$) -- (tech.north);
 
-	\node[hard, minimum width=37mm] (hardstop) at (-9.0,-5.6) {Не повторять ту же\\операцию. Новый\\credential или stop};
-	\draw[fig/arrow] (hard.south) -- (hardstop.north);
-	\node[branchnote, anchor=west] at (-6.9,-5.6) {Visa Category~1 /\\MC CNP declines};
+  \node[hard, minimum width=37mm] (hardstop) at (-9.0,-5.6) {Не
+  повторять ту же\\операцию. Новый\\credential или stop};
+  \draw[fig/arrow] (hard.south) -- (hardstop.north);
+  \node[branchnote, anchor=west] at (-6.9,-5.6) {Visa Category~1
+  /\\MC CNP declines};
 
-	\node[dataq, minimum width=37mm] (dataq1) at (-3.0,-5.4) {Обновить expiry /\\PAN, токен или\\updater};
-	\node[dataq, minimum width=37mm] (dataq2) at (-3.0,-8.5) {В Mastercard CNP:\\не повторять ту же\\операцию с тем же\\PAN+expiry};
-	\draw[fig/arrow] (dataq.south) -- (dataq1.north);
-	\draw[fig/arrow] (dataq1.south) -- (dataq2.north);
-	\node[branchnote, anchor=west] at (-1.0,-8.5) {Visa Data Quality /\\MC CNP declines};
+  \node[dataq, minimum width=37mm] (dataq1) at (-3.0,-5.4) {Обновить
+  expiry /\\PAN, токен или\\updater};
+  \node[dataq, minimum width=37mm] (dataq2) at (-3.0,-8.5) {В
+  Mastercard CNP:\\не повторять ту же\\операцию с тем же\\PAN+expiry};
+  \draw[fig/arrow] (dataq.south) -- (dataq1.north);
+  \draw[fig/arrow] (dataq1.south) -- (dataq2.north);
+  \node[branchnote, anchor=west] at (-1.0,-8.5) {Visa Data Quality
+  /\\MC CNP declines};
 
-	\node[softf, minimum width=38mm] (softf1) at (3.0,-5.4) {Проверить caps\\rules};
-	\node[softf, minimum width=38mm] (softf2) at (3.0,-8.5) {Если repeat allowed:\\пауза и лимит\\по стратегии};
-	\node[softf, minimum width=38mm] (softf3) at (3.0,-11.6) {Если есть лучший\\контекст: токен,\\3DS, иной path};
-	\draw[fig/arrow] (softf.south) -- (softf1.north);
-	\draw[fig/arrow] (softf1.south) -- (softf2.north);
-	\draw[fig/arrow] (softf2.south) -- (softf3.north);
-	\node[branchnote, anchor=west] at (5.1,-11.6) {Не blind loop;\\сначала rules,\\потом strategy};
+  \node[softf, minimum width=38mm] (softf1) at (3.0,-5.4) {Проверить
+  caps\\rules};
+  \node[softf, minimum width=38mm] (softf2) at (3.0,-8.5) {Если
+  repeat allowed:\\пауза и лимит\\по стратегии};
+  \node[softf, minimum width=38mm] (softf3) at (3.0,-11.6) {Если есть
+  лучший\\контекст: токен,\\3DS, иной path};
+  \draw[fig/arrow] (softf.south) -- (softf1.north);
+  \draw[fig/arrow] (softf1.south) -- (softf2.north);
+  \draw[fig/arrow] (softf2.south) -- (softf3.north);
+  \node[branchnote, anchor=west] at (5.1,-11.6) {Не blind
+  loop;\\сначала rules,\\потом strategy};
 
-	\node[tech, minimum width=38mm] (tech1) at (9.0,-5.4) {Проверить final state\\и доступность route};
-	\node[tech, minimum width=38mm] (tech2) at (9.0,-8.5) {Повтор только в рамках\\лимитов сети и\\правил эквайера};
-	\draw[fig/arrow] (tech.south) -- (tech1.north);
-	\draw[fig/arrow] (tech1.south) -- (tech2.north);
-	\node[branchnote, anchor=west] at (11.2,-8.5) {Технический код --\\это вопрос пути,\\а не always карты};
+  \node[tech, minimum width=38mm] (tech1) at (9.0,-5.4) {Проверить
+  final state\\и доступность route};
+  \node[tech, minimum width=38mm] (tech2) at (9.0,-8.5) {Повтор
+  только в рамках\\лимитов сети и\\правил эквайера};
+  \draw[fig/arrow] (tech.south) -- (tech1.north);
+  \draw[fig/arrow] (tech1.south) -- (tech2.north);
+  \node[branchnote, anchor=west] at (11.2,-8.5) {Технический код
+  --\\это вопрос пути,\\а не always карты};
 \end{tikzpicture}

@@ -1,14 +1,18 @@
 \begin{tikzpicture}[x=1cm,y=1cm]
-	\node[fig/mblock] (client) at (0,0) {Клиент};
-	\node[fig/mcore, below=5mm of client] (merchant1) {Мерчант / PISP\\выбор оплаты};
-	\node[fig/mblock, below=5mm of merchant1] (bank) {Банк клиента\\consent + SCA};
-	\node[fig/mcore, below=5mm of bank] (merchant2) {PISP API-платёж\\токен + статус};
-	\node[fig/mblock, below=5mm of merchant2] (confirm) {Подтверждение\\заказа};
+  \node[fig/mblock] (client) at (0,0) {Клиент};
+  \node[fig/mcore, below=5mm of client] (merchant1) {Мерчант /
+  PISP\\выбор оплаты};
+  \node[fig/mblock, below=5mm of merchant1] (bank) {Банк
+  клиента\\consent + SCA};
+  \node[fig/mcore, below=5mm of bank] (merchant2) {PISP
+  API-платёж\\токен + статус};
+  \node[fig/mblock, below=5mm of merchant2] (confirm) {Подтверждение\\заказа};
 
-	\draw[fig/accenta] (client.south) -- (merchant1.north);
-	\draw[fig/arrow] (merchant1.south) -- (bank.north);
-	\draw[fig/accentb] (bank.south) -- (merchant2.north);
-	\draw[fig/accenta] (merchant2.south) -- (confirm.north);
+  \draw[fig/accenta] (client.south) -- (merchant1.north);
+  \draw[fig/arrow] (merchant1.south) -- (bank.north);
+  \draw[fig/accentb] (bank.south) -- (merchant2.north);
+  \draw[fig/accenta] (merchant2.south) -- (confirm.north);
 
-	\node[fig/mnote, below=4.5mm of confirm] {Клиент возвращается из банка, а дальнейший платёж и статусы уже идут по API между PISP и банком.};
+  \node[fig/mnote, below=4.5mm of confirm] {Клиент возвращается из
+  банка, а дальнейший платёж и статусы уже идут по API между PISP и банком.};
 \end{tikzpicture}
