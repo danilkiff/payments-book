@@ -42,11 +42,22 @@
 
 %% ── Todo-заметки ─────────────────────────────────────────────────────────────
 % Цветовые категории для \todo{}:
-\newcommand{\todofig}[1]{\todo[inline, color=blue!15]{Рисунок: #1}}
-\newcommand{\todocite}[1]{\todo[inline, color=green!30]{Источник: #1}}
-\newcommand{\todocheck}[1]{\todo[inline, color=orange!40]{Проверить: #1}}
+\newcommand{\todobox}[4]{%
+  \begin{kaobox}[title={#1}, colback=#2, colbacktitle=#3]%
+    #4%
+  \end{kaobox}%
+}
+\newcommand{\todofig}[1]{\todobox{Рисунок}{blue!8}{blue!35!black}{#1}}
+\newcommand{\todocite}[1]{\todobox{Источник}{green!12}{green!35!black}{#1}}
+\newcommand{\todocheck}[1]{\todobox{Проверить}{orange!18}{orange!55!black}{#1}}
 
 %% ── Вспомогательные команды ──────────────────────────────────────────────────
+\newcommand{\textrightarrowglyph}{\texorpdfstring{\ensuremath{\rightarrow}}{->}}
+\newcommand{\textleftrightarrowglyph}{\texorpdfstring{\ensuremath{\leftrightarrow}}{<->}}
+\newcommand{\texthorizontalbarglyph}{\texorpdfstring{\textemdash}{---}}
+\newunicodechar{→}{\textrightarrowglyph}
+\newunicodechar{↔}{\textleftrightarrowglyph}
+\newunicodechar{―}{\texthorizontalbarglyph}
 \newcommand{\tbd}{\textcolor{gray}{\textit{[раздел в работе]}}}
 \renewcommand{\eg}{т.\,е.\ }
 \newcommand{\cf}{ср.\ }
