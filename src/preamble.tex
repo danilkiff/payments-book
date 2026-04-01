@@ -7,12 +7,18 @@
 \renewcommand{\ttdefault}{cmtt}
 
 \usepackage{graphicx}
+\usepackage{adjustbox}
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{booktabs}
 \usepackage{csquotes}
 \usepackage[backend=biber,style=numeric-comp,sorting=nyt]{biblatex}
 \usepackage[unicode]{hyperref}
+\input{src/figure-styles}
+
+\newcommand{\includefiguretex}[2][width=\linewidth]{%
+  \adjustbox{#1}{\sffamily\input{#2}}%
+}
 
 \hypersetup{
   pdftitle={Платёжный стек},
