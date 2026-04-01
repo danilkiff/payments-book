@@ -1,0 +1,61 @@
+% Пакеты LaTeX и глобальные настройки книги.
+% Редактору: этот файл не нужно трогать при добавлении глав или фигур.
+% Стили TikZ живут в src/figure-styles.tex (подключаются отсюда же).
+%
+% Keep the preamble focused on functionality; visual defaults come from KOMA.
+
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[main=russian,english]{babel}
+\usepackage{libertinus}
+\renewcommand{\ttdefault}{cmtt}
+
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{booktabs}
+\usepackage[final]{microtype}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=numeric-comp,sorting=nyt]{biblatex}
+\usepackage[unicode]{hyperref}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{float}
+\usepackage{xurl}
+\usepackage{indentfirst}
+\input{src/figure-styles}
+
+\setcounter{biburlbigbreakpenalty}{100}
+\setcounter{biburlbreakpenalty}{100}
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
+
+\newcommand{\includefigurefragment}[1]{%
+  \begingroup
+  \sffamily
+  \input{#1}%
+  \endgroup
+}
+
+\newcommand{\includefiguretex}[2][width=\linewidth]{%
+  \adjustbox{#1}{\includefigurefragment{#2}}%
+}
+
+\hypersetup{
+  pdftitle={Платёжный стек},
+  pdfauthor={},
+  hidelinks,
+}
+
+\setlength{\parindent}{1.25em}
+\setlength{\parskip}{0pt}
+\setlist[itemize,enumerate]{leftmargin=*,labelsep=0.55em}
+
+\newcommand{\chapterSummary}{%
+  \Needspace*{8\baselineskip}%
+  \section*{Итоги главы}%
+}
+
+\setcounter{tocdepth}{1}
