@@ -142,15 +142,7 @@ EMV-сценария — при выборе приложения.
 согласовывает конкретное приложение из списка
 кандидатов \cite{emvco-book1}.
 
-\begin{kaobox}[title={Определение: AID}, colback=blue!4, colbacktitle=blue!15]
-  AID (Application Identifier) — уникальный идентификатор платёжного
-  приложения на чипе. Состоит из двух частей: RID (Registered
-  Application Provider Identifier, 5 байт, идентифицирует карточную
-  сеть) и PIX (Proprietary Application Identifier Extension, до 11 байт,
-  идентифицирует конкретный продукт). Например, AID
-  \hex{A0000000031010} — это \scheme{Visa} Credit/Debit
-  (RID \hex{A000000003}, PIX \hex{1010}) \cite{visa-tadg}.
-\end{kaobox}
+\margindefinition{AID}{AID (Application Identifier) --- идентификатор платёжного приложения на чипе. Он состоит из RID карточной сети и PIX конкретного продукта; по нему терминал понимает, с каким приложением и набором правил работать.}
 
 Терминал начинает с обращения к каталогу PSE
 (Payment System Environment), а в бесконтактном сценарии — к PPSE;
