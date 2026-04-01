@@ -1,0 +1,20 @@
+## .chktexrc — настройка ChkTeX (линтер LaTeX)
+
+# Предупреждения, которые для этой книги неактуальны:
+# W1  — команды, которые должны использовать {} (слишком много ложных срабатываний с kaobook)
+# W17 — UsedMathSymbolsInNonMathMode (polyglossia обходит это)
+# W22 — комментарии в конце строки (допустимо в структурных файлах)
+
+Silent {
+  -n1
+  -n17
+  -n22
+}
+
+# Разрешённые команды верхнего уровня (kaobook-специфика)
+UserWarnRegex {
+  (?!\\(chapter|section|subsection|paragraph|label|ref|cite|input|include))
+}
+
+# Правильные кавычки для русского текста: "" вместо ""
+QuoteStyle = 2
