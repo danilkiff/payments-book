@@ -1,0 +1,6 @@
+# Line wrapping is disabled because tex-fmt 0.5.6 measures line length in UTF-8
+# bytes rather than Unicode codepoints. For Russian-language content, Cyrillic
+# characters are 2 bytes each, causing false-positive "Line cannot be wrapped"
+# warnings for lines that are visually within reasonable length. Indentation
+# formatting is still applied.
+wrap = false
