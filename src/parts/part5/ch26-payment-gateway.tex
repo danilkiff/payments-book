@@ -97,16 +97,12 @@ chargeback после.
 до ответа — укладывается в одну-две секунды; основная часть
 времени уходит на ожидание ответа эмитента через карточную сеть.
 
-\todo[inline]{Рисунок: Блок-схема компонентов платёжного шлюза: запрос мерчанта
-  (HTTPS/JSON) → API gateway (валидация, идемпотентность) →
-  risk engine (fraud score, 3DS decision) →
-  routing engine (выбор эквайера) →
-  tokenization vault (PAN → token) →
-  authorization proxy (JSON → ISO 8583) →
-  банк-эквайер → карточная сеть → эмитент;
-  обратный путь ответа пунктиром.
-  Горизонтальный flow слева направо, каждый блок — прямоугольник
-  с подписью, стрелки однонаправленные, кроме обратного пути.}
+\begin{marginfigure}
+  \centering
+  \includegraphics[width=\linewidth]{assets/figures/ch26-payment-gateway/gateway-components.pdf}
+  \caption{Компоненты платёжного шлюза.}
+  \label{fig:gateway-components}
+\end{marginfigure}
 
 Итак, минимальный путь запроса через шлюз уже задаёт архитектурный
 инвариант: каждый следующий компонент получает более узкое и лучше

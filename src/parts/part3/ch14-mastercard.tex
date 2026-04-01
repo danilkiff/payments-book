@@ -49,13 +49,12 @@ settlement \sidecite{mc-rules}.
 внутри которого разные задачи разведены по специализированным
 подсистемам.
 
-\todo[inline]{Рисунок: Топология Banknet. Схема в форме овала. По периметру —
-  блок «Банк-эквайер», затем «Authorization Platform», затем
-  «Банк-эмитент». Ниже отдельная ветка: «IPM» $\rightarrow$ «GCMS»
-  $\rightarrow$ «Settlement». Подпись под всей схемой:
-  «Одна сеть, разные внутренние подсистемы». Не рисовать численные SLA
-  и не привязывать схему к неподтверждённой физической топологии.}
-% \label{fig:banknet-topology}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{assets/figures/ch14-mastercard/banknet-topology.pdf}
+  \caption{Топология логических подсистем Banknet.}
+  \label{fig:banknet-topology}
+\end{figure}
 
 Практический вывод отсюда трезвый. Banknet упрощает описание
 архитектуры, но не отменяет различий между потоками. Авторизация,
@@ -136,11 +135,12 @@ Messages, то есть схему обмена данными для клири
 подтверждают сам формат IPM и роль GCMS, но не дают полного атласа
 полей для построчного разбора.
 
-\todo[inline]{Рисунок: Структура IPM-файла Mastercard (DE-карта). Вертикальный
-  layout. Схематично показать три уровня: файл IPM, отдельная запись
-  клиринга, поля в логике \iso{8583}. Не рисовать конкретные номера
-  subelements без сверки с актуальным IPM Clearing Formats manual.}
-% \label{fig:mc-ipm-structure}
+\begin{marginfigure}
+  \centering
+  \includegraphics[width=\linewidth]{assets/figures/ch14-mastercard/mc-ipm-structure.pdf}
+  \caption{Структура IPM-файла Mastercard.}
+  \label{fig:mc-ipm-structure}
+\end{marginfigure}
 
 Одна деталь из публичных правил особенно важна для реальной
 эксплуатации. Код рекомендации мерчанту (Merchant Advice Code, MAC)
@@ -212,11 +212,10 @@ EMV, значит Mastercard заработает автоматически} с
   применим к их конкретному продукту.
 \end{kaobox}
 
-\todo[inline]{Проверить по актуальному M/Chip Requirements for Contact
-  and Contactless через Mastercard Connect: какие профили, названия
-  и области применения действуют в редакции 2024/2025. Публичного
-  материала \scheme{Mastercard} с полной и актуальной матрицей
-  профилей не найдено.}
+\todo[inline]{Источник: если нужна точная и актуальная матрица
+  M/Chip-профилей, названий и областей применения, проверять
+  текущий M/Chip Requirements for Contact and Contactless через
+  Mastercard Connect; в публичном web полной матрицы нет.}
 
 \section{Mastercard Send}
 \label{sec:mc-send}

@@ -51,12 +51,12 @@
 эмитента или маршрута. Для них уместен один немедленный retry, а затем ---
 пауза и разбор причины \sidecite{visa-core-rules}\sidecite{mc-rules}.
 
-% TODO figure: Таблица «Классификация response codes по типу отказа».
-% Три колонки: «Hard decline» (красный), «Soft decline» (оранжевый),
-% «Технический / смена канала» (жёлтый). В каждой колонке: code,
-% краткое описание и рекомендуемое действие. Под таблицей сноска:
-% полный справочник кодов --- в онлайн-приложении.
-% \label{fig:decline-codes}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{assets/figures/ch24-decline-management/decline-codes.pdf}
+  \caption{Классификация response codes по типу отказа.}
+  \label{fig:decline-codes}
+\end{figure}
 
 Итак, первая задача decline management --- не \enquote{отправить retry},
 а правильно классифицировать отказ по обратимости и допустимому действию.
@@ -139,16 +139,12 @@ Transaction Retry Rules and Excessive Attempt Restrictions, Mastercard ---
 дать шанс на прохождение. Именно поэтому retry logic и routing логически
 связаны.
 
-% TODO figure: Decision tree «Retry logic». Корень: получен response code.
-% Ветвь 1: Hard decline (04, 14, 41, 43, 54) → «Не повторять».
-% Ветвь 2: Технический (91, 96, timeout) → «1 немедленный retry» → затем
-% пауза.
-% Ветвь 3: Soft financial (51, 61, 65) → «Отложенный retry» → повтор только
-% в пределах схемных ограничений.
-% Ветвь 4: Soft behavioural (05) → «Сначала сменить контекст: токен вместо
-% PAN или другой эквайер».
-% Стиль: строгий, минималистичный, с цветовой кодировкой ветвей.
-% \label{fig:decline-retry-tree}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{assets/figures/ch24-decline-management/decline-retry-tree.pdf}
+  \caption{Retry logic после отказа в авторизации.}
+  \label{fig:decline-retry-tree}
+\end{figure}
 
 \section{Network token vs PAN: дополнительный контекст доверия}
 \label{sec:decline-tokens}

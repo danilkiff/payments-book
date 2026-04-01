@@ -263,8 +263,10 @@ RTO (Recovery Time Objective) — время восстановления пос
 batch-файлы. Процессинг, подключающийся к VisaNet, проходит
 многоэтапную сертификацию: тестирование форматов сообщений,
 криптографии, stand-in логики, обработки reversal
-и timeout \todo[inline]{Источник: Visa Acceptance Testing Guide —
-  описание процедуры сертификации}.
+и timeout \todo[inline]{Источник: если нужен точный состав
+  acceptance-кейсов и последовательность сертификации, проверять
+  Visa Acceptance Testing Guide для участников сети; в публичном
+  web детальная матрица тестов не раскрыта.}.
 
 \subsection*{Banknet}
 
@@ -277,8 +279,10 @@ message (авторизация и клиринг в одном сообщени
 в отличие от \scheme{Visa}, исторически ориентированной
 на dual message. Клиринговые файлы \scheme{Mastercard}
 передаются в формате IPM через систему
-GCMS \todo[inline]{Источник: Mastercard Interface Processing Manual —
-  формат IPM, структура GCMS}.
+GCMS \todo[inline]{Источник: если нужен точный формат IPM и
+  структура GCMS на уровне полей и batch-потоков, проверять
+  Mastercard Interface Processing Manual; в открытом public-web
+  доступны только общие описания сети.}.
 
 \subsection*{ОПКЦ НСПК}
 

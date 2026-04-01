@@ -100,11 +100,12 @@ Service Provider)}\sidenote{PISP (Payment Initiation Service Provider)
 клиента, выдача токена доступа, обращение к API счёта или
 инициирования платежа.
 
-\todo[inline]{Рисунок: Поток PISP. Участники: клиент, мерчант/PISP, банк клиента.
-  Шаги: выбор оплаты со счёта; редирект в банк; consent + SCA;
-  выдача токена и возврат клиента; платёж через API; статус
-  исполнения; подтверждение заказа.}
-% \label{fig:pisp-flow}
+\begin{marginfigure}
+  \centering
+  \includegraphics[width=\linewidth]{assets/figures/ch19-open-banking/pisp-flow.pdf}
+  \caption{Типовой поток PISP в open banking.}
+  \label{fig:pisp-flow}
+\end{marginfigure}
 
 В этой схеме поток согласия играет ту же роль, что и сбор карточных
 данных на классической странице оплаты: он определяет, на каких правах
