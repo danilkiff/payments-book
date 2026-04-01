@@ -1,0 +1,21 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "claude-code",
+  "elements": [
+    {"type":"rectangle","id":"tvr","x":190,"y":20,"width":140,"height":46,"roundness":{"type":3},"backgroundColor":"#e5dbff","fillStyle":"solid","strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"TVR результаты","fontSize":14}},
+    {"type":"arrow","id":"a1","x":260,"y":66,"width":0,"height":36,"points":[[0,0],[0,36]],"endArrowhead":"arrow"},
+    {"type":"diamond","id":"denial","x":180,"y":102,"width":160,"height":80,"backgroundColor":"#fff3bf","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":2,"label":{"text":"Denial ≠ 0?","fontSize":13}},
+    {"type":"arrow","id":"a2","x":180,"y":142,"width":-80,"height":58,"points":[[0,0],[-80,58]],"endArrowhead":"arrow","strokeColor":"#ef4444","label":{"text":"Да","fontSize":12}},
+    {"type":"rectangle","id":"aac","x":50,"y":200,"width":100,"height":44,"roundness":{"type":3},"backgroundColor":"#ffc9c9","fillStyle":"solid","strokeColor":"#ef4444","strokeWidth":2,"label":{"text":"AAC","fontSize":14}},
+    {"type":"arrow","id":"a3","x":260,"y":182,"width":0,"height":48,"points":[[0,0],[0,48]],"endArrowhead":"arrow","label":{"text":"Нет","fontSize":12}},
+    {"type":"diamond","id":"online","x":180,"y":230,"width":160,"height":80,"backgroundColor":"#fff3bf","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":2,"label":{"text":"Online ≠ 0?","fontSize":13}},
+    {"type":"arrow","id":"a4","x":210,"y":292,"width":-70,"height":58,"points":[[0,0],[-70,58]],"endArrowhead":"arrow","strokeColor":"#4a9eed","label":{"text":"Да","fontSize":12}},
+    {"type":"rectangle","id":"arqc","x":90,"y":350,"width":100,"height":44,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"ARQC","fontSize":14}},
+    {"type":"arrow","id":"a5","x":310,"y":292,"width":70,"height":58,"points":[[0,0],[70,58]],"endArrowhead":"arrow","strokeColor":"#22c55e","label":{"text":"Нет","fontSize":12}},
+    {"type":"rectangle","id":"tc","x":330,"y":350,"width":100,"height":44,"roundness":{"type":3},"backgroundColor":"#d3f9d8","fillStyle":"solid","strokeColor":"#22c55e","strokeWidth":2,"label":{"text":"TC","fontSize":14}},
+    {"type":"text","id":"note","x":10,"y":418,"text":"AAC = отказ, ARQC = онлайн, TC = офлайн.","fontSize":12,"strokeColor":"#555"}
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
+  "files": {}
+}

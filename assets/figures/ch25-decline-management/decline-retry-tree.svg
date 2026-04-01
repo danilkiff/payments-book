@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 460" width="740" height="460">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#555"/></marker>
+  </defs>
+
+  <!-- Root decision -->
+  <polygon points="370,10 450,45 370,80 290,45" fill="#fff3bf" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="370" y="40" text-anchor="middle" font-size="10" fill="#1e1e1e">Получен</text>
+  <text x="370" y="53" text-anchor="middle" font-size="10" fill="#1e1e1e">decline code</text>
+
+  <!-- Branch arrows from root -->
+  <line x1="290" y1="45" x2="95" y2="120" stroke="#555" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="335" y1="78" x2="200" y2="120" stroke="#555" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="405" y1="78" x2="535" y2="120" stroke="#555" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="450" y1="45" x2="645" y2="120" stroke="#555" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- Stop (left) -->
+  <rect x="30" y="122" width="130" height="36" rx="5" fill="#ffc9c9" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="95" y="139" text-anchor="middle" font-size="10" fill="#1e1e1e">Stop</text>
+  <text x="95" y="152" text-anchor="middle" font-size="9" fill="#888">04, 14, 41, 43</text>
+
+  <!-- Data quality -->
+  <rect x="140" y="122" width="120" height="36" rx="5" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+  <text x="200" y="139" text-anchor="middle" font-size="10" fill="#1e1e1e">Data quality</text>
+  <text x="200" y="152" text-anchor="middle" font-size="9" fill="#888">54</text>
+
+  <!-- Recoverable -->
+  <rect x="474" y="122" width="120" height="36" rx="5" fill="#fff3bf" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="534" y="139" text-anchor="middle" font-size="10" fill="#1e1e1e">Recoverable</text>
+  <text x="534" y="152" text-anchor="middle" font-size="9" fill="#888">51, 61, 62, 65, 05</text>
+
+  <!-- Technical -->
+  <rect x="580" y="122" width="130" height="36" rx="5" fill="#e5dbff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="645" y="139" text-anchor="middle" font-size="10" fill="#1e1e1e">Технический</text>
+  <text x="645" y="152" text-anchor="middle" font-size="9" fill="#888">91, 96, timeout</text>
+
+  <!-- Stop sub-nodes -->
+  <line x1="95" y1="158" x2="95" y2="208" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <rect x="30" y="210" width="130" height="56" rx="4" fill="#ffc9c9" stroke="#ef4444" stroke-width="1"/>
+  <text x="95" y="228" text-anchor="middle" font-size="9" fill="#1e1e1e">Не повторять</text>
+  <text x="95" y="240" text-anchor="middle" font-size="9" fill="#1e1e1e">ту же операцию.</text>
+  <text x="95" y="252" text-anchor="middle" font-size="9" fill="#1e1e1e">Новый credential</text>
+  <text x="95" y="264" text-anchor="middle" font-size="9" fill="#555">или stop</text>
+
+  <!-- Data quality sub-nodes -->
+  <line x1="200" y1="158" x2="200" y2="208" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <rect x="140" y="210" width="120" height="44" rx="4" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1"/>
+  <text x="200" y="228" text-anchor="middle" font-size="9" fill="#1e1e1e">Обновить expiry /</text>
+  <text x="200" y="241" text-anchor="middle" font-size="9" fill="#1e1e1e">PAN, токен или updater</text>
+  <line x1="200" y1="254" x2="200" y2="288" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <rect x="140" y="290" width="120" height="56" rx="4" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1"/>
+  <text x="200" y="308" text-anchor="middle" font-size="9" fill="#1e1e1e">В MC CNP:</text>
+  <text x="200" y="320" text-anchor="middle" font-size="9" fill="#1e1e1e">не повторять</text>
+  <text x="200" y="332" text-anchor="middle" font-size="9" fill="#1e1e1e">с тем же PAN+expiry</text>
+
+  <!-- Recoverable sub-nodes -->
+  <line x1="534" y1="158" x2="534" y2="208" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <rect x="474" y="210" width="120" height="36" rx="4" fill="#fff3bf" stroke="#f59e0b" stroke-width="1"/>
+  <text x="534" y="232" text-anchor="middle" font-size="9" fill="#1e1e1e">Проверить caps rules</text>
+  <line x1="534" y1="246" x2="534" y2="278" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <rect x="474" y="280" width="120" height="44" rx="4" fill="#fff3bf" stroke="#f59e0b" stroke-width="1"/>
+  <text x="534" y="298" text-anchor="middle" font-size="9" fill="#1e1e1e">Если repeat allowed:</text>
+  <text x="534" y="311" text-anchor="middle" font-size="9" fill="#1e1e1e">пауза и лимит</text>
+  <line x1="534" y1="324" x2="534" y2="358" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <rect x="474" y="360" width="120" height="36" rx="4" fill="#fff3bf" stroke="#f59e0b" stroke-width="1"/>
+  <text x="534" y="378" text-anchor="middle" font-size="9" fill="#1e1e1e">Если есть лучший</text>
+  <text x="534" y="391" text-anchor="middle" font-size="9" fill="#1e1e1e">контекст: 3DS, иной path</text>
+
+  <!-- Technical sub-nodes -->
+  <line x1="645" y1="158" x2="645" y2="208" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <rect x="580" y="210" width="130" height="44" rx="4" fill="#e5dbff" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="645" y="228" text-anchor="middle" font-size="9" fill="#1e1e1e">Проверить final state</text>
+  <text x="645" y="241" text-anchor="middle" font-size="9" fill="#1e1e1e">и доступность route</text>
+  <line x1="645" y1="254" x2="645" y2="288" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <rect x="580" y="290" width="130" height="56" rx="4" fill="#e5dbff" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="645" y="308" text-anchor="middle" font-size="9" fill="#1e1e1e">Повтор только</text>
+  <text x="645" y="321" text-anchor="middle" font-size="9" fill="#1e1e1e">в рамках лимитов</text>
+  <text x="645" y="334" text-anchor="middle" font-size="9" fill="#1e1e1e">сети и эквайера</text>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "claude-code",
+  "elements": [
+    {"type":"rectangle","id":"bg","x":20,"y":40,"width":780,"height":450,"roundness":{"type":3},"backgroundColor":"#f8f9fa","fillStyle":"solid","strokeColor":"#adb5bd","strokeStyle":"dashed","opacity":100},
+    {"type":"rectangle","id":"holder","x":60,"y":80,"width":190,"height":60,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Держатель карты","fontSize":16}},
+    {"type":"rectangle","id":"merchant","x":570,"y":80,"width":190,"height":60,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Мерчант","fontSize":16}},
+    {"type":"rectangle","id":"issuer","x":60,"y":390,"width":190,"height":60,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Эмитент","fontSize":16}},
+    {"type":"rectangle","id":"network","x":315,"y":390,"width":190,"height":60,"roundness":{"type":3},"backgroundColor":"#e5dbff","fillStyle":"solid","strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"Карточная сеть","fontSize":16}},
+    {"type":"rectangle","id":"acquirer","x":570,"y":390,"width":190,"height":60,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Эквайер","fontSize":16}},
+    {"type":"arrow","id":"a-hm","x":250,"y":110,"width":320,"height":0,"points":[[0,0],[320,0]],"endArrowhead":"arrow","startArrowhead":"arrow","strokeWidth":2,"label":{"text":"покупка","fontSize":13}},
+    {"type":"arrow","id":"a-hi","x":155,"y":140,"width":0,"height":250,"points":[[0,0],[0,250]],"endArrowhead":"arrow","startArrowhead":"arrow","strokeWidth":2,"label":{"text":"карта, счёт","fontSize":13}},
+    {"type":"arrow","id":"a-ma","x":665,"y":140,"width":0,"height":250,"points":[[0,0],[0,250]],"endArrowhead":"arrow","startArrowhead":"arrow","strokeWidth":2,"label":{"text":"терминал, договор","fontSize":13}},
+    {"type":"arrow","id":"a-in","x":250,"y":425,"width":65,"height":0,"points":[[0,0],[65,0]],"endArrowhead":"arrow","startArrowhead":"arrow","strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"правила, клиринг","fontSize":12}},
+    {"type":"arrow","id":"a-na","x":505,"y":425,"width":65,"height":0,"points":[[0,0],[65,0]],"endArrowhead":"arrow","startArrowhead":"arrow","strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"правила, клиринг","fontSize":12}}
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
+  "files": {}
+}

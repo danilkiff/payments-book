@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 440" width="240" height="440">
+  <defs>
+    <marker id="arr-a" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4a9eed"/></marker>
+    <marker id="arr-b" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#8b5cf6"/></marker>
+    <marker id="arr-b-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto-start-reverse"><polygon points="0 0,8 3,0 6" fill="#8b5cf6"/></marker>
+  </defs>
+  <!-- Терминал -->
+  <rect x="55" y="10" width="130" height="36" rx="5" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+  <text x="120" y="32" text-anchor="middle" font-size="11" fill="#1e1e1e">Терминал</text>
+  <!-- Эквайер -->
+  <rect x="55" y="66" width="130" height="36" rx="5" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+  <text x="120" y="88" text-anchor="middle" font-size="11" fill="#1e1e1e">Эквайер</text>
+  <!-- Карточная сеть -->
+  <rect x="55" y="122" width="130" height="36" rx="5" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+  <text x="120" y="144" text-anchor="middle" font-size="11" fill="#1e1e1e">Карточная сеть</text>
+  <!-- Хост эмитента -->
+  <rect x="55" y="178" width="130" height="36" rx="5" fill="#e5dbff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="120" y="200" text-anchor="middle" font-size="11" fill="#1e1e1e">Хост эмитента</text>
+  <!-- HSM (with dashed border) -->
+  <rect x="72" y="240" width="96" height="38" rx="5" fill="#fff3bf" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="120" y="263" text-anchor="middle" font-size="11" fill="#1e1e1e">HSM</text>
+  <text x="120" y="285" text-anchor="middle" font-size="9" fill="#8b5cf6">ключи не выходят</text>
+
+  <!-- Arrows -->
+  <line x1="120" y1="46" x2="120" y2="64" stroke="#4a9eed" stroke-width="1.5" marker-end="url(#arr-a)"/>
+  <text x="128" y="59" font-size="9" fill="#4a9eed">1. ARQC</text>
+  <line x1="120" y1="102" x2="120" y2="120" stroke="#4a9eed" stroke-width="1.5" marker-end="url(#arr-a)"/>
+  <line x1="120" y1="158" x2="120" y2="176" stroke="#4a9eed" stroke-width="1.5" marker-end="url(#arr-a)"/>
+  <!-- Issuer ↔ HSM bidirectional -->
+  <line x1="113" y1="214" x2="113" y2="238" stroke="#8b5cf6" stroke-width="1.5" marker-end="url(#arr-b)"/>
+  <text x="88" y="230" font-size="9" fill="#8b5cf6">2. данные</text>
+  <line x1="127" y1="238" x2="127" y2="214" stroke="#8b5cf6" stroke-width="1.5" marker-end="url(#arr-b)"/>
+  <text x="132" y="230" font-size="9" fill="#8b5cf6">4. ARPC</text>
+
+  <!-- Note -->
+  <rect x="10" y="300" width="220" height="44" rx="4" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1"/>
+  <text x="120" y="317" text-anchor="middle" font-size="9" fill="#555">3. HSM деривирует ключ,</text>
+  <text x="120" y="330" text-anchor="middle" font-size="9" fill="#555">проверяет ARQC и возвращает ARPC.</text>
+</svg>

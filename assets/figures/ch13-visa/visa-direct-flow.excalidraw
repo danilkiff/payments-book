@@ -1,0 +1,20 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "claude-code",
+  "elements": [
+    {"type":"rectangle","id":"p1","x":20,"y":10,"width":90,"height":30,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":1.5,"label":{"text":"Отправитель","fontSize":10}},
+    {"type":"rectangle","id":"p2","x":165,"y":10,"width":110,"height":30,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":1.5,"label":{"text":"Банк-эквайер\nотправителя","fontSize":10}},
+    {"type":"rectangle","id":"p3","x":335,"y":10,"width":100,"height":30,"roundness":{"type":3},"backgroundColor":"#e5dbff","fillStyle":"solid","strokeColor":"#8b5cf6","strokeWidth":1.5,"label":{"text":"VisaNet\n(BASE I)","fontSize":10}},
+    {"type":"rectangle","id":"p4","x":495,"y":10,"width":110,"height":30,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":1.5,"label":{"text":"Банк-эмитент\nполучателя","fontSize":10}},
+    {"type":"rectangle","id":"p5","x":620","y":10,"width":50,"height":30,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":1.5,"label":{"text":"Получат.","fontSize":10}},
+    {"type":"arrow","id":"m1","x":65,"y":65,"width":153,"height":0,"points":[[0,0],[153,0]],"endArrowhead":"arrow","strokeColor":"#8b5cf6","label":{"text":"AFT (снять деньги)","fontSize":9}},
+    {"type":"arrow","id":"m2","x":220,"y":95,"width":163,"height":0,"points":[[0,0],[163,0]],"endArrowhead":"arrow","strokeColor":"#4a9eed","label":{"text":"AFT авторизация 0100","fontSize":9}},
+    {"type":"arrow","id":"m3","x":385,"y":125,"width":163,"height":0,"points":[[0,0],[163,0]],"endArrowhead":"arrow","strokeColor":"#8b5cf6","label":{"text":"OCT 0200 (кредит)","fontSize":9}},
+    {"type":"arrow","id":"m4","x":548,"y":155,"width":-326,"height":0,"points":[[0,0],[-326,0]],"endArrowhead":"arrow","strokeColor":"#888","strokeStyle":"dashed","label":{"text":"Ответ 0210","fontSize":9}},
+    {"type":"arrow","id":"m5","x":550,"y":185,"width":93,"height":0,"points":[[0,0],[93,0]],"endArrowhead":"arrow","strokeColor":"#4a9eed","label":{"text":"Уведомление, средства доступны","fontSize":8}},
+    {"type":"rectangle","id":"tag","x":345,"y":210,"width":80,"height":20,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":1,"label":{"text":"T+минуты","fontSize":9}}
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
+  "files": {}
+}

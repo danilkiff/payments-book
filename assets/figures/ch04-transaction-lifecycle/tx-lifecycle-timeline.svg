@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 330">
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1e1e1e"/></marker>
+  <marker id="ar-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4a9eed"/></marker>
+  <marker id="ar-p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#8b5cf6"/></marker>
+  <marker id="ar-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#f59e0b"/></marker>
+</defs>
+<!-- Phase backgrounds -->
+<rect x="10" y="28" width="365" height="195" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+<rect x="385" y="28" width="335" height="195" rx="8" fill="#fefce8" stroke="#fde047" stroke-width="1"/>
+<rect x="730" y="28" width="360" height="195" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+<!-- Phase labels -->
+<text x="192" y="52" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#3b82f6">Авторизация (секунды)</text>
+<text x="552" y="52" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ca8a04">Клиринг (часы, конец дня)</text>
+<text x="910" y="52" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#16a34a">Settlement (T+1..T+3)</text>
+<!-- Phase 1 boxes -->
+<rect x="22" y="72" width="72" height="42" rx="6" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="58" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Терм.</text>
+<rect x="107" y="72" width="72" height="42" rx="6" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="143" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Эквайер</text>
+<rect x="192" y="72" width="60" height="42" rx="6" fill="#e5dbff" stroke="#8b5cf6" stroke-width="1.5"/>
+<text x="222" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Сеть</text>
+<rect x="265" y="72" width="80" height="42" rx="6" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="305" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Эмитент</text>
+<line x1="94" y1="93" x2="107" y2="93" stroke="#4a9eed" stroke-width="1.5" marker-end="url(#ar-b)"/>
+<line x1="179" y1="93" x2="192" y2="93" stroke="#4a9eed" stroke-width="1.5" marker-end="url(#ar-b)"/>
+<line x1="252" y1="93" x2="265" y2="93" stroke="#4a9eed" stroke-width="1.5" marker-end="url(#ar-b)"/>
+<!-- Auth reply (dashed back) -->
+<line x1="345" y1="106" x2="22" y2="130" stroke="#555" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#ar)"/>
+<text x="183" y="125" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">ответ</text>
+<!-- Phase 2 boxes -->
+<rect x="397" y="72" width="75" height="42" rx="6" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="434" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Эквайер</text>
+<rect x="485" y="72" width="72" height="42" rx="6" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="521" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Пакет</text>
+<rect x="570" y="72" width="60" height="42" rx="6" fill="#e5dbff" stroke="#8b5cf6" stroke-width="1.5"/>
+<text x="600" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Сеть</text>
+<rect x="643" y="72" width="68" height="42" rx="6" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="677" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Эмитент</text>
+<line x1="472" y1="93" x2="485" y2="93" stroke="#1e1e1e" stroke-width="1.5" marker-end="url(#ar)"/>
+<line x1="557" y1="93" x2="570" y2="93" stroke="#8b5cf6" stroke-width="1.5" marker-end="url(#ar-p)"/>
+<line x1="630" y1="93" x2="643" y2="93" stroke="#1e1e1e" stroke-width="1.5" marker-end="url(#ar)"/>
+<!-- Phase 3 boxes -->
+<rect x="745" y="72" width="72" height="42" rx="6" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="781" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Банк A</text>
+<rect x="831" y="72" width="72" height="42" rx="6" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="867" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Банк B</text>
+<rect x="917" y="72" width="85" height="42" rx="6" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="959" y="97" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e1e1e">Мерчант</text>
+<line x1="817" y1="93" x2="831" y2="93" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#ar-a)"/>
+<text x="824" y="87" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#b45309">деньги</text>
+<line x1="903" y1="93" x2="917" y2="93" stroke="#1e1e1e" stroke-width="1.5" marker-end="url(#ar)"/>
+<!-- Timeline bars -->
+<rect x="22" y="263" width="698" height="12" rx="4" fill="#93c5fd"/>
+<text x="371" y="292" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3b82f6">hold на счёте держателя</text>
+<rect x="745" y="280" width="320" height="12" rx="4" fill="#f59e0b"/>
+<text x="905" y="310" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#b45309">зачисление мерчанту</text>
+</svg>

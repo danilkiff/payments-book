@@ -1,0 +1,17 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "claude-code",
+  "elements": [
+    {"type":"rectangle","id":"phys","x":60,"y":30,"width":240,"height":70,"roundness":{"type":3},"backgroundColor":"#f0f4f8","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Физический\n13,56 МГц · ISO 14443-1/2\nType A / B","fontSize":13}},
+    {"type":"rectangle","id":"link","x":60,"y":130,"width":240,"height":60,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Канальный\nISO 14443-3 · антиколлизия","fontSize":13}},
+    {"type":"rectangle","id":"transport","x":60,"y":220,"width":240,"height":60,"roundness":{"type":3},"backgroundColor":"#e5dbff","fillStyle":"solid","strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"Транспорт\nISO 14443-4 · T=CL","fontSize":13}},
+    {"type":"rectangle","id":"app","x":60,"y":330,"width":240,"height":80,"roundness":{"type":3},"backgroundColor":"#e5dbff","fillStyle":"solid","strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"Приложение\nEMV Contactless Kernel\nqVSDC / M/Chip / Мир","fontSize":13}},
+    {"type":"arrow","id":"a1","x":180,"y":100,"width":0,"height":30,"points":[[0,0],[0,30]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"arrow","id":"a2","x":180,"y":190,"width":0,"height":30,"points":[[0,0],[0,30]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"arrow","id":"a3","x":180,"y":280,"width":0,"height":50,"points":[[0,0],[0,50]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"text","id":"apdu","x":192,"y":298,"text":"APDU","fontSize":11,"strokeColor":"#8b5cf6"}
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
+  "files": {}
+}

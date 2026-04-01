@@ -1,0 +1,27 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "claude-code",
+  "elements": [
+    {"type":"rectangle","id":"r1","x":60,"y":15,"width":130,"height":34,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Входящая транзакция","fontSize":10}},
+    {"type":"rectangle","id":"r2","x":60,"y":65,"width":130,"height":34,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Pre-screen rules","fontSize":10}},
+    {"type":"diamond","id":"d1","x":82,"y":115,"width":86,"height":54,"backgroundColor":"#fff3bf","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":2,"label":{"text":"Явный фрод?","fontSize":9}},
+    {"type":"rectangle","id":"r3","x":60,"y":185,"width":130,"height":34,"roundness":{"type":3},"backgroundColor":"#e5dbff","fillStyle":"solid","strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"ML scoring","fontSize":10}},
+    {"type":"rectangle","id":"r4","x":60,"y":235,"width":130,"height":34,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Score 0–1000","fontSize":10}},
+    {"type":"rectangle","id":"r5","x":60,"y":285,"width":130,"height":34,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Post-score rules","fontSize":10}},
+    {"type":"arrow","id":"a1","x":125,"y":49,"width":0,"height":16,"points":[[0,0],[0,16]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"arrow","id":"a2","x":125,"y":99,"width":0,"height":16,"points":[[0,0],[0,16]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"arrow","id":"a3","x":168,"y":142,"width":42,"height":0,"points":[[0,0],[42,0]],"endArrowhead":"arrow","strokeColor":"#ef4444","label":{"text":"Да","fontSize":9}},
+    {"type":"arrow","id":"a4","x":125,"y":169,"width":0,"height":16,"points":[[0,0],[0,16]],"endArrowhead":"arrow","strokeColor":"#4a9eed","label":{"text":"Нет","fontSize":9}},
+    {"type":"arrow","id":"a5","x":125,"y":219,"width":0,"height":16,"points":[[0,0],[0,16]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"arrow","id":"a6","x":125,"y":269,"width":0,"height":16,"points":[[0,0],[0,16]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"rectangle","id":"s1","x":210,"y":128,"width":80,"height":28,"roundness":{"type":3},"backgroundColor":"#ffc9c9","fillStyle":"solid","strokeColor":"#ef4444","strokeWidth":1.5,"label":{"text":"Блок","fontSize":10}},
+    {"type":"rectangle","id":"s2","x":210,"y":175,"width":80,"height":52,"roundness":{"type":3},"backgroundColor":"#fff3bf","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":1.2,"label":{"text":"velocity\ndevice\ngeo · history","fontSize":8}},
+    {"type":"rectangle","id":"s3","x":210,"y":264,"width":80,"height":28,"roundness":{"type":3},"backgroundColor":"#ffc9c9","fillStyle":"solid","strokeColor":"#ef4444","strokeWidth":1.2,"label":{"text":">800 Блок","fontSize":8}},
+    {"type":"rectangle","id":"s4","x":210,"y":288,"width":80,"height":28,"roundness":{"type":3},"backgroundColor":"#fff3bf","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":1.2,"label":{"text":"500–800 3DS","fontSize":8}},
+    {"type":"rectangle","id":"s5","x":210,"y":312,"width":80,"height":28,"roundness":{"type":3},"backgroundColor":"#d3f9d8","fillStyle":"solid","strokeColor":"#22c55e","strokeWidth":1.2,"label":{"text":"<500 OK","fontSize":8}},
+    {"type":"arrow","id":"f1","x":210,"y":201,"width":-18,"height":0,"points":[[0,0],[-18,0]],"endArrowhead":"arrow","strokeColor":"#f59e0b","strokeStyle":"dashed","label":{"text":"features","fontSize":8}}
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
+  "files": {}
+}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440">
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1e1e1e"/></marker>
+  <marker id="ar-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1e1e1e"/></marker>
+  <marker id="ar-p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#8b5cf6"/></marker>
+  <marker id="ar-ps" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#8b5cf6"/></marker>
+</defs>
+<rect x="20" y="30" width="780" height="380" rx="14" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1" stroke-dasharray="6,3"/>
+<rect x="60" y="60" width="190" height="60" rx="8" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="155" y="95" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#1e1e1e">Держатель карты</text>
+<rect x="570" y="60" width="190" height="60" rx="8" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+<text x="665" y="95" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#1e1e1e">Мерчант</text>
+<rect x="255" y="300" width="310" height="76" rx="8" fill="#e5dbff" stroke="#8b5cf6" stroke-width="2"/>
+<text x="410" y="330" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1e1e1e">American Express</text>
+<text x="410" y="352" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">эмитент + эквайер + сеть</text>
+<!-- Держатель ↔ Мерчант -->
+<line x1="250" y1="90" x2="570" y2="90" stroke="#1e1e1e" stroke-width="1.5" marker-start="url(#ar-s)" marker-end="url(#ar)"/>
+<text x="410" y="83" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">покупка</text>
+<!-- Держатель ↔ AmEx -->
+<line x1="165" y1="120" x2="300" y2="300" stroke="#8b5cf6" stroke-width="1.5" marker-start="url(#ar-ps)" marker-end="url(#ar-p)"/>
+<text x="185" y="215" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8b5cf6">карта,</text>
+<text x="185" y="229" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8b5cf6">счёт</text>
+<!-- Мерчант ↔ AmEx -->
+<line x1="655" y1="120" x2="520" y2="300" stroke="#8b5cf6" stroke-width="1.5" marker-start="url(#ar-ps)" marker-end="url(#ar-p)"/>
+<text x="625" y="210" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8b5cf6">приём карт,</text>
+<text x="625" y="226" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8b5cf6">расчёт</text>
+</svg>

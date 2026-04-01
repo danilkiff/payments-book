@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 240" width="620" height="240">
+  <defs>
+    <marker id="arr-a" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4a9eed"/></marker>
+    <marker id="arr-a-s" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto-start-reverse"><polygon points="0 0,8 3,0 6" fill="#4a9eed"/></marker>
+    <marker id="arr-gray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#888"/></marker>
+  </defs>
+
+  <!-- Банк-эквайер -->
+  <rect x="10" y="50" width="130" height="60" rx="5" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+  <text x="75" y="84" text-anchor="middle" font-size="11" fill="#1e1e1e">Банк-эквайер</text>
+
+  <!-- VisaNet box -->
+  <rect x="200" y="30" width="220" height="100" rx="5" fill="#e5dbff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="310" y="48" text-anchor="middle" font-size="12" font-weight="bold" fill="#555">VisaNet</text>
+  <line x1="205" y1="80" x2="415" y2="80" stroke="#adb5bd" stroke-width="0.8"/>
+  <text x="310" y="67" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e1e1e">BASE I</text>
+  <text x="310" y="77" text-anchor="middle" font-size="9" fill="#888">(авторизация)</text>
+  <text x="310" y="97" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e1e1e">BASE II</text>
+  <text x="310" y="110" text-anchor="middle" font-size="9" fill="#888">(клиринг)</text>
+
+  <!-- Банк-эмитент -->
+  <rect x="480" y="50" width="130" height="60" rx="5" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+  <text x="545" y="84" text-anchor="middle" font-size="11" fill="#1e1e1e">Банк-эмитент</text>
+
+  <!-- Auth arrows (bidirectional, solid blue) -->
+  <line x1="140" y1="68" x2="198" y2="68" stroke="#4a9eed" stroke-width="1.5" marker-end="url(#arr-a)" marker-start="url(#arr-a-s)"/>
+  <text x="169" y="64" text-anchor="middle" font-size="8" fill="#4a9eed">Авторизация</text>
+  <text x="169" y="75" text-anchor="middle" font-size="8" fill="#4a9eed">0100 ↔ 0110</text>
+
+  <line x1="420" y1="68" x2="478" y2="68" stroke="#4a9eed" stroke-width="1.5" marker-end="url(#arr-a)" marker-start="url(#arr-a-s)"/>
+  <text x="449" y="64" text-anchor="middle" font-size="8" fill="#4a9eed">Авторизация</text>
+  <text x="449" y="75" text-anchor="middle" font-size="8" fill="#4a9eed">0100 ↔ 0110</text>
+
+  <!-- Clearing arrows (dashed) -->
+  <line x1="140" y1="105" x2="198" y2="105" stroke="#888" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arr-gray)"/>
+  <text x="169" y="100" text-anchor="middle" font-size="8" fill="#888">TC33-файл</text>
+  <text x="169" y="113" text-anchor="middle" font-size="8" fill="#888">T+0/T+1</text>
+
+  <line x1="420" y1="105" x2="478" y2="105" stroke="#888" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arr-gray)"/>
+  <text x="449" y="100" text-anchor="middle" font-size="8" fill="#888">TC33-файл</text>
+  <text x="449" y="113" text-anchor="middle" font-size="8" fill="#888">T+0/T+1</text>
+
+  <!-- Timeline -->
+  <line x1="50" y1="160" x2="570" y2="160" stroke="#555" stroke-width="1.5" marker-end="url(#arr-gray)"/>
+  <line x1="185" y1="155" x2="185" y2="168" stroke="#888" stroke-width="1"/>
+  <line x1="435" y1="155" x2="435" y2="168" stroke="#888" stroke-width="1"/>
+  <text x="185" y="182" text-anchor="middle" font-size="9" font-weight="bold" fill="#888">Авторизация</text>
+  <text x="435" y="182" text-anchor="middle" font-size="9" font-weight="bold" fill="#888">Клиринг</text>
+  <text x="310" y="198" text-anchor="middle" font-size="9" fill="#888">несколько часов</text>
+</svg>

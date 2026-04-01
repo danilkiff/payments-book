@@ -1,0 +1,19 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "claude-code",
+  "elements": [
+    {"type":"rectangle","id":"r1","x":55,"y":10,"width":130,"height":36,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Клиент","fontSize":11}},
+    {"type":"rectangle","id":"r2","x":45,"y":66,"width":150,"height":42,"roundness":{"type":3},"backgroundColor":"#e5dbff","fillStyle":"solid","strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"Мерчант / PISP\nвыбор оплаты","fontSize":11}},
+    {"type":"rectangle","id":"r3","x":55,"y":130,"width":130,"height":42,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Банк клиента\nconsent + SCA","fontSize":11}},
+    {"type":"rectangle","id":"r4","x":45,"y":194,"width":150,"height":42,"roundness":{"type":3},"backgroundColor":"#e5dbff","fillStyle":"solid","strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"PISP API-платёж\nтокен + статус","fontSize":11}},
+    {"type":"rectangle","id":"r5","x":55,"y":258,"width":130,"height":36,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Подтверждение заказа","fontSize":11}},
+    {"type":"arrow","id":"a1","x":120,"y":46,"width":0,"height":20,"points":[[0,0],[0,20]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"arrow","id":"a2","x":120,"y":108,"width":0,"height":22,"points":[[0,0],[0,22]],"endArrowhead":"arrow"},
+    {"type":"arrow","id":"a3","x":120,"y":172,"width":0,"height":22,"points":[[0,0],[0,22]],"endArrowhead":"arrow","strokeColor":"#8b5cf6"},
+    {"type":"arrow","id":"a4","x":120,"y":236,"width":0,"height":22,"points":[[0,0],[0,22]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"rectangle","id":"note","x":10,"y":308,"width":220,"height":56,"roundness":{"type":3},"backgroundColor":"#f8f9fa","fillStyle":"solid","strokeColor":"#adb5bd","strokeStyle":"dashed","label":{"text":"Клиент возвращается из банка, а дальнейший платёж и статусы идут по API между PISP и банком.","fontSize":9}}
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
+  "files": {}
+}

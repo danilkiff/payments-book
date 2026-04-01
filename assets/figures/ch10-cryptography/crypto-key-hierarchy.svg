@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 320" width="620" height="320">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#555"/></marker>
+  </defs>
+  <!-- IMK -->
+  <rect x="220" y="10" width="180" height="44" rx="5" fill="#e5dbff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="310" y="29" text-anchor="middle" font-size="11" fill="#1e1e1e">Issuer Master Key (IMK)</text>
+  <text x="310" y="44" text-anchor="middle" font-size="10" fill="#555">в HSM</text>
+
+  <!-- Card Key 1 -->
+  <rect x="30" y="95" width="150" height="44" rx="5" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+  <text x="105" y="113" text-anchor="middle" font-size="10" fill="#1e1e1e">Card Key</text>
+  <text x="105" y="126" text-anchor="middle" font-size="9" fill="#555">PAN 4561...0892 / PSN 01</text>
+  <!-- Card Key 2 -->
+  <rect x="235" y="95" width="150" height="44" rx="5" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+  <text x="310" y="113" text-anchor="middle" font-size="10" fill="#1e1e1e">Card Key</text>
+  <text x="310" y="126" text-anchor="middle" font-size="9" fill="#555">PAN 5412...3456 / PSN 01</text>
+  <!-- Card Key 3 -->
+  <rect x="440" y="95" width="150" height="44" rx="5" fill="#dbe4ff" stroke="#4a9eed" stroke-width="1.5"/>
+  <text x="515" y="113" text-anchor="middle" font-size="10" fill="#1e1e1e">Card Key</text>
+  <text x="515" y="126" text-anchor="middle" font-size="9" fill="#555">PAN 2200...7890 / PSN 02</text>
+
+  <!-- IMK → Card Keys arrows -->
+  <line x1="310" y1="54" x2="105" y2="93" stroke="#555" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="185" y="76" text-anchor="middle" font-size="9" fill="#888">PAN+PSN</text>
+  <line x1="310" y1="54" x2="310" y2="93" stroke="#555" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="325" y="77" font-size="9" fill="#888">PAN+PSN</text>
+  <line x1="310" y1="54" x2="515" y2="93" stroke="#555" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="430" y="76" text-anchor="middle" font-size="9" fill="#888">PAN+PSN</text>
+
+  <!-- Session Keys for Card 1 -->
+  <rect x="15" y="190" width="82" height="34" rx="4" fill="#f0f4f8" stroke="#4a9eed" stroke-width="1"/>
+  <text x="56" y="204" text-anchor="middle" font-size="9" fill="#1e1e1e">Session Key</text>
+  <text x="56" y="215" text-anchor="middle" font-size="8" fill="#555">ATC 0001</text>
+  <rect x="110" y="190" width="82" height="34" rx="4" fill="#f0f4f8" stroke="#4a9eed" stroke-width="1"/>
+  <text x="151" y="204" text-anchor="middle" font-size="9" fill="#1e1e1e">Session Key</text>
+  <text x="151" y="215" text-anchor="middle" font-size="8" fill="#555">ATC 0002</text>
+  <text x="202" y="208" font-size="14" fill="#aaa">…</text>
+
+  <!-- Session Keys for Card 2 -->
+  <rect x="220" y="190" width="82" height="34" rx="4" fill="#f0f4f8" stroke="#4a9eed" stroke-width="1"/>
+  <text x="261" y="204" text-anchor="middle" font-size="9" fill="#1e1e1e">Session Key</text>
+  <text x="261" y="215" text-anchor="middle" font-size="8" fill="#555">ATC 0001</text>
+  <rect x="315" y="190" width="82" height="34" rx="4" fill="#f0f4f8" stroke="#4a9eed" stroke-width="1"/>
+  <text x="356" y="204" text-anchor="middle" font-size="9" fill="#1e1e1e">Session Key</text>
+  <text x="356" y="215" text-anchor="middle" font-size="8" fill="#555">ATC 0002</text>
+  <text x="407" y="208" font-size="14" fill="#aaa">…</text>
+
+  <!-- Session Keys for Card 3 -->
+  <rect x="425" y="190" width="82" height="34" rx="4" fill="#f0f4f8" stroke="#4a9eed" stroke-width="1"/>
+  <text x="466" y="204" text-anchor="middle" font-size="9" fill="#1e1e1e">Session Key</text>
+  <text x="466" y="215" text-anchor="middle" font-size="8" fill="#555">ATC 0001</text>
+  <rect x="520" y="190" width="82" height="34" rx="4" fill="#f0f4f8" stroke="#4a9eed" stroke-width="1"/>
+  <text x="561" y="204" text-anchor="middle" font-size="9" fill="#1e1e1e">Session Key</text>
+  <text x="561" y="215" text-anchor="middle" font-size="8" fill="#555">ATC 0002</text>
+
+  <!-- Card1 → Session arrows -->
+  <line x1="105" y1="139" x2="56" y2="188" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="105" y1="139" x2="151" y2="188" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Card2 → Session arrows -->
+  <line x1="310" y1="139" x2="261" y2="188" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="310" y1="139" x2="356" y2="188" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Card3 → Session arrows -->
+  <line x1="515" y1="139" x2="466" y2="188" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="515" y1="139" x2="561" y2="188" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- Note -->
+  <rect x="10" y="238" width="600" height="56" rx="4" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1"/>
+  <text x="310" y="255" text-anchor="middle" font-size="9" fill="#555">IMK хранится в HSM, из него по PAN и PSN выводится Card Key,</text>
+  <text x="310" y="268" text-anchor="middle" font-size="9" fill="#555">а уже из Card Key по счётчику ATC выводятся одноразовые</text>
+  <text x="310" y="281" text-anchor="middle" font-size="9" fill="#555">Session Key для конкретных EMV-операций.</text>
+</svg>

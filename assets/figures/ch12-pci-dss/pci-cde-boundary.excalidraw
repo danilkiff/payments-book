@@ -1,0 +1,26 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "claude-code",
+  "elements": [
+    {"type":"ellipse","id":"outer","x":50,"y":40,"width":380,"height":380,"backgroundColor":"#d3f9d8","fillStyle":"solid","strokeColor":"#adb5bd","strokeWidth":1,"opacity":50},
+    {"type":"ellipse","id":"middle","x":105,"y":95,"width":270,"height":270,"backgroundColor":"#fff3bf","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":1,"strokeStyle":"dashed","opacity":60},
+    {"type":"ellipse","id":"inner","x":160,"y":150,"width":160,"height":160,"backgroundColor":"#ffc9c9","fillStyle":"solid","strokeColor":"#ef4444","strokeWidth":1,"strokeStyle":"dashed","opacity":70},
+    {"type":"text","id":"label-cde","x":200,"y":200,"text":"CDE","fontSize":11,"strokeColor":"#ef4444","textAlign":"center"},
+    {"type":"text","id":"label-mid","x":240,"y":110,"text":"connected-to / security-impacting","fontSize":9,"strokeColor":"#b45309","textAlign":"center"},
+    {"type":"text","id":"label-out","x":240,"y":55,"text":"вне периметра","fontSize":10,"strokeColor":"#22c55e","textAlign":"center"},
+    {"type":"rectangle","id":"n1","x":190,"y":213,"width":100,"height":28,"roundness":{"type":3},"backgroundColor":"#ffffff","fillStyle":"solid","strokeColor":"#555","strokeWidth":1,"label":{"text":"Платёжный сервер","fontSize":9}},
+    {"type":"rectangle","id":"n2","x":162,"y":248,"width":72,"height":24,"roundness":{"type":3},"backgroundColor":"#ffffff","fillStyle":"solid","strokeColor":"#555","strokeWidth":1,"label":{"text":"БД с PAN","fontSize":9}},
+    {"type":"rectangle","id":"n3","x":246,"y":248,"width":66,"height":24,"roundness":{"type":3},"backgroundColor":"#ffffff","fillStyle":"solid","strokeColor":"#555","strokeWidth":1,"label":{"text":"Терминалы","fontSize":9}},
+    {"type":"rectangle","id":"n4","x":100,"y":150,"width":60,"height":24,"roundness":{"type":3},"backgroundColor":"#ffffff","fillStyle":"solid","strokeColor":"#555","strokeWidth":1,"label":{"text":"DNS","fontSize":9}},
+    {"type":"rectangle","id":"n5","x":318","y":150,"width":60,"height":24,"roundness":{"type":3},"backgroundColor":"#ffffff","fillStyle":"solid","strokeColor":"#555","strokeWidth":1,"label":{"text":"NTP","fontSize":9}},
+    {"type":"rectangle","id":"n6","x":75,"y":300,"width":80,"height":24,"roundness":{"type":3},"backgroundColor":"#ffffff","fillStyle":"solid","strokeColor":"#555","strokeWidth":1,"label":{"text":"Мониторинг","fontSize":9}},
+    {"type":"rectangle","id":"n7","x":320","y":300,"width":70,"height":24,"roundness":{"type":3},"backgroundColor":"#ffffff","fillStyle":"solid","strokeColor":"#555","strokeWidth":1,"label":{"text":"Файрвол","fontSize":9}},
+    {"type":"rectangle","id":"n8","x":40,"y":68,"width":68,"height":24,"roundness":{"type":3},"backgroundColor":"#ffffff","fillStyle":"solid","strokeColor":"#555","strokeWidth":1,"label":{"text":"CRM","fontSize":9}},
+    {"type":"rectangle","id":"n9","x":370","y":68,"width":78,"height":24,"roundness":{"type":3},"backgroundColor":"#ffffff","fillStyle":"solid","strokeColor":"#555","strokeWidth":1,"label":{"text":"Маркетинг","fontSize":9}},
+    {"type":"rectangle","id":"n10","x":186,"y":390,"width":108,"height":24,"roundness":{"type":3},"backgroundColor":"#ffffff","fillStyle":"solid","strokeColor":"#555","strokeWidth":1,"label":{"text":"HR-системы","fontSize":9}},
+    {"type":"rectangle","id":"note","x":10,"y":430,"width":460,"height":42,"roundness":{"type":3},"backgroundColor":"#f8f9fa","fillStyle":"solid","strokeColor":"#adb5bd","strokeStyle":"dashed","label":{"text":"Без сегментации соседние инфраструктурные сервисы и бизнес-системы тоже попадают в периметр PCI DSS.","fontSize":9}}
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
+  "files": {}
+}

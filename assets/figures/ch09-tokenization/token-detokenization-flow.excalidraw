@@ -1,0 +1,21 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "claude-code",
+  "elements": [
+    {"type":"rectangle","id":"r1","x":55,"y":10,"width":130,"height":36,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Держатель телефона","fontSize":11}},
+    {"type":"rectangle","id":"r2","x":55,"y":66,"width":130,"height":36,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Мерчант","fontSize":11}},
+    {"type":"rectangle","id":"r3","x":55,"y":122,"width":130,"height":36,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Эквайер или PSP","fontSize":11}},
+    {"type":"rectangle","id":"r4","x":55,"y":178,"width":130,"height":36,"roundness":{"type":3},"backgroundColor":"#e5dbff","fillStyle":"solid","strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"Карточная сеть","fontSize":11}},
+    {"type":"rectangle","id":"r5","x":70,"y":234,"width":100,"height":34,"roundness":{"type":3},"backgroundColor":"#fff3bf","fillStyle":"solid","strokeColor":"#f59e0b","strokeWidth":2,"label":{"text":"Token Vault","fontSize":11}},
+    {"type":"rectangle","id":"r6","x":55,"y":288,"width":130,"height":36,"roundness":{"type":3},"backgroundColor":"#dbe4ff","fillStyle":"solid","strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"Эмитент","fontSize":11}},
+    {"type":"arrow","id":"a1","x":120,"y":46,"width":0,"height":20,"points":[[0,0],[0,20]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"arrow","id":"a2","x":120,"y":102,"width":0,"height":20,"points":[[0,0],[0,20]],"endArrowhead":"arrow","strokeColor":"#4a9eed","label":{"text":"DPAN","fontSize":9}},
+    {"type":"arrow","id":"a3","x":120,"y":158,"width":0,"height":20,"points":[[0,0],[0,20]],"endArrowhead":"arrow","strokeColor":"#4a9eed"},
+    {"type":"arrow","id":"a4","x":120,"y":214,"width":0,"height":20,"points":[[0,0],[0,20]],"endArrowhead":"arrow","strokeColor":"#f59e0b","strokeStyle":"dashed","label":{"text":"DPAN→FPAN","fontSize":9}},
+    {"type":"arrow","id":"a5","x":120,"y":268,"width":0,"height":20,"points":[[0,0],[0,20]],"endArrowhead":"arrow","strokeColor":"#8b5cf6","label":{"text":"FPAN+meta","fontSize":9}},
+    {"type":"rectangle","id":"note","x":10,"y":340,"width":220,"height":44,"roundness":{"type":3},"backgroundColor":"#f8f9fa","fillStyle":"solid","strokeColor":"#adb5bd","strokeStyle":"dashed","label":{"text":"Де-токенизация идёт в карточной сети; мерчант и эквайер видят только DPAN.","fontSize":9}}
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
+  "files": {}
+}
