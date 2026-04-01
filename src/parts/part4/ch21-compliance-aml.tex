@@ -156,8 +156,57 @@ KYB нужен для того, чтобы понять, совпадает ли
 
 }
 \begin{table}[tbp]
-  \centering
-  \includefiguretex[width=\linewidth]{assets/figures/ch21-compliance-aml/compliance-kyb-risk}
+  \begingroup
+  \scriptsize
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.2}
+  \makebox[\textwidth][l]{%
+  \begin{minipage}{\fullwidth}
+  \begin{tabularx}{\fullwidth}{
+      @{}>{\RaggedRight\arraybackslash\bfseries}p{0.18\fullwidth}
+      Y
+      Y
+      Y@{}
+    }
+    \toprule
+    \rowcolor{Panel}
+    Критерий &
+    \cellcolor{Good!16}\textbf{Низкий риск} &
+    \cellcolor{Warn!18}\textbf{Средний риск} &
+    \cellcolor{Bad!16}\textbf{Высокий риск} \\
+    \midrule
+    \rowcolor{Soft}
+    Примеры MCC &
+    retail, SaaS &
+    travel &
+    crypto exchange,\newline gambling, adult \\
+    Документы &
+    стандартный пакет &
+    расширенный пакет\newline + лицензии &
+    расширенный пакет\newline + финансовая отчётность \\
+    \rowcolor{Soft}
+    Мониторинг после онбординга &
+    квартальный &
+    ежемесячный &
+    еженедельный \\
+    Rolling reserve &
+    нет &
+    5--10\% &
+    10--20\% \\
+    \bottomrule
+  \end{tabularx}
+  \par\smallskip
+  \fcolorbox{Ink!18}{Soft}{%
+    \parbox{\dimexpr\fullwidth-2\fboxsep-2\fboxrule\relax}{%
+      \textcolor{Muted}{Цвет кодирует не "хорошо/плохо", а глубину due
+        diligence: чем выше риск-профиль
+        мерчанта, тем шире пакет документов, плотнее пост-онбординг
+      мониторинг и вероятнее rolling reserve.}%
+    }%
+  }
+  \end{minipage}%
+  }
+  \endgroup
   \caption{Чек-лист KYB по категориям риска.}~\label{fig:compliance-kyb-risk}
 \end{table}
 

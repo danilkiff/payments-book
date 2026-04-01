@@ -421,30 +421,46 @@ Sanctions поддерживается OFAC~\cite{ofac-sanctions-list-service};
 После разбора архитектурных слоёв различия между UnionPay
 и двумя классическими глобальными схемами удобно свести в одну таблицу.
 
-\paragraph{Архитектурные отличия UnionPay, Visa и Mastercard}
-\begin{center}
-  \begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash}p{0.26\textwidth}>{\RaggedRight\arraybackslash}X>{\RaggedRight\arraybackslash}X>{\RaggedRight\arraybackslash}X@{}}
+\begin{table}[tbp]
+  \begingroup
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.2}
+  \makebox[\textwidth][l]{%
+  \begin{tabularx}{\fullwidth}{
+      @{}>{\RaggedRight\arraybackslash}p{0.22\textwidth}
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X@{}
+    }
     \toprule
-    \textbf{Параметр}        & \textbf{UnionPay}
-    & \textbf{Visa}           & \textbf{Mastercard}        \\
+    \rowcolor{Panel}
+    \textbf{Параметр} & \textbf{UnionPay}
+    & \textbf{Visa} & \textbf{Mastercard} \\
     \midrule
-    Процессинговая инфр.     & CUPS (внутри Китая),
-    UPI (международно)       & VisaNet (BASE I + BASE II)
-    & Единый периметр (Authorization Platform + GCMS)    \\
-    Клиринговый формат       & Реестры через CUPS/UPI
-    & TC33 через BASE II      & IPM через GCMS             \\
-    Бесконтактное ядро       & QuickPass-ядро (схема-специфичный)
-    & VCPS                    & PayPass/M/Chip Contactless \\
-    Интернет-аутентификация  & UnionPay 3DS (EMVCo) + SecurePlus (SMS/токен)
-    & Visa Secure (3DS)       & Mastercard Identity Check (3DS) \\
-    Обновление реквизитов    & Нет публичного аналога VAU/ABU
-    & Visa Account Updater    & Automatic Billing Updater  \\
-    Таблицы interchange      & Публикуются для части рынков (EEA, UK,
+    \rowcolor{Soft}
+    Процессинговая инфр. & CUPS (внутри Китая),
+    UPI (международно) & VisaNet (BASE I + BASE II)
+    & Единый периметр (Authorization Platform + GCMS) \\
+    Клиринговый формат & Реестры через CUPS/UPI
+    & TC33 через BASE II & IPM через GCMS \\
+    \rowcolor{Soft}
+    Бесконтактное ядро & QuickPass-ядро (схема-специфичный)
+    & VCPS & PayPass/M/Chip Contactless \\
+    Интернет-аутентификация & UnionPay 3DS (EMVCo) + SecurePlus (SMS/токен)
+    & Visa Secure (3DS) & Mastercard Identity Check (3DS) \\
+    \rowcolor{Soft}
+    Обновление реквизитов & Нет публичного аналога VAU/ABU
+    & Visa Account Updater & Automatic Billing Updater \\
+    Таблицы interchange & Публикуются для части рынков (EEA, UK,
     JP, CA и др.); для остальных -- договорные
-    & Публикуются по регионам & Публикуются по регионам    \\
+    & Публикуются по регионам & Публикуются по регионам \\
     \bottomrule
-  \end{tabularx}
-\end{center}
+  \end{tabularx}%
+  }
+  \endgroup
+  \caption{Архитектурные отличия UnionPay, Visa и Mastercard.}~\label{tab:up-vs-visa-mc}
+\end{table}
 
 Наиболее существенны различия в двух местах. Первое -- бесконтактное
 ядро: терминал с VCPS или PayPass требует отдельного QuickPass-ядра

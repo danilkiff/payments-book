@@ -192,29 +192,40 @@ MIT/CIT-термины по аналогии.
 Чтобы понять, когда использовать СБП, а когда карту, полезно
 сравнить их по нескольким практическим признакам.
 
-\paragraph{СБП и карты: пять практических различий}
-
 \begin{table}[tbp]
-  \caption{СБП и карты: пять практических различий.}~\label{tab:sbp-card-differences}
-  \centering
+  \begingroup
   \small
-  \begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash}p{0.35\textwidth}>{\RaggedRight\arraybackslash}X>{\RaggedRight\arraybackslash}X@{}}
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.2}
+  \makebox[\textwidth][l]{%
+  \begin{tabularx}{\fullwidth}{
+      @{}>{\RaggedRight\arraybackslash}p{0.28\textwidth}
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X@{}
+    }
     \toprule
-    \textbf{Параметр}    & \textbf{Карты}                         &
-    \textbf{СБП}                              \\
+    \rowcolor{Panel}
+    \textbf{Параметр} & \textbf{Карты} &
+    \textbf{СБП} \\
     \midrule
-    Зачисление средств   & После авторизации и отдельного расчёта &
-    Мгновенно                                 \\
-    Оспаривание          & Чарджбэк и сетевые процедуры           &
-    Встроенного чарджбэка нет                 \\
-    География            & Международная                          &
-    Внутрироссийская                          \\
-    Предельная сумма     & Зависит от карты и банка               &
+    \rowcolor{Soft}
+    Зачисление средств & После авторизации и отдельного расчёта &
+    Мгновенно \\
+    Оспаривание & Чарджбэк и сетевые процедуры &
+    Встроенного чарджбэка нет \\
+    \rowcolor{Soft}
+    География & Международная &
+    Внутрироссийская \\
+    Предельная сумма & Зависит от карты и банка &
     Меньше 1~млн рублей за перевод или платёж \\
-    Комиссия для бизнеса & Определяется договором эквайринга      & Не
-    более 0,4\% или 0,7\%                  \\
+    \rowcolor{Soft}
+    Комиссия для бизнеса & Определяется договором эквайринга & Не
+    более 0,4\% или 0,7\% \\
     \bottomrule
-  \end{tabularx}
+  \end{tabularx}%
+  }
+  \endgroup
+  \caption{СБП и карты: пять практических различий.}~\label{tab:sbp-card-differences}
 \end{table}
 
 Карты остаются незаменимыми там, где нужна международная приёмка,

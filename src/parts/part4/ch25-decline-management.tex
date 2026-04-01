@@ -61,8 +61,57 @@ Unavailable и \texttt{96} -- System Malfunction говорят скорее о 
 эмитента~\cite{visa-core-rules}.
 
 \begin{table}[tbp]
-  \centering
-  \includefiguretex[width=\linewidth]{assets/figures/ch25-decline-management/decline-codes}
+  \begingroup
+  \scriptsize
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.2}
+  \makebox[\textwidth][l]{%
+  \begin{minipage}{\fullwidth}
+  \begin{tabularx}{\fullwidth}{@{}Y Y Y@{}}
+    \toprule
+    \cellcolor{Bad!16}\textbf{Не повторять ту же операцию}
+    &
+    \cellcolor{Warn!18}\textbf{Нужны новые данные / пауза}
+    &
+    \cellcolor{AccentA!14}\textbf{Технический / другой путь}
+    \\
+    \midrule
+    \cellcolor{Bad!4}\textbf{04 Pick Up}\newline stop; запросить другой credential
+    \newline\textbf{14 Invalid Account}\newline проверить PAN
+    \newline\textbf{41 Lost Card}\newline карта утеряна; stop
+    \newline\textbf{43 Stolen Card}\newline карта украдена; stop
+    &
+    \cellcolor{Warn!5}\textbf{54 Expired Card}\newline обновить expiry
+    / PAN; в Mastercard CNP не повторять тот же PAN+expiry
+    \newline\textbf{51 Insufficient Funds}\newline пауза; не делать blind loop
+    \newline\textbf{61 Exceeds Limit}\newline проверить сумму и лимит
+    \newline\textbf{62 Restricted Card}\newline смотреть контекст и правила схемы
+    \newline\textbf{65 Freq. Limit}\newline дождаться сброса лимита
+    \newline\textbf{05 Do Not Honor}\newline generic decline; только в
+    пределах caps &
+    \cellcolor{AccentA!5}\textbf{91 Issuer Unavailable}\newline
+    проблема доступности route / issuer
+    \newline\textbf{96 System Malfunction}\newline технический сбой;
+    сначала final state
+    \newline\textbf{01 Refer}\newline нужен иной канал или действие банка
+    \newline\textbf{timeout}\newline подтвердить финальный статус,
+    затем controlled retry \\
+    \bottomrule
+  \end{tabularx}
+  \par\smallskip
+  \fcolorbox{Ink!18}{Soft}{%
+    \parbox{\dimexpr\fullwidth-2\fboxsep-2\fboxrule\relax}{%
+      \textcolor{Muted}{Точная схема сложнее этой таблицы: Visa делит
+        decline codes на Category~1/2/3/4,
+        а Mastercard отдельно запрещает часть CNP retries. Здесь
+        показан только первый операционный вопрос:
+        прекращать операцию, обновлять данные или работать с доступностью
+      маршрута.}%
+    }%
+  }
+  \end{minipage}%
+  }
+  \endgroup
   \caption{Рабочая классификация кодов ответа по следующему действию.}~\label{fig:decline-codes}
 \end{table}
 

@@ -66,23 +66,41 @@ MTI — первые четыре цифры сообщения — задаёт
 
 Наиболее важные для нас MTI выглядят так:
 
-\begin{center}
-  \small
-  \begin{tabular}{ll}
-    \textbf{MTI} & \textbf{Смысл}
-    \\[3pt]
-    MTI~0100     & Авторизационный запрос                                 \\
-    MTI~0110     & Ответ на авторизацию                                   \\
-    MTI~0200     & Финансовый запрос                                      \\
-    MTI~0210     & Ответ на финансовый запрос                             \\
-    MTI~0400     & Запрос на reversal                                     \\
-    MTI~0410     & Ответ на reversal                                      \\
-    MTI~0420     & Reversal advice / adjustment advice                    \\
-    MTI~0430     & Ответ на reversal advice                               \\
-    MTI~0800     & Сетевой служебный запрос: sign-on, echo, обмен ключами \\
-    MTI~0810     & Ответ на сетевой служебный запрос                      \\
-  \end{tabular}
-\end{center}
+\medskip
+\noindent
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.2}
+\makebox[\textwidth][l]{%
+\begin{tabularx}{\fullwidth}{
+    @{}>{\RaggedRight\arraybackslash}p{0.12\textwidth}
+    Y@{}
+  }
+  \toprule
+  \rowcolor{Panel}
+  \textbf{MTI} & \textbf{Смысл} \\
+  \midrule
+  \rowcolor{Soft}
+  MTI~0100 & Авторизационный запрос \\
+  MTI~0110 & Ответ на авторизацию \\
+  \rowcolor{Soft}
+  MTI~0200 & Финансовый запрос \\
+  MTI~0210 & Ответ на финансовый запрос \\
+  \rowcolor{Soft}
+  MTI~0400 & Запрос на reversal \\
+  MTI~0410 & Ответ на reversal \\
+  \rowcolor{Soft}
+  MTI~0420 & Reversal advice / adjustment advice \\
+  MTI~0430 & Ответ на reversal advice \\
+  \rowcolor{Soft}
+  MTI~0800 & Сетевой служебный запрос: sign-on, echo, обмен ключами \\
+  MTI~0810 & Ответ на сетевой служебный запрос \\
+  \bottomrule
+\end{tabularx}%
+}
+\endgroup
+\medskip
 Связь с предыдущей главой здесь прямая. MTI~0100/MTI~0110 —
 это двухсообщная авторизация: эмитент принимает решение,
 но деньги ещё не двигаются в расчётном смысле. MTI~0200/MTI~0210

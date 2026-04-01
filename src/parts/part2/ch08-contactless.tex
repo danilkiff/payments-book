@@ -123,27 +123,37 @@ MPA и опирается на ГОСТ-криптографию в цепочк
 Детали MPA, маршрутизации и кобейджинга — в главе~\ref{ch:mir}.
 
 \begin{table}[tbp]
-  \centering
   \begingroup
   \small
-  \renewcommand{\arraystretch}{1.22}
-  \begin{tabularx}{\textwidth}{
-      >{\RaggedRight\arraybackslash}p{0.23\textwidth}
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.2}
+  \makebox[\textwidth][l]{%
+  \begin{tabularx}{\fullwidth}{
+      @{}>{\RaggedRight\arraybackslash}p{0.20\textwidth}
       >{\RaggedRight\arraybackslash}X
       >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X@{}
     }
+    \toprule
+    \rowcolor{Panel}
+    \textbf{Параметр} &
+    \cellcolor{AccentA!10}\textbf{qVSDC (Visa)} &
+    \cellcolor{AccentB!10}\textbf{M\slash Chip Contactless (MC)} &
+    \cellcolor{Good!12}\textbf{Мир бесконтактный} \\
+    \midrule
     \rowcolor{Soft}
-    \textbf{Параметр} & \textbf{qVSDC (Visa)} &
-    \textbf{M\slash Chip Contactless (MC)} & \textbf{Мир бесконтактный}\\
-    \textbf{Аутентификация данных} & fDDA & CVC3 или ARQC & ГОСТ 34.10\\
-    \textbf{Тип криптограммы} & ARQC & CVC3 или ARQC & ARQC (ГОСТ)\\
-    \textbf{Офлайн-одобрение} & нет (предпочтительно; офлайн
-    возможен при fDDA) & да (ограниченно) & да\\
-    \textbf{CVM limit} & задаётся схемой по рынку & задаётся схемой по рынку & по правилам НСПК\\
-    \textbf{Криптография} & RSA + 3DES (AES) & RSA + 3DES & ГОСТ (ECC
-    + Кузнечик)\\
-  \end{tabularx}
+    Аутентификация данных & fDDA & CVC3 или ARQC & ГОСТ 34.10 \\
+    Тип криптограммы & ARQC & CVC3 или ARQC & ARQC (ГОСТ) \\
+    \rowcolor{Soft}
+    Офлайн-одобрение & нет (предпочтительно; офлайн
+    возможен при fDDA) & да (ограниченно) & да \\
+    CVM limit & задаётся схемой по рынку & задаётся схемой по рынку & по правилам НСПК \\
+    \rowcolor{Soft}
+    Криптография & RSA + 3DES (AES) & RSA + 3DES & ГОСТ (ECC
+    + Кузнечик) \\
+    \bottomrule
+  \end{tabularx}%
+  }
   \endgroup
   \caption{Сравнение основных бесконтактных ядер.}~\label{tab:contactless-kernel-comparison}
 \end{table}

@@ -55,8 +55,102 @@ Visa, Mastercard, Мир, UnionPay и AmEx.
 к обычному банковскому счёту.
 
 \begin{table}[tbp]
-  \centering
-  \includefiguretex[width=\linewidth]{assets/figures/ch26-alternative-methods/alt-taxonomy-matrix}
+  \begingroup
+  \scriptsize
+  \setlength{\tabcolsep}{2pt}
+  \renewcommand{\arraystretch}{1.2}
+  \makebox[\textwidth][l]{%
+  \begin{minipage}{\fullwidth}
+  \begin{tabularx}{\fullwidth}{
+      @{}>{\RaggedRight\arraybackslash\bfseries}p{0.170\fullwidth}
+      >{\RaggedRight\arraybackslash}p{0.075\fullwidth}
+      >{\RaggedRight\arraybackslash}p{0.095\fullwidth}
+      >{\RaggedRight\arraybackslash}p{0.090\fullwidth}
+      >{\RaggedRight\arraybackslash}p{0.085\fullwidth}
+      >{\RaggedRight\arraybackslash}p{0.145\fullwidth}
+      >{\RaggedRight\arraybackslash}p{0.100\fullwidth}
+      >{\RaggedRight\arraybackslash}p{0.155\fullwidth}@{}
+    }
+    \toprule
+    \rowcolor{Panel}
+    Метод оплаты & Тип & Финальность & Chargeback & PCI
+    scope & Международность & Скорость & Комиссия мерчанта \\
+    \midrule
+    \rowcolor{Soft}
+    Карты &
+    \cellcolor{Bad!10}pull &
+    \cellcolor{Bad!10}нет &
+    \cellcolor{Bad!10}есть &
+    \cellcolor{Bad!10}да &
+    \cellcolor{Good!14}глобальный &
+    \cellcolor{Good!14}мс &
+    \cellcolor{Bad!10}высокая \\
+    A2A (СБП/PIX) &
+    \cellcolor{Good!14}push &
+    \cellcolor{Good!14}да &
+    \cellcolor{Good!14}нет &
+    \cellcolor{Good!14}нет &
+    \cellcolor{Ink!6}региональный &
+    \cellcolor{Good!14}сек &
+    \cellcolor{Good!14}низкая \\
+    \rowcolor{Soft}
+    Closed-loop кошелёк &
+    \cellcolor{Ink!6}push/pull &
+    \cellcolor{Ink!6}зависит &
+    \cellcolor{Ink!6}ограничен &
+    \cellcolor{Good!14}нет &
+    \cellcolor{Bad!10}нишевый &
+    \cellcolor{Good!14}мс &
+    \cellcolor{Ink!6}средняя \\
+    BNPL &
+    \cellcolor{Bad!10}pull &
+    \cellcolor{Bad!10}нет &
+    \cellcolor{Bad!10}есть &
+    \cellcolor{Ink!6}нет &
+    \cellcolor{Ink!6}региональный &
+    \cellcolor{Good!14}сек &
+    \cellcolor{Ink!6}средняя \\
+    \rowcolor{Soft}
+    Cash-based &
+    \cellcolor{Good!14}push &
+    \cellcolor{Good!14}да &
+    \cellcolor{Good!14}нет &
+    \cellcolor{Good!14}нет &
+    \cellcolor{Bad!10}нишевый &
+    \cellcolor{Bad!10}часы / дни &
+    \cellcolor{Ink!6}нет данных \\
+    CBDC (цифровой рубль) &
+    \cellcolor{Good!14}push &
+    \cellcolor{Good!14}да &
+    \cellcolor{Good!14}нет &
+    \cellcolor{Good!14}нет &
+    \cellcolor{Bad!10}региональный &
+    \cellcolor{Ink!6}сек / мин &
+    \cellcolor{Ink!6}нет данных \\
+    \rowcolor{Soft}
+    Crypto &
+    \cellcolor{Good!14}push &
+    \cellcolor{Good!14}да &
+    \cellcolor{Good!14}нет &
+    \cellcolor{Good!14}нет &
+    \cellcolor{Ink!6}глобальный / нишевый &
+    \cellcolor{Ink!6}мин / часы &
+    \cellcolor{Ink!6}нет данных \\
+    \bottomrule
+  \end{tabularx}
+  \par\smallskip
+  \fcolorbox{Ink!18}{Soft}{%
+    \parbox{\dimexpr\fullwidth-2\fboxsep-2\fboxrule\relax}{%
+      \textcolor{Muted}{Зелёный цвет показывает сравнительное
+        преимущество, красный -- ограничение, серый -- нейтральную или
+        зависящую от провайдера зону.
+        * Данные оценочные и меняются в зависимости от конкретного
+      провайдера, маршрута и географии.}%
+    }%
+  }
+  \end{minipage}%
+  }
+  \endgroup
   \caption{\enquote{Методы оплаты / параметры}}~\label{fig:alt-taxonomy-matrix}
 \end{table}
 
