@@ -1,0 +1,52 @@
+% commands.tex — кастомные макросы для книги о платёжном стеке
+
+%% ── Платёжные термины ────────────────────────────────────────────────────────
+% Единообразное форматирование специфических терминов по всей книге.
+
+\newcommand{\iso}[1]{\textsc{iso\,#1}}           % \iso{8583} → ISO 8583
+\newcommand{\mti}[1]{\texttt{#1}}                 % MTI значение
+\newcommand{\de}[1]{DE\,\texttt{#1}}              % Data Element: \de{55}
+\newcommand{\rc}[1]{\texttt{#1}}                  % Response Code: \rc{05}
+\newcommand{\pan}[1]{\texttt{#1}}                 % PAN/номер карты
+\newcommand{\hex}[1]{\texttt{0x#1}}               % hex-значение
+\newcommand{\law}[1]{\textit{#1}}                 % нормативный акт: \law{161-ФЗ}
+\newcommand{\scheme}[1]{\textsc{#1}}              % платёжная схема: \scheme{Visa}
+
+%% ── Специальные блоки ────────────────────────────────────────────────────────
+% Определения, предупреждения и справочные блоки через kaobook environments.
+
+% "На практике" — практический совет
+\newenvironment{practice}{%
+  \begin{kaobox}[frametitle=На практике]
+}{%
+  \end{kaobox}
+}
+
+% "Важно" — критическое замечание
+\newenvironment{important}{%
+  \begin{kaobox}[frametitle=Важно, backgroundcolor=red!5, frametitlebackgroundcolor=red!20]
+}{%
+  \end{kaobox}
+}
+
+% "Определение" — глоссарийная вставка внутри текста
+\newenvironment{termdef}[1]{%
+  \begin{kaobox}[frametitle=Определение: #1, backgroundcolor=blue!4, frametitlebackgroundcolor=blue!15]
+}{%
+  \end{kaobox}
+}
+
+%% ── Аббревиатуры (разворачиваются при первом упоминании) ─────────────────────
+% Используйте \gls{pan} вместо "PAN" — пакет glossaries из kaobook.
+% Файл с определениями: assets/glossary.tex (добавить при необходимости).
+
+%% ── Todo-заметки ─────────────────────────────────────────────────────────────
+% Цветовые категории для \todo{}:
+\newcommand{\todofig}[1]{\missingfigure{#1}}
+\newcommand{\todocite}[1]{\todo[color=green!30]{Источник: #1}}
+\newcommand{\todocheck}[1]{\todo[color=orange!40]{Проверить: #1}}
+
+%% ── Вспомогательные команды ──────────────────────────────────────────────────
+\newcommand{\tbd}{\textcolor{gray}{\textit{[раздел в работе]}}}
+\newcommand{\eg}{т.\,е.\ }
+\newcommand{\cf}{ср.\ }

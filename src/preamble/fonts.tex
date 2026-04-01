@@ -1,0 +1,29 @@
+% fonts.tex — настройка шрифтов для XeLaTeX + русский язык
+
+\usepackage{fontspec}
+
+%% Основной шрифт (с засечками) — хорошо читается в печатном виде.
+%% Требует установки: https://fonts.google.com/specimen/PT+Serif
+\setmainfont{PT Serif}[
+  Ligatures = TeX,
+  Numbers   = OldStyle,
+]
+
+%% Шрифт без засечек — для подписей, колонтитулов, боковых заметок.
+%% Требует установки: https://fonts.google.com/specimen/PT+Sans
+\setsansfont{PT Sans}[
+  Ligatures = TeX,
+]
+
+%% Моноширинный шрифт — для листингов кода, hex-дампов, идентификаторов.
+%% Требует установки: https://github.com/tonsky/FiraCode
+\setmonofont{Fira Code}[
+  Scale          = 0.88,
+  Contextuals    = Alternate,   % лигатуры кода: -> => !=
+]
+
+%% Запасной вариант: если PT Serif не установлен, XeLaTeX возьмёт Latin Modern.
+%% Раскомментируйте строки ниже, чтобы использовать системные шрифты:
+% \setmainfont{Times New Roman}
+% \setsansfont{Arial}
+% \setmonofont{Courier New}

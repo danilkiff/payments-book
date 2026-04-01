@@ -1,0 +1,51 @@
+% packages.tex — все \usepackage в одном месте
+% Порядок важен: языковые пакеты идут первыми после класса.
+
+%% ── Язык и кодировка ─────────────────────────────────────────────────────────
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+
+%% ── Математика ───────────────────────────────────────────────────────────────
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%% ── Микротипографика ─────────────────────────────────────────────────────────
+\usepackage{microtype}
+
+%% ── Таблицы ──────────────────────────────────────────────────────────────────
+\usepackage{booktabs}   % профессиональные линейки в таблицах
+\usepackage{longtable}  % таблицы на несколько страниц
+\usepackage{tabularx}   % таблицы с авто-шириной колонок
+
+%% ── Плавающие объекты и подписи ─────────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%% ── Листинги кода ────────────────────────────────────────────────────────────
+\usepackage{listings}
+\usepackage{xcolor}
+
+%% ── Диаграммы (TikZ) ─────────────────────────────────────────────────────────
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, fit, backgrounds}
+
+%% ── Sequence diagrams ────────────────────────────────────────────────────────
+\usepackage{pgf-umlsd}
+
+%% ── Гиперссылки (kaobook подключает hyperref, добавляем настройки) ───────────
+\hypersetup{
+  pdftitle  = {Платёжный стек},
+  pdfauthor = {},
+  colorlinks = true,
+  linkcolor  = RoyalBlue,
+  citecolor  = ForestGreen,
+  urlcolor   = Maroon,
+}
+
+%% ── Прочее ───────────────────────────────────────────────────────────────────
+\usepackage{enumitem}   % гибкие списки
+\usepackage{csquotes}   % правильные кавычки
+\usepackage{todonotes}  % \todo{} и \missingfigure{}
+\usepackage{pdflscape}  % отдельные страницы в альбомной ориентации
