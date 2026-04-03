@@ -328,10 +328,11 @@ Request (RReq). Для продавца это означает промежут
 продавцов.
 
 Правила для attempted authentication меняются чаще остальных.
-Visa с 23~апреля 2022 года больше не разрешает
-эмитентам, участвующим в Visa Secure на EMV 3DS, возвращать
-\enquote{Attempts Response}: такой ответ может вернуть только
-Visa Attempts Server~\cite{visa-secure-rules-update}.
+Visa с 23~апреля 2022 года требует от эмитентов, участвующих
+в Visa Secure на EMV 3DS, возвращать \enquote{Not Authenticated}
+вместо \enquote{Attempts}: сам ответ \enquote{Attempts} в этой
+программе генерирует Visa Attempts Server в режиме
+stand-in, а не ACS эмитента~\cite{visa-secure-rules-update}.
 
 В России, где PSD2 не действует, перенос ответственности для
 внутрироссийских операций определяется правилами НСПК для карт Мир.

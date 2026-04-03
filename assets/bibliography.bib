@@ -922,13 +922,37 @@
   note   = {Cryptology ePrint Archive, Paper 2009/310}
 }
 
+@online{mc-paypass-rrp,
+  author = {{Mastercard}},
+  title  = {{M/Chip} Relay-Resistant Protocol ({PayPass--RRP})},
+  year   = {2017},
+  note   = {Mastercard внедрил RRP в M/Chip начиная с 2017 года; протокол ограничивает round-trip-time на критичных шагах обмена данными микросекундными окнами для противодействия атаке ретрансляции}
+}
+
+@online{fca-cvm-limit-2026,
+  author = {{Financial Conduct Authority}},
+  title  = {Removing the contactless payment limit},
+  url    = {https://www.fca.org.uk/news/news-stories/removing-contactless-payment-limit},
+  year   = {2026},
+  note   = {С марта 2026 года FCA отменил единый потолок 100 GBP по бесконтактным операциям; банки устанавливают собственные пороги в рамках своих риск-моделей}
+}
+
+@online{apple-nfc-eu-dma-2024,
+  author = {{Apple Inc.}},
+  title  = {Developers can now offer in-app NFC transactions using the Secure Element},
+  url    = {https://developer.apple.com/news/?id=eit5wxe1},
+  year   = {2024},
+  note   = {Объявление Apple от 14 августа 2024 года об открытии in-app NFC через Secure Element для сторонних разработчиков в EU после Digital Markets Act}
+}
+
 % --- Часть II: Токенизация ---
 
 @online{emvco-payment-tokenisation,
   author = {{EMVCo}},
-  title  = {{EMV} Payment Tokenisation},
-  url    = {https://www.emvco.com/emv-technologies/payment-tokenisation/},
-  year   = {2026}
+  title  = {{EMV} Payment Tokenisation Specification --- Technical Framework v2.3.1},
+  url    = {https://www.emvco.com/specifications/payment-tokenisation-specification-technical-framework/},
+  year   = {2024},
+  note   = {Актуальная редакция EMVCo Payment Tokenisation Specification на момент написания: v2.3.1, апрель 2024}
 }
 
 @online{emvco-payment-tokenisation-guide,
@@ -2315,10 +2339,10 @@
 
 @online{cbr-sbp-fee-rules,
   author = {{Банк России}},
-  title  = {Положение о размере и порядке взимания платы оператором услуг платёжной инфраструктуры с участников Системы быстрых платежей},
+  title  = {Тарифы Системы быстрых платежей: решения Совета директоров Банка России о размере и порядке взимания платы},
   url    = {https://www.cbr.ru/PSystem/sfp/},
   year   = {2024},
-  note   = {TODO: уточнить точный номер действующего Положения (предположительно 732-П) и дату принятия по первоисточнику. Устанавливает тарифы для C2B и B2B и состав социально значимых категорий}
+  note   = {Тарифы C2B и B2B и состав социально значимых категорий устанавливаются решениями Совета директоров Банка России. Положение Банка России от 24.09.2020 № 732-П регулирует платёжную систему Банка России в целом, но не задаёт ставки СБП напрямую}
 }
 
 @online{nspk-universal-qr,
@@ -2383,6 +2407,14 @@
   url    = {https://www.iso.org/standard/34259.html},
   year   = {2004},
   note   = {Реестр RID (Registered Application Provider Identifier); RID НСПК для платёжного приложения Мир -- A000000658}
+}
+
+@online{iso-7816-4,
+  author = {{ISO/IEC}},
+  title  = {{ISO/IEC} 7816-4: Identification cards -- Integrated circuit cards -- Part 4: Organization, security and commands for interchange},
+  url    = {https://www.iso.org/standard/77180.html},
+  year   = {2020},
+  note   = {Базовый стандарт APDU и кодов состояния SW1/SW2 (9000, 6Axx, 69xx и др.), на которые опираются спецификации EMV}
 }
 
 @online{nspk-sbp-openapi,
