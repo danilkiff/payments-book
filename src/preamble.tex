@@ -138,19 +138,3 @@ itemsep=0pt,topsep=0pt,partopsep=0pt}
     ]#2
 \end{tcolorbox}}
 
-\newcommand{\marginalnote}[4][0pt]{%
-  \begin{tcolorbox}[notebox,
-      colframe=#4, colback=#4!6,
-      title={\bfseries #2}, coltitle=#4,
-    ]#3
-\end{tcolorbox}}
-
-\newcommand{\marginfigure}[3][0pt]{%
-  \begin{tcolorbox}[notebox, colframe=black!40, colback=black!3,
-    ]\centering#2\par\smallskip\RaggedRight#3
-\end{tcolorbox}}
-
-% \sidefootnote → стандартный footnote; [offset] игнорируется
-\newcommand{\sidefootnote}[2][0pt]{\footnote{#2}}
-
-\setcounter{tocdepth}{1}

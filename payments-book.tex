@@ -15,11 +15,6 @@
 
 \input{src/preamble}
 
-\title{Инженерия платежей}
-\subtitle{Открытая книга о~карточных платежах,\\СБП и платёжной инфраструктуре}
-\author{}
-\date{\the\year}
-
 \addbibresource{assets/bibliography.bib}
 
 \begin{document}
@@ -34,14 +29,16 @@
 \input{src/frontmatter/preface}
 \input{src/frontmatter/toc}
 
-\mainmatter\par\input{src/parts/part1/index}
+\mainmatter
+\input{src/parts/part1/index}
 \input{src/parts/part2/index}
 \input{src/parts/part3/index}
 \input{src/parts/part4/index}
 \input{src/parts/part5/index}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
-\backmatter\par\input{src/backmatter/epilogue}
+\backmatter
+\input{src/backmatter/epilogue}
 \input{src/backmatter/source-map}
 \input{src/backmatter/bibliography}
 
