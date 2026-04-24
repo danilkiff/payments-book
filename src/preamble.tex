@@ -1,5 +1,5 @@
 % Пакеты LaTeX и глобальные настройки книги.
-% Редактору: этот файл не нужно трогать при добавлении глав или фигур.
+% Редактору: визуальные стили (цвета, notebox, маркер) — в src/styles.tex.
 
 % --- Кодировки и язык ---
 \usepackage[T2A,T1]{fontenc}
@@ -36,8 +36,9 @@
 \usepackage{eso-pic}
 \usepackage{ccicons}
 \usepackage{soul}
-\input{src/figure-styles}            % загружает xcolor[table] — до tcolorbox
-\usepackage[skins,breakable]{tcolorbox}
+
+% --- Визуальные стили (цвета, tcolorbox, notebox-блоки, маркер) ---
+\input{src/styles}
 
 % --- Метаданные PDF ---
 \hypersetup{
@@ -77,64 +78,3 @@ itemsep=0pt,topsep=0pt,partopsep=0pt}
 % \AtBeginDocument нужен: KOMA финализирует \textwidth только в \begin{document}
 \newlength{\fullwidth}
 \AtBeginDocument{\setlength{\fullwidth}{\textwidth}}
-
-% --- Цвета заметок ---
-\definecolor{DefinitionInk}{HTML}{5A3797}
-\definecolor{ImportantInk}{HTML}{A1273C}
-\definecolor{PracticeInk}{HTML}{1C56A3}
-\definecolor{MarkerYellow}{HTML}{FFF2A8}
-
-% --- Текстовый маркер ---
-\DeclareRobustCommand{\highlight}[1]{%
-  \begingroup
-  \sethlcolor{MarkerYellow}%
-  \hl{#1}%
-  \endgroup
-}
-
-% --- Базовый стиль tcolorbox ---
-\tcbset{
-  notebox/.style={
-    enhanced,
-    breakable,
-    boxrule=0pt,
-    leftrule=3pt,
-    arc=0pt,
-    outer arc=0pt,
-    before skip=\medskipamount,
-    after skip=\medskipamount,
-    left=6pt, right=6pt, top=3pt, bottom=3pt,
-    fontupper=\rmfamily\small,
-    parbox=false,
-    attach title to upper={\par\smallskip},
-    fonttitle=\rmfamily\small\bfseries,
-  },
-}
-
-% --- Заметки (API совместим с главами; [offset] принимается, игнорируется) ---
-\newcommand{\definitionnote}[3][0pt]{%
-  \begin{tcolorbox}[notebox,
-      colframe=DefinitionInk, colback=DefinitionInk!6,
-      title={\bfseries Определение: #2}, coltitle=DefinitionInk,
-    ]#3
-\end{tcolorbox}}
-
-\newcommand{\importantnote}[2][0pt]{%
-  \begin{tcolorbox}[notebox,
-      colframe=ImportantInk, colback=ImportantInk!6,
-      title={\bfseries Важно}, coltitle=ImportantInk,
-    ]#2
-\end{tcolorbox}}
-
-\newcommand{\practicenote}[2][0pt]{%
-  \begin{tcolorbox}[notebox,
-      colframe=PracticeInk, colback=PracticeInk!6,
-      title={\bfseries Практика}, coltitle=PracticeInk,
-    ]#2
-\end{tcolorbox}}
-
-\newcommand{\booknote}[2][0pt]{%
-  \begin{tcolorbox}[notebox, colframe=black!50, colback=black!4,
-    ]#2
-\end{tcolorbox}}
-
