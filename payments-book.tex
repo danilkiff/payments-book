@@ -18,6 +18,8 @@
 \addbibresource{assets/bibliography.bib}
 
 \begin{document}
+\setcounter{tocdepth}{0}
+\pagenumbering{Alph}
 \input{src/frontmatter/pre}
 \makebookcover
 \thispagestyle{empty}
@@ -36,7 +38,6 @@
 \input{src/parts/part4/index}
 \input{src/parts/part5/index}
 
-\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 \backmatter
 \input{src/backmatter/epilogue}
 \input{src/backmatter/source-map}
