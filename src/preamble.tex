@@ -37,6 +37,11 @@
 \usepackage{ccicons}
 \usepackage{soul}
 
+% --- Глоссарий аббревиатур ---
+% glossaries-extra даёт \printunsrtglossary, печатающую записи в порядке
+% объявления и не требующую внешнего makeglossaries-прохода.
+\usepackage[nopostdot,nonumberlist,nogroupskip,toc=true,style=long]{glossaries-extra}
+
 % --- Визуальные стили (цвета, tcolorbox, notebox-блоки, маркер) ---
 \input{src/styles}
 
