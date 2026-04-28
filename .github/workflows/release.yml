@@ -27,6 +27,7 @@ jobs:
           mkdir -p build
           for attempt in $(seq 1 30); do
             run_json=$(gh run list \
+              --repo "$GITHUB_REPOSITORY" \
               --workflow=ci.yml \
               --commit="${GITHUB_SHA}" \
               --limit=1 \
@@ -49,7 +50,7 @@ jobs:
             conclusion=$(echo "$run_json" | jq -r '.conclusion')
             if [ "$conclusion" = "success" ]; then
               run_id=$(echo "$run_json" | jq -r '.databaseId')
-              gh run download "$run_id" --name book-pdf --dir build/
+              gh run download "$run_id" --repo "$GITHUB_REPOSITORY" --name book-pdf --dir build/
               echo "cached=true" >> "$GITHUB_OUTPUT"
               exit 0
             else
