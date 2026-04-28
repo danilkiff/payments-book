@@ -85,20 +85,10 @@ jobs:
       - name: Prepare build dir
         run: mkdir -p build
 
-      - name: Install system deps for cairosvg
+      - name: Install librsvg (rsvg-convert) for SVG→PDF
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q \
-            libcairo2 libpango-1.0-0 libpangocairo-1.0-0 \
-            libgdk-pixbuf2.0-0 libffi-dev
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-
-      - name: Install Python deps
-        run: pip install -r requirements.txt
+          sudo apt-get install -y -q librsvg2-bin
 
       - name: excalidraw → SVG → figure PDFs
         run: make excalidraw svg

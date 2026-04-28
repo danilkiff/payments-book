@@ -58,8 +58,50 @@ def _marker_safe_id(color: str) -> str:
 
 # ── Bounding-box ──────────────────────────────────────────────────────────────
 
+def _approx_text_extents(text: str, font_size: float) -> tuple[float, float]:
+    """Estimate (width, height) for rendered text in absence of explicit dims."""
+    lines = (text or "").split("\n")
+    max_chars = max((len(l) for l in lines), default=1)
+    return max_chars * font_size * 0.55, len(lines) * font_size * LINE_HEIGHT_FACTOR
+
+
+def _text_xrange(el: dict) -> tuple[float, float, float, float]:
+    """Return (x_min, x_max, y_min, y_max) for a standalone text element.
+
+    Excalidraw files authored by the MCP tool often omit width/height on text
+    elements. We estimate the rendered extents and shift the bbox according to
+    textAlign so right- and centre-aligned captions are not clipped from the
+    left/right of the viewBox.
+    """
+    x = el.get("x", 0)
+    y = el.get("y", 0)
+    w = el.get("width") or 0
+    h = el.get("height") or 0
+    fs = el.get("fontSize", 16)
+    text = el.get("text", "")
+    tw, th = _approx_text_extents(text, fs)
+    # If the file has explicit dims, trust them but fall back to estimate when 0.
+    box_w = w if w else tw
+    box_h = h if h else th
+    align = el.get("textAlign", "left")
+    if align == "center":
+        if w:
+            xs = (x, x + w)
+        else:
+            xs = (x - tw / 2, x + tw / 2)
+    elif align == "right":
+        if w:
+            xs = (x, x + w)
+        else:
+            xs = (x - tw, x)
+    else:  # left / unknown
+        xs = (x, x + max(w, tw))
+    return xs[0], xs[1], y, y + box_h
+
+
 def _bbox(elements: list[dict]) -> tuple[float, float, float, float]:
     """Return (min_x, min_y, width, height) of all drawable elements."""
+    by_id = {e.get("id"): e for e in elements if e.get("id")}
     xs, ys = [], []
     for el in elements:
         t = el.get("type", "")
@@ -71,9 +113,26 @@ def _bbox(elements: list[dict]) -> tuple[float, float, float, float]:
             for dx, dy in el.get("points", [[0, 0], [w, h]]):
                 xs.append(x + dx)
                 ys.append(y + dy)
-        else:
-            xs += [x, x + w]
-            ys += [y, y + h]
+            continue
+        if t == "text":
+            cid = el.get("containerId")
+            if cid and cid in by_id:
+                # Bound text is rendered centred on the parent container; long
+                # text overflows the container box, so include estimated extents.
+                p = by_id[cid]
+                px, py = p.get("x", 0), p.get("y", 0)
+                pw, ph = p.get("width", 0), p.get("height", 0)
+                tw, th = _approx_text_extents(el.get("text", ""), el.get("fontSize", 16))
+                cx, cy = px + pw / 2, py + ph / 2
+                xs += [cx - tw / 2, cx + tw / 2, px, px + pw]
+                ys += [cy - th / 2, cy + th / 2, py, py + ph]
+            else:
+                x0, x1, y0, y1 = _text_xrange(el)
+                xs += [x0, x1]
+                ys += [y0, y1]
+            continue
+        xs += [x, x + w]
+        ys += [y, y + h]
     if not xs:
         return 0.0, 0.0, 800.0, 600.0
     return min(xs), min(ys), max(xs) - min(xs), max(ys) - min(ys)
