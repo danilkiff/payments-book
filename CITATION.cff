@@ -7,7 +7,6 @@ authors:
     given-names: Oleg Y.
     email: danilkiff@gmail.com
     orcid: "https://orcid.org/0009-0002-8031-2575"
-type: book
 license: CC-BY-NC-4.0
 repository-code: "https://github.com/danilkiff/payments-book"
 url: "https://github.com/danilkiff/payments-book"
@@ -26,5 +25,15 @@ keywords:
   - acquiring
   - issuing
   - fintech
-languages:
-  - ru
+preferred-citation:
+  type: book
+  title: "Инженерия платежей"
+  authors:
+    - family-names: Danilkiff
+      given-names: Oleg Y.
+      orcid: "https://orcid.org/0009-0002-8031-2575"
+  year: 2026
+  doi: 10.5281/zenodo.19884844
+  url: "https://github.com/danilkiff/payments-book"
+  languages:
+    - ru
