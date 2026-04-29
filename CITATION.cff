@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Если вы цитируете эту книгу, используйте приведённые ниже метаданные."
+title: "Инженерия платежей"
+abstract: "Книга о карточных платежах, СБП и платёжной инфраструктуре."
+authors:
+  - family-names: Danilkiff
+    given-names: Oleg Y.
+    email: danilkiff@gmail.com
+    orcid: "https://orcid.org/0009-0002-8031-2575"
+type: book
+license: CC-BY-NC-4.0
+repository-code: "https://github.com/danilkiff/payments-book"
+url: "https://github.com/danilkiff/payments-book"
+keywords:
+  - payments
+  - cards
+  - SBP
+  - EMV
+  - ISO 8583
+  - 3-D Secure
+  - PCI DSS
+  - acquiring
+  - issuing
+  - fintech
+languages:
+  - ru
