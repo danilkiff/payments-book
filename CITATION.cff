@@ -11,6 +11,10 @@ type: book
 license: CC-BY-NC-4.0
 repository-code: "https://github.com/danilkiff/payments-book"
 url: "https://github.com/danilkiff/payments-book"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19884844
+    description: Concept DOI (все версии)
 keywords:
   - payments
   - cards
