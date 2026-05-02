@@ -3,14 +3,15 @@
 
 % --- Кодировки и язык ---
 \usepackage[T2A,T1]{fontenc}
-\usepackage{type1ec}
 \usepackage[utf8]{inputenc}
 \usepackage[main=russian,english]{babel}
-\renewcommand{\rmdefault}{cmr}
-\renewcommand{\ttdefault}{cmtt}
 
-% --- Поля (электронная книга: ≤10mm по бокам) ---
-\usepackage[left=10mm,right=10mm,top=15mm,bottom=20mm,includeheadfoot]{geometry}
+% --- Шрифты: PT Serif (текст), PT Sans (заголовки/блоки), PT Mono (код) ---
+% Полная кириллица T2A для всех трёх гарнитур.
+\usepackage{paratype}
+
+% --- Поля для B5 ---
+\usepackage[left=20mm,right=20mm,top=10mm,bottom=10mm,includeheadfoot]{geometry}
 
 % --- Типографика и таблицы ---
 \usepackage{amsmath}
@@ -27,6 +28,11 @@
 \DeclareCaptionLabelSeparator{emdash}{~--- }
 \captionsetup{labelsep=emdash}
 \usepackage[backend=biber,style=numeric-comp,sorting=nyt]{biblatex}
+% Список источников: мелкий шрифт; URL и note — каждый с новой строки,
+% note — серым.
+\AtBeginBibliography{\footnotesize}
+\DeclareFieldFormat{url}{\newline{\scriptsize\url{#1}}}
+\DeclareFieldFormat{note}{\newline\textcolor{black!55}{#1}}
 \usepackage[unicode]{hyperref}
 \usepackage{enumitem}
 \usepackage{needspace}
@@ -53,9 +59,11 @@
 }
 
 % --- Шрифты в KOMA-элементах ---
-\addtokomafont{disposition}{\rmfamily}
-\addtokomafont{pagehead}{\rmfamily}
-\addtokomafont{caption}{\rmfamily}
+% Заголовки/части/главы/секции — PT Sans, для визуального контраста с serif-телом.
+\addtokomafont{disposition}{\sffamily}
+\addtokomafont{pagehead}{\rmfamily\small}
+\addtokomafont{caption}{\sffamily\small}
+\addtokomafont{captionlabel}{\sffamily\bfseries\small}
 
 % --- Часть: убрать разрыв страницы после заголовка части ---
 \makeatletter
@@ -66,10 +74,10 @@
 \raggedbottom
 \extrafloats{200}
 \setlength{\parindent}{1.25em}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\parskip}{0pt}
 \setlength{\emergencystretch}{1.5em}
 \setlist[itemize,enumerate]{leftmargin=*,labelsep=0.55em,
-itemsep=0pt,topsep=0pt,partopsep=0pt}
+itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt}
 
 % --- Команда включения фигур ---
 % \includefiguresvg[width=<dim>]{path-without-ext}  — Excalidraw-SVG → PDF
