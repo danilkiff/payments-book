@@ -2510,6 +2510,110 @@
   note   = {Технические стандарты OpenAPI для сценариев получения данных по счёту и инициирования платежей; разрабатываются при участии Банка России и банков-членов «Ассоциации развития финансовых инновационных технологий в России (ФинТех)»}
 }
 
+@online{fapi-sec-2024,
+  author = {{Банк России}},
+  title  = {Стандарт Банка России СТО БР ФАПИ.СЕК-1.6-2024 «Безопасность финансовых (банковских) операций. Прикладные программные интерфейсы обеспечения безопасности финансовых сервисов на основе протокола {OpenID} {Connect}. Требования»},
+  url    = {https://www.cbr.ru/Crosscut/LawActs/File/9908},
+  year   = {2024},
+  note   = {Принят и введён в действие приказом Банка России от 7 октября 2024 г. № ОД-1615; разработан экспертами АФТ и ИнфоТеКС при участии Банка России. Заменяет редакцию СТО БР ФАПИ.СЕК-1.6-2020}
+}
+
+@online{fapi-paok-2024,
+  author = {{Банк России}},
+  title  = {Стандарт Банка России СТО БР ФАПИ.ПАОК-1.0-2024 «Безопасность финансовых (банковских) операций. Прикладные программные интерфейсы. Обеспечение безопасности финансовых сервисов при инициации {OpenID} {Connect} клиентом потока аутентификации по отдельному каналу. Требования»},
+  url    = {https://www.cbr.ru/fintech/api/prikladnye-standarty/},
+  year   = {2024},
+  note   = {Принят приказом Банка России от 7 октября 2024 г. Профиль CIBA (Client Initiated Backchannel Authentication) для российской рамки открытых API}
+}
+
+@online{cbr-open-api-update-2025,
+  author = {{Банк России}},
+  title  = {Банк России обновил комплекс стандартов Открытых {API}},
+  url    = {https://www.cbr.ru/press/event/?id=28214},
+  year   = {2025},
+  note   = {Информация Банка России от 24.12.2025; утверждены и опубликованы 10 стандартов Открытых API. Переход участников пилотов на новые версии спецификаций по счетам физических и юридических лиц запланирован на 1 октября 2026 г.}
+}
+
+@online{cbr-fapi-sec-9908,
+  author = {{Банк России}},
+  title  = {Стандарт Банка России «Безопасность финансовых (банковских) операций. Прикладные программные интерфейсы обеспечения безопасности финансовых сервисов на основе протокола OpenID Connect. Требования»},
+  url    = {https://www.consultant.ru/document/cons_doc_LAW_491739/},
+  year   = {2024},
+  note   = {СТО БР ФАПИ.СЕК-1.6-2024, текст стандарта в КонсультантПлюс}
+}
+
+@online{tc26-mr-26-2-002-2024,
+  author = {{Технический комитет по стандартизации ТК 26}},
+  title  = {МР 26.2.002-2024 «Информационная технология. Криптографическая защита информации. Использование российских криптографических алгоритмов в протоколах {OpenID} {Connect}»},
+  url    = {https://tc26.ru/standarts/metodicheskie-rekomendatsii/mr-26-2-002-2024-it-kzi-ispolzovanie-rossiyskikh-kriptograficheskikh-algoritmov-v-protokolakh-openid-connect.html},
+  year   = {2024},
+  note   = {Утверждены ТК 26 19.11.2024; задают применение ГОСТ Р 34.10-2012 (подпись), ГОСТ Р 34.11-2012 «Стрибог» (хеш) и ГОСТ Р 34.12-2015 (блочные шифры) в JWT/JWS/JWE/JWK для OpenID Connect}
+}
+
+@online{fapi-1-part1,
+  author = {{OpenID Foundation}},
+  title  = {Financial-grade {API} Security Profile 1.0 --- Part 1: Baseline},
+  url    = {https://openid.net/specs/openid-financial-api-part-1-1_0.html},
+  year   = {2021},
+  note   = {OIDF Final Specification, опубликован 12.03.2021. Определяет базовый профиль FAPI для read-only API}
+}
+
+@online{fapi-1-part2,
+  author = {{OpenID Foundation}},
+  title  = {Financial-grade {API} Security Profile 1.0 --- Part 2: Advanced},
+  url    = {https://openid.net/specs/openid-financial-api-part-2-1_0.html},
+  year   = {2021},
+  note   = {OIDF Final Specification, опубликован 12.03.2021. Расширенный профиль FAPI для read+write API: подписанный JWT request object, mTLS sender-constrained tokens, JARM, \texttt{private\_key\_jwt}, PKCE S256}
+}
+
+@online{fapi-2-security-profile,
+  author = {{OpenID Foundation}},
+  title  = {{FAPI} 2.0 Security Profile},
+  url    = {https://openid.net/specs/fapi-security-profile-2_0-final.html},
+  year   = {2025},
+  note   = {OIDF Final Specification, утверждён 22.02.2025 (82 за, 0 против, 14 воздержавшихся). Обязательные механизмы: PAR, sender-constrained tokens (mTLS либо DPoP), PKCE S256, TLS 1.2+}
+}
+
+@online{fapi-2-message-signing,
+  author = {{OpenID Foundation}},
+  title  = {{FAPI} 2.0 Message Signing},
+  url    = {https://openid.net/specs/fapi-message-signing-2_0-final.html},
+  year   = {2025},
+  note   = {OIDF Final Specification, утверждён 26.09.2025 (87 за, 0 против, 20 воздержавшихся). Расширение FAPI 2.0 Security Profile подписями запросов и ответов для non-repudiation}
+}
+
+@online{oidf-jarm,
+  author = {{OpenID Foundation}},
+  title  = {{JWT} Secured Authorization Response Mode for {OAuth} 2.0 ({JARM})},
+  url    = {https://openid.net/specs/oauth-v2-jarm-final.html},
+  year   = {2022},
+  note   = {OIDF Final Specification, утверждён 09.11.2022. Подписанный (опционально шифрованный) JWT-ответ авторизационного эндпоинта}
+}
+
+@online{rfc-9101-jar,
+  author = {{IETF}},
+  title  = {{RFC} 9101: The {OAuth} 2.0 Authorization Framework: {JWT}-Secured Authorization Request ({JAR})},
+  url    = {https://www.rfc-editor.org/rfc/rfc9101.html},
+  year   = {2021},
+  note   = {Опубликован август 2021. Передача параметров авторизационного запроса как JWT через параметр \texttt{request} или \texttt{request\_uri}}
+}
+
+@online{rfc-9126-par,
+  author = {{IETF}},
+  title  = {{RFC} 9126: {OAuth} 2.0 Pushed Authorization Requests ({PAR})},
+  url    = {https://www.rfc-editor.org/rfc/rfc9126.html},
+  year   = {2021},
+  note   = {Опубликован сентябрь 2021. Прямая передача авторизационного запроса с клиента на специальный PAR-эндпоинт авторизационного сервера в обмен на \texttt{request\_uri}}
+}
+
+@online{rfc-9449-dpop,
+  author = {{IETF}},
+  title  = {{RFC} 9449: {OAuth} 2.0 Demonstrating Proof of Possession ({DPoP})},
+  url    = {https://www.rfc-editor.org/rfc/rfc9449.html},
+  year   = {2023},
+  note   = {Опубликован сентябрь 2023. Привязка токена доступа к закрытому ключу клиента через DPoP-доказательство, альтернатива sender-constrained tokens поверх mTLS}
+}
+
 @online{cbr-809p,
   author = {{Банк России}},
   title  = {Положение Банка России от 24.11.2022 № 809-П «О Плане счетов бухгалтерского учёта для кредитных организаций и порядке его применения»},
