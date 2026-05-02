@@ -1,24 +1,22 @@
-{
-  "type": "excalidraw",
-  "version": 2,
-  "source": "claude-code",
-  "elements": [
-    {"type":"arrow","id":"axis","x":50,"y":38,"width":820,"height":0,"points":[[0,0],[820,0]],"endArrowhead":"arrow","strokeColor":"#1e1e1e"},
-    {"type":"text","id":"ph1","x":178,"y":16,"text":"Авторизация","fontSize":13,"strokeColor":"#555","textAlign":"center"},
-    {"type":"text","id":"ph2","x":452,"y":16,"text":"Клиринг","fontSize":13,"strokeColor":"#555","textAlign":"center"},
-    {"type":"text","id":"ph3","x":728,"y":16,"text":"Расчёт","fontSize":13,"strokeColor":"#555","textAlign":"center"},
-    {"type":"line","id":"div1","x":307,"y":16,"width":0,"height":178,"points":[[0,0],[0,178]],"strokeColor":"#adb5bd","strokeStyle":"dashed"},
-    {"type":"line","id":"div2","x":597,"y":16,"width":0,"height":178,"points":[[0,0],[0,178]],"strokeColor":"#adb5bd","strokeStyle":"dashed"},
-    {"type":"text","id":"r1","x":44,"y":74,"text":"Отмена","fontSize":13,"strokeColor":"#1e1e1e","textAlign":"right"},
-    {"type":"text","id":"r2","x":44,"y":124,"text":"Void (отмена)","fontSize":13,"strokeColor":"#1e1e1e","textAlign":"right"},
-    {"type":"text","id":"r3","x":44,"y":174,"text":"Возврат","fontSize":13,"strokeColor":"#1e1e1e","textAlign":"right"},
-    {"type":"rectangle","id":"rev","x":55,"y":58,"width":238,"height":22,"roundness":{"type":3},"backgroundColor":"#22c55e","fillStyle":"solid","strokeColor":"#16a34a"},
-    {"type":"rectangle","id":"void","x":55,"y":108,"width":528,"height":22,"roundness":{"type":3},"backgroundColor":"#f59e0b","fillStyle":"solid","strokeColor":"#b45309"},
-    {"type":"rectangle","id":"refund","x":612,"y":158,"width":240,"height":22,"roundness":{"type":3},"backgroundColor":"#ef4444","fillStyle":"solid","strokeColor":"#dc2626"},
-    {"type":"text","id":"rev-note","x":300,"y":72,"text":"отменяет hold, мгновенно","fontSize":12,"strokeColor":"#555"},
-    {"type":"text","id":"void-note","x":590,"y":122,"text":"убирает из клиринга, часы","fontSize":12,"strokeColor":"#555"},
-    {"type":"text","id":"refund-note","x":612,"y":200,"text":"новая транзакция, дни","fontSize":12,"strokeColor":"#555"}
-  ],
-  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null},
-  "files": {}
-}
+{"type": "excalidraw", "version": 2, "source": "claude-code", "elements": [
+{"type": "arrow", "id": "axis", "x": 120, "y": 40, "width": 820, "height": 0, "points": [[0, 0], [820, 0]], "endArrowhead": "arrow", "strokeColor": "#1e1e1e", "strokeWidth": 2},
+
+{"type": "text", "id": "lbl-auth", "x": 180, "y": 18, "width": 140, "text": "Авторизация", "fontSize": 13, "textAlign": "center", "strokeColor": "#555555"},
+{"type": "text", "id": "lbl-clear", "x": 450, "y": 18, "width": 140, "text": "Клиринг", "fontSize": 13, "textAlign": "center", "strokeColor": "#555555"},
+{"type": "text", "id": "lbl-settle", "x": 730, "y": 18, "width": 140, "text": "Расчёт", "fontSize": 13, "textAlign": "center", "strokeColor": "#555555"},
+
+{"type": "line", "id": "div1", "x": 380, "y": 50, "width": 0, "height": 220, "points": [[0, 0], [0, 220]], "strokeColor": "#adb5bd", "strokeWidth": 1, "strokeStyle": "dashed"},
+{"type": "line", "id": "div2", "x": 666, "y": 50, "width": 0, "height": 220, "points": [[0, 0], [0, 220]], "strokeColor": "#adb5bd", "strokeWidth": 1, "strokeStyle": "dashed"},
+
+{"type": "text", "id": "row-rev", "x": 0, "y": 80, "width": 110, "text": "Отмена", "fontSize": 13, "textAlign": "right", "strokeColor": "#1e1e1e"},
+{"type": "rectangle", "id": "rev", "x": 124, "y": 75, "width": 238, "height": 22, "roundness": {"type": 3}, "backgroundColor": "#22c55e", "fillStyle": "solid", "strokeColor": "#16a34a", "strokeWidth": 2},
+{"type": "text", "id": "cap-rev", "x": 124, "y": 105, "width": 240, "text": "отменяет hold, мгновенно", "fontSize": 11, "textAlign": "left", "strokeColor": "#555555"},
+
+{"type": "text", "id": "row-void", "x": 0, "y": 145, "width": 110, "text": "Void (отмена)", "fontSize": 13, "textAlign": "right", "strokeColor": "#1e1e1e"},
+{"type": "rectangle", "id": "void", "x": 124, "y": 140, "width": 528, "height": 22, "roundness": {"type": 3}, "backgroundColor": "#f59e0b", "fillStyle": "solid", "strokeColor": "#b45309", "strokeWidth": 2},
+{"type": "text", "id": "cap-void", "x": 124, "y": 170, "width": 280, "text": "убирает из клиринга, часы", "fontSize": 11, "textAlign": "left", "strokeColor": "#555555"},
+
+{"type": "text", "id": "row-ref", "x": 0, "y": 210, "width": 110, "text": "Возврат", "fontSize": 13, "textAlign": "right", "strokeColor": "#1e1e1e"},
+{"type": "rectangle", "id": "refund", "x": 681, "y": 205, "width": 240, "height": 22, "roundness": {"type": 3}, "backgroundColor": "#ef4444", "fillStyle": "solid", "strokeColor": "#dc2626", "strokeWidth": 2},
+{"type": "text", "id": "cap-ref", "x": 681, "y": 235, "width": 240, "text": "новая транзакция, дни", "fontSize": 11, "textAlign": "left", "strokeColor": "#555555"}
+], "appState": {"viewBackgroundColor": "#ffffff", "gridSize": null}, "files": {}}
