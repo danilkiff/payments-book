@@ -21,11 +21,11 @@
 \newglossaryentry{arpc}{name={ARPC},description={Authorisation Response Cryptogram, ответная криптограмма эмитента (EMV online auth)}}
 \newglossaryentry{arqc}{name={ARQC},description={Authorisation Request Cryptogram, запросная криптограмма карты (EMV online auth)}}
 \newglossaryentry{atm}{name={ATM},description={Automated Teller Machine, банкомат}}
-\newglossaryentry{avs}{name={AVS},description={Address Verification Service, проверка адреса держателя у~эмитента в~CNP-операциях}}
+\newglossaryentry{avs}{name={AVS},description={Address Verification Service, проверка адреса держателя у~эмитента в~операциях CNP}}
 \newglossaryentry{bin}{name={BIN},description={Bank Identification Number, первые цифры PAN, идентифицирующие эмитента (см.\ также IIN)}}
 \newglossaryentry{bnpl}{name={BNPL},description={Buy Now Pay Later, рассрочка/отложенная оплата как платёжный метод}}
 \newglossaryentry{c2b}{name={C2B},description={Customer-to-Business, перевод от физлица в~пользу бизнеса}}
-\newglossaryentry{ca}{name={CA},description={Certificate Authority, удостоверяющий центр; в~платежах~-- корень доверия EMV-сертификатов карт и~PKI для удалённой инъекции ключей}}
+\newglossaryentry{ca}{name={CA},description={Certificate Authority, удостоверяющий центр; в~платежах~-- корень доверия сертификатов EMV карт и~PKI для удалённой инъекции ключей}}
 \newglossaryentry{cbdc}{name={CBDC},description={Central Bank Digital Currency, цифровая валюта центрального банка (например, цифровой рубль)}}
 \newglossaryentry{cda}{name={CDA},description={Combined Data Authentication, метод офлайн-аутентификации данных карты с~динамической подписью операции (EMV)}}
 \newglossaryentry{cde}{name={CDE},description={Cardholder Data Environment, периметр окружения данных держателя по PCI~DSS}}
@@ -36,7 +36,7 @@
 \newglossaryentry{cvc3}{name={CVC3},description={Card Verification Code 3, динамический код Mastercard для contactless mag-stripe (PayPass M/Stripe)}}
 \newglossaryentry{cvm}{name={CVM},description={Cardholder Verification Method, метод верификации держателя (PIN, signature, CDCVM, no~CVM)}}
 \newglossaryentry{cvv}{name={CVV/CVC},description={Card Verification Value (Visa) / Card Verification Code (Mastercard), статический код подлинности карты на магнитной полосе}}
-\newglossaryentry{cvv2}{name={CVV2/CVC2},description={Печатный код безопасности на оборотной стороне карты, используется в~CNP-операциях}}
+\newglossaryentry{cvv2}{name={CVV2/CVC2},description={Печатный код безопасности на оборотной стороне карты, используется в~операциях CNP}}
 \newglossaryentry{dcc}{name={DCC},description={Dynamic Currency Conversion, конверсия в~валюту держателя на стороне эквайера/терминала}}
 \newglossaryentry{dda}{name={DDA},description={Dynamic Data Authentication, метод офлайн-аутентификации с~динамической подписью данных карты (EMV)}}
 \newglossaryentry{de}{name={DE},description={Data Element, поле сообщения ISO 8583}}
@@ -44,7 +44,7 @@
 \newglossaryentry{dpan}{name={DPAN},description={Device Primary Account Number, токенизированный номер, привязанный к~устройству (Apple Pay, Google Pay и~др.)}}
 \newglossaryentry{ds}{name={DS},description={Directory Server, маршрутизатор сообщений 3-D~Secure от мерчанта к~ACS эмитента}}
 \newglossaryentry{dukpt}{name={DUKPT},description={Derived Unique Key Per Transaction, схема производных одноразовых ключей для PIN/данных в~POS}}
-\newglossaryentry{ecp}{name={ECP},description={Enhanced Contactless Polling, проприетарное расширение Apple над ISO/IEC 14443-A для NFC-ридеров (используется в~Apple Pay, Apple VAS, Apple Wallet Access)}}
+\newglossaryentry{ecp}{name={ECP},description={Enhanced Contactless Polling, проприетарное расширение Apple над ISO/IEC 14443-A для считывателей NFC (используется в~Apple Pay, Apple VAS, Apple Wallet Access)}}
 \newglossaryentry{emv}{name={EMV},description={Europay/Mastercard/Visa, семейство спецификаций чиповых карт (EMVCo)}}
 \newglossaryentry{fatf}{name={FATF},description={Financial Action Task Force, межправительственная организация по борьбе с~отмыванием денег и~финансированием терроризма}}
 \newglossaryentry{fpan}{name={FPAN},description={Funding Primary Account Number, реальный номер карты, лежащий за токеном}}
@@ -52,7 +52,7 @@
 \newglossaryentry{gcms}{name={GCMS},description={Global Clearing Management System, клиринговая система Mastercard}}
 \newglossaryentry{hce}{name={HCE},description={Host Card Emulation, эмуляция карты в~ОС устройства без аппаратного Secure Element}}
 \newglossaryentry{hsm}{name={HSM},description={Hardware Security Module, аппаратный модуль для хранения ключей и~криптоопераций}}
-\newglossaryentry{iin}{name={IIN},description={Issuer Identification Number, ISO-термин, эквивалент BIN}}
+\newglossaryentry{iin}{name={IIN},description={Issuer Identification Number, термин ISO, эквивалент BIN}}
 \newglossaryentry{ipm}{name={IPM},description={Integrated Product Messages, формат клиринговых сообщений Mastercard}}
 \newglossaryentry{iso}{name={ISO},description={International Organization for Standardization, в~книге упоминается через стандарты 4217, 7810, 7813, 7816, 8583, 20022}}
 \newglossaryentry{json}{name={JSON},description={JavaScript Object Notation, формат обмена данными в~REST/HTTP-интерфейсах}}
@@ -96,14 +96,14 @@
 \newglossaryentry{stan}{name={STAN},description={System Trace Audit Number, локальный счётчик операций терминала/эквайера (DE 11 в~ISO 8583)}}
 \newglossaryentry{stip}{name={STIP},description={Stand-In Processing, авторизация на стороне сети, когда эмитент недоступен}}
 \newglossaryentry{swift}{name={SWIFT},description={Society for Worldwide Interbank Financial Telecommunication, межбанковская сеть передачи финансовых сообщений}}
-\newglossaryentry{tc}{name={TC},description={Transaction Certificate, криптограмма EMV-операции, одобренной офлайн}}
+\newglossaryentry{tc}{name={TC},description={Transaction Certificate, криптограмма операции EMV, одобренной офлайн}}
 \newglossaryentry{tc33}{name={TC33},description={Формат клирингового файла Visa BASE II}}
 \newglossaryentry{tlv}{name={TLV},description={Tag-Length-Value, формат кодирования данных EMV (BER-TLV)}}
 \newglossaryentry{tmk}{name={TMK},description={Terminal Master Key, мастер-ключ POS-терминала; под ним хранятся остальные ключи устройства}}
 \newglossaryentry{tms}{name={TMS},description={Terminal Management System, система управления парком терминалов}}
 \newglossaryentry{tpk}{name={TPK},description={Terminal PIN Key, ключ шифрования PIN внутри POS-терминала}}
 \newglossaryentry{tsp}{name={TSP},description={Token Service Provider, провайдер токенизации}}
-\newglossaryentry{tvr}{name={TVR},description={Terminal Verification Results, результаты проверок терминала по EMV-операции}}
+\newglossaryentry{tvr}{name={TVR},description={Terminal Verification Results, результаты проверок терминала по операции EMV}}
 \newglossaryentry{upi}{name={UPI},description={Unified Payments Interface, индийский A2A-контур мгновенных платежей}}
 \newglossaryentry{vau}{name={VAU},description={Visa Account Updater, сервис автоматического обновления реквизитов карт у~мерчантов}}
 \newglossaryentry{vts}{name={VTS},description={Visa Token Service, токенизационный сервис Visa}}
