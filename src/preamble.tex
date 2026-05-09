@@ -14,16 +14,12 @@
 \usepackage[left=20mm,right=20mm,top=10mm,bottom=10mm,includeheadfoot]{geometry}
 
 % --- Типографика и таблицы ---
-\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{booktabs}
 \usepackage[final]{microtype}
 \usepackage{csquotes}
-\usepackage{siunitx}
-\sisetup{per-mode=symbol,output-decimal-marker={,}}
-\usepackage{icomma}
 \usepackage[font=small,labelfont=bf]{caption}
 \DeclareCaptionLabelSeparator{emdash}{~--- }
 \captionsetup{labelsep=emdash}
@@ -35,8 +31,6 @@
 \DeclareFieldFormat{note}{\newline\textcolor{black!55}{#1}}
 \usepackage[unicode]{hyperref}
 \usepackage{enumitem}
-\usepackage{needspace}
-\usepackage{float}
 \usepackage{xurl}
 \usepackage{indentfirst}
 \usepackage{eso-pic}
@@ -87,7 +81,3 @@ itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt}
   \includegraphics[height=\figuremaxheight,keepaspectratio,#1]{#2.pdf}%
 }
 
-% --- \fullwidth: после удаления колонки полей равен \textwidth ---
-% \AtBeginDocument нужен: KOMA финализирует \textwidth только в \begin{document}
-\newlength{\fullwidth}
-\AtBeginDocument{\setlength{\fullwidth}{\textwidth}}

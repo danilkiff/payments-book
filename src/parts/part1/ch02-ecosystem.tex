@@ -253,33 +253,31 @@ Robokassa и~Best2Pay. От распределения ролей зависит
   \small
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
-  \makebox[\textwidth][l]{%
-    \begin{tabularx}{\fullwidth}{
-        @{}>{\RaggedRight\arraybackslash}p{0.20\textwidth}
-        >{\RaggedRight\arraybackslash}X
-        >{\RaggedRight\arraybackslash}X
-        >{\RaggedRight\arraybackslash}X
-        >{\RaggedRight\arraybackslash}X@{}
-      }
-      \toprule
-      \rowcolor{Panel}
-      \textbf{Признак} &
-      \textbf{Процессор} &
-      \textbf{Шлюз} &
-      \textbf{PSP} &
-      \textbf{Фасилитатор} \\
-      \midrule
-      \rowcolor{Soft}
-      Лицензия & --- & --- & агрегатор & БПА \\
-      Двигает деньги & нет & нет & да & да \\
-      \rowcolor{Soft}
-      Договор с~ТСП & банк & банк & PSP & фасилитатор \\
-      Риск чарджбэков & нет & нет & общий с~банком & на нём \\
-      \rowcolor{Soft}
-      Дескриптор & эквайер & эквайер & ТСП & субмерчант \\
-      \bottomrule
-    \end{tabularx}%
-  }
+  \begin{tabularx}{\textwidth}{
+      @{}>{\RaggedRight\arraybackslash}p{0.20\textwidth}
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X@{}
+    }
+    \toprule
+    \rowcolor{Panel}
+    \textbf{Признак} &
+    \textbf{Процессор} &
+    \textbf{Шлюз} &
+    \textbf{PSP} &
+    \textbf{Фасилитатор} \\
+    \midrule
+    \rowcolor{Soft}
+    Лицензия & --- & --- & агрегатор & БПА \\
+    Двигает деньги & нет & нет & да & да \\
+    \rowcolor{Soft}
+    Договор с~ТСП & банк & банк & PSP & фасилитатор \\
+    Риск чарджбэков & нет & нет & общий с~банком & на нём \\
+    \rowcolor{Soft}
+    Дескриптор & эквайер & эквайер & ТСП & субмерчант \\
+    \bottomrule
+  \end{tabularx}%
   \endgroup
   \caption{Сравнение технических посредников в~карточной
   цепочке.}\label{tab:intermediaries-comparison}

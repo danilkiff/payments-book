@@ -448,38 +448,36 @@ CVV2, \mbox{3-D Secure} или антифрод эмитента. Получив
   \small
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
-  \makebox[\textwidth][l]{%
-    \begin{tabularx}{\fullwidth}{
-        @{}>{\RaggedRight\arraybackslash\bfseries}p{0.27\textwidth}
-        >{\RaggedRight\arraybackslash}p{0.25\textwidth}
-        Y@{}
-      }
-      \toprule
-      \rowcolor{Panel}
-      \textbf{Элемент данных} & \textbf{Категория} &
-      \textbf{Хранение после авторизации} \\
-      \midrule
-      \rowcolor{Soft}
-      PAN & cardholder data &
-      \textcolor{Good}{Да: с~защитой, шифрование/токенизация} \\
-      Имя держателя & cardholder data &
-      \textcolor{Good}{Да} \\
-      \rowcolor{Soft}
-      Срок действия & cardholder data &
-      \textcolor{Good}{Да} \\
-      Сервисный код & cardholder data &
-      \textcolor{Good}{Да} \\
-      \rowcolor{Soft}
-      Полные данные Track 1 / Track 2 & SAD &
-      \textcolor{Bad}{Запрещено} \\
-      CVV2/CVC2 & SAD &
-      \textcolor{Bad}{Запрещено} \\
-      \rowcolor{Soft}
-      PIN / PIN-блок & SAD &
-      \textcolor{Bad}{Запрещено} \\
-      \bottomrule
-    \end{tabularx}%
-  }
+  \begin{tabularx}{\textwidth}{
+      @{}>{\RaggedRight\arraybackslash\bfseries}p{0.27\textwidth}
+      >{\RaggedRight\arraybackslash}p{0.25\textwidth}
+      Y@{}
+    }
+    \toprule
+    \rowcolor{Panel}
+    \textbf{Элемент данных} & \textbf{Категория} &
+    \textbf{Хранение после авторизации} \\
+    \midrule
+    \rowcolor{Soft}
+    PAN & cardholder data &
+    \textcolor{Good}{Да: с~защитой, шифрование/токенизация} \\
+    Имя держателя & cardholder data &
+    \textcolor{Good}{Да} \\
+    \rowcolor{Soft}
+    Срок действия & cardholder data &
+    \textcolor{Good}{Да} \\
+    Сервисный код & cardholder data &
+    \textcolor{Good}{Да} \\
+    \rowcolor{Soft}
+    Полные данные Track 1 / Track 2 & SAD &
+    \textcolor{Bad}{Запрещено} \\
+    CVV2/CVC2 & SAD &
+    \textcolor{Bad}{Запрещено} \\
+    \rowcolor{Soft}
+    PIN / PIN-блок & SAD &
+    \textcolor{Bad}{Запрещено} \\
+    \bottomrule
+  \end{tabularx}%
   \endgroup
   \caption{Классификация карточных данных с~точки зрения хранения по PCI DSS.}\label{fig:card-data-storage}
 \end{table}

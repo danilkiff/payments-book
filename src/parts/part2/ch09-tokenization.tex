@@ -158,28 +158,26 @@ Mastercard описывает MDES как единую платформу
   \small
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
-  \makebox[\textwidth][l]{%
-    \begin{minipage}{\fullwidth}
-      \begin{tabularx}{\fullwidth}{
-          @{}>{\RaggedRight\arraybackslash}p{0.28\textwidth}
-          Y@{}
-        }
-        \toprule
-        \rowcolor{Panel}
-        \textbf{Компонент TSP} & \textbf{Назначение} \\
-        \midrule
-        \rowcolor{Soft}
-        Token Requestor Interface & Связь с~ТСП, кошельком или провайдером \\
-        Token Vault & Хранит соответствие токена и~PAN \\
-        \rowcolor{Soft}
-        Issuer Interface & Взаимодействие с~эмитентом при выпуске токена \\
-        \bottomrule
-      \end{tabularx}
-      \par\smallskip
-      {\footnotesize Структура одинакова у VTS (Visa), MDES (Mastercard) и TSP НСПК.
-      Каждая сеть управляет своим Token Vault независимо.}
-    \end{minipage}%
-  }
+  \begin{minipage}{\textwidth}
+    \begin{tabularx}{\textwidth}{
+        @{}>{\RaggedRight\arraybackslash}p{0.28\textwidth}
+        Y@{}
+      }
+      \toprule
+      \rowcolor{Panel}
+      \textbf{Компонент TSP} & \textbf{Назначение} \\
+      \midrule
+      \rowcolor{Soft}
+      Token Requestor Interface & Связь с~ТСП, кошельком или провайдером \\
+      Token Vault & Хранит соответствие токена и~PAN \\
+      \rowcolor{Soft}
+      Issuer Interface & Взаимодействие с~эмитентом при выпуске токена \\
+      \bottomrule
+    \end{tabularx}
+    \par\smallskip
+    {\footnotesize Структура одинакова у VTS (Visa), MDES (Mastercard) и TSP НСПК.
+    Каждая сеть управляет своим Token Vault независимо.}
+  \end{minipage}%
   \endgroup
   \caption{Архитектурные компоненты TSP карточных сетей.}\label{fig:token-tsp-comparison}
 \end{table}
@@ -224,31 +222,29 @@ EMVCo, напротив, описывает платёжный токен как
   \small
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
-  \makebox[\textwidth][l]{%
-    \begin{tabularx}{\fullwidth}{
-        @{}>{\RaggedRight\arraybackslash}p{0.23\textwidth}
-        Y
-        Y@{}
-      }
-      \toprule
-      \rowcolor{Panel}
-      \textbf{Параметр} &
-      \cellcolor{AccentA!10}\textbf{\shortstack[l]{Сетевой токен\\(VTS /
-      MDES / TSP НСПК)}} &
-      \cellcolor{AccentB!10}\textbf{Токен PSP} \\
-      \midrule
-      \rowcolor{Soft}
-      Портативность & да & нет \\
-      Область PCI DSS ТСП & минимальная & сужена \\
-      \rowcolor{Soft}
-      Область PCI DSS PSP & сужена & полная \\
-      Доля одобрений & по маркетинговым материалам схем~-- выше\textsuperscript{*} & без изменений \\
-      \rowcolor{Soft}
-      Жизненный цикл & автообновление & ручное + Account Updater \\
-      Стоимость интеграции & средняя & низкая \\
-      \bottomrule
-    \end{tabularx}%
-  }
+  \begin{tabularx}{\textwidth}{
+      @{}>{\RaggedRight\arraybackslash}p{0.23\textwidth}
+      Y
+      Y@{}
+    }
+    \toprule
+    \rowcolor{Panel}
+    \textbf{Параметр} &
+    \cellcolor{AccentA!10}\textbf{\shortstack[l]{Сетевой токен\\(VTS /
+    MDES / TSP НСПК)}} &
+    \cellcolor{AccentB!10}\textbf{Токен PSP} \\
+    \midrule
+    \rowcolor{Soft}
+    Портативность & да & нет \\
+    Область PCI DSS ТСП & минимальная & сужена \\
+    \rowcolor{Soft}
+    Область PCI DSS PSP & сужена & полная \\
+    Доля одобрений & по маркетинговым материалам схем~-- выше\textsuperscript{*} & без изменений \\
+    \rowcolor{Soft}
+    Жизненный цикл & автообновление & ручное + Account Updater \\
+    Стоимость интеграции & средняя & низкая \\
+    \bottomrule
+  \end{tabularx}%
   \endgroup
   \caption{Сетевой токен и токен PSP~-- сравнительная таблица.
   \textsuperscript{*}Маркетинговые материалы Visa и Mastercard сообщают

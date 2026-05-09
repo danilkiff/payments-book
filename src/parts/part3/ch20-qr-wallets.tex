@@ -61,97 +61,95 @@
   \scriptsize
   \setlength{\tabcolsep}{2pt}
   \renewcommand{\arraystretch}{1.2}
-  \makebox[\textwidth][l]{%
-    \begin{minipage}{\fullwidth}
-      \begin{tabularx}{\fullwidth}{
-          @{}>{\RaggedRight\arraybackslash\bfseries}p{0.170\fullwidth}
-          >{\RaggedRight\arraybackslash}p{0.075\fullwidth}
-          >{\RaggedRight\arraybackslash}p{0.095\fullwidth}
-          >{\RaggedRight\arraybackslash}p{0.090\fullwidth}
-          >{\RaggedRight\arraybackslash}p{0.085\fullwidth}
-          >{\RaggedRight\arraybackslash}p{0.145\fullwidth}
-          >{\RaggedRight\arraybackslash}p{0.100\fullwidth}
-          >{\RaggedRight\arraybackslash}p{0.155\fullwidth}@{}
-        }
-        \toprule
-        \rowcolor{Panel}
-        Метод оплаты & Тип & Финальность & Возвратный платёж & PCI
-        scope & Международность & Скорость & Комиссия ТСП \\
-        \midrule
-        \rowcolor{Soft}
-        Карты &
-        \cellcolor{Bad!10}pull &
-        \cellcolor{Bad!10}нет &
-        \cellcolor{Bad!10}есть &
-        \cellcolor{Bad!10}да &
-        \cellcolor{Good!14}глобальный &
-        \cellcolor{Good!14}мс &
-        \cellcolor{Bad!10}высокая \\
-        A2A (СБП/PIX) &
-        \cellcolor{Good!14}push &
-        \cellcolor{Good!14}да &
-        \cellcolor{Good!14}нет &
-        \cellcolor{Good!14}нет &
-        \cellcolor{Ink!6}региональный &
-        \cellcolor{Good!14}сек &
-        \cellcolor{Good!14}низкая \\
-        \rowcolor{Soft}
-        Closed-loop кошелёк &
-        \cellcolor{Ink!6}push/pull &
-        \cellcolor{Ink!6}зависит &
-        \cellcolor{Ink!6}ограничен &
-        \cellcolor{Good!14}нет &
-        \cellcolor{Bad!10}нишевый &
-        \cellcolor{Good!14}мс &
-        \cellcolor{Ink!6}средняя \\
-        BNPL &
-        \cellcolor{Bad!10}pull &
-        \cellcolor{Bad!10}нет &
-        \cellcolor{Bad!10}есть &
-        \cellcolor{Ink!6}нет &
-        \cellcolor{Ink!6}региональный &
-        \cellcolor{Good!14}сек &
-        \cellcolor{Ink!6}средняя \\
-        \rowcolor{Soft}
-        Cash-based &
-        \cellcolor{Good!14}push &
-        \cellcolor{Good!14}да &
-        \cellcolor{Good!14}нет &
-        \cellcolor{Good!14}нет &
-        \cellcolor{Bad!10}нишевый &
-        \cellcolor{Bad!10}часы / дни &
-        \cellcolor{Ink!6}нет данных \\
-        CBDC (цифровой рубль) &
-        \cellcolor{Good!14}push &
-        \cellcolor{Good!14}да &
-        \cellcolor{Good!14}нет &
-        \cellcolor{Good!14}нет &
-        \cellcolor{Bad!10}региональный &
-        \cellcolor{Ink!6}сек / мин &
-        \cellcolor{Ink!6}нет данных \\
-        \rowcolor{Soft}
-        Crypto &
-        \cellcolor{Good!14}push &
-        \cellcolor{Good!14}да &
-        \cellcolor{Good!14}нет &
-        \cellcolor{Good!14}нет &
-        \cellcolor{Ink!6}глобальный / нишевый &
-        \cellcolor{Ink!6}мин / часы &
-        \cellcolor{Ink!6}нет данных \\
-        \bottomrule
-      \end{tabularx}
-      \par\smallskip
-      \fcolorbox{Ink!18}{Soft}{%
-        \parbox{\dimexpr\fullwidth-2\fboxsep-2\fboxrule\relax}{%
-          \textcolor{Muted}{Зелёный цвет показывает сравнительное
-            преимущество, красный указывает на ограничение, серый на нейтральную или
-            зависящую от провайдера зону.
-            * Данные оценочные и меняются в~зависимости от конкретного
-          провайдера, маршрута и географии.}%
-        }%
+  \begin{minipage}{\textwidth}
+    \begin{tabularx}{\textwidth}{
+        @{}>{\RaggedRight\arraybackslash\bfseries}p{0.170\textwidth}
+        >{\RaggedRight\arraybackslash}p{0.075\textwidth}
+        >{\RaggedRight\arraybackslash}p{0.095\textwidth}
+        >{\RaggedRight\arraybackslash}p{0.090\textwidth}
+        >{\RaggedRight\arraybackslash}p{0.085\textwidth}
+        >{\RaggedRight\arraybackslash}p{0.145\textwidth}
+        >{\RaggedRight\arraybackslash}p{0.100\textwidth}
+        >{\RaggedRight\arraybackslash}p{0.155\textwidth}@{}
       }
-    \end{minipage}%
-  }
+      \toprule
+      \rowcolor{Panel}
+      Метод оплаты & Тип & Финальность & Возвратный платёж & PCI
+      scope & Международность & Скорость & Комиссия ТСП \\
+      \midrule
+      \rowcolor{Soft}
+      Карты &
+      \cellcolor{Bad!10}pull &
+      \cellcolor{Bad!10}нет &
+      \cellcolor{Bad!10}есть &
+      \cellcolor{Bad!10}да &
+      \cellcolor{Good!14}глобальный &
+      \cellcolor{Good!14}мс &
+      \cellcolor{Bad!10}высокая \\
+      A2A (СБП/PIX) &
+      \cellcolor{Good!14}push &
+      \cellcolor{Good!14}да &
+      \cellcolor{Good!14}нет &
+      \cellcolor{Good!14}нет &
+      \cellcolor{Ink!6}региональный &
+      \cellcolor{Good!14}сек &
+      \cellcolor{Good!14}низкая \\
+      \rowcolor{Soft}
+      Closed-loop кошелёк &
+      \cellcolor{Ink!6}push/pull &
+      \cellcolor{Ink!6}зависит &
+      \cellcolor{Ink!6}ограничен &
+      \cellcolor{Good!14}нет &
+      \cellcolor{Bad!10}нишевый &
+      \cellcolor{Good!14}мс &
+      \cellcolor{Ink!6}средняя \\
+      BNPL &
+      \cellcolor{Bad!10}pull &
+      \cellcolor{Bad!10}нет &
+      \cellcolor{Bad!10}есть &
+      \cellcolor{Ink!6}нет &
+      \cellcolor{Ink!6}региональный &
+      \cellcolor{Good!14}сек &
+      \cellcolor{Ink!6}средняя \\
+      \rowcolor{Soft}
+      Cash-based &
+      \cellcolor{Good!14}push &
+      \cellcolor{Good!14}да &
+      \cellcolor{Good!14}нет &
+      \cellcolor{Good!14}нет &
+      \cellcolor{Bad!10}нишевый &
+      \cellcolor{Bad!10}часы / дни &
+      \cellcolor{Ink!6}нет данных \\
+      CBDC (цифровой рубль) &
+      \cellcolor{Good!14}push &
+      \cellcolor{Good!14}да &
+      \cellcolor{Good!14}нет &
+      \cellcolor{Good!14}нет &
+      \cellcolor{Bad!10}региональный &
+      \cellcolor{Ink!6}сек / мин &
+      \cellcolor{Ink!6}нет данных \\
+      \rowcolor{Soft}
+      Crypto &
+      \cellcolor{Good!14}push &
+      \cellcolor{Good!14}да &
+      \cellcolor{Good!14}нет &
+      \cellcolor{Good!14}нет &
+      \cellcolor{Ink!6}глобальный / нишевый &
+      \cellcolor{Ink!6}мин / часы &
+      \cellcolor{Ink!6}нет данных \\
+      \bottomrule
+    \end{tabularx}
+    \par\smallskip
+    \fcolorbox{Ink!18}{Soft}{%
+      \parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}{%
+        \textcolor{Muted}{Зелёный цвет показывает сравнительное
+          преимущество, красный указывает на ограничение, серый на нейтральную или
+          зависящую от провайдера зону.
+          * Данные оценочные и меняются в~зависимости от конкретного
+        провайдера, маршрута и географии.}%
+      }%
+    }
+  \end{minipage}%
   \endgroup
   \caption{\enquote{Методы оплаты / параметры}}\label{fig:payment-methods-matrix}
 \end{table}
@@ -295,37 +293,35 @@ e Cola -- текстовое представление тех же данных
   \scriptsize
   \setlength{\tabcolsep}{3pt}
   \renewcommand{\arraystretch}{1.2}
-  \makebox[\textwidth][l]{%
-    \begin{minipage}{\fullwidth}
-      \begin{tabularx}{\fullwidth}{
-          @{}>{\RaggedRight\arraybackslash\bfseries}p{0.16\fullwidth}
-          >{\RaggedRight\arraybackslash}p{0.27\fullwidth}
-          >{\RaggedRight\arraybackslash}p{0.27\fullwidth}
-          >{\RaggedRight\arraybackslash}p{0.27\fullwidth}@{}
-        }
-        \toprule
-        \rowcolor{Panel}
-        & СБП & Alipay / WeChat Pay & PIX \\
-        \midrule
-        \rowcolor{Soft}
-        Инфраструктура & A2A-перевод (межбанковский) & Закрытый кошелёк & A2A-перевод (межбанковский) \\
-        Оператор & НСПК (Банк России) & Ant Group / Tencent & Banco Central do Brasil \\
-        \rowcolor{Soft}
-        Расчёт & Через НСПК, секунды & Внутри реестра оператора & SPI при BCB, секунды \\
-        Финальность & Мгновенная (push) & Мгновенная (внутри системы) & Мгновенная (push) \\
-        \rowcolor{Soft}
-        Возвратный платёж & Нет & Правила оператора & Нет \\
-        Статический QR & Да & Да & Да \\
-        \rowcolor{Soft}
-        Динамический QR & Да & Да & Да \\
-        Основной режим QR & MPM & MPM + CPM & MPM \\
-        \rowcolor{Soft}
-        Комиссия С2B & 0\%--0{,}7\% (регулятор) & Устанавливает оператор & 0\% (физ.\ лица) \\
-        Трансграничность & Региональный & Федерация кошельков & Региональный \\
-        \bottomrule
-      \end{tabularx}
-    \end{minipage}%
-  }
+  \begin{minipage}{\textwidth}
+    \begin{tabularx}{\textwidth}{
+        @{}>{\RaggedRight\arraybackslash\bfseries}p{0.16\textwidth}
+        >{\RaggedRight\arraybackslash}p{0.27\textwidth}
+        >{\RaggedRight\arraybackslash}p{0.27\textwidth}
+        >{\RaggedRight\arraybackslash}p{0.27\textwidth}@{}
+      }
+      \toprule
+      \rowcolor{Panel}
+      & СБП & Alipay / WeChat Pay & PIX \\
+      \midrule
+      \rowcolor{Soft}
+      Инфраструктура & A2A-перевод (межбанковский) & Закрытый кошелёк & A2A-перевод (межбанковский) \\
+      Оператор & НСПК (Банк России) & Ant Group / Tencent & Banco Central do Brasil \\
+      \rowcolor{Soft}
+      Расчёт & Через НСПК, секунды & Внутри реестра оператора & SPI при BCB, секунды \\
+      Финальность & Мгновенная (push) & Мгновенная (внутри системы) & Мгновенная (push) \\
+      \rowcolor{Soft}
+      Возвратный платёж & Нет & Правила оператора & Нет \\
+      Статический QR & Да & Да & Да \\
+      \rowcolor{Soft}
+      Динамический QR & Да & Да & Да \\
+      Основной режим QR & MPM & MPM + CPM & MPM \\
+      \rowcolor{Soft}
+      Комиссия С2B & 0\%--0{,}7\% (регулятор) & Устанавливает оператор & 0\% (физ.\ лица) \\
+      Трансграничность & Региональный & Федерация кошельков & Региональный \\
+      \bottomrule
+    \end{tabularx}
+  \end{minipage}%
   \endgroup
   \caption{Три модели платежей по~QR}\label{tab:qr-three-models}
 \end{table}

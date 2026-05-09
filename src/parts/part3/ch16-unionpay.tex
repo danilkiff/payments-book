@@ -410,38 +410,36 @@ Sanctions поддерживается OFAC~\cite{ofac-sanctions-list-service};
   \small
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
-  \makebox[\textwidth][l]{%
-    \begin{tabularx}{\fullwidth}{
-        @{}>{\RaggedRight\arraybackslash}p{0.22\textwidth}
-        >{\RaggedRight\arraybackslash}X
-        >{\RaggedRight\arraybackslash}X
-        >{\RaggedRight\arraybackslash}X@{}
-      }
-      \toprule
-      \rowcolor{Panel}
-      \textbf{Параметр} & \textbf{UnionPay}
-      & \textbf{Visa} & \textbf{Mastercard} \\
-      \midrule
-      \rowcolor{Soft}
-      Процессинговая инфр. & внутренняя инфраструктура UnionPay (Китай),
-      UPI (международно) & VisaNet (BASE I + BASE II)
-      & Единый периметр (Authorization Platform + GCMS) \\
-      Клиринговый формат & Реестры через инфраструктуру UnionPay/UPI
-      & TC33 через BASE II & IPM через GCMS \\
-      \rowcolor{Soft}
-      Бесконтактное ядро & QuickPass-ядро (отдельное для UnionPay)
-      & VCPS & PayPass/M/Chip Contactless \\
-      Интернет-аутентификация & UnionPay 3DS (EMVCo) + SecurePlus (SMS/токен)
-      & Visa Secure (3DS) & Mastercard Identity Check (3DS) \\
-      \rowcolor{Soft}
-      Обновление реквизитов & Нет публичного аналога VAU/ABU
-      & Visa Account Updater & Automatic Billing Updater \\
-      Таблицы interchange & Публикуются для части рынков (EEA, UK,
-      JP, CA и~др.); для остальных договорные
-      & Публикуются по регионам & Публикуются по регионам \\
-      \bottomrule
-    \end{tabularx}%
-  }
+  \begin{tabularx}{\textwidth}{
+      @{}>{\RaggedRight\arraybackslash}p{0.22\textwidth}
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X
+      >{\RaggedRight\arraybackslash}X@{}
+    }
+    \toprule
+    \rowcolor{Panel}
+    \textbf{Параметр} & \textbf{UnionPay}
+    & \textbf{Visa} & \textbf{Mastercard} \\
+    \midrule
+    \rowcolor{Soft}
+    Процессинговая инфр. & внутренняя инфраструктура UnionPay (Китай),
+    UPI (международно) & VisaNet (BASE I + BASE II)
+    & Единый периметр (Authorization Platform + GCMS) \\
+    Клиринговый формат & Реестры через инфраструктуру UnionPay/UPI
+    & TC33 через BASE II & IPM через GCMS \\
+    \rowcolor{Soft}
+    Бесконтактное ядро & QuickPass-ядро (отдельное для UnionPay)
+    & VCPS & PayPass/M/Chip Contactless \\
+    Интернет-аутентификация & UnionPay 3DS (EMVCo) + SecurePlus (SMS/токен)
+    & Visa Secure (3DS) & Mastercard Identity Check (3DS) \\
+    \rowcolor{Soft}
+    Обновление реквизитов & Нет публичного аналога VAU/ABU
+    & Visa Account Updater & Automatic Billing Updater \\
+    Таблицы interchange & Публикуются для части рынков (EEA, UK,
+    JP, CA и~др.); для остальных договорные
+    & Публикуются по регионам & Публикуются по регионам \\
+    \bottomrule
+  \end{tabularx}%
   \endgroup
   \caption{Архитектурные отличия UnionPay, Visa и Mastercard.}\label{tab:up-vs-visa-mc}
 \end{table}
