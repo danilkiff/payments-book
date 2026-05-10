@@ -28,6 +28,7 @@
 \newglossaryentry{aov}{name={AOV},description={Average Order Value, средний чек заказа}}
 \newglossaryentry{apdu}{name={APDU},description={Application Protocol Data Unit, единица обмена данными между терминалом и~чипом (ISO/IEC 7816-4)}}
 \newglossaryentry{api}{name={API},description={Application Programming Interface, программный интерфейс взаимодействия систем}}
+\newglossaryentry{apid}{name={APID},description={Application Program Identifier, объект EMV (тег \texttt{0x9F5A}) в~бесконтактных профилях Visa; кодирует регион программы и~служит ключом выбора набора лимитов в~DRL}}
 \newglossaryentry{ecp_apple}{name={Apple ECP},description={Enhanced Contactless Polling, проприетарное расширение Apple над ISO/IEC~14443-A для считывателей NFC (используется в~Apple Pay, Apple VAS, Apple Wallet Access)}}
 \newglossaryentry{arca}{name={ARCA},description={Armenian Card, армянская национальная платёжная система}}
 \newglossaryentry{arn}{name={ARN},description={Acquirer Reference Number, эквайринговый идентификатор операции, используемый в~клиринге и~спорах}}
@@ -83,6 +84,7 @@
 \newglossaryentry{dlt}{name={DLT},description={Distributed Ledger Technology, технология распределённых реестров; база данных с~синхронизированными копиями у~нескольких участников}}
 \newglossaryentry{dms}{name={DMS},description={Dual Message System, двухстадийная авторизация и~клиринг отдельным сообщением (см.\ также SMS)}}
 \newglossaryentry{dpan}{name={DPAN},description={Device Primary Account Number, токенизированный номер, привязанный к~устройству (Apple Pay, Google Pay и~др.)}}
+\newglossaryentry{drl}{name={DRL},description={Dynamic Reader Limit, механизм бесконтактных ридеров Visa и~AmEx, позволяющий держать несколько наборов лимитов на один AID в~зависимости от региональной принадлежности карты (см.\ APID)}}
 \newglossaryentry{ds}{name={DS},description={Directory Server, маршрутизатор сообщений 3-D~Secure от мерчанта к~ACS эмитента}}
 \newglossaryentry{dsrp}{name={DSRP},description={Digital Secure Remote Payment, механизм Mastercard генерации криптограмм в~CNP}}
 \newglossaryentry{dukpt}{name={DUKPT},description={Derived Unique Key Per Transaction, схема производных одноразовых ключей для PIN/данных в~POS}}
@@ -94,6 +96,7 @@
 \newglossaryentry{eci}{name={ECI},description={Electronic Commerce Indicator, индикатор результата 3-D~Secure в~авторизационном сообщении}}
 \newglossaryentry{ecm}{name={ECM},description={Excessive Chargeback Merchant, статус мониторинговой программы Mastercard для ТСП с~повышенной долей chargeback}}
 \newglossaryentry{eea}{name={EEA},description={European Economic Area, Европейская экономическая зона}}
+\newglossaryentry{efa}{name={EFA},description={EMV Final Advice, дополнительная сессия POS-to-host (MTI~0220/0230), в~которой терминал передаёт ПЦ результат обработки картой ARPC и~финальную криптограмму}}
 \newglossaryentry{efm}{name={EFM},description={Excessive Fraud Merchant, статус мониторинговой программы Mastercard по фроду}}
 \newglossaryentry{eirf}{name={EIRF},description={Electronic Interchange Reimbursement Fee, штрафная категория interchange Visa для операций без полного набора данных}}
 \newglossaryentry{elcard}{name={ELCARD},description={Кыргызская национальная платёжная система (см.\ также ЭЛКАРТ)}}
@@ -192,6 +195,7 @@
 \newglossaryentry{psp}{name={PSP},description={Payment Service Provider, провайдер платёжных услуг}}
 \newglossaryentry{psu}{name={PSU},description={Payment Service User, клиент в~терминологии PSD2}}
 \newglossaryentry{pts}{name={PTS},description={PIN Transaction Security, стандарт PCI~SSC для аппаратных модулей и~POS-устройств}}
+\newglossaryentry{pwcb}{name={PWCB},description={Purchase with Cashback, тип EMV-операции \enquote{покупка с~выдачей наличных} (Mastercard); кодируется тегом \texttt{0x9C} = \texttt{09}}}
 \newglossaryentry{qmap}{name={QMAP},description={Questionable Merchant Audit Program, программа Visa по мониторингу подозрительных мерчантов}}
 \newglossaryentry{qr}{name={QR},description={Quick Response (code), двумерный штрихкод как контейнер платёжных реквизитов}}
 \newglossaryentry{qsa}{name={QSA},description={Qualified Security Assessor, аккредитованный PCI~SSC аудитор}}
@@ -277,7 +281,7 @@
 \newglossaryentry{mvk}{name={МВК},description={Межведомственная комиссия по противодействию финансированию терроризма}}
 \newglossaryentry{nko}{name={НКО},description={Небанковская кредитная организация}}
 \newglossaryentry{nps_ru}{name={НПС},description={Национальная платёжная система Российской Федерации (161-ФЗ)}}
-\newglossaryentry{nspk}{name={НСПК},description={Национальная система платёжных карт, оператор карты <<Мир>> и~СБП}}
+\newglossaryentry{nspk}{name={НСПК},description={Национальная система платёжных карт, оператор карты Мир и~СБП}}
 \newglossaryentry{od}{name={ОД},description={Отмывание доходов, полученных преступным путём; вместе с~ФТ образует ПОД/ФТ}}
 \newglossaryentry{opkc}{name={ОПКЦ},description={Операционный и~платёжный клиринговый центр НСПК, обрабатывающий внутрироссийские транзакции международных схем}}
 \newglossaryentry{osr}{name={ОСР},description={Оператор сервиса рассрочки, статус по~53-ФЗ от~2024~г.}}
