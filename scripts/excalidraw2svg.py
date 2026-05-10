@@ -7,8 +7,10 @@ Usage:
     python3 scripts/excalidraw2svg.py path/to/file.excalidraw [...]
     python3 scripts/excalidraw2svg.py assets/figures/ch02-ecosystem/
 
-Output SVG files are placed next to the .excalidraw sources (same directory, .svg extension).
-They overwrite any existing .svg — run `make excalidraw` before `make svg` and `make pdf`.
+Output SVG files are placed next to the .excalidraw sources (same directory, .gen.svg extension).
+The .gen.svg suffix отделяет транзиентный продукт от Inkscape-исходников (*.svg),
+которые коммитятся в git после миграции конкретной фигуры в Inkscape.
+Run `make excalidraw` before `make svg` and `make pdf`.
 """
 
 import json
@@ -442,7 +444,7 @@ def convert_file(path: Path) -> Path:
         print(f"  ERROR {path}: invalid JSON — {e}", file=sys.stderr)
         return path.with_suffix(".svg")
     svg = excalidraw_to_svg(data)
-    out = path.with_suffix(".svg")
+    out = path.with_name(path.stem + ".gen.svg")
     out.write_text(svg, encoding="utf-8")
     return out
 

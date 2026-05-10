@@ -30,10 +30,10 @@ jobs:
           pip install --quiet cffconvert
           cffconvert --validate -i CITATION.cff
 
-      - name: Install librsvg (rsvg-convert) for SVG→PDF
+      - name: Install Inkscape for SVG→PDF
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q librsvg2-bin
+          sudo apt-get install -y -q inkscape
 
       - name: excalidraw → SVG → figure PDFs
         run: make excalidraw svg

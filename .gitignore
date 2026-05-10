@@ -1,8 +1,8 @@
 # ── Артефакты сборки LaTeX ──────────────────────────────────────────────────
 build/
 
-# ── Генерируемые фигуры (excalidraw → svg → pdf) ────────────────────────────
-assets/figures/**/*.svg
+# ── Генерируемые фигуры (excalidraw → gen.svg → pdf; Inkscape *.svg коммитятся) ─
+assets/figures/**/*.gen.svg
 *.pdf
 *.aux
 *.bbl

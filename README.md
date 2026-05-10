@@ -6,11 +6,11 @@
 
 ```bash
 # macOS
-brew install mactex tex-fmt librsvg
+brew install mactex tex-fmt librsvg inkscape
 make pdf
 
 # Ubuntu
-sudo apt install texlive-full tex-fmt librsvg2-bin  # tex-fmt: Ubuntu 25.10+
+sudo apt install texlive-full tex-fmt librsvg2-bin inkscape  # tex-fmt: Ubuntu 25.10+
 make pdf
 ```
 
