@@ -2,7 +2,15 @@
 
 import pytest
 
-from posting import Ledger, Leg, authorize, confirm, refund, settle
+from posting import (
+  BANK_ACCOUNT_MAPPING,
+  Ledger,
+  Leg,
+  authorize,
+  confirm,
+  refund,
+  settle,
+)
 
 
 def test_canonical_marketplace_flow_balances():
@@ -65,3 +73,15 @@ def test_full_refund_zeros_merchant_available():
   refund(ledger, 4_500_00)
   assert ledger.balance("merchant_available") == 0
   assert ledger.balance("refund_payable") == 4_500_00
+
+
+def test_every_internal_account_has_809p_mapping():
+  """Каждый внутренний счёт, появившийся в проводках, должен иметь маппинг."""
+  ledger = Ledger()
+  authorize(ledger, 5_000_00)
+  confirm(ledger, 5_000_00, fee=500_00)
+  settle(ledger, 4_500_00)
+  refund(ledger, 2_000_00)
+  used = {leg.debit for leg in ledger.journal} | {leg.credit for leg in ledger.journal}
+  missing = used - BANK_ACCOUNT_MAPPING.keys()
+  assert not missing, f"нет 809-П-соответствия для: {missing}"
