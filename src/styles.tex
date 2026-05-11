@@ -5,6 +5,7 @@
 \usepackage[table]{xcolor}
 \usepackage[skins,breakable]{tcolorbox}
 \usepackage{listings}
+\usepackage{listingsutf8}
 \tcbuselibrary{listings}
 
 % --- Цвета фигур (используются в Excalidraw-схемах и таблицах) ---
@@ -139,14 +140,31 @@
            {Я}{{\CYRYA}}1,
 }
 
+\tcbset{
+  codeblock-style/.style={
+    enhanced, breakable,
+    boxrule=0pt, arc=0pt, outer arc=0pt,
+    frame hidden,
+    before skip=\medskipamount, after skip=\medskipamount,
+    left=10pt, right=6pt, top=4pt, bottom=4pt,
+    colback=CodePanel,
+    borderline west={2pt}{0pt}{Muted!50},
+    listing only,
+  },
+}
+
 \newtcblisting{codeblock}[1]{%
-  enhanced, breakable,
-  boxrule=0pt, arc=0pt, outer arc=0pt,
-  frame hidden,
-  before skip=\medskipamount, after skip=\medskipamount,
-  left=10pt, right=6pt, top=4pt, bottom=4pt,
-  colback=CodePanel,
-  borderline west={2pt}{0pt}{Muted!50},
-  listing only,
+  codeblock-style,
   listing options={style=book-code, language=#1},
+}
+
+% Подключить внешний файл с кодом, проверенный в samples/.
+%   \codefile{Python}{samples/chXX-…/file.py}
+\newcommand{\codefile}[2]{%
+  \tcbinputlisting{%
+    codeblock-style,
+    listing engine=listings,
+    listing options={style=book-code, language=#1},
+    listing file={#2},
+  }%
 }

@@ -25,11 +25,20 @@ select = [
     "RUF",            # ruff-specific
 ]
 ignore = [
-    "E501",  # line length handled by formatter
+    "E501",   # line length handled by formatter
+    "RUF001", # ambiguous-unicode in strings (Cyrillic vs Latin lookalikes)
+    "RUF002", # ambiguous-unicode in docstrings
+    "RUF003", # ambiguous-unicode in comments
 ]
 
 [tool.ruff.lint.per-file-ignores]
 "test_*.py" = ["B011"]  # allow assert in tests
+
+[tool.ruff.lint.isort]
+# Каждый sample-каталог импортирует свой модуль как first-party.
+known-first-party = [
+    "bitmap",
+]
 
 [tool.ruff.format]
 quote-style = "double"
