@@ -1,5 +1,7 @@
 """Verification for the ledger postings shown in ch33."""
 
+import re
+
 import pytest
 
 from posting import (
@@ -85,3 +87,15 @@ def test_every_internal_account_has_809p_mapping():
   used = {leg.debit for leg in ledger.journal} | {leg.credit for leg in ledger.journal}
   missing = used - BANK_ACCOUNT_MAPPING.keys()
   assert not missing, f"нет 809-П-соответствия для: {missing}"
+
+
+def test_mapping_values_match_prefix_format():
+  """Префикс: 5 цифр главы + дефис + 3 цифры валюты.
+
+  В real-world АБС лицевой счёт 20-значный (плюс контрольный разряд,
+  код подразделения, порядковый номер). Здесь показан только префикс,
+  по которому однозначно определяются глава 809-П и валюта.
+  """
+  pattern = re.compile(r"^\d{5}-\d{3}$")
+  for name, account in BANK_ACCOUNT_MAPPING.items():
+    assert pattern.match(account), f"{name}: {account!r} не соответствует формату"
