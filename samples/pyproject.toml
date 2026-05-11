@@ -38,6 +38,7 @@ ignore = [
 # Каждый sample-каталог импортирует свой модуль как first-party.
 known-first-party = [
     "bitmap",
+    "luhn",
     "posting",
     "retry",
     "tlv",
