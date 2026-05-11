@@ -39,6 +39,7 @@ ignore = [
 known-first-party = [
     "bitmap",
     "posting",
+    "tlv",
 ]
 
 [tool.ruff.format]
