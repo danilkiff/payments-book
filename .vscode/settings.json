@@ -1,0 +1,46 @@
+{
+  // Интерпретатор — uv-managed venv внутри samples/.
+  "python.defaultInterpreterPath": "${workspaceFolder}/samples/.venv/bin/python",
+
+  // Тестирование: pytest, корневая директория = samples/, аргументы = ".".
+  // Pytest сам положит каждый sample-каталог в sys.path (default "prepend"
+  // import mode), поэтому импорты "from bitmap import ..." работают
+  // без __init__.py и без conftest.py.
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.cwd": "${workspaceFolder}/samples",
+  "python.testing.pytestArgs": ["."],
+
+  // Pylance: чтобы перекрёстные импорты в редакторе резолвились так же,
+  // как у pytest, перечисляем каждый sample-каталог как extra path.
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/samples/ch03-luhn",
+    "${workspaceFolder}/samples/ch05-iso8583-bitmap",
+    "${workspaceFolder}/samples/ch07-emv-tlv",
+    "${workspaceFolder}/samples/ch09-token-domain",
+    "${workspaceFolder}/samples/ch27-velocity",
+    "${workspaceFolder}/samples/ch32-cascade-retry",
+    "${workspaceFolder}/samples/ch33-ledger"
+  ],
+
+  // Ruff из того же venv, единая версия с make-check.
+  "ruff.path": ["${workspaceFolder}/samples/.venv/bin/ruff"],
+  "ruff.importStrategy": "fromEnvironment",
+
+  // Форматирование при сохранении только для .py, остальное не трогаем.
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    },
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // .tex не форматируется автоматически: tex-fmt запускается через make fmt.
+  "files.associations": {
+    "*.tex": "latex"
+  }
+}
