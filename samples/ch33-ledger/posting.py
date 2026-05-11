@@ -27,13 +27,14 @@ class Ledger:
         self.journal.extend(legs)
 
     def balance(self, account: str) -> int:
-        """Сальдо счёта: сумма дебетов минус сумма кредитов.
+        """Сальдо счёта: сумма кредитов минус сумма дебетов.
 
-        Активные счета (receivable, available) дают положительный остаток,
-        пассивные (payable, earned, pending) -- отрицательный.
+        Convention РСБУ-учёта (как в АБС вроде RS-Bank): активные счета
+        (receivable, available) показывают отрицательный остаток,
+        пассивные (payable, earned, pending) -- положительный.
         """
         return sum(
-            leg.amount if leg.debit == account else -leg.amount
+            -leg.amount if leg.debit == account else leg.amount
             for leg in self.journal
             if account in (leg.debit, leg.credit)
         )

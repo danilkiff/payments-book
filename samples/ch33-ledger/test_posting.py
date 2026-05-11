@@ -13,15 +13,17 @@ def test_canonical_marketplace_flow_balances():
     settle(ledger, 4_500_00)
     refund(ledger, 2_000_00)
 
-    # Активный счёт: продавец получил аванс от покупателя.
-    assert ledger.balance("cardholder_receivable") == 5_000_00
+    # Активный счёт: требование к покупателю на исходную сумму. Знак
+    # отрицательный по convention РСБУ -- активы накапливают дебет.
+    assert ledger.balance("cardholder_receivable") == -5_000_00
     # Транзитные обязательства закрыты после подтверждения и расчёта.
     assert ledger.balance("merchant_pending") == 0
     assert ledger.balance("merchant_earned") == 0
-    # После частичного возврата платформа должна продавцу 2500 руб.
-    assert ledger.balance("merchant_available") == -2_500_00
-    assert ledger.balance("platform_fee_earned") == -500_00
-    assert ledger.balance("refund_payable") == -2_000_00
+    # Пассивные счета: платформа должна продавцу 2500 руб. после возврата,
+    # признала 500 руб. комиссии, должна покупателю 2000 руб. возврата.
+    assert ledger.balance("merchant_available") == 2_500_00
+    assert ledger.balance("platform_fee_earned") == 500_00
+    assert ledger.balance("refund_payable") == 2_000_00
 
 
 def test_double_entry_keeps_total_balance_zero_at_every_step():
@@ -62,4 +64,4 @@ def test_full_refund_zeros_merchant_available():
     settle(ledger, 4_500_00)
     refund(ledger, 4_500_00)
     assert ledger.balance("merchant_available") == 0
-    assert ledger.balance("refund_payable") == -4_500_00
+    assert ledger.balance("refund_payable") == 4_500_00
