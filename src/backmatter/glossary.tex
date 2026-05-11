@@ -327,4 +327,16 @@
 \newglossaryentry{elkart_ru}{name={ЭЛКАРТ},description={Кыргызская национальная платёжная система; см.\ также ELCARD}}
 \newglossaryentry{esp}{name={ЭСП},description={Электронное средство платежа (161-ФЗ)}}
 
+% Шрифт и ширину текста глоссария сводим с библиографией: \footnotesize
+% и полная ширина строки. В дефолтном style=long описательная колонка
+% занимает только 0.6\hsize, из-за чего набор глоссария уже библио-листа
+% и визуально кажется другим блоком.
+\renewenvironment{theglossary}{%
+  \footnotesize
+  \setlength{\glsdescwidth}{\dimexpr\linewidth-5em-2\tabcolsep\relax}%
+  \begin{longtable}{@{}p{4.5em}p{\glsdescwidth}@{}}%
+}{%
+  \end{longtable}%
+}
+
 \printunsrtglossary[title={Глоссарий}]
