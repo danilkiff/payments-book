@@ -1,5 +1,6 @@
 # ── Артефакты сборки LaTeX ──────────────────────────────────────────────────
 build/
+src/gitversion.tex
 
 # ── Генерируемые фигуры (excalidraw → gen.svg → pdf; Inkscape *.svg коммитятся) ─
 assets/figures/**/*.gen.svg

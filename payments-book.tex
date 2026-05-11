@@ -15,6 +15,10 @@
 
 \input{src/preamble}
 
+\IfFileExists{src/gitversion.tex}{\input{src/gitversion}}{}
+\providecommand{\bookgitsha}{dev}
+\providecommand{\bookbuilddate}{\today}
+
 \addbibresource{assets/bibliography.bib}
 
 \begin{document}
@@ -30,6 +34,7 @@
 \frontmatter
 \pagenumbering{arabic}
 \setcounter{page}{1}
+\input{src/frontmatter/disclaimer}
 \input{src/frontmatter/preface}
 \input{src/frontmatter/reading-paths}
 \input{src/frontmatter/toc}
@@ -46,5 +51,6 @@
 \input{src/backmatter/source-map}
 \input{src/backmatter/glossary}
 \input{src/backmatter/bibliography}
+\input{src/backmatter/colophon}
 
 \end{document}
