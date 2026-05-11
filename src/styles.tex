@@ -4,6 +4,8 @@
 
 \usepackage[table]{xcolor}
 \usepackage[skins,breakable]{tcolorbox}
+\usepackage{listings}
+\tcbuselibrary{listings}
 
 % --- Цвета фигур (используются в Excalidraw-схемах и таблицах) ---
 \definecolor{Ink}{HTML}{1A2030}
@@ -40,21 +42,29 @@
 }
 
 % --- Базовый стиль notebox ---
+% Хедер-плашка во всю ширину (белый sans-serif по цветному фону) + белое тело
+% + тонкая цветная линейка снизу. Без рамки слева/справа/сверху — блок
+% не «давит» на полосу и хорошо читается как самостоятельная единица.
 \tcbset{
   notebox/.style={
     enhanced,
     breakable,
     boxrule=0pt,
-    leftrule=3pt,
-    arc=3pt,
-    outer arc=3pt,
+    arc=0pt, outer arc=0pt,
+    frame hidden,
     before skip=\medskipamount,
     after skip=\medskipamount,
-    left=6pt, right=6pt, top=3pt, bottom=3pt,
-    fontupper=\rmfamily\footnotesize\linespread{0.95}\selectfont,
+    left=6pt, right=6pt, top=4pt, bottom=4pt,
+    colback=white,
+    fontupper=\rmfamily\footnotesize\linespread{0.95}\selectfont
+      \setlength{\parindent}{0pt}%
+      \setlength{\parskip}{0.5\baselineskip plus 1pt minus 1pt},
     parbox=false,
-    attach title to upper={\par\smallskip},
     fonttitle=\sffamily\footnotesize\bfseries,
+    coltitle=white,
+    titlerule=0pt,
+    toptitle=3pt, bottomtitle=3pt,
+    lefttitle=8pt, righttitle=8pt,
   },
 }
 
@@ -62,12 +72,61 @@
 % \colornotebox{<цвет>}{<заголовок>}{<содержимое>}
 \newcommand{\colornotebox}[3]{%
   \begin{tcolorbox}[notebox,
-      colframe=#1, colback=#1!6,
-      title={\bfseries #2}, coltitle=#1]
+      colbacktitle=#1,
+      title={#2},
+      borderline south={0.4pt}{0pt}{#1}]
     #3
   \end{tcolorbox}}
 
 % --- Тематические notebox-блоки ---
-\newcommand{\definitionnote}[2]{\colornotebox{DefinitionInk}{Определение: #1}{#2}}
-\newcommand{\importantnote}[1]{\colornotebox{ImportantInk}{Важно}{#1}}
-\newcommand{\practicenote}[1]{\colornotebox{PracticeInk}{Практика}{#1}}
+% Категория идёт капителью в плашке-хедере. Определяемый термин пишется
+% внутри тела блока в классическом виде: \textbf{Термин}~--- определение.
+\newcommand{\definitionnote}[1]{\colornotebox{DefinitionInk}{ОПРЕДЕЛЕНИЕ}{#1}}
+\newcommand{\importantnote}[1]{\colornotebox{ImportantInk}{ВАЖНО}{#1}}
+\newcommand{\practicenote}[1]{\colornotebox{PracticeInk}{ПРАКТИКА}{#1}}
+
+% --- Блок кода с подсветкой синтаксиса (listings + tcolorbox) ---
+% Использование:
+%   \begin{codeblock}{Python}
+%   def f(x):
+%       return x * 2
+%   \end{codeblock}
+% Внутрь аргумента notebox-команд код не поместить (verbatim не работает
+% в аргументе макроса) — codeblock ставится рядом с поясняющей врезкой.
+\definecolor{CodePanel}{HTML}{F4F6FB}
+\definecolor{CodeKey}{HTML}{1C56A3}
+\definecolor{CodeStr}{HTML}{2F8B67}
+\definecolor{CodeCom}{HTML}{6B7280}
+\definecolor{CodeNum}{HTML}{A1273C}
+
+\lstdefinestyle{book-code}{
+  basicstyle=\ttfamily\footnotesize\linespread{0.97}\selectfont,
+  keywordstyle=\bfseries\color{CodeKey},
+  commentstyle=\itshape\color{CodeCom},
+  stringstyle=\color{CodeStr},
+  numberstyle=\tiny\color{CodeCom},
+  identifierstyle=\color{Ink},
+  showstringspaces=false,
+  tabsize=2,
+  breaklines=true,
+  breakatwhitespace=true,
+  columns=fullflexible,
+  keepspaces=true,
+  upquote=true,
+  literate={->}{{$\rightarrow$}}{2}
+           {>=}{{$\geq$}}{2}
+           {<=}{{$\leq$}}{2}
+           {!=}{{$\neq$}}{2},
+}
+
+\newtcblisting{codeblock}[1]{%
+  enhanced, breakable,
+  boxrule=0pt, arc=0pt, outer arc=0pt,
+  frame hidden,
+  before skip=\medskipamount, after skip=\medskipamount,
+  left=10pt, right=6pt, top=4pt, bottom=4pt,
+  colback=CodePanel,
+  borderline west={2pt}{0pt}{Muted!50},
+  listing only,
+  listing options={style=book-code, language=#1},
+}
