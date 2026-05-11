@@ -41,6 +41,7 @@ known-first-party = [
     "posting",
     "retry",
     "tlv",
+    "velocity",
 ]
 
 [tool.ruff.format]
