@@ -90,12 +90,22 @@ def test_every_internal_account_has_809p_mapping():
 
 
 def test_mapping_values_match_prefix_format():
-  """Префикс: 5 цифр главы + дефис + 3 цифры валюты.
+  """Префикс: 5 цифр главы + дефис + 3 цифры валюты, либо None.
 
   В real-world АБС лицевой счёт 20-значный (плюс контрольный разряд,
   код подразделения, порядковый номер). Здесь показан только префикс,
   по которому однозначно определяются глава 809-П и валюта.
+
+  None допускается явно: часть продуктовых состояний (например,
+  авторизационный pending) на 809-П вовсе не отражается.
   """
   pattern = re.compile(r"^\d{5}-\d{3}$")
   for name, account in BANK_ACCOUNT_MAPPING.items():
+    if account is None:
+      continue
     assert pattern.match(account), f"{name}: {account!r} не соответствует формату"
+
+
+def test_pending_state_is_explicitly_off_balance():
+  """merchant_pending не имеет 809-П-соответствия: авторизация -- не движение."""
+  assert BANK_ACCOUNT_MAPPING["merchant_pending"] is None
