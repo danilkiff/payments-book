@@ -10,8 +10,6 @@ class Channel(Enum):
 
 @dataclass(frozen=True)
 class TokenRestrictions:
-  """Атрибуты, записанные TSP при выпуске токена."""
-
   allowed_channels: frozenset[Channel]
   token_requestor_id: str
   # None -- ограничение по MID не задано (типично для NFC-токена устройства).
@@ -26,7 +24,6 @@ class Request:
 
 
 def check_domain(token: TokenRestrictions, request: Request) -> str | None:
-  """None -- проверка пройдена; строка с причиной -- отказ."""
   if request.channel not in token.allowed_channels:
     return f"канал {request.channel.value} не входит в разрешённые"
   if request.token_requestor_id != token.token_requestor_id:

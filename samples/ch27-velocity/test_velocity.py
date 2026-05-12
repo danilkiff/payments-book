@@ -1,11 +1,7 @@
-"""Verification for the velocity rule shown in ch27."""
-
 from velocity import VelocityRule
 
 
 class FakeClock:
-  """Управляемые часы: тесты не зависят от реального времени."""
-
   def __init__(self, start: float = 0.0) -> None:
     self.t = start
 
@@ -55,7 +51,7 @@ def test_keys_are_independent():
 
 
 def test_denied_attempts_still_count_toward_the_window():
-  """Если бы отказ не считался, атака бы обошла проверку, перебирая после."""
+  # Если бы отказ не считался, атака бы обошла проверку, перебирая после.
   clock = FakeClock()
   rule = VelocityRule(window_sec=60, max_events=2, now=clock)
   rule.check("ip_x")  # allowed
@@ -70,7 +66,7 @@ def test_denied_attempts_still_count_toward_the_window():
 
 
 def test_partial_window_decay():
-  """Часть событий выходит из окна, часть остаётся."""
+  # Часть событий выходит из окна, часть остаётся.
   clock = FakeClock()
   rule = VelocityRule(window_sec=60, max_events=2, now=clock)
   rule.check("card_1")  # t=0

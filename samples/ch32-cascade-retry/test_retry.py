@@ -1,5 +1,3 @@
-"""Verification for the cascade/retry decision shown in ch32."""
-
 import pytest
 
 from retry import Attempt, Decision, decide
@@ -53,7 +51,7 @@ def test_unknown_code_defaults_to_fail():
 
 
 def test_cascade_does_not_retry_same_acquirer():
-  """После soft decline решение -- каскад, повтор тому же эквайеру не выбирается."""
+  # После soft decline решение -- каскад, повтор тому же эквайеру не выбирается.
   history = [Attempt("A", "05")]
   decision = decide(history, ACQUIRERS)
   assert decision == Decision.CASCADE

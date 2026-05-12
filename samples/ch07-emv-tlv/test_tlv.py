@@ -1,5 +1,3 @@
-"""Verification for the EMV BER-TLV parser shown in ch07."""
-
 import pytest
 
 from tlv import TLV, parse_tlv

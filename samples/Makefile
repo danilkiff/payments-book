@@ -19,10 +19,9 @@ fmt-check:
 lint:
 	uv run ruff check .
 
-# Тесты — рекурсивно по всем подпапкам примеров.
-# Exit code 5 (no tests collected) считаем успехом — до появления первого примера.
+# Тесты -- рекурсивно по всем подпапкам примеров.
 test:
-	uv run pytest; rc=$$?; [ $$rc -eq 0 ] || [ $$rc -eq 5 ]
+	uv run pytest
 
 # Удалить кеши и виртуальное окружение.
 clean:

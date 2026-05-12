@@ -74,11 +74,10 @@ def decide(
 
   if code in SOFT_DECLINES:
     tried = {a.acquirer for a in history}
-    if not set(available_acquirers) - tried:
-      return Decision.FAIL
-    if len(tried) >= max_cascade + 1:
-      return Decision.FAIL
-    return Decision.CASCADE
+    remaining = set(available_acquirers) - tried
+    if remaining and len(tried) <= max_cascade:
+      return Decision.CASCADE
+    return Decision.FAIL
 
   # Незнакомый код -- безопаснее не повторять.
   return Decision.FAIL

@@ -1,5 +1,3 @@
-"""Verification for the bitmap parser shown in ch05."""
-
 import pytest
 
 from bitmap import parse_bitmap, parse_mti

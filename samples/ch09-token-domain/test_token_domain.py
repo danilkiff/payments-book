@@ -1,5 +1,3 @@
-"""Verification for the token domain restrictions matcher shown in ch09."""
-
 from token_domain import Channel, Request, TokenRestrictions, check_domain
 
 # NFC-токен мобильного кошелька: один канал, один TRID, без ограничения по MID.
@@ -49,7 +47,6 @@ def test_subscription_at_other_merchant_is_rejected():
 
 
 def test_subscription_token_cannot_be_used_for_one_off_cnp():
-  """Подписочный токен не должен срабатывать как разовая CNP-оплата."""
   req = Request(Channel.CNP, "50110099001", "NETFLIX-001")
   reason = check_domain(SUBSCRIPTION_TOKEN, req)
   assert reason is not None
