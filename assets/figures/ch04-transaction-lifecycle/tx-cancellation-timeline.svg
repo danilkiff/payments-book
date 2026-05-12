@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 292" width="980" height="292">
+<defs>
+  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+</defs>
+<line x1="140.0" y1="42.0" x2="960.0" y2="42.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<text x="270.0" y="31.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#555555">Авторизация</text>
+<text x="540.0" y="31.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#555555">Клиринг</text>
+<text x="820.0" y="31.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#555555">Расчёт</text>
+<line x1="400.0" y1="52.0" x2="400.0" y2="272.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="686.0" y1="52.0" x2="686.0" y2="272.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="130.0" y="93.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Отмена</text>
+<rect x="144.0" y="77.0" width="238" height="22" rx="8" fill="#2F8B67" stroke="#16a34a" stroke-width="2"/>
+<text x="144.0" y="116.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#555555">отменяет hold, мгновенно</text>
+<text x="130.0" y="158.1" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Void (отмена)</text>
+<rect x="144.0" y="142.0" width="528" height="22" rx="8" fill="#B8821C" stroke="#b45309" stroke-width="2"/>
+<text x="144.0" y="181.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#555555">убирает из клиринга, часы</text>
+<text x="130.0" y="223.1" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Возврат</text>
+<rect x="701.0" y="207.0" width="240" height="22" rx="8" fill="#ef4444" stroke="#dc2626" stroke-width="2"/>
+<text x="701.0" y="246.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#555555">новая транзакция, дни</text>
+</svg>

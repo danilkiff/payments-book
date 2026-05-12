@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 710" width="740" height="710">
+<defs>
+  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-22c55e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-22c55e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-4a9eed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-4a9eed-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-8b5cf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-8b5cf6-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
+</defs>
+<text x="95.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">Клиент</text>
+<text x="265.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#7759D6">TPP / СПУ</text>
+<text x="265.0" y="50.8" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#7759D6">(клиентское приложение)</text>
+<text x="455.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#4E63D9">ASPSP / ПУ</text>
+<text x="455.0" y="50.8" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#4E63D9">(банк счёта)</text>
+<text x="645.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#2F8B67">ОПКЦ СБП</text>
+<line x1="90.0" y1="70.0" x2="90.0" y2="670.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="265.0" y1="70.0" x2="265.0" y2="670.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="455.0" y1="70.0" x2="455.0" y2="670.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="645.0" y1="70.0" x2="645.0" y2="670.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<rect x="20.0" y="80.0" width="140" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="90.0" y="99.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">1. Запуск оплаты в TPP</text>
+<line x1="160.0" y1="98.0" x2="185.0" y2="130.0" stroke="#1A2030" stroke-width="1.5" marker-end="url(#arr-1e1e1e)"/>
+<rect x="185.0" y="130.0" width="160" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="265.0" y="142.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">2. PAR: signed JWT</text>
+<text x="265.0" y="156.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">request object</text>
+<text x="265.0" y="169.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">(ГОСТ Р 34.10)</text>
+<line x1="345.0" y1="155.0" x2="375.0" y2="155.0" stroke="#7759D6" stroke-width="1.5" marker-end="url(#arr-8b5cf6)"/>
+<rect x="375.0" y="135.0" width="160" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="455.0" y="149.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">3. Возврат request_uri</text>
+<text x="455.0" y="163.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">(TTL &lt; 600 с)</text>
+<line x1="375.0" y1="155.0" x2="345.0" y2="180.0" stroke="#4E63D9" stroke-width="1.5" marker-end="url(#arr-4a9eed)"/>
+<rect x="185.0" y="205.0" width="160" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="265.0" y="217.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">4. Редирект клиента</text>
+<text x="265.0" y="231.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">с client_id и</text>
+<text x="265.0" y="244.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">request_uri</text>
+<line x1="185.0" y1="230.0" x2="90.0" y2="265.0" stroke="#1A2030" stroke-width="1.5" marker-end="url(#arr-1e1e1e)"/>
+<line x1="90.0" y1="280.0" x2="380.0" y2="305.0" stroke="#1A2030" stroke-width="1.5" marker-end="url(#arr-1e1e1e)"/>
+<rect x="375.0" y="295.0" width="160" height="60" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="455.0" y="311.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">5. Аутентификация</text>
+<text x="455.0" y="326.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">клиента + экран</text>
+<text x="455.0" y="341.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">согласия (SCA)</text>
+<line x1="375.0" y1="330.0" x2="90.0" y2="360.0" stroke="#1A2030" stroke-width="1.5" marker-end="url(#arr-1e1e1e)"/>
+<line x1="90.0" y1="370.0" x2="185.0" y2="395.0" stroke="#1A2030" stroke-width="1.5" marker-end="url(#arr-1e1e1e)"/>
+<rect x="185.0" y="390.0" width="160" height="36" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="265.0" y="402.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">6. authorization_code</text>
+<text x="265.0" y="416.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">на callback TPP</text>
+<line x1="345.0" y1="425.0" x2="375.0" y2="450.0" stroke="#7759D6" stroke-width="1.5" marker-end="url(#arr-8b5cf6)"/>
+<rect x="375.0" y="440.0" width="160" height="70" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="455.0" y="449.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">7. token endpoint:</text>
+<text x="455.0" y="462.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">код в обмен на</text>
+<text x="455.0" y="476.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">sender-constrained</text>
+<text x="455.0" y="489.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">access_token</text>
+<text x="455.0" y="503.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">(mTLS либо DPoP)</text>
+<line x1="375.0" y1="475.0" x2="345.0" y2="525.0" stroke="#4E63D9" stroke-width="1.5" marker-end="url(#arr-4a9eed)"/>
+<rect x="185.0" y="520.0" width="160" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="265.0" y="533.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">8. API инициации</text>
+<text x="265.0" y="546.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">платежа</text>
+<text x="265.0" y="560.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">(подписанный запрос)</text>
+<line x1="345.0" y1="545.0" x2="375.0" y2="535.0" stroke="#7759D6" stroke-width="1.5" marker-end="url(#arr-8b5cf6)"/>
+<rect x="375.0" y="520.0" width="160" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="455.0" y="539.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">9. Маршрут</text>
+<text x="455.0" y="553.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">выполнения платежа</text>
+<line x1="535.0" y1="545.0" x2="585.0" y2="545.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-22c55e)"/>
+<rect x="570.0" y="520.0" width="150" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="645.0" y="533.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">10. Расчёт</text>
+<text x="645.0" y="546.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">между банками</text>
+<text x="645.0" y="560.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">через СБП</text>
+<line x1="645.0" y1="570.0" x2="535.0" y2="595.0" stroke="#2F8B67" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-22c55e)"/>
+<rect x="375.0" y="590.0" width="160" height="36" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="455.0" y="602.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">11. Подтверждение</text>
+<text x="455.0" y="616.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">исполнения платежа</text>
+<line x1="375.0" y1="608.0" x2="345.0" y2="608.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-22c55e)"/>
+<rect x="185.0" y="590.0" width="160" height="36" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="265.0" y="602.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">12. Финальный статус</text>
+<text x="265.0" y="616.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">платежа в TPP</text>
+<line x1="185.0" y1="608.0" x2="90.0" y2="608.0" stroke="#2F8B67" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-22c55e)"/>
+<rect x="20.0" y="650.0" width="700" height="40" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="370.0" y="671.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">На каждом шаге подпись и шифрование выполняются по ГОСТ через сертифицированное СКЗИ; транспорт — ГОСТ TLS.</text>
+</svg>

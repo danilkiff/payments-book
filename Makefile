@@ -1,16 +1,12 @@
-.PHONY: help all pdf excalidraw svg clean clean-figures fmt check FORCE
+.PHONY: help all pdf svg clean clean-figures fmt check FORCE
 .DEFAULT_GOAL := help
 
 help:  ## показать эту справку
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  %-14s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-all: excalidraw svg pdf  ## полная сборка: excalidraw → svg → pdf
+all: svg pdf  ## полная сборка: svg → pdf
 
-excalidraw:  ## нормализовать label-шорткаты и .excalidraw → .gen.svg
-	python3 scripts/label2bound.py
-	python3 scripts/excalidraw2svg.py
-
-svg:  ## .svg и .gen.svg → .pdf через Inkscape
+svg:  ## .svg → .pdf через Inkscape
 	python3 scripts/svg2pdf.py
 
 pdf: src/gitversion.tex  ## собрать книгу (нужны figure PDF из make svg)
@@ -30,8 +26,8 @@ src/gitversion.tex: FORCE
 clean:  ## latexmk -C (очистить build/)
 	latexmk -C payments-book.tex
 
-clean-figures:  ## удалить *.gen.svg и *.pdf под assets/figures/
-	find assets/figures -type f \( -name '*.gen.svg' -o -name '*.pdf' \) -delete
+clean-figures:  ## удалить *.pdf под assets/figures/ (перерендерятся через make svg)
+	find assets/figures -type f -name '*.pdf' -delete
 
 fmt:  ## форматировать .tex через tex-fmt
 	find src -name '*.tex' | xargs tex-fmt

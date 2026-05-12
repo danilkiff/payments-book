@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 495" width="455" height="495">
+<defs>
+  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+</defs>
+<text x="180.0" y="31.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Эскалация мониторинга споров</text>
+<rect x="60.0" y="55.0" width="180" height="44" rx="8" fill="#862e2e" stroke="#ef4444" stroke-width="2"/>
+<text x="150.0" y="78.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#ffffff">Прекращение</text>
+<text x="255.0" y="72.7" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#862e2e">Исключение</text>
+<text x="255.0" y="84.8" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#862e2e">из программы</text>
+<line x1="150.0" y1="145.0" x2="150.0" y2="103.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="50.0" y="149.0" width="200" height="44" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
+<text x="150.0" y="172.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Штрафы</text>
+<text x="265.0" y="164.7" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#ef4444">$25-100 за CB;</text>
+<text x="265.0" y="176.8" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#ef4444">VDAMP / MMPP</text>
+<line x1="150.0" y1="239.0" x2="150.0" y2="197.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="40.0" y="243.0" width="220" height="44" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
+<text x="150.0" y="266.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">План ремедиации</text>
+<text x="275.0" y="258.6" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">CB ratio &gt;1.5%</text>
+<text x="275.0" y="270.8" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">(4+ мес.)</text>
+<line x1="150.0" y1="333.0" x2="150.0" y2="291.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="30.0" y="337.0" width="240" height="44" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="150.0" y="360.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Предупреждение</text>
+<text x="285.0" y="352.6" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">CB ratio &gt;0.9%</text>
+<text x="285.0" y="364.8" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">или &gt;100 CB/мес.</text>
+<line x1="150.0" y1="427.0" x2="150.0" y2="385.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="20.0" y="431.0" width="260" height="44" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
+<text x="150.0" y="454.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Норма</text>
+<text x="295.0" y="446.6" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">CB ratio &lt;0.9%</text>
+<text x="295.0" y="458.8" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">&lt;100 CB/мес.</text>
+</svg>

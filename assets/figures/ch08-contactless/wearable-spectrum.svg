@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 615 221" width="615" height="221">
+<defs>
+  <marker id="arr-adb5bd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-adb5bd-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
+</defs>
+<text x="355.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">Спектр носимых устройств</text>
+<line x1="125.0" y1="70.0" x2="585.0" y2="70.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-adb5bd)"/>
+<text x="135.0" y="83.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#868e96">Пассив</text>
+<text x="565.0" y="83.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#868e96">Актив</text>
+<rect x="110.0" y="100.0" width="110" height="40" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<text x="165.0" y="114.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Кольцо</text>
+<text x="165.0" y="129.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">(пассив)</text>
+<rect x="235.0" y="100.0" width="110" height="40" rx="8" fill="#c3fae8" stroke="#06b6d4" stroke-width="2"/>
+<text x="290.0" y="121.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Стикер</text>
+<rect x="360.0" y="100.0" width="110" height="40" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<text x="415.0" y="121.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Браслет</text>
+<rect x="485.0" y="100.0" width="110" height="40" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<text x="540.0" y="114.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Часы</text>
+<text x="540.0" y="129.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">(актив)</text>
+<text x="100.0" y="163.5" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#868e96">Питание:</text>
+<text x="100.0" y="179.5" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#868e96">CVM:</text>
+<text x="100.0" y="195.5" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#868e96">Провиз.:</text>
+<text x="165.0" y="162.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">NFC-поле</text>
+<text x="165.0" y="178.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">нет</text>
+<text x="165.0" y="194.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">фабричный</text>
+<text x="290.0" y="162.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">NFC-поле</text>
+<text x="290.0" y="178.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">нет</text>
+<text x="290.0" y="194.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">фабричный</text>
+<text x="415.0" y="162.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">батарея</text>
+<text x="415.0" y="178.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">PIN / пароль</text>
+<text x="415.0" y="194.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">OTA / in-app</text>
+<text x="540.0" y="162.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">батарея</text>
+<text x="540.0" y="178.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">CDCVM</text>
+<text x="540.0" y="194.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">OTA / in-app</text>
+<line x1="110.0" y1="150.0" x2="595.0" y2="150.0" stroke="#dee2e6" stroke-width="1" stroke-dasharray="6,3"/>
+</svg>

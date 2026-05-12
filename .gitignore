@@ -2,8 +2,7 @@
 build/
 src/gitversion.tex
 
-# ── Генерируемые фигуры (excalidraw → gen.svg → pdf; Inkscape *.svg коммитятся) ─
-assets/figures/**/*.gen.svg
+# ── Генерируемые фигуры (Inkscape *.svg коммитятся; *.pdf пересобирается через make svg) ─
 *.pdf
 *.aux
 *.bbl

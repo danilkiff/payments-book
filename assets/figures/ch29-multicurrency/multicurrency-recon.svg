@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 285" width="500" height="285">
+<defs>
+  <marker id="arr-adb5bd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-adb5bd-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
+</defs>
+<rect x="20.0" y="30.0" width="150" height="44" rx="8" fill="#e9ecef" stroke="#5C647A" stroke-width="2"/>
+<text x="95.0" y="53.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Транзакция #1042</text>
+<line x1="170.0" y1="52.0" x2="220.0" y2="52.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-adb5bd)"/>
+<rect x="230.0" y="20.0" width="250" height="36" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<text x="355.0" y="39.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Страница оплаты: 100 EUR</text>
+<rect x="230.0" y="66.0" width="250" height="36" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<text x="355.0" y="85.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Авторизация: 100 EUR</text>
+<rect x="230.0" y="112.0" width="250" height="36" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
+<text x="355.0" y="131.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Клиринг: 108 USD</text>
+<rect x="230.0" y="158.0" width="250" height="36" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
+<text x="355.0" y="177.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Расчёт: 100.44 USD</text>
+<rect x="230.0" y="204.0" width="250" height="36" rx="8" fill="#c3fae8" stroke="#2F8B67" stroke-width="2"/>
+<text x="355.0" y="223.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Выплата: 79.35 GBP</text>
+<line x1="220.0" y1="38.0" x2="220.0" y2="232.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="355.0" y="259.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#868e96">5 представлений суммы</text>
+</svg>

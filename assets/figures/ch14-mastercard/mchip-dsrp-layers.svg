@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 290" width="510" height="290">
+<defs>
+  <marker id="arr-868e96" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#868e96"/></marker>
+  <marker id="arr-868e96-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#868e96"/></marker>
+</defs>
+<rect x="20.0" y="210.0" width="380" height="60" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<text x="210.0" y="241.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">EMV base</text>
+<rect x="20.0" y="130.0" width="380" height="60" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<text x="210.0" y="153.1" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">M/Chip</text>
+<text x="210.0" y="170.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">(contact / contactless / mobile)</text>
+<rect x="20.0" y="50.0" width="380" height="60" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
+<text x="210.0" y="73.1" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">DSRP</text>
+<text x="210.0" y="90.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">(remote)</text>
+<line x1="210.0" y1="208.0" x2="210.0" y2="192.0" stroke="#868e96" stroke-width="1.5" marker-end="url(#arr-868e96)"/>
+<line x1="210.0" y1="128.0" x2="210.0" y2="112.0" stroke="#868e96" stroke-width="1.5" marker-end="url(#arr-868e96)"/>
+<text x="410.0" y="239.7" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#4E63D9">базовый</text>
+<text x="410.0" y="159.7" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">карточный</text>
+<text x="410.0" y="79.7" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">удалённый</text>
+<text x="210.0" y="31.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">M/Chip и DSRP: слои</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 545 195" width="545" height="195">
+<defs>
+  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+</defs>
+<rect x="20.0" y="45.0" width="100" height="44" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<text x="70.0" y="61.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Сайт</text>
+<text x="70.0" y="76.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">продавца</text>
+<rect x="155.0" y="45.0" width="100" height="44" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
+<text x="205.0" y="68.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Редирект</text>
+<rect x="290.0" y="45.0" width="100" height="44" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<text x="340.0" y="61.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">ACS</text>
+<text x="340.0" y="76.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">(пароль)</text>
+<rect x="425.0" y="45.0" width="100" height="44" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
+<text x="475.0" y="68.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Возврат</text>
+<line x1="120.0" y1="67.0" x2="155.0" y2="67.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<line x1="255.0" y1="67.0" x2="290.0" y2="67.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<line x1="390.0" y1="67.0" x2="425.0" y2="67.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="20.0" y="125.0" width="505" height="50" rx="8" fill="#ffc9c9" fill-opacity="0.40" stroke="#ef4444" stroke-opacity="0.40" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="28.0" y="136.7" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#ef4444">Friction points:</text>
+<rect x="30.0" y="145.0" width="150" height="24" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="1"/>
+<text x="105.0" y="158.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#ef4444">полноэкранный редирект</text>
+<rect x="195.0" y="145.0" width="140" height="24" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="1"/>
+<text x="265.0" y="158.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#ef4444">статический пароль</text>
+<rect x="350.0" y="145.0" width="120" height="24" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="1"/>
+<text x="410.0" y="158.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#ef4444">мобильный UX</text>
+<text x="270.0" y="29.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#868e96">3DS v1: redirect-флоу</text>
+</svg>

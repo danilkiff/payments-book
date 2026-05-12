@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 154" width="550" height="154">
+<defs>
+  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+</defs>
+<text x="265.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">Путь валюты при DCC</text>
+<rect x="20.0" y="62.0" width="100" height="50" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<text x="70.0" y="81.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Локальная</text>
+<text x="70.0" y="95.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">валюта</text>
+<line x1="120.0" y1="87.0" x2="150.0" y2="87.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="155.0" y="62.0" width="100" height="50" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
+<text x="205.0" y="81.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">DCC-</text>
+<text x="205.0" y="95.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">конверсия</text>
+<text x="205.0" y="126.8" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#B8821C">Курс: DCC-провайдер</text>
+<line x1="255.0" y1="87.0" x2="285.0" y2="87.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="290.0" y="62.0" width="100" height="50" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
+<text x="340.0" y="81.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Валюта</text>
+<text x="340.0" y="95.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">карты</text>
+<line x1="390.0" y1="87.0" x2="420.0" y2="87.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="425.0" y="62.0" width="100" height="50" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<text x="475.0" y="88.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Расчёт</text>
+<text x="475.0" y="126.8" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#7759D6">Курс: карточная сеть</text>
+</svg>

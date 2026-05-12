@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 239" width="500" height="239">
+<defs>
+  <marker id="arr-adb5bd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-adb5bd-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
+</defs>
+<text x="110.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">ГОСТ</text>
+<text x="390.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">Международный</text>
+<rect x="20.0" y="55.0" width="180" height="44" rx="8" fill="#c3fae8" stroke="#06b6d4" stroke-width="2"/>
+<text x="110.0" y="71.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ГОСТ 34.10</text>
+<text x="110.0" y="86.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">(подпись)</text>
+<rect x="20.0" y="115.0" width="180" height="44" rx="8" fill="#c3fae8" stroke="#06b6d4" stroke-width="2"/>
+<text x="110.0" y="131.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ГОСТ 34.12</text>
+<text x="110.0" y="146.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">(шифрование)</text>
+<rect x="20.0" y="175.0" width="180" height="44" rx="8" fill="#c3fae8" stroke="#06b6d4" stroke-width="2"/>
+<text x="110.0" y="191.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ГОСТ 34.11</text>
+<text x="110.0" y="206.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">(хеш)</text>
+<rect x="300.0" y="55.0" width="180" height="44" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<text x="390.0" y="78.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">RSA / ECC</text>
+<rect x="300.0" y="115.0" width="180" height="44" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<text x="390.0" y="138.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">3DES / AES</text>
+<rect x="300.0" y="175.0" width="180" height="44" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<text x="390.0" y="198.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">SHA-256</text>
+<line x1="202.0" y1="77.0" x2="298.0" y2="77.0" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-adb5bd)" marker-start="url(#arr-adb5bd-s)"/>
+<line x1="202.0" y1="137.0" x2="298.0" y2="137.0" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-adb5bd)" marker-start="url(#arr-adb5bd-s)"/>
+<line x1="202.0" y1="197.0" x2="298.0" y2="197.0" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-adb5bd)" marker-start="url(#arr-adb5bd-s)"/>
+<text x="248.0" y="70.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#868e96">подпись</text>
+<text x="250.0" y="130.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#868e96">шифрование</text>
+<text x="248.0" y="190.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#868e96">хеш</text>
+</svg>

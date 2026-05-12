@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 975 452" width="975" height="452">
+<defs>
+  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-4a9eed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-4a9eed-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-8b5cf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-8b5cf6-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
+</defs>
+<line x1="20.0" y1="20.0" x2="20.0" y2="430.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="250.0" y1="20.0" x2="250.0" y2="430.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="515.0" y1="20.0" x2="515.0" y2="430.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="735.0" y1="20.0" x2="735.0" y2="430.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="20.0" y1="44.0" x2="250.0" y2="44.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<text x="135.0" y="34.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">PAN</text>
+<line x1="250.0" y1="104.0" x2="515.0" y2="104.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<text x="382.5" y="94.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">PAN + device data</text>
+<line x1="515.0" y1="164.0" x2="735.0" y2="164.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<text x="625.0" y="154.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">ID&amp;V request</text>
+<line x1="735.0" y1="224.0" x2="515.0" y2="224.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<text x="625.0" y="214.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">approve / extra verification</text>
+<line x1="515.0" y1="284.0" x2="250.0" y2="284.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<text x="382.5" y="274.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">DPAN + keys</text>
+<line x1="250.0" y1="344.0" x2="250.0" y2="384.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<text x="238.0" y="364.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">SE / HCE load</text>
+<line x1="250.0" y1="424.0" x2="20.0" y2="424.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
+<text x="135.0" y="414.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">«Карта добавлена»</text>
+</svg>

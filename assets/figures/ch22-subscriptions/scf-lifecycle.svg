@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582 162" width="582" height="162">
+<defs>
+  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+</defs>
+<text x="262.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">Stored Credential Framework</text>
+<rect x="22.0" y="70.0" width="110" height="50" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<text x="77.0" y="97.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">CIT</text>
+<text x="77.0" y="136.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#4E63D9">согласие + NTID</text>
+<line x1="132.0" y1="95.0" x2="182.0" y2="95.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="192.0" y="70.0" width="90" height="50" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<text x="237.0" y="96.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">MIT₁</text>
+<text x="237.0" y="136.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#7759D6">NTID ref</text>
+<line x1="282.0" y1="95.0" x2="322.0" y2="95.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="332.0" y="70.0" width="90" height="50" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<text x="377.0" y="96.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">MIT₂</text>
+<text x="377.0" y="136.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#7759D6">NTID ref</text>
+<line x1="422.0" y1="95.0" x2="462.0" y2="95.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<rect x="472.0" y="70.0" width="90" height="50" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<text x="517.0" y="96.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">MIT₃</text>
+<text x="517.0" y="136.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#7759D6">NTID ref</text>
+</svg>
