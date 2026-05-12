@@ -18,9 +18,13 @@
     "${workspaceFolder}/samples/ch05-iso8583-bitmap",
     "${workspaceFolder}/samples/ch07-emv-tlv",
     "${workspaceFolder}/samples/ch09-token-domain",
+    "${workspaceFolder}/samples/ch26-sanctions",
     "${workspaceFolder}/samples/ch27-velocity",
+    "${workspaceFolder}/samples/ch28-mac-retry",
+    "${workspaceFolder}/samples/ch29-reconciliation",
     "${workspaceFolder}/samples/ch32-cascade-retry",
-    "${workspaceFolder}/samples/ch33-ledger"
+    "${workspaceFolder}/samples/ch33-ledger",
+    "${workspaceFolder}/samples/ch34-fx-quote"
   ],
 
   // Ruff из того же venv, единая версия с make-check.

@@ -40,8 +40,12 @@ ignore = [
 known-first-party = [
     "bitmap",
     "luhn",
+    "mac",
     "posting",
+    "quote",
+    "reconcile",
     "retry",
+    "screening",
     "tlv",
     "token_domain",
     "velocity",
