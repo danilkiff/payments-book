@@ -1,24 +1,22 @@
-.PHONY: all pdf excalidraw svg clean clean-figures fmt check FORCE
-.DEFAULT_GOAL := all
+.PHONY: help all pdf excalidraw svg clean clean-figures fmt check FORCE
+.DEFAULT_GOAL := help
 
-# Полная сборка: excalidraw → svg → pdf.
-all: excalidraw svg pdf
+help:  ## показать эту справку
+	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  %-14s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-# Нормализовать label-шорткаты и конвертировать .excalidraw → .gen.svg.
-# Inkscape-исходники (*.svg) при этом не трогаются.
-excalidraw:
+all: excalidraw svg pdf  ## полная сборка: excalidraw → svg → pdf
+
+excalidraw:  ## нормализовать label-шорткаты и .excalidraw → .gen.svg
 	python3 scripts/label2bound.py
 	python3 scripts/excalidraw2svg.py
 
-# Конвертировать assets/figures/**/{*.svg,*.gen.svg} → .pdf через Inkscape.
-svg:
+svg:  ## .svg и .gen.svg → .pdf через Inkscape
 	python3 scripts/svg2pdf.py
 
-# Собрать книгу (требует сгенерированных figure PDF из make svg).
-pdf: src/gitversion.tex
+pdf: src/gitversion.tex  ## собрать книгу (нужны figure PDF из make svg)
 	latexmk payments-book.tex
 
-# Версия экземпляра для колофона: short SHA + дата сборки + маркер «грязного» дерева.
+# Версия экземпляра для разворота: short SHA + дата сборки + маркер «грязного» дерева.
 # Файл переписывается только при изменении содержимого, чтобы не дёргать инкрементальную
 # пересборку latexmk без причины. Зависимость от FORCE — чтобы рецепт запускался каждый раз.
 src/gitversion.tex: FORCE
@@ -29,16 +27,14 @@ src/gitversion.tex: FORCE
 	 printf '\\gdef\\bookgitsha{%s}\n\\gdef\\bookbuilddate{%s}\n' "$$sha" "$$dt" > $$tmp; \
 	 if ! cmp -s $$tmp $@ 2>/dev/null; then mv $$tmp $@; else rm $$tmp; fi
 
-clean:
+clean:  ## latexmk -C (очистить build/)
 	latexmk -C payments-book.tex
 
-# Удалить генерируемые figure-артефакты (*.gen.svg и *.pdf под assets/figures/).
-# Inkscape-исходники (*.svg) и .excalidraw не трогаются.
-clean-figures:
+clean-figures:  ## удалить *.gen.svg и *.pdf под assets/figures/
 	find assets/figures -type f \( -name '*.gen.svg' -o -name '*.pdf' \) -delete
 
-fmt:
+fmt:  ## форматировать .tex через tex-fmt
 	find src -name '*.tex' | xargs tex-fmt
 
-check:
+check:  ## chktex
 	chktex -q payments-book.tex

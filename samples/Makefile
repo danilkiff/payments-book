@@ -1,29 +1,26 @@
-.PHONY: all check lint fmt fmt-check test sync clean
-.DEFAULT_GOAL := check
+.PHONY: help check lint fmt fmt-check test sync clean
+.DEFAULT_GOAL := help
 
-# Полная проверка: формат, линт, тесты. Запускается перед коммитом примера.
-check: fmt-check lint test
+help:  ## показать эту справку
+	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  %-12s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-# Установить/обновить виртуальное окружение из pyproject.toml.
-sync:
+check: fmt-check lint test  ## полная проверка: формат + линт + тесты
+
+sync:  ## установить/обновить .venv через uv
 	uv sync
 
-# Форматирование.
-fmt:
+fmt:  ## переформатировать
 	uv run ruff format .
 
-fmt-check:
+fmt-check:  ## проверить форматирование
 	uv run ruff format --check .
 
-# Линт.
-lint:
+lint:  ## линт
 	uv run ruff check .
 
-# Тесты -- рекурсивно по всем подпапкам примеров.
-test:
+test:  ## тесты по всем подпапкам
 	uv run pytest
 
-# Удалить кеши и виртуальное окружение.
-clean:
+clean:  ## удалить .venv и кеши
 	rm -rf .venv .pytest_cache .ruff_cache
 	find . -type d -name __pycache__ -exec rm -rf {} +
