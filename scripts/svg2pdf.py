@@ -1,16 +1,8 @@
 #!/usr/bin/env python3
 """Конвертирует SVG из assets/figures/ в PDF через Inkscape headless.
 
-Поддерживает оба формата исходников:
-- *.svg          — Inkscape native (новый канон, коммитится)
-- *.gen.svg      — транзиентный продукт excalidraw2svg.py (gitignore)
-
-Если для одного базнейма найдены оба .svg и .gen.svg, скрипт ругается:
-после миграции фигуры .excalidraw должен быть удалён, иначе старая
-сгенерированная версия будет затирать ручные правки в Inkscape-исходнике.
-
 Использует Inkscape --shell (один процесс на весь батч), чтобы избежать
-~1-2 с стартапа на каждый из 79 файлов.
+~1-2 с стартапа на каждый из ~70 файлов.
 
 Запускать: python3 scripts/svg2pdf.py  (или make svg)
 Установка Inkscape: brew install inkscape (macOS) / apt install inkscape (Ubuntu).
@@ -19,7 +11,6 @@ import shutil
 import subprocess
 import sys
 import time
-from collections import defaultdict
 from pathlib import Path
 
 INKSCAPE = "inkscape"
@@ -32,36 +23,13 @@ ROOT = Path(__file__).resolve().parent.parent / "assets" / "figures"
 REPO = ROOT.parent.parent
 
 
-def base_of(svg: Path) -> Path:
-    """Канонический базнейм без любого из расширений (.svg или .gen.svg)."""
-    if svg.name.endswith(".gen.svg"):
-        return svg.with_name(svg.name[: -len(".gen.svg")])
-    return svg.with_suffix("")
-
-
-sources: dict[Path, list[Path]] = defaultdict(list)
-for svg in sorted(ROOT.rglob("*.svg")):
-    sources[base_of(svg)].append(svg)
+sources = sorted(ROOT.rglob("*.svg"))
 
 if not sources:
     print("SVG-файлы не найдены в assets/figures/")
     sys.exit(0)
 
-collisions = {b: paths for b, paths in sources.items() if len(paths) > 1}
-if collisions:
-    print("ERROR: найдены оба .svg и .gen.svg для одного базнейма:", file=sys.stderr)
-    print("Удалите .excalidraw (и .gen.svg) после миграции в Inkscape.", file=sys.stderr)
-    for base, paths in sorted(collisions.items()):
-        print(f"  базнейм {base.relative_to(REPO)}:", file=sys.stderr)
-        for p in paths:
-            print(f"    {p.relative_to(REPO)}", file=sys.stderr)
-    sys.exit(2)
-
-jobs: list[tuple[Path, Path]] = []
-for base, paths in sorted(sources.items()):
-    src = paths[0]
-    pdf = base.with_suffix(".pdf")
-    jobs.append((src, pdf))
+jobs: list[tuple[Path, Path]] = [(src, src.with_suffix(".pdf")) for src in sources]
 
 shell_lines = [
     f"file-open:{src}; export-filename:{pdf}; export-type:pdf; export-do; file-close"

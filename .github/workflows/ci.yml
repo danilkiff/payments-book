@@ -35,8 +35,8 @@ jobs:
           sudo apt-get update -q
           sudo apt-get install -y -q inkscape
 
-      - name: excalidraw → SVG → figure PDFs
-        run: make excalidraw svg
+      - name: SVG → figure PDFs
+        run: make svg
 
       - name: Build PDF (LaTeX)
         uses: docker://ghcr.io/xu-cheng/texlive-full:20260101
