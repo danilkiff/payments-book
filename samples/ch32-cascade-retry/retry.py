@@ -8,40 +8,22 @@ class Decision(Enum):
   FAIL = "fail"
 
 
+# Каноничные имена DE 39 по ISO 8583:1987; по 2 на класс для иллюстрации.
+
 # Реквизиты карты или статус -- повтор и каскад не помогут.
-HARD_DECLINES = frozenset(
-  {
-    "04",  # изъятие карты
-    "07",  # изъятие карты, особое условие
-    "12",  # невалидная транзакция
-    "14",  # несуществующий номер карты
-    "41",  # карта заявлена утерянной
-    "43",  # карта заявлена украденной
-    "54",  # карта просрочена
-    "57",  # операция не разрешена держателю
-    "58",  # операция не разрешена терминалу
-  }
-)
+INVALID_CARD_NUMBER = "14"
+EXPIRED_CARD = "54"
+HARD_DECLINES = frozenset({INVALID_CARD_NUMBER, EXPIRED_CARD})
 
 # Сбой канала или эмитента -- безопасно повторить тому же эквайеру.
-TRANSIENT = frozenset(
-  {
-    "19",  # re-enter transaction (таймаут / нет ответа)
-    "91",  # эмитент или коммутатор недоступен
-    "96",  # сбой системы
-  }
-)
+ISSUER_INOPERATIVE = "91"
+SYSTEM_MALFUNCTION = "96"
+TRANSIENT = frozenset({ISSUER_INOPERATIVE, SYSTEM_MALFUNCTION})
 
 # Иной маршрут (BIN эквайера, MCC, Terminal ID) может дать иной ответ.
-SOFT_DECLINES = frozenset(
-  {
-    "05",  # do not honor (отказ без объяснения)
-    "51",  # недостаточно средств
-    "61",  # превышен лимит суммы
-    "62",  # карта с ограничениями
-    "65",  # превышен лимит частоты
-  }
-)
+DO_NOT_HONOR = "05"
+INSUFFICIENT_FUNDS = "51"
+SOFT_DECLINES = frozenset({DO_NOT_HONOR, INSUFFICIENT_FUNDS})
 
 
 @dataclass(frozen=True)
@@ -53,7 +35,6 @@ class Attempt:
 def decide(
   history: list[Attempt],
   available_acquirers: list[str],
-  *,
   max_retries: int = 1,
   max_cascade: int = 2,
 ) -> Decision:
