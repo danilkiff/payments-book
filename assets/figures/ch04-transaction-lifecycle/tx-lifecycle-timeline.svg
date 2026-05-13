@@ -1,69 +1,547 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" width="720" height="200">
-<defs>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
-</defs>
-
-<!-- Phase panels: 3 zones across full width -->
-<rect x="8" y="10" width="232" height="180" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<rect x="248" y="10" width="222" height="180" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<rect x="478" y="10" width="234" height="180" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-
-<!-- Phase headers -->
-<text x="124" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="bold" fill="#1A2030">Авторизация</text>
-<text x="359" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="bold" fill="#1A2030">Клиринг</text>
-<text x="595" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="bold" fill="#1A2030">Расчёт</text>
-
-<!-- === Авторизация: Терм -> Эквайер -> Сеть -> Эмитент === -->
-<rect x="16" y="62" width="48" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="40" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">Терм.</text>
-<rect x="76" y="62" width="60" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="106" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">Эквайер</text>
-<rect x="148" y="62" width="40" height="44" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="168" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">Сеть</text>
-<rect x="200" y="62" width="32" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="216" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Эмит.</text>
-<line x1="64" y1="84" x2="76" y2="84" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="136" y1="84" x2="148" y2="84" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="188" y1="84" x2="200" y2="84" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-
-<!-- Response loop -->
-<path d="M 216,106 L 216,138 L 40,138 L 40,106" fill="none" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="128" y="132" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">ответ</text>
-
-<!-- === Клиринг: Эквайер -> Пакет -> Сеть -> Эмитент === -->
-<rect x="256" y="62" width="56" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="284" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">Эквайер</text>
-<rect x="322" y="62" width="48" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="346" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">Пакет</text>
-<rect x="382" y="62" width="40" height="44" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="402" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">Сеть</text>
-<rect x="434" y="62" width="32" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="450" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Эмит.</text>
-<line x1="312" y1="84" x2="322" y2="84" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="370" y1="84" x2="382" y2="84" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<line x1="422" y1="84" x2="434" y2="84" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-
-<!-- === Расчёт: Банк A -> Банк B -> ТСП === -->
-<rect x="486" y="62" width="64" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="518" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">Банк A</text>
-<rect x="590" y="62" width="64" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="622" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">Банк B</text>
-<rect x="666" y="62" width="40" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="686" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">ТСП</text>
-<line x1="550" y1="84" x2="590" y2="84" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
-<text x="570" y="74" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">деньги</text>
-<line x1="654" y1="84" x2="666" y2="84" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-
-<!-- Timeline bars inside panels -->
-<rect x="16" y="160" width="446" height="12" rx="6" fill="#4E63D9" fill-opacity="0.35" stroke="none"/>
-<rect x="486" y="160" width="220" height="12" rx="6" fill="#B8821C" fill-opacity="0.35" stroke="none"/>
-<text x="239" y="184" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">T0 → T+часы (авторизация и клиринг)</text>
-<text x="596" y="184" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">T+дни (расчёт)</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 720 200"
+   width="720"
+   height="200"
+   version="1.1"
+   id="svg29"
+   sodipodi:docname="tx-lifecycle-timeline.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview29"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2578128"
+     inkscape:cx="404.27319"
+     inkscape:cy="23.850926"
+     inkscape:window-width="1403"
+     inkscape:window-height="739"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg29" />
+  <defs
+     id="defs8">
+    <marker
+       id="arr-AccentA"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M0,0 L10,5 L0,10 Z"
+         fill="#4E63D9"
+         id="path1" />
+    </marker>
+    <marker
+       id="arr-AccentA-s"
+       viewBox="0 0 10 10"
+       refX="1"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M10,0 L0,5 L10,10 Z"
+         fill="#4E63D9"
+         id="path2" />
+    </marker>
+    <marker
+       id="arr-Muted"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M0,0 L10,5 L0,10 Z"
+         fill="#5C647A"
+         id="path3" />
+    </marker>
+    <marker
+       id="arr-Muted-s"
+       viewBox="0 0 10 10"
+       refX="1"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M10,0 L0,5 L10,10 Z"
+         fill="#5C647A"
+         id="path4" />
+    </marker>
+    <marker
+       id="arr-AccentB"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M0,0 L10,5 L0,10 Z"
+         fill="#7759D6"
+         id="path5" />
+    </marker>
+    <marker
+       id="arr-AccentB-s"
+       viewBox="0 0 10 10"
+       refX="1"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M10,0 L0,5 L10,10 Z"
+         fill="#7759D6"
+         id="path6" />
+    </marker>
+    <marker
+       id="arr-Warn"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M0,0 L10,5 L0,10 Z"
+         fill="#B8821C"
+         id="path7" />
+    </marker>
+    <marker
+       id="arr-Warn-s"
+       viewBox="0 0 10 10"
+       refX="1"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M10,0 L0,5 L10,10 Z"
+         fill="#B8821C"
+         id="path8" />
+    </marker>
+  </defs>
+  <!-- Phase panels: 3 zones across full width -->
+  <rect
+     x="8"
+     y="10"
+     width="232"
+     height="180"
+     rx="8"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect8" />
+  <rect
+     x="248"
+     y="10"
+     width="222"
+     height="180"
+     rx="8"
+     fill="#B8821C"
+     fill-opacity="0.18"
+     stroke="#B8821C"
+     stroke-width="2"
+     id="rect9" />
+  <rect
+     x="478"
+     y="10"
+     width="234"
+     height="180"
+     rx="8"
+     fill="#2F8B67"
+     fill-opacity="0.15"
+     stroke="#2F8B67"
+     stroke-width="2"
+     id="rect10" />
+  <!-- Phase headers -->
+  <text
+     x="124"
+     y="32"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     font-weight="bold"
+     fill="#1A2030"
+     id="text10">Авторизация</text>
+  <text
+     x="359"
+     y="32"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     font-weight="bold"
+     fill="#1A2030"
+     id="text11">Клиринг</text>
+  <text
+     x="595"
+     y="32"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     font-weight="bold"
+     fill="#1A2030"
+     id="text12">Расчёт</text>
+  <!-- === Авторизация: Терм -> Эквайер -> Сеть -> Эмитент === -->
+  <rect
+     x="16"
+     y="62"
+     width="48"
+     height="44"
+     rx="8"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect12" />
+  <text
+     x="40"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     fill="#1A2030"
+     id="text13">Терм.</text>
+  <rect
+     x="76"
+     y="62"
+     width="60"
+     height="44"
+     rx="8"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect13" />
+  <text
+     x="106"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     fill="#1A2030"
+     id="text14">Эквайер</text>
+  <rect
+     x="148"
+     y="62"
+     width="40"
+     height="44"
+     rx="8"
+     fill="#7759D6"
+     fill-opacity="0.15"
+     stroke="#7759D6"
+     stroke-width="2"
+     id="rect14" />
+  <text
+     x="168"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     fill="#1A2030"
+     id="text15">Сеть</text>
+  <rect
+     x="200"
+     y="62"
+     width="32"
+     height="44"
+     rx="8"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect15" />
+  <text
+     x="216"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="13"
+     fill="#1A2030"
+     id="text16">Эмит.</text>
+  <line
+     x1="64"
+     y1="84"
+     x2="76"
+     y2="84"
+     stroke="#4E63D9"
+     stroke-width="2"
+     marker-end="url(#arr-AccentA)"
+     id="line16" />
+  <line
+     x1="136"
+     y1="84"
+     x2="148"
+     y2="84"
+     stroke="#4E63D9"
+     stroke-width="2"
+     marker-end="url(#arr-AccentA)"
+     id="line17" />
+  <line
+     x1="188"
+     y1="84"
+     x2="200"
+     y2="84"
+     stroke="#4E63D9"
+     stroke-width="2"
+     marker-end="url(#arr-AccentA)"
+     id="line18" />
+  <!-- Response loop -->
+  <path
+     d="M 216,106 L 216,138 L 40,138 L 40,106"
+     fill="none"
+     stroke="#5C647A"
+     stroke-width="2"
+     stroke-dasharray="6,3"
+     marker-end="url(#arr-Muted)"
+     id="path18" />
+  <text
+     x="128"
+     y="132"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="13"
+     fill="#1A2030"
+     id="text18">ответ</text>
+  <!-- === Клиринг: Эквайер -> Пакет -> Сеть -> Эмитент === -->
+  <rect
+     x="256"
+     y="62"
+     width="56"
+     height="44"
+     rx="8"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect18" />
+  <text
+     x="284"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     fill="#1A2030"
+     id="text19">Эквайер</text>
+  <rect
+     x="322"
+     y="62"
+     width="48"
+     height="44"
+     rx="8"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect19" />
+  <text
+     x="346"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     fill="#1A2030"
+     id="text20">Пакет</text>
+  <rect
+     x="382"
+     y="62"
+     width="40"
+     height="44"
+     rx="8"
+     fill="#7759D6"
+     fill-opacity="0.15"
+     stroke="#7759D6"
+     stroke-width="2"
+     id="rect20" />
+  <text
+     x="402"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     fill="#1A2030"
+     id="text21">Сеть</text>
+  <rect
+     x="434"
+     y="62"
+     width="32"
+     height="44"
+     rx="8"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect21" />
+  <text
+     x="450"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="13"
+     fill="#1A2030"
+     id="text22">Эмит.</text>
+  <line
+     x1="312"
+     y1="84"
+     x2="322"
+     y2="84"
+     stroke="#5C647A"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line22" />
+  <line
+     x1="370"
+     y1="84"
+     x2="382"
+     y2="84"
+     stroke="#7759D6"
+     stroke-width="2"
+     marker-end="url(#arr-AccentB)"
+     id="line23" />
+  <line
+     x1="422"
+     y1="84"
+     x2="434"
+     y2="84"
+     stroke="#5C647A"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line24" />
+  <!-- === Расчёт: Банк A -> Банк B -> ТСП === -->
+  <rect
+     x="486"
+     y="62"
+     width="64"
+     height="44"
+     rx="8"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect24" />
+  <text
+     x="518"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     fill="#1A2030"
+     id="text24">Банк A</text>
+  <rect
+     x="590"
+     y="62"
+     width="64"
+     height="44"
+     rx="8"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect25" />
+  <text
+     x="622"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     fill="#1A2030"
+     id="text25">Банк B</text>
+  <rect
+     x="666"
+     y="62"
+     width="40"
+     height="44"
+     rx="8"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect26" />
+  <text
+     x="686"
+     y="89"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="15"
+     fill="#1A2030"
+     id="text26">ТСП</text>
+  <line
+     x1="550"
+     y1="84"
+     x2="590"
+     y2="84"
+     stroke="#B8821C"
+     stroke-width="2"
+     marker-end="url(#arr-Warn)"
+     id="line26" />
+  <text
+     x="570"
+     y="116.93166"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="13px"
+     fill="#1a2030"
+     id="text27">деньги</text>
+  <line
+     x1="654"
+     y1="84"
+     x2="666"
+     y2="84"
+     stroke="#5C647A"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line27" />
+  <!-- Timeline bars inside panels -->
+  <rect
+     x="16"
+     y="160"
+     width="446"
+     height="12"
+     rx="6"
+     fill="#4E63D9"
+     fill-opacity="0.35"
+     stroke="none"
+     id="rect27" />
+  <rect
+     x="486"
+     y="160"
+     width="220"
+     height="12"
+     rx="6"
+     fill="#B8821C"
+     fill-opacity="0.35"
+     stroke="none"
+     id="rect28" />
+  <text
+     x="239"
+     y="184"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="12"
+     fill="#5C647A"
+     id="text28">T0 → T+часы (авторизация и клиринг)</text>
+  <text
+     x="596"
+     y="184"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="12"
+     fill="#5C647A"
+     id="text29">T+дни (расчёт)</text>
 </svg>

@@ -5,7 +5,30 @@
    height="200"
    version="1.1"
    id="svg21"
-   xmlns="http://www.w3.org/2000/svg">
+   sodipodi:docname="bitmap-to-fields.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.998211"
+     inkscape:cx="301.01926"
+     inkscape:cy="77.569385"
+     inkscape:window-width="1403"
+     inkscape:window-height="739"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg21" />
   <defs
      id="defs4">
     <marker
@@ -36,45 +59,35 @@
     </marker>
   </defs>
   <rect
-     x="23.116346"
-     y="101.74876"
-     width="113.07722"
-     height="28.234016"
-     rx="8"
-     fill="#4E63D9"
+     x="6.719934"
+     y="101.86711"
+     width="154.37766"
+     height="27.997297"
+     rx="10.921927"
+     fill="#4e63d9"
      fill-opacity="0.15"
-     stroke="#4E63D9"
-     stroke-width="1.5"
+     stroke="#4e63d9"
+     stroke-width="1.58443"
      id="rect4" />
   <text
-     x="80"
-     y="117.4"
+     x="81.501343"
+     y="118.40089"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
      font-weight="normal"
-     fill="#1A2030"
-     id="text4">72 3C 04 81 20 C0 80 00</text>
+     fill="#1a2030"
+     id="text4"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">72 3C 04 81 20 C0 80 00</text>
   <line
-     x1="136.54956"
+     x1="162.07239"
      y1="114.83063"
-     x2="185.30458"
+     x2="185.81755"
      y2="114.83063"
-     stroke="#4E63D9"
+     stroke="#4e63d9"
      stroke-width="2"
      marker-end="url(#arr-AccentA)"
      id="line5" />
-  <rect
-     x="185.0"
-     y="40.0"
-     width="100"
-     height="140"
-     rx="8"
-     fill="#B8821C"
-     fill-opacity="0.18"
-     stroke="#B8821C"
-     stroke-width="2"
-     id="rect5" />
   <text
      x="235.0"
      y="62.7"
@@ -83,7 +96,8 @@
      font-size="9"
      font-weight="normal"
      fill="#1A2030"
-     id="text6">Бит 1: 0</text>
+     id="text6"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Бит 1: 0</text>
   <text
      x="235.0"
      y="74.9"
@@ -92,7 +106,8 @@
      font-size="9"
      font-weight="normal"
      fill="#1A2030"
-     id="text7">Бит 2: 1</text>
+     id="text7"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Бит 2: 1</text>
   <text
      x="235.0"
      y="87.0"
@@ -101,7 +116,8 @@
      font-size="9"
      font-weight="normal"
      fill="#1A2030"
-     id="text8">Бит 3: 1</text>
+     id="text8"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Бит 3: 1</text>
   <text
      x="235.0"
      y="99.2"
@@ -110,7 +126,8 @@
      font-size="9"
      font-weight="normal"
      fill="#1A2030"
-     id="text9">Бит 4: 1</text>
+     id="text9"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Бит 4: 1</text>
   <text
      x="235.0"
      y="111.3"
@@ -119,7 +136,8 @@
      font-size="9"
      font-weight="normal"
      fill="#1A2030"
-     id="text10">Бит 5: 0</text>
+     id="text10"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Бит 5: 0</text>
   <text
      x="235.0"
      y="123.5"
@@ -128,7 +146,8 @@
      font-size="9"
      font-weight="normal"
      fill="#1A2030"
-     id="text11">Бит 6: 0</text>
+     id="text11"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Бит 6: 0</text>
   <text
      x="235.0"
      y="135.6"
@@ -137,7 +156,8 @@
      font-size="9"
      font-weight="normal"
      fill="#1A2030"
-     id="text12">Бит 7: 1</text>
+     id="text12"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Бит 7: 1</text>
   <text
      x="235.0"
      y="147.8"
@@ -146,7 +166,8 @@
      font-size="9"
      font-weight="normal"
      fill="#1A2030"
-     id="text13">Бит 8: 0</text>
+     id="text13"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Бит 8: 0</text>
   <text
      x="235.0"
      y="159.9"
@@ -155,7 +176,8 @@
      font-size="9"
      font-weight="normal"
      fill="#1A2030"
-     id="text14">...</text>
+     id="text14"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">...</text>
   <line
      x1="285.0"
      y1="59.9"
@@ -184,65 +206,80 @@
      marker-end="url(#arr-AccentA)"
      id="line-de4" />
   <rect
-     x="292.7352"
-     y="41.90089"
-     width="150"
-     height="36"
-     rx="8"
-     fill="#2F8B67"
+     x="292.62555"
+     y="41.791248"
+     width="118.19064"
+     height="36.219284"
+     rx="6.3035007"
+     fill="#2f8b67"
      fill-opacity="0.15"
-     stroke="#2F8B67"
+     stroke="#2f8b67"
      stroke-width="2"
      id="rect16" />
-  <text
-     x="367.7352"
-     y="61.500889"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="normal"
-     fill="#1A2030"
-     id="text16">DE 2 (PAN)</text>
   <rect
-     x="292.7352"
-     y="91.900894"
-     width="150"
-     height="36"
-     rx="8"
-     fill="#7759D6"
+     x="294.33618"
+     y="141.47675"
+     width="118.19064"
+     height="36.219284"
+     rx="6.3035007"
+     fill="#2f8b67"
      fill-opacity="0.15"
-     stroke="#7759D6"
-     stroke-width="2"
-     id="rect17" />
-  <text
-     x="367.7352"
-     y="111.50089"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="normal"
-     fill="#1A2030"
-     id="text17">DE 3 (Proc Code)</text>
+     stroke="#2f8b67"
+     stroke-width="1.78072"
+     id="rect16-1" />
   <rect
-     x="293.42529"
-     y="142.59099"
-     width="150"
-     height="36"
-     rx="8"
-     fill="#B8821C"
-     fill-opacity="0.18"
-     stroke="#B8821C"
-     stroke-width="2"
-     id="rect18" />
+     x="293.33713"
+     y="90.432915"
+     width="118.68743"
+     height="36.215637"
+     rx="6.3299966"
+     fill="#2f8b67"
+     fill-opacity="0.15"
+     stroke="#2f8b67"
+     stroke-width="1.78436"
+     id="rect16-5" />
   <text
-     x="367.7352"
-     y="161.5009"
+     x="332.70386"
+     y="63.502678"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="normal"
-     fill="#1A2030"
-     id="text18">DE 4 (Amount)</text>
+     fill="#1a2030"
+     id="text16"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">DE 2 (PAN)</text>
+  <rect
+     x="186.38681"
+     y="46.975883"
+     width="95.390213"
+     height="127.52094"
+     rx="5.0874777"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="3.16511"
+     id="rect17-4"
+     style="stroke-width:1.89678;stroke-dasharray:none" />
+  <text
+     x="350.21954"
+     y="112.50179"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text17"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">DE 3 (Proc Code)</text>
+  <text
+     x="345.21506"
+     y="162.00134"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text18"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">DE 4 (Amount)</text>
   <text
      x="77.140533"
      y="93.993645"
@@ -250,7 +287,8 @@
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
      fill="#5C647A"
-     id="text19">8-байт bitmap</text>
+     id="text19"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">8-байт bitmap</text>
   <text
      x="230.0"
      y="32.6"
@@ -258,7 +296,8 @@
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
      fill="#5C647A"
-     id="text20">биты 1–64</text>
+     id="text20"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">биты 1–64</text>
   <text
      x="367.7352"
      y="34.500893"
@@ -266,5 +305,6 @@
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
      fill="#5C647A"
-     id="text21">Data Elements</text>
+     id="text21"
+     style="-inkscape-font-specification:'Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif, Normal';font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Data Elements</text>
 </svg>
