@@ -1,34 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 230" width="670" height="230">
 <defs>
-  <marker id="arr-22c55e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-22c55e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-8b5cf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-8b5cf6-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-ef4444" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#ef4444"/></marker>
-  <marker id="arr-ef4444-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#ef4444"/></marker>
+  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
 </defs>
-<rect x="20.0" y="20.0" width="130" height="50" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
+<rect x="20.0" y="20.0" width="130" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="85.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" font-weight="normal" fill="#1A2030">Pending</text>
-<rect x="270.0" y="20.0" width="130" height="50" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
+<rect x="270.0" y="20.0" width="130" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="335.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" font-weight="normal" fill="#1A2030">Available</text>
-<rect x="270.0" y="160.0" width="130" height="50" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<rect x="270.0" y="160.0" width="130" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
 <text x="335.0" y="187.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" font-weight="normal" fill="#1A2030">Reserve</text>
-<rect x="20.0" y="160.0" width="130" height="50" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="1" stroke-dasharray="6,3"/>
+<rect x="20.0" y="160.0" width="130" height="50" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3"/>
 <text x="85.0" y="186.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">Voided</text>
-<rect x="520.0" y="20.0" width="130" height="50" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="1" stroke-dasharray="6,3"/>
+<rect x="520.0" y="20.0" width="130" height="50" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3"/>
 <text x="585.0" y="46.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">Charged Back</text>
-<rect x="520.0" y="160.0" width="130" height="50" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="1" stroke-dasharray="6,3"/>
+<rect x="520.0" y="160.0" width="130" height="50" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3"/>
 <text x="585.0" y="186.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">Refunded</text>
-<line x1="150.0" y1="45.0" x2="270.0" y2="45.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
+<line x1="150.0" y1="45.0" x2="270.0" y2="45.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <text x="210.0" y="35.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#1A2030">подтверждение + расчёт</text>
-<line x1="360.0" y1="70.0" x2="360.0" y2="160.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
+<line x1="360.0" y1="70.0" x2="360.0" y2="160.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 <text x="348.0" y="115.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#1A2030">hold</text>
-<line x1="310.0" y1="160.0" x2="310.0" y2="70.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
+<line x1="310.0" y1="160.0" x2="310.0" y2="70.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <text x="298.0" y="115.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#1A2030">release</text>
-<line x1="85.0" y1="70.0" x2="85.0" y2="160.0" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-ef4444)"/>
+<line x1="85.0" y1="70.0" x2="85.0" y2="160.0" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
 <text x="73.0" y="115.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#1A2030">void</text>
-<line x1="400.0" y1="45.0" x2="520.0" y2="45.0" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-ef4444)"/>
+<line x1="400.0" y1="45.0" x2="520.0" y2="45.0" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
 <text x="460.0" y="35.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#1A2030">чарджбэк</text>
-<line x1="400.0" y1="70.0" x2="520.0" y2="160.0" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-ef4444)"/>
+<line x1="400.0" y1="70.0" x2="520.0" y2="160.0" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
 <text x="460.0" y="105.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#1A2030">возврат</text>
 </svg>

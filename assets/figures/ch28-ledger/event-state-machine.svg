@@ -1,39 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 527 334" width="527" height="334">
 <defs>
-  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-22c55e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-22c55e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-4a9eed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-4a9eed-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-adb5bd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-adb5bd-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-ef4444" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#ef4444"/></marker>
-  <marker id="arr-ef4444-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#ef4444"/></marker>
+  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
 </defs>
-<rect x="40.0" y="140.0" width="100" height="44" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
+<rect x="40.0" y="140.0" width="100" height="44" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="90.0" y="163.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Pending</text>
-<rect x="210.0" y="140.0" width="100" height="44" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<rect x="210.0" y="140.0" width="100" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="260.0" y="163.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Earned</text>
-<rect x="380.0" y="140.0" width="110" height="44" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
+<rect x="380.0" y="140.0" width="110" height="44" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="435.0" y="163.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Available</text>
-<rect x="150.0" y="20.0" width="100" height="44" rx="8" fill="#e9ecef" stroke="#5C647A" stroke-width="2"/>
+<rect x="150.0" y="20.0" width="100" height="44" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="2"/>
 <text x="200.0" y="43.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Voided</text>
-<rect x="380.0" y="270.0" width="110" height="44" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
+<rect x="380.0" y="270.0" width="110" height="44" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
 <text x="435.0" y="293.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Возврат</text>
-<rect x="220.0" y="270.0" width="130" height="44" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
+<rect x="220.0" y="270.0" width="130" height="44" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
 <text x="285.0" y="293.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Чарджбэк</text>
-<line x1="140.0" y1="162.0" x2="210.0" y2="162.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="140.0" y1="162.0" x2="210.0" y2="162.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="175.0" y="151.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#4E63D9">подтверждение</text>
-<line x1="310.0" y1="162.0" x2="380.0" y2="162.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
+<line x1="310.0" y1="162.0" x2="380.0" y2="162.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <text x="345.0" y="151.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#2F8B67">расчёт</text>
-<line x1="120.0" y1="140.0" x2="200.0" y2="64.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-adb5bd)"/>
+<line x1="120.0" y1="140.0" x2="200.0" y2="64.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="135.0" y="95.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#5C647A">void</text>
-<line x1="460.0" y1="184.0" x2="460.0" y2="270.0" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-ef4444)"/>
-<text x="467.0" y="227.7" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#ef4444">возврат</text>
-<path d="M 410.0,184.0 L 370.0,234.0 L 300.0,270.0" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-ef4444)"/>
-<text x="362.5" y="227.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#ef4444">чарджбэк</text>
-<ellipse cx="27.0" cy="162.0" rx="7.0" ry="7.0" fill="#1A2030" stroke="#1A2030" stroke-width="1"/>
-<line x1="34.0" y1="162.0" x2="40.0" y2="162.0" stroke="#1A2030" stroke-width="1.5" marker-end="url(#arr-1e1e1e)"/>
-<text x="37.0" y="152.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#868e96">auth</text>
+<line x1="460.0" y1="184.0" x2="460.0" y2="270.0" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
+<text x="467.0" y="227.7" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#C15462">возврат</text>
+<path d="M 410.0,184.0 L 370.0,234.0 L 300.0,270.0" fill="none" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
+<text x="362.5" y="227.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#C15462">чарджбэк</text>
+<ellipse cx="27.0" cy="162.0" rx="7.0" ry="7.0" fill="#5C647A" stroke="#5C647A" stroke-width="1"/>
+<line x1="34.0" y1="162.0" x2="40.0" y2="162.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<text x="37.0" y="152.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#5C647A">auth</text>
 </svg>

@@ -1,41 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 742 600" width="742" height="600">
 <defs>
-  <marker id="arr-22c55e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-22c55e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-4a9eed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-4a9eed-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-f59e0b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-f59e0b-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-Good-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
 </defs>
 <text x="157.0" y="37.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#1A2030">BNPL-как-PSP: последовательность</text>
-<rect x="22.0" y="53.0" width="130" height="44" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<rect x="22.0" y="53.0" width="130" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="87.0" y="77.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18.0" font-weight="normal" fill="#1A2030">Клиент</text>
-<rect x="282.0" y="53.0" width="175" height="44" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
+<rect x="282.0" y="53.0" width="175" height="44" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="369.5" y="77.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.0" font-weight="normal" fill="#1A2030">BNPL-провайдер</text>
-<rect x="572.0" y="53.0" width="130" height="44" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
+<rect x="572.0" y="53.0" width="130" height="44" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="637.0" y="77.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18.0" font-weight="normal" fill="#1A2030">ТСП</text>
-<line x1="87.0" y1="97.0" x2="87.0" y2="580.0" stroke="#b0b0b0" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="369.0" y1="97.0" x2="369.0" y2="580.0" stroke="#b0b0b0" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="637.0" y1="97.0" x2="637.0" y2="580.0" stroke="#b0b0b0" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="87.0" y1="127.0" x2="369.0" y2="127.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="87.0" y1="97.0" x2="87.0" y2="580.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="369.0" y1="97.0" x2="369.0" y2="580.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="637.0" y1="97.0" x2="637.0" y2="580.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="87.0" y1="127.0" x2="369.0" y2="127.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="228.0" y="117.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" fill="#1A2030">выбирает BNPL</text>
-<line x1="369.0" y1="163.0" x2="87.0" y2="163.0" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-f59e0b)"/>
+<line x1="369.0" y1="163.0" x2="87.0" y2="163.0" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
 <text x="228.0" y="153.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" fill="#1A2030">условия рассрочки</text>
-<line x1="87.0" y1="199.0" x2="369.0" y2="199.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="87.0" y1="199.0" x2="369.0" y2="199.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="228.0" y="189.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" fill="#1A2030">подтверждает</text>
-<rect x="304.0" y="215.0" width="130" height="38" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
+<rect x="304.0" y="215.0" width="130" height="38" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
 <text x="369.0" y="236.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15.0" font-weight="normal" fill="#1A2030">скоринг</text>
-<line x1="369.0" y1="273.0" x2="637.0" y2="273.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
+<line x1="369.0" y1="273.0" x2="637.0" y2="273.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <text x="503.0" y="263.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" fill="#1A2030">полная сумма − комиссия</text>
-<rect x="572.0" y="291.0" width="130" height="34" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="1"/>
+<rect x="572.0" y="291.0" width="130" height="34" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1"/>
 <text x="637.0" y="309.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">товар отгружен</text>
 <rect x="20.0" y="343.0" width="390" height="180" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-opacity="0.60" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="25.0" y="358.9" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#2563eb">loop</text>
-<line x1="87.0" y1="375.0" x2="369.0" y2="375.0" stroke="#4E63D9" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-4a9eed)"/>
+<text x="25.0" y="358.9" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#4E63D9">loop</text>
+<line x1="87.0" y1="375.0" x2="369.0" y2="375.0" stroke="#4E63D9" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-AccentA)"/>
 <text x="228.0" y="365.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" fill="#1A2030">платёж 1 / N</text>
-<line x1="87.0" y1="421.0" x2="369.0" y2="421.0" stroke="#4E63D9" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-4a9eed)"/>
+<line x1="87.0" y1="421.0" x2="369.0" y2="421.0" stroke="#4E63D9" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-AccentA)"/>
 <text x="228.0" y="411.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" fill="#1A2030">платёж 2 / N</text>
-<line x1="87.0" y1="467.0" x2="369.0" y2="467.0" stroke="#4E63D9" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-4a9eed)"/>
+<line x1="87.0" y1="467.0" x2="369.0" y2="467.0" stroke="#4E63D9" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-AccentA)"/>
 <text x="228.0" y="457.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" fill="#1A2030">платёж N / N</text>
-<text x="22.0" y="550.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#757575">Кредитный риск -- на BNPL-провайдере. Продавец не участвует в сборе платежей.</text>
+<text x="22.0" y="550.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#5C647A">Кредитный риск -- на BNPL-провайдере. Продавец не участвует в сборе платежей.</text>
 </svg>

@@ -1,36 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 237" width="530" height="237">
 <defs>
-  <marker id="arr-22c55e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-22c55e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-4a9eed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-4a9eed-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-ef4444" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#ef4444"/></marker>
-  <marker id="arr-ef4444-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#ef4444"/></marker>
+  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-Good-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
+  <marker id="arr-Bad-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#C15462"/></marker>
 </defs>
-<rect x="20.0" y="50.0" width="100" height="50" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<rect x="20.0" y="50.0" width="100" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="70.0" y="76.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Карта</text>
-<rect x="170.0" y="40.0" width="190" height="90" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
-<text x="265.0" y="29.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#ef4444">Атакующий</text>
-<rect x="180.0" y="50.0" width="80" height="36" rx="8" fill="#ffffff" stroke="#ef4444" stroke-width="1.5"/>
+<rect x="170.0" y="40.0" width="190" height="90" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
+<text x="265.0" y="29.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#C15462">Атакующий</text>
+<rect x="180.0" y="50.0" width="80" height="36" rx="8" fill="#ffffff" stroke="#C15462" stroke-width="1.5"/>
 <text x="220.0" y="69.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Proxy</text>
-<rect x="270.0" y="50.0" width="80" height="36" rx="8" fill="#ffffff" stroke="#ef4444" stroke-width="1.5"/>
+<rect x="270.0" y="50.0" width="80" height="36" rx="8" fill="#ffffff" stroke="#C15462" stroke-width="1.5"/>
 <text x="310.0" y="69.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Relay</text>
-<rect x="410.0" y="50.0" width="100" height="50" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
+<rect x="410.0" y="50.0" width="100" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="460.0" y="76.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Терминал</text>
-<line x1="120.0" y1="68.0" x2="178.0" y2="68.0" stroke="#4E63D9" stroke-width="1.5" marker-end="url(#arr-4a9eed)" marker-start="url(#arr-4a9eed-s)"/>
+<line x1="120.0" y1="68.0" x2="178.0" y2="68.0" stroke="#4E63D9" stroke-width="1.5" marker-end="url(#arr-AccentA)" marker-start="url(#arr-AccentA-s)"/>
 <text x="143.0" y="59.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#4E63D9">NFC</text>
-<line x1="220.0" y1="90.0" x2="310.0" y2="90.0" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-ef4444)" marker-start="url(#arr-ef4444-s)"/>
-<text x="265.0" y="103.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#ef4444">канал передачи</text>
-<line x1="350.0" y1="68.0" x2="408.0" y2="68.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-22c55e)" marker-start="url(#arr-22c55e-s)"/>
+<line x1="220.0" y1="90.0" x2="310.0" y2="90.0" stroke="#C15462" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Bad)" marker-start="url(#arr-Bad-s)"/>
+<text x="265.0" y="103.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#C15462">канал передачи</text>
+<line x1="350.0" y1="68.0" x2="408.0" y2="68.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-Good)" marker-start="url(#arr-Good-s)"/>
 <text x="373.0" y="59.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">NFC</text>
-<line x1="20.0" y1="155.0" x2="510.0" y2="155.0" stroke="#dee2e6" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="20.0" y="170.5" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#868e96">Контрмеры:</text>
-<rect x="20.0" y="185.0" width="115" height="32" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="1.5"/>
+<line x1="20.0" y1="155.0" x2="510.0" y2="155.0" stroke="#E8ECF7" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="20.0" y="170.5" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Контрмеры:</text>
+<rect x="20.0" y="185.0" width="115" height="32" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
 <text x="77.5" y="202.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">RRP (M/Chip)</text>
-<rect x="145.0" y="185.0" width="115" height="32" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="1.5"/>
+<rect x="145.0" y="185.0" width="115" height="32" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
 <text x="202.5" y="202.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">CVM limit</text>
-<rect x="270.0" y="185.0" width="115" height="32" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="1.5"/>
+<rect x="270.0" y="185.0" width="115" height="32" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
 <text x="327.5" y="202.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Velocity / геогр.</text>
-<rect x="395.0" y="185.0" width="115" height="32" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="1.5"/>
+<rect x="395.0" y="185.0" width="115" height="32" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
 <text x="452.5" y="202.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">CDCVM</text>
 </svg>

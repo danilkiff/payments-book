@@ -1,16 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 475" width="920" height="475">
 <defs>
-  <marker id="arr-06b6d4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#06b6d4"/></marker>
-  <marker id="arr-06b6d4-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#06b6d4"/></marker>
-  <marker id="arr-adb5bd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-adb5bd-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-f59e0b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-f59e0b-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
 </defs>
 <text x="450.0" y="33.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#1A2030">Стек ФАПИ.СЕК: процедурный слой FAPI с отечественной криптографией</text>
 <rect x="270.0" y="60.0" width="380" height="320" rx="8" fill="none" stroke="#1A2030" stroke-width="2"/>
 <text x="460.0" y="78.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">СТО БР ФАПИ.СЕК-1.6-2024  (приказ № ОД-1615 от 07.10.2024)</text>
-<rect x="290.0" y="330.0" width="340" height="40" rx="8" fill="#f1f3f5" stroke="#868e96" stroke-width="2"/>
+<rect x="290.0" y="330.0" width="340" height="40" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="2"/>
 <text x="460.0" y="351.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">OAuth 2.0  +  OpenID Connect Core</text>
 <rect x="290.0" y="250.0" width="340" height="70" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
 <text x="460.0" y="271.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">FAPI 1.0 Advanced  +  JARM</text>
@@ -28,27 +25,27 @@
 <text x="135.0" y="157.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">Международная криптография:</text>
 <text x="135.0" y="171.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">RSA / ECDSA, SHA-2, AES</text>
 <text x="135.0" y="184.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">— не применяется в JOSE</text>
-<line x1="250.0" y1="185.0" x2="290.0" y2="205.0" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-adb5bd)"/>
+<line x1="250.0" y1="185.0" x2="290.0" y2="205.0" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
 <rect x="20.0" y="230.0" width="230" height="60" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
 <text x="135.0" y="247.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">TLS 1.2/1.3 с международными</text>
 <text x="135.0" y="261.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">криптонаборами</text>
 <text x="135.0" y="274.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">— не применяется в транспорте</text>
-<path d="M 250.0,260.0 L 465.0,260.0 L 465.0,240.0" fill="none" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-adb5bd)"/>
-<rect x="670.0" y="140.0" width="230" height="60" rx="8" fill="#c3fae8" stroke="#06b6d4" stroke-width="2"/>
+<path d="M 250.0,260.0 L 465.0,260.0 L 465.0,240.0" fill="none" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+<rect x="670.0" y="140.0" width="230" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="785.0" y="157.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">ГОСТ-криптография в JOSE:</text>
 <text x="785.0" y="171.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">34.10 (подпись), 34.11 «Стрибог»,</text>
 <text x="785.0" y="184.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">34.12 «Кузнечик» / «Магма»</text>
-<line x1="670.0" y1="185.0" x2="455.0" y2="205.0" stroke="#06b6d4" stroke-width="2" marker-end="url(#arr-06b6d4)"/>
-<rect x="670.0" y="230.0" width="230" height="60" rx="8" fill="#c3fae8" stroke="#06b6d4" stroke-width="2"/>
+<line x1="670.0" y1="185.0" x2="455.0" y2="205.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<rect x="670.0" y="230.0" width="230" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="785.0" y="247.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">ГОСТ TLS в транспорте,</text>
 <text x="785.0" y="261.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">сертификаты УЦ Банка России,</text>
 <text x="785.0" y="274.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">ключи в сертифицированном СКЗИ</text>
-<line x1="670.0" y1="245.0" x2="630.0" y2="200.0" stroke="#06b6d4" stroke-width="2" marker-end="url(#arr-06b6d4)"/>
+<line x1="670.0" y1="245.0" x2="630.0" y2="200.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <rect x="670.0" y="60.0" width="230" height="60" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3"/>
 <text x="785.0" y="78.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">ТК 26 МР 26.2.002-2024:</text>
 <text x="785.0" y="91.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">применение алгоритмов ГОСТ</text>
 <text x="785.0" y="105.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">в JWS / JWE / JWT / JWK</text>
-<line x1="785.0" y1="120.0" x2="785.0" y2="138.0" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-f59e0b)"/>
+<line x1="785.0" y1="120.0" x2="785.0" y2="138.0" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 <rect x="20.0" y="405.0" width="880" height="50" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 <text x="460.0" y="431.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">Процедурный стек в центре наследуется от OIDF FAPI без изменений; криптография и транспорт обеспечиваются отечественными провайдерами справа.</text>
 </svg>

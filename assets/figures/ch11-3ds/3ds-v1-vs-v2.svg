@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 904 294" width="904" height="294">
 <defs>
-  <marker id="arr-4a9eed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-4a9eed-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-888" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#888"/></marker>
-  <marker id="arr-888-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#888"/></marker>
-  <marker id="arr-8b5cf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-8b5cf6-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
 </defs>
 <line x1="55.0" y1="44.0" x2="55.0" y2="274.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 <line x1="140.0" y1="44.0" x2="140.0" y2="274.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
@@ -15,29 +15,29 @@
 <line x1="498.0" y1="44.0" x2="498.0" y2="274.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 <line x1="579.0" y1="44.0" x2="579.0" y2="274.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 <line x1="648.0" y1="44.0" x2="648.0" y2="274.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<rect x="20.0" y="20.0" width="70" height="24" rx="8" fill="#f0f4f8" stroke="#5C647A" stroke-width="1"/>
+<rect x="20.0" y="20.0" width="70" height="24" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
 <text x="55.0" y="33.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Держатель</text>
-<rect x="105.0" y="20.0" width="70" height="24" rx="8" fill="#f0f4f8" stroke="#5C647A" stroke-width="1"/>
+<rect x="105.0" y="20.0" width="70" height="24" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
 <text x="140.0" y="33.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">ТСП</text>
-<rect x="192.0" y="20.0" width="56" height="24" rx="8" fill="#f0f4f8" stroke="#5C647A" stroke-width="1"/>
+<rect x="192.0" y="20.0" width="56" height="24" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
 <text x="220.0" y="33.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">DS</text>
-<rect x="263.0" y="20.0" width="56" height="24" rx="8" fill="#f0f4f8" stroke="#5C647A" stroke-width="1"/>
+<rect x="263.0" y="20.0" width="56" height="24" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
 <text x="291.0" y="33.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">ACS</text>
-<line x1="55.0" y1="63.0" x2="138.0" y2="63.0" stroke="#888" stroke-width="2" marker-end="url(#arr-888)"/>
+<line x1="55.0" y1="63.0" x2="138.0" y2="63.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="96.5" y="53.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">старт оплаты</text>
-<line x1="140.0" y1="88.0" x2="218.0" y2="88.0" stroke="#888" stroke-width="2" marker-end="url(#arr-888)"/>
+<line x1="140.0" y1="88.0" x2="218.0" y2="88.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="179.0" y="78.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">3DS req</text>
-<line x1="220.0" y1="113.0" x2="289.0" y2="113.0" stroke="#888" stroke-width="2" marker-end="url(#arr-888)"/>
+<line x1="220.0" y1="113.0" x2="289.0" y2="113.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="254.5" y="103.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">PAReq</text>
-<line x1="291.0" y1="138.0" x2="57.0" y2="138.0" stroke="#888" stroke-width="2" marker-end="url(#arr-888)"/>
+<line x1="291.0" y1="138.0" x2="57.0" y2="138.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="174.0" y="128.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">redirect/pop-up</text>
-<line x1="55.0" y1="163.0" x2="289.0" y2="163.0" stroke="#888" stroke-width="2" marker-end="url(#arr-888)"/>
+<line x1="55.0" y1="163.0" x2="289.0" y2="163.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="172.0" y="153.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">пароль</text>
-<line x1="291.0" y1="188.0" x2="222.0" y2="188.0" stroke="#888" stroke-width="2" marker-end="url(#arr-888)"/>
+<line x1="291.0" y1="188.0" x2="222.0" y2="188.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="256.5" y="178.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">PARes</text>
-<line x1="220.0" y1="213.0" x2="142.0" y2="213.0" stroke="#888" stroke-width="2" marker-end="url(#arr-888)"/>
+<line x1="220.0" y1="213.0" x2="142.0" y2="213.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="181.0" y="203.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">результат</text>
-<line x1="140.0" y1="238.0" x2="289.0" y2="238.0" stroke="#888" stroke-width="2" marker-end="url(#arr-888)"/>
+<line x1="140.0" y1="238.0" x2="289.0" y2="238.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="214.5" y="228.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">авторизация</text>
 <rect x="375.0" y="20.0" width="70" height="24" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
 <text x="410.0" y="33.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Держатель</text>
@@ -47,22 +47,22 @@
 <text x="579.0" y="33.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">DS</text>
 <rect x="622.0" y="20.0" width="56" height="24" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
 <text x="650.0" y="33.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">ACS</text>
-<line x1="410.0" y1="63.0" x2="496.0" y2="63.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="410.0" y1="63.0" x2="496.0" y2="63.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="453.0" y="53.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">старт оплаты</text>
-<line x1="498.0" y1="88.0" x2="577.0" y2="88.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="498.0" y1="88.0" x2="577.0" y2="88.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="537.5" y="78.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">AReq</text>
-<line x1="579.0" y1="113.0" x2="648.0" y2="113.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="579.0" y1="113.0" x2="648.0" y2="113.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="613.5" y="103.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">AReq</text>
-<line x1="648.0" y1="138.0" x2="500.0" y2="138.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="648.0" y1="138.0" x2="500.0" y2="138.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="574.0" y="128.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">frictionless ARes</text>
-<line x1="498.0" y1="163.0" x2="648.0" y2="163.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="498.0" y1="163.0" x2="648.0" y2="163.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="573.0" y="153.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">авторизация</text>
-<line x1="648.0" y1="193.0" x2="412.0" y2="193.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
+<line x1="648.0" y1="193.0" x2="412.0" y2="193.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 <text x="530.0" y="183.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">challenge</text>
-<line x1="410.0" y1="218.0" x2="648.0" y2="218.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
+<line x1="410.0" y1="218.0" x2="648.0" y2="218.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 <text x="529.0" y="208.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">OTP / biometrics</text>
-<line x1="648.0" y1="243.0" x2="500.0" y2="243.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
+<line x1="648.0" y1="243.0" x2="500.0" y2="243.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 <text x="574.0" y="233.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">ARes</text>
-<line x1="498.0" y1="268.0" x2="648.0" y2="268.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="498.0" y1="268.0" x2="648.0" y2="268.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="573.0" y="258.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#1A2030">авторизация</text>
 </svg>

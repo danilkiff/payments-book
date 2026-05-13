@@ -2,25 +2,25 @@
 <text x="260.0" y="35.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#1A2030">Технологический стек</text>
 <text x="80.0" y="72.8" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#7759D6">Мир</text>
 <text x="370.0" y="72.8" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#4E63D9">Международные</text>
-<rect x="20.0" y="90.0" width="170" height="42" rx="8" fill="#c3fae8" stroke="#2F8B67" stroke-width="2"/>
+<rect x="20.0" y="90.0" width="170" height="42" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="105.0" y="113.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">ГОСТ 34.10</text>
-<rect x="20.0" y="142.0" width="170" height="42" rx="8" fill="#c3fae8" stroke="#2F8B67" stroke-width="2"/>
+<rect x="20.0" y="142.0" width="170" height="42" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="105.0" y="165.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">ГОСТ 34.12</text>
-<rect x="20.0" y="194.0" width="170" height="42" rx="8" fill="#c3fae8" stroke="#2F8B67" stroke-width="2"/>
+<rect x="20.0" y="194.0" width="170" height="42" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="105.0" y="217.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">Мир Kernel SDK</text>
-<rect x="20.0" y="246.0" width="170" height="42" rx="8" fill="#c3fae8" stroke="#2F8B67" stroke-width="2"/>
+<rect x="20.0" y="246.0" width="170" height="42" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="105.0" y="269.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">HCE SDK</text>
-<rect x="20.0" y="298.0" width="170" height="42" rx="8" fill="#c3fae8" stroke="#2F8B67" stroke-width="2"/>
+<rect x="20.0" y="298.0" width="170" height="42" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="105.0" y="321.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">ОПКЦ</text>
-<rect x="270.0" y="90.0" width="200" height="42" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<rect x="270.0" y="90.0" width="200" height="42" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="370.0" y="113.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">RSA / ECC</text>
-<rect x="270.0" y="142.0" width="200" height="42" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<rect x="270.0" y="142.0" width="200" height="42" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="370.0" y="165.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">3DES / AES</text>
-<rect x="270.0" y="194.0" width="200" height="42" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<rect x="270.0" y="194.0" width="200" height="42" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="370.0" y="217.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">qVSDC / M/Chip</text>
-<rect x="270.0" y="246.0" width="200" height="42" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<rect x="270.0" y="246.0" width="200" height="42" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="370.0" y="269.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">Apple Pay / Google Pay</text>
-<rect x="270.0" y="298.0" width="200" height="42" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
+<rect x="270.0" y="298.0" width="200" height="42" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="370.0" y="321.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">VisaNet / Banknet</text>
-<line x1="240.0" y1="85.0" x2="240.0" y2="345.0" stroke="#aaaaaa" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="240.0" y1="85.0" x2="240.0" y2="345.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 </svg>

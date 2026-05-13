@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 320" width="510" height="320">
 <defs>
-  <marker id="arr-868e96" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#868e96"/></marker>
-  <marker id="arr-868e96-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#868e96"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
 </defs>
 <text x="255.0" y="31.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">M/Chip и DSRP: слои</text>
 
@@ -28,9 +28,9 @@
 <text x="380.0" y="103.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">remote payments (CNP, in-app)</text>
 
 <!-- Arrows: M/Chip → EMV base, MDES → EMV base, DSRP → MDES -->
-<line x1="130.0" y1="238.0" x2="130.0" y2="222.0" stroke="#868e96" stroke-width="1.5" marker-end="url(#arr-868e96)"/>
-<line x1="380.0" y1="238.0" x2="380.0" y2="222.0" stroke="#868e96" stroke-width="1.5" marker-end="url(#arr-868e96)"/>
-<line x1="380.0" y1="138.0" x2="380.0" y2="122.0" stroke="#868e96" stroke-width="1.5" marker-end="url(#arr-868e96)"/>
+<line x1="130.0" y1="238.0" x2="130.0" y2="222.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<line x1="380.0" y1="238.0" x2="380.0" y2="222.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<line x1="380.0" y1="138.0" x2="380.0" y2="122.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
 
 <!-- side captions -->
 <text x="247.0" y="184.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">карточный</text>

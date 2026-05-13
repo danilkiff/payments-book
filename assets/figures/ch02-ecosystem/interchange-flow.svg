@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 398" width="600" height="398">
 <defs>
-  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-8b5cf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-8b5cf6-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-f59e0b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-f59e0b-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
 </defs>
 <rect x="20.0" y="20.0" width="560" height="320" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
 <rect x="230.0" y="40.0" width="120" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
@@ -16,12 +16,12 @@
 <text x="290.0" y="207.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" font-weight="normal" fill="#1A2030">Карточная сеть</text>
 <rect x="410.0" y="180.0" width="120" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="470.0" y="207.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.0" font-weight="normal" fill="#1A2030">Эмитент</text>
-<line x1="270.0" y1="90.0" x2="120.0" y2="180.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<line x1="270.0" y1="90.0" x2="120.0" y2="180.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="195.0" y="125.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.0" fill="#1A2030">MSC</text>
-<line x1="170.0" y1="205.0" x2="230.0" y2="205.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
+<line x1="170.0" y1="205.0" x2="230.0" y2="205.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 <text x="200.0" y="195.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.0" fill="#1A2030">комиссия сети</text>
-<line x1="350.0" y1="205.0" x2="410.0" y2="205.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
-<path d="M 110.0,230.0 L 110.0,290.0 L 470.0,290.0 L 470.0,230.0" fill="none" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-f59e0b)"/>
+<line x1="350.0" y1="205.0" x2="410.0" y2="205.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<path d="M 110.0,230.0 L 110.0,290.0 L 470.0,290.0 L 470.0,230.0" fill="none" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
 <text x="290.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.0" fill="#1A2030">interchange</text>
-<text x="20.0" y="371.1" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#555555">Маржа эквайера остаётся после выплаты interchange и комиссии сети.</text>
+<text x="20.0" y="371.1" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#5C647A">Маржа эквайера остаётся после выплаты interchange и комиссии сети.</text>
 </svg>

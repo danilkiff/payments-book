@@ -14,12 +14,12 @@
   <sodipodi:namedview
      id="namedview21"
      pagecolor="#ffffff"
-     bordercolor="#000000"
+     bordercolor="#1A2030"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
+     inkscape:deskcolor="#E8ECF7"
      inkscape:zoom="1.4490883"
      inkscape:cx="251.53747"
      inkscape:cy="112.82956"
@@ -32,7 +32,7 @@
   <defs
      id="defs4">
     <marker
-       id="arr-4a9eed"
+       id="arr-AccentA"
        viewBox="0 0 10 10"
        refX="9"
        refY="5"
@@ -45,7 +45,7 @@
          id="path1" />
     </marker>
     <marker
-       id="arr-4a9eed-s"
+       id="arr-AccentA-s"
        viewBox="0 0 10 10"
        refX="1"
        refY="5"
@@ -58,7 +58,7 @@
          id="path2" />
     </marker>
     <marker
-       id="arr-f59e0b"
+       id="arr-Warn"
        viewBox="0 0 10 10"
        refX="9"
        refY="5"
@@ -71,7 +71,7 @@
          id="path3" />
     </marker>
     <marker
-       id="arr-f59e0b-s"
+       id="arr-Warn-s"
        viewBox="0 0 10 10"
        refX="1"
        refY="5"
@@ -90,8 +90,9 @@
      width="113.07722"
      height="28.234016"
      rx="7.5384812"
-     fill="#a5d8ff"
-     stroke="#4e63d9"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
      stroke-width="1.33178"
      id="rect4" />
   <text
@@ -101,7 +102,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text4">72 3C 04 81 20 C0 80 00</text>
   <text
      x="80"
@@ -110,16 +111,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text5" />
   <line
      x1="136.54956"
      y1="114.83063"
      x2="185.30458"
      y2="114.83063"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2.20806"
-     marker-end="url(#arr-4a9eed)"
+     marker-end="url(#arr-AccentA)"
      id="line5" />
   <rect
      x="185.0"
@@ -219,8 +220,9 @@
      width="150"
      height="36"
      rx="8"
-     fill="#b2f2bb"
-     stroke="#2f8b67"
+     fill="#2F8B67"
+     fill-opacity="0.15"
+     stroke="#2F8B67"
      stroke-width="2"
      id="rect16" />
   <text
@@ -230,7 +232,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text16">DE 2 (PAN)</text>
   <rect
      x="292.7352"
@@ -238,8 +240,9 @@
      width="150"
      height="36"
      rx="8"
-     fill="#d0bfff"
-     stroke="#7759d6"
+     fill="#7759D6"
+     fill-opacity="0.15"
+     stroke="#7759D6"
      stroke-width="2"
      id="rect17" />
   <text
@@ -249,7 +252,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text17">DE 3 (Proc Code)</text>
   <rect
      x="293.42529"
@@ -257,8 +260,9 @@
      width="150"
      height="36"
      rx="8"
-     fill="#ffd8a8"
-     stroke="#b8821c"
+     fill="#B8821C"
+     fill-opacity="0.18"
+     stroke="#B8821C"
      stroke-width="2"
      id="rect18" />
   <text
@@ -268,7 +272,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text18">DE 4 (Amount)</text>
   <text
      x="77.140533"
@@ -276,7 +280,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#868e96"
+     fill="#5C647A"
      id="text19">8-байт bitmap</text>
   <text
      x="230.0"
@@ -284,7 +288,7 @@
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9.0"
-     fill="#868e96"
+     fill="#5C647A"
      id="text20">биты 1–64</text>
   <text
      x="367.7352"
@@ -292,6 +296,6 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#868e96"
+     fill="#5C647A"
      id="text21">Data Elements</text>
 </svg>

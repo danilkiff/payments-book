@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 580" width="500" height="580">
 <defs>
-  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-4a9eed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-4a9eed-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-8b5cf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-8b5cf6-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-f59e0b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-f59e0b-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
 </defs>
 <rect x="20.0" y="20.0" width="460" height="540" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
 <rect x="70.0" y="40.0" width="200" height="46" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
@@ -29,10 +29,10 @@
 <text x="405.0" y="441.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.0" font-weight="normal" fill="#1A2030">Issuer PK</text>
 <text x="405.0" y="457.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.0" font-weight="normal" fill="#1A2030">↓</text>
 <text x="405.0" y="474.1" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.0" font-weight="normal" fill="#1A2030">ICC PK</text>
-<line x1="170.0" y1="86.0" x2="170.0" y2="130.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
-<line x1="170.0" y1="176.0" x2="170.0" y2="220.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
-<line x1="170.0" y1="266.0" x2="170.0" y2="310.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
-<line x1="170.0" y1="356.0" x2="170.0" y2="400.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
-<line x1="170.0" y1="446.0" x2="170.0" y2="490.0" stroke="#1A2030" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-1e1e1e)"/>
-<line x1="270.0" y1="423.0" x2="350.0" y2="423.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-f59e0b)"/>
+<line x1="170.0" y1="86.0" x2="170.0" y2="130.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="170.0" y1="176.0" x2="170.0" y2="220.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="170.0" y1="266.0" x2="170.0" y2="310.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<line x1="170.0" y1="356.0" x2="170.0" y2="400.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<line x1="170.0" y1="446.0" x2="170.0" y2="490.0" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+<line x1="270.0" y1="423.0" x2="350.0" y2="423.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 </svg>

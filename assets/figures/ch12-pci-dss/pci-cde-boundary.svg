@@ -1,27 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 535 472" width="535" height="472">
 <ellipse cx="267.5" cy="210.0" rx="190.0" ry="190.0" fill="#2F8B67" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.50" stroke-width="1"/>
 <ellipse cx="267.5" cy="210.0" rx="135.0" ry="135.0" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-opacity="0.60" stroke-width="1" stroke-dasharray="6,3"/>
-<ellipse cx="267.5" cy="210.0" rx="80.0" ry="80.0" fill="#ffc9c9" fill-opacity="0.70" stroke="#ef4444" stroke-opacity="0.70" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="267.5" y="151.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#ef4444">CDE</text>
-<rect x="217.5" y="193.0" width="100" height="28" rx="8" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<ellipse cx="267.5" cy="210.0" rx="80.0" ry="80.0" fill="#C15462" fill-opacity="0.70" stroke="#C15462" stroke-opacity="0.70" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="267.5" y="151.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#C15462">CDE</text>
+<rect x="217.5" y="193.0" width="100" height="28" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
 <text x="267.5" y="208.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Платёжный сервер</text>
-<rect x="189.5" y="228.0" width="72" height="24" rx="8" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<rect x="189.5" y="228.0" width="72" height="24" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
 <text x="225.5" y="241.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">БД с PAN</text>
-<rect x="273.5" y="228.0" width="66" height="24" rx="8" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<rect x="273.5" y="228.0" width="66" height="24" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
 <text x="306.5" y="241.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Терминалы</text>
-<rect x="127.5" y="130.0" width="60" height="24" rx="8" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<rect x="127.5" y="130.0" width="60" height="24" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
 <text x="157.5" y="143.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">DNS</text>
-<rect x="345.5" y="130.0" width="60" height="24" rx="8" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<rect x="345.5" y="130.0" width="60" height="24" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
 <text x="375.5" y="143.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">NTP</text>
-<rect x="102.5" y="280.0" width="80" height="24" rx="8" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<rect x="102.5" y="280.0" width="80" height="24" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
 <text x="142.5" y="293.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Мониторинг</text>
-<rect x="347.5" y="280.0" width="70" height="24" rx="8" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<rect x="347.5" y="280.0" width="70" height="24" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
 <text x="382.5" y="293.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Файрвол</text>
-<rect x="67.5" y="48.0" width="68" height="24" rx="8" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<rect x="67.5" y="48.0" width="68" height="24" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
 <text x="101.5" y="61.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">CRM</text>
-<rect x="397.5" y="48.0" width="78" height="24" rx="8" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<rect x="397.5" y="48.0" width="78" height="24" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
 <text x="436.5" y="61.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Маркетинг</text>
-<rect x="213.5" y="370.0" width="108" height="24" rx="8" fill="#ffffff" stroke="#555" stroke-width="1"/>
+<rect x="213.5" y="370.0" width="108" height="24" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
 <text x="267.5" y="383.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">HR-системы</text>
 <rect x="37.5" y="410.0" width="460" height="42" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
 <text x="267.5" y="432.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Без сегментации соседние инфраструктурные сервисы и бизнес-системы тоже попадают в периметр PCI DSS.</text>

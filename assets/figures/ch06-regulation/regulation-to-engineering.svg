@@ -1,28 +1,247 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="500" height="320">
-<defs>
-  <marker id="arr-22c55e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-22c55e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-8b5cf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-8b5cf6-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
-</defs>
-<rect x="20.0" y="20.0" width="460" height="80" rx="8" fill="#ffc9c9" fill-opacity="0.30" stroke="#ef4444" stroke-opacity="0.30" stroke-width="2"/>
-<text x="28.0" y="35.4" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#ef4444">Закон/норма</text>
-<rect x="20.0" y="120.0" width="460" height="80" rx="8" fill="#d0bfff" fill-opacity="0.30" stroke="#7759D6" stroke-opacity="0.30" stroke-width="2"/>
-<text x="28.0" y="135.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#7759D6">Продукт</text>
-<rect x="20.0" y="220.0" width="460" height="80" rx="8" fill="#b2f2bb" fill-opacity="0.30" stroke="#2F8B67" stroke-opacity="0.30" stroke-width="2"/>
-<text x="28.0" y="235.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#2F8B67">Операции</text>
-<rect x="130.0" y="42.0" width="160" height="40" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
-<text x="210.0" y="63.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Обязательный приём</text>
-<rect x="130.0" y="142.0" width="120" height="40" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
-<text x="190.0" y="163.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Маршрутизация</text>
-<rect x="270.0" y="142.0" width="120" height="40" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
-<text x="330.0" y="163.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Терминалы</text>
-<rect x="130.0" y="242.0" width="120" height="40" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
-<text x="190.0" y="263.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Онбординг</text>
-<rect x="270.0" y="242.0" width="120" height="40" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
-<text x="330.0" y="263.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Поддержка</text>
-<line x1="210.0" y1="82.0" x2="190.0" y2="142.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
-<line x1="210.0" y1="82.0" x2="330.0" y2="142.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
-<line x1="190.0" y1="182.0" x2="190.0" y2="242.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
-<line x1="330.0" y1="182.0" x2="330.0" y2="242.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 500 320"
+   width="500"
+   height="320"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="regulation-to-engineering.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#1A2030"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#E8ECF7"
+     inkscape:zoom="1.694012"
+     inkscape:cx="272.43019"
+     inkscape:cy="209.26653"
+     inkscape:window-width="1299"
+     inkscape:window-height="752"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg14" />
+  <defs
+     id="defs4">
+    <marker
+       id="arr-Good"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M0,0 L10,5 L0,10 Z"
+         fill="#2F8B67"
+         id="path1" />
+    </marker>
+  </defs>
+  <rect
+     x="19.742659"
+     y="33.682613"
+     width="377.69495"
+     height="54.274757"
+     rx="6.5686083"
+     fill="#C15462"
+     fill-opacity="0.15"
+     stroke="#C15462"
+     stroke-opacity="0.3"
+     stroke-width="1.51586"
+     id="rect4" />
+  <text
+     x="26.81937"
+     y="51.965202"
+     text-anchor="start"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     fill="#C15462"
+     id="text4">Закон/норма</text>
+  <rect
+     x="20.56221"
+     y="99.242271"
+     width="380.15585"
+     height="55.095657"
+     rx="6.6114063"
+     fill="#7759D6"
+     fill-opacity="0.15"
+     stroke="#7759D6"
+     stroke-opacity="0.3"
+     stroke-width="1.60953"
+     id="rect5" />
+  <text
+     x="28.459366"
+     y="116.14594"
+     text-anchor="start"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     fill="#7759D6"
+     id="text5">Продукт</text>
+  <rect
+     x="20.620029"
+     y="170.73116"
+     width="380.8602"
+     height="63.179993"
+     rx="6.6236558"
+     fill="#2F8B67"
+     fill-opacity="0.15"
+     stroke="#2F8B67"
+     stroke-opacity="0.3"
+     stroke-width="1.72517"
+     id="rect6" />
+  <text
+     x="27.639368"
+     y="186.92227"
+     text-anchor="start"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     fill="#2F8B67"
+     id="text6">Операции</text>
+  <rect
+     x="131.41475"
+     y="40.992771"
+     width="257.87723"
+     height="39.477554"
+     rx="12.893862"
+     fill="#C15462"
+     fill-opacity="0.15"
+     stroke="#C15462"
+     stroke-width="2.52244"
+     id="rect7" />
+  <text
+     x="263.92801"
+     y="62.331551"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1A2030"
+     id="text7">Обязательный приём</text>
+  <rect
+     x="130.81999"
+     y="105.92011"
+     width="120"
+     height="40"
+     rx="8"
+     fill="#7759D6"
+     fill-opacity="0.15"
+     stroke="#7759D6"
+     stroke-width="2"
+     id="rect8" />
+  <text
+     x="190.81999"
+     y="127.52012"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1A2030"
+     id="text8">Маршрутизация</text>
+  <rect
+     x="270.82001"
+     y="105.92011"
+     width="120"
+     height="40"
+     rx="8"
+     fill="#7759D6"
+     fill-opacity="0.15"
+     stroke="#7759D6"
+     stroke-width="2"
+     id="rect9" />
+  <text
+     x="330.82001"
+     y="127.52012"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1A2030"
+     id="text9">Терминалы</text>
+  <rect
+     x="130.81999"
+     y="183.7802"
+     width="120"
+     height="40"
+     rx="8"
+     fill="#2F8B67"
+     fill-opacity="0.15"
+     stroke="#2F8B67"
+     stroke-width="2"
+     id="rect10" />
+  <text
+     x="190.81999"
+     y="205.3802"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1A2030"
+     id="text10">Онбординг</text>
+  <rect
+     x="270.82001"
+     y="183.7802"
+     width="120"
+     height="40"
+     rx="8"
+     fill="#2F8B67"
+     fill-opacity="0.15"
+     stroke="#2F8B67"
+     stroke-width="2"
+     id="rect11" />
+  <text
+     x="330.82001"
+     y="205.3802"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1A2030"
+     id="text11">Поддержка</text>
+  <line
+     x1="190.81999"
+     y1="145.92012"
+     x2="190.81999"
+     y2="183.32437"
+     stroke="#2F8B67"
+     stroke-width="1.57912"
+     marker-end="url(#arr-Good)"
+     id="line13"
+     style="fill:#C15462" />
+  <line
+     x1="189.76779"
+     y1="78.96019"
+     x2="189.76779"
+     y2="106.18674"
+     stroke="#2F8B67"
+     stroke-width="1.34726"
+     marker-end="url(#arr-Good)"
+     id="line13-2"
+     style="fill:#C15462;marker-end:url(#arr-Good)" />
+  <line
+     x1="329.98734"
+     y1="79.522629"
+     x2="329.98734"
+     y2="106.36999"
+     stroke="#2F8B67"
+     stroke-width="1.33785"
+     marker-end="url(#arr-Good)"
+     id="line13-2-9"
+     style="fill:#C15462;marker-end:url(#arr-Good)" />
+  <line
+     x1="330.82001"
+     y1="145.10013"
+     x2="330.82001"
+     y2="184.1297"
+     stroke="#2F8B67"
+     stroke-width="1.61306"
+     marker-end="url(#arr-Good)"
+     id="line14" />
 </svg>

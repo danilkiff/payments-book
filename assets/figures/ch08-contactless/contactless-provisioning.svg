@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 975 472" width="975" height="472">
 <defs>
-  <marker id="arr-1e1e1e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-1e1e1e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-4a9eed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-4a9eed-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-8b5cf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-8b5cf6-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
 </defs>
 <rect x="0" y="0" width="160" height="36" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
 <text x="80" y="22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#1A2030">Держатель</text>
@@ -19,18 +19,18 @@
 <line x1="250.0" y1="40.0" x2="250.0" y2="450.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 <line x1="515.0" y1="40.0" x2="515.0" y2="450.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 <line x1="735.0" y1="40.0" x2="735.0" y2="450.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="20.0" y1="64.0" x2="250.0" y2="64.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<line x1="20.0" y1="64.0" x2="250.0" y2="64.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="135.0" y="54.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">PAN</text>
-<line x1="250.0" y1="124.0" x2="515.0" y2="124.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="250.0" y1="124.0" x2="515.0" y2="124.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="382.5" y="114.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">PAN + device data</text>
-<line x1="515.0" y1="184.0" x2="735.0" y2="184.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<line x1="515.0" y1="184.0" x2="735.0" y2="184.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="625.0" y="174.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">ID&amp;V request</text>
-<line x1="735.0" y1="244.0" x2="515.0" y2="244.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<line x1="735.0" y1="244.0" x2="515.0" y2="244.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="625.0" y="234.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">approve / extra verification</text>
-<line x1="515.0" y1="304.0" x2="250.0" y2="304.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<line x1="515.0" y1="304.0" x2="250.0" y2="304.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="382.5" y="294.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">DPAN + keys</text>
-<line x1="250.0" y1="364.0" x2="250.0" y2="404.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
+<line x1="250.0" y1="364.0" x2="250.0" y2="404.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="238.0" y="384.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">SE / HCE load</text>
-<line x1="250.0" y1="444.0" x2="20.0" y2="444.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
+<line x1="250.0" y1="444.0" x2="20.0" y2="444.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 <text x="135.0" y="434.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">«Карта добавлена»</text>
 </svg>

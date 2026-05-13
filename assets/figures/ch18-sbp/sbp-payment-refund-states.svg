@@ -1,11 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 795 308" width="795" height="308">
 <defs>
-  <marker id="arr-22c55e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-22c55e-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-4a9eed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-4a9eed-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-f59e0b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-f59e0b-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
 </defs>
 <rect x="20.0" y="20.0" width="350" height="120" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.35" stroke-width="1"/>
 <rect x="390.0" y="20.0" width="250" height="120" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
@@ -20,17 +17,17 @@
 <rect x="560.0" y="72.0" width="65" height="40" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
 <text x="592.5" y="86.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Заказ</text>
 <text x="592.5" y="100.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">оплачен</text>
-<line x1="165.0" y1="92.0" x2="205.0" y2="92.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
-<line x1="355.0" y1="92.0" x2="420.0" y2="92.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
-<line x1="540.0" y1="92.0" x2="560.0" y2="92.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
+<line x1="165.0" y1="92.0" x2="205.0" y2="92.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="355.0" y1="92.0" x2="420.0" y2="92.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="540.0" y1="92.0" x2="560.0" y2="92.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <rect x="255.0" y="195.0" width="110" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
 <text x="310.0" y="209.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Возврат</text>
 <text x="310.0" y="223.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">создан</text>
 <rect x="405.0" y="195.0" width="110" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
 <text x="460.0" y="209.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Возврат</text>
 <text x="460.0" y="223.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">исполнен</text>
-<path d="M 592.0,112.0 L 592.0,175.0 L 310.0,175.0 L 310.0,195.0" fill="none" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-f59e0b)"/>
-<line x1="365.0" y1="215.0" x2="405.0" y2="215.0" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-f59e0b)"/>
+<path d="M 592.0,112.0 L 592.0,175.0 L 310.0,175.0 L 310.0,195.0" fill="none" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
+<line x1="365.0" y1="215.0" x2="405.0" y2="215.0" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
 <rect x="555.0" y="260.0" width="220" height="28" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 <text x="665.0" y="275.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8.5" font-weight="normal" fill="#1A2030">После исполнения спора внутри схемы уже нет</text>
 <rect x="28.0" y="142.0" width="325" height="28" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
