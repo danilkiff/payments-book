@@ -16,6 +16,7 @@
 % --- Типографика и таблицы ---
 \usepackage{graphicx}
 \usepackage{tabularx}
+\usepackage{float}
 \usepackage{ragged2e}
 \usepackage{booktabs}
 \usepackage[final]{microtype}
@@ -73,6 +74,13 @@
 % --- Глобальные параметры набора ---
 \raggedbottom
 \extrafloats{200}
+% Параметры размещения floats: пускаем таблицы свободнее в общий поток,
+% чтобы не уезжали в одиночную «страницу-сирота». Float-page разрешён,
+% только если заполняет ≥85% полосы.
+\renewcommand{\textfraction}{0.10}
+\renewcommand{\topfraction}{0.90}
+\renewcommand{\bottomfraction}{0.70}
+\renewcommand{\floatpagefraction}{0.85}
 \setlength{\parindent}{1.25em}
 \setlength{\parskip}{0pt}
 \setlength{\emergencystretch}{1.5em}
