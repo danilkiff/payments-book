@@ -135,26 +135,23 @@ qVSDC -- бесконтактное ядро карты, тогда как Quick
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabularx}{\textwidth}{
-      @{}>{\RaggedRight\arraybackslash}p{0.20\textwidth}
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X@{}
+      @{}P{0.20\textwidth}
+      Y
+      Y
+      Y@{}
     }
     \toprule
-    \rowcolor{Panel}
-    \textbf{Параметр} &
-    \cellcolor{AccentA!10}\textbf{qVSDC (Visa)} &
-    \cellcolor{AccentB!10}\textbf{M\slash Chip Contactless (MC)} &
-    \cellcolor{Good!12}\textbf{Мир бесконтактный} \\
+    \headrow
+    \thd{Параметр} &
+    \thd{qVSDC (Visa)} &
+    \thd{M\slash Chip Contactless (MC)} &
+    \thd{Мир бесконтактный} \\
     \midrule
-    \rowcolor{Soft}
     Аутентификация данных & fDDA & CVC3 или ARQC & ГОСТ 34.10 \\
     Тип криптограммы & ARQC & CVC3 или ARQC & ARQC (ГОСТ) \\
-    \rowcolor{Soft}
     Офлайн-одобрение & нет (предпочтительно; офлайн
     возможен при fDDA) & да (ограниченно) & да \\
     CVM limit & задаётся схемой по рынку & задаётся схемой по рынку & по правилам НСПК \\
-    \rowcolor{Soft}
     Криптография & RSA + 3DES (AES) & RSA + 3DES (AES) &
     криптография ГОСТ в~сочетании с~AES \\
     \bottomrule

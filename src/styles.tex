@@ -25,8 +25,51 @@
 \definecolor{PracticeInk}{HTML}{1C56A3}
 \definecolor{MarkerYellow}{HTML}{FFF2A8}
 
-% --- Растягивающаяся колонка для tabularx с ragged-right ---
-\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+% --- Запрет переноса по слогам внутри таблиц ---
+% Применяется через >{...}-префикс в Y, P, B-колонках. Авто-перенос
+% (по словарю слогов) выключен; перенос по уже стоящим в тексте дефисам
+% и слешам остаётся разрешённым, иначе длинные идентификаторы вроде
+% `ReadTransactionsBasic` дают огромные overfull. \emergencystretch
+% из preamble.tex продолжает спасать в~остальных случаях.
+\newcommand{\tblnohyphens}{\hyphenpenalty=10000\relax}
+
+% --- Колонки для tabularx ---
+% Y — растягивающаяся ragged-right без переносов
+% P{w} — фиксированная ширина, ragged-right, без переносов
+% B{w} — то же + \bfseries (для левого «label»-столбца сравнительных таблиц)
+\newcolumntype{Y}{>{\tblnohyphens\RaggedRight\arraybackslash}X}
+\newcolumntype{P}[1]{>{\tblnohyphens\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{B}[1]{>{\tblnohyphens\RaggedRight\arraybackslash\bfseries}p{#1}}
+
+% --- Стиль таблиц (Packt header-strip) ---
+% Тёмная плашка Ink на всю ширину строки хедера, белый PT~Sans~Bold в~ячейках.
+% Тело таблицы — белое, без зебры. Booktabs-линейки.
+%
+% Использование:
+%   \begin{tabularx}{\textwidth}{@{} B{0.18\textwidth} Y Y Y Y @{}}
+%     \toprule
+%     \headrow \thd{Параметр} & \thd{Visa} & \thd{Mastercard} & ... \\
+%     \midrule
+%     Базовый профиль & ... \\
+%     ...
+%     \bottomrule
+%   \end{tabularx}
+\newcommand{\headrow}{\rowcolor{Ink}}
+\newcommand{\thd}[1]{{\color{white}\sffamily\bfseries #1}}
+
+% --- Легенда-подпись под таблицей ---
+% Нейтральная плашка для пояснения категорийных заливок (зелёный/красный/
+% серый и т.~п.). Ставится между \end{tabularx} и \caption внутри table.
+% Тон серый, чтобы не конкурировать с тёмным хедером и категорийными
+% подсветками тела таблицы.
+\newcommand{\tablenote}[1]{%
+  \par\smallskip
+  \fcolorbox{black!18}{black!3}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \footnotesize\color{Muted}#1%
+    }%
+  }%
+}
 
 % --- Текстовый маркер ---
 \soulregister{\emph}{1}

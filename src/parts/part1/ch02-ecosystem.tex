@@ -253,27 +253,24 @@ Robokassa и~Best2Pay. От распределения ролей зависит
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabularx}{\textwidth}{
-      @{}>{\RaggedRight\arraybackslash}p{0.20\textwidth}
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X@{}
+      @{}P{0.20\textwidth}
+      Y
+      Y
+      Y
+      Y@{}
     }
     \toprule
-    \rowcolor{Panel}
-    \textbf{Признак} &
-    \textbf{Процессор} &
-    \textbf{Шлюз} &
-    \textbf{PSP} &
-    \textbf{Фасилитатор} \\
+    \headrow
+    \thd{Признак} &
+    \thd{Процессор} &
+    \thd{Шлюз} &
+    \thd{PSP} &
+    \thd{Фасилитатор} \\
     \midrule
-    \rowcolor{Soft}
     Лицензия & --- & --- & агрегатор & БПА \\
     Двигает деньги & нет & нет & да & да \\
-    \rowcolor{Soft}
     Договор с~ТСП & банк & банк & PSP & фасилитатор \\
     Риск чарджбэков & нет & нет & общий с~банком & на нём \\
-    \rowcolor{Soft}
     Дескриптор & эквайер & эквайер & ТСП & субмерчант \\
     \bottomrule
   \end{tabularx}%

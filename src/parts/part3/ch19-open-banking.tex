@@ -542,26 +542,22 @@ NextGenPSD2 и~базовым FAPI 2.0, видно, в~чём российски
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabularx}{\textwidth}{
-      @{}>{\RaggedRight\arraybackslash\bfseries}p{0.18\textwidth}
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X@{}
+      @{}B{0.18\textwidth}
+      Y
+      Y
+      Y
+      Y@{}
     }
     \toprule
-    \rowcolor{Panel}
-    Параметр & ФАПИ.СЕК (РФ) & Open Banking UK & Berlin Group (ЕС) & FAPI 2.0 (OIDF) \\
+    \headrow
+    \thd{Параметр} & \thd{ФАПИ.СЕК (РФ)} & \thd{Open Banking UK} & \thd{Berlin Group (ЕС)} & \thd{FAPI 2.0 (OIDF)} \\
     \midrule
-    \rowcolor{Soft}
     Базовый профиль & FAPI 1.0 Advanced + ГОСТ-надстройка & FAPI 1.0 Advanced & собственный профиль на FAPI и OAuth 2.0 & FAPI 2.0 \\
     Криптография & ГОСТ Р 34.10/34.11/34.12 в~JWS, JWE, JWK & RSA, ECDSA, SHA-2 & RSA, ECDSA, SHA-2 & задаётся реализующим профилем \\
-    \rowcolor{Soft}
     Транспорт & ГОСТ TLS & TLS 1.2+ & TLS 1.2+ & TLS 1.2+ \\
     Подпись запроса & request object на ГОСТ, СКЗИ обязательно & signed JWT, mTLS & signed JWT, mTLS либо QSeal & PAR обязательно \\
-    \rowcolor{Soft}
     Лицензируемые роли & нет; договор с~банком + соответствие стандарту & AISP, PISP по PSD2 & AISP, PISP, CBPII по PSD2 & не определяет \\
     Расчётный канал & ОПКЦ СБП & Faster Payments & SEPA Instant либо локальная RTGS & не определяет \\
-    \rowcolor{Soft}
     Статус & рекомендательный, поэтапный переход к~обязательному & обязательный для девяти крупнейших банков & обязательный по PSD2 & добровольная адаптация \\
     \bottomrule
   \end{tabularx}%
@@ -615,18 +611,17 @@ A2A-перевода значит, что деньги уже зачислены
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabularx}{\textwidth}{
-      @{}>{\RaggedRight\arraybackslash\bfseries}p{0.18\textwidth}
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X@{}
+      @{}B{0.18\textwidth}
+      Y
+      Y
+      Y@{}
     }
     \toprule
-    \rowcolor{Panel}
-    Система & Что даёт первый положительный ответ &
-    Когда деньги считаются окончательными &
-    Как устроены возврат и~спор \\
+    \headrow
+    \thd{Система} & \thd{Что даёт первый положительный ответ} &
+    \thd{Когда деньги считаются окончательными} &
+    \thd{Как устроены возврат и~спор} \\
     \midrule
-    \rowcolor{Soft}
     Карточный платёж &
     Разрешение на авторизацию и резервирование средств &
     После отдельного клиринга и~расчёта по правилам схемы &
@@ -732,17 +727,16 @@ contingency processing для отправителей MT и in-flow translation
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabularx}{\textwidth}{
-      @{}>{\RaggedRight\arraybackslash\bfseries}p{0.18\textwidth}
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X
-      >{\RaggedRight\arraybackslash}X@{}
+      @{}B{0.18\textwidth}
+      Y
+      Y
+      Y@{}
     }
     \toprule
-    \rowcolor{Panel}
-    Уровень & На какой вопрос отвечает & Кто обычно им управляет &
-    Что ломается, если смешать его с~соседним \\
+    \headrow
+    \thd{Уровень} & \thd{На какой вопрос отвечает} & \thd{Кто обычно им управляет} &
+    \thd{Что ломается, если смешать его с~соседним} \\
     \midrule
-    \rowcolor{Soft}
     Access / consent API &
     Кто и~на каких правах может обратиться к~счёту &
     ASPSP, профиль API, security profile, consent management &
@@ -753,7 +747,6 @@ contingency processing для отправителей MT и in-flow translation
     Платёжная система, расчётная инфраструктура, правила системы &
     Промежуточный статус принимается за расчёт; возврат проектируется
     как отмена уже исполненного перевода \\
-    \rowcolor{Soft}
     Message standard &
     Как операция описывается между системами и в~отчётности &
     ISO 20022 profile, usage guidelines, локальные альбомы сообщений &

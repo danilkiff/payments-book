@@ -167,17 +167,15 @@ Mastercard описывает MDES как единую платформу
   \renewcommand{\arraystretch}{1.2}
   \begin{minipage}{\textwidth}
     \begin{tabularx}{\textwidth}{
-        @{}>{\RaggedRight\arraybackslash}p{0.28\textwidth}
+        @{}P{0.28\textwidth}
         Y@{}
       }
       \toprule
-      \rowcolor{Panel}
-      \textbf{Компонент TSP} & \textbf{Назначение} \\
+      \headrow
+      \thd{Компонент TSP} & \thd{Назначение} \\
       \midrule
-      \rowcolor{Soft}
       Token Requestor Interface & Связь с~ТСП, кошельком или провайдером \\
       Token Vault & Хранит соответствие токена и~PAN \\
-      \rowcolor{Soft}
       Issuer Interface & Взаимодействие с~эмитентом при выпуске токена \\
       \bottomrule
     \end{tabularx}
@@ -230,24 +228,20 @@ EMVCo, напротив, описывает платёжный токен как
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabularx}{\textwidth}{
-      @{}>{\RaggedRight\arraybackslash}p{0.23\textwidth}
+      @{}P{0.23\textwidth}
       Y
       Y@{}
     }
     \toprule
-    \rowcolor{Panel}
-    \textbf{Параметр} &
-    \cellcolor{AccentA!10}\textbf{\shortstack[l]{Сетевой токен\\(VTS /
-    MDES / TSP НСПК)}} &
-    \cellcolor{AccentB!10}\textbf{Токен PSP} \\
+    \headrow
+    \thd{Параметр} &
+    \thd{Сетевой токен (VTS / MDES / TSP НСПК)} &
+    \thd{Токен PSP} \\
     \midrule
-    \rowcolor{Soft}
     Портативность & да & нет \\
     Область PCI DSS ТСП & минимальная & сужена \\
-    \rowcolor{Soft}
     Область PCI DSS PSP & сужена & полная \\
     Доля одобрений & по маркетинговым материалам схем~-- выше\textsuperscript{*} & без изменений \\
-    \rowcolor{Soft}
     Жизненный цикл & автообновление & ручное + Account Updater \\
     Стоимость интеграции & средняя & низкая \\
     \bottomrule

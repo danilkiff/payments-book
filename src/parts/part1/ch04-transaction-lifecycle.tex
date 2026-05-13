@@ -616,29 +616,26 @@ Mastercard и~ПС~Мир, и~эквайер обычно конвертируе
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabularx}{\textwidth}{
-      @{}>{\RaggedRight\arraybackslash\bfseries}p{0.14\textwidth}
-      >{\RaggedRight\arraybackslash}p{0.17\textwidth}
-      >{\RaggedRight\arraybackslash}p{0.15\textwidth}
-      >{\RaggedRight\arraybackslash}p{0.17\textwidth}
+      @{}B{0.14\textwidth}
+      P{0.17\textwidth}
+      P{0.15\textwidth}
+      P{0.17\textwidth}
       Y@{}
     }
     \toprule
-    \rowcolor{Panel}
-    \textbf{Механизм} & \textbf{Когда сумма известна} &
-    \textbf{Онлайн-авторизация} & \textbf{Кто несёт риск} &
-    \textbf{Типичный MCC} \\
+    \headrow
+    \thd{Механизм} & \thd{Когда сумма известна} &
+    \thd{Онлайн-авторизация} & \thd{Кто несёт риск} &
+    \thd{Типичный MCC} \\
     \midrule
-    \rowcolor{Soft}
     Pre-auth & позже & да
     & эквайер/ТСП & 7011 (гостиницы), 7512 (аренда авто) \\
     Incremental auth & постепенно & да (несколько)
     & эквайер/ТСП & 7011 \\
-    \rowcolor{Soft}
     Partial auth & сразу, но покрытие неполное & да
     & ТСП & любой (чаще prepaid) \\
     Deferred auth & позже & нет (офлайн)
     & эквайер/ТСП & 4511 (авиа), 7523 (паркинг) \\
-    \rowcolor{Soft}
     Force post & сразу & голосовая
     & ТСП & любой \\
     \bottomrule
