@@ -17,6 +17,11 @@
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{float}
+\usepackage{chngcntr}
+% Сквозная нумерация таблиц и~рисунков с~единицы по всей книге
+% (вместо дефолтной KOMA-нумерации «глава.номер»).
+\counterwithout{table}{chapter}
+\counterwithout{figure}{chapter}
 \usepackage{ragged2e}
 \usepackage{booktabs}
 \usepackage[final]{microtype}
