@@ -20,6 +20,7 @@
 <rect x="70.6" y="244.0" width="130" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="135.6" y="263.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Эмитент</text>
 <line x1="135.6" y1="56.0" x2="135.6" y2="76.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
+<text x="123.6" y="66.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">DPAN</text>
 <line x1="135.6" y1="112.0" x2="135.6" y2="132.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
 <text x="123.6" y="122.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">DPAN</text>
 <line x1="135.6" y1="168.0" x2="135.6" y2="188.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
@@ -31,5 +32,5 @@
 <line x1="135.6" y1="224.0" x2="135.6" y2="244.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-8b5cf6)"/>
 <text x="123.6" y="234.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">FPAN+meta</text>
 <rect x="25.6" y="305.0" width="360" height="44" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="205.6" y="328.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Де-токенизация идёт в карточной сети; продавец и эквайер видят только DPAN.</text>
+<text x="205.6" y="328.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Детокенизация идёт в карточной сети; продавец и эквайер видят только DPAN.</text>
 </svg>

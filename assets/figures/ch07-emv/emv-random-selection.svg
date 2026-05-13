@@ -18,7 +18,7 @@
 <line x1="581.7" y1="176.4" x2="581.7" y2="65.4" stroke="#7759D6" stroke-width="3" stroke-dasharray="6,3"/>
 <line x1="581.7" y1="65.4" x2="701.7" y2="65.4" stroke="#7759D6" stroke-width="3"/>
 <text x="95.7" y="455.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">0</text>
-<text x="341.7" y="455.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">Threshold</text>
+<text x="355.7" y="455.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">TVBRS</text>
 <text x="546.7" y="455.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">Floor limit</text>
 <text x="49.7" y="365.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">TPRS</text>
 <text x="35.7" y="180.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">MTPBRS</text>

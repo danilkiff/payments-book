@@ -12,7 +12,7 @@
 <rect x="50.0" y="149.0" width="200" height="44" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
 <text x="150.0" y="172.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Штрафы</text>
 <text x="265.0" y="164.7" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#ef4444">$25-100 за CB;</text>
-<text x="265.0" y="176.8" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#ef4444">VDAMP / MMPP</text>
+<text x="265.0" y="176.8" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#ef4444">VAMP / MC ECP (ECM, HECM)</text>
 <line x1="150.0" y1="239.0" x2="150.0" y2="197.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-1e1e1e)"/>
 <rect x="40.0" y="243.0" width="220" height="44" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
 <text x="150.0" y="266.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">План ремедиации</text>

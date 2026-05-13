@@ -13,7 +13,8 @@
 <text x="265.0" y="89.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Mastercard</text>
 <text x="265.0" y="104.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ABU</text>
 <rect x="390.0" y="65.0" width="120" height="60" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
-<text x="450.0" y="96.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ТСП</text>
+<text x="450.0" y="89.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Эквайер/PSP</text>
+<text x="450.0" y="104.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">(stored accounts ТСП)</text>
 <line x1="142.0" y1="87.0" x2="198.0" y2="87.0" stroke="#4E63D9" stroke-width="1.5" marker-end="url(#arr-4a9eed)"/>
 <text x="170.0" y="75.8" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#4E63D9">новые</text>
 <text x="170.0" y="86.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#4E63D9">реквизиты</text>
@@ -22,11 +23,11 @@
 <line x1="40.0" y1="175.0" x2="490.0" y2="175.0" stroke="#5C647A" stroke-width="2"/>
 <text x="20.0" y="168.5" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#868e96">Доставка:</text>
 <rect x="40.0" y="190.0" width="200" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="140.0" y="202.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Batch (IPM файл)</text>
-<text x="140.0" y="216.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">раз в сутки</text>
+<text x="140.0" y="202.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">ABU Bulk File через MFE</text>
+<text x="140.0" y="216.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">по cadence участника</text>
 <rect x="290.0" y="190.0" width="200" height="36" rx="8" fill="#c3fae8" stroke="#06b6d4" stroke-width="1.5"/>
 <text x="390.0" y="202.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Real-time (API)</text>
-<text x="390.0" y="216.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">при авторизации</text>
+<text x="390.0" y="216.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">перед retry-транзакцией</text>
 <ellipse cx="140.0" cy="175.0" rx="5.0" ry="5.0" fill="#B8821C" stroke="#B8821C" stroke-width="1"/>
 <ellipse cx="390.0" cy="175.0" rx="5.0" ry="5.0" fill="#06b6d4" stroke="#06b6d4" stroke-width="1"/>
 </svg>

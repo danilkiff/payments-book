@@ -24,14 +24,10 @@
 <text x="165.0" y="246.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.0" font-weight="normal" fill="#1A2030">Authorised</text>
 <rect x="535.0" y="219.0" width="170" height="50" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
 <text x="620.0" y="246.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.0" font-weight="normal" fill="#1A2030">Rejected</text>
-<line x1="135.0" y1="269.0" x2="105.0" y2="359.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
-<text x="108.0" y="314.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" fill="#1A2030">использовано</text>
-<line x1="205.0" y1="269.0" x2="365.0" y2="359.0" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-f59e0b)"/>
-<text x="285.0" y="304.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" fill="#1A2030">отозвано</text>
-<rect x="30.0" y="359.0" width="150" height="50" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
-<text x="105.0" y="386.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.0" font-weight="normal" fill="#1A2030">Consumed</text>
-<rect x="280.0" y="359.0" width="150" height="50" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
-<text x="355.0" y="386.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.0" font-weight="normal" fill="#1A2030">Revoked</text>
+<line x1="165.0" y1="269.0" x2="165.0" y2="359.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
+<text x="225.0" y="318.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14.0" fill="#1A2030">использовано</text>
+<rect x="80.0" y="359.0" width="170" height="50" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
+<text x="165.0" y="386.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.0" font-weight="normal" fill="#1A2030">Consumed</text>
 <rect x="20.0" y="439.0" width="700" height="70" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
 <text x="32.0" y="462.8" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">! Consumed -- согласие использовано для создания платёжного ресурса.</text>
 <text x="32.0" y="488.8" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1A2030">Деньги не обязательно финальны. Статус платёжного ресурса -- отдельно.</text>

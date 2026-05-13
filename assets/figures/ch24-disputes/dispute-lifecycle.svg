@@ -16,9 +16,9 @@
 <text x="380.0" y="41.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Pre-arb</text>
 <rect x="435.0" y="20.0" width="90" height="40" rx="8" fill="#e9ecef" stroke="#1A2030" stroke-width="2"/>
 <text x="480.0" y="41.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Arbitration</text>
-<text x="58.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#868e96">30 дней</text>
-<text x="158.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#868e96">45 дней</text>
-<text x="268.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#868e96">30 дней</text>
+<text x="58.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#868e96">часы — дни</text>
+<text x="158.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#868e96">до 120 дней (cardholder)</text>
+<text x="268.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#868e96">Visa 9/18 дн., MC 45 дн.</text>
 <text x="378.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#868e96">30 дней</text>
 <text x="480.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#868e96">финально</text>
 <text x="40.0" y="142.7" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Эскалация стоимости:</text>

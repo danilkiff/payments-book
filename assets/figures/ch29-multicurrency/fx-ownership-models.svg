@@ -5,10 +5,10 @@
 <text x="130.0" y="109.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">стандартный карточный</text>
 <text x="130.0" y="123.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">FX-риск: эмитент</text>
 <rect x="260.0" y="20.0" width="220" height="160" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
-<text x="370.0" y="79.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">DCC-провайдер</text>
+<text x="370.0" y="79.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Эквайер / DCC-провайдер</text>
 <text x="370.0" y="94.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030"></text>
 <text x="370.0" y="109.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">DCC</text>
-<text x="370.0" y="123.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">FX-риск: DCC-провайдер</text>
+<text x="370.0" y="123.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">FX-риск: эквайер / DCC-провайдер</text>
 <rect x="20.0" y="200.0" width="220" height="160" rx="8" fill="#d0bfff" stroke="#7759D6" stroke-width="2"/>
 <text x="130.0" y="259.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Платформа</text>
 <text x="130.0" y="274.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030"></text>

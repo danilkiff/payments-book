@@ -11,13 +11,16 @@
 <text x="265.0" y="178.1" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">Маршрутизация</text>
 <text x="265.0" y="195.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">по коридору</text>
 <rect x="20.0" y="20.0" width="160" height="50" rx="8" fill="#a5d8ff" stroke="#4E63D9" stroke-width="2"/>
-<text x="100.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">Эквайер</text>
+<text x="100.0" y="41.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Стоимость</text>
+<text x="100.0" y="56.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">авторизации/расчёта</text>
 <rect x="350.0" y="20.0" width="160" height="50" rx="8" fill="#c3fae8" stroke="#2F8B67" stroke-width="2"/>
-<text x="430.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">Валюта расчёта</text>
+<text x="430.0" y="41.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Валюта выплаты</text>
+<text x="430.0" y="56.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">продавцу</text>
 <rect x="20.0" y="300.0" width="160" height="50" rx="8" fill="#b2f2bb" stroke="#2F8B67" stroke-width="2"/>
 <text x="100.0" y="327.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">Доля одобрений</text>
 <rect x="350.0" y="300.0" width="160" height="50" rx="8" fill="#ffd8a8" stroke="#B8821C" stroke-width="2"/>
-<text x="430.0" y="327.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="normal" fill="#1A2030">Модель выплат</text>
+<text x="430.0" y="321.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Сторона</text>
+<text x="430.0" y="336.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">FX-риска</text>
 <line x1="140.0" y1="70.0" x2="225.0" y2="155.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-4a9eed)"/>
 <line x1="390.0" y1="70.0" x2="305.0" y2="155.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
 <line x1="140.0" y1="300.0" x2="225.0" y2="215.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-22c55e)"/>
