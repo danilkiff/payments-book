@@ -14,12 +14,11 @@
 <text x="265.0" y="104.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ABU</text>
 <rect x="390.0" y="65.0" width="120" height="60" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="450.0" y="89.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Эквайер/PSP</text>
-<text x="450.0" y="104.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">(stored accounts ТСП)</text>
-<line x1="142.0" y1="87.0" x2="198.0" y2="87.0" stroke="#4E63D9" stroke-width="1.5" marker-end="url(#arr-AccentA)"/>
-<text x="170.0" y="75.8" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#4E63D9">новые</text>
-<text x="170.0" y="86.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#4E63D9">реквизиты</text>
-<line x1="332.0" y1="87.0" x2="388.0" y2="87.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-Good)"/>
-<text x="367.5" y="75.8" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#2F8B67">обновление</text>
+<text x="450.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">stored accounts</text>
+<line x1="142.0" y1="95.0" x2="198.0" y2="95.0" stroke="#4E63D9" stroke-width="1.5" marker-end="url(#arr-AccentA)"/>
+<text x="170.0" y="88.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#4E63D9">новые реквизиты</text>
+<line x1="332.0" y1="95.0" x2="388.0" y2="95.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-Good)"/>
+<text x="360.0" y="88.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#2F8B67">обновление</text>
 <line x1="40.0" y1="175.0" x2="490.0" y2="175.0" stroke="#5C647A" stroke-width="2"/>
 <text x="20.0" y="168.5" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Доставка:</text>
 <rect x="40.0" y="190.0" width="200" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>

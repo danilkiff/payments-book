@@ -7,23 +7,20 @@
 <ellipse cx="73.0" cy="110.0" rx="8.0" ry="8.0" fill="#4E63D9" stroke="#4E63D9" stroke-width="2"/>
 <ellipse cx="243.0" cy="110.0" rx="8.0" ry="8.0" fill="#2F8B67" stroke="#2F8B67" stroke-width="2"/>
 <ellipse cx="413.0" cy="110.0" rx="8.0" ry="8.0" fill="#B8821C" stroke="#B8821C" stroke-width="2"/>
-<rect x="20.0" y="20.0" width="110" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="75.0" y="33.1" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Покупка</text>
-<text x="75.0" y="45.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030"></text>
-<text x="75.0" y="57.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Валюта цены</text>
-<text x="75.0" y="69.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">(EUR)</text>
-<rect x="188.0" y="20.0" width="110" height="60" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="243.0" y="33.1" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Расчёт</text>
-<text x="243.0" y="45.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030"></text>
-<text x="243.0" y="57.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Валюта расчёта</text>
-<text x="243.0" y="69.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">(USD)</text>
-<rect x="358.0" y="20.0" width="110" height="60" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="413.0" y="33.1" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Выплата</text>
-<text x="413.0" y="45.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030"></text>
-<text x="413.0" y="57.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Валюта ТСП</text>
-<text x="413.0" y="69.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">(GBP)</text>
+<rect x="20.0" y="14.0" width="110" height="72" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="75.0" y="34.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="bold" fill="#1A2030">Покупка</text>
+<text x="75.0" y="56.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Валюта цены</text>
+<text x="75.0" y="74.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">(EUR)</text>
+<rect x="188.0" y="14.0" width="110" height="72" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="243.0" y="34.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="bold" fill="#1A2030">Расчёт</text>
+<text x="243.0" y="56.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Валюта расчёта</text>
+<text x="243.0" y="74.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">(USD)</text>
+<rect x="358.0" y="14.0" width="110" height="72" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="413.0" y="34.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="bold" fill="#1A2030">Выплата</text>
+<text x="413.0" y="56.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Валюта ТСП</text>
+<text x="413.0" y="74.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">(GBP)</text>
 <line x1="135.0" y1="110.0" x2="230.0" y2="110.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="181.0" y="127.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#5C647A">EUR → USD</text>
+<text x="181.0" y="131.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#5C647A">EUR → USD</text>
 <line x1="305.0" y1="110.0" x2="400.0" y2="110.0" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
-<text x="351.0" y="127.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#5C647A">USD → GBP</text>
+<text x="351.0" y="131.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" fill="#5C647A">USD → GBP</text>
 </svg>

@@ -7,8 +7,8 @@
 <text x="156.7" y="88.2" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#4E63D9">random selection</text>
 <rect x="381.7" y="65.4" width="200" height="370" rx="0" fill="#B8821C" fill-opacity="0.18" stroke="transparent" stroke-opacity="0.45" stroke-width="2"/>
 <text x="406.7" y="88.2" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#B8821C">biased random</text>
-<rect x="581.7" y="65.4" width="120" height="370" rx="0" fill="#C15462" fill-opacity="0.15" stroke="transparent" stroke-opacity="0.45" stroke-width="2"/>
-<text x="599.7" y="88.2" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#C15462">online</text>
+<rect x="581.7" y="65.4" width="120" height="370" rx="0" fill="#2F8B67" fill-opacity="0.15" stroke="transparent" stroke-opacity="0.45" stroke-width="2"/>
+<text x="599.7" y="88.2" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#2F8B67">online</text>
 <line x1="101.7" y1="435.4" x2="101.7" y2="55.4" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <line x1="101.7" y1="435.4" x2="721.7" y2="435.4" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="20.0" y="37.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#1A2030">P(online)</text>

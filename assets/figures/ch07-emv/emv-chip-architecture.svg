@@ -1,33 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 446" width="500" height="446">
 <defs>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
 </defs>
-<rect x="20.0" y="20.0" width="460" height="380" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
-<rect x="200.0" y="175.0" width="100" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="250.0" y="202.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15.0" font-weight="normal" fill="#1A2030">CPU</text>
-<rect x="50.0" y="90.0" width="110" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="105.0" y="109.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">ROM</text>
-<text x="105.0" y="124.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">ОС, EMV-аплет</text>
-<rect x="200.0" y="60.0" width="100" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="250.0" y="79.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">RAM</text>
-<text x="250.0" y="94.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">рабочая</text>
-<rect x="50.0" y="260.0" width="110" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="105.0" y="279.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">EEPROM/Flash</text>
-<text x="105.0" y="294.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">ключи, счётчики</text>
-<rect x="340.0" y="175.0" width="110" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="395.0" y="194.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Crypto</text>
-<text x="395.0" y="209.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">coproc.</text>
-<rect x="200.0" y="290.0" width="100" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="250.0" y="309.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">I/O</text>
-<text x="250.0" y="324.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">ISO 7816</text>
-<line x1="200.0" y1="190.0" x2="160.0" y2="125.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<line x1="250.0" y1="175.0" x2="250.0" y2="110.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<line x1="200.0" y1="210.0" x2="160.0" y2="260.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<line x1="300.0" y1="200.0" x2="340.0" y2="200.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<line x1="250.0" y1="225.0" x2="250.0" y2="290.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<line x1="250.0" y1="340.0" x2="250.0" y2="400.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="270.0" y="420.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">Контактная площадка ISO 7816</text>
+<rect x="20" y="20" width="460" height="380" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
+
+<!-- CPU center -->
+<rect x="200" y="175" width="100" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="250" y="206" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="bold" fill="#1A2030">CPU</text>
+
+<!-- ROM (left-top) -->
+<rect x="55" y="85" width="100" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="105" y="108" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">ROM</text>
+<text x="105" y="128" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">ОС, EMV-аплет</text>
+
+<!-- RAM (top) -->
+<rect x="200" y="55" width="100" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="250" y="78" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">RAM</text>
+<text x="250" y="98" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">рабочая</text>
+
+<!-- EEPROM/Flash (left-bottom) -->
+<rect x="55" y="255" width="100" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="105" y="278" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">EEPROM/Flash</text>
+<text x="105" y="298" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">ключи, счётчики</text>
+
+<!-- Crypto (right) -->
+<rect x="345" y="170" width="100" height="60" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="395" y="193" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">Crypto</text>
+<text x="395" y="213" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">coproc.</text>
+
+<!-- I/O (bottom) -->
+<rect x="200" y="285" width="100" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="250" y="308" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">I/O</text>
+<text x="250" y="328" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">ISO 7816</text>
+
+<!-- Bus lines: CPU <-> peripherals -->
+<line x1="200" y1="190" x2="155" y2="125" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<line x1="250" y1="175" x2="250" y2="115" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<line x1="200" y1="210" x2="155" y2="255" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<line x1="300" y1="200" x2="345" y2="200" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<line x1="250" y1="225" x2="250" y2="285" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+
+<!-- I/O -> pad -->
+<line x1="250" y1="345" x2="250" y2="395" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="250" y="423" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#5C647A">Контактная площадка ISO 7816</text>
 </svg>

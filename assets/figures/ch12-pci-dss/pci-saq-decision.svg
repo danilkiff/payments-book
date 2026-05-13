@@ -1,48 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 626 521" width="626" height="521">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
 </defs>
-<polygon points="210.0,20.0 290.0,55.0 210.0,90.0 130.0,55.0" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="210.0" y="56.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Есть ли электронное хранение CHD?</text>
-<rect x="20.0" y="117.0" width="100" height="36" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
-<text x="70.0" y="136.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">SAQ D</text>
-<polygon points="350.0,110.0 435.0,147.0 350.0,184.0 265.0,147.0" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="350.0" y="148.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Есть ли собственный код на странице оплаты?</text>
-<rect x="120.0" y="217.0" width="110" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="175.0" y="236.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">SAQ A-EP</text>
-<polygon points="450.0,210.0 518.0,240.0 450.0,270.0 382.0,240.0" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="450.0" y="241.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Только redirect на PSP?</text>
-<rect x="254.0" y="300.0" width="110" height="36" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="309.0" y="319.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">SAQ A</text>
-<polygon points="533.0,293.0 599.0,323.0 533.0,353.0 467.0,323.0" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="533.0" y="324.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">Виртуальный терминал PSP?</text>
-<rect x="344.0" y="385.0" width="120" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="404.0" y="404.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">SAQ C-VT</text>
-<polygon points="542.0,375.0 597.0,404.0 542.0,433.0 487.0,404.0" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="542.0" y="405.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">IP-терминал без CHD?</text>
-<rect x="355.0" y="465.0" width="100" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="405.0" y="484.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">SAQ B-IP</text>
-<rect x="485.0" y="465.0" width="80" height="36" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
-<text x="525.0" y="484.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.0" font-weight="normal" fill="#1A2030">SAQ D</text>
-<line x1="130.0" y1="55.0" x2="80.0" y2="117.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="93.0" y="86.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Да</text>
-<line x1="290.0" y1="55.0" x2="340.0" y2="110.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="303.0" y="82.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Нет</text>
-<line x1="265.0" y1="147.0" x2="175.0" y2="217.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="220.0" y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Да</text>
-<line x1="435.0" y1="147.0" x2="450.0" y2="210.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="430.5" y="178.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Нет</text>
-<line x1="382.0" y1="240.0" x2="314.0" y2="300.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="348.0" y="260.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Да</text>
-<line x1="518.0" y1="240.0" x2="533.0" y2="293.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="513.5" y="266.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Нет</text>
-<line x1="467.0" y1="323.0" x2="404.0" y2="385.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="435.5" y="344.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Да</text>
-<line x1="599.0" y1="323.0" x2="599.0" y2="375.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="587.0" y="349.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Нет</text>
-<path d="M 495.0,423.0 L 495.0,453.0 L 405.0,453.0 L 405.0,465.0" fill="none" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="450.0" y="443.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Да</text>
-<line x1="542.0" y1="433.0" x2="542.0" y2="465.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="530.0" y="449.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">Нет</text>
+
+<!-- Q1: Электронное хранение CHD? центр (90,150) -->
+<polygon points="90,105 160,150 90,195 20,150" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="90" y="147.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Электронное</text>
+<text x="90" y="161.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">хранение CHD?</text>
+
+<!-- SAQ D1 (Да): сверху -->
+<rect x="40" y="20" width="100" height="44" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
+<text x="90" y="40.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">SAQ D</text>
+<text x="90" y="56.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">хранит CHD</text>
+<line x1="90" y1="105" x2="90" y2="66" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="106" y="92.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Да</text>
+
+<!-- Q2: Собственный код? центр (250,150) -->
+<polygon points="250,105 320,150 250,195 180,150" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="250" y="147.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Собственный код</text>
+<text x="250" y="161.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">на странице оплаты?</text>
+
+<line x1="160" y1="150" x2="178" y2="150" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="169" y="143.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Нет</text>
+
+<!-- SAQ A-EP (Да от Q2): снизу -->
+<rect x="200" y="240" width="100" height="44" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="250" y="266.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">SAQ A-EP</text>
+<line x1="250" y1="195" x2="250" y2="240" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="234" y="220.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Да</text>
+
+<!-- Q3: Только redirect на PSP? центр (410,150) -->
+<polygon points="410,105 480,150 410,195 340,150" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="410" y="147.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Только redirect</text>
+<text x="410" y="161.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">на PSP?</text>
+
+<line x1="320" y1="150" x2="338" y2="150" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="329" y="143.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Нет</text>
+
+<!-- SAQ A (Да от Q3): снизу -->
+<rect x="360" y="240" width="100" height="44" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="410" y="266.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">SAQ A</text>
+<line x1="410" y1="195" x2="410" y2="240" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="394" y="220.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Да</text>
+
+<!-- Q4: Виртуальный терминал PSP? центр (560,150) -->
+<polygon points="560,105 630,150 560,195 490,150" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="560" y="147.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Виртуальный</text>
+<text x="560" y="161.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">терминал PSP?</text>
+
+<line x1="480" y1="150" x2="488" y2="150" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="484" y="143.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Нет</text>
+
+<!-- SAQ C-VT (Да от Q4): снизу -->
+<rect x="510" y="240" width="100" height="44" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="560" y="266.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">SAQ C-VT</text>
+<line x1="560" y1="195" x2="560" y2="240" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="544" y="220.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Да</text>
+
+<!-- Q5: IP-терминал без CHD? центр (700,150) -->
+<polygon points="700,105 758,150 700,195 642,150" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="700" y="147.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">IP-терминал</text>
+<text x="700" y="161.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">без CHD?</text>
+
+<line x1="630" y1="150" x2="640" y2="150" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="635" y="143.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Нет</text>
+
+<!-- SAQ B-IP (Да от Q5) — снизу слева -->
+<rect x="600" y="280" width="100" height="44" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="650" y="306.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">SAQ B-IP</text>
+
+<!-- SAQ D2 (Нет от Q5) — снизу справа -->
+<rect x="600" y="340" width="100" height="48" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
+<text x="650" y="362.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">SAQ D</text>
+<text x="650" y="378.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">иначе</text>
+
+<!-- arrow Q5 -> SAQ B-IP (Да): вниз -->
+<line x1="680" y1="195" x2="680" y2="280" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="666" y="240.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Да</text>
+
+<!-- arrow Q5 -> SAQ D2 (Нет): U-образный путь -->
+<path d="M 730,170 L 730,360 L 700,360" fill="none" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="744" y="270.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Нет</text>
+
 </svg>

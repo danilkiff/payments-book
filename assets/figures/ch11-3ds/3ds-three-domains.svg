@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 336" width="1254" height="336">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" width="600" height="260">
 <defs>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
@@ -9,34 +9,67 @@
   <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
   <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
 </defs>
-<rect x="64.0" y="20.0" width="200" height="240" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
-<rect x="294.0" y="20.0" width="200" height="240" rx="8" fill="#F5F7FD" fill-opacity="0.60" stroke="#5C647A" stroke-opacity="0.60" stroke-width="1"/>
-<rect x="524.0" y="20.0" width="200" height="240" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
-<rect x="89.0" y="50.0" width="150" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="164.0" y="69.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ТСП</text>
-<rect x="89.0" y="120.0" width="150" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="164.0" y="139.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">3DS Server</text>
-<rect x="319.0" y="90.0" width="150" height="36" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2"/>
-<text x="394.0" y="109.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">DS</text>
-<rect x="549.0" y="50.0" width="150" height="36" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="624.0" y="69.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ACS</text>
-<rect x="549.0" y="120.0" width="150" height="36" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="624.0" y="139.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Эмитент</text>
-<rect x="89.0" y="200.0" width="150" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="164.0" y="219.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Браузер / SDK держателя</text>
-<line x1="164.0" y1="86.0" x2="164.0" y2="120.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="239.0" y1="130.0" x2="317.0" y2="112.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="278.0" y="111.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">AReq</text>
-<line x1="469.0" y1="102.0" x2="547.0" y2="72.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="508.0" y="77.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">AReq</text>
-<line x1="547.0" y1="84.0" x2="469.0" y2="112.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="508.0" y="88.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">ARes</text>
-<line x1="317.0" y1="118.0" x2="239.0" y2="138.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="278.0" y="118.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">ARes</text>
-<line x1="624.0" y1="86.0" x2="624.0" y2="120.0" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="612.0" y="103.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">risk/decision</text>
-<path d="M 699.0,86.0 L 699.0,250.0 L 164.0,250.0 L 164.0,236.0" fill="none" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)" marker-start="url(#arr-Warn-s)"/>
-<text x="431.5" y="240.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">CReq/CRes</text>
-<rect x="64.0" y="272.0" width="660" height="44" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="394.0" y="295.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">DS маршрутизирует запросы между доменами, а ACS принимает решение по аутентификации. При challenge включается браузер или SDK держателя.</text>
+
+<!-- Три домена: panel-рамки -->
+<rect x="10" y="10" width="180" height="180" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
+<rect x="210" y="10" width="180" height="180" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-opacity="0.60" stroke-width="1"/>
+<rect x="410" y="10" width="180" height="180" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
+
+<!-- Заголовки доменов -->
+<text x="100" y="28" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Домен продавца</text>
+<text x="300" y="28" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Совместный домен</text>
+<text x="500" y="28" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Домен эмитента</text>
+
+<!-- ТСП -->
+<rect x="30" y="50" width="140" height="34" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="100" y="71" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ТСП</text>
+
+<!-- 3DS Server -->
+<rect x="30" y="120" width="140" height="34" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="100" y="141" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">3DS Server</text>
+
+<!-- DS (центральный) -->
+<rect x="240" y="85" width="120" height="40" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2"/>
+<text x="300" y="110" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">DS</text>
+
+<!-- ACS -->
+<rect x="430" y="50" width="140" height="34" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="500" y="71" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ACS</text>
+
+<!-- Эмитент -->
+<rect x="430" y="120" width="140" height="34" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="500" y="141" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Эмитент</text>
+
+<!-- Браузер / SDK держателя (внизу) -->
+<rect x="220" y="210" width="160" height="34" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="300" y="231" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Браузер / SDK держателя</text>
+
+<!-- ТСП -> 3DS Server (внутренняя связь) -->
+<line x1="100" y1="84" x2="100" y2="120" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+
+<!-- 3DS Server -> DS  (AReq) -->
+<line x1="170" y1="130" x2="238" y2="100" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="200" y="108" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">AReq</text>
+
+<!-- DS -> ACS (AReq) -->
+<line x1="362" y1="100" x2="428" y2="70" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="400" y="78" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">AReq</text>
+
+<!-- ACS -> DS (ARes) -->
+<line x1="428" y1="80" x2="362" y2="112" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="400" y="124" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">ARes</text>
+
+<!-- DS -> 3DS Server (ARes) -->
+<line x1="238" y1="112" x2="170" y2="140" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="200" y="148" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">ARes</text>
+
+<!-- ACS <-> Эмитент: risk/decision -->
+<line x1="500" y1="84" x2="500" y2="120" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+<text x="544" y="105" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">risk/decision</text>
+
+<!-- CReq/CRes: ACS <-> Браузер -->
+<path d="M 500,154 L 500,190 L 380,227" fill="none" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+<path d="M 220,227 L 100,190 L 100,154" fill="none" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+<text x="300" y="200" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">CReq / CRes (challenge)</text>
+
 </svg>

@@ -33,8 +33,8 @@
 <line x1="380.0" y1="138.0" x2="380.0" y2="122.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
 
 <!-- side captions -->
-<text x="247.0" y="184.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">карточный</text>
-<text x="263.0" y="184.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">токенизация</text>
-<text x="263.0" y="93.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">удалённый</text>
-<text x="247.0" y="273.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#4E63D9">базовый</text>
+<text x="247.0" y="184.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">карточный</text>
+<text x="263.0" y="184.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">токенизация</text>
+<text x="263.0" y="93.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">удалённый</text>
+<text x="247.0" y="273.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">базовый</text>
 </svg>

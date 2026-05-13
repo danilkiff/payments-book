@@ -1,26 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322 364" width="322" height="364">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 364" width="360" height="364">
 <defs>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
 </defs>
-<rect x="96.1" y="20.0" width="130" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="161.1" y="39.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Терминал</text>
-<rect x="96.1" y="76.0" width="130" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="161.1" y="95.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Эквайер</text>
-<rect x="96.1" y="132.0" width="130" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="161.1" y="151.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Карточная сеть</text>
-<rect x="96.1" y="188.0" width="130" height="36" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="161.1" y="207.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Хост эмитента</text>
-<rect x="113.1" y="244.0" width="96" height="38" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#7759D6" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="161.1" y="264.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">HSM</text>
-<line x1="161.1" y1="56.0" x2="161.1" y2="76.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="149.1" y="66.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">1. ARQC (от карты)</text>
-<line x1="161.1" y1="112.0" x2="161.1" y2="132.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="161.1" y1="168.0" x2="161.1" y2="188.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="131.1" y1="224.0" x2="131.1" y2="244.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="119.1" y="234.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">2. данные</text>
-<line x1="191.1" y1="244.0" x2="191.1" y2="224.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="179.1" y="234.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" fill="#1A2030">4. ARPC</text>
-<rect x="51.1" y="300.0" width="220" height="44" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="161.1" y="323.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.0" font-weight="normal" fill="#1A2030">3. HSM деривирует ключ, проверяет ARQC и возвращает ARPC.</text>
+<rect x="115.0" y="20.0" width="130" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="180.0" y="42.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Терминал</text>
+<rect x="115.0" y="84.0" width="130" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="180.0" y="106.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Эквайер</text>
+<rect x="115.0" y="148.0" width="130" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="180.0" y="170.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Карточная сеть</text>
+<rect x="115.0" y="212.0" width="130" height="36" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="180.0" y="234.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">Хост эмитента</text>
+<rect x="115.0" y="298.0" width="130" height="52" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#7759D6" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="180.0" y="318.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">HSM</text>
+<text x="180.0" y="335.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">3. derive + verify ARQC</text>
+<line x1="180.0" y1="56.0" x2="180.0" y2="84.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="180.0" y="73.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">1. ARQC (от карты)</text>
+<line x1="180.0" y1="120.0" x2="180.0" y2="148.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="180.0" y="137.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">маршрутизация</text>
+<line x1="180.0" y1="184.0" x2="180.0" y2="212.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="180.0" y="201.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">маршрутизация</text>
+<line x1="145.0" y1="248.0" x2="145.0" y2="298.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="138.0" y="276.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">2. данные</text>
+<line x1="215.0" y1="298.0" x2="215.0" y2="248.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="222.0" y="276.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">4. ARPC</text>
 </svg>

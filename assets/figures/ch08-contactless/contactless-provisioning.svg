@@ -1,36 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 975 472" width="975" height="472">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360">
 <defs>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1A2030"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#1A2030"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
   <marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
 </defs>
-<rect x="0" y="0" width="160" height="36" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
-<text x="80" y="22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#1A2030">Держатель</text>
-<rect x="170" y="0" width="160" height="36" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
-<text x="250" y="22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#1A2030">Кошелёк (SE/HCE)</text>
-<rect x="435" y="0" width="160" height="36" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
-<text x="515" y="22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#1A2030">TSP (сеть)</text>
-<rect x="655" y="0" width="160" height="36" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
-<text x="735" y="22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#1A2030">Эмитент</text>
-<line x1="20.0" y1="40.0" x2="20.0" y2="450.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="250.0" y1="40.0" x2="250.0" y2="450.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="515.0" y1="40.0" x2="515.0" y2="450.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="735.0" y1="40.0" x2="735.0" y2="450.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="20.0" y1="64.0" x2="250.0" y2="64.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="135.0" y="54.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">PAN</text>
-<line x1="250.0" y1="124.0" x2="515.0" y2="124.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="382.5" y="114.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">PAN + device data</text>
-<line x1="515.0" y1="184.0" x2="735.0" y2="184.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="625.0" y="174.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">ID&amp;V request</text>
-<line x1="735.0" y1="244.0" x2="515.0" y2="244.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="625.0" y="234.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">approve / extra verification</text>
-<line x1="515.0" y1="304.0" x2="250.0" y2="304.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="382.5" y="294.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">DPAN + keys</text>
-<line x1="250.0" y1="364.0" x2="250.0" y2="404.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="238.0" y="384.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">SE / HCE load</text>
-<line x1="250.0" y1="444.0" x2="20.0" y2="444.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="135.0" y="434.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">«Карта добавлена»</text>
+
+<!-- Lifeline headers -->
+<rect x="0" y="0" width="130" height="40" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
+<text x="65" y="25" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">Держатель</text>
+
+<rect x="155" y="0" width="160" height="40" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
+<text x="235" y="25" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">Кошелёк (SE/HCE)</text>
+
+<rect x="395" y="0" width="140" height="40" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
+<text x="465" y="25" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">TSP (сеть)</text>
+
+<rect x="595" y="0" width="120" height="40" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
+<text x="655" y="25" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">Эмитент</text>
+
+<!-- Lifelines -->
+<line x1="65" y1="44" x2="65" y2="340" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="235" y1="44" x2="235" y2="340" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="465" y1="44" x2="465" y2="340" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="655" y1="44" x2="655" y2="340" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+
+<!-- Step 1: PAN -->
+<line x1="65" y1="70" x2="235" y2="70" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="150" y="62" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">PAN</text>
+
+<!-- Step 2: PAN + device data -->
+<line x1="235" y1="115" x2="465" y2="115" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="350" y="107" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">PAN + device data</text>
+
+<!-- Step 3: ID&V request -->
+<line x1="465" y1="160" x2="655" y2="160" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="560" y="152" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">ID&amp;V request</text>
+
+<!-- Step 4: approve -->
+<line x1="655" y1="205" x2="465" y2="205" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="560" y="197" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">approve / extra verification</text>
+
+<!-- Step 5: DPAN + keys -->
+<line x1="465" y1="250" x2="235" y2="250" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="350" y="242" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">DPAN + keys</text>
+
+<!-- Step 6: SE / HCE load (self-call on Кошелёк lifeline) -->
+<line x1="235" y1="275" x2="235" y2="305" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="248" y="292" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">SE / HCE load</text>
+
+<!-- Step 7: «Карта добавлена» -->
+<line x1="235" y1="335" x2="65" y2="335" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="150" y="327" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">«Карта добавлена»</text>
 </svg>
