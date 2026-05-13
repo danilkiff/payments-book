@@ -59,7 +59,9 @@ indicator = \texttt{subsequent}, типом \texttt{recurring} и
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch22-subscriptions/scf-lifecycle}
-  \caption{Жизненный цикл SCF: CIT создаёт согласие, MIT продолжает цепочку.}\label{fig:scf-lifecycle}
+  \caption{Жизненный цикл SCF: CIT создаёт согласие, MIT продолжает
+  цепочку через ссылку на идентификатор исходной авторизации~--
+  NTID (Visa) или Trace~ID (Mastercard)~\cite{mrc-nti-trace-id}.}\label{fig:scf-lifecycle}
 \end{figure}
 
 \section{CIT и MIT}\label{sec:subscriptions-cit-mit}
@@ -148,7 +150,9 @@ MIT ссылается на одну и~ту же исходную CIT, поэт
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch22-subscriptions/ntid-chain}
-  \caption{Цепочка NTID: от первой CIT через MIT к~точке обрыва при миграции PSP.}\label{fig:ntid-chain}
+  \caption{Цепочка идентификатора исходной авторизации~--
+  NTID (Visa) или Trace~ID (Mastercard)~\cite{mrc-nti-trace-id}:
+  от первой CIT через MIT к~точке обрыва при миграции PSP.}\label{fig:ntid-chain}
 \end{figure}
 
 Идентификатор хранится как обязательный атрибут подписки,
@@ -233,7 +237,10 @@ Private Use) выдаёт одно
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch22-subscriptions/decline-decision-tree}
-  \caption{Дерево решений при отказе MIT.}\label{fig:decline-decision-tree}
+  \caption{Дерево решений при отказе MIT. MAC~01 \enquote{New account
+  information available} означает \enquote{обновить реквизиты через
+  VAU/ABU и повторить}, а~не запрет повтора; полная запретительная
+  семантика закреплена за MAC~03~\cite{tabapay-mac}.}\label{fig:decline-decision-tree}
 \end{figure}
 
 \section{Обновление реквизитов}\label{sec:subscriptions-account-updater}
@@ -287,7 +294,10 @@ Visa рекомендует подключать все BIN, включая relo
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch22-subscriptions/credential-update-flow}
-  \caption{Обновление реквизитов: VAU/ABU и~сетевые токены.}\label{fig:credential-update-flow}
+  \caption{Обновление реквизитов: VAU (Visa) и ABU (Mastercard)~--
+  два независимых сервиса своих сетей; на схеме не разделены режимы
+  batch и real-time. Параллельный путь~-- сетевые токены, где
+  underlying PAN обновляется на стороне TSP.}\label{fig:credential-update-flow}
 \end{figure}
 
 MIT уходит по карте с~истёкшим сроком, а~сервис

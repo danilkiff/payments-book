@@ -41,7 +41,10 @@
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch28-ledger/gateway-vs-ledger}
-  \caption{Шлюз vs.\ реестр обязательств: один платёж, четыре проводки.}\label{fig:gateway-vs-ledger}
+  \caption{Шлюз vs.\ реестр обязательств: один платёж, четыре проводки.
+    \enquote{Резерв под доставку}~--- пример маркетплейсного сценария;
+    в~карточном эквайринге типовой резерв~--- refund reserve, minimum
+    balance или фиксированный holdback (см.~раздел~\ref{sec:ledger-balances}).}\label{fig:gateway-vs-ledger}
 \end{figure}
 
 Шлюз из раздела~\ref{sec:gw-anatomy} отвечает за приём и маршрутизацию.
@@ -325,7 +328,10 @@ earned} в \enquote{merchant available}.
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.95\linewidth]{assets/figures/ch28-ledger/balance-states}
-  \caption{Три состояния баланса: pending, available, reserve.}\label{fig:balance-states}
+  \caption{Три состояния баланса: pending, available, reserve.
+    Стрелка \enquote{подтверждение + расчёт}~--- два события
+    (pending $\to$ earned $\to$ available), свёрнутые в~один шаг;
+    детализация показана на~рис.~\ref{fig:event-state-machine}.}\label{fig:balance-states}
 \end{figure}
 
 Если правило не выражено в~реестре, его повторяют вручную

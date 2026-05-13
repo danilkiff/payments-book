@@ -104,7 +104,10 @@ Ethoca Consumer Clarity работает через инфраструктуру
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.95\linewidth]{assets/figures/ch24-disputes/vcr-vs-mc-flow}
-  \caption{Два трека раннего снятия спора -- Visa Order Insight и Mastercard Ethoca.}\label{fig:vcr-vs-mc-flow}
+  \caption{Два трека раннего снятия спора -- Visa Order Insight и Mastercard Ethoca.
+    Цепочка Mastercard на схеме упрощена: стадии предарбитража
+    и~арбитражного возврата не показаны (упомянуты в~тексте этой
+    главы~--- см.~раздел~\ref{sec:disputes-lifecycle}).}\label{fig:vcr-vs-mc-flow}
 \end{figure}
 
 Инструменты раннего снятия спора помогают только там, где спор возник
@@ -331,7 +334,12 @@ $\geq$~100 в~месяц при доле возвратных платежей (
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.65\linewidth]{assets/figures/ch24-disputes/monitoring-escalation}
-  \caption{Лестница эскалации мониторинговой программы.}\label{fig:monitoring-escalation}
+  \caption{Лестница эскалации мониторинговой программы. Пороги
+    \enquote{CB ratio > 0{,}9\,\%} и~штрафы \$25--100 за возвратный
+    платёж~--- иллюстративные и~исторические (эпоха VDMP),
+    не действующая редакция VAMP; актуальные пороги VAMP
+    (220$\to$150~bps) описаны выше в~тексте
+    раздела.}\label{fig:monitoring-escalation}
 \end{figure}
 
 Схема смотрит на сочетание

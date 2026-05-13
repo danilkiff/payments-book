@@ -63,7 +63,11 @@ TTL потери на устаревшем курсе обнаруживаютс
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-multicurrency/fx-ownership-models}
-  \caption{Четыре модели владения курсом.}\label{fig:fx-ownership-models}
+  \caption{Четыре модели владения курсом. Для российских банков
+    после марта 2022~года первая модель (эмитент / стандартный
+    карточный сценарий Visa и~Mastercard) на международных операциях
+    фактически не работает~--- общая оговорка
+    см.\ раздел~\ref{sec:mc-russia}.}\label{fig:fx-ownership-models}
 \end{figure}
 
 Подписка с~ежемесячным списанием в EUR при выплате продавцу в USD
@@ -143,7 +147,11 @@ TTL потери на устаревшем курсе обнаруживаютс
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-multicurrency/three-currencies-timeline}
-  \caption{Три валюты одной операции: цена, расчёт, выплата.}\label{fig:three-currencies-timeline}
+  \caption{Три валюты одной операции: цена, расчёт, выплата. Тройка
+    на рисунке (transaction $\to$ settlement $\to$ payout) не совпадает
+    с~тройкой определений из~раздела~\ref{sec:mc-settlement}
+    (transaction / billing / settlement)~--- это два разных
+    деления одного потока.}\label{fig:three-currencies-timeline}
 \end{figure}
 
 \section{DCC и маршрутизация по коридорам}\label{sec:mc-dcc}
@@ -288,7 +296,12 @@ DCC -- часть политики маршрутизации. По коридо
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.85\linewidth]{assets/figures/ch29-multicurrency/multicurrency-recon}
-  \caption{Одна транзакция в~пяти валютных представлениях.}\label{fig:multicurrency-recon}
+  \caption{Одна транзакция в~пяти валютных представлениях.
+    Рисунок свёртывает три удержания (interchange, комиссию эквайера
+    и~комиссию платформы) в~единую дельту между \enquote{Расчёт}
+    и~\enquote{Нетто-выплата}~--- именно та свёртка, против которой
+    предостерегает текст раздела~\ref{sec:mc-fx-risk}; валюта списания
+    держателя (billing) отдельной точкой не отображена.}\label{fig:multicurrency-recon}
 \end{figure}
 
 \section{Валютное регулирование после 2022~года}\label{sec:mc-russia}

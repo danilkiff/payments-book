@@ -2813,7 +2813,7 @@
   title  = {{FAPI} 2.0 Message Signing},
   url    = {https://openid.net/specs/fapi-message-signing-2_0-final.html},
   year   = {2025},
-  note   = {OIDF Final Specification, утверждён 26.09.2025 (87 за, 0 против, 20 воздержавшихся). Расширение FAPI 2.0 Security Profile подписями запросов и ответов для non-repudiation}
+  note   = {OIDF Final Specification, утверждён 25.09.2025 (87 за, 0 против, 20 воздержавшихся). Расширение FAPI 2.0 Security Profile подписями запросов и ответов для non-repudiation}
 }
 
 @online{oidf-jarm,
@@ -2934,4 +2934,179 @@
   url    = {https://www.cbr.ru/analytics/ib/operations_survey/},
   year   = {2026},
   note   = {Регулярные обзоры ФинЦЕРТ публикуют агрегированную статистику по несанкционированным операциям, типам атак и каналам мошенничества для российского рынка}
+}
+
+% ============================================================
+% Дополнения по итогам ревизии canonical-images (май 2026)
+% ============================================================
+
+% --- ch07-emv ---
+@online{emv-tag-9F22,
+  author = {{EMV Lab}},
+  title  = {{EMV} tag 9F22: Certification Authority Public Key Index},
+  year   = {2026},
+  url    = {https://emvlab.org/emvtags/show/t9F22/},
+  note   = {Описание тега 9F22: индекс корневого открытого ключа CA, выбираемого терминалом по комбинации RID + Index при offline data authentication}
+}
+
+@online{emv-tag-9F4C,
+  author = {{EMV Lab}},
+  title  = {{EMV} tag 9F4C: {ICC} Dynamic Number},
+  year   = {2026},
+  url    = {https://emvlab.org/emvtags/show/t9F4C/},
+  note   = {ICC Dynamic Number (9F4C) — time-variant значение, генерируемое чипом и подписываемое в SDAD при DDA/CDA}
+}
+
+% --- ch08-contactless ---
+@online{emvco-kernel-c8,
+  author = {{EMVCo}},
+  title  = {{EMVCo} Publishes {EMV} Contactless Kernel Specification},
+  year   = {2022},
+  url    = {https://www.emvco.com/news/emvco-publishes-emv-contactless-kernel-specification/},
+  note   = {Анонс 5 октября 2022: унифицированная EMV Contactless Kernel Specification (Book C-8), лицензируемая напрямую у EMVCo вместо отдельных Book C-x по каждой схеме}
+}
+
+% --- ch11-3ds ---
+@online{visa-3ds1-sunset-2022,
+  author = {{Visa}},
+  title  = {Visa Will Discontinue Support of 3-D Secure 1.0.2},
+  year   = {2021},
+  url    = {https://usa.visa.com/dam/VCOM/global/support-legal/documents/visa-will-discontinue-support-of-3d-secure.pdf},
+  note   = {Официальный бюллетень Visa: окончание поддержки 3-D Secure 1.0.2 — 15 октября 2022}
+}
+
+@online{visa-secure-ui-3ds1-0-2,
+  author = {{Visa}},
+  title  = {Visa Secure: User Interface Requirements for 3-D Secure 1.0.2},
+  year   = {2019},
+  url    = {https://developer.visa.com/images2/products/visa-3d-secure/resources/VisaSecure-UserInterfaceRequirementsfor3DSecure1_0_2.pdf},
+  note   = {UI-требования Visa к экранам ACS в протоколе 3-D Secure 1.0.2: статический пароль, OTP, элементы брендинга}
+}
+
+% --- ch12-pci-dss ---
+@online{pci-saq-a-r1-2025,
+  author = {{PCI Security Standards Council}},
+  title  = {Important Updates Announced for Merchants Validating to Self-Assessment Questionnaire {A}},
+  year   = {2025},
+  url    = {https://blog.pcisecuritystandards.org/important-updates-announced-for-merchants-validating-to-self-assessment-questionnaire-a},
+  note   = {Анонс SAQ A v4.0.1 r1 (январь 2025): удалены требования 6.4.3, 11.6.1, 12.3.1, изменены eligibility-критерии, effective 31.03.2025}
+}
+
+% --- ch13-visa ---
+@online{visa-vip-system-overview-2005,
+  author = {{Visa}},
+  title  = {{V.I.P.} System Overview},
+  year   = {2005},
+  url    = {https://pdfcoffee.com/vip-system-overview-pdf-free.html},
+  note   = {Архивная публикация Visa (июнь 2005): V.I.P. System = BASE I + Single Message System (SMS); описание авторизационной топологии и роли SMS в single-message-сценариях}
+}
+
+@online{visa-tc33a-capture-file,
+  author = {{Visa Acceptance Solutions}},
+  title  = {Service Features: Capture and the {TC 33.A} file},
+  year   = {2025},
+  url    = {https://developer.visaacceptance.com/docs/vas/en-us/payments/acq/all/na/payments-acq/payments-acq-intro-service-features/payments-acq-intro-service-features-capture.html},
+  note   = {Документация Visa Acceptance: TC 33.A как контейнер клиринговых записей (TCR) в BASE II}
+}
+
+@online{visa-direct-faq,
+  author = {{Visa}},
+  title  = {{Visa Direct} {FAQ}},
+  year   = {2025},
+  url    = {https://usa.visa.com/supporting-info/visa-direct/visa-direct-faq.html},
+  note   = {Публичный FAQ Visa Direct: AFT/OCT как раздельные транзакции, Fast Funds SLA (≤30 мин для участников программы), общее правило «не позднее двух рабочих дней»}
+}
+
+% --- ch14-mastercard ---
+@online{mc-merchant-rates-2025-2026,
+  author = {{Mastercard}},
+  title  = {Mastercard {U.S.} Region Merchant Rates 2025--2026},
+  year   = {2025},
+  url    = {https://www.mastercard.com/content/dam/mccom/us/business/documents/merchant-rates-2025-2026.pdf},
+  note   = {Официальный сборник Mastercard по interchange и сервисным ставкам в США на программный год 2025–2026; содержит ссылки на изменения April 2026 release}
+}
+
+% --- ch15-mir / ch18-sbp ---
+@online{cbr-732p,
+  author = {{Банк России}},
+  title  = {Положение № 732-П «О платёжной системе Банка России»},
+  year   = {2020},
+  url    = {https://www.consultant.ru/document/cons_doc_LAW_367694/},
+  note   = {Положение от 24.09.2020 № 732-П: регламент расчётного контура платёжной системы Банка России, применяется к расчётам через ПС Мир и СБП}
+}
+
+@online{cbr-595p,
+  author = {{Банк России}},
+  title  = {Положение № 595-П «О платёжной системе Банка России»},
+  year   = {2017},
+  url    = {https://www.consultant.ru/document/cons_doc_LAW_280683/},
+  note   = {Историческая ссылка: предшественник 732-П, утратил силу с 24.11.2020}
+}
+
+% --- ch18-sbp ---
+@online{fz-369-2023,
+  author = {{Государственная Дума РФ}},
+  title  = {Федеральный закон № 369-ФЗ от 24.07.2023 о двухдневном «периоде охлаждения» при переводах},
+  year   = {2023},
+  url    = {https://www.consultant.ru/legalnews/25800/},
+  note   = {Поправки в 161-ФЗ: обязательная пауза до двух рабочих дней при подозрительных переводах и обмен признаками мошеннических операций через ФинЦЕРТ}
+}
+
+% --- ch19-open-banking ---
+@online{ob-uk-pi-3110,
+  author = {{Open Banking Implementation Entity (UK)}},
+  title  = {Read/Write {API}, Payment Initiation {API} Profile, v3.1.10},
+  year   = {2023},
+  url    = {https://openbankinguk.github.io/read-write-api-site3/v3.1.10/profiles/payment-initiation-api-profile.html},
+  note   = {Профиль PISP Open Banking UK: жизненный цикл domestic-payment-consent со статусами AwaitingAuthorisation, Authorised, Consumed, Rejected}
+}
+
+@online{ob-uk-at-3110,
+  author = {{Open Banking Implementation Entity (UK)}},
+  title  = {Read/Write {API}, Account and Transaction {API} Profile, v3.1.10},
+  year   = {2023},
+  url    = {https://openbankinguk.github.io/read-write-api-site3/v3.1.10/profiles/account-and-transaction-api-profile.html},
+  note   = {Профиль AISP Open Banking UK: статусы account-access-consent (AwaitingAuthorisation, Authorised, Rejected, Revoked, Expired)}
+}
+
+@online{eba-qa-2018-4031,
+  author = {{European Banking Authority}},
+  title  = {Q\&A 2018\_4031: Application of {SCA} to {Merchant-Initiated Transactions}},
+  year   = {2019},
+  url    = {https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2018_4031},
+  note   = {Официальное разъяснение EBA: MIT находятся вне scope SCA при условии установления мандата с применением SCA на этапе CIT/первого платежа}
+}
+
+% --- ch22-subscriptions ---
+@online{visa-reattempts-pdf,
+  author = {{Visa}},
+  title  = {Updates to Rules for Declined Transaction Resubmission and Use of Authorization Response Codes},
+  year   = {2021},
+  url    = {https://usa.visa.com/dam/VCOM/global/support-legal/documents/updates-to-rules-for-declined-transaction-resubmission-and-use-of-authorization-response-codes.pdf},
+  note   = {Visa: ограничения на повторные попытки авторизации (15 в течение 30 дней) и корректное использование response codes при отказах}
+}
+
+@online{tabapay-mac,
+  author = {{TabaPay}},
+  title  = {Merchant Advice Code ({MAC})},
+  year   = {2025},
+  url    = {https://developers.tabapay.com/docs/merchant-advice-code-mac},
+  note   = {Сводная таблица значений Merchant Advice Code: 01 «New account information available», 03 «Do not try again», 21 «Recurring payment cancellation», 24–30 для отдельных причин}
+}
+
+@online{mrc-nti-trace-id,
+  author = {{Merchant Risk Council}},
+  title  = {Navigating Visa {NTI} and {Mastercard} {Trace ID} mandates},
+  year   = {2024},
+  url    = {https://merchantriskcouncil.org/learning/library/2024/may/navigating-visa-nti-and-mastercard-trace-id-mandates},
+  note   = {Отраслевой разбор требований к передаче NTID (Visa DE 62.2) и Trace ID (Mastercard DE 48 sub-element 63) в цепочке MIT}
+}
+
+% --- ch24-disputes ---
+@online{mc-ethoca-consumer-clarity,
+  author = {{Mastercard}},
+  title  = {Ethoca Consumer Clarity},
+  year   = {2025},
+  url    = {https://developer.mastercard.com/consumer-clarity/product/ethoca-consumer-clarity/},
+  note   = {Официальная страница продукта Mastercard Ethoca Consumer Clarity: передача обогащённых данных о покупке эмитенту для снижения first-party chargeback}
 }

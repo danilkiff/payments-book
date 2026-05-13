@@ -40,7 +40,7 @@ vault и FPE)~-- в~разделе~\ref{sec:pci-scope-reduction}.
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch09-tokenization/token-risk-before-after}
-  \caption{До и~после токенизации -- копии PAN у~ТСП vs.\ единый Token Vault.}\label{fig:token-risk-before-after}
+  \caption{До и~после токенизации -- копии PAN у~ТСП vs.\ единый Token Vault в~рамках одной карточной схемы (VTS у Visa, MDES у Mastercard, TSP НСПК у~Мира).}\label{fig:token-risk-before-after}
 \end{figure}
 
 Сетевая и локальная токенизация различаются масштабом. Локальный
@@ -48,6 +48,11 @@ vault и FPE)~-- в~разделе~\ref{sec:pci-scope-reduction}.
 и~может детокенизировать. \highlight{Сетевой токен выпускает и распознаёт сама карточная
 сеть, поэтому он проходит весь путь от ТСП до эмитента
 и уменьшает поверхность компрометации на каждом узле маршрута}.
+\enquote{Единый Token Vault} на рисунке~\ref{fig:token-risk-before-after} --
+это единый vault \emph{в~рамках одной карточной схемы}: VTS у~Visa,
+MDES у~Mastercard, TSP НСПК у~Мира. Глобального общего хранилища
+на всех нет, и~один и~тот же PAN у~разных схем токенизируется
+независимо.
 
 \section{Анатомия сетевого токена}\label{sec:token-anatomy}
 
