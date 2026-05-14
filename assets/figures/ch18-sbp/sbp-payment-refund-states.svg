@@ -1,37 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340">
 <defs>
   <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
 </defs>
-<rect x="15.0" y="20.0" width="290" height="110" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.35" stroke-width="1"/>
-<rect x="315.0" y="20.0" width="200" height="110" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
-<rect x="180.0" y="170.0" width="260" height="80" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
-<rect x="30.0" y="68.0" width="115" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="87.5" y="83.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Платёжная сессия</text>
-<text x="87.5" y="96.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">создана</text>
-<rect x="165.0" y="68.0" width="125" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="227.5" y="83.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Пользователь ушёл</text>
-<text x="227.5" y="96.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">в банк / СБПэй</text>
-<rect x="330.0" y="68.0" width="115" height="40" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
-<text x="387.5" y="83.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Перевод</text>
-<text x="387.5" y="96.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">исполнен</text>
-<rect x="460.0" y="68.0" width="45" height="40" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
-<text x="482.5" y="83.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Заказ</text>
-<text x="482.5" y="96.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">оплачен</text>
-<line x1="145.0" y1="88.0" x2="165.0" y2="88.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="290.0" y1="88.0" x2="330.0" y2="88.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="445.0" y1="88.0" x2="460.0" y2="88.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<rect x="205.0" y="200.0" width="105" height="38" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="257.5" y="214.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Возврат</text>
-<text x="257.5" y="228.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">создан</text>
-<rect x="335.0" y="200.0" width="105" height="38" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="387.5" y="214.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Возврат</text>
-<text x="387.5" y="228.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">исполнен</text>
-<path d="M 482.5,108.0 L 482.5,150.0 L 257.5,150.0 L 257.5,200.0" fill="none" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
-<line x1="310.0" y1="219.0" x2="335.0" y2="219.0" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
-<rect x="15.0" y="135.0" width="175" height="22" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="102.5" y="150.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Деньги ещё не зачислены</text>
-<rect x="455.0" y="200.0" width="170" height="22" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="540.0" y="215.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">После исполнения — без chargeback</text>
+<rect x="15.0" y="20.0" width="600" height="140" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.35" stroke-width="1"/>
+<rect x="625.0" y="20.0" width="125" height="140" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
+<rect x="280.0" y="240.0" width="340" height="80" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
+
+<text x="25.0" y="38.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Стейт-машина платежа (operationId)</text>
+<text x="635.0" y="38.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Заказ продавца</text>
+<text x="290.0" y="258.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Стейт-машина возврата (refund → operationId)</text>
+
+<rect x="25.0" y="80.0" width="105" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="77.5" y="95.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Платёжная сессия</text>
+<text x="77.5" y="108.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">создана</text>
+
+<rect x="150.0" y="80.0" width="115" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="207.5" y="95.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Пользователь ушёл</text>
+<text x="207.5" y="108.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">в банк / СБПэй</text>
+
+<rect x="285.0" y="80.0" width="105" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="337.5" y="95.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">В обработке</text>
+<text x="337.5" y="108.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">ожидание ответа банка</text>
+
+<rect x="410.0" y="80.0" width="105" height="40" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
+<text x="462.5" y="95.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Перевод</text>
+<text x="462.5" y="108.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">исполнен</text>
+
+<rect x="635.0" y="80.0" width="105" height="40" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
+<text x="687.5" y="95.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Заказ</text>
+<text x="687.5" y="108.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">оплачен</text>
+
+<line x1="130.0" y1="100.0" x2="150.0" y2="100.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="265.0" y1="100.0" x2="285.0" y2="100.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="390.0" y1="100.0" x2="410.0" y2="100.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="515.0" y1="100.0" x2="635.0" y2="100.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+
+<rect x="285.0" y="135.0" width="105" height="22" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
+<text x="337.5" y="150.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Перевод отклонён</text>
+<line x1="337.5" y1="120.0" x2="337.5" y2="135.0" stroke="#C15462" stroke-width="1.5" marker-end="url(#arr-Bad)"/>
+<text x="395.0" y="148.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">отказ банка плательщика /</text>
+<text x="395.0" y="158.5" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">недостаточно средств / антифрод</text>
+
+<rect x="150.0" y="135.0" width="125" height="22" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="212.5" y="150.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Период охлаждения 369-ФЗ</text>
+<line x1="207.5" y1="120.0" x2="212.5" y2="135.0" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+<text x="15.0" y="175.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">369-ФЗ: при наличии получателя в базе ФинЦЕРТ — задержка до 2 дней (с 25.07.2024).</text>
+
+<rect x="25.0" y="190.0" width="190" height="22" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="120.0" y="205.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Деньги ещё не зачислены</text>
+
+<rect x="305.0" y="270.0" width="120" height="38" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="365.0" y="284.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Возврат</text>
+<text x="365.0" y="298.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">создан</text>
+
+<rect x="465.0" y="270.0" width="120" height="38" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="525.0" y="284.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Возврат</text>
+<text x="525.0" y="298.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">исполнен</text>
+
+<path d="M 462.5,120.0 L 462.5,230.0 L 365.0,230.0 L 365.0,270.0" fill="none" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
+<text x="372.0" y="225.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">refund → operationId исполненного перевода</text>
+
+<line x1="425.0" y1="289.0" x2="465.0" y2="289.0" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
+
+<rect x="595.0" y="270.0" width="160" height="38" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="675.0" y="284.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">После исполнения —</text>
+<text x="675.0" y="298.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">без chargeback</text>
 </svg>

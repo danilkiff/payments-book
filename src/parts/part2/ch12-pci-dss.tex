@@ -251,12 +251,31 @@ redirect и~полностью вынесенной оплаты PCI SSC
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch12-pci-dss/pci-scope-reduction}
-  \caption{Сужение периметра PCI от SAQ D к SAQ A для мерчантов
-  (схема не покрывает SAQ D — Service Provider и сценарий ROC).
-  Цвет на шкале отражает не \enquote{уровень безопасности}, а~объём периметра,
-  остающегося на самом мерчанте; \enquote{SAQ D} и~\enquote{SAQ D + сегментация}~--- один
-  и~тот же тип SAQ, отличающийся только объёмом периметра.}\label{fig:pci-scope-reduction}
+  \includefiguresvg[width=\linewidth]{assets/figures/ch12-pci-dss/pci-scope-card-present}
+  \caption{Card-Present: снижение scope по каналу приёма.
+  Цвет отражает не \enquote{уровень безопасности}, а~объём периметра,
+  остающегося на самом мерчанте; ответственность за CHD переносится на PSP
+  или валидированное P2PE-решение, а~не исчезает.}\label{fig:pci-scope-card-present}
+\end{figure}
+
+\begin{figure}[tbp]
+  \centering
+  \includefiguresvg[width=\linewidth]{assets/figures/ch12-pci-dss/pci-scope-cnp}
+  \caption{Card-Not-Present: снижение scope в~e-commerce.
+  Шкала не сопоставима напрямую с~CP-осью: смена формы SAQ здесь --- про канал
+  ввода PAN, а не про физический терминал. SAQ A v4.0.1 r1 (январь 2025)
+  вводит для встроенных форм (iframe / JS PSP) дополнительное eligibility-условие
+  про защиту от скриптовых атак; полный redirect под него не попадает.}\label{fig:pci-scope-cnp}
+\end{figure}
+
+\begin{figure}[tbp]
+  \centering
+  \includefiguresvg[width=\linewidth]{assets/figures/ch12-pci-dss/pci-scope-d-merchant}
+  \caption{SAQ D-Merchant: снижение scope внутри одной формы.
+  SAQ-форма одна; \enquote{SAQ D-Merchant} и~\enquote{SAQ D-Merchant + сегментация}~--- один
+  и~тот же тип SAQ, отличающийся только объёмом периметра. Токенизация хранения
+  работает ортогонально каналу ввода. ROC/QSA для Level 1 и service providers~---
+  за рамками SAQ.}\label{fig:pci-scope-d-merchant}
 \end{figure}
 
 \section{SAQ A, SAQ A-EP и SAQ D}\label{sec:pci-saq}

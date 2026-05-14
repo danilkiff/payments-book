@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 375" width="390" height="375">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 500" width="620" height="500">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
@@ -6,26 +6,83 @@
   <marker id="arr-Good-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
   <marker id="arr-Bad-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#C15462"/></marker>
+  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
 </defs>
-<text x="170.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#1A2030">Interchange Qualification: дерево</text>
-<rect x="120.0" y="55.0" width="100" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="170.0" y="74.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Region</text>
-<line x1="170.0" y1="93.0" x2="170.0" y2="115.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
-<rect x="120.0" y="117.0" width="100" height="36" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="170.0" y="136.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Product</text>
-<line x1="170.0" y1="155.0" x2="170.0" y2="177.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
-<rect x="120.0" y="179.0" width="100" height="36" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="170.0" y="198.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MCC</text>
-<line x1="170.0" y1="217.0" x2="170.0" y2="239.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
-<rect x="120.0" y="241.0" width="100" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="170.0" y="260.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Data Quality</text>
-<line x1="170.0" y1="279.0" x2="170.0" y2="301.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-Good)"/>
-<text x="175.0" y="290.6" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">OK</text>
-<rect x="120.0" y="305.0" width="100" height="36" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="170.0" y="324.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Rate</text>
-<path d="M 220.0,259.0 L 310.0,259.0 L 310.0,305.0" fill="none" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
-<text x="270.0" y="252.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#C15462">ошибки</text>
-<rect x="250.0" y="305.0" width="120" height="50" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
-<text x="310.0" y="324.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#C15462">Downgrade</text>
-<text x="310.0" y="338.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#C15462">(повышенная ставка)</text>
+<text x="310.0" y="26.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Interchange qualification: параллельные оси</text>
+<text x="310.0" y="42.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">упрощённая модель: реальная логика смешивает оси одновременно + volume thresholds</text>
+
+<!-- Axes header -->
+<text x="20.0" y="65.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Оси квалификации (применяются одновременно):</text>
+
+<!-- 5 parallel axes as columns -->
+<rect x="20.0" y="75.0" width="110" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="75.0" y="93.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Region</text>
+<text x="75.0" y="108.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">US / EU / IC</text>
+
+<rect x="140.0" y="75.0" width="110" height="44" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="195.0" y="93.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Product</text>
+<text x="195.0" y="108.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Consumer / WE / Comm.</text>
+
+<rect x="260.0" y="75.0" width="110" height="44" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="315.0" y="93.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">MCC</text>
+<text x="315.0" y="108.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">grocery / fuel / T&amp;E ...</text>
+
+<rect x="380.0" y="75.0" width="110" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="435.0" y="93.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">POS Entry Mode</text>
+<text x="435.0" y="108.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">CP / CNP / Contactless</text>
+
+<rect x="500.0" y="75.0" width="110" height="44" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="555.0" y="93.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Data Quality</text>
+<text x="555.0" y="108.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">signal-based</text>
+
+<!-- Data Quality breakdown -->
+<rect x="380.0" y="135.0" width="230" height="100" rx="8" fill="#F5F7FD" stroke="#B8821C" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="390.0" y="152.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Data Quality: категории сигналов</text>
+<text x="390.0" y="168.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">— ECI / CVV2 / AVS (CNP-аутентификация)</text>
+<text x="390.0" y="181.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">— timing (clearing within N days of auth)</text>
+<text x="390.0" y="194.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">— tx attributes (electronic / key-entered, CVM)</text>
+<text x="390.0" y="207.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">— COF indicators (initial / subsequent CIT/MIT)</text>
+<text x="390.0" y="222.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">+ merchant volume thresholds для отдельных программ</text>
+
+<!-- Token-related qualification branch -->
+<rect x="20.0" y="135.0" width="340" height="100" rx="8" fill="#F5F7FD" stroke="#2F8B67" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="30.0" y="152.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Token-related qualification (DSRP / MDES)</text>
+<text x="30.0" y="168.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">— network token вместо PAN → пониженная ставка</text>
+<text x="30.0" y="181.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">— DSRP-криптограмма для CNP (in-app / wallet)</text>
+<text x="30.0" y="194.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">— отсутствие токена — самостоятельный сигнал</text>
+<text x="30.0" y="207.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">— токен снижает риск → отдельная interchange-программа</text>
+<text x="30.0" y="222.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">  (например, MDES-friendly rates)</text>
+
+<!-- Combined evaluation arrow down -->
+<line x1="310.0" y1="240.0" x2="310.0" y2="270.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<text x="318.0" y="260.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">комбинированная оценка</text>
+
+<!-- Combined eval box -->
+<rect x="180.0" y="272.0" width="260" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="310.0" y="290.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Interchange program lookup</text>
+<text x="310.0" y="304.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">region × product × MCC × channel × signals × token</text>
+
+<!-- OK and downgrade branches -->
+<line x1="240.0" y1="312.0" x2="180.0" y2="345.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-Good)"/>
+<text x="195.0" y="332.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">OK / qualified</text>
+
+<line x1="380.0" y1="312.0" x2="440.0" y2="345.0" stroke="#C15462" stroke-width="1.5" marker-end="url(#arr-Bad)"/>
+<text x="425.0" y="332.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#C15462">сигналы ниже порога</text>
+
+<!-- Qualified Rate box -->
+<rect x="20.0" y="345.0" width="280" height="60" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="160.0" y="364.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Qualified Rate</text>
+<text x="160.0" y="380.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Rate = percent + fixed</text>
+<text x="160.0" y="394.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">например, 1.65% + $0.10</text>
+
+<!-- Stepped Downgrade -->
+<rect x="320.0" y="345.0" width="290" height="120" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
+<text x="465.0" y="362.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#C15462">Downgrade (ступенчатая категория)</text>
+<line x1="335.0" y1="372.0" x2="595.0" y2="372.0" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="335.0" y="388.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">— Mid-Qualified (часть сигналов выполнена)</text>
+<text x="335.0" y="402.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">— EIRF (Electronic Interchange Reimbursement Fee)</text>
+<text x="335.0" y="416.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">— Standard Rate (default, наиболее дорогая)</text>
+<text x="335.0" y="430.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">— Non-Qualified (для blended-пресетов pricing)</text>
+<text x="335.0" y="448.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">наименования ступеней зависят от тарифного плана эквайера</text>
 </svg>

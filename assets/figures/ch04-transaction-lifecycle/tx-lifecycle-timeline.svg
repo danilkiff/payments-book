@@ -5,30 +5,9 @@
    height="200"
    version="1.1"
    id="svg29"
-   sodipodi:docname="tx-lifecycle-timeline.svg"
-   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview29"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.2578128"
-     inkscape:cx="404.27319"
-     inkscape:cy="23.850926"
-     inkscape:window-width="1403"
-     inkscape:window-height="739"
-     inkscape:window-x="0"
-     inkscape:window-y="33"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg29" />
+  
   <defs
      id="defs8">
     <marker
@@ -176,7 +155,7 @@
      y="32"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="11"
      font-weight="bold"
      fill="#1A2030"
      id="text10">Авторизация</text>
@@ -185,7 +164,7 @@
      y="32"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="11"
      font-weight="bold"
      fill="#1A2030"
      id="text11">Клиринг</text>
@@ -194,7 +173,7 @@
      y="32"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="11"
      font-weight="bold"
      fill="#1A2030"
      id="text12">Расчёт</text>
@@ -215,7 +194,7 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="10"
      fill="#1A2030"
      id="text13">Терм.</text>
   <rect
@@ -234,7 +213,7 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="10"
      fill="#1A2030"
      id="text14">Эквайер</text>
   <rect
@@ -253,7 +232,7 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="10"
      fill="#1A2030"
      id="text15">Сеть</text>
   <rect
@@ -272,7 +251,7 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="10"
      fill="#1A2030"
      id="text16">Эмит.</text>
   <line
@@ -316,7 +295,7 @@
      y="132"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="10"
      fill="#1A2030"
      id="text18">ответ</text>
   <!-- === Клиринг: Эквайер -> Пакет -> Сеть -> Эмитент === -->
@@ -336,7 +315,7 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="10"
      fill="#1A2030"
      id="text19">Эквайер</text>
   <rect
@@ -355,7 +334,7 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="10"
      fill="#1A2030"
      id="text20">Пакет</text>
   <rect
@@ -374,7 +353,7 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="10"
      fill="#1A2030"
      id="text21">Сеть</text>
   <rect
@@ -393,7 +372,7 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="10"
      fill="#1A2030"
      id="text22">Эмит.</text>
   <line
@@ -423,7 +402,7 @@
      stroke-width="2"
      marker-end="url(#arr-Muted)"
      id="line24" />
-  <!-- === Расчёт: Банк A -> Банк B -> ТСП === -->
+  <!-- === Расчёт: Эмитент -> Эквайер -> ТСП === -->
   <rect
      x="486"
      y="62"
@@ -440,9 +419,9 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="10"
      fill="#1A2030"
-     id="text24">Банк A</text>
+     id="text24">Эмитент</text>
   <rect
      x="590"
      y="62"
@@ -459,9 +438,9 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="10"
      fill="#1A2030"
-     id="text25">Банк B</text>
+     id="text25">Эквайер</text>
   <rect
      x="666"
      y="62"
@@ -478,7 +457,7 @@
      y="89"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="15"
+     font-size="10"
      fill="#1A2030"
      id="text26">ТСП</text>
   <line
@@ -495,8 +474,8 @@
      y="116.93166"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13px"
-     fill="#1a2030"
+     font-size="10"
+     fill="#1A2030"
      id="text27">деньги</text>
   <line
      x1="654"
@@ -533,7 +512,7 @@
      y="184"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12"
+     font-size="10"
      fill="#5C647A"
      id="text28">T0 → T+часы (авторизация и клиринг)</text>
   <text
@@ -541,7 +520,7 @@
      y="184"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12"
+     font-size="10"
      fill="#5C647A"
      id="text29">T+дни (расчёт)</text>
 </svg>

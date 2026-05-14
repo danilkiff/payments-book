@@ -147,11 +147,15 @@ TTL потери на устаревшем курсе обнаруживаютс
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-multicurrency/three-currencies-timeline}
-  \caption{Три валюты одной операции: цена, расчёт, выплата. Тройка
-    на рисунке (transaction $\to$ settlement $\to$ payout) не совпадает
-    с~тройкой определений из~раздела~\ref{sec:mc-settlement}
-    (transaction / billing / settlement)~--- это два разных
-    деления одного потока.}\label{fig:three-currencies-timeline}
+  \caption{Жизненный цикл операции в~нескольких валютах на~оси
+    из~пяти этапов (auth, capture, clearing, settlement, payout):
+    transaction (цена) $\to$ billing (списание держателю, может отличаться
+    при~DCC) $\to$ settlement (расчёт между банками) $\to$ payout
+    (выплата мерчанту). У~каждой конверсии подписан источник курса
+    и~момент фиксации: EUR$\to$USD~--- правила схемы, фиксация
+    при~клиринге; USD$\to$GBP~--- FX-провайдер выплаты, фиксация
+    при~payout. Расстояния между этапами приближены к~реальной длительности,
+    не~в~точном масштабе.}\label{fig:three-currencies-timeline}
 \end{figure}
 
 \section{DCC и маршрутизация по коридорам}\label{sec:mc-dcc}

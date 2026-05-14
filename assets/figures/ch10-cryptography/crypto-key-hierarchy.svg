@@ -2,9 +2,16 @@
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
 </defs>
-<rect x="260" y="20" width="180" height="48" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="350" y="40.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Issuer Master Key (IMK)</text>
-<text x="350" y="57.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">в HSM</text>
+<rect x="200" y="20" width="300" height="64" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="350" y="36.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Issuer Master Key (IMK) — в HSM</text>
+<line x1="300" y1="44" x2="300" y2="80" stroke="#7759D6" stroke-width="1"/>
+<line x1="400" y1="44" x2="400" y2="80" stroke="#7759D6" stroke-width="1"/>
+<text x="250" y="60.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">IMK-AC</text>
+<text x="250" y="75.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">cryptogram</text>
+<text x="350" y="60.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">IMK-SMI</text>
+<text x="350" y="75.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">SM integrity</text>
+<text x="450" y="60.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">IMK-SMC</text>
+<text x="450" y="75.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">SM confidentiality</text>
 
 <rect x="70" y="210" width="200" height="64" rx="10" fill="#E8ECF7" stroke="none"/>
 <rect x="260" y="210" width="200" height="64" rx="10" fill="#E8ECF7" stroke="none"/>
@@ -22,12 +29,12 @@
 <text x="550" y="127.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Card Key</text>
 <text x="550" y="144.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN 2200...7890 / PSN 02</text>
 
-<line x1="350" y1="68" x2="170" y2="108" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="240" y="80" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN+PSN</text>
-<line x1="350" y1="68" x2="350" y2="108" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="378" y="90" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN+PSN</text>
-<line x1="350" y1="68" x2="550" y2="108" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="460" y="80" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN+PSN</text>
+<line x1="350" y1="84" x2="170" y2="108" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="240" y="94" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN+PSN</text>
+<line x1="350" y1="84" x2="350" y2="108" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="378" y="100" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN+PSN</text>
+<line x1="350" y1="84" x2="550" y2="108" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="460" y="94" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN+PSN</text>
 
 <rect x="80" y="220" width="90" height="44" rx="8" fill="#ffffff" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="125" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Session Key</text>
@@ -61,6 +68,6 @@
 <line x1="550" y1="156" x2="595" y2="220" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 
 <rect x="60" y="284" width="580" height="46" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="350" y="302.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">IMK хранится в HSM; из него по PAN и PSN выводится Card Key,</text>
-<text x="350" y="319.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">а уже из Card Key по счётчику ATC выводятся одноразовые Session Key (ATC — Application Transaction Counter).</text>
+<text x="350" y="302.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">IMK (AC/SMI/SMC) хранится в HSM; деривация — односторонняя (KDF): по PAN+PSN выводится Card Key,</text>
+<text x="350" y="319.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">по ATC — Session Key (для AC, ARPC и Secure Messaging; ATC — Application Transaction Counter).</text>
 </svg>

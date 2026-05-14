@@ -1,27 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 506 114" width="506" height="114">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 230" width="540" height="230">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
   <marker id="arr-Bad-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#C15462"/></marker>
+  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-Good-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
 </defs>
-<rect x="26.0" y="20.0" width="70" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="61.0" y="42.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="normal" fill="#1A2030">CIT</text>
-<text x="61.0" y="78.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#4E63D9">NTID создан</text>
-<line x1="96.0" y1="40.0" x2="116.0" y2="40.0" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
-<rect x="121.0" y="20.0" width="60" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="151.0" y="42.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MIT₁</text>
-<line x1="181.0" y1="40.0" x2="201.0" y2="40.0" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
-<rect x="206.0" y="20.0" width="60" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="236.0" y="42.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MIT₂</text>
-<line x1="266.0" y1="40.0" x2="286.0" y2="40.0" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
-<rect x="291.0" y="20.0" width="60" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="321.0" y="42.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MIT₃</text>
-<text x="376.0" y="12.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#C15462">Миграция PSP</text>
-<text x="376.0" y="44.1" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" fill="#C15462">X</text>
-<rect x="401.0" y="20.0" width="60" height="40" rx="8" fill="none" stroke="#C15462" stroke-width="2"/>
-<text x="431.0" y="42.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#C15462">MIT₄</text>
-<text x="431.0" y="78.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#C15462">без NTID ref</text>
-<line x1="351.0" y1="40.0" x2="396.0" y2="40.0" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-Bad)"/>
-<text x="476.0" y="44.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">...</text>
+
+<!-- Основная ось: цепочка NTID -->
+<rect x="26.0" y="40.0" width="70" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="61.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">CIT</text>
+<text x="61.0" y="98.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#4E63D9">NTID создан</text>
+
+<line x1="96.0" y1="60.0" x2="116.0" y2="60.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+
+<rect x="121.0" y="40.0" width="60" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="151.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MIT₁</text>
+
+<line x1="181.0" y1="60.0" x2="201.0" y2="60.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+
+<rect x="206.0" y="40.0" width="60" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="236.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MIT₂</text>
+
+<line x1="266.0" y1="60.0" x2="286.0" y2="60.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+
+<rect x="291.0" y="40.0" width="60" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="321.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MIT₃</text>
+
+<!-- Миграция PSP: warn вместо красного X -->
+<text x="396.0" y="22.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#B8821C">Миграция PSP</text>
+<text x="396.0" y="34.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">понижение AR / step-up</text>
+<line x1="351.0" y1="60.0" x2="416.0" y2="60.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+
+<!-- MIT₄ без NTID ref: риск (Bad-пунктир сохранён как риск) -->
+<rect x="421.0" y="40.0" width="70" height="40" rx="8" fill="none" stroke="#C15462" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="456.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#C15462">MIT₄</text>
+<text x="456.0" y="98.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#C15462">без NTID ref</text>
+
+<text x="510.0" y="64.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">...</text>
+
+<!-- Альтернативный happy path: восстановление цепочки через import / TPR -->
+<path d="M 321 80 C 321 130, 456 130, 456 80" fill="none" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<text x="388.0" y="128.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">import scheme ref / TPR (миграция с сохранением цепочки)</text>
+
+<!-- Горизонтальная ось «токен» — отдельная от NTID -->
+<text x="61.0" y="170.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">токен</text>
+<line x1="86.0" y1="167.0" x2="495.0" y2="167.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="290.0" y="186.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">токен общий для всего пробега — отдельный объект от NTID</text>
+
+<!-- Caption: терминология -->
+<text x="270.0" y="215.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">NTID (Visa) / Trace ID (Mastercard) — идентификатор исходной CIT, передаётся в каждой MIT</text>
 </svg>

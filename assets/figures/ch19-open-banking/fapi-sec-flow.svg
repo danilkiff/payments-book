@@ -5,30 +5,9 @@
    height="380"
    version="1.1"
    id="svg40"
-   sodipodi:docname="fapi-sec-flow.svg"
-   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview40"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.361027"
-     inkscape:cx="293.16098"
-     inkscape:cy="96.618218"
-     inkscape:window-width="1728"
-     inkscape:window-height="1084"
-     inkscape:window-x="0"
-     inkscape:window-y="33"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg40" />
+  
   <defs
      id="defs5">
     <marker
@@ -102,7 +81,7 @@
      x="10.0"
      y="58.0"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="11"
      font-weight="bold"
      fill="#1A2030"
      id="text5">Клиент</text>
@@ -110,7 +89,7 @@
      x="10.0"
      y="138.0"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="11"
      font-weight="bold"
      fill="#7759D6"
      id="text6">TPP / СПУ</text>
@@ -125,7 +104,7 @@
      x="10.0"
      y="228.0"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="11"
      font-weight="bold"
      fill="#4E63D9"
      id="text8">ASPSP / ПУ</text>
@@ -140,7 +119,7 @@
      x="10.0"
      y="315.0"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="11"
      font-weight="bold"
      fill="#2F8B67"
      id="text10">ОПКЦ СБП</text>
@@ -150,8 +129,8 @@
      y1="95.41066"
      x2="751.32629"
      y2="95.41066"
-     stroke="#5c647a"
-     stroke-width="1.06567"
+     stroke="#5C647A"
+     stroke-width="1"
      stroke-dasharray="6, 3"
      id="line10" />
   <line
@@ -159,8 +138,8 @@
      y1="181.1454"
      x2="750.59155"
      y2="181.1454"
-     stroke="#5c647a"
-     stroke-width="1.06407"
+     stroke="#5C647A"
+     stroke-width="1"
      stroke-dasharray="6, 3"
      id="line11" />
   <line
@@ -168,8 +147,8 @@
      y1="269.08435"
      x2="749.85681"
      y2="269.08435"
-     stroke="#5c647a"
-     stroke-width="1.06354"
+     stroke="#5C647A"
+     stroke-width="1"
      stroke-dasharray="6, 3"
      id="line12" />
   <!-- Step 1: Клиент - Запуск оплаты -->
@@ -311,9 +290,9 @@
      width="162.10031"
      height="49.771786"
      rx="9.9754038"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="2"
      id="rect22" />
   <text
@@ -330,16 +309,16 @@
      y="146"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     fill="#1a2030"
+     font-size="11"
+     fill="#1A2030"
      id="text24">token endpoint:</text>
   <text
      x="540.89679"
      y="159"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     fill="#1a2030"
+     font-size="11"
+     fill="#1A2030"
      id="text25">access_token (mTLS/DPoP)</text>
   <!-- Step 6: ASPSP - API инициации платежа + расчёт через СБП -->
   <rect
@@ -391,28 +370,30 @@
      id="rect28" />
   <text
      x="560.0"
-     y="305.0"
+     y="302.0"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      fill="#1A2030"
-     id="text29">Расчёт между</text>
+     id="text29">Расчёт между банками</text>
   <text
      x="560.0"
-     y="318.0"
+     y="316.0"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#1A2030"
-     id="text30">банками через</text>
+     font-weight="bold"
+     fill="#2F8B67"
+     id="text30">через ОПКЦ СБП</text>
   <text
      x="560.0"
-     y="331.0"
+     y="330.0"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030"
-     id="text31">СБП</text>
+     font-size="10"
+     font-style="italic"
+     fill="#5C647A"
+     id="text31">(дорожка ОПКЦ)</text>
   <!-- Step 7: финальный статус клиенту -->
   <rect
      x="606.20197"
@@ -420,9 +401,9 @@
      width="110"
      height="44"
      rx="8"
-     fill="#2f8b67"
+     fill="#2F8B67"
      fill-opacity="0.15"
-     stroke="#2f8b67"
+     stroke="#2F8B67"
      stroke-width="2"
      id="rect31" />
   <text
@@ -430,17 +411,17 @@
      y="48"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
+     font-size="11"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text32">7</text>
   <text
      x="661.20197"
      y="62"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     fill="#1a2030"
+     font-size="11"
+     fill="#1A2030"
      id="text33">Финальный статус</text>
   <!-- Arrows -->
   <!-- 1 → 2 : клиент кликнул → TPP начинает PAR -->
@@ -469,7 +450,7 @@
      y1="75.469475"
      x2="416.63153"
      y2="201.46948"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="2"
      marker-end="url(#arr-Muted)"
      id="line35" />
@@ -514,16 +495,45 @@
      stroke-dasharray="6,3"
      marker-end="url(#arr-Good)"
      id="line39" />
-  <!-- 6 → 7 финальный статус: ASPSP → TPP → Клиент (одна составная зелёная стрелка) -->
+  <!-- 6 → 7 финальный статус: асинхронно (webhook / polling). ASPSP → TPP (Muted, пунктир) и TPP → Клиент (Muted, пунктир) -->
   <line
      x1="625.0"
      y1="215.0"
-     x2="660.0"
-     y2="74.0"
-     stroke="#2F8B67"
+     x2="665.0"
+     y2="140.0"
+     stroke="#5C647A"
      stroke-width="2"
-     marker-end="url(#arr-Good)"
-     id="line40" />
+     stroke-dasharray="6,3"
+     marker-end="url(#arr-Muted)"
+     id="line40a" />
+  <line
+     x1="661.20197"
+     y1="115.0"
+     x2="661.20197"
+     y2="78.0"
+     stroke="#5C647A"
+     stroke-width="2"
+     stroke-dasharray="6,3"
+     marker-end="url(#arr-Muted)"
+     id="line40b" />
+  <text
+     x="700.0"
+     y="170.0"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10"
+     font-style="italic"
+     fill="#5C647A"
+     id="text-async-7a">асинхронно:</text>
+  <text
+     x="700.0"
+     y="183.0"
+     text-anchor="middle"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10"
+     font-style="italic"
+     fill="#5C647A"
+     id="text-async-7b">webhook / polling</text>
   <!-- footnote -->
   <rect
      x="15.856373"
@@ -531,9 +541,9 @@
      width="732.60907"
      height="27.907007"
      rx="9.6079884"
-     fill="#f5f7fd"
-     stroke="#5c647a"
-     stroke-width="1.01873"
+     fill="#F5F7FD"
+     stroke="#5C647A"
+     stroke-width="1"
      stroke-dasharray="6, 3"
      id="rect40" />
   <text
@@ -541,8 +551,8 @@
      y="382.02261"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11.5764px"
-     fill="#1a2030"
+     font-size="11"
+     fill="#1A2030"
      id="text40"
      transform="scale(1.0524039,0.95020553)"
      style="stroke-width:1.0524">На каждом шаге подпись и шифрование выполняются по ГОСТ через сертифицированное СКЗИ; транспорт — ГОСТ TLS.</text>

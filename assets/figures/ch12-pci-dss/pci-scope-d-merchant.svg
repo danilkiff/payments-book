@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 170" width="500" height="170">
+<defs>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+</defs>
+
+<!-- Заголовок -->
+<text x="250.0" y="18.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">SAQ D-Merchant: снижение scope внутри одной формы</text>
+
+<!-- Ось -->
+<line x1="20.0" y1="40.0" x2="480.0" y2="40.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="250.0" y="35.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">→ меньше периметр у ТСП</text>
+
+<rect x="20.0" y="50.0" width="140" height="62" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
+<text x="90.0" y="71.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">SAQ D-Merchant</text>
+<text x="90.0" y="86.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">всё в периметре</text>
+<text x="90.0" y="99.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">без сегментации</text>
+
+<rect x="180.0" y="50.0" width="140" height="62" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="250.0" y="71.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">+ сегментация CDE</text>
+<text x="250.0" y="86.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">CDE изолирован</text>
+<text x="250.0" y="99.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">от прочих систем</text>
+
+<rect x="340.0" y="50.0" width="140" height="62" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="410.0" y="71.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">+ токенизация</text>
+<text x="410.0" y="86.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">vault у PSP / network</text>
+<text x="410.0" y="99.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">tokens вместо PAN</text>
+
+<!-- Подпись -->
+<text x="20.0" y="138.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">SAQ-форма одна (D-Merchant); сужение scope — через сегментацию и токенизацию хранения,</text>
+<text x="20.0" y="151.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">а не смену формы. ROC/QSA для Level 1 и service providers — за рамками SAQ.</text>
+
+</svg>

@@ -1,31 +1,138 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" width="520" height="290">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" width="820" height="540">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
 </defs>
-<rect x="20.0" y="10.0" width="480" height="90" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-opacity="0.30" stroke-width="2"/>
-<text x="30.0" y="26.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Шлюз</text>
-<rect x="120.0" y="40.0" width="280" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="260.0" y="69.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">payment.status = succeeded</text>
-<rect x="20.0" y="155.0" width="480" height="125" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-opacity="0.30" stroke-width="2"/>
-<text x="30.0" y="171.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Реестр</text>
-<rect x="32.0" y="200.0" width="105" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="84.5" y="219.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Выплата</text>
-<text x="84.5" y="234.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">продавцу</text>
-<rect x="145.0" y="200.0" width="105" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="197.5" y="219.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Комиссия</text>
-<text x="197.5" y="234.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">платформы</text>
-<rect x="258.0" y="200.0" width="105" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="310.5" y="219.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Резерв</text>
-<text x="310.5" y="234.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">под доставку</text>
-<rect x="371.0" y="200.0" width="105" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="423.5" y="219.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">Резерв</text>
-<text x="423.5" y="234.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.0" font-weight="normal" fill="#1A2030">под возврат</text>
-<line x1="260.0" y1="90.0" x2="260.0" y2="155.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="260.0" y="128.0" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="4" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">одна транзакция → четыре обязательства</text>
-<line x1="260.0" y1="155.0" x2="85.0" y2="200.0" stroke="#2F8B67" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-Good)"/>
-<line x1="260.0" y1="155.0" x2="198.0" y2="200.0" stroke="#2F8B67" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-Good)"/>
-<line x1="260.0" y1="155.0" x2="310.0" y2="200.0" stroke="#7759D6" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-AccentB)"/>
-<line x1="260.0" y1="155.0" x2="423.0" y2="200.0" stroke="#7759D6" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-AccentB)"/>
+
+<!-- ====== Timeline at top ====== -->
+<text x="20.0" y="22.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Жизненный цикл по времени</text>
+<line x1="60.0" y1="50.0" x2="780.0" y2="50.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+
+<circle cx="120.0" cy="50.0" r="4" fill="#4E63D9"/>
+<text x="120.0" y="40.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Auth</text>
+<text x="120.0" y="68.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">день 0</text>
+
+<circle cx="290.0" cy="50.0" r="4" fill="#4E63D9"/>
+<text x="290.0" y="40.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Подтверждение</text>
+<text x="290.0" y="68.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">день 0 + 30 мин</text>
+
+<circle cx="460.0" cy="50.0" r="4" fill="#2F8B67"/>
+<text x="460.0" y="40.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Расчёт</text>
+<text x="460.0" y="68.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">день 2</text>
+
+<circle cx="640.0" cy="50.0" r="4" fill="#C15462"/>
+<text x="640.0" y="40.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Частичный возврат</text>
+<text x="640.0" y="68.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">день 5</text>
+
+<!-- ====== Layer 1: Шлюз ====== -->
+<rect x="20.0" y="90.0" width="780" height="70" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-opacity="0.30" stroke-width="2"/>
+<text x="30.0" y="108.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Шлюз</text>
+<text x="30.0" y="122.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">фактически: {status, id, decline_code, timestamp, event_id}; здесь показан один статус для контраста</text>
+
+<rect x="80.0" y="130.0" width="640" height="24" rx="6" fill="#ffffff" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="400.0" y="146.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">payment.status = succeeded</text>
+
+<!-- Vertical arrow: gateway -> ledger -->
+<line x1="400.0" y1="160.0" x2="400.0" y2="190.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="400.0" y="180.0" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="2" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">одна транзакция → парные проводки</text>
+
+<!-- ====== Layer 2: Продуктовый реестр (двойная запись) ====== -->
+<rect x="20.0" y="195.0" width="780" height="170" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-opacity="0.30" stroke-width="2"/>
+<text x="30.0" y="213.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Продуктовый реестр (двойная запись: дебет = кредит)</text>
+
+<!-- Column header strip -->
+<text x="60.0" y="232.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">событие</text>
+<text x="200.0" y="232.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Дебет</text>
+<text x="400.0" y="232.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Кредит</text>
+<text x="650.0" y="232.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Сумма</text>
+
+<!-- Row 1: Auth -->
+<text x="30.0" y="250.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Auth</text>
+<rect x="120.0" y="240.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
+<text x="200.0" y="254.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">cardholder_receivable</text>
+<line x1="280.0" y1="250.0" x2="320.0" y2="250.0" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted-s)"/>
+<rect x="320.0" y="240.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
+<text x="400.0" y="254.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_pending</text>
+<text x="650.0" y="254.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">5 000 ₽</text>
+
+<!-- Row 2: Подтверждение -->
+<text x="30.0" y="276.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Подтверждение</text>
+<rect x="120.0" y="266.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
+<text x="200.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_pending</text>
+<line x1="280.0" y1="276.0" x2="320.0" y2="276.0" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted-s)"/>
+<rect x="320.0" y="266.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
+<text x="400.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_earned + platform_fee_earned</text>
+<text x="650.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">4 500 + 500 ₽</text>
+
+<!-- Row 3: Расчёт -->
+<text x="30.0" y="302.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Расчёт</text>
+<rect x="120.0" y="292.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
+<text x="200.0" y="306.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_earned</text>
+<line x1="280.0" y1="302.0" x2="320.0" y2="302.0" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted-s)"/>
+<rect x="320.0" y="292.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
+<text x="400.0" y="306.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_available</text>
+<text x="650.0" y="306.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">4 500 ₽</text>
+
+<!-- Row 4: Частичный возврат -->
+<text x="30.0" y="328.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#C15462">Частич. возврат</text>
+<rect x="120.0" y="318.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#C15462" stroke-width="1"/>
+<text x="200.0" y="332.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_available</text>
+<line x1="280.0" y1="328.0" x2="320.0" y2="328.0" stroke="#C15462" stroke-width="1" marker-end="url(#arr-Muted-s)"/>
+<rect x="320.0" y="318.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#C15462" stroke-width="1"/>
+<text x="400.0" y="332.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">refund_payable</text>
+<text x="650.0" y="332.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">2 000 ₽</text>
+
+<!-- Marketplace reserve note as sidebar -->
+<rect x="500.0" y="240.0" width="280" height="118" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="510.0" y="256.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Резерв под доставку (маркетплейс)</text>
+<text x="510.0" y="270.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">пример для маркетплейсного сценария</text>
+<text x="510.0" y="290.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">В карточном эквайринге типовые резервы:</text>
+<text x="510.0" y="305.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">• refund reserve</text>
+<text x="510.0" y="320.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">• minimum balance</text>
+<text x="510.0" y="335.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">• holdback</text>
+<text x="510.0" y="352.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">см. balance-states.svg</text>
+
+<!-- Arrow: ledger -> RSBU -->
+<line x1="400.0" y1="365.0" x2="400.0" y2="395.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="400.0" y="385.0" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="2" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">бухгалтерская трансляция (не 1:1)</text>
+
+<!-- ====== Layer 3: РСБУ (банковский учёт по 809-П) ====== -->
+<rect x="20.0" y="400.0" width="780" height="130" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-opacity="0.30" stroke-width="2"/>
+<text x="30.0" y="418.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Бухгалтерский учёт банка по РСБУ (Положение 809-П)</text>
+
+<!-- RSBU account chips: row 1 -->
+<rect x="40.0" y="430.0" width="120" height="36" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1.5"/>
+<text x="100.0" y="446.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">30102</text>
+<text x="100.0" y="460.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">корсчёт в ЦБ</text>
+
+<rect x="170.0" y="430.0" width="120" height="36" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1.5"/>
+<text x="230.0" y="446.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">40817</text>
+<text x="230.0" y="460.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">счёт физ. лица</text>
+
+<rect x="300.0" y="430.0" width="120" height="36" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1.5"/>
+<text x="360.0" y="446.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">40702</text>
+<text x="360.0" y="460.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">счёт юр. лица (ТСП)</text>
+
+<rect x="430.0" y="430.0" width="120" height="36" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1.5"/>
+<text x="490.0" y="446.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">47422</text>
+<text x="490.0" y="460.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">обязательство перед ТСП</text>
+
+<rect x="560.0" y="430.0" width="120" height="36" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1.5"/>
+<text x="620.0" y="446.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">30233</text>
+<text x="620.0" y="460.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">расчёты со схемой</text>
+
+<rect x="690.0" y="430.0" width="100" height="36" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1.5"/>
+<text x="740.0" y="446.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">70601</text>
+<text x="740.0" y="460.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">операц. доходы</text>
+
+<!-- Mapping note -->
+<text x="40.0" y="487.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">Соответствие реестра и 809-П неравномерное:</text>
+<text x="40.0" y="500.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">• merchant_pending (Auth) → бухгалтерской проводки нет (только коммуникация со схемой)</text>
+<text x="40.0" y="513.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">• merchant_earned, merchant_available, refund_payable → 47422 (срез одного обязательства)</text>
+<text x="40.0" y="526.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">• platform_fee_earned → 70601; расчёт с сетью → 30233 ↔ 47422; выплата ТСП → 47422 → 40702</text>
+
 </svg>

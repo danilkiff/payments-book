@@ -1,40 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 320" width="510" height="320">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
 </defs>
-<text x="255.0" y="31.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">M/Chip и DSRP: слои</text>
+<text x="320.0" y="26.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">M/Chip, MDES, DSRP и смежные оси Mastercard</text>
+
+<!-- Top: remote/CNP layer (DSRP, Click to Pay) -->
+<rect x="270.0" y="50.0" width="180" height="60" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="360.0" y="72.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">DSRP</text>
+<text x="360.0" y="87.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">remote payments (CNP, in-app)</text>
+<text x="360.0" y="100.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">device-/cloud-side cryptogram</text>
+
+<rect x="460.0" y="50.0" width="170" height="60" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="545.0" y="72.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Click to Pay / SRC</text>
+<text x="545.0" y="87.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Secure Remote Commerce</text>
+<text x="545.0" y="100.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">EMVCo-стандарт CNP-checkout</text>
+
+<!-- 3DS2 comparison plate (left side, same row as DSRP) -->
+<rect x="20.0" y="50.0" width="220" height="60" rx="8" fill="#F5F7FD" stroke="#7759D6" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="130.0" y="68.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">3-D Secure 2 vs DSRP</text>
+<text x="130.0" y="83.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">3DS2: risk-based auth поверх PAN</text>
+<text x="130.0" y="96.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">DSRP: cryptogram поверх токена</text>
+<text x="130.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">— альтернативные/смежные CNP-подходы</text>
+
+<!-- Middle row: M/Chip (card application) and MDES (TSP) and MCBP -->
+<rect x="20.0" y="150.0" width="200" height="90" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="120.0" y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">M/Chip</text>
+<text x="120.0" y="188.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">card application</text>
+<text x="120.0" y="202.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">(contact / contactless)</text>
+<text x="120.0" y="220.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">EMV-криптограмма формируется</text>
+<text x="120.0" y="232.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">на чипе карты</text>
+
+<rect x="240.0" y="150.0" width="200" height="90" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="340.0" y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">MDES</text>
+<text x="340.0" y="188.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Token Service Provider</text>
+<text x="340.0" y="202.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">(network token вместо PAN)</text>
+<text x="340.0" y="220.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">token vault, domain controls,</text>
+<text x="340.0" y="232.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">cryptogram service</text>
+
+<rect x="460.0" y="150.0" width="170" height="90" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="545.0" y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">MCBP</text>
+<text x="545.0" y="188.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Mastercard Cloud-Based</text>
+<text x="545.0" y="200.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Payments</text>
+<text x="545.0" y="218.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">device-side cryptogram</text>
+<text x="545.0" y="230.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">(HCE / SE wallet)</text>
 
 <!-- Bottom: EMV base -->
-<rect x="20.0" y="240.0" width="470" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="255.0" y="266.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">EMV base</text>
-<text x="255.0" y="282.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">общая EMV-криптография (Book 1–4)</text>
+<rect x="20.0" y="290.0" width="610" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="325.0" y="315.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">EMV base</text>
+<text x="325.0" y="331.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">общая EMV-криптография (Book 1–4)</text>
 
-<!-- Left branch: M/Chip (card application) -->
-<rect x="20.0" y="140.0" width="220" height="80" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="130.0" y="165.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">M/Chip</text>
-<text x="130.0" y="183.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">card application</text>
-<text x="130.0" y="199.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">(contact / contactless)</text>
+<!-- Arrows: each layer leans on EMV base -->
+<line x1="120.0" y1="288.0" x2="120.0" y2="242.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<line x1="340.0" y1="288.0" x2="340.0" y2="242.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<line x1="545.0" y1="288.0" x2="545.0" y2="242.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
 
-<!-- Right branch: MDES (Token Service Provider) -->
-<rect x="270.0" y="140.0" width="220" height="80" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="380.0" y="165.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">MDES</text>
-<text x="380.0" y="183.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Token Service Provider</text>
-<text x="380.0" y="199.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">(network token вместо PAN)</text>
+<!-- DSRP → MDES vertical link -->
+<line x1="360.0" y1="148.0" x2="360.0" y2="112.0" stroke="#B8821C" stroke-width="1.5" marker-end="url(#arr-Warn-s)"/>
+<text x="370.0" y="135.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">cryptogram через MDES</text>
 
-<!-- Top right: DSRP (remote) over MDES -->
-<rect x="270.0" y="60.0" width="220" height="60" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="380.0" y="85.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">DSRP</text>
-<text x="380.0" y="103.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">remote payments (CNP, in-app)</text>
+<!-- Click to Pay ↔ MDES (CtP использует tokens) -->
+<line x1="545.0" y1="148.0" x2="545.0" y2="112.0" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn-s)"/>
+<text x="555.0" y="135.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">tokens из MDES</text>
 
-<!-- Arrows: M/Chip → EMV base, MDES → EMV base, DSRP → MDES -->
-<line x1="130.0" y1="238.0" x2="130.0" y2="222.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
-<line x1="380.0" y1="238.0" x2="380.0" y2="222.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
-<line x1="380.0" y1="138.0" x2="380.0" y2="122.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<!-- MCBP → MDES link (MCBP uses MDES tokens, device-side cryptogram) -->
+<line x1="460.0" y1="195.0" x2="442.0" y2="195.0" stroke="#7759D6" stroke-width="1.5" marker-end="url(#arr-AccentB-s)"/>
 
 <!-- side captions -->
-<text x="247.0" y="184.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">карточный</text>
-<text x="263.0" y="184.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">токенизация</text>
-<text x="263.0" y="93.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">удалённый</text>
-<text x="247.0" y="273.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">базовый</text>
+<text x="14.0" y="200.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A"></text>
+<text x="635.0" y="325.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">базовый слой</text>
+
+<!-- Network token lifecycle strip (bottom) -->
+<text x="20.0" y="377.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Жизненный цикл network token (MDES):</text>
+<rect x="20.0" y="385.0" width="130" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="85.0" y="402.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">provisioning</text>
+<text x="85.0" y="415.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">token request</text>
+
+<line x1="152.0" y1="405.0" x2="178.0" y2="405.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+
+<rect x="180.0" y="385.0" width="130" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="245.0" y="402.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">activation</text>
+<text x="245.0" y="415.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">ID&amp;V, binding</text>
+
+<line x1="312.0" y1="405.0" x2="338.0" y2="405.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+
+<rect x="340.0" y="385.0" width="130" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="405.0" y="402.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">usage</text>
+<text x="405.0" y="415.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">cryptogram per tx</text>
+
+<line x1="472.0" y1="405.0" x2="498.0" y2="405.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+
+<rect x="500.0" y="385.0" width="130" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="565.0" y="402.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">lifecycle mgmt</text>
+<text x="565.0" y="415.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">suspend / resume / delete</text>
+
+<text x="320.0" y="455.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">DSRP / Click to Pay / MCBP опираются на этот цикл — токен живёт независимо от PAN.</text>
 </svg>

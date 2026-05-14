@@ -1,42 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" width="760" height="560">
 <defs>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-Muted"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Warn"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
 </defs>
+
+<!-- Observability — нижняя плашка-баннер на всю ширину -->
+<rect x="20.0" y="480.0" width="720" height="60" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
+<text x="40.0" y="500.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Observability</text>
+<text x="40.0" y="517.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">approval rate  |  p50 / p95 / p99 latency  |  webhook delivery rate  |  HSM error rate</text>
+<text x="40.0" y="532.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">метрики снимаются со всех модулей шлюза</text>
+
 <!-- Left: Запрос ТСП -->
-<rect x="20.0" y="130.0" width="130" height="56" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="85.0" y="155.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Запрос ТСП</text>
-<text x="85.0" y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">HTTPS / JSON</text>
+<rect x="20.0" y="200.0" width="130" height="56" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="85.0" y="225.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Запрос ТСП</text>
+<text x="85.0" y="242.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">HTTPS / JSON</text>
+
+<!-- Клиент/мерчант (приёмник вебхуков) -->
+<rect x="20.0" y="380.0" width="130" height="56" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="85.0" y="405.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Клиент / мерчант</text>
+<text x="85.0" y="422.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">HTTPS endpoint</text>
+
 <!-- Gateway container (dashed) -->
-<rect x="180.0" y="20.0" width="220" height="280" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="290.0" y="38.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#5C647A">Платёжный шлюз</text>
-<!-- 5 components stacked -->
-<rect x="200.0" y="50.0" width="180" height="36" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
+<rect x="180.0" y="20.0" width="380" height="440" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="370.0" y="38.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#5C647A">Платёжный шлюз</text>
+
+<!-- API gateway -->
+<rect x="200.0" y="50.0" width="180" height="36" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1.5"/>
 <text x="290.0" y="73.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">API gateway</text>
-<rect x="200.0" y="98.0" width="180" height="36" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
-<text x="290.0" y="121.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Risk engine</text>
-<rect x="200.0" y="146.0" width="180" height="36" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
-<text x="290.0" y="169.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Routing engine</text>
-<rect x="200.0" y="194.0" width="180" height="36" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
-<text x="290.0" y="217.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Token vault</text>
-<rect x="200.0" y="242.0" width="180" height="36" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1"/>
-<text x="290.0" y="265.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Auth proxy</text>
-<!-- Internal arrows between components -->
-<line x1="290.0" y1="86.0" x2="290.0" y2="98.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="290.0" y1="134.0" x2="290.0" y2="146.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="290.0" y1="182.0" x2="290.0" y2="194.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="290.0" y1="230.0" x2="290.0" y2="242.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<!-- Right: 3 external blocks -->
-<rect x="440.0" y="50.0" width="140" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="510.0" y="80.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Банк-эквайер</text>
-<rect x="440.0" y="135.0" width="140" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="510.0" y="165.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Карточная сеть</text>
-<rect x="440.0" y="220.0" width="140" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="510.0" y="250.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Эмитент</text>
+
+<!-- Idempotency store (рядом с входящим API) -->
+<rect x="395.0" y="50.0" width="140" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="465.0" y="68.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Idempotency store</text>
+<text x="465.0" y="81.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">idempotency-key → response</text>
+<line x1="380.0" y1="68.0" x2="395.0" y2="68.0" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+
+<!-- Risk engine -->
+<rect x="200.0" y="100.0" width="180" height="36" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1.5"/>
+<text x="290.0" y="123.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Risk engine</text>
+
+<!-- 3DS challenge -->
+<rect x="395.0" y="100.0" width="140" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="465.0" y="118.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">3-D Secure / SCA</text>
+<text x="465.0" y="131.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">challenge при необходимости</text>
+<line x1="380.0" y1="118.0" x2="395.0" y2="118.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+
+<!-- Routing engine -->
+<rect x="200.0" y="150.0" width="180" height="36" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1.5"/>
+<text x="290.0" y="173.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Routing engine</text>
+
+<!-- Token vault (PAN, статический токен) -->
+<rect x="200.0" y="200.0" width="180" height="44" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1.5"/>
+<text x="290.0" y="218.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Token vault</text>
+<text x="290.0" y="234.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">PAN, статический токен</text>
+
+<!-- HSM (справа от vault) -->
+<rect x="395.0" y="200.0" width="140" height="44" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
+<text x="465.0" y="218.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">HSM</text>
+<text x="465.0" y="234.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">ключи, криптооперации</text>
+<line x1="380.0" y1="222.0" x2="395.0" y2="222.0" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+
+<!-- TSP сети (отдельно от vault) -->
+<rect x="200.0" y="258.0" width="180" height="44" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1.5"/>
+<text x="290.0" y="276.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">TSP сети</text>
+<text x="290.0" y="292.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">DPAN, динамическая криптограмма</text>
+
+<!-- Auth proxy -->
+<rect x="200.0" y="316.0" width="180" height="36" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1.5"/>
+<text x="290.0" y="339.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Auth proxy</text>
+
+<!-- Event bus -->
+<rect x="200.0" y="366.0" width="335" height="32" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
+<text x="367.5" y="386.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Event bus — ledger event (authorization.created)</text>
+
+<!-- Webhook delivery -->
+<rect x="200.0" y="412.0" width="180" height="36" rx="8" fill="#ffffff" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="290.0" y="429.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Webhook delivery</text>
+<text x="290.0" y="442.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">подпись HMAC-SHA256, retry ≥ 1</text>
+
+<!-- Internal vertical arrows between components -->
+<line x1="290.0" y1="86.0" x2="290.0" y2="100.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="290.0" y1="136.0" x2="290.0" y2="150.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="290.0" y1="186.0" x2="290.0" y2="200.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="290.0" y1="244.0" x2="290.0" y2="258.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="290.0" y1="302.0" x2="290.0" y2="316.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+
+<!-- Auth proxy → Event bus (обратный путь, публикация события) -->
+<line x1="290.0" y1="352.0" x2="290.0" y2="366.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+
+<!-- Event bus → Webhook delivery (асинхронная ветка) -->
+<line x1="290.0" y1="398.0" x2="290.0" y2="412.0" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+
+<!-- Webhook delivery → Клиент/мерчант (наружу, пунктирная Muted) -->
+<line x1="200.0" y1="430.0" x2="152.0" y2="408.0" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+
+<!-- Right column: 3 external blocks (карточная цепочка) -->
+<rect x="600.0" y="200.0" width="140" height="44" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="670.0" y="226.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Банк-эквайер</text>
+
+<rect x="600.0" y="260.0" width="140" height="44" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="670.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Карточная сеть</text>
+<text x="670.0" y="295.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">ISO 8583</text>
+
+<rect x="600.0" y="320.0" width="140" height="44" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="670.0" y="346.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Эмитент</text>
+
+<!-- Альтернативная ветка: ОПКЦ СБП -->
+<rect x="600.0" y="100.0" width="140" height="44" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="670.0" y="120.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">ОПКЦ СБП</text>
+<text x="670.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">OpenAPI, минуя ISO 8583</text>
+
 <!-- Arrow from ТСП into gateway (to API gateway) -->
-<line x1="150.0" y1="158.0" x2="198.0" y2="68.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<!-- Arrow from Auth proxy to Банк-эквайер -->
-<line x1="382.0" y1="260.0" x2="438.0" y2="80.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="150.0" y1="228.0" x2="198.0" y2="74.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+
+<!-- Auth proxy → Банк-эквайер (основной путь, ISO 8583, в обход HSM снизу) -->
+<path d="M 380 334 C 480 334, 560 280, 598 232" fill="none" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+
+<!-- Auth proxy → ОПКЦ СБП (параллельная ветка, в обход HSM сверху-справа) -->
+<path d="M 380 320 C 555 310, 590 260, 598 135" fill="none" stroke="#7759D6" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-AccentB)"/>
+
 <!-- Right column internal arrows -->
-<line x1="510.0" y1="100.0" x2="510.0" y2="135.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="510.0" y1="185.0" x2="510.0" y2="220.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="670.0" y1="244.0" x2="670.0" y2="260.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="670.0" y1="304.0" x2="670.0" y2="320.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 </svg>

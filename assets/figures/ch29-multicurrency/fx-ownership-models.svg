@@ -1,18 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" width="500" height="380">
-<rect x="20.0" y="20.0" width="220" height="160" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="130.0" y="80.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#1A2030">Эмитент</text>
-<text x="130.0" y="110.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">стандартный карточный</text>
-<text x="130.0" y="130.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">FX-риск: эмитент</text>
-<rect x="260.0" y="20.0" width="220" height="160" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="370.0" y="80.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#1A2030">Эквайер / DCC-провайдер</text>
-<text x="370.0" y="110.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">DCC</text>
-<text x="370.0" y="130.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">FX-риск: эквайер / DCC</text>
-<rect x="20.0" y="200.0" width="220" height="160" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="130.0" y="260.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#1A2030">Платформа</text>
-<text x="130.0" y="290.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">собственный курс</text>
-<text x="130.0" y="310.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">FX-риск: платформа</text>
-<rect x="260.0" y="200.0" width="220" height="160" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="370.0" y="260.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#1A2030">Treasury</text>
-<text x="370.0" y="290.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">внешний провайдер</text>
-<text x="370.0" y="310.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.0" font-weight="normal" fill="#1A2030">FX-риск: treasury</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="520" height="420">
+
+<!-- Top-left: Эмитент / стандартный карточный -->
+<rect x="20.0" y="20.0" width="230" height="180" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="135.0" y="44.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Эмитент</text>
+<text x="135.0" y="60.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">стандартный карточный</text>
+<line x1="40.0" y1="74.0" x2="230.0" y2="74.0" stroke="#5C647A" stroke-width="1"/>
+<text x="35.0" y="93.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">TTL курса:</text>
+<text x="235.0" y="93.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">фиксация при клиринге</text>
+<text x="35.0" y="110.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Сумма держателю:</text>
+<text x="235.0" y="110.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">постфактум</text>
+<text x="35.0" y="127.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Источник курса:</text>
+<text x="235.0" y="127.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">правила схемы</text>
+<text x="35.0" y="144.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">диапазоны наценок в правилах</text>
+<text x="35.0" y="156.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">схем публично не закреплены</text>
+<line x1="40.0" y1="172.0" x2="230.0" y2="172.0" stroke="#4E63D9" stroke-width="1"/>
+<text x="135.0" y="190.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">FX-риск: эмитент</text>
+
+<!-- Top-right: Эквайер / DCC -->
+<rect x="270.0" y="20.0" width="230" height="180" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="385.0" y="44.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Эквайер / DCC-провайдер</text>
+<text x="385.0" y="60.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">DCC</text>
+<line x1="290.0" y1="74.0" x2="480.0" y2="74.0" stroke="#5C647A" stroke-width="1"/>
+<text x="285.0" y="93.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">TTL курса:</text>
+<text x="485.0" y="93.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">момент авторизации</text>
+<text x="285.0" y="110.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Сумма держателю:</text>
+<text x="485.0" y="110.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">до авторизации</text>
+<text x="285.0" y="127.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Источник курса:</text>
+<text x="485.0" y="127.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">провайдер DCC</text>
+<text x="285.0" y="144.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">требуется явное раскрытие</text>
+<text x="285.0" y="156.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">наценки и согласие клиента</text>
+<line x1="290.0" y1="172.0" x2="480.0" y2="172.0" stroke="#B8821C" stroke-width="1"/>
+<text x="385.0" y="190.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">FX-риск: эквайер / DCC</text>
+
+<!-- Bottom-left: Платформа / собственный курс -->
+<rect x="20.0" y="220.0" width="230" height="180" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="135.0" y="244.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Платформа</text>
+<text x="135.0" y="260.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">собственный курс</text>
+<line x1="40.0" y1="274.0" x2="230.0" y2="274.0" stroke="#5C647A" stroke-width="1"/>
+<text x="35.0" y="293.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">TTL курса:</text>
+<text x="235.0" y="293.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">короткий (сессия)</text>
+<text x="35.0" y="310.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Сумма держателю:</text>
+<text x="235.0" y="310.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">в момент выбора</text>
+<text x="35.0" y="327.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Источник курса:</text>
+<text x="235.0" y="327.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">валютный модуль</text>
+<text x="35.0" y="344.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">короткий TTL — истёкшие сессии,</text>
+<text x="35.0" y="356.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">длинный — валютный риск</text>
+<line x1="40.0" y1="372.0" x2="230.0" y2="372.0" stroke="#7759D6" stroke-width="1"/>
+<text x="135.0" y="390.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">FX-риск: платформа</text>
+
+<!-- Bottom-right: Treasury -->
+<rect x="270.0" y="220.0" width="230" height="180" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="385.0" y="244.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Казначейство</text>
+<text x="385.0" y="260.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">внешний провайдер</text>
+<line x1="290.0" y1="274.0" x2="480.0" y2="274.0" stroke="#5C647A" stroke-width="1"/>
+<text x="285.0" y="293.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">TTL курса:</text>
+<text x="485.0" y="293.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">дольше одной сессии</text>
+<text x="285.0" y="310.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Сумма держателю:</text>
+<text x="485.0" y="310.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">B2B / пакетно</text>
+<text x="285.0" y="327.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Источник курса:</text>
+<text x="485.0" y="327.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">FX-провайдер / форвард</text>
+<text x="285.0" y="344.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">гибрид: платформа показывает,</text>
+<text x="285.0" y="356.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">казначейство держит риск форвардом</text>
+<line x1="290.0" y1="372.0" x2="480.0" y2="372.0" stroke="#2F8B67" stroke-width="1"/>
+<text x="385.0" y="390.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">FX-риск: казначейство</text>
 </svg>

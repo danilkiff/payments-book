@@ -141,7 +141,12 @@ PISP сначала создаёт ресурс \texttt{payment-consent} и~по
   \centering
   \includefiguresvg[width=.75\linewidth]{assets/figures/ch19-open-banking/consent-lifecycle}
   \caption{Жизненный цикл \texttt{domestic-payment-consent} (PISP)
-  в Open Banking UK~\cite{ob-uk-pi-3110}.}\label{fig:consent-lifecycle}
+  в Open Banking UK~\cite{ob-uk-pi-3110}. \texttt{Consumed}~--- согласие
+  использовано для создания платёжного ресурса; финальность расчёта
+  определяется отдельным статусом платежа. \texttt{Revoke} после
+  \texttt{Authorised} невозможен (PSD2 Art.~80). \texttt{DELETE} через
+  ASPSP~--- отдельная операция до \texttt{Authorised}, не эквивалентна
+  \texttt{Revoked}.}\label{fig:consent-lifecycle}
 \end{figure}
 
 На уровне аутентификации Open Banking UK поддерживает и redirect,

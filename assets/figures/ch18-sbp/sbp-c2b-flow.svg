@@ -1,9 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" width="640" height="180">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260">
 <defs>
   <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
   <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
 </defs>
 <rect x="15.0" y="20.0" width="195" height="140" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.35" stroke-width="1"/>
 <rect x="222.0" y="20.0" width="120" height="140" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
@@ -31,7 +33,21 @@
 <line x1="332.0" y1="120.0" x2="364.0" y2="120.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 <line x1="464.0" y1="120.0" x2="496.0" y2="97.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <line x1="556.0" y1="114.0" x2="556.0" y2="124.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<rect x="355.0" y="48.0" width="118" height="22" rx="8" fill="#2F8B67" fill-opacity="0.08" stroke="#2F8B67" stroke-width="1.2"/>
+<rect x="355.0" y="48.0" width="118" height="22" rx="8" fill="#2F8B67" fill-opacity="0.08" stroke="#2F8B67" stroke-width="1"/>
 <text x="414.0" y="63.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#2F8B67">точка финальности</text>
 <line x1="414.0" y1="70.0" x2="414.0" y2="103.0" stroke="#2F8B67" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Good)"/>
+<text x="15.0" y="184.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Развилки (non-happy path)</text>
+<rect x="15.0" y="192.0" width="195" height="44" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
+<text x="112.5" y="210.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Отказ банка плательщика</text>
+<text x="112.5" y="224.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">недостаточно средств / антифрод / лимит</text>
+<rect x="222.0" y="192.0" width="200" height="44" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="322.0" y="210.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Таймаут</text>
+<text x="322.0" y="224.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">пользователь не вернулся / истёк QR / TTL сессии</text>
+<rect x="434.0" y="192.0" width="192" height="44" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
+<text x="530.0" y="210.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Отказ банка получателя</text>
+<text x="530.0" y="224.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">проблема на стороне зачисления</text>
+<line x1="165.0" y1="137.0" x2="112.5" y2="192.0" stroke="#C15462" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Bad)"/>
+<line x1="282.0" y1="137.0" x2="322.0" y2="192.0" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+<line x1="556.0" y1="114.0" x2="530.0" y2="192.0" stroke="#C15462" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Bad)"/>
+<text x="15.0" y="250.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">Базовая схема. Сценарий единого QR-кода через ОПКЦ СБП использует тот же контур ОПКЦ→ПС БР.</text>
 </svg>
