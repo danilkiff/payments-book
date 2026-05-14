@@ -3110,3 +3110,108 @@
   url    = {https://developer.mastercard.com/consumer-clarity/product/ethoca-consumer-clarity/},
   note   = {Официальная страница продукта Mastercard Ethoca Consumer Clarity: передача обогащённых данных о покупке эмитенту для снижения first-party chargeback}
 }
+
+% =====================================================================
+% Источники, добавленные при правках по разделу docs/text/ (2026-05-14)
+% =====================================================================
+
+% --- ch19 / ch32: IETF RFC ---
+@online{rfc-6749,
+  author = {{Internet Engineering Task Force}},
+  title  = {{RFC} 6749: The {OAuth} 2.0 Authorization Framework},
+  year   = {2012},
+  url    = {https://www.rfc-editor.org/rfc/rfc6749},
+  note   = {Базовая спецификация OAuth 2.0; определяет роли клиента, сервера авторизации, владельца ресурса и потоки выдачи access token}
+}
+
+@online{rfc-2104,
+  author = {Krawczyk, H. and Bellare, M. and Canetti, R.},
+  title  = {{RFC} 2104: {HMAC}: Keyed-Hashing for Message Authentication},
+  year   = {1997},
+  url    = {https://www.rfc-editor.org/rfc/rfc2104},
+  note   = {Конструкция HMAC поверх произвольной криптографической хэш-функции; используется при подписи вебхуков, токенов и сообщений API}
+}
+
+@online{rfc-7519,
+  author = {Jones, M. and Bradley, J. and Sakimura, N.},
+  title  = {{RFC} 7519: {JSON} Web Token ({JWT})},
+  year   = {2015},
+  url    = {https://www.rfc-editor.org/rfc/rfc7519},
+  note   = {Компактный, URL-безопасный формат токенов на JSON; использует JWS/JWE для подписи и шифрования claims}
+}
+
+@online{rfc-7636-pkce,
+  author = {Sakimura, N. and Bradley, J. and Agarwal, N.},
+  title  = {{RFC} 7636: Proof Key for Code Exchange by {OAuth} Public Clients},
+  year   = {2015},
+  url    = {https://www.rfc-editor.org/rfc/rfc7636},
+  note   = {Защита authorization code от перехвата в публичных клиентах OAuth 2.0 через одноразовый code verifier и code challenge (метод S256); обязателен в FAPI 1.0 Advanced и FAPI 2.0}
+}
+
+% --- ch20: EMVCo QR Code Specifications ---
+@online{emvco-qr-mpm,
+  author = {{EMVCo}},
+  title  = {{EMV} {QR} Code Specification for Payment Systems ({EMV} {QRCPS}) Merchant-Presented Mode, v1.1},
+  year   = {2020},
+  url    = {https://www.emvco.com/specifications/?post_id=12643},
+  note   = {Опубликовано 27 ноября 2020. Public Access. Структура QR-кода, который продавец демонстрирует покупателю}
+}
+
+@online{emvco-qr-cpm,
+  author = {{EMVCo}},
+  title  = {{EMV} {QR} Code Specification for Payment Systems ({EMV} {QRCPS}) Consumer-Presented Mode, v1.1},
+  year   = {2020},
+  url    = {https://www.emvco.com/specifications/?post_id=12641},
+  note   = {Опубликовано 27 ноября 2020. Public Access. Структура динамического QR-кода, который покупатель демонстрирует продавцу}
+}
+
+% --- ch22: PBoC e-CNY ---
+@online{pboc-ecny-2021,
+  author = {{Working Group on E-CNY Research and Development of the People's Bank of China}},
+  title  = {Progress of Research \& Development of E-{CNY} in {China}},
+  year   = {2021},
+  url    = {http://www.pbc.gov.cn/en/3688110/3688172/4157443/4293696/2021071614584691871.pdf},
+  note   = {White paper Народного банка Китая (июль 2021): описание e-CNY (DC/EP) как розничной CBDC с двухуровневой моделью распространения и закрытым кругом валидаторов}
+}
+
+% --- ch26: Unicode UAX и Winkler 1990 ---
+@online{unicode-uax15,
+  author = {{Unicode Consortium}},
+  title  = {Unicode Standard Annex \#15: Unicode Normalization Forms},
+  year   = {2025},
+  url    = {https://www.unicode.org/reports/tr15/},
+  note   = {Revision 57 (2025-07-30), Unicode 17.0.0; определяет четыре формы нормализации, в т.ч. NFKD (Compatibility Decomposition)}
+}
+
+@online{winkler-1990,
+  author = {Winkler, William E.},
+  title  = {String Comparator Metrics and Enhanced Decision Rules in the {Fellegi-Sunter} Model of Record Linkage},
+  year   = {1990},
+  url    = {https://files.eric.ed.gov/fulltext/ED325505.pdf},
+  note   = {Proceedings of the Section on Survey Research Methods, American Statistical Association, 1990, pp. 354--359 (ERIC ED325505); расширение метрики Jaro с учётом совпадающего префикса --- метрика Jaro--Winkler, применяемая в санкционном скрининге}
+}
+
+% --- ch27: AVS и метрики классификации ---
+@online{visa-avs-2024,
+  author = {{Visa}},
+  title  = {Address Verification Service},
+  year   = {2024},
+  url    = {https://usa.visa.com/support/small-business/security-compliance.html},
+  note   = {Visa Address Verification Service (AVS): проверка соответствия введённого продавцом адреса (числовая часть и почтовый индекс) данным эмитента; результат возвращается в авторизационном ответе как отдельный код}
+}
+
+@online{sklearn-classification-metrics,
+  author = {{scikit-learn developers}},
+  title  = {Metrics and scoring: quantifying the quality of predictions},
+  year   = {2026},
+  url    = {https://scikit-learn.org/stable/modules/model_evaluation.html},
+  note   = {Официальная документация scikit-learn: определения precision, recall, F1-score, average precision и кривой precision-recall для задач классификации с несбалансированными классами}
+}
+
+@online{brics-2026-chair,
+  author = {{BRICS Chairship 2026 (India)}},
+  title  = {BRICS 2026 --- About BRICS},
+  year   = {2026},
+  url    = {https://www.brics2026.gov.in/about-us/},
+  note   = {На 1 января 2025 года полноправные члены: Бразилия, Россия, Индия, Китай, ЮАР (с~2010), Египет, Эфиопия, Иран, ОАЭ (с~2024), Саудовская Аравия и Индонезия (с~2025); неофициально используется обозначение BRICS+ или BRICS Plus}
+}
