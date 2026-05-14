@@ -1,49 +1,828 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 446" width="500" height="446">
-<defs>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-</defs>
-<rect x="20" y="20" width="460" height="380" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
-
-<!-- CPU center -->
-<rect x="200" y="175" width="100" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="250" y="206" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">CPU</text>
-
-<!-- ROM (left-top) -->
-<rect x="55" y="85" width="100" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="105" y="108" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">ROM</text>
-<text x="105" y="128" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">ОС, EMV-аплет</text>
-
-<!-- RAM (top) -->
-<rect x="200" y="55" width="100" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="250" y="78" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">RAM</text>
-<text x="250" y="98" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">рабочая</text>
-
-<!-- EEPROM/Flash (left-bottom) -->
-<rect x="55" y="255" width="100" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="105" y="278" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">EEPROM/Flash</text>
-<text x="105" y="298" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">ключи, счётчики</text>
-
-<!-- Crypto (right) -->
-<rect x="345" y="170" width="100" height="60" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="395" y="193" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Крипто</text>
-<text x="395" y="213" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">копроцессор</text>
-
-<!-- I/O (bottom) -->
-<rect x="200" y="285" width="100" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="250" y="308" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">I/O</text>
-<text x="250" y="328" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">ISO 7816</text>
-
-<!-- Bus lines: CPU <-> peripherals -->
-<line x1="200" y1="190" x2="155" y2="125" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<line x1="250" y1="175" x2="250" y2="115" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<line x1="200" y1="210" x2="155" y2="255" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<line x1="300" y1="200" x2="345" y2="200" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<line x1="250" y1="225" x2="250" y2="285" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-
-<!-- I/O -> pad -->
-<line x1="250" y1="345" x2="250" y2="395" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="250" y="423" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Контактная площадка ISO 7816</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 680 380"
+   width="680"
+   height="380"
+   version="1.1"
+   id="svg45"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5">
+    <marker
+       id="arr-Muted"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#5c647a"
+         id="path1" />
+    </marker>
+    <marker
+       id="arr-Muted-s"
+       viewBox="0 0 10 10"
+       refX="1"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 10,0 0,5 10,10 Z"
+         fill="#5c647a"
+         id="path2" />
+    </marker>
+    <marker
+       id="arr-AccentA"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#4e63d9"
+         id="path3" />
+    </marker>
+    <marker
+       id="arr-AccentA-s"
+       viewBox="0 0 10 10"
+       refX="1"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 10,0 0,5 10,10 Z"
+         fill="#4e63d9"
+         id="path4" />
+    </marker>
+    <marker
+       id="arr-Warn"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#b8821c"
+         id="path5" />
+    </marker>
+    <marker
+       id="arr-Muted-s-5"
+       viewBox="0 0 10 10"
+       refX="1"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 10,0 0,5 10,10 Z"
+         fill="#5c647a"
+         id="path2-2" />
+    </marker>
+    <marker
+       id="arr-Muted-2"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#5c647a"
+         id="path1-6" />
+    </marker>
+    <marker
+       id="arr-Muted-s-8"
+       viewBox="0 0 10 10"
+       refX="1"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 10,0 0,5 10,10 Z"
+         fill="#5c647a"
+         id="path2-4" />
+    </marker>
+    <marker
+       id="arr-Muted-1"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#5c647a"
+         id="path1-7" />
+    </marker>
+    <marker
+       id="arr-Muted-s-8-7"
+       viewBox="0 0 10 10"
+       refX="1"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 10,0 0,5 10,10 Z"
+         fill="#5c647a"
+         id="path2-4-7" />
+    </marker>
+    <marker
+       id="arr-Muted-1-4"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#5c647a"
+         id="path1-7-4" />
+    </marker>
+  </defs>
+  <!-- Chip body -->
+  <rect
+     x="6.7765436"
+     y="4.0654664"
+     width="670.18042"
+     height="373.54977"
+     rx="12.003232"
+     fill="#f5f7fd"
+     stroke="#5c647a"
+     stroke-width="1.3618"
+     id="rect5" />
+  <!-- =================== Contact pad ISO 7816 =================== -->
+  <text
+     x="106.41492"
+     y="21.111551"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text6">Контактная площадка ISO 7816</text>
+  <rect
+     x="36.346825"
+     y="31.043451"
+     width="140.1362"
+     height="132.13469"
+     rx="10.009728"
+     fill="#e8ecf7"
+     stroke="#5c647a"
+     stroke-width="1.5"
+     id="rect6" />
+  <rect
+     x="46.350952"
+     y="41.047581"
+     width="58.06184"
+     height="24.309284"
+     rx="3.0031986"
+     fill="#ffffff"
+     stroke="#5c647a"
+     stroke-width="0.872052"
+     id="rect7" />
+  <text
+     x="73.666664"
+     y="56.38998"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text7">VCC</text>
+  <rect
+     x="108.41705"
+     y="41.047581"
+     width="58.06184"
+     height="24.309284"
+     rx="3.0031986"
+     fill="#ffffff"
+     stroke="#5c647a"
+     stroke-width="0.872052"
+     id="rect8" />
+  <text
+     x="138.84532"
+     y="56.231049"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text8">GND</text>
+  <rect
+     x="46.350952"
+     y="71.434181"
+     width="58.06184"
+     height="24.309284"
+     rx="3.0031986"
+     fill="#ffffff"
+     stroke="#5c647a"
+     stroke-width="0.872052"
+     id="rect9" />
+  <text
+     x="73.984528"
+     y="86.536156"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text9">RST</text>
+  <rect
+     x="108.41705"
+     y="71.434181"
+     width="58.06184"
+     height="24.309284"
+     rx="3.0031986"
+     fill="#ffffff"
+     stroke="#5c647a"
+     stroke-width="0.872052"
+     id="rect10" />
+  <text
+     x="137.89172"
+     y="87.012955"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text10">VPP</text>
+  <rect
+     x="46.350952"
+     y="101.82079"
+     width="58.06184"
+     height="24.309284"
+     rx="3.0031986"
+     fill="#ffffff"
+     stroke="#5c647a"
+     stroke-width="0.872052"
+     id="rect11" />
+  <text
+     x="74.302399"
+     y="117.31807"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text11">CLK</text>
+  <rect
+     x="46.271305"
+     y="130.63321"
+     width="58.06184"
+     height="24.309284"
+     rx="3.0031986"
+     fill="#ffffff"
+     stroke="#5c647a"
+     stroke-width="0.872052"
+     id="rect11-2" />
+  <text
+     x="74.222755"
+     y="146.13049"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text11-3">AUX1 (RFU)</text>
+  <rect
+     x="108.03575"
+     y="130.24344"
+     width="58.06184"
+     height="24.309284"
+     rx="3.0031986"
+     fill="#ffffff"
+     stroke="#5c647a"
+     stroke-width="0.872052"
+     id="rect11-7" />
+  <text
+     x="135.9872"
+     y="145.74072"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text11-0">AUX2 (RFU)</text>
+  <rect
+     x="108.41705"
+     y="101.82079"
+     width="58.06184"
+     height="24.309284"
+     rx="3.0031986"
+     fill="#ffffff"
+     stroke="#5c647a"
+     stroke-width="0.872052"
+     id="rect12" />
+  <text
+     x="136.14348"
+     y="117.9538"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text12">I/O</text>
+  <text
+     x="106.41492"
+     y="174.11156"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text13">контактный режим</text>
+  <!-- =================== Antenna ISO 14443 =================== -->
+  <text
+     x="106.41492"
+     y="216.11156"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text14">Антенна ISO 14443</text>
+  <rect
+     x="36.38739"
+     y="226.08403"
+     width="140.05507"
+     height="129.85849"
+     rx="10.003933"
+     fill="#e8ecf7"
+     stroke="#5c647a"
+     stroke-width="1.5"
+     id="rect14" />
+  <rect
+     x="51.414925"
+     y="241.11156"
+     width="110"
+     height="100"
+     rx="8"
+     fill="none"
+     stroke="#4e63d9"
+     stroke-width="2"
+     id="rect15" />
+  <rect
+     x="63.414925"
+     y="253.11156"
+     width="86"
+     height="76"
+     rx="6"
+     fill="none"
+     stroke="#4e63d9"
+     stroke-width="2"
+     id="rect16" />
+  <rect
+     x="75.414925"
+     y="265.11154"
+     width="62"
+     height="52"
+     rx="4"
+     fill="none"
+     stroke="#4e63d9"
+     stroke-width="2"
+     id="rect17" />
+  <text
+     x="107.68949"
+     y="369.00311"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text17">NFC, PayWave/PayPass</text>
+  <!-- =================== Processor =================== -->
+  <text
+     x="289.50507"
+     y="199.84114"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text18">Процессор</text>
+  <text
+     x="291.41492"
+     y="213.11156"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text19">8/16/32-бит ядро</text>
+  <!-- =================== I/O controller =================== -->
+  <rect
+     x="234.47122"
+     y="272.67065"
+     width="120"
+     height="60"
+     rx="8"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="2"
+     id="rect19" />
+  <text
+     x="293.16138"
+     y="296.16922"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text20">I/O-контроллер</text>
+  <text
+     x="294.03461"
+     y="315.04245"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text21">7816 UART + 14443 RF</text>
+  <!-- =================== Memory row =================== -->
+  <rect
+     x="391.41492"
+     y="46.111553"
+     width="85"
+     height="65"
+     rx="8"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="2"
+     id="rect21" />
+  <text
+     x="433.41492"
+     y="72.111549"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text22">ROM</text>
+  <text
+     x="433.41492"
+     y="91.111549"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text23">ОС, аплет</text>
+  <rect
+     x="486.41492"
+     y="46.111553"
+     width="85"
+     height="65"
+     rx="8"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="2"
+     id="rect23" />
+  <text
+     x="528.41492"
+     y="72.111549"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text24">RAM</text>
+  <text
+     x="528.41492"
+     y="91.111549"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text25">рабочая</text>
+  <rect
+     x="581.41492"
+     y="46.111553"
+     width="85"
+     height="65"
+     rx="8"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="2"
+     id="rect25" />
+  <text
+     x="623.41492"
+     y="69.111549"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text26">EEPROM</text>
+  <text
+     x="623.41492"
+     y="84.111549"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text27">ключи,</text>
+  <text
+     x="623.41492"
+     y="97.111549"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text28">счётчики</text>
+  <!-- DATA BUS -->
+  <line
+     x1="289.35593"
+     y1="26.111551"
+     x2="671.41492"
+     y2="26.111551"
+     stroke="#5c647a"
+     stroke-width="2.00082"
+     id="line28" />
+  <text
+     x="671.41492"
+     y="19.111551"
+     text-anchor="end"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#5c647a"
+     id="text29">DATA BUS</text>
+  <line
+     x1="433.41492"
+     y1="26.111551"
+     x2="433.41492"
+     y2="46.111553"
+     stroke="#5c647a"
+     stroke-width="1.5"
+     marker-end="url(#arr-Muted)"
+     marker-start="url(#arr-Muted-s)"
+     id="line29" />
+  <line
+     x1="432.96036"
+     y1="109.99792"
+     x2="432.96036"
+     y2="129.99792"
+     stroke="#5c647a"
+     stroke-width="1.5"
+     marker-end="url(#arr-Muted-2)"
+     marker-start="url(#arr-Muted-s-5)"
+     id="line29-7"
+     style="marker-start:url(#arr-Muted-s-5);marker-end:url(#arr-Muted-2)" />
+  <line
+     x1="528.60217"
+     y1="111.17004"
+     x2="528.60217"
+     y2="131.17004"
+     stroke="#5c647a"
+     stroke-width="1.5"
+     marker-end="url(#arr-Muted-1)"
+     marker-start="url(#arr-Muted-s-8)"
+     id="line29-8"
+     style="marker-start:url(#arr-Muted-s-8);marker-end:url(#arr-Muted-1)" />
+  <line
+     x1="625.58136"
+     y1="111.13612"
+     x2="625.58136"
+     y2="131.13612"
+     stroke="#5c647a"
+     stroke-width="1.5"
+     marker-end="url(#arr-Muted-1-4)"
+     marker-start="url(#arr-Muted-s-8-7)"
+     id="line29-8-1"
+     style="marker-start:url(#arr-Muted-s-8-7);marker-end:url(#arr-Muted-1-4)" />
+  <line
+     x1="528.41492"
+     y1="26.111551"
+     x2="528.41492"
+     y2="46.111553"
+     stroke="#5c647a"
+     stroke-width="1.5"
+     marker-end="url(#arr-Muted)"
+     marker-start="url(#arr-Muted-s)"
+     id="line30" />
+  <line
+     x1="623.41492"
+     y1="26.111551"
+     x2="623.41492"
+     y2="46.111553"
+     stroke="#5c647a"
+     stroke-width="1.5"
+     marker-end="url(#arr-Muted)"
+     marker-start="url(#arr-Muted-s)"
+     id="line31" />
+  <!-- ADDRESS BUS -->
+  <line
+     x1="289.48563"
+     y1="131.11156"
+     x2="671.41492"
+     y2="131.11156"
+     stroke="#5c647a"
+     stroke-width="2.00553"
+     id="line32" />
+  <text
+     x="671.41492"
+     y="146.11156"
+     text-anchor="end"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     font-weight="bold"
+     fill="#5c647a"
+     id="text32">ADDRESS BUS</text>
+  <!-- CPU trunk to buses -->
+  <line
+     x1="290.34604"
+     y1="166.11156"
+     x2="290.34604"
+     y2="26.111551"
+     stroke="#5c647a"
+     stroke-width="2"
+     id="line36" />
+  <!-- =================== Crypto coprocessor =================== -->
+  <rect
+     x="391.41492"
+     y="165.3161"
+     width="120"
+     height="65"
+     rx="8"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="2"
+     id="rect36" />
+  <rect
+     x="230.08534"
+     y="165.57916"
+     width="120"
+     height="65"
+     rx="8"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="2"
+     id="rect36-5" />
+  <text
+     x="449.18741"
+     y="192.38736"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text36"
+     dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.79545456"><tspan
+       id="tspan45"
+       x="449.18741"
+       y="192.38736">Крипто-</tspan><tspan
+       id="tspan46"
+       x="449.18741"
+       y="206.13736">сопроцессор</tspan></text>
+  <text
+     x="450.14166"
+     y="219.66086"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text37">AES, 3DES, RSA, ECC</text>
+  <!-- =================== TRNG =================== -->
+  <rect
+     x="542.26624"
+     y="166.05374"
+     width="124.20653"
+     height="65.115631"
+     rx="7.0975165"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="1.97543"
+     id="rect37" />
+  <text
+     x="604.99664"
+     y="191.06206"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text38">TRNG</text>
+  <text
+     x="605.18744"
+     y="208.00734"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text39"><tspan
+       id="tspan1"
+       x="605.18744"
+       y="208.00734">генератор энтропии</tspan><tspan
+       id="tspan2"
+       x="605.18744"
+       y="219.25734">для nonce</tspan></text>
+  <!-- CPU - Crypto - TRNG links -->
+  <line
+     x1="350.39017"
+     y1="198.11156"
+     x2="391.38992"
+     y2="198.11156"
+     stroke="#5c647a"
+     stroke-width="2.02484"
+     marker-end="url(#arr-Muted)"
+     marker-start="url(#arr-Muted-s)"
+     id="line39" />
+  <line
+     x1="512.44373"
+     y1="198.11156"
+     x2="541.29053"
+     y2="198.11156"
+     stroke="#5c647a"
+     stroke-width="1.90353"
+     marker-end="url(#arr-Muted)"
+     marker-start="url(#arr-Muted-s)"
+     id="line40" />
+  <!-- =================== Защита: сенсоры =================== -->
+  <rect
+     x="393.04333"
+     y="243.09773"
+     width="192.80229"
+     height="58.917789"
+     rx="5.6087942"
+     fill="#b8821c"
+     fill-opacity="0.18"
+     stroke="#b8821c"
+     stroke-width="1.43714"
+     id="rect40" />
+  <text
+     x="490.85434"
+     y="255.55663"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text40">Защитный экран и сенсоры</text>
+  <text
+     x="486.39798"
+     y="273.91998"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text41">SPA / DPA — анализ потребления тока</text>
+  <text
+     x="490.85434"
+     y="284.46365"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text42">Fault injection: glitch, лазер, температура</text>
+  <text
+     x="485.76138"
+     y="293.09744"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#1a2030"
+     id="text43">при срабатывании – стирание ключей</text>
+  <!-- Защита alarm → CPU -->
+  <path
+     d="M 393.05779,266.42486 Q 368.71493,250.8292 346.80638,230.03498"
+     fill="none"
+     stroke="#b8821c"
+     stroke-width="2.24986"
+     stroke-dasharray="6, 3"
+     marker-end="url(#arr-Warn)"
+     id="path43" />
+  <!-- CPU → I/O controller -->
+  <!-- Contact pad → I/O controller -->
+  <path
+     d="m 176.41493,111.11155 h 30 l 0.87323,178.31123 h 27.18306"
+     fill="none"
+     stroke="#4e63d9"
+     stroke-width="2"
+     marker-end="url(#arr-AccentA)"
+     marker-start="url(#arr-AccentA-s)"
+     id="path44" />
+  <!-- Antenna → I/O controller -->
+  <path
+     d="m 176.50596,302.95313 h 20.78536 l 10.76924,-0.0151 26.43131,0.17533"
+     fill="none"
+     stroke="#4e63d9"
+     stroke-width="1.98237"
+     marker-end="url(#arr-AccentA)"
+     marker-start="url(#arr-AccentA-s)"
+     id="path45" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#line39"
+     id="use1"
+     transform="matrix(-0.00265022,0.9999054,-1.0001311,0.01375466,490.34088,-121.99777)" />
 </svg>

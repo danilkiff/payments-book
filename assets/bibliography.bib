@@ -532,31 +532,39 @@
 % --- Часть II: EMV ---
 
 @online{emvco-book1,
-  author = {{EMVCo}},
-  title  = {{EMV} Integrated Circuit Card Specifications for Payment Systems, Book~1: Application Independent {ICC} to Terminal Interface Requirements},
-  url    = {https://www.emvco.com/emv-technologies/contact/},
-  year   = {2024}
+  author  = {{EMVCo}},
+  title   = {{EMV} Integrated Circuit Card Specifications for Payment Systems, Book~1: Application Independent {ICC} to Terminal Interface Requirements},
+  version = {4.4},
+  url     = {https://www.emvco.com/specifications/book-1-application-independent-icc-to-terminal-interface-requirements-2/},
+  year    = {2022},
+  note    = {Published 27 Oct 2022; текущая редакция контактных EMV-спецификаций}
 }
 
 @online{emvco-book2,
-  author = {{EMVCo}},
-  title  = {{EMV} Integrated Circuit Card Specifications for Payment Systems, Book~2: Security and Key Management},
-  url    = {https://www.emvco.com/emv-technologies/contact/},
-  year   = {2024}
+  author  = {{EMVCo}},
+  title   = {{EMV} Integrated Circuit Card Specifications for Payment Systems, Book~2: Security and Key Management},
+  version = {4.4},
+  url     = {https://www.emvco.com/specifications/book-2-security-and-key-management-2/},
+  year    = {2022},
+  note    = {Published 27 Oct 2022}
 }
 
 @online{emvco-book3,
-  author = {{EMVCo}},
-  title  = {{EMV} Integrated Circuit Card Specifications for Payment Systems, Book~3: Application Specification},
-  url    = {https://www.emvco.com/emv-technologies/contact/},
-  year   = {2024}
+  author  = {{EMVCo}},
+  title   = {{EMV} Integrated Circuit Card Specifications for Payment Systems, Book~3: Application Specification},
+  version = {4.4},
+  url     = {https://www.emvco.com/specifications/book-3-application-specification-2/},
+  year    = {2022},
+  note    = {Published 27 Oct 2022}
 }
 
 @online{emvco-book4,
-  author = {{EMVCo}},
-  title  = {{EMV} Integrated Circuit Card Specifications for Payment Systems, Book~4: Cardholder, Attendant, and Acquirer Interface Requirements},
-  url    = {https://www.emvco.com/emv-technologies/contact/},
-  year   = {2024}
+  author  = {{EMVCo}},
+  title   = {{EMV} Integrated Circuit Card Specifications for Payment Systems, Book~4: Cardholder, Attendant, and Acquirer Interface Requirements},
+  version = {4.3},
+  url     = {https://www.emvco.com/specifications/book-4-cardholder-attendant-and-acquirer-interface-requirements/},
+  year    = {2011},
+  note    = {Published 27 Nov 2011; Book~4 не пересматривался в~2022 вместе с~Books~1--3}
 }
 
 @online{emvco-why-emv,
@@ -579,6 +587,66 @@
   title  = {{EMVCo} Security Evaluation FAQs for {ECC}},
   url    = {https://www.emvco.com/wp-content/uploads/2022/10/ECC-General-FAQ.pdf},
   year   = {2022}
+}
+
+@online{emvco-cpa,
+  author = {{EMVCo}},
+  title  = {Chip \& Platform Approval Process},
+  url    = {https://www.emvco.com/processes/chip-platform-approval-process/},
+  year   = {2025},
+  note   = {Официальная страница процесса; реестры одобренных IC (ICCN) и~Platform (PCN); с~2017 года процесс EMVCo Security Evaluation аккредитован по~ISO/IEC~17065}
+}
+
+@online{cc-pp-0084,
+  author = {{Eurosmart} and {BSI}},
+  title  = {Security {IC} Platform Protection Profile with Augmentation Packages ({BSI-CC-PP-0084-2014})},
+  url    = {https://www.bsi.bund.de/SharedDocs/Zertifikate_CC/PP/aktuell/PP_0084.html},
+  year   = {2014},
+  note   = {Действующий Common~Criteria Protection Profile для платёжных интегральных микросхем; типичная оценка EAL\,4+ с~AVA\_VAN.5}
+}
+
+@online{nxp-jcop4-emv,
+  author = {{NXP Semiconductors}},
+  title  = {{JCOP 4} {EMV}: Advanced {Java Card}\texttrademark\ {OS} for Payment and Transit},
+  url    = {https://smartcardamerica.com/wp-content/uploads/2022/05/NXP-%C2%AE-JCOP%C2%AE-Java-Card%E2%84%A2-NXPJCOP4LFA4.pdf},
+  year   = {2019},
+  note   = {Промышленный пример: Java~Card~3.0.5 Classic, GlobalPlatform~2.3, EMVCo platform~approval, Common~Criteria EAL\,6+ с~AVA\_VAN.5; характерное время M/Chip-транзакции $<200$~мс}
+}
+
+@online{globalplatform-card,
+  author = {{GlobalPlatform}},
+  title  = {{GlobalPlatform} Card Specification},
+  version = {2.3.1},
+  url    = {https://globalplatform.org/specs-library/card-specification/},
+  year   = {2018},
+  note   = {Базовая спецификация управления контентом смарт-карты: security domains, защищённые каналы SCP02/SCP03, загрузка/активация/блокировка аплетов}
+}
+
+@online{bond-chipandskim-2014,
+  author = {Bond, Mike and Choudary, Omar and Murdoch, Steven~J. and Skorobogatov, Sergei and Anderson, Ross},
+  title  = {Chip and Skim: Cloning {EMV} Cards with the Pre-play Attack},
+  booktitle = {Proceedings of the 35th {IEEE} Symposium on Security and Privacy},
+  pages  = {49--64},
+  year   = {2014},
+  doi    = {10.1109/SP.2014.11},
+  url    = {https://www.cl.cam.ac.uk/~osc22/docs/preplay_oakland14.pdf},
+  note   = {Cambridge Computer Laboratory; полевые замеры предсказуемости UN на банкоматах и~POS, две вариации pre-play-атаки}
+}
+
+@online{visa-emv-fraud-2019,
+  author = {{Visa Inc.}},
+  title  = {Chip Technology Helped Reduce Counterfeit Fraud by~80~percent},
+  url    = {https://usa.visa.com/visa-everywhere/blog/bdp/2019/02/04/chip_technology_help-IFzO.html},
+  year   = {2019},
+  note   = {Официальный материал Visa: counterfeit-фрод в~физическом канале у~чип-активных мерчантов США упал на~80\,\% к~декабрю~2018 по сравнению с~до-EMV уровнем}
+}
+
+@online{american-banker-emv-2019,
+  author = {{American Banker / PaymentsSource}},
+  title  = {{EMV}'s proving its mettle in counterfeit reduction},
+  url    = {https://www.americanbanker.com/payments/news/emvs-proving-its-mettle-in-counterfeit-reduction},
+  year   = {2019},
+  note   = {Со ссылкой на данные Visa Q1~2019: counterfeit-фрод у~апгрейженных POS снизился на~87\,\% к~марту~2019 по сравнению с~сентябрём~2015, и~на~62\,\% по всей стране}
 }
 
 @online{emvco-bulletins-archive,
