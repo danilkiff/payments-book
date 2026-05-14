@@ -74,8 +74,8 @@
 <text x="60" y="310" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">(без</text>
 <text x="60" y="321" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">редиректа)</text>
 <line x1="100" y1="285" x2="108" y2="285" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="60" y="340" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">ФАПИ.ПАОК</text>
-<text x="60" y="351" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">альтернатива</text>
+<text x="60" y="340" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">ФАПИ.ПАОК</text>
+<text x="60" y="351" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">альтернатива</text>
 
 <line x1="200" y1="492" x2="200" y2="615" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 

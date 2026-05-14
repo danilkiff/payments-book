@@ -23,7 +23,7 @@
 <text x="360.0" y="130.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">decline?</text>
 
 <!-- hard -> Уведомить (правая ветка вниз) -->
-<text x="495.0" y="115.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#C15462">hard</text>
+<text x="495.0" y="115.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">hard</text>
 <text x="495.0" y="128.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">карта закрыта</text>
 <path d="M 470 120 C 720 120, 740 220, 720 480" fill="none" stroke="#C15462" stroke-width="1.5" marker-end="url(#arr-Bad)"/>
 
@@ -53,7 +53,7 @@
 <text x="555.0" y="335.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Merchant Advice Code</text>
 
 <!-- MAC 01 -> Account Updater (влево) -->
-<text x="440.0" y="318.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#2F8B67">MAC 01</text>
+<text x="440.0" y="318.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 01</text>
 <text x="440.0" y="330.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">new account info</text>
 <line x1="445.0" y1="325.0" x2="370.0" y2="395.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <rect x="220.0" y="395.0" width="160" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
@@ -61,25 +61,25 @@
 <text x="300.0" y="432.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">VAU / ABU → повтор</text>
 
 <!-- MAC 24-30 -> ждать N (вниз и чуть влево) -->
-<text x="555.0" y="382.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#B8821C">MAC 24–30</text>
+<text x="555.0" y="382.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 24–30</text>
 <line x1="555.0" y1="365.0" x2="525.0" y2="393.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
 <rect x="410.0" y="395.0" width="200" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="510.0" y="415.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Ждать N</text>
 <text x="510.0" y="432.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">1ч / 24ч / 2–10 дн → повтор</text>
 
 <!-- MAC 03 -> Уведомить (вправо, к правой колонке) -->
-<text x="670.0" y="320.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#C15462">MAC 03</text>
+<text x="670.0" y="320.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 03</text>
 <text x="670.0" y="332.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">do not honor</text>
 <path d="M 665 325 C 760 340, 760 440, 720 476" fill="none" stroke="#C15462" stroke-width="1.5" marker-end="url(#arr-Bad)"/>
 
 <!-- Прочее (другие MAC / нет MAC) -> Повтор с лимитами -->
 <path d="M 625 343 C 665 400, 665 450, 615 478" fill="none" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="668.0" y="425.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">иначе</text>
+<text x="668.0" y="425.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">иначе</text>
 
 <!-- Повтор с лимитами -->
 <rect x="395.0" y="478.0" width="220" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="505.0" y="498.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Повтор с лимитами</text>
-<text x="505.0" y="515.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">Visa: 15/30 дн · MC: 10/24 ч + 35/30 дн</text>
+<text x="505.0" y="515.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Visa: 15/30 дн · MC: 10/24 ч + 35/30 дн</text>
 
 <!-- Уведомить клиента (правая колонка, ниже) -->
 <rect x="635.0" y="478.0" width="170" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>

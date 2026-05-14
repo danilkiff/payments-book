@@ -12,41 +12,41 @@
 
 <!-- Row 1: Pending -> Earned -> Available -->
 <rect x="20.0" y="40.0" width="120" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="80.0" y="71.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Pending</text>
+<text x="80.0" y="71.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Ожидание</text>
 
 <rect x="200.0" y="40.0" width="120" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="260.0" y="71.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Earned</text>
+<text x="260.0" y="71.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Заработано</text>
 
 <rect x="380.0" y="40.0" width="120" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="440.0" y="71.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Available</text>
+<text x="440.0" y="71.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Доступно</text>
 
 <!-- Voided (top-left below Pending or to the left bottom) -->
 <rect x="20.0" y="160.0" width="120" height="50" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="80.0" y="183.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Voided</text>
-<text x="80.0" y="199.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">/ Expired</text>
+<text x="80.0" y="183.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Аннулирован</text>
+<text x="80.0" y="199.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">/ Истёк</text>
 
 <!-- Refunded terminal (right) -->
 <rect x="560.0" y="40.0" width="200" height="50" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="660.0" y="64.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Refunded</text>
+<text x="660.0" y="64.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Возврат</text>
 <text x="660.0" y="80.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">инициирует продавец</text>
 
 <!-- Charged Back terminal (right, lower) with representment tail -->
 <rect x="560.0" y="160.0" width="200" height="50" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="660.0" y="184.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Charged Back</text>
+<text x="660.0" y="184.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Чарджбэк</text>
 <text x="660.0" y="200.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">приходит извне</text>
 
 <!-- Chargeback dispute tail -->
 <rect x="560.0" y="230.0" width="200" height="80" rx="8" fill="#F5F7FD" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3"/>
 <text x="660.0" y="248.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Цикл оспаривания</text>
-<text x="660.0" y="265.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">representment →</text>
-<text x="660.0" y="278.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">pre-arbitration →</text>
-<text x="660.0" y="291.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">arbitration</text>
-<line x1="660.0" y1="210.0" x2="660.0" y2="230.0" stroke="#C15462" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#arr-Bad-s)"/>
+<text x="660.0" y="265.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">повторное →</text>
+<text x="660.0" y="278.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">пре-арб →</text>
+<text x="660.0" y="291.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">арбитраж</text>
+<line x1="660.0" y1="210.0" x2="660.0" y2="230.0" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-Bad-s)"/>
 
 <!-- Reserve block with sub-rows -->
 <rect x="200.0" y="270.0" width="300" height="160" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="350.0" y="291.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Reserve</text>
-<line x1="215.0" y1="300.0" x2="485.0" y2="300.0" stroke="#7759D6" stroke-width="1" stroke-opacity="0.5"/>
+<text x="350.0" y="291.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Резерв</text>
+<line x1="215.0" y1="300.0" x2="485.0" y2="300.0" stroke="#7759D6" stroke-width="1"/>
 
 <rect x="215.0" y="308.0" width="270" height="34" rx="6" fill="#ffffff" stroke="#7759D6" stroke-width="1"/>
 <text x="225.0" y="323.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">refund reserve</text>
@@ -83,7 +83,7 @@
 
 <!-- Available -> Charged Back -->
 <path d="M 500.0,75.0 L 530.0,75.0 L 530.0,185.0 L 560.0,185.0" fill="none" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
-<text x="540.0" y="135.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">chargeback</text>
+<text x="540.0" y="135.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">чарджбэк</text>
 
 <!-- Partial refund self-loop on Available -->
 <path d="M 410.0,40.0 Q 410.0,10.0 440.0,10.0 Q 470.0,10.0 470.0,40.0" fill="none" stroke="#C15462" stroke-width="1.5" marker-end="url(#arr-Bad-s)"/>
@@ -104,7 +104,7 @@
 
 <!-- Race annotation: already_refunded -->
 <rect x="560.0" y="105.0" width="200" height="40" rx="6" fill="#F5F7FD" stroke="#C15462" stroke-width="1"/>
-<text x="660.0" y="121.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#C15462">Bad: гонка refund ↔ chargeback</text>
+<text x="660.0" y="121.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Конфликт: гонка refund ↔ chargeback</text>
 <text x="660.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">статус already_refunded</text>
 
 <!-- Legend / note in bottom-left -->

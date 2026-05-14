@@ -7,7 +7,7 @@
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
   <marker id="arr-Bad-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#C15462"/></marker>
 </defs>
-<text x="262.0" y="22.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Stored Credential Framework</text>
+<text x="262.0" y="22.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Хранение реквизитов (SCF)</text>
 
 <!-- SCA-плашка над CIT -->
 <rect x="22.0" y="38.0" width="110" height="20" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
@@ -17,8 +17,8 @@
 <rect x="22.0" y="70.0" width="110" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="77.0" y="92.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">CIT</text>
 <text x="77.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">initial transaction</text>
-<text x="77.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#4E63D9">согласие + NTID</text>
-<text x="77.0" y="147.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#4E63D9">тип MIT: recurring / installment / unscheduled</text>
+<text x="77.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">согласие + NTID</text>
+<text x="77.0" y="147.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">MIT: рег. / рассрочка / нерегул.</text>
 
 <!-- Линия CIT -> MIT1 + временная метка -->
 <line x1="132.0" y1="95.0" x2="182.0" y2="95.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
@@ -28,7 +28,7 @@
 <rect x="192.0" y="70.0" width="90" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
 <text x="237.0" y="92.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIT₁</text>
 <text x="237.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">subsequent</text>
-<text x="237.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">NTID ref</text>
+<text x="237.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">NTID ref</text>
 
 <!-- Линия MIT1 -> MIT2 -->
 <line x1="282.0" y1="95.0" x2="322.0" y2="95.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
@@ -38,7 +38,7 @@
 <rect x="332.0" y="70.0" width="90" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
 <text x="377.0" y="92.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIT₂</text>
 <text x="377.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">subsequent</text>
-<text x="377.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">NTID ref</text>
+<text x="377.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">NTID ref</text>
 
 <!-- Линия MIT2 -> MIT3 -->
 <line x1="422.0" y1="95.0" x2="462.0" y2="95.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
@@ -48,7 +48,7 @@
 <rect x="472.0" y="70.0" width="90" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
 <text x="517.0" y="92.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIT₃</text>
 <text x="517.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">subsequent</text>
-<text x="517.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">NTID ref</text>
+<text x="517.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">NTID ref</text>
 
 <!-- Fail / decline ветка от MIT₂ -->
 <line x1="377.0" y1="120.0" x2="377.0" y2="175.0" stroke="#C15462" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Bad)"/>

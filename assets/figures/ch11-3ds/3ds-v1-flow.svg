@@ -55,7 +55,7 @@
 
 <!-- 5: ACS -> Браузер: redirect/pop-up -->
 <line x1="490" y1="175" x2="162" y2="175" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="326" y="170" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">redirect / pop-up</text>
+<text x="326" y="170" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">редирект / всплывающее окно</text>
 
 <!-- 6: Держатель -> Браузер -> ACS: пароль/OTP -->
 <line x1="60" y1="200" x2="158" y2="200" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>

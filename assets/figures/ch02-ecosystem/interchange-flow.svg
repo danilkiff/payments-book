@@ -48,19 +48,6 @@
          fill="#b8821c"
          id="path3" />
     </marker>
-    <marker
-       id="arr-AccentB-4"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#7759d6"
-         id="path2-8" />
-    </marker>
   </defs>
   <rect
      x="15.736479"
@@ -77,7 +64,7 @@
      x="72.723106"
      y="40.894238"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="bold"
      fill="#1a2030"
@@ -97,7 +84,7 @@
      x="80.305649"
      y="141.72037"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="bold"
      fill="#1a2030"
@@ -117,7 +104,7 @@
      x="261.11349"
      y="132.02602"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="bold"
      fill="#1a2030"
@@ -143,7 +130,7 @@
      x="440.30563"
      y="141.72037"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="bold"
      fill="#1a2030"
@@ -152,7 +139,7 @@
      x="57.675556"
      y="85.992706"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      fill="#1a2030"
      id="text7">MSC</text>
@@ -172,14 +159,13 @@
      y2="110.24182"
      stroke="#7759d6"
      stroke-width="2"
-     marker-end="url(#arr-AccentB-4)"
-     id="line7-9"
-     style="marker-end:url(#arr-AccentB-4)" />
+     marker-end="url(#arr-AccentB)"
+     id="line7-9" />
   <text
      x="171.05899"
      y="102.62675"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      fill="#1a2030"
      id="text8">комиссия сети</text>
@@ -196,7 +182,7 @@
      x="350.30563"
      y="101.8734"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      fill="#1a2030"
      id="text9">комиссия сети</text>
@@ -212,8 +198,8 @@
      x="260.30563"
      y="195.13953"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      fill="#1a2030"
-     id="text10">interchange</text>
+     id="text10">интерчейндж</text>
 </svg>

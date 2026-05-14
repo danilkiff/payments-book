@@ -18,14 +18,14 @@
 <line x1="120.0" y1="42.0" x2="155.0" y2="42.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <line x1="255.0" y1="42.0" x2="290.0" y2="42.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <line x1="390.0" y1="42.0" x2="425.0" y2="42.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<rect x="20.0" y="85.0" width="505" height="100" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-opacity="0.40" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="28.0" y="99.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#C15462">Friction points:</text>
+<rect x="20.0" y="85.0" width="505" height="100" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="28.0" y="99.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030" font-weight="bold">Точки трения:</text>
 <rect x="30.0" y="108.0" width="150" height="28" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1"/>
-<text x="105.0" y="125.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#C15462">полноэкранный редирект</text>
+<text x="105.0" y="125.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">полноэкранный редирект</text>
 <rect x="195.0" y="108.0" width="140" height="28" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1"/>
-<text x="265.0" y="125.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#C15462">статический пароль</text>
+<text x="265.0" y="125.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">статический пароль</text>
 <rect x="350.0" y="108.0" width="160" height="28" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1"/>
-<text x="430.0" y="125.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#C15462">мобильный UX</text>
+<text x="430.0" y="125.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">мобильный UX</text>
 <rect x="190.0" y="146.0" width="170" height="28" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1"/>
-<text x="275.0" y="163.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#C15462">фишинг страниц ACS</text>
+<text x="275.0" y="163.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">фишинг страниц ACS</text>
 </svg>

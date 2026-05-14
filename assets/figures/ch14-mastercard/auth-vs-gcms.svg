@@ -19,15 +19,15 @@
 <text x="70.0" y="111.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">acquirer</text>
 
 <line x1="122.0" y1="93.0" x2="180.0" y2="93.0" stroke="#7759D6" stroke-width="1.5" marker-end="url(#arr-AccentB)"/>
-<text x="151.0" y="87.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">0100</text>
+<text x="151.0" y="87.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">0100</text>
 
 <rect x="183.0" y="73.0" width="200" height="56" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
 <text x="283.0" y="91.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Banknet</text>
 <text x="283.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Authorization Platform</text>
-<text x="283.0" y="120.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">switch / online авторизация</text>
+<text x="283.0" y="120.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">коммутатор / онлайн авторизация</text>
 
 <line x1="385.0" y1="93.0" x2="440.0" y2="93.0" stroke="#7759D6" stroke-width="1.5" marker-end="url(#arr-AccentB)"/>
-<text x="412.0" y="87.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">0100</text>
+<text x="412.0" y="87.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">0100</text>
 
 <rect x="443.0" y="78.0" width="100" height="46" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
 <text x="493.0" y="96.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Эмитент</text>
@@ -35,9 +35,9 @@
 
 <!-- 0110 response arrow back along bottom of row 1 -->
 <line x1="441.0" y1="115.0" x2="385.0" y2="115.0" stroke="#7759D6" stroke-width="1.5" marker-end="url(#arr-AccentB)" stroke-dasharray="6,3"/>
-<text x="413.0" y="138.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">0110</text>
+<text x="413.0" y="138.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">0110</text>
 <line x1="183.0" y1="115.0" x2="122.0" y2="115.0" stroke="#7759D6" stroke-width="1.5" marker-end="url(#arr-AccentB)" stroke-dasharray="6,3"/>
-<text x="151.0" y="138.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">0110</text>
+<text x="151.0" y="138.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">0110</text>
 
 <!-- STIP side note -->
 <rect x="183.0" y="152.0" width="200" height="36" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
@@ -54,22 +54,22 @@
 <text x="70.0" y="244.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Эквайер</text>
 <text x="70.0" y="259.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">acquirer</text>
 <line x1="122.0" y1="240.0" x2="180.0" y2="240.0" stroke="#B8821C" stroke-width="1.5" marker-end="url(#arr-Warn)"/>
-<text x="151.0" y="233.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">1240 First Presentment</text>
+<text x="151.0" y="233.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">1240</text>
 
 <rect x="183.0" y="221.0" width="200" height="56" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="283.0" y="240.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">GCMS</text>
 <text x="283.0" y="255.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Clearing</text>
-<text x="283.0" y="269.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">IPM batch, async</text>
+<text x="283.0" y="269.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">IPM пакет, асинхр.</text>
 
 <line x1="441.0" y1="240.0" x2="385.0" y2="240.0" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="413.0" y="233.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#B8821C">1442 Chargeback (async)</text>
+<text x="413.0" y="233.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">1442 CB</text>
 <rect x="443.0" y="226.0" width="100" height="46" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="493.0" y="244.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Эмитент</text>
 <text x="493.0" y="259.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">issuer</text>
 
 <!-- GCMS → SAM vertical arrow -->
 <line x1="283.0" y1="278.0" x2="283.0" y2="305.0" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="293.0" y="295.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">cleared positions</text>
+<text x="293.0" y="295.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">очищенные позиции</text>
 
 <!-- Row 3: Settlement (Good) -->
 <text x="20.0" y="308.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Расчёт</text>
@@ -77,13 +77,13 @@
 <text x="70.0" y="334.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Эквайер</text>
 <text x="70.0" y="349.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">net position</text>
 <line x1="122.0" y1="335.0" x2="180.0" y2="335.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-Good)"/>
-<text x="151.0" y="328.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">funds</text>
+<text x="151.0" y="328.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">средства</text>
 <rect x="183.0" y="311.0" width="200" height="56" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="283.0" y="330.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">SAM</text>
 <text x="283.0" y="345.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Settlement Account Management</text>
-<text x="283.0" y="359.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">netting и расчётные циклы</text>
+<text x="283.0" y="359.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">неттинг и расчётные циклы</text>
 <line x1="441.0" y1="335.0" x2="385.0" y2="335.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-Good)"/>
-<text x="413.0" y="328.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">funds</text>
+<text x="413.0" y="328.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">средства</text>
 <rect x="443.0" y="316.0" width="100" height="46" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="493.0" y="334.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Эмитент</text>
 <text x="493.0" y="349.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">net position</text>

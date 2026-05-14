@@ -6,18 +6,18 @@
 <ellipse cx="380.0" cy="80.0" rx="7.0" ry="7.0" fill="#C15462" stroke="#C15462" stroke-width="2"/>
 <ellipse cx="480.0" cy="80.0" rx="7.0" ry="7.0" fill="#1A2030" stroke="#1A2030" stroke-width="2"/>
 <rect x="20.0" y="20.0" width="80" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="60.0" y="41.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Inquiry</text>
+<text x="60.0" y="41.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Запрос</text>
 <rect x="115.0" y="20.0" width="90" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="160.0" y="41.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Чарджбэк</text>
 <rect x="220.0" y="20.0" width="110" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
 <text x="275.0" y="34.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Повторное</text>
 <text x="275.0" y="49.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">представление</text>
 <rect x="340.0" y="20.0" width="80" height="40" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
-<text x="380.0" y="41.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Pre-arb</text>
+<text x="380.0" y="41.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Пре-арбитраж</text>
 <rect x="435.0" y="20.0" width="90" height="40" rx="8" fill="#E8ECF7" stroke="#1A2030" stroke-width="2"/>
-<text x="480.0" y="41.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Arbitration</text>
+<text x="480.0" y="41.6" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Арбитраж</text>
 <text x="60.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">часы — дни</text>
-<text x="160.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">до 120 дней (cardholder)</text>
+<text x="160.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">до 120 дней (клиент)</text>
 <text x="275.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Visa 9/18 дн., MC 45 дн.</text>
 <text x="380.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">30 дней</text>
 <text x="480.0" y="107.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">финально</text>

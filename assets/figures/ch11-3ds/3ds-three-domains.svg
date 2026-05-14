@@ -13,9 +13,9 @@
 </defs>
 
 <!-- Три домена: panel-рамки -->
-<rect x="10" y="10" width="200" height="280" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
-<rect x="220" y="10" width="200" height="280" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-opacity="0.60" stroke-width="1"/>
-<rect x="430" y="10" width="200" height="280" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
+<rect x="10" y="10" width="200" height="280" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="1"/>
+<rect x="220" y="10" width="200" height="280" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
+<rect x="430" y="10" width="200" height="280" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-width="1"/>
 
 <!-- Заголовки доменов -->
 <text x="110" y="28" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Домен эквайера</text>
@@ -47,7 +47,7 @@
 <text x="530" y="71" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Эмитент</text>
 
 <!-- Браузер / SDK держателя (внизу, центр) -->
-<rect x="220" y="310" width="200" height="38" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<rect x="220" y="310" width="200" height="38" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="320" y="333" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Браузер / SDK держателя</text>
 
 <!-- Requestor -> 3DS Server (внутренняя связь) -->
@@ -55,7 +55,7 @@
 
 <!-- Эмитент <-> ACS: risk/decision (пунктир, вертикально, внутри домена эмитента) -->
 <line x1="530" y1="86" x2="530" y2="118" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="568" y="106" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">risk/decision</text>
+<text x="568" y="106" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">риск/решение</text>
 
 <!-- ===== Swim-lane: AReq (горизонталь, верхняя дорожка, y=132) ===== -->
 <!-- AReq: 3DS Server -> DS -->
@@ -88,7 +88,7 @@
 <!-- L-маршрут: из ACS вниз, далее по y=222 влево, далее вниз в браузер с левой стороны -->
 <path d="M 460,178 L 460,222 L 260,222 L 260,310" fill="none" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 <text x="362" y="217" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">3DS Method URL</text>
-<text x="362" y="229" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">(fingerprint устройства, до AReq)</text>
+<text x="362" y="229" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">(отпечаток устройства, до AReq)</text>
 
 <!-- ===== CReq / CRes (Warn-пунктир): пара параллельных стрелок ACS -> Браузер, маршрут справа ===== -->
 <!-- CReq: ACS (560,178) -> вниз -> y=265 -> влево -> вниз в браузер (390,310) -->
@@ -99,7 +99,7 @@
 <path d="M 410,310 L 410,285 L 590,285 L 590,180" fill="none" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 <text x="595" y="245" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">CRes</text>
 
-<text x="530" y="200" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">challenge-канал</text>
+<text x="530" y="200" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">канал вызова</text>
 <text x="530" y="211" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">ACS ↔ устройство</text>
 
 </svg>

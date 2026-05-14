@@ -5,12 +5,12 @@
 </defs>
 <text x="180.0" y="20.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Эскалация мониторинга споров</text>
 <!-- Level 5: Прекращение (top) -->
-<rect x="90.0" y="32.0" width="180" height="44" rx="8" fill="#C15462" stroke="#C15462" stroke-width="2"/>
-<text x="180.0" y="52.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Прекращение</text>
-<text x="180.0" y="68.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#ffffff">исключение из программы</text>
+<rect x="90.0" y="32.0" width="180" height="44" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
+<text x="180.0" y="52.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Прекращение</text>
+<text x="180.0" y="68.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">исключение из программы</text>
 <line x1="180.0" y1="98.0" x2="180.0" y2="80.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <!-- Level 4: Штрафы -->
-<rect x="80.0" y="100.0" width="200" height="44" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
+<rect x="80.0" y="100.0" width="200" height="68" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
 <text x="180.0" y="120.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Штрафы</text>
 <text x="180.0" y="136.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">$25–100 за CB; VAMP / MC ECP</text>
 <text x="180.0" y="156.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">иллюстративно, исторические VDMP/MC ECM — варьируется по схеме</text>

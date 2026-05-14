@@ -22,7 +22,7 @@
 <!-- VIC -->
 <rect x="200" y="66" width="80" height="32" rx="6" fill="#FFFFFF" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="240" y="80" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">VIC</text>
-<text x="240" y="92" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">multi-DC switch</text>
+<text x="240" y="92" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">мульти-ЦОД коммутатор</text>
 
 <!-- STIP -->
 <rect x="290" y="66" width="75" height="32" rx="6" fill="#FFFFFF" stroke="#B8821C" stroke-width="1.5"/>
@@ -32,10 +32,10 @@
 <!-- VAA -->
 <rect x="375" y="66" width="75" height="32" rx="6" fill="#FFFFFF" stroke="#5C647A" stroke-width="1.5"/>
 <text x="412" y="80" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">VAA</text>
-<text x="412" y="92" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">risk scoring</text>
+<text x="412" y="92" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">скоринг рисков</text>
 
 <!-- разделитель -->
-<line x1="200" y1="115" x2="440" y2="115" stroke="#5C647A" stroke-width="1" stroke-opacity="0.5"/>
+<line x1="200" y1="115" x2="440" y2="115" stroke="#5C647A" stroke-width="1"/>
 
 <!-- BASE II (клиринг) -->
 <text x="320" y="132" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">BASE II (клиринг)</text>
@@ -71,11 +71,11 @@
 <line x1="85" y1="220" x2="200" y2="220" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-AccentB)"/>
 <line x1="440" y1="220" x2="555" y2="220" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3"/>
 <line x1="555" y1="220" x2="555" y2="113" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-AccentB)"/>
-<text x="320" y="216" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7759D6">расчёт через VSS — отдельный трек</text>
+<text x="320" y="216" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">расчёт через VSS — отдельный трек</text>
 
 <!-- Поясняющая плашка -->
-<rect x="20" y="236" width="600" height="28" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-opacity="0.50" stroke-width="1" stroke-dasharray="4,3"/>
-<text x="30" y="252" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">VIC — VisaNet Integrated Payments node (multi-DC); STIP — stand-in processing при недоступности эмитента;</text>
+<rect x="20" y="236" width="600" height="28" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="30" y="252" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">VIC — VisaNet Integrated Payments node (мульти-ЦОД); STIP — стэнд-ин обработка при недоступности эмитента;</text>
 <text x="30" y="262" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">VAA — Visa Advanced Authorization (риск-скоринг); VSS — VisaNet Settlement Service.</text>
 
 </svg>

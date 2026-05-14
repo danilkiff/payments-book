@@ -29,7 +29,7 @@
 <text x="640.0" y="68.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">день 5</text>
 
 <!-- ====== Layer 1: Шлюз ====== -->
-<rect x="20.0" y="90.0" width="780" height="70" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-opacity="0.30" stroke-width="2"/>
+<rect x="20.0" y="90.0" width="780" height="70" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="30.0" y="108.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Шлюз</text>
 <text x="30.0" y="122.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">фактически: {status, id, decline_code, timestamp, event_id}; здесь показан один статус для контраста</text>
 
@@ -41,7 +41,7 @@
 <text x="400.0" y="180.0" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="2" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">одна транзакция → парные проводки</text>
 
 <!-- ====== Layer 2: Продуктовый реестр (двойная запись) ====== -->
-<rect x="20.0" y="195.0" width="780" height="170" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-opacity="0.30" stroke-width="2"/>
+<rect x="20.0" y="195.0" width="780" height="170" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="30.0" y="213.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Продуктовый реестр (двойная запись: дебет = кредит)</text>
 
 <!-- Column header strip -->
@@ -78,7 +78,7 @@
 <text x="650.0" y="306.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">4 500 ₽</text>
 
 <!-- Row 4: Частичный возврат -->
-<text x="30.0" y="328.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#C15462">Частич. возврат</text>
+<text x="30.0" y="328.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Частич. возврат</text>
 <rect x="120.0" y="318.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#C15462" stroke-width="1"/>
 <text x="200.0" y="332.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_available</text>
 <line x1="280.0" y1="328.0" x2="320.0" y2="328.0" stroke="#C15462" stroke-width="1" marker-end="url(#arr-Muted-s)"/>
@@ -101,7 +101,7 @@
 <text x="400.0" y="385.0" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="2" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">бухгалтерская трансляция (не 1:1)</text>
 
 <!-- ====== Layer 3: РСБУ (банковский учёт по 809-П) ====== -->
-<rect x="20.0" y="400.0" width="780" height="130" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-opacity="0.30" stroke-width="2"/>
+<rect x="20.0" y="400.0" width="780" height="130" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="30.0" y="418.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Бухгалтерский учёт банка по РСБУ (Положение 809-П)</text>
 
 <!-- RSBU account chips: row 1 -->

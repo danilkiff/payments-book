@@ -7,26 +7,26 @@
 <line x1="300" y1="44" x2="300" y2="80" stroke="#7759D6" stroke-width="1"/>
 <line x1="400" y1="44" x2="400" y2="80" stroke="#7759D6" stroke-width="1"/>
 <text x="250" y="60.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">IMK-AC</text>
-<text x="250" y="75.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">cryptogram</text>
+<text x="250" y="75.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">криптограмма</text>
 <text x="350" y="60.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">IMK-SMI</text>
-<text x="350" y="75.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">SM integrity</text>
+<text x="350" y="75.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">целостность SM</text>
 <text x="450" y="60.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">IMK-SMC</text>
-<text x="450" y="75.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">SM confidentiality</text>
+<text x="450" y="75.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">конфиденциальность SM</text>
 
 <rect x="70" y="210" width="200" height="64" rx="10" fill="#E8ECF7" stroke="none"/>
 <rect x="260" y="210" width="200" height="64" rx="10" fill="#E8ECF7" stroke="none"/>
 <rect x="450" y="210" width="200" height="64" rx="10" fill="#E8ECF7" stroke="none"/>
 
 <rect x="85" y="108" width="170" height="48" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="170" y="127.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Card Key</text>
+<text x="170" y="127.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Ключ карты</text>
 <text x="170" y="144.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN 4561...0892 / PSN 01</text>
 
 <rect x="275" y="108" width="170" height="48" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="360" y="127.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Card Key</text>
+<text x="360" y="127.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Ключ карты</text>
 <text x="360" y="144.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN 5412...3456 / PSN 01</text>
 
 <rect x="465" y="108" width="170" height="48" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="550" y="127.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Card Key</text>
+<text x="550" y="127.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Ключ карты</text>
 <text x="550" y="144.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN 2200...7890 / PSN 02</text>
 
 <line x1="350" y1="84" x2="170" y2="108" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
@@ -36,28 +36,28 @@
 <line x1="350" y1="84" x2="550" y2="108" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="460" y="94" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">PAN+PSN</text>
 
-<rect x="80" y="220" width="90" height="44" rx="8" fill="#ffffff" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="125" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Session Key</text>
+<rect x="80" y="220" width="90" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="125" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Сеансовый ключ</text>
 <text x="125" y="252.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">ATC 0001</text>
 
-<rect x="170" y="220" width="90" height="44" rx="8" fill="#ffffff" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="215" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Session Key</text>
+<rect x="170" y="220" width="90" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="215" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Сеансовый ключ</text>
 <text x="215" y="252.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">ATC 0002</text>
 
-<rect x="270" y="220" width="90" height="44" rx="8" fill="#ffffff" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="315" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Session Key</text>
+<rect x="270" y="220" width="90" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="315" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Сеансовый ключ</text>
 <text x="315" y="252.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">ATC 0001</text>
 
-<rect x="360" y="220" width="90" height="44" rx="8" fill="#ffffff" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="405" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Session Key</text>
+<rect x="360" y="220" width="90" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="405" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Сеансовый ключ</text>
 <text x="405" y="252.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">ATC 0002</text>
 
-<rect x="460" y="220" width="90" height="44" rx="8" fill="#ffffff" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="505" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Session Key</text>
+<rect x="460" y="220" width="90" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="505" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Сеансовый ключ</text>
 <text x="505" y="252.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">ATC 0001</text>
 
-<rect x="550" y="220" width="90" height="44" rx="8" fill="#ffffff" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="595" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Session Key</text>
+<rect x="550" y="220" width="90" height="44" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="595" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Сеансовый ключ</text>
 <text x="595" y="252.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">ATC 0002</text>
 
 <line x1="170" y1="156" x2="125" y2="220" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>

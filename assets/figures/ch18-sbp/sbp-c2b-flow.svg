@@ -7,10 +7,10 @@
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
 </defs>
-<rect x="15.0" y="20.0" width="195" height="140" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.35" stroke-width="1"/>
-<rect x="222.0" y="20.0" width="120" height="140" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
-<rect x="354.0" y="20.0" width="120" height="140" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
-<rect x="486.0" y="20.0" width="140" height="140" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-opacity="0.40" stroke-width="1"/>
+<rect x="15.0" y="20.0" width="195" height="140" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="1"/>
+<rect x="222.0" y="20.0" width="120" height="140" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-width="1"/>
+<rect x="354.0" y="20.0" width="120" height="140" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#5C647A" stroke-width="1"/>
+<rect x="486.0" y="20.0" width="140" height="140" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="1"/>
 <rect x="28.0" y="80.0" width="80" height="34" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="68.0" y="101.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Сайт / касса</text>
 <rect x="28.0" y="124.0" width="80" height="34" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
@@ -33,10 +33,10 @@
 <line x1="332.0" y1="120.0" x2="364.0" y2="120.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 <line x1="464.0" y1="120.0" x2="496.0" y2="97.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <line x1="556.0" y1="114.0" x2="556.0" y2="124.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<rect x="355.0" y="48.0" width="118" height="22" rx="8" fill="#2F8B67" fill-opacity="0.08" stroke="#2F8B67" stroke-width="1"/>
-<text x="414.0" y="63.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#2F8B67">точка финальности</text>
+<rect x="355.0" y="48.0" width="118" height="22" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1"/>
+<text x="414.0" y="63.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">точка финальности</text>
 <line x1="414.0" y1="70.0" x2="414.0" y2="103.0" stroke="#2F8B67" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Good)"/>
-<text x="15.0" y="184.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Развилки (non-happy path)</text>
+<text x="15.0" y="184.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Развилки (нештатные пути)</text>
 <rect x="15.0" y="192.0" width="195" height="44" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
 <text x="112.5" y="210.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Отказ банка плательщика</text>
 <text x="112.5" y="224.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">недостаточно средств / антифрод / лимит</text>

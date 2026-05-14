@@ -22,7 +22,7 @@
 <text x="490" y="52" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">получателя</text>
 
 <!-- ===== Секция A: AFT (debit отправителя) ===== -->
-<text x="10" y="78" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#4E63D9">A. AFT — авторизация дебета отправителя</text>
+<text x="10" y="78" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">A. AFT — авторизация дебета отправителя</text>
 
 <!-- Lifelines секции A (верхний сегмент: до разрыва) -->
 <line x1="65" y1="84" x2="65" y2="148" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
@@ -33,18 +33,18 @@
 <line x1="67" y1="100" x2="278" y2="100" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="172" y="94" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">AFT 0100 (снять у отправителя)</text>
 
-<!-- Ответ AFT 0110 — authorization OK -->
+<!-- Ответ AFT 0110 — авторизация OK -->
 <line x1="278" y1="130" x2="67" y2="130" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="172" y="124" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Ответ AFT 0110 — authorization OK</text>
+<text x="172" y="124" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Ответ AFT 0110 — авторизация OK</text>
 <text x="172" y="143" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">подтверждение дебета != отправка кредита</text>
 
 <!-- ===== Разрыв: funding pool / задержка ===== -->
 <rect x="60" y="158" width="440" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3"/>
-<text x="280" y="174" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">funding pool / задержка</text>
-<text x="280" y="190" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">T+минуты … часы; alt-funding (ACH, баланс кошелька, банковский перевод)</text>
+<text x="280" y="174" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">пул фондирования / задержка</text>
+<text x="280" y="190" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">T+минуты … часы; альт-фондирование (ACH, баланс кошелька, банковский перевод)</text>
 
 <!-- ===== Секция B: OCT (кредит получателю) ===== -->
-<text x="10" y="216" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#7759D6">B. OCT — funds transfer на карту получателя</text>
+<text x="10" y="216" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">B. OCT — перевод средств на карту получателя</text>
 
 <!-- Lifelines секции B (нижний сегмент: после разрыва) -->
 <line x1="65" y1="222" x2="65" y2="308" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
@@ -66,7 +66,7 @@
 <text x="490" y="321" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">уведомление получателю</text>
 
 <!-- Поясняющая плашка по MTI -->
-<rect x="10" y="283" width="385" height="46" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-opacity="0.50" stroke-width="1" stroke-dasharray="4,3"/>
+<rect x="10" y="283" width="385" height="46" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 <text x="20" y="299" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">MTI зависит от процессора и контракта эквайера / эмитента:</text>
 <text x="20" y="312" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">AFT 0100/0110, OCT 0200/0210 (возможна пара 0100/0110).</text>
 <text x="20" y="325" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">AFT и OCT — две отдельные транзакции, не один синхронный обмен.</text>

@@ -12,15 +12,15 @@
 <!-- SAQ D — Merchant (Да от Q1): справа сверху -->
 <rect x="420" y="60" width="120" height="60" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
 <text x="480" y="82.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">SAQ D</text>
-<text x="480" y="96.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Merchant</text>
-<text x="480" y="110.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">store / process / transmit</text>
+<text x="480" y="96.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Мерчант</text>
+<text x="480" y="110.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">хранение / обработка / передача</text>
 <line x1="360" y1="90" x2="418" y2="90" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="389" y="83.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Да</text>
 
 <!-- SAQ D — Service Provider (отдельная ветка от Q1): слева -->
 <rect x="20" y="60" width="120" height="60" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2" stroke-dasharray="6,3"/>
 <text x="80" y="82.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">SAQ D</text>
-<text x="80" y="96.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Service Provider</text>
+<text x="80" y="96.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Сервис-провайдер</text>
 <text x="80" y="110.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">если ТСП = PSP</text>
 <line x1="200" y1="90" x2="142" y2="90" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
 <text x="171" y="83.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">если PSP</text>
@@ -73,7 +73,7 @@
 <rect x="20" y="495" width="100" height="56" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="70" y="517.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">SAQ A-EP</text>
 <text x="70" y="531.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">собственный JS,</text>
-<text x="70" y="543.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Direct Post, hosted fields</text>
+<text x="70" y="543.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Direct Post, hosted-поля</text>
 <path d="M 105,420 L 70,420 L 70,493" fill="none" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="55" y="455.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Нет</text>
 
@@ -105,8 +105,8 @@
 <!-- Сноска про SAQ A v4.0.1 r1 — под плашками SAQ A -->
 <rect x="40" y="735" width="255" height="45" rx="6" fill="#F5F7FD" stroke="#7759D6" stroke-width="1" stroke-dasharray="6,3"/>
 <text x="167" y="751.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#7759D6">SAQ A v4.0.1 r1 (январь 2025)</text>
-<text x="167" y="763.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">новое eligibility: защита сайта от скрипт-атак</text>
-<text x="167" y="774.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">(effective 31 марта 2025)</text>
+<text x="167" y="763.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">применимость: защита сайта от скрипт-атак</text>
+<text x="167" y="774.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">(с 31 марта 2025)</text>
 
 <!-- =================== Терминалы Q5: три плашки по правой колонке =================== -->
 <!-- Q5 → SAQ C-VT (Да): вниз -->
@@ -139,7 +139,7 @@
 <text x="280" y="832.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Дерево упрощено для типового мерчанта.</text>
 <text x="280" y="848.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Полный перечень SAQ для PCI DSS v4.0.1:</text>
 <text x="280" y="864.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">A, A-EP, B, B-IP, C, C-VT, P2PE, D-Merchant, D-Service Provider.</text>
-<text x="280" y="894.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">Для Level 1 и всех service providers применяется не SAQ,</text>
+<text x="280" y="894.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">Для Level 1 и всех сервис-провайдеров применяется не SAQ,</text>
 <text x="280" y="908.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">а ROC с QSA. Разграничение SAQ A vs A-EP — по FAQ 1291/1293;</text>
 <text x="280" y="922.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">SAQ B-IP — FAQ 1443; SAQ C-VT — FAQ 1229.</text>
 

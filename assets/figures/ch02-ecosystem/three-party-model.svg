@@ -20,7 +20,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#1A2030"
+         fill="#5C647A"
          id="path1" />
     </marker>
     <marker
@@ -33,7 +33,7 @@
        orient="auto">
       <path
          d="M 10,0 0,5 10,10 Z"
-         fill="#1A2030"
+         fill="#5C647A"
          id="path2" />
     </marker>
     <marker
@@ -62,32 +62,6 @@
          fill="#7759D6"
          id="path4" />
     </marker>
-    <marker
-       id="arr-AccentB-s-9"
-       viewBox="0 0 10 10"
-       refX="1"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 10,0 0,5 10,10 Z"
-         fill="#7759D6"
-         id="path4-5" />
-    </marker>
-    <marker
-       id="arr-AccentB-4"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#7759D6"
-         id="path3-9" />
-    </marker>
   </defs>
   <rect
      x="19.754829"
@@ -98,7 +72,7 @@
      fill="#F5F7FD"
      stroke="#5C647A"
      stroke-width="2"
-     stroke-dasharray="6, 3"
+     stroke-dasharray="6,3"
      id="rect4" />
   <rect
      x="60"
@@ -115,7 +89,7 @@
      x="155"
      y="79.635468"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      font-weight="normal"
      fill="#1A2030"
@@ -135,7 +109,7 @@
      x="665"
      y="79.635468"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      font-weight="normal"
      fill="#1A2030"
@@ -155,7 +129,7 @@
      x="413.5527"
      y="170.88606"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      font-weight="normal"
      fill="#1A2030"
@@ -164,7 +138,7 @@
      x="413.5527"
      y="191.08604"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      font-weight="normal"
      fill="#1A2030"
@@ -183,7 +157,7 @@
      x="410"
      y="67.335464"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      fill="#1A2030"
      id="text9">покупка</text>
@@ -204,15 +178,14 @@
      y2="180.48401"
      stroke="#7759D6"
      stroke-width="2"
-     marker-end="url(#arr-AccentB-4)"
-     marker-start="url(#arr-AccentB-s-9)"
-     id="line9-7"
-     style="marker-start:url(#arr-AccentB-s-9);marker-end:url(#arr-AccentB-4)" />
+     marker-end="url(#arr-AccentB)"
+     marker-start="url(#arr-AccentB-s)"
+     id="line9-7" />
   <text
      x="124.24768"
      y="121.84032"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      fill="#1A2030"
      id="text10">карта, счёт</text>
@@ -220,7 +193,7 @@
      x="706.39124"
      y="123.61667"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
      fill="#1A2030"
      id="text11">приём карт, расчёт</text>

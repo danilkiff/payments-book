@@ -91,7 +91,7 @@
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="bold"
-     fill="#7759D6"
+     fill="#1A2030"
      id="text6">TPP / СПУ</text>
   <text
      x="10.0"
@@ -106,7 +106,7 @@
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="bold"
-     fill="#4E63D9"
+     fill="#1A2030"
      id="text8">ASPSP / ПУ</text>
   <text
      x="10.0"
@@ -121,7 +121,7 @@
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="bold"
-     fill="#2F8B67"
+     fill="#1A2030"
      id="text10">ОПКЦ СБП</text>
   <!-- swim-lane horizontal guide lines -->
   <line
@@ -308,7 +308,7 @@
      x="540.89679"
      y="146"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      fill="#1A2030"
      id="text24">token endpoint:</text>
@@ -316,7 +316,7 @@
      x="540.89679"
      y="159"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      fill="#1A2030"
      id="text25">access_token (mTLS/DPoP)</text>
@@ -383,7 +383,7 @@
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="bold"
-     fill="#2F8B67"
+     fill="#1A2030"
      id="text30">через ОПКЦ СБП</text>
   <text
      x="560.0"
@@ -410,7 +410,7 @@
      x="661.20197"
      y="48"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="bold"
      fill="#1A2030"
@@ -419,7 +419,7 @@
      x="661.20197"
      y="62"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      fill="#1A2030"
      id="text33">Финальный статус</text>
@@ -550,10 +550,8 @@
      x="360.34216"
      y="382.02261"
      text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      fill="#1A2030"
-     id="text40"
-     transform="scale(1.0524039,0.95020553)"
-     style="stroke-width:1.0524">На каждом шаге подпись и шифрование выполняются по ГОСТ через сертифицированное СКЗИ; транспорт — ГОСТ TLS.</text>
+     id="text40">На каждом шаге подпись и шифрование выполняются по ГОСТ через сертифицированное СКЗИ; транспорт — ГОСТ TLS.</text>
 </svg>

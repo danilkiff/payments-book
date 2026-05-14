@@ -29,7 +29,7 @@
 
 <!-- Token Vault inside TSP -->
 <rect x="410" y="46" width="150" height="22" rx="4" fill="#F5F7FD" stroke="#7759D6" stroke-width="1.5"/>
-<text x="485" y="61" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Token Vault (внутри TSP)</text>
+<text x="485" y="61" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Хранилище токенов (внутри TSP)</text>
 
 <!-- Lifelines -->
 <line x1="65" y1="72" x2="65" y2="520" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
@@ -43,16 +43,16 @@
 
 <!-- Step 2: PAN + device data + Token Requestor ID -->
 <line x1="235" y1="135" x2="483" y2="135" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="360" y="120" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">PAN + device data</text>
+<text x="360" y="120" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">PAN + данные устройства</text>
 <text x="360" y="132" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">+ Token Requestor ID</text>
 
 <!-- Step 3: ID&V request -->
 <line x1="485" y1="170" x2="693" y2="170" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="589" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">ID&amp;V request</text>
+<text x="589" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">запрос ID&amp;V</text>
 
 <!-- Step 4: три исхода (frictionless / step-up / отказ) -->
 <line x1="695" y1="200" x2="487" y2="200" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="591" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">frictionless approve</text>
+<text x="591" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">одобрение без вызова</text>
 
 <line x1="695" y1="225" x2="487" y2="225" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 <text x="591" y="217" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">step-up (OTP / push)</text>

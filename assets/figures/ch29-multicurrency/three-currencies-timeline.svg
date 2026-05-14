@@ -54,7 +54,7 @@
 <text x="540.0" y="65.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">GBP</text>
 
 <!-- Billing note (billing currency = EUR / DCC option) tucked above clearing stage -->
-<text x="180.0" y="32.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#7759D6">Списание (billing)</text>
+<text x="180.0" y="32.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Списание (billing)</text>
 <text x="180.0" y="48.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">EUR (или DCC)</text>
 <text x="180.0" y="62.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">фиксация — clearing</text>
 

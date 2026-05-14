@@ -7,12 +7,12 @@
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
   <marker id="arr-Bad-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#C15462"/></marker>
 </defs>
-<text x="300.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Процессы разрешения споров</text>
-<text x="20.0" y="56.4" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#4E63D9">Visa VCR</text>
+<text x="300.0" y="31.9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Процессы разрешения споров</text>
+<text x="20.0" y="56.4" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Visa VCR</text>
 <rect x="20.0" y="65.0" width="80" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="60.0" y="78.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Order</text>
 <text x="60.0" y="90.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Insight</text>
-<line x1="100.0" y1="83.0" x2="115.0" y2="83.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<line x1="100.0" y1="83.0" x2="115.0" y2="83.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <polygon points="147.0,60.0 177.0,83.0 147.0,106.0 117.0,83.0" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
 <text x="147.0" y="84.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Решено?</text>
 <line x1="147.0" y1="106.0" x2="147.0" y2="124.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
@@ -23,23 +23,23 @@
 <text x="183.5" y="73.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Нет</text>
 <rect x="193.0" y="65.0" width="76" height="36" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1"/>
 <text x="231.0" y="84.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Чарджбэк</text>
-<line x1="269.0" y1="83.0" x2="282.0" y2="83.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<line x1="269.0" y1="83.0" x2="282.0" y2="83.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <rect x="285.0" y="65.0" width="86" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
 <text x="328.0" y="78.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Повторное</text>
 <text x="328.0" y="90.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">представление</text>
-<line x1="371.0" y1="83.0" x2="384.0" y2="83.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<line x1="371.0" y1="83.0" x2="384.0" y2="83.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <rect x="387.0" y="65.0" width="66" height="36" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1"/>
-<text x="420.0" y="84.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Pre-arb</text>
-<line x1="453.0" y1="83.0" x2="466.0" y2="83.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="420.0" y="84.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Пре-арб</text>
+<line x1="453.0" y1="83.0" x2="466.0" y2="83.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <rect x="469.0" y="65.0" width="70" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
 <text x="504.0" y="84.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Арбитраж</text>
 <text x="20.0" y="162.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">VCR также включает CDRN и RDR (на схеме упрощено)</text>
 <line x1="20.0" y1="175.0" x2="540.0" y2="175.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="20.0" y="196.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#B8821C">Mastercard</text>
-<rect x="20.0" y="205.0" width="80" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="20.0" y="196.3" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Mastercard</text>
+<rect x="20.0" y="205.0" width="80" height="36" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
 <text x="60.0" y="218.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Ethoca Consumer</text>
 <text x="60.0" y="231.7" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Clarity</text>
-<line x1="100.0" y1="223.0" x2="115.0" y2="223.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<line x1="100.0" y1="223.0" x2="115.0" y2="223.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <polygon points="147.0,200.0 177.0,223.0 147.0,246.0 117.0,223.0" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
 <text x="147.0" y="224.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Решено?</text>
 <line x1="147.0" y1="246.0" x2="147.0" y2="264.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
@@ -50,15 +50,15 @@
 <text x="183.5" y="213.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Нет</text>
 <rect x="193.0" y="205.0" width="76" height="36" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1"/>
 <text x="231.0" y="224.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Чарджбэк</text>
-<line x1="269.0" y1="223.0" x2="282.0" y2="223.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<line x1="269.0" y1="223.0" x2="282.0" y2="223.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <rect x="285.0" y="205.0" width="86" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
 <text x="328.0" y="218.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Second</text>
 <text x="328.0" y="230.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Presentment</text>
-<line x1="371.0" y1="223.0" x2="384.0" y2="223.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<line x1="371.0" y1="223.0" x2="384.0" y2="223.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <rect x="387.0" y="205.0" width="66" height="36" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1"/>
-<text x="420.0" y="218.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Pre-arb</text>
-<text x="420.0" y="230.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">(arb. CB)</text>
-<line x1="453.0" y1="223.0" x2="466.0" y2="223.0" stroke="#1A2030" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="420.0" y="218.2" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Пре-арб</text>
+<text x="420.0" y="230.4" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">(арб. CB)</text>
+<line x1="453.0" y1="223.0" x2="466.0" y2="223.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <rect x="469.0" y="205.0" width="70" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
 <text x="504.0" y="224.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Арбитраж</text>
 </svg>

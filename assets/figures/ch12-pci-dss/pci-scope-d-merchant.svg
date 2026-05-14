@@ -22,11 +22,11 @@
 
 <rect x="340.0" y="50.0" width="140" height="62" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3"/>
 <text x="410.0" y="71.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">+ токенизация</text>
-<text x="410.0" y="86.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">vault у PSP / network</text>
-<text x="410.0" y="99.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">tokens вместо PAN</text>
+<text x="410.0" y="86.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">хранилище у PSP / сети</text>
+<text x="410.0" y="99.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">токены вместо PAN</text>
 
 <!-- Подпись -->
 <text x="20.0" y="138.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">SAQ-форма одна (D-Merchant); сужение scope — через сегментацию и токенизацию хранения,</text>
-<text x="20.0" y="151.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">а не смену формы. ROC/QSA для Level 1 и service providers — за рамками SAQ.</text>
+<text x="20.0" y="151.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">а не смену формы. ROC/QSA для Level 1 и сервис-провайдеров — за рамками SAQ.</text>
 
 </svg>

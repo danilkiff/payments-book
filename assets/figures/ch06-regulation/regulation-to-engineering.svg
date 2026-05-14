@@ -31,7 +31,6 @@
      fill="#C15462"
      fill-opacity="0.15"
      stroke="#C15462"
-     stroke-opacity="0.3"
      stroke-width="1.5"
      id="rect4" />
   <text
@@ -40,7 +39,8 @@
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#5C647A"
+     font-weight="bold"
+     fill="#1A2030"
      id="text4">Закон/норма</text>
   <rect
      x="20.56221"
@@ -51,7 +51,6 @@
      fill="#7759D6"
      fill-opacity="0.15"
      stroke="#7759D6"
-     stroke-opacity="0.3"
      stroke-width="1.5"
      id="rect5" />
   <text
@@ -60,7 +59,8 @@
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#5C647A"
+     font-weight="bold"
+     fill="#1A2030"
      id="text5">Продукт</text>
   <rect
      x="20.620029"
@@ -71,7 +71,6 @@
      fill="#2F8B67"
      fill-opacity="0.15"
      stroke="#2F8B67"
-     stroke-opacity="0.3"
      stroke-width="1.5"
      id="rect6" />
   <text
@@ -80,7 +79,8 @@
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#5C647A"
+     font-weight="bold"
+     fill="#1A2030"
      id="text6">Операции</text>
   <rect
      x="131.41475"
