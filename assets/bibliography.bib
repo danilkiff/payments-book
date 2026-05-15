@@ -3077,6 +3077,22 @@
   note   = {Документация Visa Acceptance: TC 33.A как контейнер клиринговых записей (TCR) в BASE II}
 }
 
+@online{visa-acceptance-capture-spec,
+  author = {{Visa Acceptance Solutions}},
+  title  = {Enhanced Capture File Specifications: {TC 33.A} and {TCR} layout},
+  year   = {2025},
+  url    = {https://developer.visaacceptance.com/docs/vas/en-us/payments/acq/all/na/payments-acq/payments-acq-reference-intro/payments-acq-reference-capture-specifications.html},
+  note   = {Visa Acceptance Developer Portal фиксирует длину TCR 168 байт, позиции Transaction Code (1--2), TCR Sequence Number (4), Application Code (17--20), Message Identifier (21--35), Action Code (135--146); полный поле-в-байт layout TC 05 остаётся в~закрытом документе «BASE II Clearing Interchange Formats, TC 01 to TC 49»}
+}
+
+@online{mc-gcms-rm-2021,
+  author = {{Mastercard International}},
+  title  = {Global Clearing Management System Reference Manual},
+  year   = {2021},
+  url    = {https://pismoassets.pismo.io/pismo-docs/mc_gcms_rm.pdf},
+  note   = {Версия от 26~октября 2021 (выложен Pismo как клиентом схемы); содержит таблицу «Mapping 0200 to 1240» с~обязательными/опциональными DE для IPM 1240 First Presentment, описание primary/secondary bitmap и~состава Additional Data (PDS) внутри DE~48/62/123/124/125}
+}
+
 @online{visa-direct-faq,
   author = {{Visa}},
   title  = {{Visa Direct} {FAQ}},
