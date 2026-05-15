@@ -1,31 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="720" height="220">
-<defs>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
-</defs>
-
-<!-- Time axis with phase markers -->
-<line x1="110" y1="38" x2="700" y2="38" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="215" y="26" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#5C647A">Авторизация</text>
-<text x="410" y="26" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#5C647A">Клиринг</text>
-<text x="615" y="26" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#5C647A">Расчёт</text>
-
-<!-- Phase guides -->
-<line x1="305" y1="48" x2="305" y2="210" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="515" y1="48" x2="515" y2="210" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-
-<!-- Row 1: Отмена -->
-<text x="102" y="72" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Отмена</text>
-<rect x="115" y="58" width="180" height="22" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="115" y="98" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">отменяет hold, мгновенно</text>
-
-<!-- Row 2: Void -->
-<text x="102" y="128" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Аннулирование</text>
-<rect x="115" y="114" width="390" height="22" rx="6" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="115" y="154" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">убирает из клиринга, часы</text>
-
-<!-- Row 3: Возврат -->
-<text x="102" y="184" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Возврат</text>
-<rect x="525" y="170" width="180" height="22" rx="6" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
-<text x="525" y="210" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">новая транзакция, дни</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 266" width="760" height="266">
+<text x="170.0" y="24" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Авторизация</text>
+<text x="170.0" y="40" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">T0 .. T+с</text>
+<text x="315.0" y="24" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Клиринг</text>
+<text x="315.0" y="40" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">T0 .. T+1 р. дн.</text>
+<text x="500.0" y="24" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Settlement</text>
+<text x="500.0" y="40" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">T+1 .. T+2 р. дн.</text>
+<text x="665.0" y="24" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">После settlement</text>
+<text x="665.0" y="40" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">T+2 .. T+5 р. дн.</text>
+<line x1="120" y1="54" x2="740" y2="54" stroke="#5C647A" stroke-width="1.5"/>
+<line x1="220" y1="54" x2="220" y2="250" stroke="#5C647A" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="6,3"/>
+<line x1="410" y1="54" x2="410" y2="250" stroke="#5C647A" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="6,3"/>
+<line x1="590" y1="54" x2="590" y2="250" stroke="#5C647A" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="6,3"/>
+<rect x="120" y="78" width="100" height="26" rx="6" fill="#2F8B67" fill-opacity="0.18" stroke="#2F8B67" stroke-width="2"/>
+<text x="170.0" y="95.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">MTI 0400 / 0420</text>
+<text x="108" y="91" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Отмена</text>
+<text x="108" y="104" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(reversal)</text>
+<text x="120" y="118" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Reversal Request / Advice — отменяет hold</text>
+<text x="120" y="132" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">MC обязывает в 24 часа после отмены</text>
+<rect x="120" y="138" width="290" height="26" rx="6" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="265.0" y="155.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">не MTI · cancel в API</text>
+<text x="108" y="151" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Аннулирование</text>
+<text x="108" y="164" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(void)</text>
+<text x="120" y="178" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Операция эквайра, не сетевое сообщение</text>
+<text x="120" y="192" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">Убрать запись из клирингового файла до отправки</text>
+<rect x="410" y="198" width="330" height="26" rx="6" fill="#C15462" fill-opacity="0.18" stroke="#C15462" stroke-width="2"/>
+<text x="575.0" y="215.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">новая транзакция</text>
+<text x="108" y="211" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Возврат</text>
+<text x="108" y="224" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(refund)</text>
+<text x="740" y="238" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Полный цикл auth + clearing + settle</text>
+<text x="740" y="252" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">Доступен после клиринга; T+1..T+5 раб. дн на счёт</text>
 </svg>
