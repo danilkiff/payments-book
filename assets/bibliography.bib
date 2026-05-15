@@ -3299,3 +3299,19 @@
   url    = {https://www.uspaymentsforum.org/wp-content/uploads/2017/09/Transit-Use-Case-Technical-Solution-V2-FINAL-Sept-2018-1.pdf},
   note   = {Технический документ U.S. Payments Forum: deferred authorization в транспорте~--- авторизационный запрос или финансовое сообщение уходит после факта операции, потому что time budget гейта (\textasciitilde{}300 мс) не позволяет дождаться online-ответа эмитента}
 }
+
+@online{stripe-testing,
+  author = {{Stripe}},
+  title  = {Testing: card numbers},
+  year   = {2026},
+  url    = {https://docs.stripe.com/testing},
+  note   = {Документация Stripe по тестовым картам; основной Visa PAN -- 4242 4242 4242 4242 (Luhn-валиден), также перечислены тестовые номера Mastercard, Amex, Discover, Diners, JCB, UnionPay и региональные варианты}
+}
+
+@online{emvdecoder,
+  author = {{EMV Decoder}},
+  title  = {EMV Tag Decoder: AIP, TVR, TSI, CVM List},
+  year   = {2026},
+  url    = {https://www.emvdecoder.com/tools/emv-tlv/tag-decoder},
+  note   = {Онлайн-инструмент декодирования EMV-тегов; вычисления выполняются на стороне клиента, данные не передаются на сервер. Полезен для быстрого разбора AIP, TVR, TSI и CVM List при анализе инцидентов}
+}

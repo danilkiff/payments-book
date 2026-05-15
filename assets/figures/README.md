@@ -139,3 +139,52 @@ grep -oE 'id="arr-[^"]*"' assets/figures/chXX-name/figure.svg | sort -u
 После прохождения проверок `make svg` пересоберёт PDF из этого SVG
 через Inkscape headless. Сборка PDF - обязательная часть коммита,
 если SVG менялся: `.tex` подключает именно PDF, не SVG.
+
+## Автоматизация: `scripts/figures/`
+
+Фигуры с табличной/сеточной структурой генерируются Python-скриптами
+из [`scripts/figures/`](../../scripts/figures/) -- это канон автоматизации
+для фигур, где данные диктуют разметку. Скрипты пишут SVG напрямую,
+используют общий модуль [`_common.py`](../../scripts/figures/_common.py)
+с палитрой, шрифтом и helper'ами.
+
+Текущие генераторы:
+
+| Скрипт                          | Выход                                                  | Глава |
+|---------------------------------|--------------------------------------------------------|-------|
+| `gen_service_code.py`           | `ch03-card-data/service-code.svg`                      | 3     |
+| `gen_mti_0100_anatomy.py`       | `ch05-iso8583/mti-0100-anatomy.svg`                    | 5     |
+| `gen_bitmap_presence.py`        | `ch05-iso8583/bitmap-presence.svg`                     | 5     |
+| `gen_pdol_anatomy.py`           | `ch07-emv/pdol-anatomy.svg`                            | 7     |
+| `gen_tvr_anatomy.py`            | `ch07-emv/tvr-anatomy.svg`                             | 7     |
+| `gen_aip_anatomy.py`            | `ch07-emv/aip-anatomy.svg`                             | 7     |
+| `gen_pin_block_format0.py`      | `ch10-cryptography/pin-block-format0.svg`              | 10    |
+
+Workflow:
+
+```bash
+# 1. Поправить данные в~скрипте (схема, пример, лейблы).
+# 2. Перегенерировать SVG.
+python3 scripts/figures/gen_<name>.py
+
+# 3. Перегенерировать PDF из SVG.
+make svg
+
+# 4. Перегенерировать книгу.
+make pdf
+```
+
+Соглашения для новых скриптов:
+
+- Импортировать палитру и helpers из `_common.py`, не дублировать константы.
+- Все пути -- через `figures_dir()` из `_common`; никаких абсолютных.
+- Источники данных и формул цитировать в~docstring; внешние факты
+  фиксировать в `assets/bibliography.bib` и ссылаться на ключи bib
+  из подписи фигуры в~`.tex`.
+- Inkscape ломает PDF export при наличии Unicode-операторов
+  (например, `⊕`, `⊗`); использовать словесные эквиваленты
+  (`XOR`, `AND`) внутри SVG-text.
+
+Для фигур со свободной композицией (диаграммы потоков, схемы)
+канон остаётся прежним: открыть `inkscape-template.svg`, нарисовать
+вручную, сохранить как Plain SVG.
