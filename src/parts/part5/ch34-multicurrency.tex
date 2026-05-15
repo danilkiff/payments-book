@@ -172,14 +172,14 @@ Mastercard. Реестр обязательств должен хранить в
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-multicurrency/three-currencies-timeline}
   \caption{Жизненный цикл операции в~нескольких валютах на~оси
-    из~пяти этапов (auth, capture, clearing, settlement, payout):
+    четырёх фаз (авторизация, клиринг, расчёт, выплата):
     transaction (цена) $\to$ billing (списание держателю, может отличаться
     при~DCC) $\to$ settlement (расчёт между банками) $\to$ payout
     (выплата мерчанту). У~каждой конверсии подписан источник курса
     и~момент фиксации: EUR$\to$USD~--- правила схемы, фиксация
     при~клиринге; USD$\to$GBP~--- FX-провайдер выплаты, фиксация
-    при~payout. Расстояния между этапами приближены к~реальной длительности,
-    не~в~точном масштабе.}\label{fig:three-currencies-timeline}
+    при~выплате. Расстояния между фазами приближены к~реальной
+    длительности, не~в~точном масштабе.}\label{fig:three-currencies-timeline}
 \end{figure}
 
 \section{DCC и маршрутизация по валютным коридорам}\label{sec:mc-dcc}

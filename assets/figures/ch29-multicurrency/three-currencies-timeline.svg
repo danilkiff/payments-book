@@ -6,17 +6,15 @@
 </defs>
 
 <!-- Timeline axis. Spacing approximates real durations:
-     auth → capture: minutes-hours (short)
-     capture → clearing: hours (short)
-     clearing → settlement: T+1..T+N (medium)
-     settlement → payout: days-weeks (long)
+     auth → clearing: hours (batch end-of-day)
+     clearing → settlement: T+1..T+N
+     settlement → payout: days-weeks
 -->
 <line x1="40.0" y1="140.0" x2="600.0" y2="140.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="600.0" y="158.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">время</text>
 
-<!-- Stage markers on axis: auth, capture, clearing, settlement, payout -->
+<!-- Stage markers on axis: auth, clearing, settlement, payout -->
 <ellipse cx="70.0"  cy="140.0" rx="7" ry="7" fill="#4E63D9" stroke="#4E63D9" stroke-width="2"/>
-<ellipse cx="120.0" cy="140.0" rx="6" ry="6" fill="#ffffff" stroke="#4E63D9" stroke-width="2"/>
 <ellipse cx="180.0" cy="140.0" rx="6" ry="6" fill="#ffffff" stroke="#7759D6" stroke-width="2"/>
 <ellipse cx="320.0" cy="140.0" rx="7" ry="7" fill="#2F8B67" stroke="#2F8B67" stroke-width="2"/>
 <ellipse cx="540.0" cy="140.0" rx="7" ry="7" fill="#B8821C" stroke="#B8821C" stroke-width="2"/>
@@ -24,10 +22,8 @@
 <!-- Stage labels (under axis) -->
 <text x="70.0"  y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">auth</text>
 <text x="70.0"  y="185.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">T0</text>
-<text x="120.0" y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">capture</text>
-<text x="120.0" y="185.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">мин-часы</text>
 <text x="180.0" y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">clearing</text>
-<text x="180.0" y="185.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">часы</text>
+<text x="180.0" y="185.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">часы (batch конца дня)</text>
 <text x="320.0" y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">settlement</text>
 <text x="320.0" y="185.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">T+1..T+N</text>
 <text x="540.0" y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">payout</text>
@@ -75,7 +71,7 @@
 
 <!-- Disclaimer + duration legend -->
 <text x="40.0" y="218.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Окна на оси — пропорционально реальной длительности (схема, не масштаб):</text>
-<text x="40.0" y="232.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">auth→capture — минуты-часы; capture→clearing — часы; clearing→settlement — T+1..T+N; settlement→payout — дни-недели.</text>
+<text x="40.0" y="232.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">auth→clearing — часы (batch конца дня); clearing→settlement — T+1..T+N; settlement→payout — дни-недели.</text>
 <text x="40.0" y="252.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Валюта списания (billing) = домашняя валюта держателя; для DCC меняется на валюту терминала.</text>
 <text x="40.0" y="266.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Тройка transaction / settlement / payout на оси не равна тройке определений transaction / billing / settlement из sec:mc-settlement.</text>
 </svg>
