@@ -99,4 +99,4 @@ for col_idx, (title, subtitle, values, example_value) in enumerate(POSITIONS):
 
 lines.append("</svg>")
 
-write_svg(figures_dir() / "ch03-card-data" / "service-code.svg", lines)
+write_svg(figures_dir() / "ch04-card-data" / "service-code.svg", lines)

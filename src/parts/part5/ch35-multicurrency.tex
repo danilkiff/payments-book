@@ -79,7 +79,7 @@ TTL потери на устаревшем курсе обнаруживаютс
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-multicurrency/fx-ownership-models}
+  \includefiguresvg[width=.8\linewidth]{assets/figures/ch35-multicurrency/fx-ownership-models}
   \caption{Четыре модели владения курсом. Для российских банков
     после марта 2022~года первая модель (эмитент / стандартный
     карточный сценарий Visa и~Mastercard) на международных операциях
@@ -103,7 +103,7 @@ basis points, bps~--- сотых долях процентного пункта)
 \texttt{now}, чтобы тестируемое решение не зависело от системного
 таймера:
 
-\codefile{Python}{samples/ch34-fx-quote/quote.py}
+\codefile{Python}{samples/ch35-fx-quote/quote.py}
 
 \practicenote{%
   Если продукт обещает клиенту \enquote{ваш курс}, у~этого курса должны
@@ -170,7 +170,7 @@ Mastercard. Реестр обязательств должен хранить в
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-multicurrency/three-currencies-timeline}
+  \includefiguresvg[width=.8\linewidth]{assets/figures/ch35-multicurrency/three-currencies-timeline}
   \caption{Жизненный цикл операции в~нескольких валютах на~оси
     четырёх фаз (авторизация, клиринг, расчёт, выплата):
     transaction (цена) $\to$ billing (списание держателю, может отличаться
@@ -273,7 +273,7 @@ DCC -- часть политики маршрутизации. По коридо
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.95\linewidth]{assets/figures/ch29-multicurrency/corridor-routing}
+  \includefiguresvg[width=.95\linewidth]{assets/figures/ch35-multicurrency/corridor-routing}
   \caption{Маршрутизация по коридору: сравнение двух стратегий для одного платежа. Состав параметров (международный или внутренний тариф, доля одобрений, валюта расчёта)~--- по публичным правилам Visa и~таблицам Visa USA IRF~\cite{visa-core-rules,visa-interchange}.}\label{fig:corridor-routing}
 \end{figure}
 
@@ -330,7 +330,7 @@ DCC -- часть политики маршрутизации. По коридо
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.85\linewidth]{assets/figures/ch29-multicurrency/multicurrency-recon}
+  \includefiguresvg[width=.85\linewidth]{assets/figures/ch35-multicurrency/multicurrency-recon}
   \caption{Одна транзакция в~пяти валютных представлениях.
     Рисунок свёртывает три удержания (interchange, комиссию эквайера
     и~комиссию платформы) в~единую дельту между \enquote{Расчёт}

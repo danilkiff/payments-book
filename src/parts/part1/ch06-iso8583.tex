@@ -10,7 +10,7 @@
 \begin{figure}[tbp]
   \centering
   {\renewcommand{\figuremaxheight}{.92\textheight}%
-   \includefiguresvg[width=\linewidth]{assets/figures/ch05-iso8583/mti-0100-anatomy}}
+   \includefiguresvg[width=\linewidth]{assets/figures/ch06-iso8583/mti-0100-anatomy}}
   \caption{Разбор MTI~0100 по байтам. Сверху~--- 153 байта сообщения, ячейки окрашены по принадлежности к~полю; снизу~--- таблица: имя поля, смещение, длина, декодированное значение.}\label{fig:mti-0100-anatomy}
 \end{figure}
 
@@ -43,7 +43,7 @@ MTI~-- первые четыре цифры сообщения, и~каждая 
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.95\linewidth]{assets/figures/ch05-iso8583/mti-breakdown}
+  \includefiguresvg[width=.95\linewidth]{assets/figures/ch06-iso8583/mti-breakdown}
   \caption{Две пары запрос/ответ: авторизация (MTI~0100/0110) и финансовое сообщение (MTI~0200/0210). Внутри каждой пары меняется только функция (третья цифра, выделена цветом): \texttt{0}~-- запрос, \texttt{1}~-- ответ. Класс задаёт тип сообщения и одинаков в~паре; версия и инициатор постоянны во всех четырёх MTI.}\label{fig:mti-breakdown}
 \end{figure}
 
@@ -88,7 +88,7 @@ Bitmap проектировался в 1970-х~-- 80-х, когда каждый
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.85\linewidth]{assets/figures/ch05-iso8583/bitmap-presence}
+  \includefiguresvg[width=.85\linewidth]{assets/figures/ch06-iso8583/bitmap-presence}
   \caption{Карта присутствия DE в~MTI~0100. Каждая строка~--- один из 8 байт bitmap; каждая ячейка~--- один бит, от MSB слева до LSB справа. Заполненная ячейка означает, что соответствующий DE присутствует в~сообщении. Бит 1 первого байта~--- флаг расширения (secondary bitmap), при значении 1 добавляется ещё 64 DE; здесь он равен 0.}\label{fig:bitmap-presence}
 \end{figure}
 
@@ -101,7 +101,7 @@ Bitmap отделяет структуру от содержания. Значе
 самих полей оставлено за рамками примера~--- для каждого DE нужны
 его длина и формат из IFS партнёра.
 
-\codefile{Python}{samples/ch05-iso8583-bitmap/bitmap.py}
+\codefile{Python}{samples/ch06-iso8583-bitmap/bitmap.py}
 
 \practicenote{%
   При разборе инцидента сначала смотрите на bitmap. Он быстро

@@ -5,7 +5,7 @@
 - снизу таблица: имя поля, тип, смещение, длина, hex, декодированное значение.
 
 Схема каждого поля -- из прозы § 5.5 ("Разбираем MTI 0100 и MTI 0110 до конца").
-Парсинг и сверка значений -- samples/ch05-iso8583-anatomy/anatomy.py.
+Парсинг и сверка значений -- samples/ch06-iso8583-anatomy/anatomy.py.
 """
 import sys
 from pathlib import Path
@@ -249,4 +249,4 @@ for idx, f in enumerate(fields):
 
 lines.append("</svg>")
 
-write_svg(figures_dir() / "ch05-iso8583" / "mti-0100-anatomy.svg", lines)
+write_svg(figures_dir() / "ch06-iso8583" / "mti-0100-anatomy.svg", lines)

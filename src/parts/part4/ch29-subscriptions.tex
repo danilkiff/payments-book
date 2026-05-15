@@ -60,7 +60,7 @@ indicator = \texttt{subsequent}, типом \texttt{recurring} и
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch22-subscriptions/scf-lifecycle}
+  \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/scf-lifecycle}
   \caption{Жизненный цикл SCF: CIT создаёт согласие, MIT продолжает
   цепочку через ссылку на идентификатор исходной авторизации~--
   NTID (Visa) или Trace~ID (Mastercard)~\cite{mrc-nti-trace-id}.}\label{fig:scf-lifecycle}
@@ -150,7 +150,7 @@ MIT ссылается на одну и~ту же исходную CIT, поэт
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch22-subscriptions/ntid-chain}
+  \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/ntid-chain}
   \caption{Цепочка идентификатора исходной авторизации~--
   NTID (Visa) или Trace~ID (Mastercard)~\cite{mrc-nti-trace-id}:
   от первой CIT через MIT к~точке обрыва при миграции PSP.}\label{fig:ntid-chain}
@@ -241,11 +241,11 @@ Private Use) выдаёт одно
 безопасный вариант, при котором не срабатывает мониторинг схемы
 из-за неучтённого сценария:
 
-\codefile{Python}{samples/ch28-mac-retry/mac.py}
+\codefile{Python}{samples/ch29-mac-retry/mac.py}
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch22-subscriptions/decline-decision-tree}
+  \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/decline-decision-tree}
   \caption{Дерево решений при отказе MIT. MAC~01 \enquote{New account
   information available} означает \enquote{обновить реквизиты через
   VAU/ABU и повторить}, а~не запрет повтора; полная запретительная
@@ -301,7 +301,7 @@ Visa рекомендует подключать все идентификаци
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch22-subscriptions/credential-update-flow}
+  \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/credential-update-flow}
   \caption{Обновление реквизитов: VAU (Visa) и ABU (Mastercard)~--
   два независимых сервиса своих сетей; на схеме не разделены режимы
   batch и real-time. Параллельный путь~-- сетевые токены, где

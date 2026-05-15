@@ -68,4 +68,4 @@ for row in range(8):
 
 lines.append("</svg>")
 
-write_svg(figures_dir() / "ch05-iso8583" / "bitmap-presence.svg", lines)
+write_svg(figures_dir() / "ch06-iso8583" / "bitmap-presence.svg", lines)

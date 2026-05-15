@@ -129,7 +129,7 @@ Reference Data) и~DE~48 (Additional Data) сообщения ISO~8583/IPM
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch23-reconciliation/base2-vs-ipm}
+  \includefiguresvg[width=.8\linewidth]{assets/figures/ch30-reconciliation/base2-vs-ipm}
   \caption{Разбор примера клирингового сообщения по каждой схеме: Visa TC~05 в~TC~33.A (TCR~0) vs.\ Mastercard IPM~1240 First Presentment. Состав полей и~подтверждённые позиции~--- Visa Acceptance Developer Portal~\cite{visa-acceptance-capture-spec} и~Mastercard GCMS Reference Manual~2021~\cite{mc-gcms-rm-2021}.}\label{fig:base2-vs-ipm}
 \end{figure}
 
@@ -184,7 +184,7 @@ assessments минус прочие удержания. Если не раскр
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.7\linewidth]{assets/figures/ch23-reconciliation/net-vs-gross}
+  \includefiguresvg[width=.7\linewidth]{assets/figures/ch30-reconciliation/net-vs-gross}
   \caption{Нетто- и~валовой расчёт: 100 транзакций в~одну позицию.}\label{fig:net-vs-gross}
 \end{figure}
 
@@ -292,7 +292,7 @@ ARN или эквивалент в~клиринге; реконсилиатор�
 уходят в \texttt{only\_internal} или \texttt{only\_external} --
 это и~есть очередь исключений:
 
-\codefile{Python}{samples/ch29-reconciliation/reconcile.py}
+\codefile{Python}{samples/ch30-reconciliation/reconcile.py}
 
 Позднее представление (\textit{late presentment}) -- частая причина ложных
 расхождений. Транзакция авторизована вчера, но клиринговая запись
@@ -325,7 +325,7 @@ indicator)~\cite{visa-core-rules,mc-tpr}.
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.75\linewidth]{assets/figures/ch23-reconciliation/matching-passes}
+  \includefiguresvg[width=.75\linewidth]{assets/figures/ch30-reconciliation/matching-passes}
   \caption{Многопроходная сверка: пример строки на каждом проходе~--- строгий, мягкий, ручная очередь. Доли иллюстративные.}\label{fig:matching-passes}
 \end{figure}
 
