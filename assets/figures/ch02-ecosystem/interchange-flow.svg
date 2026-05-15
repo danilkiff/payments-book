@@ -1,205 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   viewBox="0 0 510 205"
-   width="510"
-   height="205"
-   version="1.1"
-   id="svg10"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs3">
-    <marker
-       id="arr-Muted"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
-         id="path1" />
-    </marker>
-    <marker
-       id="arr-AccentB"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#7759d6"
-         id="path2" />
-    </marker>
-    <marker
-       id="arr-Warn"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#b8821c"
-         id="path3" />
-    </marker>
-  </defs>
-  <rect
-     x="15.736479"
-     y="12.154266"
-     width="120"
-     height="50"
-     rx="8"
-     fill="#4e63d9"
-     fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="2"
-     id="rect3" />
-  <text
-     x="72.723106"
-     y="40.894238"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text3">ТСП</text>
-  <rect
-     x="20.305647"
-     y="110.72037"
-     width="120"
-     height="50"
-     rx="8"
-     fill="#4e63d9"
-     fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="2"
-     id="rect4" />
-  <text
-     x="80.305649"
-     y="141.72037"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text4">Эквайер</text>
-  <rect
-     x="200.30565"
-     y="110.72037"
-     width="120"
-     height="50"
-     rx="8"
-     fill="#7759d6"
-     fill-opacity="0.15"
-     stroke="#7759d6"
-     stroke-width="2"
-     id="rect5" />
-  <text
-     x="261.11349"
-     y="132.02602"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text5"><tspan
-       id="tspan10"
-       x="261.11349"
-       y="132.02602">Карточная</tspan><tspan
-       id="tspan11"
-       x="261.11349"
-       y="149.52602">сеть</tspan></text>
-  <rect
-     x="380.30563"
-     y="110.72037"
-     width="120"
-     height="50"
-     rx="8"
-     fill="#4e63d9"
-     fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="2"
-     id="rect6" />
-  <text
-     x="440.30563"
-     y="141.72037"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text6">Эмитент</text>
-  <text
-     x="57.675556"
-     y="85.992706"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1a2030"
-     id="text7">MSC</text>
-  <line
-     x1="141.05899"
-     y1="135.24043"
-     x2="201.05899"
-     y2="135.24043"
-     stroke="#7759d6"
-     stroke-width="2"
-     marker-end="url(#arr-AccentB)"
-     id="line7" />
-  <line
-     x1="77.085548"
-     y1="63.323559"
-     x2="76.898575"
-     y2="110.24182"
-     stroke="#7759d6"
-     stroke-width="2"
-     marker-end="url(#arr-AccentB)"
-     id="line7-9" />
-  <text
-     x="171.05899"
-     y="102.62675"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1a2030"
-     id="text8">комиссия сети</text>
-  <line
-     x1="320.30563"
-     y1="130.72037"
-     x2="380.30563"
-     y2="130.72037"
-     stroke="#7759d6"
-     stroke-width="2"
-     marker-end="url(#arr-AccentB)"
-     id="line8" />
-  <text
-     x="350.30563"
-     y="101.8734"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1a2030"
-     id="text9">комиссия сети</text>
-  <path
-     d="m 71.988482,160.53315 v 18.87597 H 433.4188 v -18.87597"
-     fill="none"
-     stroke="#b8821c"
-     stroke-width="1"
-     marker-end="url(#arr-Warn)"
-     id="path9"
-     style="stroke-width:2;stroke-dasharray:none" />
-  <text
-     x="260.30563"
-     y="195.13953"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1a2030"
-     id="text10">интерчейндж</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 402" width="760" height="402">
+<defs><marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker><marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker></defs>
+<text x="220.0" y="14" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">Visa дебет · 50 EUR · MCC 5411 · IFR-зона</text>
+<rect x="100.0" y="28" width="240" height="56" rx="8" fill="#4E63D9" fill-opacity="0.2" stroke="#4E63D9" stroke-width="2"/>
+<text x="220.0" y="50" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Покупка</text>
+<text x="220.0" y="70" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">50,00 EUR</text>
+<line x1="220.0" y1="84" x2="220.0" y2="126" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="238.0" y="99.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#7759D6">−0,10 EUR (0,20%)</text>
+<text x="238.0" y="115.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">interchange → банк-эмитент</text>
+<rect x="100.0" y="130" width="240" height="38" rx="8" fill="#4E63D9" fill-opacity="0.12" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="220.0" y="154" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">49,90 EUR</text>
+<line x1="220.0" y1="168" x2="220.0" y2="210" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="238.0" y="183.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#7759D6">−0,02 EUR (0,04%)</text>
+<text x="238.0" y="199.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">scheme fee → карточная сеть</text>
+<rect x="100.0" y="214" width="240" height="38" rx="8" fill="#4E63D9" fill-opacity="0.12" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="220.0" y="238" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">49,88 EUR</text>
+<line x1="220.0" y1="252" x2="220.0" y2="294" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="238.0" y="267.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#7759D6">−0,25 EUR (0,50%)</text>
+<text x="238.0" y="283.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">acquirer markup → банк-эквайер</text>
+<rect x="100.0" y="298" width="240" height="76" rx="8" fill="#4E63D9" fill-opacity="0.2" stroke="#4E63D9" stroke-width="2"/>
+<text x="220.0" y="320" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Нетто ТСП</text>
+<text x="220.0" y="340" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">49,63 EUR</text>
+<text x="220.0" y="360" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">MSC = 0,37 EUR = 0,74%</text>
+<rect x="440" y="68" width="300" height="178" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1.5"/>
+<text x="454" y="90" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">А если бы карта была кредитной</text>
+<text x="454" y="106" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">та же 50 EUR; потолок IFR кредит 0,30%</text>
+<text x="454" y="126" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">interchange</text>
+<text x="564" y="126" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0,30%</text>
+<text x="726" y="126" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">0,15 EUR</text>
+<text x="454" y="144" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">scheme fee</text>
+<text x="564" y="144" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0,04%</text>
+<text x="726" y="144" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">0,02 EUR</text>
+<text x="454" y="162" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">acquirer markup</text>
+<text x="564" y="162" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0,50%</text>
+<text x="726" y="162" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">0,25 EUR</text>
+<line x1="454" y1="184" x2="726" y2="184" stroke="#5C647A" stroke-width="1"/>
+<text x="454" y="202" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">MSC</text>
+<text x="726" y="202" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">0,84% = 0,42 EUR</text>
+<text x="454" y="220" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Нетто ТСП</text>
+<text x="726" y="220" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">49,58 EUR</text>
+<text x="454" y="238" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#7759D6">Δ против дебета</text>
+<text x="726" y="238" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#7759D6">+0,05 EUR/транзакцию</text>
+<text x="380.0" y="392" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">Interchange Fee Regulation (IFR) — Регламент (EU) 2015/751; ставки interchange — потолки регламента, scheme fee и acquirer markup — типовой пример.</text>
 </svg>
