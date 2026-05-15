@@ -157,6 +157,7 @@ grep -oE 'id="arr-[^"]*"' assets/figures/chXX-name/figure.svg | sort -u
 | `gen_bitmap_presence.py`        | `ch05-iso8583/bitmap-presence.svg`                     | 5     |
 | `gen_pdol_anatomy.py`           | `ch07-emv/pdol-anatomy.svg`                            | 7     |
 | `gen_tvr_anatomy.py`            | `ch07-emv/tvr-anatomy.svg`                             | 7     |
+| `gen_tsi_anatomy.py`            | `ch07-emv/tsi-anatomy.svg`                             | 7     |
 | `gen_aip_anatomy.py`            | `ch07-emv/aip-anatomy.svg`                             | 7     |
 | `gen_pin_block_format0.py`      | `ch10-cryptography/pin-block-format0.svg`              | 10    |
 
