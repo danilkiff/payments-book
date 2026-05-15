@@ -1,76 +1,501 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 386" width="560" height="386">
-<defs>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
-</defs>
-<polygon points="280.0,20.0 360.0,55.0 280.0,90.0 200.0,55.0" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="280.0" y="58.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Получен код отказа</text>
-
-<rect x="25.0" y="132.0" width="120" height="40" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
-<text x="85.0" y="148.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Стоп</text>
-<text x="85.0" y="163.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">04, 14, 41, 43</text>
-
-<rect x="155.0" y="132.0" width="120" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="215.0" y="148.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Качество данных</text>
-<text x="215.0" y="163.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">54</text>
-
-<rect x="285.0" y="132.0" width="120" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="345.0" y="148.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Восстанавливаемые</text>
-<text x="345.0" y="163.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">51,61,62,65,05</text>
-
-<rect x="415.0" y="132.0" width="120" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="475.0" y="148.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Технический</text>
-<text x="475.0" y="163.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">91, 96, timeout</text>
-
-<line x1="200.0" y1="55.0" x2="85.0" y2="132.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="260.0" y1="81.0" x2="215.0" y2="132.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="300.0" y1="81.0" x2="345.0" y2="132.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="360.0" y1="55.0" x2="475.0" y2="132.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-
-<rect x="25.0" y="210.0" width="120" height="58" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1"/>
-<text x="85.0" y="228.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Не повторять ту же</text>
-<text x="85.0" y="243.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">операцию. Новый</text>
-<text x="85.0" y="258.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">credential или стоп</text>
-
-<rect x="25.0" y="280.0" width="120" height="58" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1"/>
-<text x="85.0" y="298.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Антифрод-проверка на</text>
-<text x="85.0" y="313.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">скомпрометированный</text>
-<text x="85.0" y="328.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">credential</text>
-
-<rect x="155.0" y="210.0" width="120" height="48" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
-<text x="215.0" y="230.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Обновить срок/PAN,</text>
-<text x="215.0" y="245.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">токен или updater</text>
-
-<rect x="155.0" y="270.0" width="120" height="58" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
-<text x="215.0" y="295.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">В MC CNP: не повторять</text>
-<text x="215.0" y="310.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">с тем же PAN+expiry</text>
-
-<rect x="285.0" y="210.0" width="120" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
-<text x="345.0" y="234.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Проверить лимиты</text>
-
-<rect x="285.0" y="262.0" width="120" height="48" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
-<text x="345.0" y="282.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Если повтор разрешён:</text>
-<text x="345.0" y="297.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">пауза и лимит</text>
-
-<rect x="285.0" y="322.0" width="120" height="48" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
-<text x="345.0" y="342.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Если есть лучший</text>
-<text x="345.0" y="357.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">контекст: 3DS, иной маршрут</text>
-
-<rect x="415.0" y="210.0" width="120" height="48" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1"/>
-<text x="475.0" y="230.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Проверить финальное состояние</text>
-<text x="475.0" y="245.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">и доступность маршрута</text>
-
-<rect x="415.0" y="270.0" width="120" height="58" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1"/>
-<text x="475.0" y="295.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Повтор только в рамках</text>
-<text x="475.0" y="310.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">лимитов сети и эквайера</text>
-
-<line x1="85.0" y1="172.0" x2="85.0" y2="210.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="85.0" y1="268.0" x2="85.0" y2="280.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="215.0" y1="172.0" x2="215.0" y2="210.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="215.0" y1="258.0" x2="215.0" y2="270.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="345.0" y1="172.0" x2="345.0" y2="210.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="345.0" y1="250.0" x2="345.0" y2="262.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="345.0" y1="310.0" x2="345.0" y2="322.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="475.0" y1="172.0" x2="475.0" y2="210.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<line x1="475.0" y1="258.0" x2="475.0" y2="270.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 760 256"
+   width="760"
+   height="256"
+   version="1.1"
+   id="svg38"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <marker
+       id="arr-Muted"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#5c647a"
+         id="path1" />
+    </marker>
+  </defs>
+  <!-- Root diamond -->
+  <!-- 4 category headers, x_centers = 110, 290, 470, 650 -->
+  <rect
+     x="27.13652"
+     y="8.0687513"
+     width="163.25279"
+     height="39.97298"
+     rx="9.3287296"
+     fill="#c15462"
+     fill-opacity="0.15"
+     stroke="#c15462"
+     stroke-width="2.15898"
+     id="rect1" />
+  <text
+     x="110"
+     y="24"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text2">Стоп</text>
+  <text
+     x="110"
+     y="39"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text3">04, 14, 41, 43</text>
+  <rect
+     x="204.21849"
+     y="8.0687304"
+     width="163.25348"
+     height="39.971519"
+     rx="9.3287697"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="2.15894"
+     id="rect3" />
+  <text
+     x="290"
+     y="24"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text4">Качество данных</text>
+  <text
+     x="290"
+     y="39"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text5">54</text>
+  <rect
+     x="379.60239"
+     y="8.0905333"
+     width="170.96846"
+     height="39.969505"
+     rx="9.7696247"
+     fill="#b8821c"
+     fill-opacity="0.18"
+     stroke="#b8821c"
+     stroke-width="2.20931"
+     id="rect5" />
+  <text
+     x="470"
+     y="24"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text6">Восстанавливаемые</text>
+  <text
+     x="470"
+     y="39"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text7">51, 61, 62, 65, 05</text>
+  <rect
+     x="561.86005"
+     y="8.0856495"
+     width="169.254"
+     height="39.964596"
+     rx="9.6716557"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="2.19807"
+     id="rect7" />
+  <text
+     x="650"
+     y="24"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text8">Технический</text>
+  <text
+     x="650"
+     y="39"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text9">91, 96, timeout</text>
+  <!-- Arrows from diamond to category headers -->
+  <!-- Col 1: Стоп — 2 actions -->
+  <rect
+     x="27.13652"
+     y="86.016052"
+     width="163.25279"
+     height="57.960815"
+     rx="9.3287296"
+     fill="#c15462"
+     fill-opacity="0.15"
+     stroke="#c15462"
+     stroke-width="1.07949"
+     id="rect12" />
+  <text
+     x="110"
+     y="104"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text12">Не повторять ту же</text>
+  <text
+     x="110"
+     y="119"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text13">операцию. Новый</text>
+  <text
+     x="110"
+     y="134"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text14">credential или стоп</text>
+  <rect
+     x="27.13652"
+     y="155.96877"
+     width="163.25279"
+     height="57.960815"
+     rx="9.3287296"
+     fill="#c15462"
+     fill-opacity="0.15"
+     stroke="#c15462"
+     stroke-width="1.07949"
+     id="rect14" />
+  <text
+     x="110"
+     y="174"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text15">Антифрод-проверка на</text>
+  <text
+     x="110"
+     y="189"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text16">скомпрометированный</text>
+  <text
+     x="110"
+     y="204"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text17">credential</text>
+  <!-- Col 2: Качество данных — 2 actions -->
+  <rect
+     x="204.21849"
+     y="86.013184"
+     width="163.25348"
+     height="47.96582"
+     rx="9.3287697"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.07948"
+     id="rect17" />
+  <text
+     x="290"
+     y="106"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text18">Обновить срок/PAN,</text>
+  <text
+     x="290"
+     y="121"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text19">токен или updater</text>
+  <rect
+     x="204.21849"
+     y="145.97046"
+     width="163.25348"
+     height="57.958698"
+     rx="9.3287697"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.07948"
+     id="rect19" />
+  <text
+     x="290"
+     y="166"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text20">В MC CNP: не повторять</text>
+  <text
+     x="290"
+     y="181"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text21">с тем же PAN+expiry</text>
+  <!-- Col 3: Восстанавливаемые — 3 actions -->
+  <rect
+     x="379.60239"
+     y="86.031067"
+     width="170.96846"
+     height="39.969505"
+     rx="9.7696247"
+     fill="#b8821c"
+     fill-opacity="0.18"
+     stroke="#b8821c"
+     stroke-width="1.10466"
+     id="rect21" />
+  <text
+     x="470"
+     y="110"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text22">Проверить лимиты</text>
+  <rect
+     x="379.60239"
+     y="137.99142"
+     width="170.96846"
+     height="47.963406"
+     rx="9.7696247"
+     fill="#b8821c"
+     fill-opacity="0.18"
+     stroke="#b8821c"
+     stroke-width="1.10466"
+     id="rect22" />
+  <text
+     x="470"
+     y="158"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text23">Если повтор разрешён:</text>
+  <text
+     x="470"
+     y="173"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text24">пауза и лимит</text>
+  <rect
+     x="379.60239"
+     y="197.94568"
+     width="170.96846"
+     height="47.963406"
+     rx="9.7696247"
+     fill="#b8821c"
+     fill-opacity="0.18"
+     stroke="#b8821c"
+     stroke-width="1.10466"
+     id="rect24" />
+  <text
+     x="470"
+     y="218"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text25">Если есть лучший контекст:</text>
+  <text
+     x="470"
+     y="233"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text26">3DS, иной маршрут</text>
+  <!-- Col 4: Технический — 2 actions -->
+  <rect
+     x="561.86005"
+     y="86.016602"
+     width="169.254"
+     height="47.957512"
+     rx="9.6716557"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="1.09904"
+     id="rect26" />
+  <text
+     x="650"
+     y="106"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text27">Проверить финальное</text>
+  <text
+     x="650"
+     y="121"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text28">состояние и маршрут</text>
+  <rect
+     x="561.86005"
+     y="145.96349"
+     width="169.254"
+     height="57.948658"
+     rx="9.6716557"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="1.09904"
+     id="rect28" />
+  <text
+     x="650"
+     y="166"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text29">Повтор только в рамках</text>
+  <text
+     x="650"
+     y="181"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="normal"
+     fill="#1a2030"
+     id="text30">лимитов сети и эквайера</text>
+  <!-- Inter-column arrows -->
+  <line
+     x1="110"
+     y1="48"
+     x2="110"
+     y2="86"
+     stroke="#5c647a"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line30" />
+  <line
+     x1="110"
+     y1="144"
+     x2="110"
+     y2="156"
+     stroke="#5c647a"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line31" />
+  <line
+     x1="290"
+     y1="48"
+     x2="290"
+     y2="86"
+     stroke="#5c647a"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line32" />
+  <line
+     x1="290"
+     y1="134"
+     x2="290"
+     y2="146"
+     stroke="#5c647a"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line33" />
+  <line
+     x1="470"
+     y1="48"
+     x2="470"
+     y2="86"
+     stroke="#5c647a"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line34" />
+  <line
+     x1="470"
+     y1="126"
+     x2="470"
+     y2="138"
+     stroke="#5c647a"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line35" />
+  <line
+     x1="470"
+     y1="186"
+     x2="470"
+     y2="198"
+     stroke="#5c647a"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line36" />
+  <line
+     x1="650"
+     y1="48"
+     x2="650"
+     y2="86"
+     stroke="#5c647a"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line37" />
+  <line
+     x1="650"
+     y1="134"
+     x2="650"
+     y2="146"
+     stroke="#5c647a"
+     stroke-width="2"
+     marker-end="url(#arr-Muted)"
+     id="line38" />
 </svg>
