@@ -1,108 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" width="880" height="560">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" width="880" height="540">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
 </defs>
 
-<!-- ====== LEFT PANEL: ROC plot ====== -->
+<!-- ====== ROC plot: x=80..820 (w=740), y=40..400 (h=360) ====== -->
 
-<!-- Plot title -->
-<text x="290" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">Скоринг как выбор точки на ROC: TPR ↔ FPR</text>
-
-<!-- Highlighted zone FPR 2..10% (MRC 2024) -->
-<rect x="152" y="60" width="368" height="360" fill="#FBC04C" fill-opacity="0.10"/>
-<text x="336" y="76" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#8C6210">типичный CNP-FPR по MRC 2024: 2–10%</text>
+<!-- Highlighted MRC zone: FPR 2..10% -->
+<rect x="228" y="40" width="592" height="360" fill="#FBC04C" fill-opacity="0.10"/>
+<text x="524" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#8C6210">типичный CNP-FPR по MRC 2024: 2–10%</text>
 
 <!-- Grid lines -->
-<line x1="60" y1="60" x2="60" y2="420" stroke="#1A2030" stroke-width="1.2"/>
-<line x1="60" y1="420" x2="520" y2="420" stroke="#1A2030" stroke-width="1.2"/>
-<line x1="152" y1="60" x2="152" y2="420" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
-<line x1="290" y1="60" x2="290" y2="420" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
-<line x1="60" y1="330" x2="520" y2="330" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
-<line x1="60" y1="240" x2="520" y2="240" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
-<line x1="60" y1="150" x2="520" y2="150" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
-<line x1="60" y1="60" x2="520" y2="60" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
+<line x1="80" y1="40" x2="80" y2="400" stroke="#1A2030" stroke-width="1.2"/>
+<line x1="80" y1="400" x2="820" y2="400" stroke="#1A2030" stroke-width="1.2"/>
+<line x1="228" y1="40" x2="228" y2="400" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
+<line x1="450" y1="40" x2="450" y2="400" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
+<line x1="80" y1="310" x2="820" y2="310" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
+<line x1="80" y1="220" x2="820" y2="220" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
+<line x1="80" y1="130" x2="820" y2="130" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
+<line x1="80" y1="40" x2="820" y2="40" stroke="#D2D5DD" stroke-width="0.8" stroke-dasharray="3,3"/>
 
 <!-- Y-axis ticks/labels -->
-<text x="54" y="424" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">0%</text>
-<text x="54" y="334" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">25%</text>
-<text x="54" y="244" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">50%</text>
-<text x="54" y="154" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">75%</text>
-<text x="54" y="64" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">100%</text>
+<text x="74" y="404" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">0%</text>
+<text x="74" y="314" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">25%</text>
+<text x="74" y="224" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">50%</text>
+<text x="74" y="134" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">75%</text>
+<text x="74" y="44" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">100%</text>
 
-<!-- X-axis ticks/labels -->
-<text x="60" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">0%</text>
-<text x="152" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">2%</text>
-<text x="290" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">5%</text>
-<text x="520" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">10%</text>
+<!-- X-axis ticks/labels: scale 1% = 74 px -->
+<text x="80" y="418" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">0%</text>
+<text x="228" y="418" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">2%</text>
+<text x="450" y="418" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">5%</text>
+<text x="820" y="418" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">10%</text>
 
-<!-- Axis labels -->
-<text x="290" y="460" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">FPR — доля ложных блокировок честных транзакций</text>
-<text x="22" y="240" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030" transform="rotate(-90 22 240)">TPR — доля пойманного фрода (recall)</text>
+<!-- Axis titles -->
+<text x="450" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">FPR — доля ложных блокировок честных транзакций</text>
+<text x="22" y="220" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030" transform="rotate(-90 22 220)">TPR — доля пойманного фрода (recall)</text>
 
-<!-- Random classifier diagonal: TPR = FPR; at FPR=10%, TPR=10% -> y=420-0.10*360=384 -->
-<line x1="60" y1="420" x2="520" y2="384" stroke="#5C647A" stroke-width="1.2" stroke-dasharray="4,3"/>
-<text x="500" y="378" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">случайный классификатор (TPR = FPR)</text>
+<!-- Random classifier diagonal: TPR=FPR; at FPR=10%, TPR=10% → y=400-0.10*360=364 -->
+<line x1="80" y1="400" x2="820" y2="364" stroke="#5C647A" stroke-width="1.2" stroke-dasharray="4,3"/>
+<text x="780" y="358" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">случайный классификатор (TPR = FPR)</text>
 
-<!-- ROC curve -->
-<path d="M 60,420 C 65,360 75,240 83,168 C 100,128 130,108 152,103 C 280,90 420,72 520,67" fill="none" stroke="#4E63D9" stroke-width="2.5"/>
+<!-- ROC curve: 0,0; (0.5%,70%); (2%,88%); (10%,98%) -->
+<!-- Point @75 (block): FPR=0.5%, TPR=70% → x=80+0.5*7.4·percent...wait -->
+<!-- X scale: 1% = 74 px. FPR=0.5% → x = 80 + 0.5*74 = 117; FPR=2% → x=228; FPR=10% → x=820 -->
+<!-- Y scale: 1 unit = 360. TPR=0.70 → y=400-0.70*360=148; TPR=0.88 → y=400-0.88*360=83.2; TPR=0.98 → y=400-0.98*360=47 -->
+<path d="M 80,400 C 90,360 100,220 117,148 C 140,108 195,90 228,84 C 400,72 600,55 820,47" fill="none" stroke="#4E63D9" stroke-width="2.5"/>
 
-<!-- Working points: threshold = 75 (block), threshold = 65 (3DS step-up) -->
-<!-- Point @75 (block): FPR≈0.5%, TPR≈70%  ->  x = 60 + 0.005*4600 = 83;  y = 420 - 0.70*360 = 168 -->
-<circle cx="83" cy="168" r="7" fill="#C15462" stroke="#FFFFFF" stroke-width="2"/>
-<text x="95" y="155" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">порог = 75 → Block</text>
-<text x="95" y="170" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">TPR ≈ 70% при FPR ≈ 0,5%</text>
+<!-- Working point @75 (Block) -->
+<circle cx="117" cy="148" r="7" fill="#C15462" stroke="#FFFFFF" stroke-width="2"/>
+<text x="130" y="138" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">порог = 75 → Block</text>
+<text x="130" y="154" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">TPR ≈ 70% при FPR ≈ 0,5%</text>
 
-<!-- Point @65 (3DS): FPR≈2%, TPR≈88%  ->  x = 60 + 0.02*4600 = 152;  y = 420 - 0.88*360 = 103.2 -->
-<circle cx="152" cy="103" r="7" fill="#B8821C" stroke="#FFFFFF" stroke-width="2"/>
-<text x="164" y="92" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">порог = 65 → 3DS step-up</text>
-<text x="164" y="107" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">TPR ≈ 88% при FPR ≈ 2%</text>
+<!-- Working point @65 (3DS step-up) -->
+<circle cx="228" cy="84" r="7" fill="#B8821C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="240" y="74" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">порог = 65 → 3DS step-up</text>
+<text x="240" y="90" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">TPR ≈ 88% при FPR ≈ 2%</text>
 
 <!-- Arrow connecting two points -->
-<line x1="92" y1="160" x2="146" y2="112" stroke="#5C647A" stroke-width="1.2" stroke-dasharray="3,3"/>
-<text x="120" y="135" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">сдвиг порога вниз</text>
+<line x1="125" y1="140" x2="222" y2="92" stroke="#5C647A" stroke-width="1.2" stroke-dasharray="3,3"/>
+<text x="170" y="118" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-style="italic" fill="#5C647A">сдвиг порога вниз</text>
 
-<!-- Sub-annotation in the ROC area -->
-<text x="288" y="290" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">движение влево по кривой: ниже FPR, ниже TPR (строгий порог)</text>
-<text x="288" y="306" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">движение вправо: выше TPR, дороже false-decline (мягкий порог)</text>
+<!-- Movement annotations -->
+<text x="520" y="240" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">движение влево по кривой: ниже FPR, ниже TPR (строгий порог)</text>
+<text x="520" y="256" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">движение вправо: выше TPR, дороже false-decline (мягкий порог)</text>
 
-<!-- ====== RIGHT PANEL: action mapping + reference values ====== -->
+<!-- ====== Three action plates below the plot: y=460..520 ====== -->
 
-<text x="700" y="80" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">Действия по диапазонам скора</text>
+<rect x="80" y="460" width="240" height="60" rx="8" fill="#C15462" fill-opacity="0.18" stroke="#C15462" stroke-width="2"/>
+<text x="200" y="486" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">Block</text>
+<text x="200" y="504" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">score ≥ 75</text>
 
-<!-- Block -->
-<rect x="560" y="96" width="280" height="62" rx="8" fill="#C15462" fill-opacity="0.18" stroke="#C15462" stroke-width="2"/>
-<text x="700" y="118" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Block — score ≥ 75</text>
-<text x="700" y="135" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">отказ авторизации, операция не уходит в сеть</text>
-<text x="700" y="150" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">точка на ROC: FPR ≈ 0,5% · TPR ≈ 70%</text>
+<rect x="330" y="460" width="240" height="60" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="450" y="486" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">3DS step-up</text>
+<text x="450" y="504" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">65 ≤ score &lt; 75</text>
 
-<!-- 3DS step-up -->
-<rect x="560" y="166" width="280" height="62" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="700" y="188" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">3DS step-up — 65 ≤ score &lt; 75</text>
-<text x="700" y="205" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">challenge через ACS эмитента, см. разд. RBA</text>
-<text x="700" y="220" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">точка на ROC: FPR ≈ 2% · TPR ≈ 88%</text>
-
-<!-- Pass -->
-<rect x="560" y="236" width="280" height="62" rx="8" fill="#2F8B67" fill-opacity="0.18" stroke="#2F8B67" stroke-width="2"/>
-<text x="700" y="258" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Pass — score &lt; 65</text>
-<text x="700" y="275" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">авторизация без дополнительной проверки</text>
-
-<!-- Reference values block -->
-<rect x="560" y="320" width="280" height="172" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1.2"/>
-<text x="700" y="342" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Публичные ориентиры</text>
-
-<text x="576" y="364" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Шкала и пороги</text>
-<text x="576" y="378" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Stripe Radar: 0–99, defaults 65 / 75</text>
-
-<text x="576" y="402" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">FPR в CNP</text>
-<text x="576" y="416" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">2–10% по self-report мерчантов</text>
-<text x="576" y="430" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">(MRC 2024 Global Fraud Report)</text>
-
-<text x="576" y="454" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">База: фрод EU 2024</text>
-<text x="576" y="468" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">0,033% от оборота по картам</text>
-<text x="576" y="482" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">(ECB / EBA Payment Fraud Report 2025)</text>
-
-<!-- Bottom note -->
-<text x="440" y="528" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">ROC-кривая и точки (TPR, FPR) иллюстративные на типичной CNP-кривой; пороги 65 / 75 — из Stripe Radar docs.</text>
-<text x="440" y="544" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Конкретные TPR/FPR у Visa Advanced Authorization, Mastercard Decision Intelligence, Adyen и Forter публично не раскрываются.</text>
+<rect x="580" y="460" width="240" height="60" rx="8" fill="#2F8B67" fill-opacity="0.18" stroke="#2F8B67" stroke-width="2"/>
+<text x="700" y="486" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">Pass</text>
+<text x="700" y="504" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">score &lt; 65</text>
 </svg>
