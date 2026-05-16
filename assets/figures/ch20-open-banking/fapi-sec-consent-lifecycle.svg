@@ -1,11 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 765 564" width="765" height="564">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 765 460" width="765" height="460">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
   <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
 </defs>
-<text x="360.0" y="35.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Жизненный цикл объекта согласия по СТО БР (комплекс Открытых API)</text>
 <ellipse cx="363.0" cy="75.0" rx="11.0" ry="11.0" fill="#5C647A" stroke="#5C647A" stroke-width="2"/>
 <text x="390.0" y="80.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">POST /account-consents  (СПУ)</text>
 <line x1="363.0" y1="86.0" x2="363.0" y2="114.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
@@ -18,18 +17,13 @@
 <text x="505.0" y="199.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Пользователь</text>
 <text x="505.0" y="217.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">отклоняет</text>
 <line x1="370.0" y1="169.0" x2="370.0" y2="389.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="378.0" y="370.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">DELETE до</text>
-<text x="378.0" y="386.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">авторизации</text>
+<text x="378.0" y="280.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">DELETE</text>
 <rect x="70.0" y="249.0" width="220" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="180.0" y="276.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Authorised</text>
 <rect x="440.0" y="249.0" width="220" height="50" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
 <text x="550.0" y="276.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Rejected</text>
 <line x1="180.0" y1="299.0" x2="365.0" y2="389.0" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
-<text x="265.0" y="320.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">DELETE после авторизации</text>
-<text x="265.0" y="336.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">или expirationDateTime истёк</text>
+<text x="265.0" y="340.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">DELETE</text>
 <rect x="270.0" y="394.0" width="200" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="370.0" y="421.3" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Revoked</text>
-<rect x="20.0" y="474.0" width="700" height="70" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="32.0" y="498.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Статусы по разделу 9.3.3 ConsentStatus стандарта СТО БР (приказ Банка России № ОД-2895 от 19.12.2025).</text>
-<text x="32.0" y="524.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Согласие живёт отдельно от платёжного ресурса; статус платежа разворачивается в собственном жизненном цикле.</text>
 </svg>
