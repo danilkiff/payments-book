@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" width="820" height="520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440">
 <defs>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
@@ -53,12 +53,10 @@
 <!-- Event 1: Держатель → ТСП -->
 <line x1="80" y1="130" x2="205" y2="130" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="142" y="124" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">DPAN + TAVV</text>
-<text x="142" y="143" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-style="italic" fill="#5C647A">tap / NFC, контактлесс-криптограмма</text>
 
 <!-- Event 2: ТСП → Эквайер -->
 <line x1="205" y1="170" x2="330" y2="170" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="267" y="164" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">DPAN + сумма + MID</text>
-<text x="267" y="183" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-style="italic" fill="#5C647A">payment-token + Token Requestor ID (TRID)</text>
+<text x="267" y="164" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">DPAN + сумма + MID + TRID</text>
 
 <!-- Event 3: Эквайер → Сеть -->
 <line x1="330" y1="210" x2="455" y2="210" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
@@ -67,22 +65,19 @@
 
 <!-- Event 4: Сеть → TSP Vault (detokenize) -->
 <line x1="455" y1="250" x2="580" y2="250" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="517" y="244" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">detokenize: lookup(DPAN)</text>
-<text x="517" y="263" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-style="italic" fill="#5C647A">проверка статуса (active / suspended) + domain restriction</text>
+<text x="517" y="244" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">detokenize</text>
 
 <!-- Event 5: TSP Vault → Сеть (return FPAN) -->
 <line x1="580" y1="290" x2="455" y2="290" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 <text x="517" y="284" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">FPAN + Token Assurance</text>
-<text x="517" y="303" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-style="italic" fill="#5C647A">+ TAL + TRID для контекста эмитента</text>
 
 <!-- Event 6: Сеть → Эмитент -->
 <line x1="455" y1="330" x2="710" y2="330" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="582" y="324" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MTI 0100 · DE 2 = FPAN · TAL</text>
-<text x="582" y="343" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-style="italic" fill="#5C647A">эмитент видит исходный PAN и уровень доверия токена</text>
 
 <!-- Phase label: RESPONSE LEG -->
 <rect x="20" y="358" width="780" height="20" fill="#E8ECF7"/>
-<text x="30" y="372" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Ответ авторизации (response leg) — Сеть подменяет FPAN на DPAN на обратном пути</text>
+<text x="30" y="372" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Ответ авторизации (response leg)</text>
 
 <!-- Event 7: Эмитент → Сеть (response with FPAN) -->
 <line x1="710" y1="400" x2="455" y2="400" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
@@ -91,15 +86,5 @@
 <!-- Event 8: Сеть → ... → Держатель (cascading response with DPAN substitution) -->
 <path d="M 455,420 L 330,420 L 205,420 L 80,420" fill="none" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <text x="267" y="414" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MTI 0110 · DE 2 = DPAN — продавцу и держателю</text>
-
-<!-- BOTTOM: Example values -->
-<rect x="20" y="445" width="780" height="65" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-<text x="30" y="463" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Пример сопоставления (учебный)</text>
-<text x="30" y="481" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030"><tspan font-weight="bold">FPAN:</tspan> 4242 4242 4242 4242</text>
-<text x="220" y="481" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030"><tspan font-weight="bold">DPAN:</tspan> 4914 1234 5678 9012</text>
-<text x="430" y="481" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030"><tspan font-weight="bold">TAVV:</tspan> 8-байтная криптограмма (DE 55)</text>
-<text x="30" y="498" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030"><tspan font-weight="bold">TRID:</tspan> 50001234 (Visa Token Service)</text>
-<text x="220" y="498" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030"><tspan font-weight="bold">TAL:</tspan> High (биометрия на устройстве)</text>
-<text x="430" y="498" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">BIN DPAN — из диапазона token-range схемы (VTS, MDES, TSP НСПК)</text>
 
 </svg>
