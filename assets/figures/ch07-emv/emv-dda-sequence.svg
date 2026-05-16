@@ -131,14 +131,6 @@
      font-weight="bold"
      fill="#1a2030"
      id="text6">Терминал: READ RECORD</text>
-  <text
-     x="137.91853"
-     y="79.596413"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     fill="#5c647a"
-     id="text7">сертификаты, DDOL (0x9F49), индекс 0x9F22</text>
   <rect
      x="293.31183"
      y="40.374527"
@@ -166,8 +158,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      fill="#5c647a"
-     id="text9"
-     dx="0 0 0 0 0 0 1.5091592">PK CA (0x9F22) → PK эмитента → PK ICC</text>
+     id="text9">PK CA → PK эмитента → PK ICC</text>
   <line
      x1="253.56825"
      y1="66.596413"
@@ -261,14 +252,6 @@
      font-weight="bold"
      fill="#1a2030"
      id="text12">Терминал → Карта: INTERNAL AUTHENTICATE</text>
-  <text
-     x="273.56824"
-     y="242.59642"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     fill="#5c647a"
-     id="text13">в command data: значения тегов из DDOL (обычно UN)</text>
   <line
      x1="273.56824"
      y1="252.59642"
@@ -292,21 +275,13 @@
      id="rect13" />
   <text
      x="273.56824"
-     y="284.59641"
+     y="293.59641"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
      fill="#1a2030"
-     id="text14">Карта: Dynamic Application Data =</text>
-  <text
-     x="273.56824"
-     y="302.59641"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     fill="#5c647a"
-     id="text15">ICC Dynamic Number (0x9F4C) + данные DDOL</text>
+     id="text14">Карта: формирует SDAD</text>
   <line
      x1="273.56824"
      y1="312.59641"
@@ -391,14 +366,6 @@
      font-weight="bold"
      fill="#1a2030"
      id="text18">Терминал: расшифровка SDAD</text>
-  <text
-     x="168.27983"
-     y="465.76865"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     fill="#5c647a"
-     id="text19">ключом PK ICC</text>
   <!-- V2: ромб-решение -->
   <!-- Ветви решения -->
   <line
@@ -457,21 +424,13 @@
      id="rect22" />
   <text
      x="403.75476"
-     y="416.23041"
+     y="423.23041"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
      fill="#1a2030"
-     id="text23">TVR: DDA пройдена</text>
-  <text
-     x="403.75476"
-     y="431.23041"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     fill="#5c647a"
-     id="text24">штатный путь</text>
+     id="text23">DDA пройдена</text>
   <!-- V4: отказ -->
   <rect
      x="343.38062"
@@ -486,19 +445,11 @@
      id="rect24" />
   <text
      x="410.50879"
-     y="471.25607"
+     y="479.25607"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
      fill="#1a2030"
-     id="text25">TVR: DDA не пройдена</text>
-  <text
-     x="410.50879"
-     y="486.2561"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     fill="#5c647a"
-     id="text26">byte 1, bit 4</text>
+     id="text25">DDA не пройдена</text>
 </svg>

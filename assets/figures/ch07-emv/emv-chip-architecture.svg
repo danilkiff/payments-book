@@ -463,14 +463,6 @@
      font-weight="bold"
      fill="#1a2030"
      id="text22">ROM</text>
-  <text
-     x="433.41492"
-     y="91.111549"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
-     fill="#5c647a"
-     id="text23">ОС, аплет</text>
   <rect
      x="486.41492"
      y="46.111553"
@@ -519,22 +511,6 @@
      font-weight="bold"
      fill="#1a2030"
      id="text26">EEPROM</text>
-  <text
-     x="623.41492"
-     y="84.111549"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
-     fill="#5c647a"
-     id="text27">ключи,</text>
-  <text
-     x="623.41492"
-     y="97.111549"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
-     fill="#5c647a"
-     id="text28">счётчики</text>
   <!-- DATA BUS -->
   <line
      x1="289.35593"
@@ -711,20 +687,6 @@
      font-weight="bold"
      fill="#1a2030"
      id="text38">TRNG</text>
-  <text
-     x="605.18744"
-     y="208.00734"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
-     fill="#5c647a"
-     id="text39"><tspan
-       id="tspan1"
-       x="605.18744"
-       y="208.00734">генератор энтропии</tspan><tspan
-       id="tspan2"
-       x="605.18744"
-       y="219.25734">для nonce</tspan></text>
   <!-- CPU - Crypto - TRNG links -->
   <line
      x1="350.39017"
@@ -767,30 +729,6 @@
      font-weight="bold"
      fill="#1a2030"
      id="text40">Защитный экран и сенсоры</text>
-  <text
-     x="486.39798"
-     y="273.91998"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
-     fill="#1a2030"
-     id="text41">SPA / DPA — анализ потребления тока</text>
-  <text
-     x="490.85434"
-     y="284.46365"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
-     fill="#1a2030"
-     id="text42">Fault injection: glitch, лазер, температура</text>
-  <text
-     x="485.76138"
-     y="293.09744"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
-     fill="#1a2030"
-     id="text43">при срабатывании – стирание ключей</text>
   <!-- Защита alarm → CPU -->
   <path
      d="M 393.05779,266.42486 Q 368.71493,250.8292 346.80638,230.03498"

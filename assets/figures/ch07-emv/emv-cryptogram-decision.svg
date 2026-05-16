@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 444" width="480" height="444">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 410" width="480" height="410">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
@@ -30,13 +30,6 @@
 <text x="315.0" y="311.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Нет</text>
 <rect x="300.0" y="350.0" width="100" height="44" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="350.0" y="374.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">TC</text>
-<!-- CID (9F27) annotation: card returns cryptogram type in CID byte -->
-<rect x="20.0" y="408.0" width="200" height="28" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-<text x="120.0" y="420.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">CID (тег 9F27)</text>
-<text x="120.0" y="432.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">тип криптограммы: AAC / TC / ARQC</text>
 <!-- 2nd GENERATE AC: dashed return path from ARQC back to top decision -->
 <path d="M 160 372 C 430 372 460 200 320 44" fill="none" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<rect x="345.0" y="200.0" width="120" height="32" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-<text x="405.0" y="214.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">2nd GAC</text>
-<text x="405.0" y="226.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">после ARPC: TC / AAC</text>
 </svg>

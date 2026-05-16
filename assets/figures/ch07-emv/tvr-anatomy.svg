@@ -9,7 +9,6 @@
 <text x="491.0" y="22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">бит 3</text>
 <text x="561.0" y="22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">бит 2</text>
 <text x="631.0" y="22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">бит 1 (LSB)</text>
-<text x="94" y="55" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">1: данные</text>
 <rect x="106" y="36" width="69" height="29" fill="#4E63D9" fill-opacity="0.16" stroke="#5C647A" stroke-width="0.5"/>
 <text x="141.0" y="55" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">ODA нет</text>
 <rect x="176" y="36" width="69" height="29" fill="#4E63D9" fill-opacity="0.16" stroke="#5C647A" stroke-width="0.5"/>
@@ -24,7 +23,6 @@
 <text x="491.0" y="55" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">CDA✗</text>
 <rect x="526" y="36" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="596" y="36" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
-<text x="94" y="85" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">2: терминал</text>
 <rect x="106" y="66" width="69" height="29" fill="#4E63D9" fill-opacity="0.16" stroke="#5C647A" stroke-width="0.5"/>
 <text x="141.0" y="85" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">ver≠</text>
 <rect x="176" y="66" width="69" height="29" fill="#4E63D9" fill-opacity="0.16" stroke="#5C647A" stroke-width="0.5"/>
@@ -38,7 +36,6 @@
 <rect x="456" y="66" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="526" y="66" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="596" y="66" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
-<text x="94" y="115" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">3: CVM</text>
 <rect x="106" y="96" width="69" height="29" fill="#4E63D9" fill-opacity="0.16" stroke="#5C647A" stroke-width="0.5"/>
 <text x="141.0" y="115" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">CVM✗</text>
 <rect x="176" y="96" width="69" height="29" fill="#4E63D9" fill-opacity="0.16" stroke="#5C647A" stroke-width="0.5"/>
@@ -53,7 +50,6 @@
 <text x="491.0" y="115" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">PIN онл.</text>
 <rect x="526" y="96" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="596" y="96" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
-<text x="94" y="145" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">4: риск</text>
 <rect x="106" y="126" width="69" height="29" fill="#4E63D9" fill-opacity="0.16" stroke="#5C647A" stroke-width="0.5"/>
 <text x="141.0" y="145" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">floor</text>
 <rect x="176" y="126" width="69" height="29" fill="#4E63D9" fill-opacity="0.16" stroke="#5C647A" stroke-width="0.5"/>
@@ -67,7 +63,6 @@
 <rect x="456" y="126" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="526" y="126" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="596" y="126" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
-<text x="94" y="175" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">5: прочее</text>
 <rect x="106" y="156" width="69" height="29" fill="#4E63D9" fill-opacity="0.16" stroke="#5C647A" stroke-width="0.5"/>
 <text x="141.0" y="175" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">TDOL deflt</text>
 <rect x="176" y="156" width="69" height="29" fill="#4E63D9" fill-opacity="0.16" stroke="#5C647A" stroke-width="0.5"/>

@@ -16,11 +16,8 @@
 <rect x="236" y="36" width="69" height="31" fill="#4E63D9" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
 <text x="271.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">DDA</text>
 <rect x="306" y="36" width="69" height="31" fill="#B8821C" fill-opacity="0.4" stroke="#5C647A" stroke-width="0.5"/>
-<text x="341.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">CVM есть</text>
 <rect x="376" y="36" width="69" height="31" fill="#B8821C" fill-opacity="0.4" stroke="#5C647A" stroke-width="0.5"/>
-<text x="411.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">риск-мен.</text>
 <rect x="446" y="36" width="69" height="31" fill="#4E63D9" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
-<text x="481.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">iss. auth</text>
 <rect x="516" y="36" width="69" height="31" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <text x="551.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">RFU CL</text>
 <rect x="586" y="36" width="69" height="31" fill="#4E63D9" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
