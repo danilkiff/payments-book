@@ -10,7 +10,6 @@
   <marker id="arr-Good-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
 </defs>
 <text x="280.0" y="26.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Authorization Platform vs GCMS vs SAM</text>
-<text x="280.0" y="42.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">0100/0110/1240/1442 — типы сообщений ISO 8583, не акторы</text>
 
 <!-- Row 1: Authorization (purple) -->
 <text x="20.0" y="68.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Авторизация</text>
@@ -39,14 +38,8 @@
 <line x1="183.0" y1="115.0" x2="122.0" y2="115.0" stroke="#7759D6" stroke-width="1.5" marker-end="url(#arr-AccentB)" stroke-dasharray="6,3"/>
 <text x="151.0" y="138.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">0110</text>
 
-<!-- STIP side note -->
-<rect x="183.0" y="152.0" width="200" height="36" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="283.0" y="167.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">STIP: Authorization Platform отвечает</text>
-<text x="283.0" y="180.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">за эмитента при недоступности</text>
-
 <!-- DE mapping vertical arrow -->
 <line x1="283.0" y1="188.0" x2="283.0" y2="215.0" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="293.0" y="205.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">DE25 / DE48 mapping</text>
 
 <!-- Row 2: Clearing (warn) -->
 <text x="20.0" y="218.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Клиринг</text>
@@ -79,9 +72,7 @@
 <line x1="122.0" y1="335.0" x2="180.0" y2="335.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-Good)"/>
 <text x="151.0" y="328.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">средства</text>
 <rect x="183.0" y="311.0" width="200" height="56" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="283.0" y="330.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">SAM</text>
-<text x="283.0" y="345.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Settlement Account Management</text>
-<text x="283.0" y="359.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">неттинг и расчётные циклы</text>
+<text x="283.0" y="343.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">SAM</text>
 <line x1="441.0" y1="335.0" x2="385.0" y2="335.0" stroke="#2F8B67" stroke-width="1.5" marker-end="url(#arr-Good)"/>
 <text x="413.0" y="328.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">средства</text>
 <rect x="443.0" y="316.0" width="100" height="46" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>

@@ -7,25 +7,21 @@
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
 </defs>
-<text x="310.0" y="26.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Banknet: топология сетевого периметра Mastercard</text>
 
 <!-- Banknet ellipse (core) -->
 <ellipse cx="310.0" cy="125.0" rx="240.0" ry="90.0" fill="#F5F7FD" stroke="#5C647A" stroke-width="1.5"/>
 
 <!-- Authorization Platform inside ellipse -->
 <rect x="200.0" y="55.0" width="220" height="56" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="310.0" y="76.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Authorization Platform</text>
-<text x="310.0" y="90.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">онлайн коммутатор</text>
-<text x="310.0" y="103.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">+ STIP (стэнд-ин за эмитента)</text>
+<text x="310.0" y="80.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Authorization Platform</text>
+<text x="310.0" y="96.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">+ STIP</text>
 
 <!-- MIP edge nodes inside ellipse, flanking Authorization Platform -->
 <rect x="65.0" y="140.0" width="90" height="36" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
-<text x="110.0" y="156.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">MIP</text>
-<text x="110.0" y="169.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">пограничный узел</text>
+<text x="110.0" y="162.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">MIP</text>
 
 <rect x="465.0" y="140.0" width="90" height="36" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
-<text x="510.0" y="156.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">MIP</text>
-<text x="510.0" y="169.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">пограничный узел</text>
+<text x="510.0" y="162.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">MIP</text>
 
 <!-- Product overlay note at top of ellipse -->
 <text x="310.0" y="195.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Продуктовые надстройки: MDES, M/Chip, Mastercard Send</text>
@@ -58,22 +54,18 @@
 <text x="80.0" y="295.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">→ эквайер</text>
 
 <rect x="20.0" y="307.0" width="100" height="32" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="70.0" y="320.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Эквайер</text>
-<text x="70.0" y="333.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">генерирует IPM</text>
+<text x="70.0" y="326.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Эквайер</text>
 
 <line x1="122.0" y1="323.0" x2="218.0" y2="323.0" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
 <text x="170.0" y="316.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">IPM-файлы</text>
 
 <rect x="220.0" y="307.0" width="160" height="32" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
 <text x="300.0" y="320.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">GCMS</text>
-<text x="300.0" y="333.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Clearing &amp; Settlement (clearing leg)</text>
+<text x="300.0" y="333.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">клиринг</text>
 
 <line x1="382.0" y1="323.0" x2="478.0" y2="323.0" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
 <text x="430.0" y="316.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">settlement</text>
 
 <rect x="480.0" y="307.0" width="130" height="32" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
-<text x="545.0" y="320.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">SAM</text>
-<text x="545.0" y="333.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">расчёт</text>
-
-<text x="310.0" y="380.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Одна сеть (Banknet) c MIP-узлами; разные внутренние подсистемы и продуктовые надстройки.</text>
+<text x="545.0" y="326.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">SAM</text>
 </svg>
