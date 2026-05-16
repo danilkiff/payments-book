@@ -42,14 +42,18 @@ Type~A использует модуляцию ASK~100\% (Amplitude-Shift Keying
 время, за которое карта обязана ответить на
 команду~\cite{iso-14443,emvco-contactless-book-a}.
 
-Терминал для бесконтактных платежей содержит антенну NFC и
-контроллер, который распознаёт карту или телефон в~поле,
-устанавливает соединение и передаёт управление платёжному ПО.
-
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.45\textwidth]{assets/figures/ch08-contactless/contactless-protocol-stack}
-  \caption{Стек протоколов бесконтактного платежа.}\label{fig:contactless-protocol-stack}
+  \includefiguresvg[width=\linewidth]{assets/figures/ch08-contactless/contactless-protocol-stack}
+  \caption{Стек протоколов бесконтактного платежа и~анатомия APDU.
+  Слева~--- пять уровней от 13,56~МГц до~EMV Contactless Kernel
+  (\textit{qVSDC} / \textit{M/Chip} / \textit{Мир}); справа~--- разбор
+  стартовой команды SELECT~PPSE (`00 A4 04 00 0E 32 50 41 59 2E 53 59
+  53 2E 44 44 46 30 31 00`) и~краткий формат остальных команд
+  обмена. P1 у~GENERATE~AC задаёт тип запрашиваемой
+  криптограммы~--- AAC, TC или ARQC; бит 0x01 запрашивает
+  CDA-подпись~\cite{emvco-contactless-book-a,iso-7816-4}.}%
+  \label{fig:contactless-protocol-stack}
 \end{figure}
 
 \section{Бесконтактный EMV: протокол и~ядра}\label{sec:contactless-emv}
