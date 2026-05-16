@@ -30,12 +30,24 @@
 \DeclareCaptionLabelSeparator{emdash}{~--- }
 \captionsetup{labelsep=emdash}
 \usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
-% Список источников: мелкий шрифт; URL и note — каждый с новой строки,
-% note — серым.
-\AtBeginBibliography{\footnotesize}
-\DeclareFieldFormat{url}{\newline{\scriptsize\url{#1}}}
-\DeclareFieldFormat{note}{\newline\textcolor{black!55}{#1}}
 \usepackage[unicode]{hyperref}
+% Список источников: мелкий шрифт; URL не печатается отдельной строкой,
+% title кликабельный (href на url); note — серым с новой строки.
+\AtBeginBibliography{\footnotesize\setlength{\bibitemsep}{0pt plus 0.3ex}}
+\DeclareFieldFormat{url}{}
+\DeclareFieldFormat{title}{%
+  \iffieldundef{url}{\mkbibemph{#1}}{\href{\thefield{url}}{\mkbibemph{#1}}}%
+}
+\DeclareFieldFormat[article,inproceedings,inbook,incollection,thesis,patent,unpublished]{title}{%
+  \iffieldundef{url}{\mkbibquote{#1\isdot}}{\href{\thefield{url}}{\mkbibquote{#1\isdot}}}%
+}
+\DeclareFieldFormat{note}{}
+% Записи с keyword=noauthor печатаются без author и без year
+% (для ФЗ — снимает тавтологии «Федеральное Собрание РФ. Федеральный
+% закон от...» и «в силе с DD.MM.YYYY. YYYY.», обе даты уже в title).
+\AtEveryBibitem{\ifkeyword{noauthor}{%
+  \clearname{author}\clearfield{year}\clearfield{date}%
+}{}}
 \usepackage{bookmark}
 \usepackage{enumitem}
 \usepackage{xurl}
