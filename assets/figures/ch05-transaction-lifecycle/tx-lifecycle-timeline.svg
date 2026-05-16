@@ -27,6 +27,14 @@
 <text x="346.25" y="108" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(batch конца дня)</text>
 <text x="661.25" y="92" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Эквайер → ТСП</text>
 <text x="661.25" y="108" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">по графику договора</text>
+<text x="503.75" y="92" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Сеть ↔ корсчета банков</text>
+<text x="188.75" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">ISO 8583 (0100/0110)</text>
+<text x="346.25" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Файлы клиринга</text>
+<text x="503.75" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Нетто-сетлмент</text>
+<text x="661.25" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Банковский перевод</text>
+<text x="346.25" y="224" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Сумма зафиксирована</text>
+<text x="503.75" y="224" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Деньги между банками</text>
+<text x="661.25" y="224" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Зачисление на счёт ТСП</text>
 <line x1="110" y1="132" x2="740" y2="132" stroke="#5C647A" stroke-width="0.5" stroke-opacity="0.4"/>
 <line x1="110" y1="194" x2="740" y2="194" stroke="#5C647A" stroke-width="0.5" stroke-opacity="0.4"/>
 <rect x="110" y="20" width="630" height="236" rx="0" fill="none" stroke="#5C647A" stroke-width="1"/>
