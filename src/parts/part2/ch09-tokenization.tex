@@ -268,7 +268,6 @@ EMVCo, напротив, описывает платёжный токен как
 от точки покупки через эквайера и платёжную сеть до той точки,
 где нужно получить авторизационное решение по PAN
 у~эмитента~\cite{emvco-payment-tokenisation}.
-Упрощённый поток выглядит так.
 
 \begin{enumerate}
   \item \textbf{Продавец} отправляет транзакцию с~сетевым платёжным
@@ -283,7 +282,6 @@ EMVCo, напротив, описывает платёжный токен как
     прошёл выпуск и насколько надёжно был подтверждён держатель.
 \end{enumerate}
 
-На уровне протокола каждый шаг несёт конкретные данные.
 Продавец передаёт эквайеру токен (DPAN, Device PAN,
 см.~раздел~\ref{sec:contactless-mobile}), срок действия токена,
 криптограмму (TAVV, Token Authentication Verification Value,
@@ -307,8 +305,14 @@ EMVCo, напротив, описывает платёжный токен как
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.7\textwidth]{assets/figures/ch09-tokenization/token-detokenization-flow}
-  \caption{Поток токенизированной транзакции и детокенизация в~сети.}\label{fig:token-detokenization-flow}
+  \includefiguresvg[width=\linewidth]{assets/figures/ch09-tokenization/token-detokenization-flow}
+  \caption{Sequence-диаграмма токенизированной авторизации.
+  Запрос идёт DPAN от держателя до карточной сети; сеть через TSP
+  подменяет DPAN на~FPAN и~направляет эмитенту вместе с~Token
+  Assurance Level и~Token Requestor~ID, ответ возвращается с~обратной
+  подменой FPAN $\to$ DPAN. Пример значений учебный; реальные
+  Token~BIN~range у~VTS, MDES и~TSP~НСПК~--- закрытая
+  часть документации.}\label{fig:token-detokenization-flow}
 \end{figure}
 
 PAN возвращается там, где он нужен для авторизационного решения. Если
