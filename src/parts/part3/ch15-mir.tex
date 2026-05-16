@@ -71,8 +71,16 @@ Specifications~--- чиповая спецификация UnionPay). Подро
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.6\textwidth]{assets/figures/ch15-mir/mir-unionpay-routing}
-  \caption{Маршрутизация кобейджинговой карты Мир--UnionPay.}\label{fig:mir-unionpay-routing}
+  \includefiguresvg[width=\linewidth]{assets/figures/ch15-mir/mir-unionpay-routing}
+  \caption{Кобейдж Мир--UnionPay: на карте два EMV-приложения с~разными
+  AID и~tag~87 (Application Priority Indicator), Combination Selection
+  пересекает AID карты с~Terminal AID list, и~при наличии нескольких
+  кандидатов выбирается AID с~меньшим значением tag~87. Реальные AID
+  Мир~--- из~RID НСПК \texttt{A0\,00\,00\,06\,58}; UnionPay~---
+  из~RID \texttt{A0\,00\,00\,03\,33}~\cite{emvco-book1,iso-7816-aid-registry}.
+  На~2025 эмиссия Мир--UnionPay ограничена несколькими
+  банками; международный приём резко сузился после внесения НСПК
+  в~SDN-список OFAC в~феврале 2024~года.}\label{fig:mir-unionpay-routing}
 \end{figure}
 
 \section{ОПКЦ как центральный узел}\label{sec:mir-opkc}
