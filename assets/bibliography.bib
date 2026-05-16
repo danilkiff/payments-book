@@ -3395,3 +3395,43 @@
   url    = {https://www.consultant.ru/document/cons_doc_LAW_19702/},
   note   = {Кодекс от 31.07.1998 № 145-ФЗ с последующими изменениями; ст.~158 устанавливает полномочия и обязанности ГРБС}
 }
+
+@online{emvco-contactless-book-b,
+  author = {{EMVCo}},
+  title  = {{EMV} Contactless Specifications for Payment Systems, Book~B: Entry Point Specification},
+  year   = {2023},
+  url    = {https://www.emvco.com/specifications/},
+  note   = {Версия 2.11 (июнь 2023); описывает Proximity Payment System Environment (PPSE) и~DF Name \texttt{2PAY.SYS.DDF01}. PDF доступен через document search EMVCo}
+}
+
+@online{iso-7816-5,
+  author = {{ISO/IEC}},
+  title  = {ISO/IEC 7816-5:2004 \enquote{Identification cards~--- Integrated circuit cards~--- Part~5: Registration of application providers}},
+  year   = {2004},
+  url    = {https://www.iso.org/standard/34259.html},
+  note   = {Определяет структуру AID = RID (5~байт) + PIX (до~11~байт); RID назначается ANSI как Registration Authority}
+}
+
+@online{thales-payshield-host-commands,
+  author = {{Thales/Entrust}},
+  title  = {payShield 10K Host Programmer's Manual (doc~007-001518)},
+  year   = {2024},
+  url    = {https://cpl.thalesgroup.com/payshield-10k-hsm},
+  note   = {Закрытый документ; доступ через Thales/Entrust customer support для лицензированных пользователей. Семейство команд включает A0/A1 (Generate~Key), BC/BD и~BE/BF (Verify~PIN), CA/CB и~JC/JD, JE/JF (Translate~PIN), CW/CX (CVV), KQ/KR (Verify~ARQC / Generate~ARPC), K2/K3 (Mastercard~SMI/SMC)}
+}
+
+@online{visa-vbs-10,
+  author = {{Visa International}},
+  title  = {Stored Credential Transaction Framework~--- {VBS-10}},
+  year   = {2017},
+  url    = {https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/stored-credential-transaction-framework-vbs-10-may-17.pdf},
+  note   = {Май 2017; определяет CIT/MIT-цепочки, индикаторы C/R/I, POS~Environment~DE~60.8 и~требование передавать Transaction Identifier (NTID) во всех последующих MIT}
+}
+
+@online{mc-an11418-tlid,
+  author = {{Mastercard International}},
+  title  = {Announcement AN~11418~--- Transaction Link Identifier ({TLID}) Data Integrity Update},
+  year   = {2025},
+  url    = {https://www.mastercard.us/content/dam/public/mastercardcom/na/global-site/documents/transaction-processing-rules.pdf},
+  note   = {Бюллетень от 12.08.2025 (доступ через Mastercard~Connect для участников); переименовывает Trace~ID в~TLID и~ужесточает требования к~передаче в~DE~48~SE~63 с~2026 года; нормативная часть отражена в~Transaction Processing Rules}
+}
