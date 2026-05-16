@@ -309,8 +309,18 @@ hold снимается по окну MCC сети~(см.~\ref{sec:tx-authorizat
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch34-ledger/event-state-machine}
-  \caption{Конечный автомат событий: от авторизации до чарджбэка.}\label{fig:event-state-machine}
+  \includefiguresvg[width=\linewidth]{assets/figures/ch34-ledger/balance-event-grid}
+  \caption{Балансы по горизонтали, события по вертикали. В шапке~---
+  семь состояний баланса: основной поток \enquote{Ожидание $\to$
+  Заработано $\to$ Доступно}, отдельный механизм \enquote{Резерв}
+  (refund / minimum balance / holdback) и три терминала. Каждая строка~---
+  отдельное событие со своим источником и приёмником; цвет стрелки
+  кодирует семантику (capture, settlement, hold/release, refund/chargeback,
+  void/reversal). Чарджбэк открывает цикл оспаривания
+  representment $\to$ pre-arbitration $\to$ arbitration~--- отдельную
+  ось времени, поверх показанной сетки (у~Mastercard первый ответ
+  называется \textit{second presentment}~--- см.~гл.~\ref{ch:disputes}).}%
+  \label{fig:balance-event-grid}
 \end{figure}
 
 \section{Балансы, комиссии и~правила перехода}\label{sec:ledger-balances}
@@ -373,16 +383,9 @@ earned} в \enquote{merchant available}.
 правило перевода части available в~отдельный баланс
 с~собственным сроком разморозки.
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguresvg[width=.95\linewidth]{assets/figures/ch34-ledger/balance-states}
-  \caption{Состояния баланса: pending, earned, available, reserve
-    с подсекциями (\textit{refund reserve}, minimum balance,
-    holdback). Refunded и Charged Back~--- разные жизненные циклы;
-    чарджбэк открывает цепочку representment $\to$ pre-arbitration
-    $\to$ arbitration. Событийная детализация~---
-    на~рис.~\ref{fig:event-state-machine}.}\label{fig:balance-states}
-\end{figure}
+Подвиды резерва (refund reserve, minimum balance, holdback) и~цикл
+оспаривания после чарджбэка показаны на~рис.~\ref{fig:balance-event-grid}~---
+один кадр на оба разреза.
 
 Если правило не выражено в~реестре, его повторяют вручную
 в~процессе выплат и~в~бэк-офисе, и~система теряет единый источник
