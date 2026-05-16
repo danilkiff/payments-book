@@ -45,14 +45,8 @@ Format-Preserving Encryption)~--
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=\linewidth]{assets/figures/ch09-tokenization/token-risk-before-after}
-  \caption{Матрица узлов~$\times$~сценариев токенизации. Цвет
-  ячейки кодирует PCI-периметр: \textit{в~CDE}~--- полный
-  набор требований PCI~DSS; \textit{расширенный CDE}~--- узел
-  держит vault детокенизации; \textit{вне~CDE}~--- узел видит
-  только токен или DPAN. Локальная токенизация оставляет PSP
-  в~CDE с~расширенным периметром (свой vault); сетевая выносит
-  vault на сторону схемы (VTS у~Visa, MDES у~Mastercard,
-  TSP~НСПК у~Мира), и~PSP выходит из~CDE.}\label{fig:token-risk-before-after}
+  \caption{Матрица узлов~$\times$~сценариев токенизации; цвет ячейки
+  кодирует PCI-периметр узла.}\label{fig:token-risk-before-after}
 \end{figure}
 
 Сетевая и локальная токенизация различаются масштабом. Локальный
@@ -60,10 +54,13 @@ Format-Preserving Encryption)~--
 и~может детокенизировать. \highlight{Сетевой токен выпускает и распознаёт сама карточная
 сеть, поэтому он проходит весь путь от ТСП до эмитента
 и уменьшает поверхность компрометации на каждом узле маршрута}.
-Vault в~сетевой токенизации существует \emph{в~рамках одной карточной
-схемы} (рис.~\ref{fig:token-risk-before-after}): VTS у~Visa, MDES
-у~Mastercard, TSP~НСПК у~Мира. Глобального общего хранилища
-на всех нет, и~один и~тот же PAN у~разных схем токенизируется
+Матрица на рис.~\ref{fig:token-risk-before-after} раскрашивает узлы
+по периметру~PCI: \textit{в~CDE}~--- полный набор требований PCI~DSS,
+\textit{расширенный~CDE}~--- узел держит vault детокенизации,
+\textit{вне~CDE}~--- узел видит только токен или DPAN. Vault
+в~сетевой токенизации существует в~рамках одной карточной схемы:
+VTS у~Visa, MDES у~Mastercard, TSP~НСПК у~Мира. Глобального общего
+хранилища на всех нет, и~один и~тот же PAN у~разных схем токенизируется
 независимо.
 
 \section{Анатомия сетевого токена}\label{sec:token-anatomy}
@@ -191,12 +188,9 @@ Mastercard описывает MDES как единую платформу
       Issuer Interface & Взаимодействие с~эмитентом при выпуске токена \\
       \bottomrule
     \end{tabularx}
-    \par\smallskip
-    {\footnotesize Структура одинакова у VTS (Visa), MDES (Mastercard) и TSP НСПК.
-    Каждая сеть управляет своим Token Vault независимо.}
   \end{minipage}%
   \endgroup
-  \caption{Архитектурные компоненты TSP карточных сетей.}\label{fig:token-tsp-comparison}
+  \caption{Архитектурные компоненты TSP~карточной сети.}\label{fig:token-tsp-comparison}
 \end{table}
 
 \section{Сетевой токен vs токен PSP}\label{sec:token-network-vs-psp}
@@ -234,6 +228,14 @@ EMVCo, напротив, описывает платёжный токен как
 операция автономна, и в этом режиме токен, пригодный для транзакции,
 не создаётся; этот режим разобран в~разделе~\ref{sec:pci-scope-reduction}.
 
+Цифру одобрений в~табл.~\ref{fig:token-network-vs-psp} стоит читать
+с~оговоркой: рост доли подтверждается только маркетинговыми материалами
+Visa и~Mastercard, конкретное значение зависит от~сегмента ТСП
+и~не~имеет публичного независимого подтверждения. Account
+Updater~--- сервис карточной сети, обновляющий PAN и~expiry
+у~мерчантов при перевыпуске карты; без него локальный токен PSP
+требует ручного обновления реквизитов на каждой подписке.
+
 \begin{table}[H]
   \begingroup
   \small
@@ -259,13 +261,7 @@ EMVCo, напротив, описывает платёжный токен как
     \bottomrule
   \end{tabularx}%
   \endgroup
-  \caption{Сетевой токен и токен PSP~-- сравнительная таблица.
-  \textsuperscript{*}Маркетинговые материалы Visa и Mastercard сообщают
-  о~повышенной доле одобрений на сетевых токенах относительно
-  обычных PAN; конкретное значение зависит от сегмента ТСП и~не
-  имеет публичного независимого подтверждения.
-  \textsuperscript{\dag}Account Updater~-- сервис карточной сети,
-  обновляющий PAN/expiry у~мерчантов при перевыпуске карты.}\label{fig:token-network-vs-psp}
+  \caption{Сетевой токен и~токен PSP по~шести параметрам.}\label{fig:token-network-vs-psp}
 \end{table}
 
 \section{Детокенизация: кто и~когда видит настоящий PAN}\label{sec:token-detokenization}
@@ -308,18 +304,15 @@ EMVCo, напротив, описывает платёжный токен как
 операция и~с~каким уровнем проверки держатель был подтверждён
 при выпуске токена. Ответ эмитента возвращается через TSP, который
 заменяет FPAN обратно на токен, прежде чем передать ответ эквайеру,
-так что продавец не~видит настоящий PAN.
+так что продавец не~видит настоящий PAN. Значения на
+рис.~\ref{fig:token-detokenization-flow} учебные: реальные Token~BIN
+range у~VTS, MDES и~TSP~НСПК~--- закрытая часть документации.
 
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=\linewidth]{assets/figures/ch09-tokenization/token-detokenization-flow}
-  \caption{Sequence-диаграмма токенизированной авторизации.
-  Запрос идёт DPAN от держателя до карточной сети; сеть через TSP
-  подменяет DPAN на~FPAN и~направляет эмитенту вместе с~Token
-  Assurance Level и~Token Requestor~ID, ответ возвращается с~обратной
-  подменой FPAN $\to$ DPAN. Пример значений учебный; реальные
-  Token~BIN~range у~VTS, MDES и~TSP~НСПК~--- закрытая
-  часть документации.}\label{fig:token-detokenization-flow}
+  \caption{Sequence-диаграмма токенизированной авторизации
+  с~подменой DPAN~$\leftrightarrow$~FPAN на~стороне~TSP.}\label{fig:token-detokenization-flow}
 \end{figure}
 
 PAN возвращается там, где он нужен для авторизационного решения. Если

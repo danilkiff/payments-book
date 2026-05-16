@@ -109,10 +109,7 @@ Ethoca Consumer Clarity работает через инфраструктуру
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.95\linewidth]{assets/figures/ch31-disputes/vcr-vs-mc-flow}
-  \caption{Два трека раннего снятия спора -- Visa Order Insight и Mastercard Ethoca.
-    Цепочка Mastercard на схеме упрощена: стадии предарбитража
-    и~арбитражного возврата не показаны (упомянуты в~тексте этой
-    главы~--- см.~раздел~\ref{sec:disputes-lifecycle}).}\label{fig:vcr-vs-mc-flow}
+  \caption{Два трека раннего снятия спора~--- Visa Order Insight и~Mastercard Ethoca.}\label{fig:vcr-vs-mc-flow}
 \end{figure}
 
 Инструменты раннего снятия спора помогают только там, где спор возник
@@ -359,18 +356,17 @@ $\geq$~100 в~месяц при доле возвратных платежей (
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.65\linewidth]{assets/figures/ch31-disputes/monitoring-escalation}
-  \caption{Лестница эскалации мониторинговой программы. Пороги
-    \enquote{CB ratio > 0{,}9\,\%} (\textit{chargeback ratio}~--- доля
-    возвратных платежей) и~штрафы \$25--100 за возвратный
-    платёж~--- иллюстративные и~исторические (эпоха VDMP),
-    не действующая редакция VAMP; актуальные пороги VAMP
-    (220$\to$150~bps, где 1~bps = 0{,}01\,\%) описаны выше в~тексте раздела. Знаменатели
-    у~систем счёта разные: VAMP считает в~bps по~формуле
-    $(\text{TC}40+\text{TC}15)/\text{TC}05_{\text{CNP}}$ (TC~--- Transaction
-    Code в~клиринге Visa BASE~II: TC~40~--- отчёт о~мошенничестве,
-    TC~15~--- возвратный платёж, TC~05~--- продажа; см.~главу о~клиринге),
-    Mastercard~ECM~--- chargeback ratio (CB/sales).}\label{fig:monitoring-escalation}
+  \caption{Лестница эскалации мониторинговой программы.}\label{fig:monitoring-escalation}
 \end{figure}
+
+Пороги \enquote{CB ratio $>$ 0{,}9\,\%} и~штрафы \$25--100 за возвратный
+платёж на рисунке~\ref{fig:monitoring-escalation}~--- исторические,
+эпохи VDMP, а~не действующая редакция VAMP. Знаменатели у~систем счёта
+разные: VAMP считает в~базисных пунктах по~формуле
+$(\text{TC}40+\text{TC}15)/\text{TC}05_{\text{CNP}}$, где
+TC~--- Transaction Code в~клиринге Visa BASE~II (TC~40~--- отчёт
+о~мошенничестве, TC~15~--- возвратный платёж, TC~05~--- продажа;
+см.~главу о~клиринге).
 
 Схема смотрит на сочетание
 абсолютного объёма и относительной доли. Сезонность, скользящее окно и

@@ -117,7 +117,7 @@ Reference Data) и~DE~48 (Additional Data) сообщения ISO~8583/IPM
 Валюта транзакции и валюта расчёта кодируются в~разных полях, а
 формат представления суммы (с~разделителем или без, с~фиксированной
 точностью или плавающей) тоже отличается между схемами.
-Семантически одинаковые поля сопоставляются напрямую: Account Number $\leftrightarrow$ DE~2 (PAN), Destination Amount $\leftrightarrow$ DE~4 (Amount, Transaction), Destination Currency Code $\leftrightarrow$ DE~49 (Currency, Transaction), Auth Code $\leftrightarrow$ DE~38 (Approval Code), ARN $\leftrightarrow$ DE~31 (Acquirer Reference Data), MCC $\leftrightarrow$ DE~26 (Card Acceptor Business Code). Внутренняя структура 23-значного ARN одинакова в~обеих схемах: позиция~1 как \textit{mixed use}, 2--7 -- BIN эквайера, 8--11 -- дата формата YDDD (год + порядковый день года), 12--22 -- порядковый номер, 23 -- проверка по алгоритму Луна. Конкретный состав DE для IPM~1240 First Presentment и~подтверждённые позиции TCR~0 показаны на~рис.~\ref{fig:base2-vs-ipm}.
+Семантически одинаковые поля сопоставляются напрямую: Account Number $\leftrightarrow$ DE~2 (PAN), Destination Amount $\leftrightarrow$ DE~4 (Amount, Transaction), Destination Currency Code $\leftrightarrow$ DE~49 (Currency, Transaction), Auth Code $\leftrightarrow$ DE~38 (Approval Code), ARN $\leftrightarrow$ DE~31 (Acquirer Reference Data), MCC $\leftrightarrow$ DE~26 (Card Acceptor Business Code). Внутренняя структура 23-значного ARN одинакова в~обеих схемах: позиция~1 как \textit{mixed use}, 2--7 -- BIN эквайера, 8--11 -- дата формата YDDD (год + порядковый день года), 12--22 -- порядковый номер, 23 -- проверка по алгоритму Луна. Конкретный состав DE для IPM~1240 First Presentment и~подтверждённые позиции TCR~0 для Visa TC~05 в~TC~33.A показаны на~рис.~\ref{fig:base2-vs-ipm}; источники~--- Visa Acceptance Developer Portal~\cite{visa-acceptance-capture-spec} и~Mastercard GCMS Reference Manual~2021~\cite{mc-gcms-rm-2021}.
 
 Прежде чем механизм сверки начнёт сопоставлять записи, приведите каждую
 клиринговую запись к~единой внутренней модели: общий идентификатор операции,
@@ -130,7 +130,7 @@ Reference Data) и~DE~48 (Additional Data) сообщения ISO~8583/IPM
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch30-reconciliation/base2-vs-ipm}
-  \caption{Разбор примера клирингового сообщения по каждой схеме: Visa TC~05 в~TC~33.A (TCR~0) vs.\ Mastercard IPM~1240 First Presentment. Состав полей и~подтверждённые позиции~--- Visa Acceptance Developer Portal~\cite{visa-acceptance-capture-spec} и~Mastercard GCMS Reference Manual~2021~\cite{mc-gcms-rm-2021}.}\label{fig:base2-vs-ipm}
+  \caption{Visa TC~05 в~TC~33.A (TCR~0) и~Mastercard IPM~1240 First Presentment: состав полей.}\label{fig:base2-vs-ipm}
 \end{figure}
 
 Парсер должен собрать клиринговую запись, извлечь поля сопоставления
@@ -279,7 +279,7 @@ DE~54 с~типом суммы~58~\cite{mc-dcc-guide};
 Третий -- ручная очередь: всё, что не сопоставилось автоматически.
 Если на третий проход регулярно приходится больше 2--3\% записей,
 проблема не в алгоритме, а~в~качестве входных данных или
-в~пропущенном сценарии. Пример строки на каждом проходе показан на~рис.~\ref{fig:matching-passes}.
+в~пропущенном сценарии. Пример строки на каждом проходе с~иллюстративными долями показан на~рис.~\ref{fig:matching-passes}.
 
 У~записи общая ссылка \texttt{reference} -- RRN на стороне авторизации,
 ARN или эквивалент в~клиринге; реконсилиатору достаточно того, что строка
@@ -326,7 +326,7 @@ indicator)~\cite{visa-core-rules,mc-tpr}.
 \begin{figure}[tbp]
   \centering
   \includefiguresvg[width=.75\linewidth]{assets/figures/ch30-reconciliation/matching-passes}
-  \caption{Многопроходная сверка: пример строки на каждом проходе~--- строгий, мягкий, ручная очередь. Доли иллюстративные.}\label{fig:matching-passes}
+  \caption{Три прохода сверки: строгий, мягкий, ручная очередь.}\label{fig:matching-passes}
 \end{figure}
 
 Готовый сервис сверки имеет смысл там, где нет прямого доступа к

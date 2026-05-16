@@ -212,6 +212,15 @@ Processing Center (IPC -- оператор национальной платёж
 линию, как описывается приём в~договоре и~какие запасные сценарии
 должна поддерживать служба поддержки.
 
+В~сводной таблице~\ref{tab:regional-comparison} BIN
+(\textit{bank identification number}; в~ISO/IEC~7812~--- стандарте
+нумерации идентификаторов эмитентов~--- обозначается как
+\textit{issuer identification number}, IIN) для всех схем, кроме~Мир,
+требует сверки по реестру IIN ISO/IEC~7812~\cite{iso-7812-transition}
+и~публичной документации операторов: в~открытых источниках
+встречаются устаревшие значения локального внутреннего распределения,
+не зарегистрированные в~ISO.
+
 \begin{table}[H]
   \begingroup
   \small
@@ -226,7 +235,7 @@ Processing Center (IPC -- оператор национальной платёж
     }
     \toprule
     \headrow
-    \thd{Схема} & \thd{Диапазон BIN\textsuperscript{*} (bank identification number)}
+    \thd{Схема} & \thd{Диапазон BIN}
     & \thd{Внутренний interchange}
     & \thd{Обязательный приём} & \thd{Внешний путь} \\
     \midrule
@@ -251,14 +260,9 @@ Processing Center (IPC -- оператор национальной платёж
     \bottomrule
   \end{tabularx}%
   \endgroup
-  \caption{Параметры региональных схем СНГ. \textsuperscript{*}Диапазоны BIN
-  (bank identification number; в~ISO/IEC~7812 -- стандарт нумерации
-  идентификаторов эмитентов -- обозначается как issuer identification
-  number, IIN) для всех схем, кроме \enquote{Мир}, подлежат сверке
-  по реестру IIN ISO/IEC~7812~\cite{iso-7812-transition}
-  и публичной документации операторов схем; в~открытых
-  источниках встречаются и устаревшие значения локального
-  внутреннего распределения, не зарегистрированные в ISO.}\label{tab:regional-comparison}
+  \caption{Параметры региональных схем СНГ: BIN, внутренний
+  interchange, обязательность приёма, внешний путь
+  карты.}\label{tab:regional-comparison}
 \end{table}
 
 Для банка, PSP и~продавца практический вопрос при оценке региональной
