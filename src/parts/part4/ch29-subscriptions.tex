@@ -119,11 +119,10 @@ MIT~-- второй шаг. Это списание без активного у
 реквизитов. Mastercard в~Европейской экономической зоне (ЕЭЗ), Великобритании и Гибралтаре прямо требует
 в~последующих запросах авторизации по регулярным платежам передавать
 уникальный Trace ID из ответа на исходную авторизацию, а~эмитент должен
-уметь по нему восстановить исходную транзакцию~\cite{mc-tpr}. В
-практической документации Visa/Cybersource та же идея сформулирована
-ещё проще. После начальной операции нужно сохранить идентификатор
-транзакции, transaction identifier, потому что он понадобится для
-последующих операций~\cite{cybs-initial-transactions}.
+уметь по нему восстановить исходную транзакцию~\cite{mc-tpr}.
+У~Visa аналогичное требование: после начальной операции нужно
+сохранить идентификатор транзакции (\textit{transaction identifier})
+для всех последующих операций~\cite{cybs-initial-transactions}.
 
 Visa возвращает NTID в~ответе на авторизацию; Mastercard использует
 термин Trace~ID и~требует его передачу в DE~48 последующих
@@ -150,10 +149,19 @@ MIT ссылается на одну и~ту же исходную CIT, поэт
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/ntid-chain}
-  \caption{Цепочка идентификатора исходной авторизации~--
-  NTID (Visa) или Trace~ID (Mastercard)~\cite{mrc-nti-trace-id}:
-  от первой CIT через MIT к~точке обрыва при миграции PSP.}\label{fig:ntid-chain}
+  \includefiguresvg[width=\linewidth]{assets/figures/ch29-subscriptions/ntid-chain}
+  \caption{Цепочка идентификатора исходной авторизации и~раздельные
+  форматы у~Visa и~Mastercard. Visa~--- \textit{Transaction Identifier}
+  (NTID) в~DE~62.2, до~15 цифр, генерирует VisaNet; Mastercard~---
+  \textit{Trace ID} в~DE~48 SE~63 (с~2026 переименовывается
+  в~\textit{Transaction Link ID}, TLID), 15 символов фиксированной
+  структуры FNC$\cdot$BRN$\cdot$MMDD$\cdot$spaces. Trace~ID не~равен
+  ARN (DE~31, 23 цифры). Индикаторы CoF/MIT передаются у~Visa через
+  Stored Credential Framework (C/R/I) и~POS~Environment DE~60.8;
+  у~Mastercard~--- через DE~48 SE~22 (SF1, SF5). POS~Entry~Mode~10~---
+  единый код Credentials on~File для обеих
+  схем~\cite{mc-tpr,cybs-initial-transactions,mrc-nti-trace-id}.}%
+  \label{fig:ntid-chain}
 \end{figure}
 
 Идентификатор хранится как обязательный атрибут подписки,

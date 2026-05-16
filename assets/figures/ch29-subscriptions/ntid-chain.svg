@@ -1,56 +1,137 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 230" width="540" height="230">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" width="820" height="540">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
-  <marker id="arr-Bad-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#C15462"/></marker>
   <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
   <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-Good-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
 </defs>
 
-<!-- Основная ось: цепочка NTID -->
-<rect x="26.0" y="40.0" width="70" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="61.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">CIT</text>
-<text x="61.0" y="98.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">NTID создан</text>
+<!-- TITLE -->
+<text x="410" y="20" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Цепочка идентификатора исходной авторизации: NTID (Visa) и Trace ID (Mastercard)</text>
 
-<line x1="96.0" y1="60.0" x2="116.0" y2="60.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<!-- CHAIN SECTION (preserved, with NTID values added) -->
+<rect x="40" y="50" width="80" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="80" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">CIT</text>
+<text x="80" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">NTID создан</text>
+<text x="80" y="118" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">123456789012345</text>
 
-<rect x="121.0" y="40.0" width="60" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="151.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MIT₁</text>
+<line x1="120" y1="70" x2="150" y2="70" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
 
-<line x1="181.0" y1="60.0" x2="201.0" y2="60.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<rect x="155" y="50" width="80" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="195" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIT₁</text>
+<text x="195" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">NTID ref</text>
+<text x="195" y="118" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">123456789012345</text>
 
-<rect x="206.0" y="40.0" width="60" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="236.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MIT₂</text>
+<line x1="235" y1="70" x2="265" y2="70" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
 
-<line x1="266.0" y1="60.0" x2="286.0" y2="60.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<rect x="270" y="50" width="80" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="310" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIT₂</text>
+<text x="310" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">NTID ref</text>
+<text x="310" y="118" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">123456789012345</text>
 
-<rect x="291.0" y="40.0" width="60" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="321.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MIT₃</text>
+<line x1="350" y1="70" x2="380" y2="70" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
 
-<!-- Миграция PSP: warn вместо красного X -->
-<text x="396.0" y="22.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">Миграция PSP</text>
-<text x="396.0" y="34.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">понижение AR / step-up</text>
-<line x1="351.0" y1="60.0" x2="416.0" y2="60.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+<rect x="385" y="50" width="80" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="425" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIT₃</text>
+<text x="425" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">NTID ref</text>
+<text x="425" y="118" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">123456789012345</text>
 
-<!-- MIT₄ без NTID ref: риск (Bad-пунктир сохранён как риск) -->
-<rect x="421.0" y="40.0" width="70" height="40" rx="8" fill="none" stroke="#C15462" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="456.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">MIT₄</text>
-<text x="456.0" y="98.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">без NTID ref</text>
+<!-- Migration PSP arrow -->
+<text x="555" y="32" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#5C647A">Миграция PSP</text>
+<text x="555" y="44" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">понижение AR / step-up</text>
+<line x1="465" y1="70" x2="640" y2="70" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 
-<text x="510.0" y="64.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">...</text>
+<!-- MIT₄ — no ref, risk -->
+<rect x="645" y="50" width="80" height="40" rx="8" fill="none" stroke="#C15462" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="685" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIT₄</text>
+<text x="685" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">без NTID ref</text>
+<text x="685" y="118" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-style="italic" fill="#C15462">отказ R0/R1</text>
 
-<!-- Альтернативный happy path: восстановление цепочки через import / TPR -->
-<path d="M 321 80 C 321 130, 456 130, 456 80" fill="none" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="388.0" y="128.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">import scheme ref / TPR (миграция с сохранением цепочки)</text>
+<text x="755" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#1A2030">…</text>
 
-<!-- Горизонтальная ось «токен» — отдельная от NTID -->
-<text x="61.0" y="170.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">токен</text>
-<line x1="86.0" y1="167.0" x2="495.0" y2="167.0" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="290.0" y="186.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">токен общий для всего пробега — отдельный объект от NTID</text>
+<!-- TPR recovery arc -->
+<path d="M 425 90 C 425 165, 685 165, 685 90" fill="none" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<text x="555" y="163" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">import scheme ref / TPR — миграция с сохранением цепочки</text>
 
-<!-- Caption: терминология -->
-<text x="270.0" y="215.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">NTID (Visa) / Trace ID (Mastercard) — идентификатор исходной CIT, передаётся в каждой MIT</text>
+<!-- VISA PANEL -->
+<rect x="15" y="190" width="395" height="335" rx="8" fill="#F5F7FD" stroke="#4E63D9" stroke-width="2"/>
+<text x="212" y="212" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Visa · Transaction Identifier (NTID)</text>
+<text x="212" y="228" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">Stored Credential Framework (VBS-10)</text>
+
+<text x="30" y="252" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Поле ISO 8583</text>
+<text x="180" y="252" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">DE 62.2 (Transaction Identifier)</text>
+
+<text x="30" y="270" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Длина</text>
+<text x="180" y="270" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">до 15 цифр (numeric)</text>
+
+<text x="30" y="288" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Генератор</text>
+<text x="180" y="288" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">VisaNet, возврат в auth response</text>
+
+<text x="30" y="306" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Пример</text>
+<text x="180" y="306" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">123456789012345</text>
+
+<line x1="30" y1="318" x2="395" y2="318" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
+
+<text x="30" y="338" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MIT Indicator — Stored Credential Framework</text>
+<text x="30" y="358" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">C</text>
+<text x="55" y="358" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Unscheduled / CoF</text>
+<text x="30" y="374" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">R</text>
+<text x="55" y="374" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Recurring (подписка)</text>
+<text x="30" y="390" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">I</text>
+<text x="55" y="390" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Installment (рассрочка)</text>
+
+<text x="30" y="416" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">POS Environment DE 60.8</text>
+<text x="30" y="434" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">2</text>
+<text x="55" y="434" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Installment</text>
+<text x="30" y="450" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">5</text>
+<text x="55" y="450" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Recurring</text>
+<text x="30" y="466" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">9</text>
+<text x="55" y="466" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Unscheduled / initial CIT</text>
+
+<text x="30" y="494" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">POS Entry Mode (DE 22) для CoF</text>
+<text x="30" y="510" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">10</text>
+<text x="55" y="510" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Credentials on File</text>
+
+<!-- MASTERCARD PANEL -->
+<rect x="420" y="190" width="385" height="335" rx="8" fill="#F5F7FD" stroke="#B8821C" stroke-width="2"/>
+<text x="612" y="212" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Mastercard · Trace ID (с 2026 — TLID)</text>
+<text x="612" y="228" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">Credential-on-File Framework (MCoF)</text>
+
+<text x="435" y="252" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Поле ISO 8583</text>
+<text x="585" y="252" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">DE 48 SE 63</text>
+
+<text x="435" y="270" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Длина</text>
+<text x="585" y="270" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">15 символов (фиксировано)</text>
+
+<text x="435" y="288" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Структура</text>
+<text x="585" y="288" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">FNC(3) · BRN(6) · MMDD(4) · spaces(2)</text>
+
+<text x="435" y="306" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Пример</text>
+<text x="585" y="306" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">MCCABC1230327&#160;&#160;</text>
+
+<line x1="435" y1="318" x2="800" y2="318" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
+
+<text x="435" y="338" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MIT Indicator — DE 48 SE 22</text>
+
+<text x="435" y="358" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#B8821C">SF1=01</text>
+<text x="500" y="358" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">MIT (merchant-initiated)</text>
+
+<text x="435" y="374" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#B8821C">SF1=03</text>
+<text x="500" y="374" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Recurring Payment (RP)</text>
+
+<text x="435" y="390" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#B8821C">SF5</text>
+<text x="500" y="390" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Reason: installment / unscheduled COF /</text>
+<text x="500" y="402" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">resubmission / no-show / reauth / partial</text>
+
+<text x="435" y="424" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">POS Entry Mode (DE 22) для CoF</text>
+<text x="435" y="440" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#B8821C">10</text>
+<text x="465" y="440" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Credentials on File</text>
+
+<text x="435" y="464" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Trace ID ≠ ARN</text>
+<text x="435" y="478" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">ARN живёт в DE 31 (23 цифры) для retrieval</text>
+<text x="435" y="490" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">и chargeback-treka; Trace ID — для</text>
+<text x="435" y="502" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">аутентификационной цепочки MIT.</text>
+<text x="435" y="518" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-style="italic" fill="#5C647A">С 2026 у Mastercard переход на TLID (Transaction Link ID)</text>
+
 </svg>
