@@ -42,7 +42,7 @@
 
 <!-- Scoring box -->
 <rect x="510" y="226" width="180" height="34" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
-<text x="600" y="248" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">скоринг, кредит. решение</text>
+<text x="600" y="248" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">скоринг</text>
 
 <!-- Step 5: BNPL → ТСП webhook -->
 <line x1="600" y1="282" x2="360" y2="282" stroke="#7759D6" stroke-width="2.5" marker-end="url(#arr-AccentB)"/>
@@ -50,12 +50,10 @@
 
 <!-- Step 6: BNPL → ТСП settlement -->
 <line x1="600" y1="320" x2="360" y2="320" stroke="#B8821C" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="480" y="312" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">settlement: сумма − комиссия</text>
-<text x="480" y="338" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">банковский перевод, не карточная авторизация</text>
+<text x="480" y="312" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">settlement (−комиссия)</text>
 
 <!-- Step 7: ТСП → Клиент товар -->
 <line x1="360" y1="372" x2="130" y2="372" stroke="#2F8B67" stroke-width="2.5" marker-end="url(#arr-Good)"/>
 <text x="245" y="364" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">товар отгружен</text>
-<text x="245" y="392" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">в учёте ТСП — одна транзакция</text>
 
 </svg>
