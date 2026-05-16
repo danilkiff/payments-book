@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" width="760" height="540">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 490" width="760" height="490">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
@@ -32,10 +32,10 @@
 <text x="485" y="61" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Хранилище токенов (внутри TSP)</text>
 
 <!-- Lifelines -->
-<line x1="65" y1="72" x2="65" y2="520" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="235" y1="72" x2="235" y2="520" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="485" y1="72" x2="485" y2="520" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="695" y1="72" x2="695" y2="520" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="65" y1="72" x2="65" y2="475" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="235" y1="72" x2="235" y2="475" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="485" y1="72" x2="485" y2="475" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="695" y1="72" x2="695" y2="475" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 
 <!-- Step 1: PAN -->
 <line x1="65" y1="100" x2="233" y2="100" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
@@ -50,40 +50,30 @@
 <line x1="485" y1="170" x2="693" y2="170" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="589" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">запрос ID&amp;V</text>
 
-<!-- Step 4: три исхода (frictionless / step-up / отказ) -->
+<!-- Step 4: ID&V → решение эмитента (три ветви без пояснений) -->
 <line x1="695" y1="200" x2="487" y2="200" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="591" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">одобрение без вызова</text>
-
 <line x1="695" y1="225" x2="487" y2="225" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="591" y="217" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">step-up (OTP / push)</text>
-
 <line x1="695" y1="250" x2="487" y2="250" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
-<text x="591" y="242" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">отказ</text>
+<text x="591" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">ID&amp;V → решение эмитента</text>
 
 <!-- Step 5: DPAN + keys как два отдельных артефакта -->
-<rect x="262" y="290" width="200" height="40" rx="6" fill="#F5F7FD" stroke="#4E63D9" stroke-width="1.5"/>
-<line x1="362" y1="290" x2="362" y2="330" stroke="#4E63D9" stroke-width="1"/>
-<text x="312" y="306" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">DPAN</text>
-<text x="312" y="320" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">токен PAN</text>
-<text x="412" y="306" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Ключи</text>
-<text x="412" y="320" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">ключевой материал</text>
-<line x1="483" y1="310" x2="464" y2="310" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="260" y1="310" x2="237" y2="310" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="362" y="282" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">DPAN + ключи (раздельно)</text>
+<rect x="262" y="290" width="200" height="32" rx="6" fill="#F5F7FD" stroke="#4E63D9" stroke-width="1.5"/>
+<line x1="362" y1="290" x2="362" y2="322" stroke="#4E63D9" stroke-width="1"/>
+<text x="312" y="310" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">DPAN</text>
+<text x="412" y="310" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Ключи</text>
+<line x1="483" y1="306" x2="464" y2="306" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="260" y1="306" x2="237" y2="306" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="362" y="282" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">DPAN + ключи</text>
 
-<!-- Step 6a: SE-сценарий (CDA, чип на устройстве) -->
-<rect x="155" y="360" width="160" height="56" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-<text x="235" y="377" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">SE-сценарий</text>
-<text x="235" y="392" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">CDA, чип на устройстве</text>
-<text x="235" y="406" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">долгоживущие ключи</text>
+<!-- Step 6a: SE -->
+<rect x="155" y="360" width="160" height="32" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
+<text x="235" y="380" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">SE</text>
 
-<!-- Step 6b: HCE-сценарий (LUK, перевыпуск с TTL) -->
-<rect x="155" y="424" width="160" height="56" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-<text x="235" y="441" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">HCE-сценарий</text>
-<text x="235" y="456" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">LUK, перевыпуск с TTL</text>
-<text x="235" y="470" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">периодически из TSP</text>
+<!-- Step 6b: HCE -->
+<rect x="155" y="400" width="160" height="32" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
+<text x="235" y="420" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">HCE</text>
 
 <!-- Step 7: «Карта добавлена» -->
-<line x1="233" y1="505" x2="67" y2="505" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="150" y="497" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">«Карта добавлена»</text>
+<line x1="233" y1="460" x2="67" y2="460" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="150" y="452" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">«Карта добавлена»</text>
 </svg>
