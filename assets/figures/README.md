@@ -152,9 +152,9 @@ grep -oE 'id="arr-[^"]*"' assets/figures/chXX-name/figure.svg | sort -u
 
 | Скрипт                          | Выход                                                  | Глава |
 |---------------------------------|--------------------------------------------------------|-------|
-| `gen_service_code.py`           | `ch03-card-data/service-code.svg`                      | 3     |
-| `gen_mti_0100_anatomy.py`       | `ch05-iso8583/mti-0100-anatomy.svg`                    | 5     |
-| `gen_bitmap_presence.py`        | `ch05-iso8583/bitmap-presence.svg`                     | 5     |
+| `gen_service_code.py`           | `ch04-card-data/service-code.svg`                      | 4     |
+| `gen_mti_0100_anatomy.py`       | `ch06-iso8583/mti-0100-anatomy.svg`                    | 6     |
+| `gen_bitmap_presence.py`        | `ch06-iso8583/bitmap-presence.svg`                     | 6     |
 | `gen_pdol_anatomy.py`           | `ch07-emv/pdol-anatomy.svg`                            | 7     |
 | `gen_tvr_anatomy.py`            | `ch07-emv/tvr-anatomy.svg`                             | 7     |
 | `gen_tsi_anatomy.py`            | `ch07-emv/tsi-anatomy.svg`                             | 7     |
