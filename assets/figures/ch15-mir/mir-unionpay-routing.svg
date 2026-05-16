@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" width="820" height="360">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 270" width="820" height="270">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
@@ -7,58 +7,35 @@
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
 </defs>
 
-<!-- TITLE -->
-<text x="410" y="20" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Три исхода кобейджа Мир–UnionPay</text>
-<text x="410" y="36" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">механизм выбора приложения через Combination Selection — рис. с маршрутизацией AID к бесконтактному ядру (гл. EMV)</text>
-
 <!-- COBADGE CARD (compact) -->
-<rect x="280" y="55" width="260" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="410" y="74" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Кобейджинговая карта</text>
-<text x="410" y="89" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Mir Credit · A0 00 00 06 58 10 10  ·  tag 87 = 01</text>
-<text x="410" y="101" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">UnionPay Credit · A0 00 00 03 33 01 01 02  ·  tag 87 = 02</text>
+<rect x="280" y="25" width="260" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="410" y="44" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Кобейджинговая карта</text>
+<text x="410" y="59" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Mir Credit · A0 00 00 06 58 10 10  ·  tag 87 = 01</text>
+<text x="410" y="71" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">UnionPay Credit · A0 00 00 03 33 01 01 02  ·  tag 87 = 02</text>
 
 <!-- Branching arrows -->
-<line x1="340" y1="105" x2="155" y2="140" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<line x1="410" y1="105" x2="410" y2="140" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="480" y1="105" x2="665" y2="140" stroke="#C15462" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Bad)"/>
+<line x1="340" y1="75" x2="155" y2="110" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<line x1="410" y1="75" x2="410" y2="110" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<line x1="480" y1="75" x2="665" y2="110" stroke="#C15462" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Bad)"/>
 
 <!-- OUTCOME A: Mir → ОПКЦ -->
-<rect x="20" y="140" width="265" height="135" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="152" y="160" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">A · Mir выбран</text>
-<text x="32" y="178" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Условие</text>
-<text x="32" y="191" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">AID Мир есть в Terminal AID list,</text>
-<text x="32" y="204" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">tag 87 = 01 → выигрывает приоритет</text>
-<text x="32" y="222" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Маршрут</text>
-<text x="32" y="235" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">ОПКЦ НСПК · правила ПС Мир</text>
-<text x="32" y="248" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">расчёт через Банк России</text>
-<text x="32" y="266" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-style="italic" fill="#5C647A">типичный сценарий — операция в РФ</text>
+<rect x="20" y="110" width="265" height="115" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="152" y="130" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">A · Mir выбран</text>
+<text x="32" y="158" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Маршрут</text>
+<text x="32" y="171" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">ОПКЦ НСПК</text>
+<text x="32" y="195" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-style="italic" fill="#5C647A">типичный сценарий — операция в РФ</text>
 
 <!-- OUTCOME B: UnionPay → UPI -->
-<rect x="295" y="140" width="230" height="135" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="410" y="160" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">B · UnionPay выбран</text>
-<text x="307" y="178" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Условие</text>
-<text x="307" y="191" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">AID Мир отсутствует,</text>
-<text x="307" y="204" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">UICS поддерживается терминалом</text>
-<text x="307" y="222" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Маршрут</text>
-<text x="307" y="235" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">сеть UnionPay International,</text>
-<text x="307" y="248" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">расчёт через UPI-инфраструктуру</text>
-<text x="307" y="266" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-style="italic" fill="#5C647A">типичный сценарий — операция за рубежом</text>
+<rect x="295" y="110" width="230" height="115" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="410" y="130" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">B · UnionPay выбран</text>
+<text x="307" y="158" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Маршрут</text>
+<text x="307" y="171" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">UnionPay International</text>
+<text x="307" y="195" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-style="italic" fill="#5C647A">типичный сценарий — операция за рубежом</text>
 
 <!-- OUTCOME C: Empty candidate list -->
-<rect x="535" y="140" width="265" height="135" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
-<text x="667" y="160" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">C · Empty candidate list</text>
-<text x="547" y="178" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Условие</text>
-<text x="547" y="191" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">ни MIR Kernel, ни UICS в терминале</text>
-<text x="547" y="204" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">— AID-наборы не пересеклись</text>
-<text x="547" y="222" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Исход</text>
-<text x="547" y="235" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">decline до GPO, либо mag-stripe</text>
-<text x="547" y="248" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">fallback по конфигурации терминала</text>
-<text x="547" y="266" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-style="italic" fill="#5C647A">BIN-блокировка — другой шаг (после READ RECORD)</text>
-
-<!-- STATUS NOTE -->
-<rect x="20" y="290" width="780" height="60" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-<text x="32" y="308" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Статус кобейджей на 2025–2026</text>
-<text x="32" y="324" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030"><tspan font-weight="bold">Мир–JCB:</tspan> приём прекращён 14.03.2022, новые карты не выпускаются.</text>
-<text x="32" y="338" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030"><tspan font-weight="bold">Мир–UnionPay:</tspan> после внесения НСПК в SDN-список OFAC (23.02.2024) международный приём резко сузился; на 2025 эмиссия осталась у Россельхозбанка и АТБ.</text>
+<rect x="535" y="110" width="265" height="115" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
+<text x="667" y="130" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">C · Empty candidate list</text>
+<text x="547" y="158" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Исход</text>
+<text x="547" y="171" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">decline / fallback</text>
 
 </svg>
