@@ -93,7 +93,7 @@
 <!-- RSBU account chips -->
 <rect x="60.0" y="430.0" width="160" height="36" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1.5"/>
 <text x="140.0" y="446.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">30233</text>
-<text x="140.0" y="460.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">корсчёт в ЦБ</text>
+<text x="140.0" y="460.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">расчёты со схемой</text>
 
 <rect x="240.0" y="430.0" width="160" height="36" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1.5"/>
 <text x="320.0" y="446.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">47422</text>
