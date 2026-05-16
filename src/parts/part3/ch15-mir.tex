@@ -60,11 +60,20 @@
 ядра\footnote{Ядро (kernel)~--- компонент терминала, реализующий
 специфичную для схемы логику бесконтактного EMV (см. гл.~\ref{ch:emv}).},
 валюта операции и~MCC (merchant category code). Возможен
-\emph{третий исход} -- отказ обоих маршрутов: BIN (bank
-identification number, старшие цифры PAN; ISO/IEC~7812)
-заблокирован UnionPay International либо терминал не~поддерживает
-ни~MIR Kernel, ни~UICS (UnionPay Integrated Circuit Card
-Specifications~--- чиповая спецификация UnionPay). Подробное устройство Мир--UnionPay
+\emph{третий исход} на стадии выбора приложения~--- пустой
+candidate list: терминал не~поддерживает ни~MIR Kernel, ни~UICS
+(UnionPay Integrated Circuit Card Specifications~--- чиповая
+спецификация UnionPay), AID-наборы не пересекаются, и операция
+отклоняется до GPO либо уходит в~mag-stripe fallback по
+конфигурации терминала.
+Отказ по BIN-диапазону (bank identification number, старшие цифры
+PAN; ISO/IEC~7812) при блокировке российских эмитентов
+UnionPay International или иностранным эквайером~--- отдельный
+шаг: BIN читается из~Track~2 Equivalent Data только после READ
+RECORD (нормальный EMV-кейс) или сразу из трека при magstripe
+fallback; решение принимается на эквайере либо в~сети UnionPay,
+а не во время Combination Selection.
+Подробное устройство Мир--UnionPay
 разобрано в~\ref{sec:up-mir}: модели отказа, маршрутизация по AID,
 тестирование комбинации
 \enquote{карта × терминал × страна × канал}.

@@ -49,11 +49,11 @@
 <text x="667" y="160" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">C · Empty candidate list</text>
 <text x="547" y="178" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Условие</text>
 <text x="547" y="191" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">ни MIR Kernel, ни UICS в терминале</text>
-<text x="547" y="204" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">или BIN заблокирован UPI/мерчантом</text>
+<text x="547" y="204" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">— AID-наборы не пересеклись</text>
 <text x="547" y="222" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Исход</text>
 <text x="547" y="235" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">decline до GPO, либо mag-stripe</text>
 <text x="547" y="248" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">fallback по конфигурации терминала</text>
-<text x="547" y="266" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-style="italic" fill="#5C647A">в строгом EMV-режиме — decline</text>
+<text x="547" y="266" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-style="italic" fill="#5C647A">BIN-блокировка — другой шаг (после READ RECORD)</text>
 
 <!-- STATUS NOTE -->
 <rect x="20" y="290" width="780" height="60" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
