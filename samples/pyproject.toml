@@ -41,6 +41,7 @@ ignore = [
 [tool.ruff.lint.isort]
 # Каждый sample-каталог импортирует свой модуль как first-party.
 known-first-party = [
+    "aml_classifier",
     "bitmap",
     "dukpt",
     "luhn",
