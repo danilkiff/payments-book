@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582 260" width="582" height="260">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582 230" width="582" height="230">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
@@ -56,7 +56,4 @@
 <text x="377.0" y="195.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">decline / soft decline</text>
 <text x="377.0" y="207.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">см. fig:decline-decision-tree</text>
 
-<!-- Caption: NTID / Trace ID -->
-<text x="22.0" y="242.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">NTID (Visa) / Trace ID (Mastercard) — идентификатор исходной CIT, передаётся как ref в каждой последующей MIT</text>
-<text x="22.0" y="254.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">синий — CIT (initial), фиолетовый — MIT (subsequent); интервалы условны</text>
 </svg>
