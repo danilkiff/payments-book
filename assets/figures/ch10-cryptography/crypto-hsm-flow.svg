@@ -63,27 +63,28 @@
 <text x="27" y="151" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">JC/JD</text>
 <text x="65" y="151" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">PIN: TPK → LMK (вход с терминала)</text>
 <text x="27" y="164" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">JE/JF</text>
-<text x="65" y="164" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">PIN: LMK → ZPK (выход в сеть)</text>
-<text x="27" y="177" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">CW/CX</text>
-<text x="65" y="177" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Generate / Verify CVV под CVK</text>
-<text x="27" y="190" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">BE/BF</text>
-<text x="65" y="190" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Verify Interchange PIN (ZPK)</text>
-<text x="27" y="203" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">A0/A1</text>
-<text x="65" y="203" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Generate Key (рабочие из ZMK/TMK)</text>
+<text x="65" y="164" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">PIN: ZPK → LMK (вход из сети)</text>
+<text x="27" y="177" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">CA/CB</text>
+<text x="65" y="177" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">PIN: TPK → ZPK (для выхода в сеть)</text>
+<text x="27" y="190" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">CW/CX</text>
+<text x="65" y="190" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Generate / Verify CVV под CVK</text>
+<text x="27" y="203" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">BE/BF</text>
+<text x="65" y="203" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Verify Interchange PIN (ZPK)</text>
 
 <!-- arrow from HSM эквайера to Эквайер -->
 <line x1="280" y1="140" x2="300" y2="140" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
 
 <!-- ЗОНАЛЬНЫЙ HSM (left middle) -->
-<rect x="15" y="220" width="265" height="100" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
+<rect x="15" y="220" width="265" height="120" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
 <text x="147" y="240" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Зональный HSM (сети)</text>
 
 <text x="27" y="258" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Ключи</text>
 <text x="27" y="271" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">ZPK (зона эквайера) ↔ ZPK (зона эмитента)</text>
 
 <text x="27" y="292" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Операция</text>
-<text x="27" y="305" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#4E63D9">CA/CB</text>
-<text x="65" y="305" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Translate PIN-block: ZPK → ZPK</text>
+<text x="27" y="305" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Перешифрование PIN-блока между парами</text>
+<text x="27" y="317" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">ZPK (вход) → ZPK (выход), смена ключа без</text>
+<text x="27" y="329" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">выноса clear-text PIN из HSM</text>
 
 <line x1="280" y1="270" x2="300" y2="220" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
 
@@ -107,10 +108,10 @@
 <text x="585" y="217" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Generate ARPC</text>
 <text x="552" y="230" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">  → ARPC = MAC(SK_AC, ARQC XOR ARC)</text>
 
-<text x="552" y="253" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Secure Messaging (опц.)</text>
+<text x="552" y="253" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Verify Truncated AC (Mastercard CAP)</text>
 <text x="552" y="266" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#7759D6">K2/K3</text>
-<text x="595" y="266" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Mastercard SMI/SMC</text>
-<text x="552" y="279" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">  → подпись script-команд (issuer update)</text>
+<text x="595" y="266" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Chip Authentication Programme</text>
+<text x="552" y="279" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">  → проверка усечённой криптограммы (отд. UX)</text>
 
 <text x="552" y="302" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">PIN verification</text>
 <text x="552" y="315" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#7759D6">DC/DD</text>
@@ -121,7 +122,7 @@
 
 <!-- BOTTOM LEGEND: Thales payShield commands -->
 <rect x="15" y="500" width="790" height="35" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-<text x="25" y="518" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">payShield legacy host commands:</text>
-<text x="25" y="531" text-anchor="start" font-family="Inter, sans-serif" font-size="8" fill="#5C647A">A0/A1 Gen Key · BC/BD Verify TPK-PIN · BE/BF Verify ZPK-PIN · CA/CB Translate PIN ZPK→ZPK · CW/CX CVV · DC/DD Verify Visa PVV · JC/JD PIN TPK→LMK · JE/JF PIN ZPK→LMK · KQ/KR ARQC/ARPC · K2/K3 Mastercard SMI/SMC</text>
+<text x="25" y="518" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">payShield host commands (General Reference, не Legacy-набор):</text>
+<text x="25" y="531" text-anchor="start" font-family="Inter, sans-serif" font-size="8" fill="#5C647A">A0/A1 Gen Key · BC/BD Verify TPK-PIN · BE/BF Verify ZPK-PIN · CA/CB PIN TPK→ZPK · CW/CX CVV · DC/DD Verify Visa PVV · JC/JD PIN TPK→LMK · JE/JF PIN ZPK→LMK · KQ/KR ARQC/ARPC (EMV 3.1.1) · K2/K3 Verify Truncated AC (Mastercard CAP)</text>
 
 </svg>

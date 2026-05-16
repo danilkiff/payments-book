@@ -3414,10 +3414,18 @@
 
 @online{thales-payshield-host-commands,
   author = {{Thales/Entrust}},
-  title  = {payShield 10K Host Programmer's Manual (doc~007-001518)},
+  title  = {payShield 10K Host Programmer's Manual (General Host Commands Reference, doc~007-001518)},
   year   = {2024},
   url    = {https://cpl.thalesgroup.com/payshield-10k-hsm},
-  note   = {Закрытый документ; доступ через Thales/Entrust customer support для лицензированных пользователей. Семейство команд включает A0/A1 (Generate~Key), BC/BD и~BE/BF (Verify~PIN), CA/CB и~JC/JD, JE/JF (Translate~PIN), CW/CX (CVV), KQ/KR (Verify~ARQC / Generate~ARPC), K2/K3 (Mastercard~SMI/SMC)}
+  note   = {Закрытый документ; доступ для лицензированных пользователей через Thales/Entrust customer support. Содержит общий набор команд (A0/A1 Generate~Key, BC/BD Verify~Terminal~PIN, BE/BF Verify~Interchange~PIN, CA/CB Translate~PIN~TPK→ZPK, CW/CX Generate/Verify~CVV, DC/DD Verify~Visa~PVV, JC/JD Translate~PIN~TPK→LMK, JE/JF Translate~PIN~ZPK→LMK, KQ/KR Verify~ARQC/Generate~ARPC, K2/K3 Verify~Truncated~AC для~Mastercard~CAP). Это отдельный документ от \enquote{Legacy Host Commands} (PUGD0538), где другой набор кодов (AA/AE/CI/JS и~др.)}
+}
+
+@online{eftlab-thales-hsm-commands,
+  author = {{EFTlab}},
+  title  = {Complete list of Thales HSM commands},
+  year   = {2025},
+  url    = {https://www.eftlab.com/knowledge-base/complete-list-of-thales-hsm-commands},
+  note   = {Публичная сводка кодов команд payShield с описанием функций; не заменяет официальный Programmer's Manual, но удобна для верификации соответствий код~$\leftrightarrow$ функция}
 }
 
 @online{visa-vbs-10,
