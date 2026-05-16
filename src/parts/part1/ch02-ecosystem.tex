@@ -38,8 +38,13 @@ scheme). Сеть задаёт правила и поддерживает тех
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch02-ecosystem/four-party-model}
-  \caption{Четырёхсторонняя модель карточного платежа.}\label{fig:four-party-model}
+  \includefiguresvg[width=\linewidth]{assets/figures/ch02-ecosystem/party-models}
+  \caption{Четырёхсторонняя и~трёхсторонняя модели в~одном кадре.
+  Слева у~каждой роли свой контрагент~--- Visa, Mastercard и~Мир работают
+  по~этой схеме. Справа все три роли совмещены: классический пример~---
+  American Express. В~таблице~--- практическая разница между моделями;
+  трёхсторонняя модель разбирается в~разделе~\ref{sec:ecosystem-three-party}.}%
+  \label{fig:party-models}
 \end{figure}
 
 Без карточной сети каждый из $N$ эмитентов и $M$ эквайеров должен
@@ -515,11 +520,10 @@ Interchange здесь теряет смысл -- нет двух банков, 
 подписать договор с~ним напрямую. В~четырёхсторонней модели достаточно, чтобы у~магазина был
 любой эквайер, подключённый к~сети.
 
-\begin{figure}[ht]
-  \centering
-  \includefiguresvg[width=.85\linewidth]{assets/figures/ch02-ecosystem/three-party-model}
-  \caption{Трёхсторонняя модель карточного платежа.}\label{fig:three-party-model}
-\end{figure}
+Структурное сравнение с~четырёхсторонней моделью~--- на~правой панели
+рис.~\ref{fig:party-models}: цепочки \enquote{держатель $\leftrightarrow$ эмитент}
+и~\enquote{ТСП $\leftrightarrow$ эквайер} схлопываются в~одно юрлицо,
+и~исчезает прослойка межбанковской комиссии.
 
 Ограничение масштаба объясняет, почему четырёхсторонняя модель
 доминирует. Visa и Mastercard присутствуют практически в~каждой

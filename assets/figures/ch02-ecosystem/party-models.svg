@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" width="820" height="540">
+<defs>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+</defs>
+
+<!-- PANEL 1: Four-party -->
+<rect x="15" y="15" width="395" height="320" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="213" y="40" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Четырёхсторонняя · open-loop</text>
+<text x="213" y="55" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Visa · Mastercard · Мир</text>
+
+<rect x="40" y="80" width="145" height="45" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="113" y="107" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Держатель карты</text>
+<rect x="235" y="80" width="145" height="45" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="308" y="107" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">ТСП</text>
+
+<line x1="185" y1="102" x2="235" y2="102" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<text x="210" y="95" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">покупка</text>
+
+<line x1="113" y1="125" x2="113" y2="180" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<text x="135" y="156" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">карта, счёт</text>
+
+<line x1="308" y1="125" x2="308" y2="180" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<text x="285" y="156" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">терминал, договор</text>
+
+<rect x="40" y="180" width="145" height="45" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="113" y="207" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Эмитент (банк)</text>
+<rect x="235" y="180" width="145" height="45" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="308" y="207" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Эквайер (банк)</text>
+
+<rect x="80" y="270" width="265" height="44" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="213" y="290" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Карточная сеть</text>
+<text x="213" y="304" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">правила, маршрутизация, клиринг</text>
+
+<line x1="113" y1="225" x2="140" y2="270" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-AccentB)"/>
+<text x="80" y="253" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">членство</text>
+<line x1="308" y1="225" x2="285" y2="270" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-AccentB)"/>
+<text x="345" y="253" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">членство</text>
+
+
+<!-- PANEL 2: Three-party -->
+<rect x="425" y="15" width="380" height="320" rx="8" fill="#F5F7FD" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="615" y="40" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Трёхсторонняя · closed-loop</text>
+<text x="615" y="55" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">American Express</text>
+
+<rect x="450" y="80" width="145" height="45" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="523" y="107" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Держатель карты</text>
+<rect x="645" y="80" width="145" height="45" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="718" y="107" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">ТСП</text>
+
+<line x1="595" y1="102" x2="645" y2="102" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<text x="620" y="95" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">покупка</text>
+
+<rect x="490" y="200" width="260" height="120" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="620" y="232" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">American Express</text>
+<text x="620" y="252" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">эмитент + эквайер + сеть</text>
+<text x="620" y="267" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">в одной компании</text>
+<text x="620" y="295" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">interchange отсутствует — MSC</text>
+<text x="620" y="308" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">остаётся внутри одного юрлица</text>
+
+<line x1="523" y1="125" x2="555" y2="200" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<text x="525" y="167" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">карта, счёт</text>
+
+<line x1="718" y1="125" x2="685" y2="200" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<text x="715" y="167" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">приём, расчёт</text>
+
+
+<!-- COMPARISON TABLE -->
+<rect x="200" y="355" width="285" height="40" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="342" y="372" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Four-party</text>
+<text x="342" y="386" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Visa · Mastercard · Мир</text>
+
+<rect x="505" y="355" width="300" height="40" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
+<text x="655" y="372" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Three-party (closed-loop)</text>
+<text x="655" y="386" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">American Express</text>
+
+<text x="28" y="380" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Параметр</text>
+
+<text x="28" y="416" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Контракты</text>
+<text x="212" y="416" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">N эмитентов × M эквайеров → N + M через сеть</text>
+<text x="517" y="416" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Прямой договор Amex с каждым ТСП</text>
+
+<rect x="15" y="425" width="790" height="26" fill="#F5F7FD"/>
+<text x="28" y="442" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Interchange</text>
+<text x="212" y="442" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Между банком эмитента и банком эквайера</text>
+<text x="517" y="442" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Нет; вся MSC остаётся внутри Amex</text>
+
+<text x="28" y="468" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Покрытие приёма</text>
+<text x="212" y="468" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Любой ТСП с эквайером сети</text>
+<text x="517" y="468" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Закрытый список ТСП, исторически премиум</text>
+
+<rect x="15" y="477" width="790" height="26" fill="#F5F7FD"/>
+<text x="28" y="494" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Контроль ЖЦ</text>
+<text x="212" y="494" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Распределён по ролям</text>
+<text x="517" y="494" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Полный, в одной компании</text>
+
+<rect x="15" y="510" width="790" height="26" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
+<text x="28" y="528" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Когда выигрывает</text>
+<text x="212" y="528" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">масштаб приёма и специализация ролей</text>
+<text x="517" y="528" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">контроль цикла операции и клиентского опыта</text>
+
+</svg>
