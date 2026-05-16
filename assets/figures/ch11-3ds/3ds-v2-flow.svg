@@ -47,7 +47,7 @@
 
 <!-- 2. ACS -> Держатель: 3DS Method URL (fingerprint, до AReq) -->
 <line x1="570" y1="110" x2="62" y2="110" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="316" y="105" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">3DS Method URL (отпечаток, до AReq)</text>
+<text x="316" y="105" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">3DS Method URL</text>
 
 <!-- 3. 3DS Requestor -> 3DS Server: authReq -->
 <line x1="180" y1="138" x2="318" y2="138" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
@@ -85,18 +85,18 @@
 
 <!-- 10. CReq: ACS -> устройство держателя -->
 <line x1="570" y1="350" x2="62" y2="350" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="316" y="345" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">CReq (ACS &#8594; устройство)</text>
+<text x="316" y="345" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">CReq</text>
 
 <!-- UX side-note -->
 <text x="20" y="370" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">UX: OTP / биометрия (вызов)</text>
 
 <!-- 11. CRes: устройство держателя -> ACS -->
 <line x1="60" y1="390" x2="568" y2="390" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="316" y="385" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">CRes (устройство &#8594; ACS)</text>
+<text x="316" y="385" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">CRes</text>
 
 <!-- 12. RReq: ACS -> DS -> 3DS Server -->
 <line x1="570" y1="418" x2="322" y2="418" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="446" y="413" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">RReq (results через DS)</text>
+<text x="446" y="413" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">RReq</text>
 
 <!-- 13. RRes: 3DS Server -> DS -> ACS -->
 <line x1="320" y1="442" x2="568" y2="442" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
