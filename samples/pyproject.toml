@@ -46,6 +46,7 @@ known-first-party = [
     "dukpt",
     "luhn",
     "mac",
+    "metrics",
     "posting",
     "quote",
     "reconcile",
@@ -53,6 +54,7 @@ known-first-party = [
     "screening",
     "tlv",
     "token_domain",
+    "translit",
     "velocity",
 ]
 

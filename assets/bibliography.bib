@@ -1802,6 +1802,38 @@
   year   = {2026}
 }
 
+@online{eu-2580-2001,
+  author = {{Council of the European Union}},
+  title  = {Council Regulation (EC) No 2580/2001 on specific restrictive measures directed against certain persons and entities with a view to combating terrorism},
+  url    = {https://eur-lex.europa.eu/eli/reg/2001/2580/oj/eng},
+  year   = {2001},
+  note   = {Принято 27.12.2001 (OJ L~344 от 28.12.2001); список лиц, групп и организаций обновляется решением Совета не реже раза в шесть месяцев}
+}
+
+@online{uk-sanctions-list,
+  author = {{Foreign, Commonwealth and Development Office}},
+  title  = {UK Sanctions List},
+  url    = {https://search-uk-sanctions-list.service.gov.uk/},
+  year   = {2026},
+  note   = {С 28.01.2026 -- единый список всех санкционных designations Великобритании (финансовых, иммиграционных, торговых, транспортных); заменил OFSI Consolidated List of Financial Sanctions Targets}
+}
+
+@online{au-dfat-consolidated,
+  author = {{Department of Foreign Affairs and Trade}},
+  title  = {Consolidated List of persons and entities subject to Australian sanctions},
+  url    = {https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list},
+  year   = {2026},
+  note   = {Ведёт Australian Sanctions Office при DFAT; с 01.07.2026 reporting entities по AML/CTF Act 2006 обязаны устанавливать наличие клиента в списке как условие предоставления designated service}
+}
+
+@online{mas-tfs,
+  author = {{Monetary Authority of Singapore}},
+  title  = {Targeted Financial Sanctions: Lists of Designated Individuals and Entities},
+  url    = {https://www.mas.gov.sg/regulation/anti-money-laundering/targeted-financial-sanctions/lists-of-designated-individuals-and-entities},
+  year   = {2026},
+  note   = {Основано на Financial Services and Markets Act 2022 и Terrorism (Suppression of Financing) Act 2002; автоматически имплементирует резолюции Совета Безопасности ООН}
+}
+
 @online{visa-scf,
   author = {{Visa Inc.}},
   title  = {Improving Authorization Management for Transactions with Stored Credentials},
@@ -3329,6 +3361,83 @@
   year   = {1990},
   url    = {https://files.eric.ed.gov/fulltext/ED325505.pdf},
   note   = {Proceedings of the Section on Survey Research Methods, American Statistical Association, 1990, pp. 354--359 (ERIC ED325505); расширение метрики Jaro с учётом совпадающего префикса --- метрика Jaro--Winkler, применяемая в санкционном скрининге}
+}
+
+@article{levenshtein-1965,
+  author = {Levenshtein, Vladimir I.},
+  title  = {Binary codes capable of correcting deletions, insertions, and reversals},
+  journal = {Doklady Akademii Nauk SSSR},
+  year   = {1965},
+  volume = {163},
+  number = {4},
+  pages  = {845--848},
+  note   = {Английский перевод: Soviet Physics Doklady, 10(8):707--710, 1966. Введение редакторской дистанции в задаче кодирования}
+}
+
+@article{damerau-1964,
+  author = {Damerau, Fred J.},
+  title  = {A technique for computer detection and correction of spelling errors},
+  journal = {Communications of the ACM},
+  year   = {1964},
+  volume = {7},
+  number = {3},
+  pages  = {171--176},
+  doi    = {10.1145/363958.363994},
+  note   = {Введена транспозиция соседних символов как четвёртая элементарная операция edit distance; покрывает >80\% типовых опечаток}
+}
+
+@article{jaro-1989,
+  author = {Jaro, Matthew A.},
+  title  = {Advances in Record-Linkage Methodology as Applied to Matching the 1985 Census of Tampa, Florida},
+  journal = {Journal of the American Statistical Association},
+  year   = {1989},
+  volume = {84},
+  number = {406},
+  pages  = {414--420},
+  doi    = {10.1080/01621459.1989.10478785},
+  note   = {Введение метрики Jaro для записного связывания (record linkage); применяется к ФИО и адресам}
+}
+
+@misc{russell-soundex,
+  author = {Russell, Robert C.},
+  title  = {Soundex coding: U.S. Patent No.~1\,261\,167},
+  year   = {1918},
+  note   = {Фонетический код для англоязычных имён; четыре символа (первая буква + три цифры); реализован в SQL Server, PostgreSQL fuzzystrmatch}
+}
+
+@article{philips-metaphone,
+  author = {Philips, Lawrence},
+  title  = {Hanging on the {Metaphone}},
+  journal = {Computer Language Magazine},
+  year   = {1990},
+  volume = {7},
+  number = {12},
+  pages  = {39--43},
+  note   = {Усовершенствование Soundex для английской фонологии; учитывает диграфы (ph, gh, sch) и контекст согласных}
+}
+
+@online{iso-9,
+  author = {{International Organization for Standardization}},
+  title  = {ISO 9:1995 Information and documentation~--- Transliteration of Cyrillic characters into Latin characters~--- Slavic and non-Slavic languages},
+  url    = {https://www.iso.org/standard/3589.html},
+  year   = {1995},
+  note   = {Строгое 1-к-1 транслитерационное соответствие с диакритикой, реверсируемое без потери буквы; тождественно ГОСТ 7.79-2000 системе~А}
+}
+
+@online{bgn-pcgn,
+  author = {{U.S. Board on Geographic Names and Permanent Committee on Geographical Names}},
+  title  = {Romanization of Russian: BGN/PCGN 1947 System},
+  url    = {https://www.gov.uk/government/publications/romanization-systems},
+  year   = {2022},
+  note   = {Стандарт США (BGN, 1944) и Великобритании (PCGN, 1947) для географических имён и документов; контекстное правило для е/ё после гласных и знаков}
+}
+
+@online{icao-9303,
+  author = {{International Civil Aviation Organization}},
+  title  = {Doc 9303 Machine Readable Travel Documents, Part 3: Specifications Common to all MRTDs},
+  url    = {https://www.icao.int/sites/default/files/publications/DocSeries/9303_p3_cons_en.pdf},
+  year   = {2021},
+  note   = {Section 6: транслитерация имён в MRZ паспорта; только ASCII A-Z, ь не передаётся, ё → E, ю → IU, я → IA, й → I}
 }
 
 % --- ch27: AVS и метрики классификации ---
