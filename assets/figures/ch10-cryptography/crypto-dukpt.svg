@@ -329,7 +329,7 @@
      font-size="13"
      font-weight="bold"
      fill="#1A2030"
-     id="text23">AES-128 ECB · key = BDK</text>
+     id="text23">AES-128 ECB</text>
   <line
      x1="370"
      y1="370"
@@ -672,7 +672,7 @@
      font-size="13"
      font-weight="bold"
      fill="#1A2030"
-     id="text48">AES-128 ECB · key = IK</text>
+     id="text48">AES-128 ECB</text>
   <line
      x1="370"
      y1="736"
@@ -944,7 +944,7 @@
      font-size="13"
      font-weight="bold"
      fill="#1A2030"
-     id="text67">AES-128 ECB · key = IDK</text>
+     id="text67">AES-128 ECB</text>
   <line
      x1="370"
      y1="992"

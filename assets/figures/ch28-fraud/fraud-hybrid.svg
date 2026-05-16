@@ -8,7 +8,6 @@
 
 <!-- Highlighted MRC zone: FPR 2..10% -->
 <rect x="228" y="40" width="592" height="360" fill="#FBC04C" fill-opacity="0.10"/>
-<text x="524" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#8C6210">типичный CNP-FPR по MRC 2024: 2–10%</text>
 
 <!-- Grid lines -->
 <line x1="80" y1="40" x2="80" y2="400" stroke="#1A2030" stroke-width="1.2"/>
@@ -34,12 +33,12 @@
 <text x="820" y="418" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">10%</text>
 
 <!-- Axis titles -->
-<text x="450" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">FPR — доля ложных блокировок честных транзакций</text>
-<text x="22" y="220" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030" transform="rotate(-90 22 220)">TPR — доля пойманного фрода (recall)</text>
+<text x="450" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">FPR</text>
+<text x="22" y="220" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030" transform="rotate(-90 22 220)">TPR</text>
 
 <!-- Random classifier diagonal: TPR=FPR; at FPR=10%, TPR=10% → y=400-0.10*360=364 -->
 <line x1="80" y1="400" x2="820" y2="364" stroke="#5C647A" stroke-width="1.2" stroke-dasharray="4,3"/>
-<text x="780" y="358" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">случайный классификатор (TPR = FPR)</text>
+<text x="780" y="358" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">случайный</text>
 
 <!-- ROC curve: 0,0; (0.5%,70%); (2%,88%); (10%,98%) -->
 <!-- Point @75 (block): FPR=0.5%, TPR=70% → x=80+0.5*7.4·percent...wait -->
@@ -49,21 +48,16 @@
 
 <!-- Working point @75 (Block) -->
 <circle cx="117" cy="148" r="7" fill="#C15462" stroke="#FFFFFF" stroke-width="2"/>
-<text x="130" y="138" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">порог = 75 → Block</text>
-<text x="130" y="154" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">TPR ≈ 70% при FPR ≈ 0,5%</text>
+<text x="130" y="138" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">порог 75</text>
+<text x="130" y="154" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">TPR 70%, FPR 0,5%</text>
 
 <!-- Working point @65 (3DS step-up) -->
 <circle cx="228" cy="84" r="7" fill="#B8821C" stroke="#FFFFFF" stroke-width="2"/>
-<text x="240" y="74" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">порог = 65 → 3DS step-up</text>
-<text x="240" y="90" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">TPR ≈ 88% при FPR ≈ 2%</text>
+<text x="240" y="74" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">порог 65</text>
+<text x="240" y="90" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">TPR 88%, FPR 2%</text>
 
 <!-- Arrow connecting two points -->
 <line x1="125" y1="140" x2="222" y2="92" stroke="#5C647A" stroke-width="1.2" stroke-dasharray="3,3"/>
-<text x="170" y="118" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-style="italic" fill="#5C647A">сдвиг порога вниз</text>
-
-<!-- Movement annotations -->
-<text x="520" y="240" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">движение влево по кривой: ниже FPR, ниже TPR (строгий порог)</text>
-<text x="520" y="256" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">движение вправо: выше TPR, дороже false-decline (мягкий порог)</text>
 
 <!-- ====== Three action plates below the plot: y=460..520 ====== -->
 
