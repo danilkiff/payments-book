@@ -44,8 +44,15 @@ Format-Preserving Encryption)~--
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch09-tokenization/token-risk-before-after}
-  \caption{До и~после токенизации -- копии PAN у~ТСП vs.\ единый Token Vault в~рамках одной карточной схемы (TSP, Token Service Provider, токен-сервис карточной сети: VTS, Visa Token Service, у~Visa; MDES, Mastercard Digital Enablement Service, у~Mastercard; TSP НСПК у~Мира).}\label{fig:token-risk-before-after}
+  \includefiguresvg[width=\linewidth]{assets/figures/ch09-tokenization/token-risk-before-after}
+  \caption{Матрица узлов~$\times$~сценариев токенизации. Цвет
+  ячейки кодирует PCI-периметр: \textit{в~CDE}~--- полный
+  набор требований PCI~DSS; \textit{расширенный CDE}~--- узел
+  держит vault детокенизации; \textit{вне~CDE}~--- узел видит
+  только токен или DPAN. Локальная токенизация оставляет PSP
+  в~CDE с~расширенным периметром (свой vault); сетевая выносит
+  vault на сторону схемы (VTS у~Visa, MDES у~Mastercard,
+  TSP~НСПК у~Мира), и~PSP выходит из~CDE.}\label{fig:token-risk-before-after}
 \end{figure}
 
 Сетевая и локальная токенизация различаются масштабом. Локальный
@@ -53,9 +60,9 @@ Format-Preserving Encryption)~--
 и~может детокенизировать. \highlight{Сетевой токен выпускает и распознаёт сама карточная
 сеть, поэтому он проходит весь путь от ТСП до эмитента
 и уменьшает поверхность компрометации на каждом узле маршрута}.
-\enquote{Единый Token Vault} на рисунке~\ref{fig:token-risk-before-after} --
-это единый vault \emph{в~рамках одной карточной схемы}: VTS у~Visa,
-MDES у~Mastercard, TSP НСПК у~Мира. Глобального общего хранилища
+Vault в~сетевой токенизации существует \emph{в~рамках одной карточной
+схемы} (рис.~\ref{fig:token-risk-before-after}): VTS у~Visa, MDES
+у~Mastercard, TSP~НСПК у~Мира. Глобального общего хранилища
 на всех нет, и~один и~тот же PAN у~разных схем токенизируется
 независимо.
 
