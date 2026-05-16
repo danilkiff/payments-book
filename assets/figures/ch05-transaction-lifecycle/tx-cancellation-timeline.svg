@@ -16,18 +16,12 @@
 <text x="170.0" y="95.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">MTI 0400 / 0420</text>
 <text x="108" y="91" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Отмена</text>
 <text x="108" y="104" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(reversal)</text>
-<text x="120" y="118" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Reversal Request / Advice — отменяет hold</text>
-<text x="120" y="132" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">MC обязывает в 24 часа после отмены</text>
 <rect x="120" y="138" width="290" height="26" rx="6" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
 <text x="265.0" y="155.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">не MTI · cancel в API</text>
 <text x="108" y="151" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Аннулирование</text>
 <text x="108" y="164" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(void)</text>
-<text x="120" y="178" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Операция эквайра, не сетевое сообщение</text>
-<text x="120" y="192" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">Убрать запись из клирингового файла до отправки</text>
 <rect x="410" y="198" width="330" height="26" rx="6" fill="#C15462" fill-opacity="0.18" stroke="#C15462" stroke-width="2"/>
 <text x="575.0" y="215.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">новая транзакция</text>
 <text x="108" y="211" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Возврат</text>
 <text x="108" y="224" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(refund)</text>
-<text x="740" y="238" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Полный цикл auth + clearing + settle</text>
-<text x="740" y="252" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">Доступен после клиринга; T+1..T+5 раб. дн на счёт</text>
 </svg>
