@@ -3680,3 +3680,83 @@
   url    = {https://www.nspk.ru/cards-mir/security/security-program},
   note   = {Общедоступная часть требований к~информационной безопасности участников ПС~Мир; список рекомендованных моделей HSM в~публичной части не~раскрывается}
 }
+
+@online{tigerbeetle-debit-credit,
+  author = {{TigerBeetle}},
+  title  = {Debit/Credit: The Schema for {OLTP}},
+  url    = {https://docs.tigerbeetle.com/concepts/debit-credit/},
+  year   = {2026},
+  note   = {Документация TigerBeetle: специализированная финансовая OLTP-БД с~зашитой схемой double-entry, append-only immutability и~accounting invariants, проверяемыми на~уровне БД, а~не приложения; декларируемая пропускная способность~--- до~1\,000\,000 переводов в~секунду}
+}
+
+@online{modern-treasury-ledgers,
+  author = {{Modern Treasury}},
+  title  = {Ledgers Overview},
+  url    = {https://docs.moderntreasury.com/ledgers/docs/overview},
+  year   = {2026},
+  note   = {Документация Modern Treasury Ledgers: immutable double-entry ledger как managed cloud-сервис; записи невозможно удалить или переписать после публикации; реал-тайм-запросы балансов и~аудит-трейл по каждому счёту}
+}
+
+@online{formance-ledger,
+  author = {{Formance}},
+  title  = {Formance Ledger: programmable financial core ledger},
+  url    = {https://github.com/formancehq/ledger},
+  year   = {2026},
+  note   = {Открытый исходный код (Apache~2.0); встроенный DSL numscript для описания программируемых проводок поверх атомарных multi-postings; PostgreSQL-хранилище}
+}
+
+@online{blnk-finance,
+  author = {{Blnk Finance}},
+  title  = {Blnk: open-source ledger and financial core for fintech},
+  url    = {https://github.com/blnkfinance/blnk},
+  year   = {2026},
+  note   = {Открытый исходный код (Apache~2.0); double-entry, immutable, с~встроенной модулярной сверкой, балансовыми снапшотами и~inflight-проводками}
+}
+
+@online{primer-orchestration,
+  author = {{Primer}},
+  title  = {Unified payment infrastructure: control every transaction},
+  url    = {https://primer.io/},
+  year   = {2026},
+  note   = {No-code-оркестрация маршрутизации и~методов оплаты; вертикали ТСП~--- travel, retail, gaming, marketplaces, ride-sharing; публичные метрики~--- миллиарды долларов оборота в~месяц}
+}
+
+@online{spreedly-orchestration,
+  author = {{Spreedly}},
+  title  = {The Ultimate Guide to Payments Orchestration},
+  url    = {https://www.spreedly.com/guides/payments-orchestration},
+  year   = {2026},
+  note   = {Открытая PSP-agnostic-платформа оркестрации; 120+~интеграций с~эквайерами и~альтернативными методами оплаты; PCI Level~1 vault с~универсальным токеном поверх нескольких шлюзов}
+}
+
+@online{gr4vy-orchestration,
+  author = {{Gr4vy}},
+  title  = {Cloud-native payment orchestration platform},
+  url    = {https://gr4vy.com/},
+  year   = {2026},
+  note   = {Single-tenant cloud-native платформа оркестрации; PSP-agnostic, фокус на устранении vendor lock-in; 100+~интеграций; модель IaaS-доставки оркестрации}
+}
+
+@online{hyperswitch-juspay,
+  author = {{Juspay}},
+  title  = {Hyperswitch: open-source payments switch},
+  url    = {https://github.com/juspay/hyperswitch},
+  year   = {2026},
+  note   = {Открытый исходный код (Apache~2.0), Rust; smart routing, retry-логика, PCI-compliant vault; 120+~подключаемых процессоров; около~43\,000~звёзд на GitHub. Juspay~--- индийский PSP, в~FY25 обработавший более~300\,млн~транзакций в~сутки при~годовом TPV около~\$1\,трлн}
+}
+
+@online{stripe-ledger-blog,
+  author = {{Stripe Engineering}},
+  title  = {Ledger: {Stripe's} system for tracking and validating money movement},
+  url    = {https://stripe.dev/blog/ledger-stripe-system-for-tracking-and-validating-money-movement},
+  year   = {2024},
+  note   = {Архитектура production payment ledger Stripe: append-only double-entry, producer-системы как state machines, чьи события разворачиваются в~проводки; около~5\,млрд событий в~сутки; три метрики качества~--- Clearing, Timeliness, Completeness; декларируемая explainability движения денег выше~99{,}9999\%}
+}
+
+@online{intel-market-payment-orchestration,
+  author = {{Intel Market Research}},
+  title  = {Payment Orchestration Platform Market Growth Analysis, Dynamics, Key Players and Innovations, Outlook and Forecast 2026--2034},
+  url    = {https://www.intelmarketresearch.com/payment-orchestration-platform-market-44364},
+  year   = {2026},
+  note   = {Маркетинговый отчёт по сегменту payment orchestration: оценка рынка в~\$3{,}5\,млрд на~2025~год и~прогноз \$18\,млрд к~2034~году при CAGR около~20\,\%; код отчёта IMR-44364}
+}
