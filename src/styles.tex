@@ -24,6 +24,29 @@
 \definecolor{PracticeInk}{HTML}{1C56A3}
 \definecolor{MarkerYellow}{HTML}{FFF2A8}
 
+% --- Цвета купюр Банка России (для верхнего градиента на старте каждой части) ---
+% Соответствие частей: I→100, II→200, III→1000, IV→2000, V→5000.
+\definecolor{BnHundred}{HTML}{C68E40}      % 100  — горчично-золотой
+\definecolor{BnTwoHundred}{HTML}{5FA86E}   % 200  — салатовый
+\definecolor{BnThousand}{HTML}{5AAA98}     % 1000 — бирюзовый
+\definecolor{BnTwoThousand}{HTML}{4F8AC0}  % 2000 — синий
+\definecolor{BnFiveThousand}{HTML}{C46952} % 5000 — коралл
+
+% --- Верхний градиент на странице с заголовком части ---
+% Вертикальный shade «цвет купюры → белый», высота 150 мм (60\% полосы B5).
+% Вызов \introgradient{<цвет>} ставится первой строкой в src/parts/partN/intro.tex —
+% AddToShipoutPictureBG* применяет фон к странице, на которой выводится \part-
+% заголовок и начало intro (после переопределения \@endpart разрыва нет).
+\usepackage{tikz}
+\newcommand{\introgradient}[1]{%
+  \AddToShipoutPictureBG*{%
+    \begin{tikzpicture}[remember picture, overlay]
+      \shade[top color=#1, bottom color=white]
+        (current page.north west) rectangle ([yshift=-150mm] current page.north east);
+    \end{tikzpicture}%
+  }%
+}
+
 % --- Запрет переноса по слогам внутри таблиц ---
 % Применяется через >{...}-префикс в Y, P, B-колонках. Авто-перенос
 % (по словарю слогов) выключен; перенос по уже стоящим в тексте дефисам
