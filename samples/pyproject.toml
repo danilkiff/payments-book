@@ -52,6 +52,7 @@ known-first-party = [
     "reconcile",
     "retry",
     "screening",
+    "structuring",
     "tlv",
     "token_domain",
     "translit",
