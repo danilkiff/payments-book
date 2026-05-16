@@ -110,7 +110,7 @@ Priority Indicator (87). Combination Selection пересекает AID карт
 Priority. На реальной карте Мир--Maestro, которую ВТБ эмитирует
 с~2019 года~\cite{mir-vtb-maestro-2019}, терминал в~России
 предпочитает приложение Мир с~Priority~01. Само ядро определяется
-по~RID~--- первым пяти байтам AID по~ISO/IEC~7816-5~\cite{iso-7816-aid-registry};
+по~RID~--- первым пяти байтам AID по~ISO/IEC~7816-5~\cite{iso-7816-5};
 нумерация ядер закреплена в~EMVCo Book~C, где Kernel~3~--- VCPS Visa,
 а~Kernel~2~--- M\slash Chip Mastercard. Сроки действия приложения (теги 5F24\slash 5F25)
 проверяются позже, после SELECT~AID и~GPO, на этапе Processing
@@ -120,7 +120,7 @@ Restrictions, и~отражаются в~TVR байт~2 (\autoref{tab:tvr-byte2}
   \centering
   \includefiguresvg[width=.95\linewidth]{assets/figures/ch08-contactless/kernel-dispatch}
   \caption{Маршрутизация AID к~бесконтактному ядру на примере
-  карты Мир--Maestro~\cite{mir-vtb-maestro-2019,iso-7816-aid-registry}.}\label{fig:kernel-dispatch}
+  карты Мир--Maestro~\cite{mir-vtb-maestro-2019,iso-7816-5}.}\label{fig:kernel-dispatch}
 \end{figure}
 
 \subsection*{qVSDC (Visa)}

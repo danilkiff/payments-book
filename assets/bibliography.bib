@@ -2700,14 +2700,6 @@
   note   = {Международный стандарт MCC; применяется в карточных платёжных системах для классификации торговых точек}
 }
 
-@online{iso-7816-aid-registry,
-  author = {{ISO/IEC}},
-  title  = {ISO/IEC 7816-5: Identification cards -- Integrated circuit cards. Registration of application providers},
-  url    = {https://www.iso.org/standard/34259.html},
-  year   = {2004},
-  note   = {Реестр RID (Registered Application Provider Identifier); RID НСПК для платёжного приложения Мир -- A000000658}
-}
-
 @online{iso-7816-4,
   author = {{ISO/IEC}},
   title  = {{ISO/IEC} 7816-4: Identification cards -- Integrated circuit cards -- Part 4: Organization, security and commands for interchange},
@@ -3334,10 +3326,10 @@
 % --- ch27: AVS и метрики классификации ---
 @online{visa-avs-2024,
   author = {{Visa}},
-  title  = {Address Verification Service},
-  year   = {2024},
-  url    = {https://usa.visa.com/support/small-business/security-compliance.html},
-  note   = {Visa Address Verification Service (AVS): проверка соответствия введённого продавцом адреса (числовая часть и почтовый индекс) данным эмитента; результат возвращается в авторизационном ответе как отдельный код}
+  title  = {Payment Account Validation: How to Use},
+  year   = {2026},
+  url    = {https://developer.visa.com/capabilities/pav/docs-how-to},
+  note   = {Visa Developer: эмитент (или Visa от его имени) сравнивает первые 20 символов street address и почтовый индекс (5--9 символов), переданные в авторизационном запросе, с данными счёта; результат возвращается в поле Address Verification Results}
 }
 
 @online{sklearn-classification-metrics,
@@ -3409,7 +3401,7 @@
   title  = {ISO/IEC 7816-5:2004 \enquote{Identification cards~--- Integrated circuit cards~--- Part~5: Registration of application providers}},
   year   = {2004},
   url    = {https://www.iso.org/standard/34259.html},
-  note   = {Определяет структуру AID = RID (5~байт) + PIX (до~11~байт); RID назначается ANSI как Registration Authority}
+  note   = {Определяет структуру AID = RID (5~байт) + PIX (до~11~байт); RID назначается ANSI как Registration Authority; RID НСПК для платёжного приложения Мир~--- A000000658}
 }
 
 @online{thales-payshield-host-commands,
