@@ -369,7 +369,7 @@ SAQ A / A-EP~\cite{pci-faq-1291,pci-faq-1293,pci-saq}.
 идемпотентности (idempotency key~--- клиентский идентификатор
 операции, по которому шлюз дедуплицирует повторные запросы),
 шлюз возвращает результат первой попытки; вторая транзакция
-не создаётся~\cite{stripe-idempotency}.
+не создаётся~\cite{stripe-idempotency,adyen-api-idempotency}.
 
 Для этого шлюз хранит сопоставление между
 \path{idempotency_key} и \path{transaction_id}
