@@ -4177,3 +4177,75 @@
   note   = {Финальные guidelines EBA от~июля 2024~года по~применению Travel Rule для~крипто-переводов в~ЕС; применяются с~30~декабря 2024~года; порог~--- €0 (применяется к~любой сумме); часть единого режима EU Transfer of Funds Regulation (TFR)}
 }
 
+@online{ofac-50-rule-guidance,
+  author = {{Office of Foreign Assets Control}},
+  title  = {Revised {Guidance} on {Entities} {Owned} by {Persons} {Whose} {Property} and {Interests} in {Property} {Are} {Blocked}},
+  url    = {https://ofac.treasury.gov/recent-actions/20140813},
+  year   = {2014},
+  note   = {Официальное руководство OFAC по~правилу~50\,\%: сущность, в~которой~50\,\% или~более принадлежит одному или~нескольким blocked persons (прямо, косвенно или агрегированно), считается заблокированной независимо от~того, попала ли она в~SDN-список напрямую; обновлено в~2014~году с~разъяснением агрегации множественных владельцев}
+}
+
+@online{ofac-ssi-list,
+  author = {{U.S. Department of the Treasury}},
+  title  = {Sectoral {Sanctions} {Identifications} ({SSI}) {List}},
+  url    = {https://home.treasury.gov/policy-issues/financial-sanctions/consolidated-sanctions-list/sectoral-sanctions-identifications-ssi-list},
+  year   = {2025},
+  note   = {Официальная страница SSI-листа Минфина США; ведётся по~Executive Order~13662, охватывает определённые секторы российской экономики (финансы, энергетика, оборона); в~отличие от~SDN-листа не~ведёт к~полной блокировке, а~к~запрету на~определённые типы операций (новый долг, новый equity) по~директивам~1, 2, 3, 4}
+}
+
+@online{eo-13662,
+  author = {{The White House}},
+  title  = {Executive {Order}~13662: {Blocking} {Property} of {Additional} {Persons} {Contributing} to the {Situation} in {Ukraine}},
+  url    = {https://home.treasury.gov/system/files/126/ukraine_eo3.pdf},
+  year   = {2014},
+  note   = {Указ Президента США~13662 от~20~марта 2014~года, легший в~основу секторальных санкций против России; директивы~1, 2, 3, 4 определяют запреты на~новый долг свыше~14 или~30~дней и~новый equity для~банковского, энергетического, оборонного секторов}
+}
+
+@online{iso-20022-cbpr-nov-2025,
+  author = {{SWIFT}},
+  title  = {{ISO} 20022 for cross-border payments: {End} of {MT}/{MX} coexistence on~22 {November} 2025},
+  url    = {https://www.swift.com/standards/iso-20022-programme/iso-20022-payments-financial-institutions/iso-20022-cross-border-payments},
+  year   = {2025},
+  note   = {Завершение coexistence-периода 22~ноября 2025~года; все cross-border payments на~SWIFT обязаны использовать ISO~20022~MX (pacs.008, pacs.009, camt.053); MT103/MT202/MT940 для~межбанковских переводов выведены из~эксплуатации; до~22~ноября 2026~года~--- переходный hybrid-формат адресов, после~--- только structured}
+}
+
+@online{iso-20022-cbpr-plus,
+  author = {{SWIFT}},
+  title  = {Cross-{Border} {Payments} and {Reporting} {Plus} ({CBPR}+) usage guidelines},
+  url    = {https://www.swift.com/standards/iso-20022-programme/iso-20022-payments-financial-institutions/cbpr-usage-guidelines},
+  year   = {2025},
+  note   = {Документ CBPR+ Working Group, определяющий структурные поля сообщений pacs.008/pacs.009/camt.053 для~трансграничных платежей; LEI (Legal Entity Identifier), структурированный postal address, BIC и~country code обязательны}
+}
+
+@online{eu-14th-sanctions-2024,
+  author = {{Council of the European Union}},
+  title  = {Russia's war of aggression against {Ukraine}: comprehensive {EU}'s~14th package of sanctions cracks down on circumvention and adopts energy measures},
+  url    = {https://www.consilium.europa.eu/en/press/press-releases/2024/06/24/russia-s-war-of-aggression-against-ukraine-comprehensive-eu-s-14th-package-of-sanctions-cracks-down-on-circumvention-and-adopts-energy-measures/},
+  year   = {2024},
+  note   = {Пресс-релиз Совета~ЕС от~24~июня 2024~года о~14-м пакете санкций; запрет на~использование СПФС (Annex~XLIV) юрлицами~ЕС вне России; механизм Annex~XLV для~санкций против третьесторонних финансовых институтов и~провайдеров криптоактивов, вовлечённых в~обход санкций}
+}
+
+@online{eu-15th-sanctions-2024,
+  author = {{Council of the European Union}},
+  title  = {Russia: {Council} adopts~15th package of restrictive measures},
+  url    = {https://www.consilium.europa.eu/en/press/press-releases/2024/12/16/russia-council-adopts-15th-package-of-restrictive-measures/},
+  year   = {2024},
+  note   = {Пресс-релиз Совета~ЕС от~16~декабря 2024~года о~15-м пакете санкций; расширение Annex~XLIV и~XLV; новые designations physical persons и~legal entities; меры против shadow fleet и~банков-посредников}
+}
+
+@online{nydfs-stanchart-wire-stripping-2012,
+  author = {{New York State Department of Financial Services}},
+  title  = {Order against {Standard} {Chartered} {Bank}: {AML} and sanctions violations},
+  url    = {https://www.dfs.ny.gov/reports_and_publications/press_releases/pr1208071},
+  year   = {2012},
+  note   = {Приказ NYDFS от~6~августа 2012~года; Standard~Chartered обвинён в~систематическом удалении санкционных идентификаторов (\enquote{wire stripping}) из~SWIFT-сообщений MT103/MT202 на~корреспондентском маршруте через Нью-Йорк, чтобы пройти OFAC-скрининг; штраф~\$340\,млн}
+}
+
+@online{ofac-bnp-paribas-2014,
+  author = {{Office of Foreign Assets Control}},
+  title  = {{OFAC} {Settlement} with {BNP} {Paribas} {SA}},
+  url    = {https://ofac.treasury.gov/recent-actions/20140630_33},
+  year   = {2014},
+  note   = {Соглашение OFAC от~30~июня 2014~года с~BNP~Paribas на~\$963\,млн (общая сумма штрафов от~американских регуляторов~--- \$8,9\,млрд); банк систематически использовал wire stripping и~непрозрачную маршрутизацию через корреспондентов для~обхода санкций США против Судана, Ирана и~Кубы}
+}
+
