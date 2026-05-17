@@ -38,6 +38,16 @@ jobs:
       - name: SVG → figure PDFs
         run: make svg
 
+      # src/gitversion.tex в .gitignore — checkout его не приносит. Без
+      # этого шага latexmk запустится без файла, сработают \providecommand-
+      # фолбэки в payments-book.tex, и на развороте релиза вместо хэша
+      # окажется литерал «dev», а вместо даты сборки — \today.
+      - name: Generate src/gitversion.tex
+        run: |
+          sha=$(git rev-parse --short HEAD)
+          dt=$(date +%Y-%m-%d)
+          printf '\\gdef\\bookgitsha{%s}\n\\gdef\\bookbuilddate{%s}\n' "$sha" "$dt" > src/gitversion.tex
+
       - name: Build PDF (LaTeX)
         uses: docker://ghcr.io/xu-cheng/texlive-full:20260101
         with:
