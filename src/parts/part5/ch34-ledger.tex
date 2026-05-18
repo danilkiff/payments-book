@@ -346,6 +346,8 @@ TigerBeetle~\cite{tigerbeetle-debit-credit}~--- OLTP-СУБД с~зашитой
 реестр~--- журнал таких проводок и операция запроса сальдо; событие
 платёжного потока~--- функция, формирующая группу проводок:
 
+\FloatBarrier
+\clearpage
 \codefile{Python}{samples/ch34-ledger/posting.py}
 
 Внутренние счета реестра не совпадают один к~одному со счетами 809-П
@@ -384,6 +386,8 @@ hold снимается по окну, установленному правил
   \caption{Балансы по горизонтали, события по вертикали.}%
   \label{fig:balance-event-grid}
 \end{figure}
+
+\bigskip
 
 \section{Балансы, комиссии и~правила перехода}\label{sec:ledger-balances}
 

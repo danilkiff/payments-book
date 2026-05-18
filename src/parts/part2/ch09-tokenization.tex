@@ -108,9 +108,7 @@ Domain restriction отсекает операции в~инфраструкту
 атрибутов (разрешённые каналы, TRID, опциональный список MID),
 у~запроса~--- фактические значения. Реальные TSP проверяют
 шире (assurance method, expiry, cryptogram, статус токена), но
-структура решения та же:
-
-\codefile{Python}{samples/ch09-token-domain/token_domain.py}
+структура решения та же.
 
 У~токена есть собственные операции жизненного цикла:
 публичные материалы Visa перечисляют activate, resume,
@@ -118,6 +116,8 @@ suspend и delete, а~НСПК в~описании Mir HCE
 (Host Card Emulation, см.\ главу~\ref{ch:contactless}) SDK отдельно выносит
 управление жизненным циклом токена. Скомпрометированный токен
 останавливают отдельно, без перевыпуска самой карты~\cite{visa-vts,nspk-tsp,emvco-payment-tokenisation}.
+
+\codefile{Python}{samples/ch09-token-domain/token_domain.py}
 
 \section{VTS, MDES, TSP НСПК}\label{sec:token-providers}
 
@@ -189,7 +189,7 @@ Mastercard описывает MDES как единую платформу
     \end{tabularx}
   \end{minipage}%
   \endgroup
-  \caption{Архитектурные компоненты TSP~карточной сети.}\label{fig:token-tsp-comparison}
+  \caption{Архитектурные компоненты TSP~карточной сети.}\label{tab:token-tsp-comparison}
 \end{table}
 
 \section{Сетевой токен и~токен PSP}\label{sec:token-network-vs-psp}
@@ -227,7 +227,7 @@ EMVCo, напротив, описывает платёжный токен как
 и~в~этом режиме токен, пригодный для транзакции, не создаётся;
 режим разобран в~разделе~\ref{sec:pci-scope-reduction}.
 
-Цифру одобрений в~табл.~\ref{fig:token-network-vs-psp} стоит читать
+Цифру одобрений в~табл.~\ref{tab:token-network-vs-psp} стоит читать
 с~оговоркой: рост доли подтверждается только маркетинговыми материалами
 Visa и~Mastercard, конкретное значение зависит от~сегмента ТСП
 и~не~имеет публичного независимого подтверждения. Account
@@ -260,7 +260,16 @@ Updater~--- сервис карточной сети, обновляющий PAN
     \bottomrule
   \end{tabularx}%
   \endgroup
-  \caption{Сетевой токен и~токен PSP по~шести параметрам.}\label{fig:token-network-vs-psp}
+  \par\vspace{0.3em}
+  \begin{minipage}{\textwidth}
+    \footnotesize
+    \textsuperscript{*}~По маркетинговым материалам Visa и~Mastercard;
+    конкретное значение зависит от~сегмента ТСП и~не~имеет публичного
+    независимого подтверждения.\par
+    \textsuperscript{\dag}~Account Updater~--- сервис карточной сети,
+    обновляющий PAN и~expiry у~мерчантов при перевыпуске карты.
+  \end{minipage}
+  \caption{Сетевой токен и~токен PSP по~шести параметрам.}\label{tab:token-network-vs-psp}
 \end{table}
 
 \section{Детокенизация и доступ к PAN}\label{sec:token-detokenization}
@@ -307,7 +316,7 @@ PAN~\cite{emvco-payment-tokenisation}.
 рис.~\ref{fig:token-detokenization-flow} учебные: реальные Token~BIN
 range у~VTS, MDES и~TSP~НСПК~--- закрытая часть документации.
 
-\begin{figure}[tbp]
+\begin{figure}[t]
   \centering
   \includefiguresvg[width=\linewidth]{assets/figures/ch09-tokenization/token-detokenization-flow}
   \caption{Диаграмма последовательностей токенизированной авторизации

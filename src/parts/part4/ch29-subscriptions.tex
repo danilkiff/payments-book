@@ -62,11 +62,12 @@ Trace~ID исходной CIT в~каждой последующей MIT~\cite{m
 квалифицирует такую операцию как нарушение правил
 SCF~\cite{mc-tpr,visa-core-rules}.
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/scf-lifecycle}
   \caption{Жизненный цикл SCF: CIT, NTID/Trace~ID, последующие MIT.}\label{fig:scf-lifecycle}
 \end{figure}
+\FloatBarrier
 
 \section{CIT и MIT}\label{sec:subscriptions-cit-mit}
 
@@ -158,7 +159,7 @@ MIT ссылается на~одну и~ту же исходную CIT, поэт
 первым согласием и~последующим
 списанием~\cite{mc-tpr,cybs-mc-subscription-mit}.
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
   \centering
   \includefiguresvg[width=\linewidth]{assets/figures/ch29-subscriptions/ntid-chain}
   \caption{Цепочка NTID/Trace~ID: форматы полей Visa и~Mastercard,
@@ -249,14 +250,16 @@ Visa Account Updater (VAU; MAC~01) или повторить через
 STOP~--- безопасный вариант, при котором не~срабатывает мониторинг
 схемы из-за неучтённого сценария:
 
-\codefile{Python}{samples/ch29-mac-retry/mac.py}
-
-\begin{figure}[tbp]
+\begin{figure}[htbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/decline-decision-tree}
   \caption{Дерево решений по~MAC: STOP (03), UPDATE (01), WAIT (24--30).}\label{fig:decline-decision-tree}
 \end{figure}
 
+\codefile{Python}{samples/ch29-mac-retry/mac.py}
+
+\FloatBarrier
+\needspace{4\baselineskip}
 \section{Обновление реквизитов}\label{sec:subscriptions-account-updater}
 
 Сервисы обновления реквизитов закрывают сценарий, когда клиент
@@ -312,7 +315,7 @@ PAN (underlying PAN, реальный номер карты, на~который
 переносится от~продавца к~схеме, а~пакетные файлы для
 токенизированных реквизитов становятся не~нужны.
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/credential-update-flow}
   \caption{Обновление реквизитов: VAU, ABU и~параллельный путь через сетевые токены.}\label{fig:credential-update-flow}
@@ -415,7 +418,9 @@ recurring revenue под Apache~2.0, развивается с~2010~года;
 если платёж не~прошёл. Без такого уведомления растёт и~отток,
 и~количество бессмысленных повторов.
 
+\vfill
 \practicenote{%
   Устойчивость подписки~--- это непрерывная цепочка согласия:
   корректный NTID и~правильно оформленный MIT.
 }
+\vfill

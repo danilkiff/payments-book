@@ -109,6 +109,7 @@ RSA не~исчезает сразу: переход идёт постепенн
 терминалы, карты и~сертификационные цепочки должны одновременно
 поддерживать старый и~новый набор алгоритмов.
 
+\needspace{8\baselineskip}
 \section{HSM}\label{sec:crypto-hsm}
 
 \highlight{Любой криптографический алгоритм безопасен настолько, насколько
@@ -160,7 +161,7 @@ Manual~\cite{thales-payshield-host-commands} (это отдельный доку
 от~\enquote{Legacy Host Commands} с~другой схемой кодов AA/AE/CI/JS);
 публичная сводка соответствий~--- у~EFTlab~\cite{eftlab-thales-hsm-commands}.
 
-\begin{figure}[tbp]
+\begin{figure}[!ht]
   \centering
   \includefiguresvg[width=\linewidth]{assets/figures/ch10-cryptography/crypto-hsm-flow}
   \caption{HSM в~авторизационном потоке ARQC/ARPC: эквайер, зональный
@@ -214,7 +215,7 @@ TranzWare, OpenWay.
 часть Программы безопасности ПС~Мир~\cite{nspk-mir-security}
 конкретный список рекомендованных моделей HSM не~раскрывает.
 
-\begin{figure}[tbp]
+\begin{figure}[!ht]
   \centering
   \includefiguresvg[width=\linewidth]{assets/figures/ch10-cryptography/crypto-hsm-mir}
   \caption{Контур Мир и~международная схема HSM:
@@ -371,9 +372,9 @@ pin_key = derive_working_key(idk, iki, counter, KU_PIN_ENCRYPTION)
 на~\texttt{KU\_MAC\_GENERATION} или \texttt{KU\_DATA\_ENCRYPTION} даёт
 независимый working key того~же IDK для других операций (\textit{key separation}).
 
-\begin{figure}[p]
+\begin{figure}[!htbp]
   \centering
-  {\renewcommand{\figuremaxheight}{.92\textheight}%
+  {\renewcommand{\figuremaxheight}{.85\textheight}%
    \includefiguresvg[width=\linewidth]{assets/figures/ch10-cryptography/crypto-dukpt}}
   \caption{AES DUKPT по~ANSI X9.24-3:2017: деривация Initial Key из~BDK
     и~Working Key из~IDK.}\label{fig:crypto-dukpt}

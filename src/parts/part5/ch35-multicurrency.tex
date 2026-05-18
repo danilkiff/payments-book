@@ -75,9 +75,9 @@ TTL потери на~устаревшем курсе обнаруживаютс
 и~валютным риском; в~отличие от~государственного казначейства, упомянутого
 в~\autoref{ch:cbdc}).
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch35-multicurrency/fx-ownership-models}
+  \includefiguresvg[width=.65\linewidth]{assets/figures/ch35-multicurrency/fx-ownership-models}
   \caption{Четыре модели владения курсом в~мультивалютном
     продукте.}\label{fig:fx-ownership-models}
 \end{figure}
@@ -98,13 +98,15 @@ basis points, bps~--- сотых долях процентного пункта)
 \texttt{now}, чтобы тестируемое решение не зависело от~системного
 таймера:
 
-\codefile{Python}{samples/ch35-fx-quote/quote.py}
-
 \practicenote{%
   Если продукт обещает клиенту \enquote{ваш курс}, у~этого курса должны
   быть явный источник и~срок действия.
 
 }
+
+\codefile{Python}{samples/ch35-fx-quote/quote.py}
+
+\FloatBarrier
 \section{Фиксация валюты расчёта}\label{sec:mc-settlement}
 
 \textbf{Валюта цены} (transaction currency, в~правилах
@@ -166,7 +168,7 @@ Mastercard. Реестр обязательств должен хранить в
 выплаты на~момент перевода продавцу. Авторизация и~клиринг
 идут в~секундах и~часах, расчёт и~выплата~--- в~днях.
 
-\begin{figure}[tbp]
+\begin{figure}[htb]
   \centering
   \includefiguresvg[width=.8\linewidth]{assets/figures/ch35-multicurrency/three-currencies-timeline}
   \caption{Жизненный цикл операции в~нескольких валютах: transaction
@@ -265,9 +267,9 @@ IRF~\cite{visa-core-rules,visa-interchange}.
 меньше, но продавец живёт с~несколькими валютными балансами
 и~отдельным графиком выплат по~каждому.
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=.95\linewidth]{assets/figures/ch35-multicurrency/corridor-routing}
+  \includefiguresvg[width=.85\linewidth]{assets/figures/ch35-multicurrency/corridor-routing}
   \caption{Маршрутизация по~коридору: сравнение двух стратегий
     для одного платежа.}\label{fig:corridor-routing}
 \end{figure}
@@ -327,7 +329,8 @@ IRF~\cite{visa-core-rules,visa-interchange}.
 и~нетто-выплатой; валюта списания держателя (billing)
 на~схеме отдельной точкой не отображена.
 
-\begin{figure}[tbp]
+\vspace{-2pt}
+\begin{figure}[htbp]
   \centering
   \includefiguresvg[width=.85\linewidth]{assets/figures/ch35-multicurrency/multicurrency-recon}
   \caption{Одна транзакция в~пяти валютных

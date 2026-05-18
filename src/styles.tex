@@ -216,6 +216,10 @@
     colback=CodePanel,
     borderline west={2pt}{0pt}{Muted!50},
     listing only,
+    overlay middle and last={%
+      \node[anchor=north east,inner sep=2pt,font=\sffamily\tiny\color{CodeCom}]
+        at ([xshift=-4pt,yshift=-2pt]frame.north east) {(продолжение)};
+    },
   },
 }
 
