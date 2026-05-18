@@ -105,7 +105,7 @@ def draw_row(y, nibbles, groups, color_map, row_label):
 
   for start, end, lbl in groups:
     center_x = LEFT_PAD + (start + (end - start) / 2 + 0.5) * CELL_W
-    lines.append(t(center_x, y - 4, lbl, size=8, fill=MUTED))
+    lines.append(t(center_x, y - 4, lbl, size=9, fill=MUTED))
 
   for i, nib in enumerate(nibbles):
     cx = LEFT_PAD + i * CELL_W

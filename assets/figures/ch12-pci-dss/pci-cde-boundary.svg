@@ -29,7 +29,7 @@
      fill-opacity="0.15"
      stroke="#7759d6"
      stroke-width="1"
-     stroke-dasharray="6, 3"
+     stroke-dasharray="6,3"
      id="ellipse2" />
   <!-- Полупрозрачная «бежевая» подсветка подкатегории connected-to, перекрывающаяся со security-impacting -->
   <ellipse
@@ -52,9 +52,9 @@
      fill-opacity="0.15"
      stroke="#c15462"
      stroke-width="2"
-     stroke-dasharray="6, 3"
+     stroke-dasharray="6,3"
      id="ellipse4"
-     style="stroke-dasharray:2,2;stroke-dashoffset:0" />
+     style="stroke-dasharray:6,3;stroke-dashoffset:0" />
   <!-- Подписи зон -->
   <text
      x="352.65018"
@@ -126,9 +126,9 @@
      fill="#ffffff"
      stroke="#c15462"
      stroke-width="0.887327"
-     stroke-dasharray="6, 3"
+     stroke-dasharray="6,3"
      id="rect7"
-     style="stroke-width:1;stroke-dasharray:1,1;stroke-dashoffset:0" />
+     style="stroke-width:1;stroke-dasharray:6,3;stroke-dashoffset:0" />
   <text
      x="350.78986"
      y="210.64091"

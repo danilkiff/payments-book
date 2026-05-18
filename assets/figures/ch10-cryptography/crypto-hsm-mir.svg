@@ -6,11 +6,11 @@
 
 <rect x="155" y="55" width="180" height="40" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="245" y="72" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Международная схема</text>
-<text x="245" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#5C647A">Visa · Mastercard · Amex</text>
+<text x="245" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">Visa · Mastercard · Amex</text>
 
 <rect x="345" y="55" width="195" height="40" rx="6" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
 <text x="442" y="72" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Контур Мир</text>
-<text x="442" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#5C647A">НСПК · банки-эмитенты</text>
+<text x="442" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">НСПК · банки-эмитенты</text>
 
 <!-- ROW 1: Норматив -->
 <text x="22" y="113" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Норматив</text>
@@ -69,7 +69,7 @@
 
 <!-- RIGHT PANEL: Russian HSM vendors -->
 <text x="675" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Российские платёжные HSM</text>
-<text x="675" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#5C647A">три вендора в эмиссионном контуре Мир</text>
+<text x="675" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">три вендора в эмиссионном контуре Мир</text>
 
 <!-- Vendor 1: КриптоПро HSM -->
 <rect x="555" y="105" width="245" height="55" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>

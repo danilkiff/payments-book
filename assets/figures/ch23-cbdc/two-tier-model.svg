@@ -20,7 +20,7 @@
 <rect x="410" y="75" width="175" height="70" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="497" y="115" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Расчётный движок</text>
 
-<rect x="595" y="75" width="185" height="70" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="4,3"/>
+<rect x="595" y="75" width="185" height="70" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3"/>
 <text x="687" y="115" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">DLT-узлы</text>
 
 <!-- INTER-LAYER FLOWS -->
@@ -37,7 +37,7 @@
 <rect x="290" y="245" width="240" height="70" rx="6" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
 <text x="410" y="285" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Федеральное казначейство</text>
 
-<rect x="540" y="245" width="240" height="70" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5" stroke-dasharray="4,3"/>
+<rect x="540" y="245" width="240" height="70" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5" stroke-dasharray="6,3"/>
 <text x="660" y="285" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Иные участники</text>
 
 <!-- Down to client -->

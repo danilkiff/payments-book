@@ -227,7 +227,7 @@
      fill="#ffffff"
      stroke="#7759d6"
      stroke-width="1.3016"
-     stroke-dasharray="6, 3"
+     stroke-dasharray="6,3"
      id="rect10" />
   <text
      x="213.88654"
@@ -285,7 +285,7 @@
      y2="146.47574"
      stroke="#5c647a"
      stroke-width="2"
-     stroke-dasharray="6, 3"
+     stroke-dasharray="6,3"
      marker-end="url(#arr-Muted)"
      id="line15" />
   <text
@@ -324,7 +324,7 @@
      y2="146.47574"
      stroke="#5c647a"
      stroke-width="2.30473"
-     stroke-dasharray="6, 3"
+     stroke-dasharray="6,3"
      marker-end="url(#arr-Muted)"
      id="line16" />
   <text

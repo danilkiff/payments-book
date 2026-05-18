@@ -49,7 +49,7 @@
      y2="55"
      stroke="#5c647a"
      stroke-width="1.5"
-     stroke-dasharray="6, 3"
+     stroke-dasharray="6,3"
      marker-end="url(#arr-Muted)"
      id="line3" />
   <rect

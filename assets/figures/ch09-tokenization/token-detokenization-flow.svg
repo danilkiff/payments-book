@@ -39,12 +39,12 @@
 <text x="710" y="53" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">видит FPAN + meta</text>
 
 <!-- LIFELINES -->
-<line x1="80" y1="80" x2="80" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="205" y1="80" x2="205" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="330" y1="80" x2="330" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="455" y1="80" x2="455" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="580" y1="80" x2="580" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="710" y1="80" x2="710" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="80" y1="80" x2="80" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="205" y1="80" x2="205" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="330" y1="80" x2="330" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="455" y1="80" x2="455" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="580" y1="80" x2="580" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="710" y1="80" x2="710" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 
 <!-- Phase label: REQUEST LEG -->
 <rect x="20" y="92" width="780" height="20" fill="#E8ECF7"/>
@@ -61,7 +61,7 @@
 <!-- Event 3: Эквайер → Сеть -->
 <line x1="330" y1="210" x2="455" y2="210" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="392" y="204" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MTI 0100 · DE 2 = DPAN</text>
-<text x="392" y="223" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-style="italic" fill="#5C647A">BIN из token range → маршрут в TSP</text>
+<text x="392" y="223" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">BIN из token range → маршрут в TSP</text>
 
 <!-- Event 4: Сеть → TSP Vault (detokenize) -->
 <line x1="455" y1="250" x2="580" y2="250" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>

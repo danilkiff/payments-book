@@ -735,7 +735,7 @@
      fill="none"
      stroke="#b8821c"
      stroke-width="2.24986"
-     stroke-dasharray="6, 3"
+     stroke-dasharray="6,3"
      marker-end="url(#arr-Warn)"
      id="path43" />
   <!-- CPU → I/O controller -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" width="820" height="540">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 490" width="820" height="490">
 <defs>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
@@ -49,13 +49,13 @@
 <text x="758" y="58" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">chargeback</text>
 
 <!-- LIFELINES (dashed verticals below each state) -->
-<line x1="200" y1="77" x2="200" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="293" y1="77" x2="293" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="386" y1="77" x2="386" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="479" y1="77" x2="479" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="572" y1="77" x2="572" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="665" y1="77" x2="665" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
-<line x1="758" y1="77" x2="758" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="200" y1="77" x2="200" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="293" y1="77" x2="293" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="386" y1="77" x2="386" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="479" y1="77" x2="479" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="572" y1="77" x2="572" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="665" y1="77" x2="665" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="758" y1="77" x2="758" y2="365" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 
 <!-- ============ EVENT ROWS ============ -->
 <!-- Event 1: capture, Ожидание→Заработано, y=95 -->
@@ -119,26 +119,28 @@
 <line x1="386" y1="356" x2="758" y2="356" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
 
 <!-- ============ BOTTOM ANNOTATIONS ============ -->
-<!-- Legend panel (right) -->
-<rect x="560" y="395" width="250" height="135" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-<text x="572" y="412" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Семантика стрелок</text>
+<!-- Legend panel (full width, two columns) -->
+<rect x="10" y="395" width="800" height="85" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
+<text x="20" y="412" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Семантика стрелок</text>
 
-<line x1="572" y1="428" x2="600" y2="428" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="608" y="432" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">подтверждение (capture)</text>
+<!-- Left column -->
+<line x1="20" y1="428" x2="48" y2="428" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="56" y="432" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">подтверждение (capture)</text>
 
-<line x1="572" y1="445" x2="600" y2="445" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="608" y="449" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">признание / release</text>
+<line x1="20" y1="445" x2="48" y2="445" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<text x="56" y="449" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">признание / release</text>
 
-<line x1="572" y1="462" x2="600" y2="462" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="608" y="466" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">hold / release (резерв)</text>
+<line x1="20" y1="462" x2="48" y2="462" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="56" y="466" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">hold / release (резерв)</text>
 
-<line x1="572" y1="479" x2="600" y2="479" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
-<text x="608" y="483" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">refund / chargeback</text>
+<!-- Right column -->
+<line x1="420" y1="428" x2="448" y2="428" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
+<text x="456" y="432" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">refund / chargeback</text>
 
-<line x1="572" y1="496" x2="600" y2="496" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="608" y="500" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">void / reversal</text>
+<line x1="420" y1="445" x2="448" y2="445" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="456" y="449" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">void / reversal</text>
 
-<line x1="572" y1="513" x2="600" y2="513" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="608" y="517" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">auto / по таймауту</text>
+<line x1="420" y1="462" x2="448" y2="462" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+<text x="456" y="466" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">auto / по таймауту</text>
 
 </svg>

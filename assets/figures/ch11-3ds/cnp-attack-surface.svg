@@ -288,7 +288,7 @@
      y2="130"
      stroke="#c15462"
      stroke-width="1"
-     stroke-dasharray="3, 2"
+     stroke-dasharray="6,3"
      id="line18" />
   <line
      x1="300"
@@ -297,7 +297,7 @@
      y2="130"
      stroke="#c15462"
      stroke-width="1"
-     stroke-dasharray="3, 2"
+     stroke-dasharray="6,3"
      id="line19" />
   <line
      x1="395"
@@ -306,7 +306,7 @@
      y2="130"
      stroke="#c15462"
      stroke-width="1"
-     stroke-dasharray="3, 2"
+     stroke-dasharray="6,3"
      id="line20" />
   <line
      x1="490"
@@ -315,7 +315,7 @@
      y2="130"
      stroke="#c15462"
      stroke-width="1"
-     stroke-dasharray="3, 2"
+     stroke-dasharray="6,3"
      id="line21" />
   <line
      x1="585"
@@ -324,7 +324,7 @@
      y2="130"
      stroke="#c15462"
      stroke-width="1"
-     stroke-dasharray="3, 2"
+     stroke-dasharray="6,3"
      id="line22" />
   <!-- ATTACK COLUMNS — only names -->
   <rect
