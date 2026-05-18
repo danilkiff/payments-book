@@ -14,12 +14,14 @@
 \usepackage[left=20mm,right=20mm,top=10mm,bottom=10mm,includeheadfoot]{geometry}
 
 % --- Типографика и таблицы ---
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{tabularx}
+\usepackage{longtable}
 \usepackage{float}
-\usepackage{chngcntr}
 % Сквозная нумерация таблиц и~рисунков с~единицы по всей книге
-% (вместо дефолтной KOMA-нумерации «глава.номер»).
+% (вместо дефолтной KOMA-нумерации «глава.номер»);
+% \counterwithout~--- ядро LaTeX2e, отдельный пакет chngcntr не~нужен.
 \counterwithout{table}{chapter}
 \counterwithout{figure}{chapter}
 \usepackage{ragged2e}
@@ -57,11 +59,6 @@
 \usepackage{soul}
 \usepackage{needspace}
 \usepackage{placeins}
-
-% --- Глоссарий аббревиатур ---
-% glossaries-extra даёт \printunsrtglossary, печатающую записи в порядке
-% объявления и не требующую внешнего makeglossaries-прохода.
-\usepackage[nopostdot,nonumberlist,nogroupskip,toc=true,style=long]{glossaries-extra}
 
 % --- Визуальные стили (цвета, tcolorbox, notebox-блоки, маркер) ---
 \input{src/styles}

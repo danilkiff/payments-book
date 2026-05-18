@@ -1,346 +1,336 @@
 % backmatter/glossary.tex
 %
-% Глоссарий аббревиатур. Записи объявляются в алфавитном порядке
-% (сначала латиница, затем кириллица) и печатаются \printunsrtglossary
-% в этом же порядке, без внешнего makeglossaries-прохода.
-%
-% Добавить запись: \newglossaryentry{label}{name={ABC},description={...}}.
-% В корпусе книги ссылка не требуется: глоссарий сейчас работает как
-% справочное приложение, а не как индекс терминов.
+% Глоссарий аббревиатур — двухколоночный longtable, разделён на латинский
+% и~кириллический блоки. Записи добавляются в~алфавитном порядке внутри
+% соответствующего блока; ссылок на~глоссарий из~корпуса нет (приложение,
+% а~не индекс терминов).
 
-\newglossaryentry{a2a}{name={A2A},description={Account-to-Account, перевод со счёта на счёт без участия карточной сети; общий случай account-based-модели платежа в~противоположность card-based-операциям карточных схем}}
-\newglossaryentry{aac}{name={AAC},description={Application Authentication Cryptogram, криптограмма отказа в~EMV}}
-\newglossaryentry{aba}{name={ABA},description={American Bankers Association, формат Track~2 магнитной полосы}}
-\newglossaryentry{abu}{name={ABU},description={Automatic Billing Updater, сервис Mastercard автоматического обновления реквизитов карт у~мерчантов; аналог Visa Account Updater (см.\ VAU)}}
-\newglossaryentry{ac}{name={AC},description={Application Cryptogram, криптограмма EMV-операции (одна из ARQC, TC, AAC)}}
-\newglossaryentry{ach}{name={ACH},description={Automated Clearing House, расчётная сеть пакетных межбанковских переводов в~США}}
-\newglossaryentry{acs}{name={ACS},description={Access Control Server, компонент эмитента в~3-D~Secure, проводящий аутентификацию держателя}}
-\newglossaryentry{aes}{name={AES},description={Advanced Encryption Standard, симметричный блочный шифр (FIPS 197)}}
-\newglossaryentry{afl}{name={AFL},description={Application File Locator, описывает расположение записей EMV-приложения на чипе}}
-\newglossaryentry{aft}{name={AFT},description={Account Funding Transaction, операция загрузки средств на счёт через карточную сеть (Visa Direct/Money Movement)}}
-\newglossaryentry{aid}{name={AID},description={Application Identifier, идентификатор платёжного приложения на чипе карты (EMV)}}
-\newglossaryentry{aip}{name={AIP},description={Application Interchange Profile, битовое поле, описывающее возможности EMV-приложения}}
-\newglossaryentry{ais}{name={AIS},description={Account Information Security, программа Visa, предшественница PCI~DSS}}
-\newglossaryentry{aisp}{name={AISP},description={Account Information Service Provider, поставщик услуг информирования о~счёте (PSD2)}}
-\newglossaryentry{aml}{name={AML},description={Anti-Money Laundering, противодействие отмыванию доходов}}
-\newglossaryentry{ansi}{name={ANSI},description={American National Standards Institute, американский институт национальных стандартов}}
-\newglossaryentry{aoc}{name={AOC},description={Attestation of Compliance, аттестат соответствия PCI~DSS}}
-\newglossaryentry{aov}{name={AOV},description={Average Order Value, средний чек заказа}}
-\newglossaryentry{apdu}{name={APDU},description={Application Protocol Data Unit, единица обмена данными между терминалом и~чипом (ISO/IEC 7816-4)}}
-\newglossaryentry{api}{name={API},description={Application Programming Interface, программный интерфейс взаимодействия систем}}
-\newglossaryentry{apid}{name={APID},description={Application Program Identifier, объект EMV (тег \texttt{0x9F5A}) в~бесконтактных профилях Visa; кодирует регион программы и~служит ключом выбора набора лимитов в~DRL}}
-\newglossaryentry{ecp_apple}{name={Apple ECP},description={Enhanced Contactless Polling, проприетарное расширение Apple над ISO/IEC~14443-A для считывателей NFC (используется в~Apple Pay, Apple VAS, Apple Wallet Access)}}
-\newglossaryentry{arca}{name={ARCA},description={Armenian Card, армянская национальная платёжная система}}
-\newglossaryentry{arn}{name={ARN},description={Acquirer Reference Number, эквайринговый идентификатор операции, используемый в~клиринге и~спорах}}
-\newglossaryentry{arpc}{name={ARPC},description={Authorisation Response Cryptogram, ответная криптограмма эмитента (EMV online auth)}}
-\newglossaryentry{arqc}{name={ARQC},description={Authorisation Request Cryptogram, запросная криптограмма карты (EMV online auth)}}
-\newglossaryentry{ask}{name={ASK},description={Amplitude Shift Keying, амплитудно-манипулированная модуляция в~ISO/IEC~14443 Type~A}}
-\newglossaryentry{aspsp}{name={ASPSP},description={Account Servicing Payment Service Provider, банк, обслуживающий счёт клиента в~открытом банкинге PSD2}}
-\newglossaryentry{asv_pci}{name={ASV},description={Approved Scanning Vendor, аккредитованный PCI~SSC внешний сканировщик уязвимостей}}
-\newglossaryentry{atc}{name={ATC},description={Application Transaction Counter, счётчик операций EMV-приложения}}
-\newglossaryentry{atm}{name={ATM},description={Automated Teller Machine, банкомат}}
-\newglossaryentry{ato}{name={ATO},description={Account Takeover, захват учётной записи}}
-\newglossaryentry{auc}{name={AUC},description={Area Under Curve, площадь под ROC- или PR-кривой; метрика классификатора}}
-\newglossaryentry{avs}{name={AVS},description={Address Verification Service, проверка адреса держателя у~эмитента в~операциях CNP}}
-\newglossaryentry{bcb}{name={BCB},description={Banco Central do Brasil, Центральный банк Бразилии (регулятор PIX)}}
-\newglossaryentry{bcd}{name={BCD},description={Binary Coded Decimal, двоично-десятичное кодирование (ISO~8583, EMV)}}
-\newglossaryentry{bdk}{name={BDK},description={Base Derivation Key, базовый ключ деривации в~DUKPT}}
-\newglossaryentry{bin}{name={BIN},description={Bank Identification Number, первые цифры PAN, идентифицирующие эмитента (см.\ также IIN)}}
-\newglossaryentry{bis}{name={BIS},description={Bank for International Settlements, Банк международных расчётов}}
-\newglossaryentry{ble}{name={BLE},description={Bluetooth Low Energy, маломощный Bluetooth для платежей и~смежных задач}}
-\newglossaryentry{bnpl}{name={BNPL},description={Buy Now Pay Later, рассрочка/отложенная оплата как платёжный метод}}
-\newglossaryentry{bram}{name={BRAM},description={Business Risk Assessment and Mitigation, программа Mastercard по оценке рисков мерчанта}}
-\newglossaryentry{c2b}{name={C2B},description={Customer-to-Business, перевод от физлица в~пользу бизнеса}}
-\newglossaryentry{c2c}{name={C2C},description={Customer-to-Customer, перевод между физическими лицами}}
-\newglossaryentry{ca}{name={CA},description={Certificate Authority, удостоверяющий центр; в~платежах~-- корень доверия сертификатов EMV карт и~PKI для удалённой инъекции ключей}}
-\newglossaryentry{cavv}{name={CAVV},description={Cardholder Authentication Verification Value, криптографический результат 3-D~Secure-аутентификации (Visa)}}
-\newglossaryentry{cbc}{name={CBC},description={Cipher Block Chaining, режим сцепления блоков для блочных шифров}}
-\newglossaryentry{cbdc}{name={CBDC},description={Central Bank Digital Currency, цифровая валюта центрального банка (например, цифровой рубль)}}
-\newglossaryentry{cbpii}{name={CBPII},description={Card-Based Payment Instrument Issuer, регистрируемая роль эмитента карточного инструмента (PSD2)}}
-\newglossaryentry{cbpr}{name={CBPR},description={Cross-Border Payments and Reporting Plus, миграционная программа SWIFT на ISO~20022}}
-\newglossaryentry{cda}{name={CDA},description={Combined Data Authentication, метод офлайн-аутентификации данных карты с~динамической подписью операции (EMV)}}
-\newglossaryentry{cdcvm}{name={CDCVM},description={Consumer Device Cardholder Verification Method, верификация держателя средствами устройства (биометрия, PIN-код экрана)}}
-\newglossaryentry{cde}{name={CDE},description={Cardholder Data Environment, периметр окружения данных держателя по PCI~DSS}}
-\newglossaryentry{ce}{name={CE},description={Compelling Evidence, набор доказательств, позволяющий эквайеру отбить часть споров (Visa CE 3.0, MC compelling evidence)}}
-\newglossaryentry{chd}{name={CHD},description={Cardholder Data, данные держателя карты в~терминах PCI~DSS}}
-\newglossaryentry{ciba}{name={CIBA},description={Client-Initiated Backchannel Authentication, протокол отделённой аутентификации (OpenID Foundation)}}
-\newglossaryentry{cips}{name={CIPS},description={Cross-Border Interbank Payment System, китайская система международных межбанковских переводов в~юанях}}
-\newglossaryentry{cisp}{name={CISP},description={Cardholder Information Security Program, программа Visa, предшественница PCI~DSS}}
-\newglossaryentry{cit}{name={CIT},description={Customer-Initiated Transaction, операция, инициированная держателем карты}}
-\newglossaryentry{cmac}{name={CMAC},description={Cipher-based Message Authentication Code, MAC на блочном шифре (NIST~SP~800-38B)}}
-\newglossaryentry{cms}{name={CMS},description={Card Management System, система управления жизненным циклом карт у~эмитента}}
-\newglossaryentry{cnp}{name={CNP},description={Card-Not-Present, операция без физического предъявления карты}}
-\newglossaryentry{cpm}{name={CPM},description={Customer-Presented Mode, QR-сценарий с~предъявлением кода клиентом}}
-\newglossaryentry{cps}{name={CPS},description={Custom Payment Service, программа квалификации операций Visa с~льготным interchange (CPS/Retail и~др.)}}
-\newglossaryentry{cup}{name={CUP},description={China UnionPay, китайская карточная схема}}
-\newglossaryentry{cvc1}{name={CVC1},description={Card Verification Code~1, статический код подлинности на магнитной полосе}}
-\newglossaryentry{cvc3}{name={CVC3},description={Card Verification Code 3, динамический код Mastercard для contactless mag-stripe (PayPass M/Stripe)}}
-\newglossaryentry{cvm}{name={CVM},description={Cardholder Verification Method, метод верификации держателя (PIN, signature, CDCVM, no~CVM)}}
-\newglossaryentry{cvv}{name={CVV/CVC},description={Card Verification Value (Visa) / Card Verification Code (Mastercard), статический код подлинности карты на магнитной полосе}}
-\newglossaryentry{cvv2}{name={CVV2/CVC2},description={Печатный код безопасности на оборотной стороне карты, используется в~операциях CNP}}
-\newglossaryentry{dcc}{name={DCC},description={Dynamic Currency Conversion, конверсия в~валюту держателя на стороне эквайера/терминала}}
-\newglossaryentry{dict}{name={DICT},description={Diretório de Identificadores de Contas Transacionais, директория Banco Central do Brasil, отображающая ключи Pix (телефон, e-mail, CPF, CNPJ, EVP) в~реквизиты счёта и~участника}}
-\newglossaryentry{dda}{name={DDA},description={Dynamic Data Authentication, метод офлайн-аутентификации с~динамической подписью данных карты (EMV)}}
-\newglossaryentry{de}{name={DE},description={Data Element, поле сообщения ISO 8583}}
-\newglossaryentry{dlt}{name={DLT},description={Distributed Ledger Technology, технология распределённых реестров; база данных с~синхронизированными копиями у~нескольких участников}}
-\newglossaryentry{dms}{name={DMS},description={Dual Message System, двухстадийная авторизация и~клиринг отдельным сообщением (см.\ также SMS)}}
-\newglossaryentry{dpan}{name={DPAN},description={Device Primary Account Number, токенизированный номер, привязанный к~устройству (Apple Pay, Google Pay и~др.)}}
-\newglossaryentry{drl}{name={DRL},description={Dynamic Reader Limit, механизм бесконтактных ридеров Visa и~AmEx, позволяющий держать несколько наборов лимитов на один AID в~зависимости от региональной принадлежности карты (см.\ APID)}}
-\newglossaryentry{ds}{name={DS},description={Directory Server, маршрутизатор сообщений 3-D~Secure от мерчанта к~ACS эмитента}}
-\newglossaryentry{dsrp}{name={DSRP},description={Digital Secure Remote Payment, механизм Mastercard генерации криптограмм в~CNP}}
-\newglossaryentry{dukpt}{name={DUKPT},description={Derived Unique Key Per Transaction, схема производных одноразовых ключей для PIN/данных в~POS}}
-\newglossaryentry{eas}{name={EAS},description={Estimated Authorization Service, схема предварительных авторизаций с~уточнением суммы (Visa)}}
-\newglossaryentry{eba}{name={EBA},description={European Banking Authority, Европейская банковская администрация}}
-\newglossaryentry{ebcdic}{name={EBCDIC},description={Extended Binary Coded Decimal Interchange Code, кодировка IBM, исторически используется в~ISO~8583}}
-\newglossaryentry{ecc}{name={ECC},description={Elliptic Curve Cryptography, криптография на эллиптических кривых}}
-\newglossaryentry{ecdsa}{name={ECDSA},description={Elliptic Curve Digital Signature Algorithm, алгоритм цифровой подписи на эллиптических кривых}}
-\newglossaryentry{eci}{name={ECI},description={Electronic Commerce Indicator, индикатор результата 3-D~Secure в~авторизационном сообщении}}
-\newglossaryentry{ecm}{name={ECM},description={Excessive Chargeback Merchant, статус мониторинговой программы Mastercard для ТСП с~повышенной долей chargeback}}
-\newglossaryentry{eea}{name={EEA},description={European Economic Area, Европейская экономическая зона}}
-\newglossaryentry{efa}{name={EFA},description={EMV Final Advice, индустриальное название второй POS-to-host-сессии (ISO~8583 MTI~0220/0230), в~которой терминал передаёт ПЦ результат обработки картой ARPC и~финальную криптограмму; в~спецификациях EMVCo тот же шаг обозначается как online completion / second GENERATE~AC}}
-\newglossaryentry{efm}{name={EFM},description={Excessive Fraud Merchant, статус мониторинговой программы Mastercard по фроду}}
-\newglossaryentry{eirf}{name={EIRF},description={Electronic Interchange Reimbursement Fee, штрафная категория interchange Visa для операций без полного набора данных}}
-\newglossaryentry{elcard}{name={ELCARD},description={Кыргызская национальная платёжная система (см.\ также ЭЛКАРТ)}}
-\newglossaryentry{emv}{name={EMV},description={Europay/Mastercard/Visa, семейство спецификаций чиповых карт (EMVCo)}}
-\newglossaryentry{ep}{name={EP},description={E-commerce Page, тип SAQ A-EP в~PCI~DSS для платёжных страниц с~прямым постом данных карты}}
-\newglossaryentry{fapi}{name={FAPI},description={Financial-grade API, профиль безопасности OpenID Foundation для финансовых API (см.\ также ФАПИ)}}
-\newglossaryentry{fatf}{name={FATF},description={Financial Action Task Force, межправительственная организация по борьбе с~отмыванием денег и~финансированием терроризма}}
-\newglossaryentry{fbo}{name={FBO},description={Fulfillment by Operator, маркетплейсная схема с~логистикой на стороне оператора}}
-\newglossaryentry{fbs}{name={FBS},description={Fulfillment by Seller, маркетплейсная схема с~логистикой на стороне продавца}}
-\newglossaryentry{fca}{name={FCA},description={Financial Conduct Authority, регулятор финансовых услуг Великобритании}}
-\newglossaryentry{fednow}{name={FedNow},description={Мгновенная розничная платёжная система Federal Reserve Banks, запущена 20 июля 2023~года; регулируется 12~CFR~210 Subpart~C и~Operating Circular~8, расчёт через master account участника в~Reserve Bank}}
-\newglossaryentry{ff1}{name={FF1},description={Format-Preserving Encryption Algorithm~1, режим сохраняющего формат шифрования (NIST~SP~800-38G)}}
-\newglossaryentry{ff3}{name={FF3},description={Format-Preserving Encryption Algorithm~3, режим FPE; в~актуальной редакции FF3-1 (NIST~SP~800-38G Rev.~1)}}
-\newglossaryentry{fin}{name={FIN},description={SWIFT FIN, исторический сервис передачи MT-сообщений}}
-\newglossaryentry{fips}{name={FIPS},description={Federal Information Processing Standards, серия стандартов NIST (FIPS~140-3, FIPS~197 и~др.)}}
-\newglossaryentry{fis}{name={FIS},description={Fidelity National Information Services, крупный американский процессор}}
-\newglossaryentry{floor_limit}{name={Floor limit},description={терминальный порог офлайн-одобрения по сумме операции; задаётся эквайером в~рамках правил схемы (EMV terminal risk management)}}
-\newglossaryentry{fpan}{name={FPAN},description={Funding Primary Account Number, реальный номер карты, лежащий за токеном}}
-\newglossaryentry{fpe}{name={FPE},description={Format-Preserving Encryption, шифрование с~сохранением формата (например, длины и~алфавита PAN)}}
-\newglossaryentry{fwt}{name={FWT},description={Frame Waiting Time, максимальное время ожидания ответа карты в~ISO/IEC~14443}}
-\newglossaryentry{gcms}{name={GCMS},description={Global Clearing Management System, клиринговая система Mastercard}}
-\newglossaryentry{gpo}{name={GPO},description={Get Processing Options, EMV-команда инициации транзакции}}
-\newglossaryentry{hce}{name={HCE},description={Host Card Emulation, эмуляция карты в~ОС устройства без аппаратного Secure Element}}
-\newglossaryentry{hecm}{name={HECM},description={High Excessive Chargeback Merchant, повышенный уровень программы Mastercard по chargeback}}
-\newglossaryentry{hmac}{name={HMAC},description={Hash-based Message Authentication Code, MAC на хеш-функции (RFC~2104)}}
-\newglossaryentry{hpp}{name={HPP},description={Hosted Payment Page, размещённая платёжная страница на стороне PSP}}
-\newglossaryentry{hsm}{name={HSM},description={Hardware Security Module, аппаратный модуль для хранения ключей и~криптоопераций}}
-\newglossaryentry{humo}{name={HUMO},description={Узбекская национальная платёжная система}}
-\newglossaryentry{iac}{name={IAC},description={Issuer Action Codes, заданные эмитентом правила решения по EMV-операции}}
-\newglossaryentry{iana}{name={IANA},description={Internet Assigned Numbers Authority, реестр идентификаторов Интернета (порты, MIME, JOSE-алгоритмы)}}
-\newglossaryentry{iata}{name={IATA},description={International Air Transport Association, формат Track~1 магнитной полосы}}
-\newglossaryentry{icc}{name={ICC},description={Integrated Circuit Card, чиповая карта (EMV)}}
-\newglossaryentry{ifr}{name={IFR},description={Interchange Fee Regulation, регламент ЕС~2015/751 о~межбанковских комиссиях}}
-\newglossaryentry{ifs}{name={IFS},description={Interface Specification, документ карточной схемы, описывающий формат и~семантику ISO~8583-сообщений конкретного интерфейса}}
-\newglossaryentry{iin}{name={IIN},description={Issuer Identification Number, термин ISO, эквивалент BIN}}
-\newglossaryentry{ik}{name={IK},description={Initial Key, начальный ключ устройства в~DUKPT}}
-\newglossaryentry{iki}{name={IKI},description={Initial Key Identifier, идентификатор начального ключа DUKPT}}
-\newglossaryentry{imk}{name={IMK},description={Issuer Master Key, мастер-ключ эмитента, из которого деривируются ключи EMV-приложения карты}}
-\newglossaryentry{ipc}{name={IPC},description={Interbank Processing Center, межбанковский процессинговый центр Кыргызстана}}
-\newglossaryentry{ipr}{name={IPR},description={Instant Payments Regulation, Regulation (EU) 2024/886 о~мгновенных кредитовых переводах в~евро; обязательность SCT Inst в~еврозоне с~9~октября 2025~года}}
-\newglossaryentry{ipm}{name={IPM},description={Integrated Product Messages, формат клиринговых сообщений Mastercard}}
-\newglossaryentry{irf}{name={IRF},description={Interchange Reimbursement Fee, межбанковская комиссия (термин UnionPay)}}
-\newglossaryentry{iso}{name={ISO},description={International Organization for Standardization, в~книге упоминается через стандарты 4217, 7810, 7813, 7816, 8583, 20022}}
-\newglossaryentry{jarm}{name={JARM},description={JWT Secured Authorization Response Mode, подписанный ответ авторизационного эндпоинта (FAPI)}}
-\newglossaryentry{jcb}{name={JCB},description={Japan Credit Bureau, японская карточная схема}}
-\newglossaryentry{json}{name={JSON},description={JavaScript Object Notation, формат обмена данными в~REST/HTTP-интерфейсах}}
-\newglossaryentry{jwe}{name={JWE},description={JSON Web Encryption (RFC~7516)}}
-\newglossaryentry{jwk}{name={JWK},description={JSON Web Key (RFC~7517)}}
-\newglossaryentry{jws}{name={JWS},description={JSON Web Signature (RFC~7515)}}
-\newglossaryentry{jwt}{name={JWT},description={JSON Web Token (RFC~7519)}}
-\newglossaryentry{kcv}{name={KCV},description={Key Check Value, контрольная сумма ключа для верификации совпадения копий ключа на разных устройствах}}
-\newglossaryentry{kek}{name={KEK},description={Key Encryption Key, ключ шифрования ключей; используется для защищённой передачи и~хранения других ключей}}
-\newglossaryentry{kyb}{name={KYB},description={Know Your Business, идентификация юридических лиц при подключении}}
-\newglossaryentry{kyc}{name={KYC},description={Know Your Customer, идентификация и~верификация клиента-физлица}}
-\newglossaryentry{llvar}{name={LLVAR},description={Length-Length Variable, поле переменной длины с~двухсимвольным префиксом длины (ISO~8583)}}
-\newglossaryentry{lmk}{name={LMK},description={Local Master Key, локальный мастер-ключ HSM; защищает производные ключи внутри устройства}}
-\newglossaryentry{mac}{name={MAC},description={Message Authentication Code, код аутентичности сообщения}}
-\newglossaryentry{ecp_mc}{name={MC ECP},description={Excessive Chargeback Program, программа Mastercard по мониторингу возвратных платежей у~эквайеров и~ТСП}}
-\newglossaryentry{mcc}{name={MCC},description={Merchant Category Code, четырёхзначный код категории мерчанта (ISO 18245)}}
-\newglossaryentry{mdb}{name={MDB},description={Mir Debit Business, продуктовый код дебетовой карты Мир для бизнеса}}
-\newglossaryentry{mdes}{name={MDES},description={Mastercard Digital Enablement Service, токенизационный сервис Mastercard}}
-\newglossaryentry{mdp}{name={MDP},description={Mir Debit Prepaid, продуктовый код предоплаченной карты Мир}}
-\newglossaryentry{mdr}{name={MDR},description={Merchant Discount Rate, торговая уступка мерчанта; синоним MSC}}
-\newglossaryentry{med}{name={MED},description={Mecanismo Especial de Devolução, возврат по антифроду Pix; банк-отправитель инициирует через инфраструктуру схемы запрос на блокировку и~возврат при подозрении на фрод}}
-\newglossaryentry{mdt}{name={MDT},description={Mir Debit, продуктовый код стандартной дебетовой карты Мир}}
-\newglossaryentry{me2me_pull}{name={Me2Me Pull},description={Сценарий СБП, инициируемый банком-получателем: клиент даёт согласие в~приложении банка-получателя и~\enquote{стягивает} средства со своего счёта в~банке-отправителе}}
-\newglossaryentry{me2me_push}{name={Me2Me Push},description={Сценарий СБП, инициируемый банком-отправителем: клиент отправляет средства из приложения банка-отправителя на свой счёт в~банке-получателе}}
-\newglossaryentry{mid}{name={MID},description={Merchant ID, идентификатор ТСП у~эквайера}}
-\newglossaryentry{mit}{name={MIT},description={Merchant-Initiated Transaction, операция, инициированная мерчантом без участия держателя в~момент списания}}
-\newglossaryentry{mpa}{name={MPA},description={MIR Payment Application, EMV-апплет карты системы Мир с~поддержкой контактного и~бесконтактного интерфейсов и~криптографии ГОСТ}}
-\newglossaryentry{mpm}{name={MPM},description={Merchant-Presented Mode, QR-сценарий с~предъявлением кода продавцом}}
-\newglossaryentry{msc}{name={MSC},description={Merchant Service Charge, торговая уступка, комиссия мерчанта эквайеру}}
-\newglossaryentry{mt_swift}{name={MT},description={Message Type, формат текстовых сообщений SWIFT (MT103, MT202 и~др.)}}
-\newglossaryentry{mti}{name={MTI},description={Message Type Indicator, четырёхзначный идентификатор типа сообщения ISO 8583}}
-\newglossaryentry{nfc}{name={NFC},description={Near Field Communication, ближнепольная радиосвязь для бесконтактных платежей}}
-\newglossaryentry{nist}{name={NIST},description={National Institute of Standards and Technology, американский институт стандартов и~технологий}}
-\newglossaryentry{nnss}{name={NNSS},description={National Net Settlement Service, расчётный сервис Visa в~США}}
-\newglossaryentry{npci}{name={NPCI},description={National Payments Corporation of India, оператор UPI и~RuPay в~Индии}}
-\newglossaryentry{nrz}{name={NRZ},description={Non-Return-to-Zero, схема линейного кодирования (например, в~ISO/IEC~14443 Type~B)}}
-\newglossaryentry{ntid}{name={NTID},description={Network Transaction ID, идентификатор операции сети Visa, используемый в~цепочках MIT/CIT и~CE 3.0}}
-\newglossaryentry{oct}{name={OCT},description={Original Credit Transaction, обратный денежный перевод на карту через карточную сеть}}
-\newglossaryentry{ofac}{name={OFAC},description={Office of Foreign Assets Control, санкционное подразделение Минфина США}}
-\newglossaryentry{oidf}{name={OIDF},description={OpenID Foundation, организация-разработчик OIDC и~FAPI}}
-\newglossaryentry{oxxo}{name={OXXO},description={Мексиканская сеть convenience-магазинов и~одноимённый способ оплаты по штрихкоду}}
-\newglossaryentry{p2pe}{name={P2PE},description={Point-to-Point Encryption, шифрование данных карты от точки приёма до дешифрующего узла; PCI имеет одноимённый стандарт}}
-\newglossaryentry{pan}{name={PAN},description={Primary Account Number, основной номер карты (ISO/IEC 7812)}}
-\newglossaryentry{par}{name={PAR},description={Pushed Authorization Requests, режим OAuth с~предварительной отправкой параметров (RFC~9126)}}
-\newglossaryentry{pci}{name={PCI},description={Payment Card Industry, отрасль платёжных карт; в~книге чаще про PCI~SSC и~его стандарты}}
-\newglossaryentry{pin}{name={PIN},description={Personal Identification Number, секретный код держателя для верификации}}
-\newglossaryentry{pisp}{name={PISP},description={Payment Initiation Service Provider, поставщик услуг инициации платежа (PSD2)}}
-\newglossaryentry{pix}{name={PIX},description={Бразильская система мгновенных платежей под управлением BCB}}
-\newglossaryentry{pkce}{name={PKCE},description={Proof Key for Code Exchange, защита OAuth-кода от перехвата (RFC~7636)}}
-\newglossaryentry{pki}{name={PKI},description={Public Key Infrastructure, инфраструктура открытых ключей: удостоверяющие центры, сертификаты и~правила доверия между ними}}
-\newglossaryentry{poa}{name={PoA},description={Proof-of-Authority, алгоритм консенсуса с~заранее утверждённым списком валидаторов; типичный выбор для приватных DLT и~CBDC}}
-\newglossaryentry{poi}{name={POI},description={Point of Interaction, обобщённый термин PCI для устройств приёма платежа}}
-\newglossaryentry{pos}{name={POS},description={Point of Sale, точка продажи; в~узком смысле -- POS-терминал}}
-\newglossaryentry{posconsensus}{name={PoS},description={Proof-of-Stake, алгоритм консенсуса, в~котором право подписать блок получают участники, заблокировавшие залог криптовалюты; нарушители теряют залог (\textit{slashing}). Применяется в~Ethereum с~2022~г.}}
-\newglossaryentry{pow}{name={PoW},description={Proof-of-Work, алгоритм консенсуса, в~котором валидаторы тратят вычислительную работу на~подбор хеша; применяется в~Bitcoin}}
-\newglossaryentry{ppse}{name={PPSE},description={Proximity Payment System Environment, бесконтактный аналог PSE (\texttt{2PAY.SYS.DDF01})}}
-\newglossaryentry{psd2}{name={PSD2},description={Payment Services Directive 2, директива ЕС об~открытом банкинге и~SCA}}
-\newglossaryentry{pse}{name={PSE},description={Payment System Environment, контактный каталог приложений на чипе (\texttt{1PAY.SYS.DDF01})}}
-\newglossaryentry{psp}{name={PSP},description={Payment Service Provider, провайдер платёжных услуг}}
-\newglossaryentry{psu}{name={PSU},description={Payment Service User, клиент в~терминологии PSD2}}
-\newglossaryentry{pts}{name={PTS},description={PIN Transaction Security, стандарт PCI~SSC для аппаратных модулей и~POS-устройств}}
-\newglossaryentry{pwcb}{name={PWCB},description={Purchase with Cashback, тип EMV-операции \enquote{покупка с~выдачей наличных} (Mastercard); кодируется тегом \texttt{0x9C} = \texttt{09}}}
-\newglossaryentry{qmap}{name={QMAP},description={Questionable Merchant Audit Program, программа Visa по мониторингу подозрительных мерчантов}}
-\newglossaryentry{qr}{name={QR},description={Quick Response (code), двумерный штрихкод как контейнер платёжных реквизитов}}
-\newglossaryentry{qsa}{name={QSA},description={Qualified Security Assessor, аккредитованный PCI~SSC аудитор}}
-\newglossaryentry{rba}{name={RBA},description={Risk-Based Authentication, риск-ориентированная аутентификация в~3-D~Secure}}
-\newglossaryentry{rid}{name={RID},description={Registered Application Provider Identifier, первая часть AID, идентифицирующая платёжную сеть (EMV)}}
-\newglossaryentry{rki}{name={RKI},description={Remote Key Injection, удалённая загрузка криптографических ключей в~POS-терминал по~защищённому каналу}}
-\newglossaryentry{roc}{name={ROC},description={Report on Compliance, итоговый отчёт QSA по PCI~DSS}}
-\newglossaryentry{rrn}{name={RRN},description={Retrieval Reference Number, идентификатор, по которому участники находят операцию (DE 37 в~ISO 8583)}}
-\newglossaryentry{rrp}{name={RRP},description={Relay-Resistant Protocol, защита от relay-атак в~Mastercard M/Chip}}
-\newglossaryentry{rsa}{name={RSA},description={Rivest-Shamir-Adleman, асимметричный криптоалгоритм}}
-\newglossaryentry{rtgs}{name={RTGS},description={Real-Time Gross Settlement, валовой расчёт в~реальном времени}}
-\newglossaryentry{rto}{name={RTO},description={Recovery Time Objective, целевое время восстановления сервиса после инцидента}}
-\newglossaryentry{rts}{name={RTS},description={Regulatory Technical Standards, технические регламентирующие стандарты EBA по PSD2}}
-\newglossaryentry{sad}{name={SAD},description={Sensitive Authentication Data, данные аутентификации, не подлежащие хранению по PCI~DSS}}
-\newglossaryentry{sam}{name={SAM},description={Switching and Account Management, коммутирующая инфраструктура Mastercard}}
-\newglossaryentry{saq}{name={SAQ},description={Self-Assessment Questionnaire, опросник самооценки PCI~DSS}}
-\newglossaryentry{sca}{name={SCA},description={Strong Customer Authentication, строгая аутентификация клиента (PSD2)}}
-\newglossaryentry{scf}{name={SCF},description={Stored Credential Framework, правила Visa и~Mastercard для повторных списаний по~сохранённым реквизитам}}
-\newglossaryentry{sctinst}{name={SCT Inst},description={SEPA Instant Credit Transfer, мгновенный кредитовый перевод в~евро по rulebook EPC; целевое end-to-end время 10~секунд, 24/7/365}}
-\newglossaryentry{sda}{name={SDA},description={Static Data Authentication, статическая офлайн-аутентификация данных карты (EMV)}}
-\newglossaryentry{sdk}{name={SDK},description={Software Development Kit, набор библиотек для интеграции в~приложение}}
-\newglossaryentry{sdn}{name={SDN},description={Specially Designated Nationals (and Blocked Persons), санкционный список OFAC}}
-\newglossaryentry{sdp}{name={SDP},description={Site Data Protection, программа Mastercard, предшественница PCI~DSS}}
-\newglossaryentry{se}{name={SE},description={Secure Element, аппаратный защищённый элемент устройства}}
-\newglossaryentry{sepa}{name={SEPA},description={Single Euro Payments Area, единое пространство платежей в~евро}}
-\newglossaryentry{sla}{name={SLA},description={Service Level Agreement, соглашение об~уровне обслуживания}}
-\newglossaryentry{smc}{name={SMC},description={Secure Messaging Confidentiality, ключ EMV для шифрования сценариев эмитента}}
-\newglossaryentry{smi}{name={SMI},description={Secure Messaging Integrity, ключ EMV для целостности сценариев эмитента}}
-\newglossaryentry{sna}{name={SNA},description={Systems Network Architecture, проприетарный сетевой стек IBM}}
-\newglossaryentry{spi}{name={SPI},description={Sistema de Pagamentos Instantâneos, бразильская инфраструктура мгновенных расчётов под PIX}}
-\newglossaryentry{sred}{name={SRED},description={Secure Reading and Exchange of Data, модуль PCI~PTS для шифрования данных карты внутри терминала}}
-\newglossaryentry{stan}{name={STAN},description={System Trace Audit Number, локальный счётчик операций терминала/эквайера (DE 11 в~ISO 8583)}}
-\newglossaryentry{stip}{name={STIP},description={Stand-In Processing, авторизация на стороне сети, когда эмитент недоступен}}
-\newglossaryentry{swift}{name={SWIFT},description={Society for Worldwide Interbank Financial Telecommunication, межбанковская сеть передачи финансовых сообщений}}
-\newglossaryentry{tac}{name={TAC},description={Terminal Action Codes, заданные сетью правила решения по EMV-операции на терминале}}
-\newglossaryentry{tadg}{name={TADG},description={Visa Transaction Acceptance Device Guide, документация интерфейса Visa для эквайера}}
-\newglossaryentry{tavv}{name={TAVV},description={Token Authentication Verification Value, криптограмма токена в~CNP-операциях (Visa Token Service)}}
-\newglossaryentry{tc}{name={TC},description={Transaction Certificate, криптограмма операции EMV, одобренной офлайн}}
-\newglossaryentry{tc33}{name={TC33},description={Формат клирингового файла Visa BASE II}}
-\newglossaryentry{tdea}{name={TDEA},description={Triple Data Encryption Algorithm, он же Triple~DES (3DES); устаревший симметричный шифр}}
-\newglossaryentry{tdol}{name={TDOL},description={Transaction Data Object List, список тегов EMV для криптограммы~TC, задаваемый картой по умолчанию}}
-\newglossaryentry{tid}{name={TID},description={Terminal ID, идентификатор терминала у~эквайера}}
-\newglossaryentry{tips}{name={TIPS},description={TARGET Instant Payment Settlement, центробанковская платформа расчёта мгновенных платежей в~евро под управлением Eurosystem; работает 24/7/365 в~деньгах центрального банка}}
-\newglossaryentry{tlv}{name={TLV},description={Tag-Length-Value, формат кодирования данных EMV (BER-TLV)}}
-\newglossaryentry{tmk}{name={TMK},description={Terminal Master Key, мастер-ключ POS-терминала; под ним хранятся остальные ключи устройства}}
-\newglossaryentry{tms}{name={TMS},description={Terminal Management System, система управления парком терминалов}}
-\newglossaryentry{tpk}{name={TPK},description={Terminal PIN Key, ключ шифрования PIN внутри POS-терминала}}
-\newglossaryentry{tpp}{name={TPP},description={Third Party Provider, сторонний поставщик услуг в~открытом банкинге PSD2}}
-\newglossaryentry{tpap}{name={TPAP},description={Third-Party Application Provider, небанковское приложение в~UPI (PhonePe, Google Pay, Paytm), работающее через PSP-bank; для одного TPAP действует потолок 30~\% объёма}}
-\newglossaryentry{tpr}{name={TPR},description={Transaction Processing Rules, документ Mastercard, описывающий правила формирования авторизационных сообщений}}
-\newglossaryentry{tps}{name={TPS},description={Transactions Per Second, операций в~секунду; целевая метрика производительности}}
-\newglossaryentry{tra}{name={TRA},description={Transaction Risk Analysis, освобождение от SCA на основе риск-анализа эквайера (PSD2)}}
-\newglossaryentry{trid}{name={TRID},description={Token Requestor ID, идентификатор запросчика токена в~EMVCo}}
-\newglossaryentry{tsp}{name={TSP},description={Token Service Provider, провайдер токенизации}}
-\newglossaryentry{tvr}{name={TVR},description={Terminal Verification Results, результаты проверок терминала по операции EMV}}
-\newglossaryentry{ubo}{name={UBO},description={Ultimate Beneficial Owner, конечный бенефициарный владелец (KYB)}}
-\newglossaryentry{upi}{name={UPI},description={Unified Payments Interface, индийский A2A-контур мгновенных платежей}}
-\newglossaryentry{uzcard}{name={UZCARD},description={Узбекская национальная платёжная система}}
-\newglossaryentry{vaa}{name={VAA},description={Visa Advanced Authorization, риск-сервис Visa, оценивающий вероятность фрода в~авторизации}}
-\newglossaryentry{vamp}{name={VAMP},description={Visa Acquirer Monitoring Program, программа Visa мониторинга эквайеров по фроду и~chargeback}}
-\newglossaryentry{vau}{name={VAU},description={Visa Account Updater, сервис автоматического обновления реквизитов карт у~мерчантов}}
-\newglossaryentry{vop}{name={VOP},description={Verification of Payee, обязательная по IPR проверка соответствия имени получателя и~IBAN перед SCT/SCT Inst-инициацией; схема EPC, действует с~5~октября 2025~года}}
-\newglossaryentry{vpa}{name={VPA},description={Virtual Payment Address, идентификатор получателя в~UPI вида \texttt{name@psp}, отображающий пользователя на банковский счёт без раскрытия реквизитов}}
-\newglossaryentry{vcas}{name={VCAS},description={Visa Consumer Authentication Service, ACS-как-сервис Visa для эмитентов в~3-D~Secure}}
-\newglossaryentry{vcps}{name={VCPS},description={Visa Contactless Payment Specification, спецификация бесконтактных платежей Visa}}
-\newglossaryentry{vcr}{name={VCR},description={Visa Claim Resolution, регламент работы со~спорами Visa}}
-\newglossaryentry{vdmp}{name={VDMP},description={Visa Dispute Monitoring Program, программа Visa мониторинга мерчантов по доле споров}}
-\newglossaryentry{veps}{name={VEPS},description={Visa Easy Payment Service, упрощённый бесконтактный сценарий с~ограничением суммы и~без CVM}}
-\newglossaryentry{vfmp}{name={VFMP},description={Visa Fraud Monitoring Program, программа Visa мониторинга мерчантов по доле фрода}}
-\newglossaryentry{vrol}{name={VROL},description={Visa Resolve Online, инструмент Visa для работы со~спорами и~обмена доказательствами}}
-\newglossaryentry{vt}{name={VT},description={Virtual Terminal, ввод реквизитов оператором ТСП через защищённую страницу (PCI SAQ~C-VT)}}
-\newglossaryentry{vts}{name={VTS},description={Visa Token Service, токенизационный сервис Visa}}
-\newglossaryentry{waf}{name={WAF},description={Web Application Firewall, межсетевой экран уровня приложений}}
-\newglossaryentry{xs2a}{name={XS2A},description={Access to Account, фреймворк доступа к~счёту в~PSD2/Berlin Group}}
-\newglossaryentry{zmk}{name={ZMK},description={Zone Master Key, мастер-ключ зоны; передаётся между организациями (банк, процессор, сеть) для защищённого обмена другими ключами}}
+\addchap{Глоссарий}\label{ch:glossary}
 
-\newglossaryentry{asv}{name={АСВ},description={Агентство по страхованию вкладов}}
-\newglossaryentry{aft_ru}{name={АФТ},description={Ассоциация ФинТех, разработчик отраслевых стандартов открытых API в~России}}
-\newglossaryentry{bik}{name={БИК},description={Банковский идентификационный код, девятизначный код участника платёжной системы Банка России}}
-\newglossaryentry{bpa}{name={БПА},description={Банковский платёжный агент (161-ФЗ)}}
-\newglossaryentry{besp}{name={БЭСП},description={Банковские электронные срочные платежи, исторический сервис ВРСС Банка России (выведен из~эксплуатации в~2018~г.)}}
-\newglossaryentry{grbs}{name={ГРБС},description={Главный распорядитель бюджетных средств; орган, определённый ст.~158 Бюджетного кодекса РФ, имеющий право распределять бюджетные ассигнования и~лимиты обязательств между подведомственными получателями}}
-\newglossaryentry{dbo}{name={ДБО},description={Дистанционное банковское обслуживание (мобильный банк, интернет-банк и~др.)}}
-\newglossaryentry{eag}{name={ЕАГ},description={Евразийская группа по противодействию легализации преступных доходов и~финансированию терроризма}}
-\newglossaryentry{ebs}{name={ЕБС},description={Единая биометрическая система}}
-\newglossaryentry{ecb}{name={ЕЦБ},description={Европейский центральный банк}}
-\newglossaryentry{eez}{name={ЕЭЗ},description={Европейская экономическая зона}}
-\newglossaryentry{mbv}{name={МБВ},description={Мир Бюджетные Выплаты, продуктовый стандарт карт Мир для бюджетных получателей}}
-\newglossaryentry{mvk}{name={МВК},description={Межведомственная комиссия по противодействию финансированию терроризма}}
-\newglossaryentry{mir-cash-at-pos}{name={Наличные на кассе},description={Сервис ПС~Мир \enquote{покупка с~выдачей наличных} (аналог PWCB); для карт, эмитированных после 10.04.2023, лимит 5\,000~рублей, обязательны онлайн-PIN или CDCVM}}
-\newglossaryentry{nko}{name={НКО},description={Небанковская кредитная организация}}
-\newglossaryentry{nps_ru}{name={НПС},description={Национальная платёжная система Российской Федерации (161-ФЗ)}}
-\newglossaryentry{nspk}{name={НСПК},description={Национальная система платёжных карт, оператор карты Мир и~СБП}}
-\newglossaryentry{od}{name={ОД},description={Отмывание доходов, полученных преступным путём; вместе с~ФТ образует ПОД/ФТ}}
-\newglossaryentry{opkc}{name={ОПКЦ},description={Операционный и~платёжный клиринговый центр НСПК, обрабатывающий внутрироссийские транзакции международных схем}}
-\newglossaryentry{osr}{name={ОСР},description={Оператор сервиса рассрочки, статус по~53-ФЗ от~2024~г.}}
-\newglossaryentry{oud4}{name={ОУД4},description={Оценочный уровень доверия~4 по ГОСТ Р~ИСО/МЭК~15408 (аналог Common Criteria EAL4)}}
-\newglossaryentry{oupi}{name={ОУПИ},description={Оператор услуг платёжной инфраструктуры (операционный, платёжный клиринговый, расчётный центры)}}
-\newglossaryentry{otsentr}{name={ОЦ},description={Операционный центр в~архитектуре НПС (см.\ ОУПИ)}}
-\newglossaryentry{pks}{name={ПКС},description={Платформа коммерческих согласий Банка России}}
-\newglossaryentry{pktsentr}{name={ПКЦ},description={Платёжный клиринговый центр в~архитектуре НПС (см.\ ОУПИ)}}
-\newglossaryentry{pod}{name={ПОД},description={Противодействие отмыванию доходов; вместе с~ФТ образует ПОД/ФТ}}
-\newglossaryentry{pps}{name={ППС},description={Перспективные платёжные сервисы Банка России (преемник БЭСП)}}
-\newglossaryentry{ps_ru}{name={ПС},description={Платёжная система}}
-\newglossaryentry{pu}{name={ПУ},description={Поставщик услуг в~российском открытом банкинге (СТО~БР ФАПИ.СЕК); аналог ASPSP}}
-\newglossaryentry{pep_ru}{name={ПЭП},description={Политически значимое лицо (politically exposed person)}}
-\newglossaryentry{rsbu}{name={РСБУ},description={Российские стандарты бухгалтерского учёта}}
-\newglossaryentry{rtsentr}{name={РЦ},description={Расчётный центр в~архитектуре НПС (см.\ ОУПИ)}}
-\newglossaryentry{sbp}{name={СБП},description={Система быстрых платежей Банка России}}
-\newglossaryentry{skzi}{name={СКЗИ},description={Средство криптографической защиты информации, сертифицированное ФСБ России}}
-\newglossaryentry{spu}{name={СПУ},description={Сторонний поставщик услуг в~российском открытом банкинге; аналог TPP}}
-\newglossaryentry{spfs}{name={СПФС},description={Система передачи финансовых сообщений Банка России}}
-\newglossaryentry{ssnp}{name={ССНП},description={Сервисы срочного и~несрочного перевода в~платёжной системе Банка России (Положение Банка России от~25.07.2022 №~802-П)}}
-\newglossaryentry{sto}{name={СТО},description={Стандарт организации; в~открытом банкинге~-- СТО~БР (Банка России)}}
-\newglossaryentry{tk}{name={ТК},description={Технический комитет Росстандарта; ТК~26 разрабатывает криптографические стандарты}}
-\newglossaryentry{ufebs}{name={УФЭБС},description={Унифицированный формат электронных банковских сообщений Банка России}}
-\newglossaryentry{fapi_ru}{name={ФАПИ},description={Финансовые API; русское обозначение профиля FAPI в~стандартах СТО~БР}}
-\newglossaryentry{fapi_sek}{name={ФАПИ.СЕК},description={Профиль безопасности открытых API Банка России (СТО~БР ФАПИ.СЕК)}}
-\newglossaryentry{fas}{name={ФАС},description={Федеральная антимонопольная служба}}
-\newglossaryentry{fincert}{name={ФинЦЕРТ},description={Центр мониторинга и~реагирования на компьютерные атаки в~кредитно-финансовой сфере Банка России}}
-\newglossaryentry{ft}{name={ФТ},description={Финансирование терроризма; вместе с~ОД образует ПОД/ФТ}}
-\newglossaryentry{fes}{name={ФЭС},description={Формализованное электронное сообщение (115-ФЗ; обмен с~Росфинмониторингом)}}
-\newglossaryentry{cbr}{name={ЦБ~РФ},description={Центральный банк Российской Федерации (Банк России)}}
-\newglossaryentry{cnfs}{name={ЦНФС},description={Центр новых финансовых сервисов, дочернее общество Сбербанка}}
-\newglossaryentry{eds}{name={ЭДС},description={Электронные денежные средства (161-ФЗ)}}
-\newglossaryentry{elkart_ru}{name={ЭЛКАРТ},description={Кыргызская национальная платёжная система; см.\ также ELCARD}}
-\newglossaryentry{esp}{name={ЭСП},description={Электронное средство платежа (161-ФЗ)}}
-
-% Шрифт и ширину текста глоссария сводим с библиографией: \footnotesize
-% и полная ширина строки. В дефолтном style=long описательная колонка
-% занимает только 0.6\hsize, из-за чего набор глоссария уже библио-листа
-% и визуально кажется другим блоком.
-\renewenvironment{theglossary}{%
-  \footnotesize
-  \setlength{\glsdescwidth}{\dimexpr\linewidth-5em-2\tabcolsep\relax}%
-  \begin{longtable}{@{}p{4.5em}p{\glsdescwidth}@{}}%
-}{%
-  \end{longtable}%
-}
-
-\printunsrtglossary[title={Глоссарий}]
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{4.5em}p{\dimexpr\linewidth-4.5em-2\tabcolsep\relax}@{}}
+  \textbf{A2A} & Account-to-Account, перевод со счёта на счёт без участия карточной сети; общий случай account-based-модели платежа в~противоположность card-based-операциям карточных схем \\
+  \textbf{AAC} & Application Authentication Cryptogram, криптограмма отказа в~EMV \\
+  \textbf{ABA} & American Bankers Association, формат Track~2 магнитной полосы \\
+  \textbf{ABU} & Automatic Billing Updater, сервис Mastercard автоматического обновления реквизитов карт у~мерчантов; аналог Visa Account Updater (см.\ VAU) \\
+  \textbf{AC} & Application Cryptogram, криптограмма EMV-операции (одна из ARQC, TC, AAC) \\
+  \textbf{ACH} & Automated Clearing House, расчётная сеть пакетных межбанковских переводов в~США \\
+  \textbf{ACS} & Access Control Server, компонент эмитента в~3-D~Secure, проводящий аутентификацию держателя \\
+  \textbf{AES} & Advanced Encryption Standard, симметричный блочный шифр (FIPS 197) \\
+  \textbf{AFL} & Application File Locator, описывает расположение записей EMV-приложения на чипе \\
+  \textbf{AFT} & Account Funding Transaction, операция загрузки средств на счёт через карточную сеть (Visa Direct/Money Movement) \\
+  \textbf{AID} & Application Identifier, идентификатор платёжного приложения на чипе карты (EMV) \\
+  \textbf{AIP} & Application Interchange Profile, битовое поле, описывающее возможности EMV-приложения \\
+  \textbf{AIS} & Account Information Security, программа Visa, предшественница PCI~DSS \\
+  \textbf{AISP} & Account Information Service Provider, поставщик услуг информирования о~счёте (PSD2) \\
+  \textbf{AML} & Anti-Money Laundering, противодействие отмыванию доходов \\
+  \textbf{ANSI} & American National Standards Institute, американский институт национальных стандартов \\
+  \textbf{AOC} & Attestation of Compliance, аттестат соответствия PCI~DSS \\
+  \textbf{AOV} & Average Order Value, средний чек заказа \\
+  \textbf{APDU} & Application Protocol Data Unit, единица обмена данными между терминалом и~чипом (ISO/IEC 7816-4) \\
+  \textbf{API} & Application Programming Interface, программный интерфейс взаимодействия систем \\
+  \textbf{APID} & Application Program Identifier, объект EMV (тег \texttt{0x9F5A}) в~бесконтактных профилях Visa; кодирует регион программы и~служит ключом выбора набора лимитов в~DRL \\
+  \textbf{Apple ECP} & Enhanced Contactless Polling, проприетарное расширение Apple над ISO/IEC~14443-A для считывателей NFC (используется в~Apple Pay, Apple VAS, Apple Wallet Access) \\
+  \textbf{ARCA} & Armenian Card, армянская национальная платёжная система \\
+  \textbf{ARN} & Acquirer Reference Number, эквайринговый идентификатор операции, используемый в~клиринге и~спорах \\
+  \textbf{ARPC} & Authorisation Response Cryptogram, ответная криптограмма эмитента (EMV online auth) \\
+  \textbf{ARQC} & Authorisation Request Cryptogram, запросная криптограмма карты (EMV online auth) \\
+  \textbf{ASK} & Amplitude Shift Keying, амплитудно-манипулированная модуляция в~ISO/IEC~14443 Type~A \\
+  \textbf{ASPSP} & Account Servicing Payment Service Provider, банк, обслуживающий счёт клиента в~открытом банкинге PSD2 \\
+  \textbf{ASV} & Approved Scanning Vendor, аккредитованный PCI~SSC внешний сканировщик уязвимостей \\
+  \textbf{ATC} & Application Transaction Counter, счётчик операций EMV-приложения \\
+  \textbf{ATM} & Automated Teller Machine, банкомат \\
+  \textbf{ATO} & Account Takeover, захват учётной записи \\
+  \textbf{AUC} & Area Under Curve, площадь под ROC- или PR-кривой; метрика классификатора \\
+  \textbf{AVS} & Address Verification Service, проверка адреса держателя у~эмитента в~операциях CNP \\
+  \textbf{BCB} & Banco Central do Brasil, Центральный банк Бразилии (регулятор PIX) \\
+  \textbf{BCD} & Binary Coded Decimal, двоично-десятичное кодирование (ISO~8583, EMV) \\
+  \textbf{BDK} & Base Derivation Key, базовый ключ деривации в~DUKPT \\
+  \textbf{BIN} & Bank Identification Number, первые цифры PAN, идентифицирующие эмитента (см.\ также IIN) \\
+  \textbf{BIS} & Bank for International Settlements, Банк международных расчётов \\
+  \textbf{BLE} & Bluetooth Low Energy, маломощный Bluetooth для платежей и~смежных задач \\
+  \textbf{BNPL} & Buy Now Pay Later, рассрочка/отложенная оплата как платёжный метод \\
+  \textbf{BRAM} & Business Risk Assessment and Mitigation, программа Mastercard по оценке рисков мерчанта \\
+  \textbf{C2B} & Customer-to-Business, перевод от физлица в~пользу бизнеса \\
+  \textbf{C2C} & Customer-to-Customer, перевод между физическими лицами \\
+  \textbf{CA} & Certificate Authority, удостоверяющий центр; в~платежах~-- корень доверия сертификатов EMV карт и~PKI для удалённой инъекции ключей \\
+  \textbf{CAVV} & Cardholder Authentication Verification Value, криптографический результат 3-D~Secure-аутентификации (Visa) \\
+  \textbf{CBC} & Cipher Block Chaining, режим сцепления блоков для блочных шифров \\
+  \textbf{CBDC} & Central Bank Digital Currency, цифровая валюта центрального банка (например, цифровой рубль) \\
+  \textbf{CBPII} & Card-Based Payment Instrument Issuer, регистрируемая роль эмитента карточного инструмента (PSD2) \\
+  \textbf{CBPR} & Cross-Border Payments and Reporting Plus, миграционная программа SWIFT на ISO~20022 \\
+  \textbf{CDA} & Combined Data Authentication, метод офлайн-аутентификации данных карты с~динамической подписью операции (EMV) \\
+  \textbf{CDCVM} & Consumer Device Cardholder Verification Method, верификация держателя средствами устройства (биометрия, PIN-код экрана) \\
+  \textbf{CDE} & Cardholder Data Environment, периметр окружения данных держателя по PCI~DSS \\
+  \textbf{CE} & Compelling Evidence, набор доказательств, позволяющий эквайеру отбить часть споров (Visa CE 3.0, MC compelling evidence) \\
+  \textbf{CHD} & Cardholder Data, данные держателя карты в~терминах PCI~DSS \\
+  \textbf{CIBA} & Client-Initiated Backchannel Authentication, протокол отделённой аутентификации (OpenID Foundation) \\
+  \textbf{CIPS} & Cross-Border Interbank Payment System, китайская система международных межбанковских переводов в~юанях \\
+  \textbf{CISP} & Cardholder Information Security Program, программа Visa, предшественница PCI~DSS \\
+  \textbf{CIT} & Customer-Initiated Transaction, операция, инициированная держателем карты \\
+  \textbf{CMAC} & Cipher-based Message Authentication Code, MAC на блочном шифре (NIST~SP~800-38B) \\
+  \textbf{CMS} & Card Management System, система управления жизненным циклом карт у~эмитента \\
+  \textbf{CNP} & Card-Not-Present, операция без физического предъявления карты \\
+  \textbf{CPM} & Customer-Presented Mode, QR-сценарий с~предъявлением кода клиентом \\
+  \textbf{CPS} & Custom Payment Service, программа квалификации операций Visa с~льготным interchange (CPS/Retail и~др.) \\
+  \textbf{CUP} & China UnionPay, китайская карточная схема \\
+  \textbf{CVC1} & Card Verification Code~1, статический код подлинности на магнитной полосе \\
+  \textbf{CVC3} & Card Verification Code 3, динамический код Mastercard для contactless mag-stripe (PayPass M/Stripe) \\
+  \textbf{CVM} & Cardholder Verification Method, метод верификации держателя (PIN, signature, CDCVM, no~CVM) \\
+  \textbf{CVV/CVC} & Card Verification Value (Visa) / Card Verification Code (Mastercard), статический код подлинности карты на магнитной полосе \\
+  \textbf{CVV2/CVC2} & Печатный код безопасности на оборотной стороне карты, используется в~операциях CNP \\
+  \textbf{DCC} & Dynamic Currency Conversion, конверсия в~валюту держателя на стороне эквайера/терминала \\
+  \textbf{DICT} & Diretório de Identificadores de Contas Transacionais, директория Banco Central do Brasil, отображающая ключи Pix (телефон, e-mail, CPF, CNPJ, EVP) в~реквизиты счёта и~участника \\
+  \textbf{DDA} & Dynamic Data Authentication, метод офлайн-аутентификации с~динамической подписью данных карты (EMV) \\
+  \textbf{DE} & Data Element, поле сообщения ISO 8583 \\
+  \textbf{DLT} & Distributed Ledger Technology, технология распределённых реестров; база данных с~синхронизированными копиями у~нескольких участников \\
+  \textbf{DMS} & Dual Message System, двухстадийная авторизация и~клиринг отдельным сообщением (см.\ также SMS) \\
+  \textbf{DPAN} & Device Primary Account Number, токенизированный номер, привязанный к~устройству (Apple Pay, Google Pay и~др.) \\
+  \textbf{DRL} & Dynamic Reader Limit, механизм бесконтактных ридеров Visa и~AmEx, позволяющий держать несколько наборов лимитов на один AID в~зависимости от региональной принадлежности карты (см.\ APID) \\
+  \textbf{DS} & Directory Server, маршрутизатор сообщений 3-D~Secure от мерчанта к~ACS эмитента \\
+  \textbf{DSRP} & Digital Secure Remote Payment, механизм Mastercard генерации криптограмм в~CNP \\
+  \textbf{DUKPT} & Derived Unique Key Per Transaction, схема производных одноразовых ключей для PIN/данных в~POS \\
+  \textbf{EAS} & Estimated Authorization Service, схема предварительных авторизаций с~уточнением суммы (Visa) \\
+  \textbf{EBA} & European Banking Authority, Европейская банковская администрация \\
+  \textbf{EBCDIC} & Extended Binary Coded Decimal Interchange Code, кодировка IBM, исторически используется в~ISO~8583 \\
+  \textbf{ECC} & Elliptic Curve Cryptography, криптография на эллиптических кривых \\
+  \textbf{ECDSA} & Elliptic Curve Digital Signature Algorithm, алгоритм цифровой подписи на эллиптических кривых \\
+  \textbf{ECI} & Electronic Commerce Indicator, индикатор результата 3-D~Secure в~авторизационном сообщении \\
+  \textbf{ECM} & Excessive Chargeback Merchant, статус мониторинговой программы Mastercard для ТСП с~повышенной долей chargeback \\
+  \textbf{EEA} & European Economic Area, Европейская экономическая зона \\
+  \textbf{EFA} & EMV Final Advice, индустриальное название второй POS-to-host-сессии (ISO~8583 MTI~0220/0230), в~которой терминал передаёт ПЦ результат обработки картой ARPC и~финальную криптограмму; в~спецификациях EMVCo тот же шаг обозначается как online completion / second GENERATE~AC \\
+  \textbf{EFM} & Excessive Fraud Merchant, статус мониторинговой программы Mastercard по фроду \\
+  \textbf{EIRF} & Electronic Interchange Reimbursement Fee, штрафная категория interchange Visa для операций без полного набора данных \\
+  \textbf{ELCARD} & Кыргызская национальная платёжная система (см.\ также ЭЛКАРТ) \\
+  \textbf{EMV} & Europay/Mastercard/Visa, семейство спецификаций чиповых карт (EMVCo) \\
+  \textbf{EP} & E-commerce Page, тип SAQ A-EP в~PCI~DSS для платёжных страниц с~прямым постом данных карты \\
+  \textbf{FAPI} & Financial-grade API, профиль безопасности OpenID Foundation для финансовых API (см.\ также ФАПИ) \\
+  \textbf{FATF} & Financial Action Task Force, межправительственная организация по борьбе с~отмыванием денег и~финансированием терроризма \\
+  \textbf{FBO} & Fulfillment by Operator, маркетплейсная схема с~логистикой на стороне оператора \\
+  \textbf{FBS} & Fulfillment by Seller, маркетплейсная схема с~логистикой на стороне продавца \\
+  \textbf{FCA} & Financial Conduct Authority, регулятор финансовых услуг Великобритании \\
+  \textbf{FedNow} & Мгновенная розничная платёжная система Federal Reserve Banks, запущена 20 июля 2023~года; регулируется 12~CFR~210 Subpart~C и~Operating Circular~8, расчёт через master account участника в~Reserve Bank \\
+  \textbf{FF1} & Format-Preserving Encryption Algorithm~1, режим сохраняющего формат шифрования (NIST~SP~800-38G) \\
+  \textbf{FF3} & Format-Preserving Encryption Algorithm~3, режим FPE; в~актуальной редакции FF3-1 (NIST~SP~800-38G Rev.~1) \\
+  \textbf{FIN} & SWIFT FIN, исторический сервис передачи MT-сообщений \\
+  \textbf{FIPS} & Federal Information Processing Standards, серия стандартов NIST (FIPS~140-3, FIPS~197 и~др.) \\
+  \textbf{FIS} & Fidelity National Information Services, крупный американский процессор \\
+  \textbf{Floor limit} & терминальный порог офлайн-одобрения по сумме операции; задаётся эквайером в~рамках правил схемы (EMV terminal risk management) \\
+  \textbf{FPAN} & Funding Primary Account Number, реальный номер карты, лежащий за токеном \\
+  \textbf{FPE} & Format-Preserving Encryption, шифрование с~сохранением формата (например, длины и~алфавита PAN) \\
+  \textbf{FWT} & Frame Waiting Time, максимальное время ожидания ответа карты в~ISO/IEC~14443 \\
+  \textbf{GCMS} & Global Clearing Management System, клиринговая система Mastercard \\
+  \textbf{GPO} & Get Processing Options, EMV-команда инициации транзакции \\
+  \textbf{HCE} & Host Card Emulation, эмуляция карты в~ОС устройства без аппаратного Secure Element \\
+  \textbf{HECM} & High Excessive Chargeback Merchant, повышенный уровень программы Mastercard по chargeback \\
+  \textbf{HMAC} & Hash-based Message Authentication Code, MAC на хеш-функции (RFC~2104) \\
+  \textbf{HPP} & Hosted Payment Page, размещённая платёжная страница на стороне PSP \\
+  \textbf{HSM} & Hardware Security Module, аппаратный модуль для хранения ключей и~криптоопераций \\
+  \textbf{HUMO} & Узбекская национальная платёжная система \\
+  \textbf{IAC} & Issuer Action Codes, заданные эмитентом правила решения по EMV-операции \\
+  \textbf{IANA} & Internet Assigned Numbers Authority, реестр идентификаторов Интернета (порты, MIME, JOSE-алгоритмы) \\
+  \textbf{IATA} & International Air Transport Association, формат Track~1 магнитной полосы \\
+  \textbf{ICC} & Integrated Circuit Card, чиповая карта (EMV) \\
+  \textbf{IFR} & Interchange Fee Regulation, регламент ЕС~2015/751 о~межбанковских комиссиях \\
+  \textbf{IFS} & Interface Specification, документ карточной схемы, описывающий формат и~семантику ISO~8583-сообщений конкретного интерфейса \\
+  \textbf{IIN} & Issuer Identification Number, термин ISO, эквивалент BIN \\
+  \textbf{IK} & Initial Key, начальный ключ устройства в~DUKPT \\
+  \textbf{IKI} & Initial Key Identifier, идентификатор начального ключа DUKPT \\
+  \textbf{IMK} & Issuer Master Key, мастер-ключ эмитента, из которого деривируются ключи EMV-приложения карты \\
+  \textbf{IPC} & Interbank Processing Center, межбанковский процессинговый центр Кыргызстана \\
+  \textbf{IPR} & Instant Payments Regulation, Regulation (EU) 2024/886 о~мгновенных кредитовых переводах в~евро; обязательность SCT Inst в~еврозоне с~9~октября 2025~года \\
+  \textbf{IPM} & Integrated Product Messages, формат клиринговых сообщений Mastercard \\
+  \textbf{IRF} & Interchange Reimbursement Fee, межбанковская комиссия (термин UnionPay) \\
+  \textbf{ISO} & International Organization for Standardization, в~книге упоминается через стандарты 4217, 7810, 7813, 7816, 8583, 20022 \\
+  \textbf{JARM} & JWT Secured Authorization Response Mode, подписанный ответ авторизационного эндпоинта (FAPI) \\
+  \textbf{JCB} & Japan Credit Bureau, японская карточная схема \\
+  \textbf{JSON} & JavaScript Object Notation, формат обмена данными в~REST/HTTP-интерфейсах \\
+  \textbf{JWE} & JSON Web Encryption (RFC~7516) \\
+  \textbf{JWK} & JSON Web Key (RFC~7517) \\
+  \textbf{JWS} & JSON Web Signature (RFC~7515) \\
+  \textbf{JWT} & JSON Web Token (RFC~7519) \\
+  \textbf{KCV} & Key Check Value, контрольная сумма ключа для верификации совпадения копий ключа на разных устройствах \\
+  \textbf{KEK} & Key Encryption Key, ключ шифрования ключей; используется для защищённой передачи и~хранения других ключей \\
+  \textbf{KYB} & Know Your Business, идентификация юридических лиц при подключении \\
+  \textbf{KYC} & Know Your Customer, идентификация и~верификация клиента-физлица \\
+  \textbf{LLVAR} & Length-Length Variable, поле переменной длины с~двухсимвольным префиксом длины (ISO~8583) \\
+  \textbf{LMK} & Local Master Key, локальный мастер-ключ HSM; защищает производные ключи внутри устройства \\
+  \textbf{MAC} & Message Authentication Code, код аутентичности сообщения \\
+  \textbf{MC ECP} & Excessive Chargeback Program, программа Mastercard по мониторингу возвратных платежей у~эквайеров и~ТСП \\
+  \textbf{MCC} & Merchant Category Code, четырёхзначный код категории мерчанта (ISO 18245) \\
+  \textbf{MDB} & Mir Debit Business, продуктовый код дебетовой карты Мир для бизнеса \\
+  \textbf{MDES} & Mastercard Digital Enablement Service, токенизационный сервис Mastercard \\
+  \textbf{MDP} & Mir Debit Prepaid, продуктовый код предоплаченной карты Мир \\
+  \textbf{MDR} & Merchant Discount Rate, торговая уступка мерчанта; синоним MSC \\
+  \textbf{MED} & Mecanismo Especial de Devolução, возврат по антифроду Pix; банк-отправитель инициирует через инфраструктуру схемы запрос на блокировку и~возврат при подозрении на фрод \\
+  \textbf{MDT} & Mir Debit, продуктовый код стандартной дебетовой карты Мир \\
+  \textbf{Me2Me Pull} & Сценарий СБП, инициируемый банком-получателем: клиент даёт согласие в~приложении банка-получателя и~\enquote{стягивает} средства со своего счёта в~банке-отправителе \\
+  \textbf{Me2Me Push} & Сценарий СБП, инициируемый банком-отправителем: клиент отправляет средства из приложения банка-отправителя на свой счёт в~банке-получателе \\
+  \textbf{MID} & Merchant ID, идентификатор ТСП у~эквайера \\
+  \textbf{MIT} & Merchant-Initiated Transaction, операция, инициированная мерчантом без участия держателя в~момент списания \\
+  \textbf{MPA} & MIR Payment Application, EMV-апплет карты системы Мир с~поддержкой контактного и~бесконтактного интерфейсов и~криптографии ГОСТ \\
+  \textbf{MPM} & Merchant-Presented Mode, QR-сценарий с~предъявлением кода продавцом \\
+  \textbf{MSC} & Merchant Service Charge, торговая уступка, комиссия мерчанта эквайеру \\
+  \textbf{MT} & Message Type, формат текстовых сообщений SWIFT (MT103, MT202 и~др.) \\
+  \textbf{MTI} & Message Type Indicator, четырёхзначный идентификатор типа сообщения ISO 8583 \\
+  \textbf{NFC} & Near Field Communication, ближнепольная радиосвязь для бесконтактных платежей \\
+  \textbf{NIST} & National Institute of Standards and Technology, американский институт стандартов и~технологий \\
+  \textbf{NNSS} & National Net Settlement Service, расчётный сервис Visa в~США \\
+  \textbf{NPCI} & National Payments Corporation of India, оператор UPI и~RuPay в~Индии \\
+  \textbf{NRZ} & Non-Return-to-Zero, схема линейного кодирования (например, в~ISO/IEC~14443 Type~B) \\
+  \textbf{NTID} & Network Transaction ID, идентификатор операции сети Visa, используемый в~цепочках MIT/CIT и~CE 3.0 \\
+  \textbf{OCT} & Original Credit Transaction, обратный денежный перевод на карту через карточную сеть \\
+  \textbf{OFAC} & Office of Foreign Assets Control, санкционное подразделение Минфина США \\
+  \textbf{OIDF} & OpenID Foundation, организация-разработчик OIDC и~FAPI \\
+  \textbf{OXXO} & Мексиканская сеть convenience-магазинов и~одноимённый способ оплаты по штрихкоду \\
+  \textbf{P2PE} & Point-to-Point Encryption, шифрование данных карты от точки приёма до дешифрующего узла; PCI имеет одноимённый стандарт \\
+  \textbf{PAN} & Primary Account Number, основной номер карты (ISO/IEC 7812) \\
+  \textbf{PAR} & Pushed Authorization Requests, режим OAuth с~предварительной отправкой параметров (RFC~9126) \\
+  \textbf{PCI} & Payment Card Industry, отрасль платёжных карт; в~книге чаще про PCI~SSC и~его стандарты \\
+  \textbf{PIN} & Personal Identification Number, секретный код держателя для верификации \\
+  \textbf{PISP} & Payment Initiation Service Provider, поставщик услуг инициации платежа (PSD2) \\
+  \textbf{PIX} & Бразильская система мгновенных платежей под управлением BCB \\
+  \textbf{PKCE} & Proof Key for Code Exchange, защита OAuth-кода от перехвата (RFC~7636) \\
+  \textbf{PKI} & Public Key Infrastructure, инфраструктура открытых ключей: удостоверяющие центры, сертификаты и~правила доверия между ними \\
+  \textbf{PoA} & Proof-of-Authority, алгоритм консенсуса с~заранее утверждённым списком валидаторов; типичный выбор для приватных DLT и~CBDC \\
+  \textbf{POI} & Point of Interaction, обобщённый термин PCI для устройств приёма платежа \\
+  \textbf{POS} & Point of Sale, точка продажи; в~узком смысле -- POS-терминал \\
+  \textbf{PoS} & Proof-of-Stake, алгоритм консенсуса, в~котором право подписать блок получают участники, заблокировавшие залог криптовалюты; нарушители теряют залог (\textit{slashing}). Применяется в~Ethereum с~2022~г. \\
+  \textbf{PoW} & Proof-of-Work, алгоритм консенсуса, в~котором валидаторы тратят вычислительную работу на~подбор хеша; применяется в~Bitcoin \\
+  \textbf{PPSE} & Proximity Payment System Environment, бесконтактный аналог PSE (\texttt{2PAY.SYS.DDF01}) \\
+  \textbf{PSD2} & Payment Services Directive 2, директива ЕС об~открытом банкинге и~SCA \\
+  \textbf{PSE} & Payment System Environment, контактный каталог приложений на чипе (\texttt{1PAY.SYS.DDF01}) \\
+  \textbf{PSP} & Payment Service Provider, провайдер платёжных услуг \\
+  \textbf{PSU} & Payment Service User, клиент в~терминологии PSD2 \\
+  \textbf{PTS} & PIN Transaction Security, стандарт PCI~SSC для аппаратных модулей и~POS-устройств \\
+  \textbf{PWCB} & Purchase with Cashback, тип EMV-операции \enquote{покупка с~выдачей наличных} (Mastercard); кодируется тегом \texttt{0x9C} = \texttt{09} \\
+  \textbf{QMAP} & Questionable Merchant Audit Program, программа Visa по мониторингу подозрительных мерчантов \\
+  \textbf{QR} & Quick Response (code), двумерный штрихкод как контейнер платёжных реквизитов \\
+  \textbf{QSA} & Qualified Security Assessor, аккредитованный PCI~SSC аудитор \\
+  \textbf{RBA} & Risk-Based Authentication, риск-ориентированная аутентификация в~3-D~Secure \\
+  \textbf{RID} & Registered Application Provider Identifier, первая часть AID, идентифицирующая платёжную сеть (EMV) \\
+  \textbf{RKI} & Remote Key Injection, удалённая загрузка криптографических ключей в~POS-терминал по~защищённому каналу \\
+  \textbf{ROC} & Report on Compliance, итоговый отчёт QSA по PCI~DSS \\
+  \textbf{RRN} & Retrieval Reference Number, идентификатор, по которому участники находят операцию (DE 37 в~ISO 8583) \\
+  \textbf{RRP} & Relay-Resistant Protocol, защита от relay-атак в~Mastercard M/Chip \\
+  \textbf{RSA} & Rivest-Shamir-Adleman, асимметричный криптоалгоритм \\
+  \textbf{RTGS} & Real-Time Gross Settlement, валовой расчёт в~реальном времени \\
+  \textbf{RTO} & Recovery Time Objective, целевое время восстановления сервиса после инцидента \\
+  \textbf{RTS} & Regulatory Technical Standards, технические регламентирующие стандарты EBA по PSD2 \\
+  \textbf{SAD} & Sensitive Authentication Data, данные аутентификации, не подлежащие хранению по PCI~DSS \\
+  \textbf{SAM} & Switching and Account Management, коммутирующая инфраструктура Mastercard \\
+  \textbf{SAQ} & Self-Assessment Questionnaire, опросник самооценки PCI~DSS \\
+  \textbf{SCA} & Strong Customer Authentication, строгая аутентификация клиента (PSD2) \\
+  \textbf{SCF} & Stored Credential Framework, правила Visa и~Mastercard для повторных списаний по~сохранённым реквизитам \\
+  \textbf{SCT Inst} & SEPA Instant Credit Transfer, мгновенный кредитовый перевод в~евро по rulebook EPC; целевое end-to-end время 10~секунд, 24/7/365 \\
+  \textbf{SDA} & Static Data Authentication, статическая офлайн-аутентификация данных карты (EMV) \\
+  \textbf{SDK} & Software Development Kit, набор библиотек для интеграции в~приложение \\
+  \textbf{SDN} & Specially Designated Nationals (and Blocked Persons), санкционный список OFAC \\
+  \textbf{SDP} & Site Data Protection, программа Mastercard, предшественница PCI~DSS \\
+  \textbf{SE} & Secure Element, аппаратный защищённый элемент устройства \\
+  \textbf{SEPA} & Single Euro Payments Area, единое пространство платежей в~евро \\
+  \textbf{SLA} & Service Level Agreement, соглашение об~уровне обслуживания \\
+  \textbf{SMC} & Secure Messaging Confidentiality, ключ EMV для шифрования сценариев эмитента \\
+  \textbf{SMI} & Secure Messaging Integrity, ключ EMV для целостности сценариев эмитента \\
+  \textbf{SNA} & Systems Network Architecture, проприетарный сетевой стек IBM \\
+  \textbf{SPI} & Sistema de Pagamentos Instantâneos, бразильская инфраструктура мгновенных расчётов под PIX \\
+  \textbf{SRED} & Secure Reading and Exchange of Data, модуль PCI~PTS для шифрования данных карты внутри терминала \\
+  \textbf{STAN} & System Trace Audit Number, локальный счётчик операций терминала/эквайера (DE 11 в~ISO 8583) \\
+  \textbf{STIP} & Stand-In Processing, авторизация на стороне сети, когда эмитент недоступен \\
+  \textbf{SWIFT} & Society for Worldwide Interbank Financial Telecommunication, межбанковская сеть передачи финансовых сообщений \\
+  \textbf{TAC} & Terminal Action Codes, заданные сетью правила решения по EMV-операции на терминале \\
+  \textbf{TADG} & Visa Transaction Acceptance Device Guide, документация интерфейса Visa для эквайера \\
+  \textbf{TAVV} & Token Authentication Verification Value, криптограмма токена в~CNP-операциях (Visa Token Service) \\
+  \textbf{TC} & Transaction Certificate, криптограмма операции EMV, одобренной офлайн \\
+  \textbf{TC33} & Формат клирингового файла Visa BASE II \\
+  \textbf{TDEA} & Triple Data Encryption Algorithm, он же Triple~DES (3DES); устаревший симметричный шифр \\
+  \textbf{TDOL} & Transaction Data Object List, список тегов EMV для криптограммы~TC, задаваемый картой по умолчанию \\
+  \textbf{TID} & Terminal ID, идентификатор терминала у~эквайера \\
+  \textbf{TIPS} & TARGET Instant Payment Settlement, центробанковская платформа расчёта мгновенных платежей в~евро под управлением Eurosystem; работает 24/7/365 в~деньгах центрального банка \\
+  \textbf{TLV} & Tag-Length-Value, формат кодирования данных EMV (BER-TLV) \\
+  \textbf{TMK} & Terminal Master Key, мастер-ключ POS-терминала; под ним хранятся остальные ключи устройства \\
+  \textbf{TMS} & Terminal Management System, система управления парком терминалов \\
+  \textbf{TPK} & Terminal PIN Key, ключ шифрования PIN внутри POS-терминала \\
+  \textbf{TPP} & Third Party Provider, сторонний поставщик услуг в~открытом банкинге PSD2 \\
+  \textbf{TPAP} & Third-Party Application Provider, небанковское приложение в~UPI (PhonePe, Google Pay, Paytm), работающее через PSP-bank; для одного TPAP действует потолок 30~\% объёма \\
+  \textbf{TPR} & Transaction Processing Rules, документ Mastercard, описывающий правила формирования авторизационных сообщений \\
+  \textbf{TPS} & Transactions Per Second, операций в~секунду; целевая метрика производительности \\
+  \textbf{TRA} & Transaction Risk Analysis, освобождение от SCA на основе риск-анализа эквайера (PSD2) \\
+  \textbf{TRID} & Token Requestor ID, идентификатор запросчика токена в~EMVCo \\
+  \textbf{TSP} & Token Service Provider, провайдер токенизации \\
+  \textbf{TVR} & Terminal Verification Results, результаты проверок терминала по операции EMV \\
+  \textbf{UBO} & Ultimate Beneficial Owner, конечный бенефициарный владелец (KYB) \\
+  \textbf{UPI} & Unified Payments Interface, индийский A2A-контур мгновенных платежей \\
+  \textbf{UZCARD} & Узбекская национальная платёжная система \\
+  \textbf{VAA} & Visa Advanced Authorization, риск-сервис Visa, оценивающий вероятность фрода в~авторизации \\
+  \textbf{VAMP} & Visa Acquirer Monitoring Program, программа Visa мониторинга эквайеров по фроду и~chargeback \\
+  \textbf{VAU} & Visa Account Updater, сервис автоматического обновления реквизитов карт у~мерчантов \\
+  \textbf{VOP} & Verification of Payee, обязательная по IPR проверка соответствия имени получателя и~IBAN перед SCT/SCT Inst-инициацией; схема EPC, действует с~5~октября 2025~года \\
+  \textbf{VPA} & Virtual Payment Address, идентификатор получателя в~UPI вида \texttt{name@psp}, отображающий пользователя на банковский счёт без раскрытия реквизитов \\
+  \textbf{VCAS} & Visa Consumer Authentication Service, ACS-как-сервис Visa для эмитентов в~3-D~Secure \\
+  \textbf{VCPS} & Visa Contactless Payment Specification, спецификация бесконтактных платежей Visa \\
+  \textbf{VCR} & Visa Claim Resolution, регламент работы со~спорами Visa \\
+  \textbf{VDMP} & Visa Dispute Monitoring Program, программа Visa мониторинга мерчантов по доле споров \\
+  \textbf{VEPS} & Visa Easy Payment Service, упрощённый бесконтактный сценарий с~ограничением суммы и~без CVM \\
+  \textbf{VFMP} & Visa Fraud Monitoring Program, программа Visa мониторинга мерчантов по доле фрода \\
+  \textbf{VROL} & Visa Resolve Online, инструмент Visa для работы со~спорами и~обмена доказательствами \\
+  \textbf{VT} & Virtual Terminal, ввод реквизитов оператором ТСП через защищённую страницу (PCI SAQ~C-VT) \\
+  \textbf{VTS} & Visa Token Service, токенизационный сервис Visa \\
+  \textbf{WAF} & Web Application Firewall, межсетевой экран уровня приложений \\
+  \textbf{XS2A} & Access to Account, фреймворк доступа к~счёту в~PSD2/Berlin Group \\
+  \textbf{ZMK} & Zone Master Key, мастер-ключ зоны; передаётся между организациями (банк, процессор, сеть) для защищённого обмена другими ключами \\
+\\
+  \textbf{АСВ} & Агентство по страхованию вкладов \\
+  \textbf{АФТ} & Ассоциация ФинТех, разработчик отраслевых стандартов открытых API в~России \\
+  \textbf{БИК} & Банковский идентификационный код, девятизначный код участника платёжной системы Банка России \\
+  \textbf{БПА} & Банковский платёжный агент (161-ФЗ) \\
+  \textbf{БЭСП} & Банковские электронные срочные платежи, исторический сервис ВРСС Банка России (выведен из~эксплуатации в~2018~г.) \\
+  \textbf{ГРБС} & Главный распорядитель бюджетных средств; орган, определённый ст.~158 Бюджетного кодекса РФ, имеющий право распределять бюджетные ассигнования и~лимиты обязательств между подведомственными получателями \\
+  \textbf{ДБО} & Дистанционное банковское обслуживание (мобильный банк, интернет-банк и~др.) \\
+  \textbf{ЕАГ} & Евразийская группа по противодействию легализации преступных доходов и~финансированию терроризма \\
+  \textbf{ЕБС} & Единая биометрическая система \\
+  \textbf{ЕЦБ} & Европейский центральный банк \\
+  \textbf{ЕЭЗ} & Европейская экономическая зона \\
+  \textbf{МБВ} & Мир Бюджетные Выплаты, продуктовый стандарт карт Мир для бюджетных получателей \\
+  \textbf{МВК} & Межведомственная комиссия по противодействию финансированию терроризма \\
+  \textbf{Наличные на кассе} & Сервис ПС~Мир \enquote{покупка с~выдачей наличных} (аналог PWCB); для карт, эмитированных после 10.04.2023, лимит 5\,000~рублей, обязательны онлайн-PIN или CDCVM \\
+  \textbf{НКО} & Небанковская кредитная организация \\
+  \textbf{НПС} & Национальная платёжная система Российской Федерации (161-ФЗ) \\
+  \textbf{НСПК} & Национальная система платёжных карт, оператор карты Мир и~СБП \\
+  \textbf{ОД} & Отмывание доходов, полученных преступным путём; вместе с~ФТ образует ПОД/ФТ \\
+  \textbf{ОПКЦ} & Операционный и~платёжный клиринговый центр НСПК, обрабатывающий внутрироссийские транзакции международных схем \\
+  \textbf{ОСР} & Оператор сервиса рассрочки, статус по~53-ФЗ от~2024~г. \\
+  \textbf{ОУД4} & Оценочный уровень доверия~4 по ГОСТ Р~ИСО/МЭК~15408 (аналог Common Criteria EAL4) \\
+  \textbf{ОУПИ} & Оператор услуг платёжной инфраструктуры (операционный, платёжный клиринговый, расчётный центры) \\
+  \textbf{ОЦ} & Операционный центр в~архитектуре НПС (см.\ ОУПИ) \\
+  \textbf{ПКС} & Платформа коммерческих согласий Банка России \\
+  \textbf{ПКЦ} & Платёжный клиринговый центр в~архитектуре НПС (см.\ ОУПИ) \\
+  \textbf{ПОД} & Противодействие отмыванию доходов; вместе с~ФТ образует ПОД/ФТ \\
+  \textbf{ППС} & Перспективные платёжные сервисы Банка России (преемник БЭСП) \\
+  \textbf{ПС} & Платёжная система \\
+  \textbf{ПУ} & Поставщик услуг в~российском открытом банкинге (СТО~БР ФАПИ.СЕК); аналог ASPSP \\
+  \textbf{ПЭП} & Политически значимое лицо (politically exposed person) \\
+  \textbf{РСБУ} & Российские стандарты бухгалтерского учёта \\
+  \textbf{РЦ} & Расчётный центр в~архитектуре НПС (см.\ ОУПИ) \\
+  \textbf{СБП} & Система быстрых платежей Банка России \\
+  \textbf{СКЗИ} & Средство криптографической защиты информации, сертифицированное ФСБ России \\
+  \textbf{СПУ} & Сторонний поставщик услуг в~российском открытом банкинге; аналог TPP \\
+  \textbf{СПФС} & Система передачи финансовых сообщений Банка России \\
+  \textbf{ССНП} & Сервисы срочного и~несрочного перевода в~платёжной системе Банка России (Положение Банка России от~25.07.2022 №~802-П) \\
+  \textbf{СТО} & Стандарт организации; в~открытом банкинге~-- СТО~БР (Банка России) \\
+  \textbf{ТК} & Технический комитет Росстандарта; ТК~26 разрабатывает криптографические стандарты \\
+  \textbf{УФЭБС} & Унифицированный формат электронных банковских сообщений Банка России \\
+  \textbf{ФАПИ} & Финансовые API; русское обозначение профиля FAPI в~стандартах СТО~БР \\
+  \textbf{ФАПИ.СЕК} & Профиль безопасности открытых API Банка России (СТО~БР ФАПИ.СЕК) \\
+  \textbf{ФАС} & Федеральная антимонопольная служба \\
+  \textbf{ФинЦЕРТ} & Центр мониторинга и~реагирования на компьютерные атаки в~кредитно-финансовой сфере Банка России \\
+  \textbf{ФТ} & Финансирование терроризма; вместе с~ОД образует ПОД/ФТ \\
+  \textbf{ФЭС} & Формализованное электронное сообщение (115-ФЗ; обмен с~Росфинмониторингом) \\
+  \textbf{ЦБ~РФ} & Центральный банк Российской Федерации (Банк России) \\
+  \textbf{ЦНФС} & Центр новых финансовых сервисов, дочернее общество Сбербанка \\
+  \textbf{ЭДС} & Электронные денежные средства (161-ФЗ) \\
+  \textbf{ЭЛКАРТ} & Кыргызская национальная платёжная система; см.\ также ELCARD \\
+  \textbf{ЭСП} & Электронное средство платежа (161-ФЗ) \\
+\end{longtable}
+\endgroup
