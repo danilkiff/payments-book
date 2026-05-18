@@ -570,6 +570,40 @@ Field~63.3, обязателен для card-present и~card-absent
 устойчивые каналы связи и~офлайн-режимы терминалов покрывают
 большинство сценариев, где раньше требовалась голосовая авторизация.
 
+\begin{table}[htbp]
+  \caption{Граничные случаи карточной авторизации.}\label{tab:tx-edge-cases}
+  \begingroup
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabularx}{\textwidth}{
+      @{}B{0.14\textwidth}
+      P{0.17\textwidth}
+      P{0.15\textwidth}
+      P{0.17\textwidth}
+      Y@{}
+    }
+    \toprule
+    \headrow
+    \thd{Механизм} & \thd{Когда сумма известна} &
+    \thd{Онлайн-авторизация} & \thd{Кто несёт риск} &
+    \thd{Типичный MCC} \\
+    \midrule
+    Pre-auth & позже & да
+    & эквайер/ТСП & 7011 (гостиницы), 7512 (аренда авто) \\
+    Incremental auth & постепенно & да (несколько)
+    & эквайер/ТСП & 7011 \\
+    Partial auth & сразу, но покрытие неполное & да
+    & ТСП & любой (чаще prepaid) \\
+    Deferred auth & позже & нет (офлайн)
+    & эквайер/ТСП & 4511 (авиа), 7523 (паркинг) \\
+    Force post & сразу & голосовая
+    & ТСП & любой \\
+    \bottomrule
+  \end{tabularx}%
+  \endgroup
+\end{table}
+
 \subsection*{Покупка с~выдачей наличных (POS-кешбэк)}\label{sec:tx-pos-cashback}
 
 С~термином \enquote{cashback} в~обиходе путаница. Чаще всего так
@@ -624,37 +658,3 @@ Mastercard и~ПС~Мир, и~эквайер обычно конвертируе
 реверсал отменяет операцию целиком; обычная отмена или возврат,
 инициированные кассиром по требованию держателя, допустимы только
 в~отношении части покупки~\cite{visa-tadg,mc-tpr}.
-
-\begin{table}[b]
-  \caption{Граничные случаи карточной авторизации.}\label{tab:tx-edge-cases}
-  \begingroup
-  \small
-  \setlength{\tabcolsep}{4pt}
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabularx}{\textwidth}{
-      @{}B{0.14\textwidth}
-      P{0.17\textwidth}
-      P{0.15\textwidth}
-      P{0.17\textwidth}
-      Y@{}
-    }
-    \toprule
-    \headrow
-    \thd{Механизм} & \thd{Когда сумма известна} &
-    \thd{Онлайн-авторизация} & \thd{Кто несёт риск} &
-    \thd{Типичный MCC} \\
-    \midrule
-    Pre-auth & позже & да
-    & эквайер/ТСП & 7011 (гостиницы), 7512 (аренда авто) \\
-    Incremental auth & постепенно & да (несколько)
-    & эквайер/ТСП & 7011 \\
-    Partial auth & сразу, но покрытие неполное & да
-    & ТСП & любой (чаще prepaid) \\
-    Deferred auth & позже & нет (офлайн)
-    & эквайер/ТСП & 4511 (авиа), 7523 (паркинг) \\
-    Force post & сразу & голосовая
-    & ТСП & любой \\
-    \bottomrule
-  \end{tabularx}%
-  \endgroup
-\end{table}
