@@ -1,42 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 160" width="750" height="160">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="820" height="380">
 <defs>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
   <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-<marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
+  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
 </defs>
-<rect x="20.0" y="20.0" width="220" height="120" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="1"/>
-<rect x="245.0" y="20.0" width="260" height="120" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="1"/>
-<rect x="510.0" y="20.0" width="220" height="120" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#5C647A" stroke-width="1"/>
-<rect x="33.0" y="43.0" width="78" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="72.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Терминал</text>
-<rect x="130.0" y="43.0" width="95" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="177.5" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Банк-эквайер</text>
-<text x="318.0" y="34.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">ОПКЦ (НСПК)</text>
-<rect x="258.0" y="42.0" width="120" height="22" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1"/>
-<text x="318.0" y="57.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Операционный центр</text>
-<rect x="258.0" y="68.0" width="120" height="22" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1"/>
-<text x="318.0" y="83.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Платёжный клиринг</text>
-<rect x="390.0" y="43.0" width="95" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="437.5" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Банк-эмитент</text>
-<rect x="258.0" y="100.0" width="120" height="32" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1"/>
-<text x="318.0" y="120.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">нетто-позиции</text>
-<rect x="390.0" y="100.0" width="95" height="32" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1" stroke-dasharray="6,3"/>
-<text x="437.5" y="114.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Сервис резервной</text>
-<text x="437.5" y="126.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">авторизации (СРА)</text>
-<rect x="523.0" y="43.0" width="110" height="36" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
-<text x="578.0" y="62.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Банк России (расчёт)</text>
-<rect x="640.0" y="43.0" width="90" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="685.0" y="65.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">корсчета банков</text>
-<line x1="111.0" y1="61.0" x2="130.0" y2="61.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="225.0" y1="61.0" x2="258.0" y2="53.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="378.0" y1="53.0" x2="390.0" y2="61.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="390.0" y1="92.0" x2="111.0" y2="92.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="240.0" y="88.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">ответ авторизации</text>
-<line x1="318.0" y1="90.0" x2="318.0" y2="100.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<line x1="390.0" y1="116.0" x2="378.0" y2="79.0" stroke="#C15462" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Bad)"/>
-<line x1="378.0" y1="116.0" x2="523.0" y2="61.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="455.0" y="100.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">нетто-позиции</text>
-<line x1="633.0" y1="61.0" x2="640.0" y2="61.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+
+<!-- ============ Layer 1: Authorization (real-time) ============ -->
+<rect x="20" y="20" width="780" height="120" rx="6" fill="#ffffff" stroke="#4E63D9" stroke-width="1"/>
+<text x="30" y="40" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Авторизация (real-time, ISO 8583)</text>
+
+<!-- Эквайер -->
+<rect x="40" y="60" width="160" height="60" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="120" y="84" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Банк-эквайер</text>
+<text x="120" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">от терминала</text>
+<text x="120" y="114" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">через TLS-канал</text>
+
+<!-- Операционный центр (ОПКЦ) -->
+<rect x="270" y="60" width="280" height="60" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="410" y="84" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Операционный центр</text>
+<text x="410" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">маршрутизация по BIN</text>
+<text x="410" y="114" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">СРА: stand-in при недоступности эмитента</text>
+
+<!-- Банк-эмитент -->
+<rect x="620" y="60" width="160" height="60" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="700" y="84" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Банк-эмитент</text>
+<text x="700" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">авторизация</text>
+<text x="700" y="114" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">по полю DE 39</text>
+
+<!-- Auth arrows: forward (request) -->
+<line x1="202" y1="82" x2="268" y2="82" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="235" y="76" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">0100</text>
+
+<line x1="552" y1="82" x2="618" y2="82" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="585" y="76" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">0100</text>
+
+<!-- Auth arrows: response back (dashed) -->
+<line x1="618" y1="100" x2="552" y2="100" stroke="#4E63D9" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-AccentA)"/>
+<text x="585" y="113" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">0110</text>
+
+<line x1="268" y1="100" x2="202" y2="100" stroke="#4E63D9" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-AccentA)"/>
+<text x="235" y="113" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">0110</text>
+
+<!-- ============ Layer 2: Clearing + Settlement (batch) ============ -->
+<rect x="20" y="160" width="780" height="200" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1"/>
+<text x="30" y="180" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Клиринг и расчёт (отложенно, нетто)</text>
+
+<!-- Банк-эквайер (layer 2) -->
+<rect x="40" y="200" width="160" height="50" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="120" y="222" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Банк-эквайер</text>
+<text x="120" y="238" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">нетто-позиция</text>
+
+<!-- Платёжный клиринг (ОПКЦ) -->
+<rect x="270" y="200" width="280" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="410" y="222" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Платёжный клиринг ОПКЦ</text>
+<text x="410" y="238" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">собирает нетто-позиции участников</text>
+
+<!-- Банк-эмитент (layer 2) -->
+<rect x="620" y="200" width="160" height="50" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="700" y="222" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Банк-эмитент</text>
+<text x="700" y="238" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">нетто-позиция</text>
+
+<!-- Clearing arrows -->
+<line x1="202" y1="225" x2="268" y2="225" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
+<line x1="552" y1="225" x2="618" y2="225" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
+
+<!-- Банк России (расчёт) -->
+<rect x="270" y="290" width="280" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
+<text x="410" y="312" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Банк России</text>
+<text x="410" y="328" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">расчётный центр: исполнение нетто-обязательств</text>
+
+<!-- ОПКЦ → Банк России (передача позиций) -->
+<line x1="410" y1="252" x2="410" y2="288" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Good)"/>
+<text x="420" y="272" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">нетто-позиции</text>
+
 </svg>

@@ -58,14 +58,16 @@ Trace~ID исходной CIT в~каждой последующей MIT~\cite{m
 типом \texttt{recurring} и~ссылкой на~NTID первой CIT. Когда
 продавец не~передаёт ссылку на~исходную авторизацию или указывает
 неверный тип, эмитент видит запрос без контекста и~вправе применить
-стандартную политику CNP, вплоть до~отказа. При аудите схема
+стандартную политику CNP, вплоть до~отказа
+(см.~рис.~\ref{fig:decline-decision-tree}). При аудите схема
 квалифицирует такую операцию как нарушение правил
 SCF~\cite{mc-tpr,visa-core-rules}.
 
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/scf-lifecycle}
-  \caption{Жизненный цикл SCF: CIT, NTID/Trace~ID, последующие MIT.}\label{fig:scf-lifecycle}
+  \includefiguresvg[width=\linewidth]{assets/figures/ch29-subscriptions/scf-lifecycle}
+  \caption{SCF на~временной шкале: CIT с~выдачей NTID и~серия MIT
+  со~ссылкой на~NTID; отсутствие NTID ведёт к~отказу.}\label{fig:scf-lifecycle}
 \end{figure}
 \FloatBarrier
 
@@ -317,8 +319,8 @@ PAN (underlying PAN, реальный номер карты, на~который
 
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/credential-update-flow}
-  \caption{Обновление реквизитов: VAU, ABU и~параллельный путь через сетевые токены.}\label{fig:credential-update-flow}
+  \includefiguresvg[width=\linewidth]{assets/figures/ch29-subscriptions/credential-update-flow}
+  \caption{Account Updater (VAU/ABU) и~сетевая токенизация: сравнение по~шести параметрам.}\label{fig:credential-update-flow}
 \end{figure}
 
 MIT уходит по~карте с~истёкшим сроком, а~сервис обновления

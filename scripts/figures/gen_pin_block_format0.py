@@ -73,12 +73,12 @@ PAN_GROUPS = [
 PIN_GROUP_COLORS = {
   "формат": (PANEL, 1.0),
   "длина": (PANEL, 1.0),
-  "PIN": (ACCENT_A, 0.30),
+  "PIN": (ACCENT_A, 0.15),
   "F-padding": (SOFT, 1.0),
 }
 PAN_GROUP_COLORS = {
   "нули": (SOFT, 1.0),
-  "правые 12 цифр PAN без check": (ACCENT_B, 0.30),
+  "правые 12 цифр PAN без check": (ACCENT_B, 0.15),
 }
 
 
@@ -89,7 +89,8 @@ def group_color_for(nibble_idx, groups, color_map):
   return (SOFT, 1.0), ""
 
 
-lines = svg_header(VIEW_W, 290)
+VIEW_H = ROW_Y_START + 2 * ROW_GAP + CELL_H + 10  # последний y3 + ячейка + нижний отступ
+lines = svg_header(VIEW_W, VIEW_H)
 
 # Input строка
 inputs_y = 22
@@ -132,7 +133,7 @@ lines.append(t(LABEL_X - 6, eq_y + 4, "=", size=20, fill=INK, weight="bold", anc
 
 y3 = y2 + ROW_GAP
 RESULT_GROUPS = [(0, 15, "8-байтовый PIN-блок Format 0 (готов к шифрованию)")]
-RESULT_COLOR = {RESULT_GROUPS[0][2]: (WARN, 0.30)}
+RESULT_COLOR = {RESULT_GROUPS[0][2]: (WARN, 0.18)}
 draw_row(y3, result, RESULT_GROUPS, RESULT_COLOR, "блок")
 
 lines.append("</svg>")

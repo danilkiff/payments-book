@@ -1,49 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" width="640" height="230">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 350" width="820" height="350">
 <defs>
-  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
+  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
 </defs>
-<rect x="15.0" y="20.0" width="195" height="140" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="1"/>
-<rect x="222.0" y="20.0" width="120" height="140" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-width="1"/>
-<rect x="354.0" y="20.0" width="120" height="140" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#5C647A" stroke-width="1"/>
-<rect x="486.0" y="20.0" width="140" height="140" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="1"/>
-<rect x="28.0" y="80.0" width="80" height="34" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="68.0" y="101.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Сайт / касса</text>
-<rect x="28.0" y="124.0" width="80" height="34" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="68.0" y="145.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Покупатель</text>
-<rect x="125.0" y="103.0" width="80" height="34" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="165.0" y="119.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Банк</text>
-<text x="165.0" y="132.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">плательщика</text>
-<rect x="232.0" y="103.0" width="100" height="34" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
-<text x="282.0" y="124.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ОПКЦ СБП (НСПК)</text>
-<rect x="364.0" y="103.0" width="100" height="34" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
-<text x="414.0" y="124.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">ПС БР (расчёт)</text>
-<rect x="496.0" y="80.0" width="120" height="34" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="556.0" y="101.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Банк получателя</text>
-<rect x="496.0" y="124.0" width="120" height="34" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="556.0" y="139.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Продавец / PSP</text>
-<text x="556.0" y="152.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">итоговый статус</text>
-<line x1="108.0" y1="97.0" x2="125.0" y2="115.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="108.0" y1="141.0" x2="125.0" y2="125.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="205.0" y1="120.0" x2="232.0" y2="120.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="332.0" y1="120.0" x2="364.0" y2="120.0" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<line x1="464.0" y1="120.0" x2="496.0" y2="97.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<line x1="556.0" y1="114.0" x2="556.0" y2="124.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<rect x="355.0" y="48.0" width="118" height="22" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1"/>
-<text x="414.0" y="63.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">точка финальности</text>
-<line x1="414.0" y1="70.0" x2="414.0" y2="103.0" stroke="#2F8B67" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Good)"/>
-<text x="15.0" y="184.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Развилки (нештатные пути)</text>
-<rect x="15.0" y="192.0" width="195" height="28" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
-<text x="112.5" y="210.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Отказ банка плательщика</text>
-<rect x="222.0" y="192.0" width="200" height="28" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="322.0" y="210.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Таймаут</text>
-<rect x="434.0" y="192.0" width="192" height="28" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
-<text x="530.0" y="210.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Отказ банка получателя</text>
-<line x1="165.0" y1="137.0" x2="112.5" y2="192.0" stroke="#C15462" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Bad)"/>
-<line x1="282.0" y1="137.0" x2="322.0" y2="192.0" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<line x1="556.0" y1="114.0" x2="530.0" y2="192.0" stroke="#C15462" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Bad)"/>
+
+<!-- ============ Swimlane headers ============ -->
+<rect x="20" y="14" width="140" height="42" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="90" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Покупатель</text>
+<text x="90" y="48" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">мобильный банк, СБПэй</text>
+
+<rect x="180" y="14" width="140" height="42" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="250" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Продавец</text>
+<text x="250" y="48" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">сайт, касса, QR</text>
+
+<rect x="340" y="14" width="140" height="42" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="410" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Банк плательщика</text>
+<text x="410" y="48" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">списание со счёта</text>
+
+<rect x="500" y="14" width="140" height="42" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="570" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">СБП</text>
+<text x="570" y="48" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">ОПКЦ НСПК · ПС БР</text>
+
+<rect x="660" y="14" width="140" height="42" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="730" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Банк получателя</text>
+<text x="730" y="48" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">зачисление на счёт</text>
+
+<!-- ============ Lifelines ============ -->
+<line x1="90" y1="58" x2="90" y2="410" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="250" y1="58" x2="250" y2="410" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="410" y1="58" x2="410" y2="410" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="570" y1="58" x2="570" y2="410" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="730" y1="58" x2="730" y2="410" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+
+<!-- ============ Events ============ -->
+
+<!-- 1: Продавец → Покупатель: QR -->
+<line x1="250" y1="80" x2="90" y2="80" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<text x="170" y="74" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">QR / кнопка / ссылка</text>
+
+<!-- 2: Покупатель → Банк плательщика (через мобильный банк) -->
+<line x1="90" y1="115" x2="410" y2="115" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="250" y="109" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">подтверждение списания</text>
+
+<!-- 3: Банк плательщика → СБП -->
+<line x1="410" y1="150" x2="570" y2="150" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<text x="490" y="144" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">операция перевода</text>
+
+<!-- 4: Внутри СБП: маршрутизация и расчёт -->
+<rect x="510" y="170" width="120" height="48" rx="6" fill="#7759D6" fill-opacity="0.10" stroke="#7759D6" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="570" y="188" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">маршрутизация ОПКЦ</text>
+<text x="570" y="202" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">расчёт ПС БР</text>
+<text x="570" y="213" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-style="italic" fill="#5C647A">мгновенно, в~рабочие часы</text>
+
+<!-- 5: СБП → Банк получателя: зачисление -->
+<line x1="570" y1="240" x2="730" y2="240" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<text x="650" y="234" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">зачисление средств</text>
+
+<!-- Точка финальности -->
+<line x1="20" y1="265" x2="800" y2="265" stroke="#2F8B67" stroke-width="1" stroke-dasharray="6,3"/>
+<rect x="640" y="252" width="160" height="20" rx="4" fill="#2F8B67" fill-opacity="0.18" stroke="#2F8B67" stroke-width="1"/>
+<text x="720" y="266" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">точка финальности</text>
+
+<!-- 6: Банк получателя → Продавец: финальный статус -->
+<line x1="730" y1="290" x2="250" y2="290" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<text x="490" y="284" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">финальный статус операции</text>
+
+<!-- 7: Продавец → Покупатель: подтверждение заказа / товар -->
+<line x1="250" y1="325" x2="90" y2="325" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<text x="170" y="319" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">подтверждение заказа / товар</text>
+
+
 </svg>
