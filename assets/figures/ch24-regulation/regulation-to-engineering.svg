@@ -1,331 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   viewBox="0 0 620 280"
-   width="620"
-   height="280"
-   version="1.1"
-   id="svg27"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1">
-    <marker
-       id="arr-Muted"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
-         id="path1" />
-    </marker>
-  </defs>
-  <rect
-     x="5.234271"
-     y="6.0979047"
-     width="608.75873"
-     height="28"
-     rx="6.7639856"
-     fill="#e8ecf7"
-     stroke="#5c647a"
-     stroke-width="0.899318"
-     id="rect1" />
-  <text
-     x="21.318182"
-     y="24.5"
-     text-anchor="start"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text1">Норма</text>
-  <line
-     x1="319.54544"
-     y1="35"
-     x2="319.54544"
-     y2="55"
-     stroke="#5c647a"
-     stroke-width="1.5"
-     stroke-dasharray="6,3"
-     marker-end="url(#arr-Muted)"
-     id="line3" />
-  <rect
-     x="6.9849577"
-     y="58"
-     width="607.84827"
-     height="28"
-     rx="6.7538695"
-     fill="#f5f7fd"
-     stroke="#5c647a"
-     stroke-width="1.47855"
-     id="rect4" />
-  <text
-     x="310"
-     y="76.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text5">Исполнитель: PSP / эквайер</text>
-  <line
-     x1="103.90909"
-     y1="87"
-     x2="103.90909"
-     y2="107"
-     stroke="#5c647a"
-     stroke-width="1.5"
-     marker-end="url(#arr-Muted)"
-     id="line5" />
-  <line
-     x1="316.95453"
-     y1="87"
-     x2="316.95453"
-     y2="107"
-     stroke="#5c647a"
-     stroke-width="1.5"
-     marker-end="url(#arr-Muted)"
-     id="line6" />
-  <line
-     x1="519.63641"
-     y1="87"
-     x2="519.63641"
-     y2="107"
-     stroke="#5c647a"
-     stroke-width="1.5"
-     marker-end="url(#arr-Muted)"
-     id="line7" />
-  <rect
-     x="7.8472242"
-     y="110"
-     width="193.89874"
-     height="28"
-     rx="5.058228"
-     fill="#4e63d9"
-     fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="1.39611"
-     id="rect7" />
-  <text
-     x="103.90909"
-     y="128.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text7">Терминал</text>
-  <rect
-     x="7.8472242"
-     y="148"
-     width="193.89874"
-     height="32"
-     rx="5.058228"
-     fill="#f5f7fd"
-     stroke="#4e63d9"
-     stroke-width="1.39611"
-     id="rect8" />
-  <text
-     x="103.90909"
-     y="168.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text8">Терминал / TMS</text>
-  <rect
-     x="7.8472242"
-     y="190"
-     width="193.89874"
-     height="32"
-     rx="5.058228"
-     fill="#f5f7fd"
-     stroke="#4e63d9"
-     stroke-width="1.39611"
-     id="rect9" />
-  <text
-     x="103.90909"
-     y="210.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text10">Бесконтактное ядро Мир</text>
-  <rect
-     x="7.8472242"
-     y="232"
-     width="193.89874"
-     height="32"
-     rx="5.058228"
-     fill="#f5f7fd"
-     stroke="#4e63d9"
-     stroke-width="1.39611"
-     id="rect11" />
-  <text
-     x="103.90909"
-     y="252.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text12">Контакт и бесконтакт</text>
-  <rect
-     x="214.39154"
-     y="110"
-     width="193.89874"
-     height="28"
-     rx="5.058228"
-     fill="#7759d6"
-     fill-opacity="0.15"
-     stroke="#7759d6"
-     stroke-width="1.39611"
-     id="rect13" />
-  <text
-     x="308.90909"
-     y="128.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text14">Хост</text>
-  <rect
-     x="214.39154"
-     y="148"
-     width="193.89874"
-     height="32"
-     rx="5.058228"
-     fill="#f5f7fd"
-     stroke="#7759d6"
-     stroke-width="1.39611"
-     id="rect14" />
-  <text
-     x="308.90909"
-     y="168.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text15">Маршрут через ОПКЦ НСПК</text>
-  <rect
-     x="214.39154"
-     y="190"
-     width="193.89874"
-     height="32"
-     rx="5.058228"
-     fill="#f5f7fd"
-     stroke="#7759d6"
-     stroke-width="1.39611"
-     id="rect16" />
-  <text
-     x="308.90909"
-     y="210.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text17">ISO 8583: профиль НСПК</text>
-  <rect
-     x="214.39154"
-     y="232"
-     width="193.89874"
-     height="32"
-     rx="5.058228"
-     fill="#f5f7fd"
-     stroke="#7759d6"
-     stroke-width="1.39611"
-     id="rect18" />
-  <text
-     x="308.90909"
-     y="252.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text19">Хостовая сертификация</text>
-  <rect
-     x="420.93582"
-     y="110"
-     width="193.89874"
-     height="28"
-     rx="5.058228"
-     fill="#e8ecf7"
-     stroke="#5c647a"
-     stroke-width="1.39611"
-     id="rect20" />
-  <text
-     x="515.90912"
-     y="128.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text21">Подключение</text>
-  <rect
-     x="420.93582"
-     y="148"
-     width="193.89874"
-     height="32"
-     rx="5.058228"
-     fill="#f5f7fd"
-     stroke="#5c647a"
-     stroke-width="1.39611"
-     id="rect21" />
-  <text
-     x="515.90912"
-     y="168.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text22">Мир в договоре ТСП</text>
-  <rect
-     x="420.93582"
-     y="190"
-     width="193.89874"
-     height="32"
-     rx="5.058228"
-     fill="#f5f7fd"
-     stroke="#5c647a"
-     stroke-width="1.39611"
-     id="rect23" />
-  <text
-     x="515.90912"
-     y="210.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text24">MCC, отчёты, панель</text>
-  <rect
-     x="420.93582"
-     y="232"
-     width="193.89874"
-     height="32"
-     rx="5.058228"
-     fill="#f5f7fd"
-     stroke="#5c647a"
-     stroke-width="1.39611"
-     id="rect25" />
-  <text
-     x="515.90912"
-     y="252.5"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text26">Сценарии поддержки</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" width="820" height="300">
+<defs>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+</defs>
+
+<!-- LEVEL 1: Норма -->
+<rect x="15" y="10" width="790" height="32" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
+<text x="410" y="31" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Норма</text>
+
+<!-- Connector to level 2 -->
+<line x1="410" y1="42" x2="410" y2="60" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+
+<!-- LEVEL 2: Исполнитель -->
+<rect x="15" y="64" width="790" height="32" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1.5"/>
+<text x="410" y="85" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Исполнитель: PSP / эквайер</text>
+
+<!-- Connectors to three columns -->
+<line x1="140" y1="96" x2="140" y2="114" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<line x1="410" y1="96" x2="410" y2="114" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<line x1="680" y1="96" x2="680" y2="114" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+
+<!-- LEVEL 3 HEADERS -->
+<!-- Col 1: Терминал (AccentA) -->
+<rect x="15" y="118" width="250" height="32" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="140" y="139" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Терминал</text>
+
+<!-- Col 2: Хост (AccentB) -->
+<rect x="285" y="118" width="250" height="32" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
+<text x="410" y="139" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Хост</text>
+
+<!-- Col 3: Подключение (Panel) -->
+<rect x="555" y="118" width="250" height="32" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="680" y="139" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Подключение</text>
+
+<!-- LEVEL 4 TASK ROWS (3×3 grid) -->
+<!-- Row 1: y=158 -->
+<rect x="15" y="158" width="250" height="36" rx="6" fill="#F5F7FD" stroke="#4E63D9" stroke-width="1"/>
+<text x="140" y="180" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Терминал / TMS</text>
+
+<rect x="285" y="158" width="250" height="36" rx="6" fill="#F5F7FD" stroke="#7759D6" stroke-width="1"/>
+<text x="410" y="180" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Маршрут через ОПКЦ НСПК</text>
+
+<rect x="555" y="158" width="250" height="36" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
+<text x="680" y="180" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Мир в договоре ТСП</text>
+
+<!-- Row 2: y=202 -->
+<rect x="15" y="202" width="250" height="36" rx="6" fill="#F5F7FD" stroke="#4E63D9" stroke-width="1"/>
+<text x="140" y="224" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Бесконтактное ядро Мир</text>
+
+<rect x="285" y="202" width="250" height="36" rx="6" fill="#F5F7FD" stroke="#7759D6" stroke-width="1"/>
+<text x="410" y="224" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">ISO 8583: профиль НСПК</text>
+
+<rect x="555" y="202" width="250" height="36" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
+<text x="680" y="224" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">MCC, отчёты, панель</text>
+
+<!-- Row 3: y=246 -->
+<rect x="15" y="246" width="250" height="36" rx="6" fill="#F5F7FD" stroke="#4E63D9" stroke-width="1"/>
+<text x="140" y="268" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Контакт и бесконтакт</text>
+
+<rect x="285" y="246" width="250" height="36" rx="6" fill="#F5F7FD" stroke="#7759D6" stroke-width="1"/>
+<text x="410" y="268" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Хостовая сертификация</text>
+
+<rect x="555" y="246" width="250" height="36" rx="6" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
+<text x="680" y="268" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">Сценарии поддержки</text>
+
 </svg>

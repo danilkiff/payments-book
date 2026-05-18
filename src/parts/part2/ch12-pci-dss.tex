@@ -256,36 +256,15 @@ redirect и~полностью вынесенной оплаты PCI SSC
 вынос PAN из нижестоящих систем в~vault или замена PAN на DPAN заметно
 уменьшает число систем, остающихся в~CDE.
 
-На рисунках ниже цвет отражает объём периметра, остающегося на самом
-ТСП: ответственность за CHD переносится на PSP или на валидированное
-P2PE-решение, но не исчезает.
-
-\begin{figure}[htbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch12-pci-dss/pci-scope-card-present}
-  \caption{Card-Present: сужение периметра по каналу приёма.}\label{fig:pci-scope-card-present}
-\end{figure}
+Сужение периметра не означает исчезновения ответственности за~CHD:
+она переносится на~PSP или валидированное P2PE-решение.
 
 Шкалы для card-present и card-not-present напрямую не сопоставимы:
 в~e-commerce смена формы SAQ относится к~каналу ввода PAN, а~не
 к~физическому терминалу.
 
-\begin{figure}[htbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch12-pci-dss/pci-scope-cnp}
-  \caption{Card-Not-Present: сужение периметра в~e-commerce.}\label{fig:pci-scope-cnp}
-\end{figure}
-
 Внутри одной SAQ~D-формы вариант с~сегментацией и~без~--- один и~тот же
 тип SAQ, отличающийся только объёмом периметра.
-
-\begin{figure}[htbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch12-pci-dss/pci-scope-d-merchant}
-  \caption{SAQ D-Merchant: сужение периметра внутри одной формы.}\label{fig:pci-scope-d-merchant}
-\end{figure}
-
-\FloatBarrier
 
 \needspace{4\baselineskip}
 \section{SAQ A, SAQ A-EP и SAQ D}\label{sec:pci-saq}
