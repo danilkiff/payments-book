@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   viewBox="0 0 520 530"
-   width="520"
-   height="530"
+   viewBox="0 0 650 420"
+   width="650"
+   height="420"
    version="1.1"
-   id="svg26"
+   id="svg17"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs5">
-    <marker
-       id="arr-Muted"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
-         id="path1" />
-    </marker>
+     id="defs2">
     <marker
        id="arr-AccentA"
        viewBox="0 0 10 10"
@@ -33,7 +20,7 @@
       <path
          d="M 0,0 10,5 0,10 Z"
          fill="#4e63d9"
-         id="path2" />
+         id="path1" />
     </marker>
     <marker
        id="arr-AccentB"
@@ -46,410 +33,315 @@
       <path
          d="M 0,0 10,5 0,10 Z"
          fill="#7759d6"
-         id="path3" />
-    </marker>
-    <marker
-       id="arr-Good"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#2f8b67"
-         id="path4" />
-    </marker>
-    <marker
-       id="arr-Bad"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#c15462"
-         id="path5" />
-    </marker>
-    <marker
-       id="arr-AccentA-1"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#4e63d9"
-         id="path2-7" />
+         id="path2" />
     </marker>
   </defs>
-  <!-- ============================================================
-     Секция 1. До INTERNAL AUTHENTICATE: чтение и сборка PKI
-     ============================================================ -->
+  <!-- ============ Swimlane headers ============ -->
   <rect
-     x="4.7857499"
-     y="4.4522009"
-     width="511.21997"
-     height="100.28841"
-     rx="5.2432814"
-     fill="#f5f7fd"
-     stroke="#5c647a"
-     stroke-width="1.21611"
-     stroke-dasharray="6,3"
-     id="rect5" />
+     x="80"
+     y="10"
+     width="200"
+     height="36"
+     rx="8"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="2"
+     id="rect2" />
   <text
-     x="273.56824"
-     y="26.596415"
+     x="180"
+     y="33"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
+     font-size="13px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text2">Терминал</text>
+  <rect
+     x="440"
+     y="10"
+     width="200"
+     height="36"
+     rx="8"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="2"
+     id="rect3" />
+  <text
+     x="540"
+     y="33"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text3">Карта</text>
+  <!-- ============ Lifelines ============ -->
+  <line
+     x1="180.76096"
+     y1="48"
+     x2="180.76096"
+     y2="356.35315"
+     stroke="#5c647a"
+     stroke-width="0.922932"
+     stroke-dasharray="6, 3"
+     id="line3" />
+  <line
+     x1="540.57074"
+     y1="48"
+     x2="540.57074"
+     y2="357.11411"
+     stroke="#5c647a"
+     stroke-width="0.924071"
+     stroke-dasharray="6, 3"
+     id="line4" />
+  <!-- ============ Phase: PRE ============ -->
+  <rect
+     x="20"
+     y="58"
+     width="626.79163"
+     height="20"
+     fill="#e8ecf7"
+     id="rect4"
+     style="stroke-width:0.960079" />
+  <text
+     x="30"
+     y="72"
+     text-anchor="start"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
      font-weight="bold"
      fill="#5c647a"
-     id="text5">PRE INTERNAL AUTHENTICATE</text>
+     id="text4">PRE INTERNAL AUTHENTICATE</text>
+  <!-- Event 1: T → K: READ RECORD -->
+  <line
+     x1="180"
+     y1="100"
+     x2="540"
+     y2="100"
+     stroke="#4e63d9"
+     stroke-width="2"
+     marker-end="url(#arr-AccentA)"
+     id="line5" />
+  <text
+     x="360"
+     y="94"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text5">READ RECORD</text>
+  <!-- Event 2: K → T: records + certificates -->
+  <line
+     x1="540"
+     y1="128"
+     x2="180"
+     y2="128"
+     stroke="#7759d6"
+     stroke-width="2"
+     marker-end="url(#arr-AccentB)"
+     id="line6" />
+  <text
+     x="360"
+     y="122"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     fill="#1a2030"
+     id="text6">записи EMV + сертификаты</text>
+  <!-- Event 3: T internal: build PKI chain -->
   <rect
-     x="18.647902"
-     y="40.416695"
-     width="233.88217"
-     height="52.359447"
-     rx="5.3458781"
+     x="164"
+     y="146"
+     width="180"
+     height="22"
+     rx="6"
      fill="#4e63d9"
      fill-opacity="0.15"
      stroke="#4e63d9"
-     stroke-width="1.64055"
+     stroke-width="1"
      id="rect6" />
   <text
-     x="137.91853"
-     y="62.596416"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text6">Терминал: READ RECORD</text>
-  <rect
-     x="293.31183"
-     y="40.374527"
-     width="210.11601"
-     height="52.443779"
-     rx="4.8026519"
-     fill="#4e63d9"
-     fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="1.55622"
-     id="rect7" />
-  <text
-     x="399.62598"
-     y="62.596416"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text8">Терминал: построить цепочку PKI</text>
-  <text
-     x="399.62598"
-     y="79.596413"
+     x="254"
+     y="161"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
+     fill="#1a2030"
+     id="text7">PKI: PK CA → эмитент → ICC</text>
+  <!-- ============ Phase: INTERNAL AUTHENTICATE ============ -->
+  <rect
+     x="20"
+     y="174"
+     width="624.32379"
+     height="20"
+     fill="#e8ecf7"
+     id="rect7"
+     style="stroke-width:0.958188" />
+  <text
+     x="30"
+     y="188"
+     text-anchor="start"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
      fill="#5c647a"
-     id="text9">PK CA → PK эмитента → PK ICC</text>
+     id="text8">INTERNAL AUTHENTICATE</text>
+  <!-- Event 4: T internal: UN gen -->
+  <rect
+     x="164"
+     y="200"
+     width="180"
+     height="22"
+     rx="6"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1"
+     id="rect8" />
+  <text
+     x="254"
+     y="215"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     fill="#1a2030"
+     id="text9">UN = rand(4B), тег 9F37</text>
+  <!-- Event 5: T → K: INTERNAL AUTHENTICATE -->
   <line
-     x1="253.56825"
-     y1="66.596413"
-     x2="293.56824"
-     y2="66.596413"
+     x1="180"
+     y1="250"
+     x2="540"
+     y2="250"
      stroke="#4e63d9"
      stroke-width="2"
      marker-end="url(#arr-AccentA)"
      id="line9" />
-  <!-- Переход PRE → IA -->
-  <line
-     x1="273.56824"
-     y1="104.59641"
-     x2="273.56824"
-     y2="124.59641"
-     stroke="#5c647a"
-     stroke-width="2"
-     marker-end="url(#arr-Muted)"
-     id="line10" />
-  <!-- ============================================================
-     Секция 2. INTERNAL AUTHENTICATE: обмен и подпись
-     ============================================================ -->
-  <rect
-     x="6.9918303"
-     y="124.45115"
-     width="508.05148"
-     height="240.29051"
-     rx="5.2107844"
-     fill="#f5f7fd"
-     stroke="#5c647a"
-     stroke-width="1.21132"
-     stroke-dasharray="6,3"
-     id="rect10" />
   <text
-     x="273.56824"
-     y="146.59642"
+     x="360"
+     y="244"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#5c647a"
+     fill="#1a2030"
      id="text10">INTERNAL AUTHENTICATE</text>
-  <!-- S1: терминал генерирует UN -->
-  <rect
-     x="74.061417"
-     y="160.65776"
-     width="406.46823"
-     height="31.980171"
-     rx="9.0326271"
-     fill="#4e63d9"
-     fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="2.04957"
-     id="rect11" />
   <text
-     x="273.56824"
-     y="181.59642"
+     x="360"
+     y="262"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text11">Терминал: UN = rand(4B), тег 0x9F37</text>
-  <line
-     x1="273.56824"
-     y1="192.59642"
-     x2="273.56824"
-     y2="206.59642"
-     stroke="#4e63d9"
-     stroke-width="2"
-     marker-end="url(#arr-AccentA)"
-     id="line11" />
-  <!-- S2: команда терминал → карта -->
+     font-size="9px"
+     font-style="italic"
+     fill="#5c647a"
+     id="text11">UN + DDOL</text>
+  <!-- Event 6: K internal: forms SDAD -->
   <rect
-     x="74.061417"
-     y="206.62926"
-     width="406.46823"
-     height="45.971493"
-     rx="9.0326271"
-     fill="#4e63d9"
-     fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="2.04957"
-     id="rect12" />
-  <text
-     x="273.56824"
-     y="224.59642"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text12">Терминал → Карта: INTERNAL AUTHENTICATE</text>
-  <line
-     x1="273.56824"
-     y1="252.59642"
-     x2="273.56824"
-     y2="266.59641"
-     stroke="#5c647a"
-     stroke-width="2"
-     marker-end="url(#arr-Muted)"
-     id="line13" />
-  <!-- S3: карта формирует Dyn App Data -->
-  <rect
-     x="74.061417"
-     y="266.59207"
-     width="406.46823"
-     height="45.971493"
-     rx="9.0326271"
+     x="378"
+     y="268"
+     width="180"
+     height="22"
+     rx="6"
      fill="#7759d6"
      fill-opacity="0.15"
      stroke="#7759d6"
-     stroke-width="2.04957"
-     id="rect13" />
+     stroke-width="1"
+     id="rect11" />
   <text
-     x="273.56824"
-     y="293.59641"
+     x="468"
+     y="283"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
+     font-size="10px"
      fill="#1a2030"
-     id="text14">Карта: формирует SDAD</text>
+     id="text12">формирует SDAD</text>
+  <!-- Event 7: K → T: SDAD -->
   <line
-     x1="273.56824"
-     y1="312.59641"
-     x2="273.56824"
-     y2="326.59641"
+     x1="540"
+     y1="310"
+     x2="180"
+     y2="310"
      stroke="#7759d6"
      stroke-width="2"
      marker-end="url(#arr-AccentB)"
-     id="line15" />
-  <!-- S4: ответ карта → терминал -->
-  <rect
-     x="74.061417"
-     y="326.55487"
-     width="406.46823"
-     height="31.980171"
-     rx="9.0326271"
-     fill="#7759d6"
-     fill-opacity="0.15"
-     stroke="#7759d6"
-     stroke-width="2.04957"
-     id="rect15" />
+     id="line12" />
   <text
-     x="273.56824"
-     y="347.59641"
+     x="360"
+     y="304"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
      fill="#1a2030"
-     id="text16">Карта → Терминал: SDAD (тег 0x9F4B)</text>
-  <!-- Переход IA → VER -->
-  <line
-     x1="273.56824"
-     y1="364.59641"
-     x2="273.56824"
-     y2="384.59641"
-     stroke="#5c647a"
-     stroke-width="2"
-     marker-end="url(#arr-Muted)"
-     id="line16" />
-  <!-- ============================================================
-     Секция 3. Верификация: расшифровка, сравнение, TVR
-     ============================================================ -->
-  <rect
-     x="6.090632"
-     y="384.35849"
-     width="510.10095"
-     height="140.6122"
-     rx="5.2318048"
-     fill="#f5f7fd"
-     stroke="#5c647a"
-     stroke-width="1.00218"
-     stroke-dasharray="6,3"
-     id="rect16" />
+     id="text13">SDAD</text>
   <text
-     x="273.56824"
-     y="406.59641"
+     x="360"
+     y="322"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
+     font-size="9px"
+     font-style="italic"
+     fill="#5c647a"
+     id="text14">тег 9F4B</text>
+  <!-- ============ Phase: VERIFY ============ -->
+  <rect
+     x="20"
+     y="326"
+     width="627.67621"
+     height="20"
+     fill="#e8ecf7"
+     id="rect14"
+     style="stroke-width:0.960757" />
+  <text
+     x="30"
+     y="340"
+     text-anchor="start"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
      font-weight="bold"
      fill="#5c647a"
-     id="text17">VERIFY</text>
-  <!-- V1: терминал расшифровывает SDAD -->
+     id="text15">VERIFY</text>
+  <!-- Event 8: fork: pass / fail -->
   <rect
-     x="77.08638"
-     y="429.60785"
-     width="181.78734"
-     height="44.32156"
-     rx="5.5934567"
-     fill="#4e63d9"
-     fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="1.67845"
-     id="rect17" />
-  <text
-     x="168.27983"
-     y="448.76865"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text18">Терминал: расшифровка SDAD</text>
-  <!-- V2: ромб-решение -->
-  <!-- Ветви решения -->
-  <line
-     x1="258.64066"
-     y1="444.27731"
-     x2="341.86301"
-     y2="414.10715"
-     stroke="#2f8b67"
-     stroke-width="0.794628"
-     marker-end="url(#arr-Good)"
-     id="line20"
-     style="stroke-width:2;stroke-dasharray:none" />
-  <text
-     x="281.3161"
-     y="425.55743"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     fill="#1a2030"
-     id="text21">ok</text>
-  <line
-     x1="259.4921"
-     y1="456.74619"
-     x2="343.45071"
-     y2="471.0249"
-     stroke="#c15462"
-     stroke-width="1.24495"
-     marker-end="url(#arr-Bad)"
-     id="line21"
-     style="stroke-width:2;stroke-dasharray:none" />
-  <text
-     x="290.42664"
-     y="482.53287"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     fill="#1a2030"
-     id="text22"><tspan
-       id="tspan1"
-       x="290.42664"
-       y="482.53287">подпись и hash</tspan><tspan
-       id="tspan2"
-       x="290.42664"
-       y="496.28287">не совпали</tspan></text>
-  <!-- V3: успех -->
-  <rect
-     x="342.32535"
-     y="399.43558"
-     width="135.44841"
-     height="38.385643"
-     rx="5.1599398"
+     x="20.050825"
+     y="364.05081"
+     width="219.46765"
+     height="21.89835"
+     rx="7.3155885"
      fill="#2f8b67"
      fill-opacity="0.15"
      stroke="#2f8b67"
-     stroke-width="1.61436"
-     id="rect22" />
+     stroke-width="1.10165"
+     id="rect15" />
   <text
-     x="403.75476"
-     y="423.23041"
+     x="110"
+     y="379"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
+     font-size="10px"
      font-weight="bold"
      fill="#1a2030"
-     id="text23">DDA пройдена</text>
-  <!-- V4: отказ -->
+     id="text16">SDAD проверен → DDA</text>
   <rect
-     x="343.38062"
-     y="456.48038"
-     width="137.83255"
-     height="38.371788"
-     rx="5.2507639"
+     x="20"
+     y="390"
+     width="220"
+     height="22"
+     rx="6"
      fill="#c15462"
      fill-opacity="0.15"
      stroke="#c15462"
-     stroke-width="1.62821"
-     id="rect24" />
+     stroke-width="1"
+     id="rect16" />
   <text
-     x="410.50879"
-     y="479.25607"
+     x="130"
+     y="405"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
+     font-size="10px"
      font-weight="bold"
      fill="#1a2030"
-     id="text25">DDA не пройдена</text>
+     id="text17">подпись/hash не совпали → отказ</text>
 </svg>
