@@ -224,21 +224,21 @@ attempted authentication (см.~раздел~\ref{sec:3ds-liability}).
 
 \begin{itemize}
   \item \textbf{deviceChannel}, параметры браузера
-    (\texttt{browserScreenHeight}, \texttt{browserLanguage} и~др.):
-    сигнатура устройства; ACS сопоставляет текущую
-    сессию с~ранее виденными.
-  \item \textbf{threeDSRequestorAuthenticationInd}: тип операции
-    (оплата, рекуррент, добавление карты)~--- задаёт порог риска.
-  \item \textbf{acctInfo}: возраст аккаунта у~продавца, дата
-    последнего изменения адреса, количество покупок за~6~месяцев~---
-    прямые индикаторы доверия.
-  \item \textbf{merchantRiskIndicator}: сроки доставки, тип товара
-    (физический, цифровой, подписка), предзаказ.
-  \item \textbf{shipAddrMatch} и~адресные поля: расхождение
-    адреса доставки с~адресом биллинга~--- повод для ACS.
-  \item \textbf{threeDSRequestorPriorAuthenticationInfo}: ссылка
-    на~предыдущую успешную аутентификацию у~того же продавца;
-    снижает порог для повторных покупок.
+    (\texttt{browserScreenHeight}, \texttt{browserLanguage} и~др.)~---
+    сигнатура устройства, ACS сопоставляет текущую
+    сессию с~ранее виденными;
+  \item \textbf{threeDSRequestorAuthenticationInd}~--- тип операции
+    (оплата, рекуррент, добавление карты), задаёт порог риска;
+  \item \textbf{acctInfo}~--- возраст аккаунта у~продавца, дата
+    последнего изменения адреса, количество покупок за~6~месяцев,
+    прямые индикаторы доверия;
+  \item \textbf{merchantRiskIndicator}~--- сроки доставки, тип товара
+    (физический, цифровой, подписка), предзаказ;
+  \item \textbf{shipAddrMatch} и~адресные поля~--- расхождение
+    адреса доставки с~адресом биллинга, повод для ACS;
+  \item \textbf{threeDSRequestorPriorAuthenticationInfo}~--- ссылка
+    на~предыдущую успешную аутентификацию у~того же продавца,
+    снижающая порог для повторных покупок.
 \end{itemize}
 
 Чем больше полей с~данными о~риске передаёт продавец, тем выше
