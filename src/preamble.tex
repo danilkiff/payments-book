@@ -24,6 +24,9 @@
 % \counterwithout~--- ядро LaTeX2e, отдельный пакет chngcntr не~нужен.
 \counterwithout{table}{chapter}
 \counterwithout{figure}{chapter}
+% Нумерация сносок с единицы на каждой странице.
+\usepackage{perpage}
+\MakePerPage{footnote}
 \usepackage{ragged2e}
 \usepackage{booktabs}
 \usepackage[final]{microtype}
