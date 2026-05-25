@@ -1,0 +1,38 @@
+#!/bin/sh
+# Прогон tex-fmt по проиндексированным .tex-файлам.
+# Если хоть один файл изменился после форматирования --- коммит прерывается;
+# отформатированную версию остаётся пересобрать через git add и повторить commit.
+#
+# Обойти проверку: git commit --no-verify.
+
+set -eu
+
+files=$(git diff --cached --name-only --diff-filter=ACMR -z \
+  | tr '\0' '\n' \
+  | grep -E '\.tex$' || true)
+
+[ -z "$files" ] && exit 0
+
+if ! command -v tex-fmt >/dev/null 2>&1; then
+  echo "pre-commit: tex-fmt не установлен; пропускаю проверку форматирования" >&2
+  exit 0
+fi
+
+needs_format=""
+for f in $files; do
+  if ! tex-fmt --check --quiet "$f" >/dev/null 2>&1; then
+    needs_format="$needs_format $f"
+  fi
+done
+
+if [ -n "$needs_format" ]; then
+  echo "$needs_format" | xargs tex-fmt --quiet
+  echo >&2
+  echo "pre-commit: tex-fmt переформатировал файлы:" >&2
+  for f in $needs_format; do echo "  $f" >&2; done
+  echo >&2
+  echo "Проверьте изменения, добавьте через 'git add' и повторите коммит." >&2
+  exit 1
+fi
+
+exit 0

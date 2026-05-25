@@ -1,8 +1,12 @@
-.PHONY: help all pdf svg clean clean-figures fmt check FORCE
+.PHONY: help init all pdf svg clean clean-figures fmt check FORCE
 .DEFAULT_GOAL := help
 
 help:  ## показать эту справку
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  %-14s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+
+init:  ## установить git hooks (core.hooksPath → scripts/hooks)
+	@git config core.hooksPath scripts/hooks
+	@echo "core.hooksPath → scripts/hooks (хуки: $$(ls scripts/hooks))"
 
 all: svg pdf  ## полная сборка: svg → pdf
 
