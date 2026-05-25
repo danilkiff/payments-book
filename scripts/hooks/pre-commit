@@ -1,9 +1,10 @@
 #!/bin/sh
-# Прогон tex-fmt по проиндексированным .tex-файлам.
-# Если хоть один файл изменился после форматирования --- коммит прерывается;
-# отформатированную версию остаётся пересобрать через git add и повторить commit.
+# Проверки для проиндексированных .tex-файлов:
+#   1. tex-fmt --check; если файл нужно переформатировать --- форматирует
+#      его в дереве и прерывает коммит (просит пересобрать через git add).
+#   2. chktex -q; если есть предупреждения --- прерывает коммит.
 #
-# Обойти проверку: git commit --no-verify.
+# Обойти проверки: git commit --no-verify.
 
 set -eu
 
@@ -13,26 +14,38 @@ files=$(git diff --cached --name-only --diff-filter=ACMR -z \
 
 [ -z "$files" ] && exit 0
 
-if ! command -v tex-fmt >/dev/null 2>&1; then
+# --- tex-fmt ---
+if command -v tex-fmt >/dev/null 2>&1; then
+  needs_format=""
+  for f in $files; do
+    if ! tex-fmt --check --quiet "$f" >/dev/null 2>&1; then
+      needs_format="$needs_format $f"
+    fi
+  done
+
+  if [ -n "$needs_format" ]; then
+    echo "$needs_format" | xargs tex-fmt --quiet
+    echo >&2
+    echo "pre-commit: tex-fmt переформатировал файлы:" >&2
+    for f in $needs_format; do echo "  $f" >&2; done
+    echo >&2
+    echo "Проверьте изменения, добавьте через 'git add' и повторите коммит." >&2
+    exit 1
+  fi
+else
   echo "pre-commit: tex-fmt не установлен; пропускаю проверку форматирования" >&2
-  exit 0
 fi
 
-needs_format=""
-for f in $files; do
-  if ! tex-fmt --check --quiet "$f" >/dev/null 2>&1; then
-    needs_format="$needs_format $f"
+# --- chktex ---
+if command -v chktex >/dev/null 2>&1; then
+  if ! echo "$files" | xargs chktex -q; then
+    echo >&2
+    echo "pre-commit: chktex нашёл предупреждения (см. выше); правьте источники." >&2
+    echo "Обход: git commit --no-verify." >&2
+    exit 1
   fi
-done
-
-if [ -n "$needs_format" ]; then
-  echo "$needs_format" | xargs tex-fmt --quiet
-  echo >&2
-  echo "pre-commit: tex-fmt переформатировал файлы:" >&2
-  for f in $needs_format; do echo "  $f" >&2; done
-  echo >&2
-  echo "Проверьте изменения, добавьте через 'git add' и повторите коммит." >&2
-  exit 1
+else
+  echo "pre-commit: chktex не установлен; пропускаю проверку синтаксиса" >&2
 fi
 
 exit 0

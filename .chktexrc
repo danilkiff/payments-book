@@ -29,4 +29,16 @@ CmdLine
          #      such as 0x80, 0x40 inside \texttt{} -- the `x' is part
          #      of hexadecimal notation, not a multiplication sign.
          #      Fires 40 times in ch07-emv.tex (TVR field section).
+
+    -n36 # W36 "You should put a space in front of parenthesis": English
+         #      typography rule. In the book the only firings are
+         #      function-call notation inside math (MAC(...)) and
+         #      inline code (\texttt{ratio()}), which require no space.
+}
+
+## Treat custom verbatim-style environments as code blocks so chktex
+## doesn't parse the source inside them.
+VerbEnvir
+{
+    codeblock
 }
