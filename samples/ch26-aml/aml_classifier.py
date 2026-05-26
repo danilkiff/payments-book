@@ -1,15 +1,3 @@
-"""Минимальный AML-классификатор для параграфа 1 главы ch26-aml.
-
-Сопоставляет операцию с критериями обязательного контроля
-(статья 6 115-ФЗ) и решает, в какой поток её отправить: обязательный
-контроль, подозрительная операция (статья 7) или обычный поток.
-
-Иллюстрация одной из шести программ ПВК по 860-П, программы
-выявления операций. Перечень категорий сокращён, журнал аудита
-и интеграция с программой управления риском сведены к полю reason,
-которое отдаётся в Verdict для записи в журнал.
-"""
-
 from dataclasses import dataclass
 from enum import StrEnum
 from typing import Literal
@@ -51,12 +39,17 @@ _KINDS_WITH_MANDATORY = frozenset(
 
 
 @dataclass(frozen=True)
+class Client:
+  id: str
+  risk: RiskTier
+
+
+@dataclass(frozen=True)
 class Operation:
   amount_kopecks: int
   kind: Kind
-  client_id: str
+  client: Client
   counterparty_id: str | None
-  client_risk: RiskTier
 
 
 @dataclass(frozen=True)
@@ -78,7 +71,7 @@ def _threshold(kind: Kind) -> int:
 def classify(op: Operation, sanctioned: frozenset[str]) -> Verdict:
   # Сторона из перечня экстремистов/террористов: обязательный контроль
   # независимо от суммы (статья 6 пункт 1.1, абзац о перечне).
-  party_in_list = op.client_id in sanctioned or (
+  party_in_list = op.client.id in sanctioned or (
     op.counterparty_id is not None and op.counterparty_id in sanctioned
   )
   if party_in_list:
@@ -93,7 +86,7 @@ def classify(op: Operation, sanctioned: frozenset[str]) -> Verdict:
   # Risk-based approach: для высокорискового клиента нижняя граница
   # подозрительности сдвинута к половине формального порога. Конкретный
   # коэффициент задаёт программа управления риском в ПВК.
-  if op.client_risk == "high" and op.amount_kopecks >= threshold // 2:
+  if op.client.risk == "high" and op.amount_kopecks >= threshold // 2:
     return Verdict(Decision.SUSPICIOUS, "rba:high_risk_client")
 
   return Verdict(Decision.NORMAL, "below_threshold")

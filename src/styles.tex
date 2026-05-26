@@ -238,3 +238,14 @@
     listing file={#2},
   }%
 }
+
+% Фрагмент внешнего файла с кодом по диапазону строк (см. samples/).
+%   \codeexcerpt{Python}{samples/chXX-…/file.py}{firstline}{lastline}
+\newcommand{\codeexcerpt}[4]{%
+  \tcbinputlisting{%
+    codeblock-style,
+    listing engine=listings,
+    listing options={style=book-code, language=#1, firstline=#3, lastline=#4},
+    listing file={#2},
+  }%
+}

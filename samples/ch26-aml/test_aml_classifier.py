@@ -1,15 +1,16 @@
-from aml_classifier import Decision, Kind, Operation, Verdict, classify
+from aml_classifier import Client, Decision, Kind, Operation, Verdict, classify
 
 SANCTIONED = frozenset({"ext-001"})
 
 
 def make(**kw) -> Operation:
+  client_id = kw.pop("client_id", "c-1")
+  client_risk = kw.pop("client_risk", "low")
   defaults: dict = {
     "amount_kopecks": 100,
     "kind": Kind.WIRE_TRANSFER,
-    "client_id": "c-1",
+    "client": Client(id=client_id, risk=client_risk),
     "counterparty_id": None,
-    "client_risk": "low",
   }
   defaults.update(kw)
   return Operation(**defaults)

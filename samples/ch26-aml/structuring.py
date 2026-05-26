@@ -1,17 +1,3 @@
-"""Алгоритмы детекции дробления (structuring) для главы ch26-aml.
-
-Реализуют три rule-based паттерна, прямо обязательных по
-методическим рекомендациям Банка России 19-МР от 21.07.2017:
-sub-threshold velocity, fan-out, fan-in. Скользящие окна,
-без внешних зависимостей. Источник времени вынесен в события;
-тест передаёт детерминированные ts, прод -- time.monotonic.
-
-Graph-based детекция (gather-scatter, scatter-gather, simple
-cycle и прочие сложные сети из GARG-AML, arXiv 2506.04292)
-в этом модуле не реализована: она требует анализа графа
-транзакций, описание принципа -- в основном тексте главы.
-"""
-
 from collections import defaultdict, deque
 from dataclasses import dataclass, field
 from typing import Literal
@@ -42,14 +28,6 @@ class StructuringHit:
 
 @dataclass
 class SubThresholdVelocity:
-  """Sub-threshold velocity: N мелких операций общей суммой выше порога.
-
-  Тревога поднимается, если за окно один счёт совершил count_threshold
-  или больше операций общей суммой >= sum_threshold_kopecks при том,
-  что каждая отдельная операция меньше hard_threshold_kopecks (порога
-  обязательного контроля по статье 6 115-ФЗ).
-  """
-
   window_sec: float
   sum_threshold_kopecks: int
   count_threshold: int
@@ -82,13 +60,6 @@ class SubThresholdVelocity:
 
 @dataclass
 class FanOut:
-  """Fan-out: один источник переводит небольшие суммы на много счетов.
-
-  Срабатывает, если за окно по одному счёту-отправителю наблюдается
-  distinct_destinations_threshold или больше уникальных получателей
-  при суммах ниже amount_threshold_kopecks.
-  """
-
   window_sec: float
   distinct_destinations_threshold: int
   amount_threshold_kopecks: int = HALF_THRESHOLD_KOPECKS
@@ -118,12 +89,6 @@ class FanOut:
 
 @dataclass
 class FanIn:
-  """Fan-in: много источников шлют небольшие суммы одному получателю.
-
-  Зеркало FanOut: индексируется по destination, считает уникальных
-  source-ов.
-  """
-
   window_sec: float
   distinct_sources_threshold: int
   amount_threshold_kopecks: int = HALF_THRESHOLD_KOPECKS
