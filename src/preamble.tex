@@ -51,7 +51,7 @@
 % (для ФЗ — снимает тавтологии «Федеральное Собрание РФ. Федеральный
 % закон от...» и «в силе с DD.MM.YYYY. YYYY.», обе даты уже в title).
 \AtEveryBibitem{\ifkeyword{noauthor}{%
-  \clearname{author}\clearfield{year}\clearfield{date}%
+    \clearname{author}\clearfield{year}\clearfield{date}%
 }{}}
 \usepackage{bookmark}
 \usepackage{enumitem}
@@ -119,4 +119,3 @@ labelsep=0.55em,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt}
 \newcommand{\includefiguresvg}[2][width=\linewidth]{%
   \includegraphics[height=\figuremaxheight,keepaspectratio,#1]{#2.pdf}%
 }
-
