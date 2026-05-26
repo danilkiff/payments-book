@@ -1,59 +1,60 @@
-from metrics import damerau_levenshtein, jaro, jaro_winkler, levenshtein
+"""Закрепляет числа таблицы tab:sanctions-metrics в ch27-sanctions.tex.
+
+Алгоритмы Левенштейна, Дамерау-Левенштейна, Jaro и Jaro-Winkler берутся
+из пакета jellyfish; тесты лишь проверяют, что значения для пар из таблицы
+не разойдутся с тем, что напечатано в книге.
+"""
+
+import jellyfish as jf
+import pytest
 
 
-def test_levenshtein_identical_pair_is_zero():
-  assert levenshtein("IVANOV", "IVANOV") == 0
+@pytest.mark.parametrize(
+  ("a", "b", "lev", "dl"),
+  [
+    ("IVANOV", "IVANOV", 0, 0),
+    ("IVANOV", "IVANOFF", 2, 2),
+    ("IVANOV", "YVANOV", 1, 1),
+    ("IVANOV", "IVAN-OFF", 3, 3),
+    ("IVANOV", "IVAONV", 2, 1),
+  ],
+)
+def test_edit_distances_match_table(a: str, b: str, lev: int, dl: int):
+  assert jf.levenshtein_distance(a, b) == lev
+  assert jf.damerau_levenshtein_distance(a, b) == dl
 
 
-def test_levenshtein_one_substitution():
-  # YVANOV vs IVANOV: одна замена I→Y.
-  assert levenshtein("IVANOV", "YVANOV") == 1
+@pytest.mark.parametrize(
+  ("a", "b", "jaro", "jw"),
+  [
+    ("IVANOV", "IVANOV", 1.000, 1.000),
+    ("IVANOV", "IVANOFF", 0.849, 0.910),
+    ("IVANOV", "YVANOV", 0.889, 0.889),
+    ("IVANOV", "IVAN-OFF", 0.819, 0.892),
+    ("IVANOV", "IVAONV", 0.944, 0.961),
+  ],
+)
+def test_jaro_scores_match_table(a: str, b: str, jaro: float, jw: float):
+  assert jf.jaro_similarity(a, b) == pytest.approx(jaro, abs=5e-4)
+  assert jf.jaro_winkler_similarity(a, b) == pytest.approx(jw, abs=5e-4)
 
 
-def test_levenshtein_insertion_and_substitution():
-  # IVANOFF vs IVANOV: одна замена V→F + вставка F.
-  assert levenshtein("IVANOV", "IVANOFF") == 2
+def test_damerau_levenshtein_distinguishes_transposition():
+  # Только DL отделяет соседнюю транспозицию NO↔ON от двух независимых правок;
+  # этот контраст обсуждается в прозе после таблицы.
+  assert jf.levenshtein_distance("IVANOV", "IVAONV") == 2
+  assert jf.damerau_levenshtein_distance("IVANOV", "IVAONV") == 1
 
 
-def test_levenshtein_counts_transposition_as_two_edits():
-  # IVAONV vs IVANOV: перестановка NO ↔ ON стоит 2 в Левенштейне.
-  assert levenshtein("IVANOV", "IVAONV") == 2
-
-
-def test_damerau_levenshtein_counts_adjacent_transposition_as_one():
-  # Та же пара в DL: одна транспозиция = 1.
-  assert damerau_levenshtein("IVANOV", "IVAONV") == 1
-
-
-def test_damerau_levenshtein_matches_levenshtein_for_substitutions():
-  assert damerau_levenshtein("IVANOV", "YVANOV") == 1
-
-
-def test_jaro_exact_match_is_one():
-  assert jaro("IVANOV", "IVANOV") == 1.0
-
-
-def test_jaro_no_common_characters_is_zero():
-  assert jaro("ИВАНОВ", "IVANOV") == 0.0
-
-
-def test_jaro_winkler_adds_prefix_bonus():
+def test_jaro_winkler_prefix_bonus_for_ivanoff():
   # IVANOFF делит с IVANOV префикс IVAN (4 символа), JW > J.
-  j = jaro("IVANOV", "IVANOFF")
-  jw = jaro_winkler("IVANOV", "IVANOFF")
-  assert jw > j
+  base = jf.jaro_similarity("IVANOV", "IVANOFF")
+  boosted = jf.jaro_winkler_similarity("IVANOV", "IVANOFF")
+  assert boosted > base
 
 
-def test_jaro_winkler_zero_when_prefix_differs():
-  # YVANOV расходится с IVANOV на первом символе, бонуса нет.
-  j = jaro("IVANOV", "YVANOV")
-  jw = jaro_winkler("IVANOV", "YVANOV")
-  assert jw == j
-
-
-def test_jaro_winkler_prefix_capped_at_four():
-  a = "PETROV-VODKIN"
-  b = "PETROVSKII"
-  jw = jaro_winkler(a, b)
-  jw_capped = jaro_winkler(a, b, max_l=4)
-  assert jw == jw_capped
+def test_jaro_winkler_no_bonus_when_first_char_differs():
+  # YVANOV расходится с IVANOV на первом символе, бонус нулевой.
+  assert jf.jaro_winkler_similarity("IVANOV", "YVANOV") == jf.jaro_similarity(
+    "IVANOV", "YVANOV"
+  )

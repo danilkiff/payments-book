@@ -5,6 +5,8 @@ description = "Verified Python code samples that appear in the book"
 requires-python = ">=3.14"
 dependencies = [
     "cryptography>=42",
+    "iuliia>=0.13",
+    "jellyfish>=1.2",
 ]
 
 [dependency-groups]
@@ -46,7 +48,6 @@ known-first-party = [
     "dukpt",
     "luhn",
     "mac",
-    "metrics",
     "posting",
     "quote",
     "reconcile",
@@ -55,7 +56,6 @@ known-first-party = [
     "structuring",
     "tlv",
     "token_domain",
-    "translit",
     "velocity",
 ]
 
