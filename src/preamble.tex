@@ -96,6 +96,27 @@
 % номеру слева.
 \RedeclareSectionCommand[tocbeforeskip=0.2em]{chapter}
 
+% --- Заголовок каждой главы прижат к верхней линии полосы ---
+% KOMA по умолчанию ставит \vspace*{2.3\baselineskip} над \chapter/\chapter*
+% (через \chapterheadstartvskip) — классический «book-opener» приём, треть
+% полосы белым полем. На reference-книге это лишняя «парадная» пауза;
+% обнуляем, чтобы любое название (TOC, фронт-/бэк-матёр, главы 1–37)
+% начиналось у верхней линии полосы.
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}}
+
+% --- Часть в TOC: «Часть N. Название» и визуальное отделение ---
+% Голая римская цифра «I» в первой колонке читается как номер главы или
+% подсекции; русская издательская норма (Мильчин) требует слова «Часть».
+% Заодно: beforeskip 1.5em над частью даёт макроструктурный отрыв от
+% предыдущей главы (1.5× межсекционного шага); вес шрифта KOMA-default
+% для part уже \large\bfseries — не трогаем, иерархия и так появится.
+\newcommand*{\tocpartnumberformat}[1]{Часть~#1}
+\DeclareTOCStyleEntry[
+  entrynumberformat=\tocpartnumberformat,
+  numwidth=5.5em,
+  beforeskip=1.5em plus 0.2em minus 0.1em,
+]{tocline}{part}
+
 % --- Глобальные параметры набора ---
 \raggedbottom
 \extrafloats{200}

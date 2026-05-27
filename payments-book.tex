@@ -43,6 +43,10 @@
 \input{src/parts/part5/index}
 
 \backmatter
+% Отбивка в TOC перед служебным аппаратом: эпилог, карта первоисточников,
+% глоссарий, список источников — не продолжение Part V, а backmatter;
+% дополнительный baseline отделяет их от архитектурной части визуально.
+\addtocontents{toc}{\protect\addvspace{1.2em}}
 \bookmarksetup{startatroot}
 \input{src/backmatter/epilogue}
 \input{src/backmatter/source-map}
