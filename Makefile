@@ -1,4 +1,4 @@
-.PHONY: help init all pdf svg clean clean-figures fmt check FORCE
+.PHONY: help init pdf svg clean fmt check log
 .DEFAULT_GOAL := help
 
 help:  ## показать эту справку
@@ -8,29 +8,15 @@ init:  ## установить git hooks (core.hooksPath → scripts/hooks)
 	@git config core.hooksPath scripts/hooks
 	@echo "core.hooksPath → scripts/hooks (хуки: $$(ls scripts/hooks))"
 
-all: svg pdf  ## полная сборка: svg → pdf
-
-svg:  ## .svg → .pdf через Inkscape
+svg:  ## .svg → .pdf через Inkscape (инкрементально, по mtime)
 	python3 scripts/svg2pdf.py
 
-pdf: src/gitversion.tex  ## собрать книгу (нужны figure PDF из make svg)
+pdf: svg  ## собрать книгу (svg → gitversion → latexmk)
+	@scripts/gen-gitversion.sh
 	latexmk payments-book.tex
 
-# Версия экземпляра для разворота: short SHA + дата сборки + маркер «грязного» дерева.
-# Файл переписывается только при изменении содержимого, чтобы не дёргать инкрементальную
-# пересборку latexmk без причины. Зависимость от FORCE — чтобы рецепт запускался каждый раз.
-src/gitversion.tex: FORCE
-	@sha=$$(git rev-parse --short HEAD 2>/dev/null || echo unknown); \
-	 if [ -n "$$(git status --porcelain 2>/dev/null)" ]; then sha=$${sha}+dirty; fi; \
-	 dt=$$(date +%Y-%m-%d); \
-	 tmp=$$(mktemp); \
-	 printf '\\gdef\\bookgitsha{%s}\n\\gdef\\bookbuilddate{%s}\n' "$$sha" "$$dt" > $$tmp; \
-	 if ! cmp -s $$tmp $@ 2>/dev/null; then mv $$tmp $@; else rm $$tmp; fi
-
-clean:  ## latexmk -C (очистить build/)
+clean:  ## очистить build/ и удалить сгенерированные figure PDF
 	latexmk -C payments-book.tex
-
-clean-figures:  ## удалить *.pdf под assets/figures/ (перерендерятся через make svg)
 	find assets/figures -type f -name '*.pdf' -delete
 
 fmt:  ## форматировать .tex через tex-fmt
@@ -38,3 +24,6 @@ fmt:  ## форматировать .tex через tex-fmt
 
 check:  ## chktex
 	chktex -q payments-book.tex
+
+log:  ## сводка warnings/errors из build/payments-book.log
+	@scripts/log-summary.sh

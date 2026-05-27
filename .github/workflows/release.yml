@@ -97,10 +97,7 @@ jobs:
       # См. комментарий в ci.yml: без этого шага latexmk соберёт PDF без
       # хэша и с \today вместо даты сборки.
       - name: Generate src/gitversion.tex
-        run: |
-          sha=$(git rev-parse --short HEAD)
-          dt=$(date +%Y-%m-%d)
-          printf '\\gdef\\bookgitsha{%s}\n\\gdef\\bookbuilddate{%s}\n' "$sha" "$dt" > src/gitversion.tex
+        run: scripts/gen-gitversion.sh
 
       - name: Build PDF (LaTeX)
         uses: docker://ghcr.io/xu-cheng/texlive-full:20260101

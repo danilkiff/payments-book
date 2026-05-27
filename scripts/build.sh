@@ -1,7 +1,7 @@
 #!/bin/bash
-# Сериализованная обёртка над `make all`.
+# Сериализованная обёртка над `make pdf`.
 #
-# Зачем: фикс-агенты иногда запускают несколько `make all` параллельно (через
+# Зачем: фикс-агенты иногда запускают несколько сборок параллельно (через
 # Bash run_in_background или последовательные тулколы без ожидания), latexmk
 # и biber пишут в общие aux/bcf — гонка ломает сборку.
 #
@@ -30,10 +30,9 @@ done
 
 trap 'rmdir "$LOCK_DIR" 2>/dev/null || true' EXIT
 
-# По умолчанию полная сборка. Принимаем переопределение через первый аргумент:
-#   ./scripts/build.sh         → make all
-#   ./scripts/build.sh pdf     → make pdf  (без regen svg, быстрее)
-TARGET="${1:-all}"
+# По умолчанию `make pdf` (svg → gitversion → latexmk; svg инкрементальный).
+# Первый аргумент переопределяет цель: `./scripts/build.sh clean` и т.п.
+TARGET="${1:-pdf}"
 # Запускаем make как child (не exec) — иначе EXIT trap не сработает
 # и lock-dir останется после сборки, блокируя следующие вызовы.
 make "$TARGET"
