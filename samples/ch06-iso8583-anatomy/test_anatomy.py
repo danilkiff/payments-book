@@ -5,9 +5,10 @@
 дампа -- тесты падают.
 """
 
-import pytest
+import itertools
 
-from anatomy import CANONICAL, parse, bitmap_to_de_numbers
+import pytest
+from anatomy import CANONICAL, bitmap_to_de_numbers, parse
 
 
 @pytest.fixture
@@ -72,7 +73,7 @@ def test_llvar_length_prefix_matches_value(fields):
 
 
 def test_offsets_strictly_increase(fields):
-  for prev, curr in zip(fields, fields[1:]):
+  for prev, curr in itertools.pairwise(fields):
     assert curr.offset == prev.offset + prev.length, (
       f"разрыв между {prev.name} и {curr.name}"
     )

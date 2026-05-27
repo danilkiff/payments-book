@@ -9,7 +9,6 @@ ISO 8583. Это даёт самодостаточный, проверяемый
 
 from dataclasses import dataclass
 
-
 # Hex-дамп MTI 0100 из ch06-iso8583.tex, секция `Разбираем MTI 0100
 # и MTI 0110 до конца`. Все поля в ASCII.
 CANONICAL_HEX = """
