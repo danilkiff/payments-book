@@ -340,8 +340,8 @@ working key стирается. Серверная сторона (хост эк
 транзакций) терминал требует повторной инициализации с~новым~IK.
 
 Реализация всех трёх шагов деривации укладывается в~один файл; функция
-\texttt{make\_derivation\_data} строит 16-байтовый блок по~разметке
-из~рис.~\ref{fig:crypto-dukpt}, а~\texttt{aes\_ecb\_block}~--- единственный
+\path{make_derivation_data} строит 16-байтовый блок по~разметке
+из~рис.~\ref{fig:crypto-dukpt}, а~\path{aes_ecb_block}~--- единственный
 криптографический примитив:
 
 \codefile{Python}{samples/ch10-dukpt/dukpt.py}
@@ -358,8 +358,8 @@ working key стирается. Серверная сторона (хост эк
 На~официальных векторах из~Supplement to
 X9.24-3-2017~\cite{x9-24-3-test-vectors} эти три вызова возвращают именно те
 значения, что подсвечены жёлтым на~рис.~\ref{fig:crypto-dukpt}. Замена
-\texttt{KU\_PIN\_ENCRYPTION} на~\texttt{KU\_MAC\_GENERATION} или
-\texttt{KU\_DATA\_ENCRYPTION} даёт независимый working key того~же IDK для
+\path{KU_PIN_ENCRYPTION} на~\path{KU_MAC_GENERATION} или
+\path{KU_DATA_ENCRYPTION} даёт независимый working key того~же IDK для
 других операций (\textit{key separation}).
 
 \begin{figure}[!htbp]
@@ -393,14 +393,16 @@ ISO~9564 определяет несколько форматов PIN-блока
 и~тот же PIN даёт разные блоки на~разных картах, что усложняет словарный
 перебор по~базе перехваченных шифротекстов.
 
-Сборка показана на~рис.~\ref{fig:pin-block-format0} на~примере
-PIN~=~\texttt{1234} и~тестового PAN Stripe
-\texttt{4242424242424242}~\cite{stripe-testing}: PIN и~PAN упаковываются в~два
-8-байтовых поля (по 16~ниблов), которые XOR-ятся в~итоговый блок. PIN-поле~---
-формат-идентификатор \texttt{0}, длина PIN, цифры PIN, заполнитель \texttt{F}.
-PAN-поле~--- четыре нибла нуля, далее правые 12~цифр PAN без check digit.
-Результат XOR~--- 8-байтовый блок, готовый к~шифрованию ключом PEK (PIN
-Encryption Key)~\cite{iso-9564}.
+\begin{sloppypar}
+  Сборка показана на~рис.~\ref{fig:pin-block-format0} на~примере
+  PIN~=~\texttt{1234} и~тестового PAN Stripe
+  \texttt{4242424242424242}~\cite{stripe-testing}: PIN и~PAN упаковываются в~два
+  8-байтовых поля (по 16~ниблов), которые XOR-ятся в~итоговый блок. PIN-поле~---
+  формат-идентификатор \texttt{0}, длина PIN, цифры PIN, заполнитель \texttt{F}.
+  PAN-поле~--- четыре нибла нуля, далее правые 12~цифр PAN без check digit.
+  Результат XOR~--- 8-байтовый блок, готовый к~шифрованию ключом PEK (PIN
+  Encryption Key)~\cite{iso-9564}.
+\end{sloppypar}
 
 \begin{figure}[tbp]
   \centering
