@@ -10,6 +10,22 @@
 % Полная кириллица T2A для всех трёх гарнитур.
 \usepackage{paratype}
 
+% PT Mono в paratype поставляется без italic-шейпа (только slanted): любой
+% \itshape внутри \ttfamily (в частности commentstyle=\itshape у listings)
+% даёт тысячи warnings и молча валится в upright, теряя наклон комментариев.
+% Прокидываем it→sl для обоих encoding × двух весов. Paratype регистрирует
+% семейство PTMono-TLF лениво через .fd при первом обращении, поэтому
+% сначала форсируем загрузку обоих .fd-файлов (в \makeatletter, иначе
+% внутренние \PTMono@@scale ломают парсер), затем добавляем шейпы.
+\makeatletter
+\input{T2APTMono-TLF.fd}  % chktex 27 -- FD из TeX Live, вне проекта
+\input{T1PTMono-TLF.fd}   % chktex 27 -- FD из TeX Live, вне проекта
+\makeatother
+\DeclareFontShape{T2A}{PTMono-TLF}{m}{it}{<->ssub * PTMono-TLF/m/sl}{}
+\DeclareFontShape{T1}{PTMono-TLF}{m}{it}{<->ssub * PTMono-TLF/m/sl}{}
+\DeclareFontShape{T2A}{PTMono-TLF}{b}{it}{<->ssub * PTMono-TLF/b/sl}{}
+\DeclareFontShape{T1}{PTMono-TLF}{b}{it}{<->ssub * PTMono-TLF/b/sl}{}
+
 % --- Поля для B5 ---
 \usepackage[left=10mm,right=10mm,top=5mm,bottom=5mm,includeheadfoot]{geometry}
 
