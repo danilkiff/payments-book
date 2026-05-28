@@ -44,6 +44,7 @@ ignore = [
 # Каждый sample-каталог импортирует свой модуль как first-party.
 known-first-party = [
     "aml_classifier",
+    "bin_last4",
     "bitmap",
     "dukpt",
     "luhn",
