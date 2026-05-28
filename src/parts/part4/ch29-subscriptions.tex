@@ -118,9 +118,10 @@ Visa возвращает NTID в~ответе на~авторизацию (\tex
 в~DE~62.2, до~15~цифр, генерирует VisaNet); Mastercard использует термин
 Trace~ID и~требует его передачу в~DE~48 SE~63 последующих авторизаций~---
 15~символов фиксированной структуры
-FNC\,$\cdot$\,BRN\,$\cdot$\,MMDD\,$\cdot$\,spaces, с~2026~переименовывается
-в~\textit{Transaction Link ID}
-(TLID)~\cite{mc-tpr,cybs-initial-transactions,mc-an11418-tlid}. Trace~ID
+FNC\,$\cdot$\,BRN\,$\cdot$\,MMDD\,$\cdot$\,spaces. С~2026~года Mastercard
+вводит параллельный 22-значный буквенно-цифровой \textit{Transaction Link ID}
+(TLID): хранение с~2~июня, передача с~23~октября; Trace~ID пока
+сохраняется~\cite{mc-tpr,cybs-initial-transactions,mc-an11418-tlid}. Trace~ID
 не~равен ARN (DE~31, 23~цифры). Индикаторы CoF/MIT передаются у~Visa через SCF
 (C/R/I) и~POS~Environment DE~60.8; у~Mastercard~--- через DE~48 SE~22 (SF1,
 SF5); POS~Entry~Mode~10~--- единый код \textit{Credentials on File} для обеих
