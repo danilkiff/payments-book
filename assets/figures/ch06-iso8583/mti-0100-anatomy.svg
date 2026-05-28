@@ -346,109 +346,109 @@
 <text x="159" y="392" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">MTI</text>
 <text x="209" y="392" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x00</text>
 <text x="257" y="392" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">4 B</text>
-<text x="299" y="392" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"0100"</text>
+<text x="299" y="392" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"0100"</text>
 <rect x="0" y="399" width="466" height="22" fill="#F5F7FD"/>
 <rect x="0" y="403" width="14" height="14" fill="#5C647A" fill-opacity="0.15"/>
 <text x="20" y="414" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Bitmap</text>
 <text x="159" y="414" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">Bitmap</text>
 <text x="209" y="414" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x04</text>
 <text x="257" y="414" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">8 B</text>
-<text x="299" y="414" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 2, 3, 4, 7, 11, 12, 13, 14, 22, 25, 32, …</text>
+<text x="299" y="414" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">DE 2, 3, 4, 7, 11, 12, 13, 14…</text>
 <rect x="0" y="425" width="14" height="14" fill="#7759D6" fill-opacity="0.15"/>
 <text x="20" y="436" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 2 (PAN)</text>
 <text x="159" y="436" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">LLVAR</text>
 <text x="209" y="436" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x0c</text>
 <text x="257" y="436" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">18 B</text>
-<text x="299" y="436" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">LL=16, "2200121234560892"</text>
+<text x="299" y="436" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">LL=16, "2200121234560892"</text>
 <rect x="0" y="443" width="466" height="22" fill="#F5F7FD"/>
 <rect x="0" y="447" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="458" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 3 (Proc Code)</text>
 <text x="159" y="458" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="458" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x1e</text>
 <text x="257" y="458" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">6 B</text>
-<text x="299" y="458" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"000000"</text>
+<text x="299" y="458" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"000000"</text>
 <rect x="0" y="469" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="480" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 4 (Amount)</text>
 <text x="159" y="480" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="480" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x24</text>
 <text x="257" y="480" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">12 B</text>
-<text x="299" y="480" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"000000125050"</text>
+<text x="299" y="480" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"000000125050"</text>
 <rect x="0" y="487" width="466" height="22" fill="#F5F7FD"/>
 <rect x="0" y="491" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="502" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 7 (Trans DT)</text>
 <text x="159" y="502" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="502" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x30</text>
 <text x="257" y="502" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">10 B</text>
-<text x="299" y="502" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"0317173045"</text>
+<text x="299" y="502" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"0317173045"</text>
 <rect x="0" y="513" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="524" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 11 (STAN)</text>
 <text x="159" y="524" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="524" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x3a</text>
 <text x="257" y="524" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">6 B</text>
-<text x="299" y="524" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"482731"</text>
+<text x="299" y="524" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"482731"</text>
 <rect x="0" y="531" width="466" height="22" fill="#F5F7FD"/>
 <rect x="0" y="535" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="546" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 12 (Local Time)</text>
 <text x="159" y="546" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="546" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x40</text>
 <text x="257" y="546" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">6 B</text>
-<text x="299" y="546" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"173045"</text>
+<text x="299" y="546" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"173045"</text>
 <rect x="0" y="557" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="568" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 13 (Local Date)</text>
 <text x="159" y="568" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="568" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x46</text>
 <text x="257" y="568" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">4 B</text>
-<text x="299" y="568" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"0317"</text>
+<text x="299" y="568" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"0317"</text>
 <rect x="0" y="575" width="466" height="22" fill="#F5F7FD"/>
 <rect x="0" y="579" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="590" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 14 (Expiry)</text>
 <text x="159" y="590" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="590" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x4a</text>
 <text x="257" y="590" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">4 B</text>
-<text x="299" y="590" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"2612"</text>
+<text x="299" y="590" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"2612"</text>
 <rect x="0" y="601" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="612" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 22 (POS Entry)</text>
 <text x="159" y="612" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="612" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x4e</text>
 <text x="257" y="612" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">3 B</text>
-<text x="299" y="612" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"071"</text>
+<text x="299" y="612" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"071"</text>
 <rect x="0" y="619" width="466" height="22" fill="#F5F7FD"/>
 <rect x="0" y="623" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="634" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 25 (POS Cond)</text>
 <text x="159" y="634" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="634" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x51</text>
 <text x="257" y="634" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">2 B</text>
-<text x="299" y="634" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"00"</text>
+<text x="299" y="634" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"00"</text>
 <rect x="0" y="645" width="14" height="14" fill="#7759D6" fill-opacity="0.15"/>
 <text x="20" y="656" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 32 (Acq Inst)</text>
 <text x="159" y="656" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">LLVAR</text>
 <text x="209" y="656" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x53</text>
 <text x="257" y="656" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">8 B</text>
-<text x="299" y="656" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">LL=06, "123456"</text>
+<text x="299" y="656" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">LL=06, "123456"</text>
 <rect x="0" y="663" width="466" height="22" fill="#F5F7FD"/>
 <rect x="0" y="667" width="14" height="14" fill="#7759D6" fill-opacity="0.15"/>
 <text x="20" y="678" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 35 (Track 2)</text>
 <text x="159" y="678" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">LLVAR</text>
 <text x="209" y="678" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x5b</text>
 <text x="257" y="678" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">36 B</text>
-<text x="299" y="678" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">LL=34, "2200121234560892=261220112345…</text>
+<text x="299" y="678" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">LL=34, "2200121234560892=2…</text>
 <rect x="0" y="689" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="700" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 41 (Terminal)</text>
 <text x="159" y="700" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="700" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x7f</text>
 <text x="257" y="700" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">8 B</text>
-<text x="299" y="700" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"TERM0001"</text>
+<text x="299" y="700" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"TERM0001"</text>
 <rect x="0" y="707" width="466" height="22" fill="#F5F7FD"/>
 <rect x="0" y="711" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="722" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 42 (Merchant)</text>
 <text x="159" y="722" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="722" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x87</text>
 <text x="257" y="722" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">15 B</text>
-<text x="299" y="722" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"MERCHANT0000001"</text>
+<text x="299" y="722" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"MERCHANT0000001"</text>
 <rect x="0" y="733" width="14" height="14" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="20" y="744" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">DE 49 (Currency)</text>
 <text x="159" y="744" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">fixed</text>
 <text x="209" y="744" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0x96</text>
 <text x="257" y="744" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">3 B</text>
-<text x="299" y="744" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">"643"</text>
+<text x="299" y="744" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">"643"</text>
 </svg>

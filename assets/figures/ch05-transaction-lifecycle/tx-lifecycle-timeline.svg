@@ -21,7 +21,7 @@
 <text x="98" y="229.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Состояние</text>
 <text x="188.75" y="92" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Терминал ↔ эквайер ↔</text>
 <text x="188.75" y="108" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">сеть ↔ эмитент</text>
-<text x="188.75" y="216" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Hold на счёте держателя</text>
+<text x="188.75" y="216" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Холд на счёте держателя</text>
 <text x="188.75" y="232" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">сумма заблокирована</text>
 <text x="346.25" y="92" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Эквайер → сеть → эмитент</text>
 <text x="346.25" y="108" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(batch конца дня)</text>
@@ -30,7 +30,7 @@
 <text x="503.75" y="92" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Сеть ↔ корсчета банков</text>
 <text x="188.75" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">ISO 8583 (0100/0110)</text>
 <text x="346.25" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Файлы клиринга</text>
-<text x="503.75" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Нетто-сетлмент</text>
+<text x="503.75" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Нетто-расчёт</text>
 <text x="661.25" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Банковский перевод</text>
 <text x="346.25" y="224" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Сумма зафиксирована</text>
 <text x="503.75" y="224" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Деньги между банками</text>

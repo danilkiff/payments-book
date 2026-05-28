@@ -239,10 +239,12 @@ for idx, f in enumerate(fields):
       val = f'LL={ll}, "{v}"'
     else:
       val = '"' + raw.decode("ascii", errors="replace") + '"'
-  max_chars = 38 if f["name"] != "Bitmap" else 44
+  # COL_VAL ≈ 159px при шрифте 10px вмещает ~27 знаков (цифры в Bitmap уже —
+  # до 30); прежние 38/44 при 11px вылезали за правый край viewBox и срезались.
+  max_chars = 27 if f["name"] != "Bitmap" else 30
   if len(val) > max_chars:
     val = val[:max_chars - 1] + "…"
-  lines.append(t(TBL_X_VAL, ry + 15, val, size=11, fill=INK, anchor="start"))
+  lines.append(t(TBL_X_VAL, ry + 15, val, size=10, fill=INK, anchor="start"))
 
 lines.append("</svg>")
 

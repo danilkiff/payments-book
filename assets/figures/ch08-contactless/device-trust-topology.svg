@@ -59,9 +59,9 @@
   <text x="140" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">DPAN · мастер-ключ · ATC</text>
   <text x="140" y="346" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">криптограмма формируется здесь</text>
 
-  <!-- Свойство оффлайн -->
+  <!-- Свойство офлайн -->
   <rect x="55" y="368" width="170" height="50" rx="4" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
-  <text x="140" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">оффлайн без ограничений</text>
+  <text x="140" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">офлайн без ограничений</text>
   <text x="140" y="400" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">по числу операций; floor limit</text>
   <text x="140" y="414" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">и срок токена действуют</text>
 </g>
@@ -116,7 +116,7 @@
   <text x="410" y="346" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">криптограмма формируется в TEE</text>
 
   <rect x="325" y="368" width="170" height="50" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-  <text x="410" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">оффлайн ограничен</text>
+  <text x="410" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">офлайн ограничен</text>
   <text x="410" y="400" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">пулом LUK по правилам сети,</text>
   <text x="410" y="414" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">обычно дольше, чем у HCE</text>
 </g>
@@ -169,9 +169,9 @@
   <!-- Стрелка replenishment с облака к защ. хранилищу -->
   <line x1="640" y1="370" x2="660" y2="358" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 
-  <!-- Свойство оффлайн -->
+  <!-- Свойство офлайн -->
   <rect x="645" y="370" width="120" height="48" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-  <text x="705" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">оффлайн ограничен</text>
+  <text x="705" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">офлайн ограничен</text>
   <text x="705" y="399" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">пулом LUK; replenishment</text>
   <text x="705" y="412" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">требует онлайн-связи с TSP</text>
 </g>

@@ -41,7 +41,7 @@ POS_3 = [
 EXAMPLE = ("2", "0", "1")
 
 POSITIONS = [
-  ("Позиция 1", "интерчейндж + чип", POS_1, EXAMPLE[0]),
+  ("Позиция 1", "interchange + чип", POS_1, EXAMPLE[0]),
   ("Позиция 2", "авторизация", POS_2, EXAMPLE[1]),
   ("Позиция 3", "услуги + PIN", POS_3, EXAMPLE[2]),
 ]

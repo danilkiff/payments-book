@@ -172,10 +172,10 @@
      y="146.59702"
      text-anchor="start"
      font-family="Inter, sans-serif"
-     font-size="8px"
+     font-size="9px"
      font-style="italic"
      fill="#5c647a"
-     id="text11">типичный сценарий — операция в РФ</text>
+     id="text11">обычно — операция в РФ</text>
   <!-- OUTCOME B: UnionPay → UPI -->
   <rect
      x="189.78931"
@@ -220,10 +220,10 @@
      y="146.59702"
      text-anchor="start"
      font-family="Inter, sans-serif"
-     font-size="8px"
+     font-size="9px"
      font-style="italic"
      fill="#5c647a"
-     id="text15">типичный сценарий — операция за рубежом</text>
+     id="text15">обычно — операция за рубежом</text>
   <!-- OUTCOME C: Empty candidate list -->
   <rect
      x="403.5954"

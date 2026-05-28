@@ -555,7 +555,7 @@
      font-size="9px"
      font-weight="normal"
      fill="#1a2030"
-     id="text40">Фаза 5: GENERATE AC (~285 мс), криптограмма ARQC на ограниченном CPU чипа.</text>
+     id="text40">Фаза 5: GENERATE AC (~285 мс), ARQC на ограниченном CPU чипа.</text>
   <text
      x="26"
      y="201"
@@ -583,7 +583,7 @@
      font-size="9px"
      font-weight="normal"
      fill="#1a2030"
-     id="text42">Фаза 9: ~280 мс у эмитента, почти всё — risk-engine; HSM verify+ARPC дают ~5 мс.</text>
+     id="text42">Фаза 9: ~280 мс у эмитента, почти всё — risk-engine; HSM verify+ARPC ~5 мс.</text>
   <text
      x="412"
      y="201"

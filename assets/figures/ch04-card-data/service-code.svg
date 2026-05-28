@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 290" width="720" height="290">
 <text x="125.0" y="18" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#5C647A">Позиция 1</text>
-<text x="125.0" y="34" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">интерчейндж + чип</text>
+<text x="125.0" y="34" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">interchange + чип</text>
 <rect x="95.0" y="50" width="60" height="42" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
 <text x="125.0" y="80" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="bold" fill="#1A2030">2</text>
 <text x="24" y="114" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Значение</text>
