@@ -380,48 +380,13 @@ core (основной кредитно-дебетовый бренд) и~Maestr
 отдельные таблицы ставок и~критериев interchange; любой численный пример
 привязывается к~конкретной региональной таблице~\cite{mc-interchange-us}.
 
-\needspace{6\baselineskip}
 \section{Архитектурные отличия от~Visa}\label{sec:mc-vs-visa}
 
 Различия между Mastercard и~Visa делятся на~терминологические, исторические
 и~инженерные. Первые два типа влияют на~словарь и~контекст; инженерные
 определяют, какой код придётся переписать при~переносе системы с~одной схемы
-на~другую.
-
-\begin{table}[H]
-  \begingroup
-  \footnotesize
-  \setlength{\tabcolsep}{4pt}
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabularx}{\textwidth}{
-      @{}P{0.26\textwidth}
-      Y
-      Y@{}
-    }
-    \toprule
-    \headrow
-    \thd{Параметр} & \thd{Mastercard}
-    & \thd{Visa} \\
-    \midrule
-    Сетевая архитектура & Единая сеть Mastercard
-    & BASE~I для~авторизации и~BASE~II для~клиринга \\
-    Клиринг & IPM через~GCMS
-    & TC33 через~BASE~II \\
-    Модель dual message & Авторизация и~клиринг разнесены внутри
-    одной сети & Авторизация и~клиринг разнесены по~двум именованным сетям \\
-    Токенизация & MDES~+~DSRP
-    & VTS (Visa Token Service)~+~Token Assurance Level \\
-    Чиповые требования & M/Chip
-    & Visa ICC~/~VCPS (Visa Contactless Payment Specification) \\
-    Выплаты & Mastercard Send
-    & Visa Direct \\
-    Обновление реквизитов & Automatic Billing Updater (ABU)
-    & Visa Account Updater (VAU) \\
-    \bottomrule
-  \end{tabularx}%
-  \endgroup
-  \caption{Архитектурные отличия Mastercard и~Visa.}\label{tab:mc-vs-visa}
-\end{table}
+на~другую. Сравнение Mastercard, Visa и~UnionPay по~компонентам сведено
+в~таблицу~\ref{tab:up-vs-visa-mc} в~гл.~\ref{ch:unionpay}.
 
 Для~переноса кода ключевые различия~--- клиринговая модель и~формат обмена.
 Разработчик, переносящий систему обработки клиринга с~одной схемы на~другую,
