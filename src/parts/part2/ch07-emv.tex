@@ -448,7 +448,7 @@ TVR (Terminal Verification Results)~--- пятибайтовое поле, в~к
 SDA\slash DDA\slash CDA не~прошёл. \textbf{Байт~2}~--- управление выбором
 приложения на~терминале: совпадение версии с~конфигурацией, срок действия,
 активация, разрешённые услуги, признак \enquote{новая карта}; даты~--- теги
-\texttt{5F24} (\textit{Application Expiration Date}) и~\texttt{5F25}
+\texttt{0x5F24} (\textit{Application Expiration Date}) и~\texttt{0x5F25}
 (\textit{Application Effective Date})~--- читаются по~AFL уже после GPO,
 на~шаге PPSE FCI их ещё нет. \textbf{Байт~3}~--- итог CVM
 (раздел~\ref{sec:emv-cvm}): выбранный из~CVM List метод, доступность

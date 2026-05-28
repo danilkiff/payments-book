@@ -38,7 +38,7 @@ lines.append(t(GRID_X - 8, COL_HEADER_Y, "Hex", size=10, fill=MUTED, weight="bol
 for row in range(8):
   byte = bitmap[row]
   row_y = GRID_Y + row * CELL_H
-  lines.append(t(GRID_X - 8, row_y + 19, f"{byte:02X}", size=11, fill=INK,
+  lines.append(t(GRID_X - 8, row_y + 19, f"0x{byte:02X}", size=11, fill=INK,
                  anchor="end", weight="bold"))
 
   for col in range(8):
