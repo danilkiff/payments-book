@@ -51,7 +51,7 @@
   <line x1="185" y1="210" x2="185" y2="220" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 
   <!-- Контрольный канал AP → eSE (тонкий, не для криптографии) -->
-  <line x1="135" y1="252" x2="143" y2="252" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="135" y1="252" x2="143" y2="252" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3"/>
 
   <!-- Содержимое eSE -->
   <rect x="55" y="296" width="170" height="60" rx="4" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
@@ -159,7 +159,7 @@
   <text x="680" y="346" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">криптограмма генерируется приложением</text>
 
   <!-- Связь HCE Service ↔ хранилище -->
-  <line x1="680" y1="276" x2="680" y2="294" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="680" y1="276" x2="680" y2="294" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3"/>
 
   <!-- Облако TSP с replenishment -->
   <path d="M 555 380 q 0 -16 16 -16 h 18 q 0 -10 12 -10 h 20 q 12 0 12 10 h 20 q 16 0 16 16 q 0 14 -16 14 h -82 q -16 0 -16 -14 z"

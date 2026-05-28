@@ -72,7 +72,7 @@ for col_idx, (title, subtitle, values, example_value) in enumerate(POSITIONS):
   lines.append(
     f'<rect x="{cell_x}" y="{example_cell_y}" width="{cell_w}" '
     f'height="{EXAMPLE_BAR_H - 8}" rx="4" '
-    f'fill="{WARN}" fill-opacity="0.40" '
+    f'fill="{WARN}" fill-opacity="0.18" '
     f'stroke="{WARN}" stroke-width="1.5"/>'
   )
   lines.append(t(cx, example_cell_y + 30, example_value, size=24, fill=INK, weight="bold"))
@@ -88,7 +88,7 @@ for col_idx, (title, subtitle, values, example_value) in enumerate(POSITIONS):
     if is_example:
       lines.append(
         f'<rect x="{x}" y="{row_y - 14}" width="{COL_W}" '
-        f'height="{ROW_H}" fill="{WARN}" fill-opacity="0.25"/>'
+        f'height="{ROW_H}" fill="{WARN}" fill-opacity="0.18"/>'
       )
 
     lines.append(t(x + 18, row_y, val, size=11, fill=INK,

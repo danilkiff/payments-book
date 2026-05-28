@@ -26,7 +26,7 @@
      height="42"
      rx="4"
      fill="#B8821C"
-     fill-opacity="0.40"
+     fill-opacity="0.18"
      stroke="#B8821C"
      stroke-width="1.5"
      id="rect1" />
@@ -52,8 +52,8 @@
      x="80"
      y="114"
      text-anchor="start"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9"
      font-weight="bold"
      fill="#5c647a"
      id="text4">Смысл</text>
@@ -148,7 +148,7 @@
      height="42"
      rx="4"
      fill="#B8821C"
-     fill-opacity="0.40"
+     fill-opacity="0.18"
      stroke="#B8821C"
      stroke-width="1.5"
      id="rect13" />
@@ -174,8 +174,8 @@
      x="255"
      y="114"
      text-anchor="start"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9"
      font-weight="bold"
      fill="#5c647a"
      id="text16">Смысл</text>
@@ -334,7 +334,7 @@
      height="42"
      rx="4"
      fill="#B8821C"
-     fill-opacity="0.40"
+     fill-opacity="0.18"
      stroke="#B8821C"
      stroke-width="1.5"
      id="rect33" />
@@ -360,8 +360,8 @@
      x="430"
      y="114"
      text-anchor="start"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9"
      font-weight="bold"
      fill="#5c647a"
      id="text36">Смысл</text>
@@ -520,7 +520,7 @@
      height="42"
      rx="4"
      fill="#B8821C"
-     fill-opacity="0.40"
+     fill-opacity="0.18"
      stroke="#B8821C"
      stroke-width="1.5"
      id="rect53" />
@@ -546,8 +546,8 @@
      x="605"
      y="114"
      text-anchor="start"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9"
      font-weight="bold"
      fill="#5c647a"
      id="text56">Смысл</text>

@@ -135,7 +135,7 @@
      width="44"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect10" />
@@ -162,7 +162,7 @@
      width="44"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect12" />
@@ -216,7 +216,7 @@
      width="84"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect16" />
@@ -243,7 +243,7 @@
      width="84"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect18" />
@@ -451,7 +451,7 @@
      width="44"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect33" />
@@ -478,7 +478,7 @@
      width="44"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect35" />
@@ -532,7 +532,7 @@
      width="84"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect39" />
@@ -559,7 +559,7 @@
      width="84"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect41" />
@@ -613,7 +613,7 @@
      width="148"
      height="48"
      fill="#4E63D9"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect45" />
@@ -723,7 +723,7 @@
      width="44"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect52" />
@@ -750,7 +750,7 @@
      width="44"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect54" />
@@ -777,7 +777,7 @@
      width="84"
      height="48"
      fill="#2F8B67"
-     fill-opacity="0.40"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect56" />
@@ -804,7 +804,7 @@
      width="84"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect58" />
@@ -831,7 +831,7 @@
      width="84"
      height="48"
      fill="#7759D6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect60" />
@@ -885,7 +885,7 @@
      width="148"
      height="48"
      fill="#4E63D9"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#5C647A"
      stroke-width="0.5"
      id="rect64" />

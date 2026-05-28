@@ -8,13 +8,14 @@
 Запуск: python3 scripts/render-chapter.py ch07
 """
 
+import os
 import re
 import subprocess
 import sys
 from pathlib import Path
 
 OFFSET = 2  # PDF page = printed page + OFFSET (front-matter pre-pages)
-DPI = 110
+DPI = int(os.environ.get("RENDER_DPI", "110"))  # 150 даёт ~1040×1477 — предел до даунскейла
 ROOT = Path(__file__).resolve().parent.parent
 AUX = ROOT / "build" / "payments-book.aux"
 PDF = ROOT / "build" / "payments-book.pdf"

@@ -8,14 +8,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs43">
-    <rect
-       x="28.847977"
-       y="253.6925"
-       width="389.02344"
-       height="65.756416"
-       id="rect44" />
-  </defs>
+     id="defs43" />
   <rect
      x="4"
      y="4"
@@ -40,7 +33,7 @@
      width="376.3248"
      height="32"
      fill="#4e63d9"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#4e63d9"
      stroke-width="1.5"
      id="rect3" />
@@ -59,7 +52,7 @@
      width="319.4017"
      height="32"
      fill="#7759d6"
-     fill-opacity="0.22"
+     fill-opacity="0.15"
      stroke="#7759d6"
      stroke-width="1.5"
      id="rect4" />
@@ -97,7 +90,7 @@
      width="15.811966"
      height="58"
      fill="#4e63d9"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#4e63d9"
      stroke-width="1.5"
      id="rect8" />
@@ -116,7 +109,7 @@
      width="25.299145"
      height="58"
      fill="#4e63d9"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#4e63d9"
      stroke-width="1.5"
      id="rect9" />
@@ -135,7 +128,7 @@
      width="28.461538"
      height="58"
      fill="#4e63d9"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#4e63d9"
      stroke-width="1.5"
      id="rect10" />
@@ -163,7 +156,7 @@
      width="126.49573"
      height="58"
      fill="#4e63d9"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#4e63d9"
      stroke-width="1.5"
      id="rect12" />
@@ -200,7 +193,7 @@
      width="180.25641"
      height="58"
      fill="#4e63d9"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#4e63d9"
      stroke-width="1.5"
      id="rect15" />
@@ -237,7 +230,7 @@
      width="9.4871798"
      height="58"
      fill="#7759d6"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#7759d6"
      stroke-width="1.5"
      id="rect18" />
@@ -256,7 +249,7 @@
      width="44.273506"
      height="58"
      fill="#7759d6"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#7759d6"
      stroke-width="1.5"
      id="rect19" />
@@ -284,7 +277,7 @@
      width="37.948719"
      height="58"
      fill="#7759d6"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#7759d6"
      stroke-width="1.5"
      id="rect21" />
@@ -312,7 +305,7 @@
      width="177.09402"
      height="58"
      fill="#7759d6"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#7759d6"
      stroke-width="1.5"
      id="rect23" />
@@ -349,7 +342,7 @@
      width="50.598289"
      height="58"
      fill="#7759d6"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#7759d6"
      stroke-width="1.5"
      id="rect26" />
@@ -550,7 +543,7 @@
      width="14"
      height="14"
      fill="#4e63d9"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#4e63d9"
      stroke-width="1.5"
      id="rect39" />
@@ -578,7 +571,7 @@
      width="14"
      height="14"
      fill="#7759d6"
-     fill-opacity="0.35"
+     fill-opacity="0.15"
      stroke="#7759d6"
      stroke-width="1.5"
      id="rect41" />
@@ -600,8 +593,4 @@
      font-weight="normal"
      fill="#5c647a"
      id="text43">Экономия: in-memory кэш, асинхронный режим для некритичных проверок.</text>
-  <text
-     xml:space="preserve"
-     id="text44"
-     style="writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect44);display:inline;fill:#000000" />
 </svg>

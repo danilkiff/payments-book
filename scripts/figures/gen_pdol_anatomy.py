@@ -61,7 +61,7 @@ for idx, (tag_hex, length, name_ru, name_en) in enumerate(PAIRS):
     cx = x + i * CELL_W
     lines.append(
       f'<rect x="{cx}" y="{HEX_Y}" width="{CELL_W - 1}" height="{CELL_H}" '
-      f'fill="{color}" fill-opacity="0.18" '
+      f'fill="{color}" fill-opacity="0.15" '
       f'stroke="{MUTED}" stroke-width="0.5"/>'
     )
     lines.append(t(cx + CELL_W / 2, HEX_Y + 16, hb, size=11, fill=INK, weight="bold"))
@@ -69,7 +69,7 @@ for idx, (tag_hex, length, name_ru, name_en) in enumerate(PAIRS):
   cx = x + 2 * CELL_W
   lines.append(
     f'<rect x="{cx}" y="{HEX_Y}" width="{CELL_W - 1}" height="{CELL_H}" '
-    f'fill="{color}" fill-opacity="0.40" '
+    f'fill="{color}" fill-opacity="0.15" '
     f'stroke="{MUTED}" stroke-width="0.5"/>'
   )
   lines.append(t(cx + CELL_W / 2, HEX_Y + 16, length_byte, size=11, fill=INK, weight="bold"))
@@ -96,7 +96,7 @@ for idx, (tag_hex, length, name_ru, name_en) in enumerate(PAIRS):
     lines.append(f'<rect x="0" y="{ry}" width="{VIEW_W}" height="{TBL_ROW_H}" fill="{SOFT}"/>')
   lines.append(
     f'<rect x="0" y="{ry + 4}" width="{COL_SWATCH}" height="{TBL_ROW_H - 8}" '
-    f'fill="{color}" fill-opacity="0.22"/>'
+    f'fill="{color}" fill-opacity="0.15"/>'
   )
   hex_str = f"{tag_hex[:2]} {tag_hex[2:]} {length:02X}"
   lines.append(t(TBL_X_HEX, ry + 16, hex_str, size=11, fill=INK, anchor="start", weight="bold"))

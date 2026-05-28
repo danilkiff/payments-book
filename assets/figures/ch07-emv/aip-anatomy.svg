@@ -11,16 +11,19 @@
 <text x="621.0" y="22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">бит 1 (LSB)</text>
 <text x="84" y="56" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Байт 1</text>
 <rect x="96" y="36" width="69" height="31" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
-<rect x="166" y="36" width="69" height="31" fill="#B8821C" fill-opacity="0.4" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="166" y="36" width="69" height="31" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
 <text x="201.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">SDA</text>
-<rect x="236" y="36" width="69" height="31" fill="#4E63D9" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="236" y="36" width="69" height="31" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
 <text x="271.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">DDA</text>
-<rect x="306" y="36" width="69" height="31" fill="#B8821C" fill-opacity="0.4" stroke="#5C647A" stroke-width="0.5"/>
-<rect x="376" y="36" width="69" height="31" fill="#B8821C" fill-opacity="0.4" stroke="#5C647A" stroke-width="0.5"/>
-<rect x="446" y="36" width="69" height="31" fill="#4E63D9" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="306" y="36" width="69" height="31" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
+<text x="341.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">CVM есть</text>
+<rect x="376" y="36" width="69" height="31" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
+<text x="411.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">риск-мен.</text>
+<rect x="446" y="36" width="69" height="31" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<text x="481.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">iss. auth</text>
 <rect x="516" y="36" width="69" height="31" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <text x="551.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">RFU CL</text>
-<rect x="586" y="36" width="69" height="31" fill="#4E63D9" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="586" y="36" width="69" height="31" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
 <text x="621.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">CDA</text>
 <text x="84" y="88" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Байт 2</text>
 <rect x="96" y="68" width="69" height="31" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
@@ -36,7 +39,7 @@
 <rect x="586" y="68" width="69" height="31" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <text x="621.0" y="88" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">RFU CL</text>
 <text x="84" y="138" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Пример:</text>
-<rect x="96.0" y="120" width="274.0" height="44" fill="#B8821C" fill-opacity="0.4" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="96.0" y="120" width="274.0" height="44" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
 <text x="233.0" y="138" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">0x58</text>
 <text x="233.0" y="155" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">0101 1000</text>
 <rect x="376.0" y="120" width="274.0" height="44" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>

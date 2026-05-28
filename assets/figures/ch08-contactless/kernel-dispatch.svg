@@ -534,8 +534,8 @@
      x="476"
      y="566"
      text-anchor="start"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10"
      fill="#5c647a"
      id="text42">MC CREDIT/DEBIT</text>
   <text
@@ -551,8 +551,8 @@
      x="476"
      y="588"
      text-anchor="start"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10px"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10"
      fill="#5c647a"
      id="text44">MAESTRO</text>
   <!-- MPA (Мир) -->

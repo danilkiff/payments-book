@@ -6,6 +6,7 @@
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
   <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Bad-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
 </defs>
 
 <!-- ====== Timeline at top ====== -->
@@ -54,7 +55,7 @@
 <line x1="280.0" y1="250.0" x2="320.0" y2="250.0" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted-s)"/>
 <rect x="320.0" y="240.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
 <text x="400.0" y="254.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_pending</text>
-<text x="650.0" y="254.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">5 000 ₽</text>
+<text x="650.0" y="254.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">5 000 руб.</text>
 
 <!-- Row 2: Подтверждение -->
 <text x="30.0" y="276.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Подтверждение</text>
@@ -62,8 +63,8 @@
 <text x="200.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_pending</text>
 <line x1="280.0" y1="276.0" x2="320.0" y2="276.0" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted-s)"/>
 <rect x="320.0" y="266.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
-<text x="400.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_earned + platform_fee_earned</text>
-<text x="650.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">4 500 + 500 ₽</text>
+<text x="400.0" y="274.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030"><tspan x="400.0">merchant_earned +</tspan><tspan x="400.0" dy="10">platform_fee_earned</tspan></text>
+<text x="650.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">4 500 + 500 руб.</text>
 
 <!-- Row 3: Расчёт -->
 <text x="30.0" y="302.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Расчёт</text>
@@ -72,16 +73,16 @@
 <line x1="280.0" y1="302.0" x2="320.0" y2="302.0" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted-s)"/>
 <rect x="320.0" y="292.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
 <text x="400.0" y="306.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_available</text>
-<text x="650.0" y="306.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">4 500 ₽</text>
+<text x="650.0" y="306.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">4 500 руб.</text>
 
 <!-- Row 4: Частичный возврат -->
 <text x="30.0" y="328.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">Частич. возврат</text>
 <rect x="120.0" y="318.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#C15462" stroke-width="1"/>
 <text x="200.0" y="332.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_available</text>
-<line x1="280.0" y1="328.0" x2="320.0" y2="328.0" stroke="#C15462" stroke-width="1" marker-end="url(#arr-Muted-s)"/>
+<line x1="280.0" y1="328.0" x2="320.0" y2="328.0" stroke="#C15462" stroke-width="1" marker-end="url(#arr-Bad-s)"/>
 <rect x="320.0" y="318.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#C15462" stroke-width="1"/>
 <text x="400.0" y="332.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">refund_payable</text>
-<text x="650.0" y="332.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">2 000 ₽</text>
+<text x="650.0" y="332.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">2 000 руб.</text>
 
 <!-- Arrow: ledger -> RSBU -->
 <line x1="400.0" y1="365.0" x2="400.0" y2="395.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>

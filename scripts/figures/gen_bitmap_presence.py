@@ -48,7 +48,7 @@ for row in range(8):
     cy = row_y
 
     if is_set:
-      fill, opacity = ACCENT_A, 0.20
+      fill, opacity = ACCENT_A, 0.15
       text_content = f"DE {bit_pos}" if bit_pos >= 2 else "+64"
       text_weight = "bold"
     else:

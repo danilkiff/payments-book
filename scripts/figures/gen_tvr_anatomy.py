@@ -95,9 +95,9 @@ for row in range(NUM_ROWS):
     is_set_in_example = is_defined and bit_value == 1
 
     if is_set_in_example:
-      fill, opacity, text_weight = WARN, 0.40, "bold"
+      fill, opacity, text_weight = WARN, 0.18, "bold"
     elif is_defined:
-      fill, opacity, text_weight = ACCENT_A, 0.16, "normal"
+      fill, opacity, text_weight = ACCENT_A, 0.15, "normal"
     else:
       fill, opacity, text_weight = SOFT, 1.0, "normal"
 
@@ -124,7 +124,7 @@ for col in range(5):
 
   has_set = any((col, b) in LABELS and (byte >> (b - 1)) & 1 for b in range(1, 9))
   fill = WARN if has_set else SOFT
-  opacity = 0.40 if has_set else 1.0
+  opacity = 0.18 if has_set else 1.0
   text_weight = "bold" if has_set else "normal"
 
   lines.append(

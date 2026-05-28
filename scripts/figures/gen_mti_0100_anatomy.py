@@ -98,14 +98,11 @@ def fill_for(field, is_ll=False):
   if k == "mti":
     return PANEL, 1.0
   if k == "bitmap":
-    return MUTED, 0.18
+    return MUTED, 0.15
   if k == "fixed":
-    return ACCENT_A, (0.15 if field["alt"] == 0 else 0.28)
+    return ACCENT_A, 0.15
   if k == "llvar":
-    op = (0.15 if field["alt"] == 0 else 0.28)
-    if is_ll:
-      op = 0.45
-    return ACCENT_B, op
+    return ACCENT_B, 0.15
   return PANEL, 1.0
 
 
@@ -114,11 +111,11 @@ def swatch(field):
   if k == "mti":
     return PANEL, 1.0
   if k == "bitmap":
-    return MUTED, 0.18
+    return MUTED, 0.15
   if k == "fixed":
-    return ACCENT_A, 0.20
+    return ACCENT_A, 0.15
   if k == "llvar":
-    return ACCENT_B, 0.25
+    return ACCENT_B, 0.15
   return PANEL, 1.0
 
 
