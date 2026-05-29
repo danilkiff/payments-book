@@ -276,6 +276,44 @@ FIPS~140--3, MAC канала по~ГОСТ~34.13 вместо ISO~9797-1~alg.~3
 (раздел~\ref{sec:crypto-key-ceremony}).
 
 \FloatBarrier
+\needspace{6\baselineskip}
+\subsection*{Деривация на~практике: UDK и~сессионный ключ}\label{sec:crypto-emv-derivation}
+
+Иерархия выше описана словами; EMV задаёт её точными формулами. Ключ карты UDK
+(Unique Derivation Key) эмитент выводит из~мастер-ключа IMK по~PAN и~порядковому
+номеру карты PSN (EMV Book~2, Annex~A1.4, Option~A для PAN до~16~цифр)~\cite{emvco-book2}.
+Пусть $Y$~--- 16~младших цифр конкатенации PAN и~PSN, упакованные в~8~байт; тогда
+\[
+  \text{UDK}_L = \text{3DES}_{\text{IMK}}(Y), \qquad
+  \text{UDK}_R = \text{3DES}_{\text{IMK}}(\overline{Y}),
+\]
+где $\overline{Y}$~--- побитовое дополнение $Y$ (XOR с~\texttt{FF\dots FF}), а~UDK${} =
+\text{UDK}_L \,\|\, \text{UDK}_R$ после коррекции на~нечётную чётность DES. Дополнение
+разводит половины ключа: при~одинаковом входе они иначе совпали~бы. Для PAN длиннее
+16~цифр (Option~B) $Y$ получают децимализацией SHA-1 от~PAN и~PSN; дальше всё так~же.
+
+Сессионный ключ выводится из~UDK по~счётчику ATC (EMV Common Session Key,
+Annex~A1.3)~\cite{emvco-book2}. Левая и~правая половины ветвятся служебным байтом
+\texttt{F0} и~\texttt{0F}:
+\[
+  \text{SK}_L = \text{3DES}_{\text{UDK}}(\text{ATC} \,\|\, \mathtt{F0} \,\|\, \mathtt{00\,00\,00\,00\,00}), \;\;
+  \text{SK}_R = \text{3DES}_{\text{UDK}}(\text{ATC} \,\|\, \mathtt{0F} \,\|\, \mathtt{00\,00\,00\,00\,00}),
+\]
+SK${} = \text{SK}_L \,\|\, \text{SK}_R$, снова с~коррекцией чётности. Уникальный ATC
+в~каждой операции даёт уникальный сессионный ключ; им~же карта считает MAC
+криптограммы (ARQC, раздел~\ref{sec:emv-cryptogram}).
+
+Версия криптограммы выбирает, нужен~ли этот второй шаг: CVN~10 берёт UDK сессионным
+ключом напрямую, CVN~18~--- выводит SK по~ATC формулой выше
+(раздел~\ref{sec:emv-cryptogram}). Обе деривации~--- три вызова 3DES, без~хранения
+состояния между транзакциями:
+
+\codefile{Python}{samples/ch10-emv-keys/emv_keys.py}
+
+Односторонность та~же, что у~DUKPT ниже: зная IMK, эмитент в~HSM повторяет UDK
+и~сессионный ключ любой карты, а~обратный ход закрыт стойкостью 3DES.
+
+\FloatBarrier
 \section{DUKPT}\label{sec:crypto-dukpt}
 
 Иерархия ключей EMV (мастер-ключ $\to$ ключ карты $\to$ сессионный ключ) хорошо
