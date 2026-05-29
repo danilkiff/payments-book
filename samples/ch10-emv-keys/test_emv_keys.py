@@ -11,7 +11,7 @@ CSK (Common Session Key, EMV Book 2, A1.3.1): пример из специфик
 
 import pytest
 
-from emv_keys import adjust_parity, derive_session_key, derive_udk
+from emv_keys import adjust_parity, arqc, derive_session_key, derive_udk
 
 # EMV использует double-length (16-байт) 3DES -- библиотека зовёт его устаревшим,
 # но для EMV это штатный размер ключа; глушим ожидаемое предупреждение.
@@ -62,3 +62,16 @@ def test_session_key_unique_per_atc():
 def test_udk_depends_on_pan_sequence_number():
   """Разный PSN при том же PAN даёт разные ключи карт."""
   assert derive_udk(IMK, PAN, "03") != derive_udk(IMK, PAN, "04")
+
+
+# --- Retail MAC (ISO 9797-1, алгоритм 3): независимый известный вектор ---
+MAC_KEY = bytes.fromhex("7962D9ECE03D1ACD4C76089DCE131543")
+MAC_MSG = bytes.fromhex(
+  "72C29C2371CC9BDB65B779B8E8D37B29ECC154AA56A8799FAE2F498F76ED92F2"
+)
+MAC_EXPECTED = bytes.fromhex("5F1448EEA8AD90A7")
+
+
+def test_retail_mac_matches_iso9797_vector():
+  # Сообщение кратно 8 байтам -> padding method 2 добавляет полный блок 0x80…00.
+  assert arqc(MAC_KEY, MAC_MSG) == MAC_EXPECTED
