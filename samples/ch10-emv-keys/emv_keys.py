@@ -1,13 +1,14 @@
-from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.decrepit.ciphers.algorithms import TripleDES
+from cryptography.hazmat.primitives.ciphers import Cipher, modes
 
 _COMPLEMENT = b"\xff" * 8  # маска XOR для правой половины UDK (Option A)
 
 
 def des3_ecb_block(key: bytes, block: bytes) -> bytes:
-  """Один блок 3DES (TDEA) в~ECB -- единственный примитив деривации EMV.
+  """Один блок 3DES (TDEA) в ECB -- единственный примитив деривации EMV.
   Ключ 16 байт (double-length), блок 8 байт."""
   assert len(key) == 16 and len(block) == 8
-  enc = Cipher(algorithms.TripleDES(key), modes.ECB()).encryptor()
+  enc = Cipher(TripleDES(key), modes.ECB()).encryptor()
   return enc.update(block) + enc.finalize()
 
 
@@ -25,9 +26,9 @@ def derive_udk(imk: bytes, pan: str, psn: str = "00") -> bytes:
   EMV Book 2, Annex A1.4, Option A (PAN до 16 цифр). Для длинных PAN --
   Option B: Y получается децимализацией SHA-1 от PAN||PSN, далее без изменений."""
   digits = (pan + psn)[-16:].rjust(16, "0")  # 16 младших цифр, дополнение слева
-  y = bytes.fromhex(digits)                  # 8 байт BCD
+  y = bytes.fromhex(digits)  # 8 байт BCD
   left = des3_ecb_block(imk, y)
-  right = des3_ecb_block(imk, bytes(a ^ b for a, b in zip(y, _COMPLEMENT)))
+  right = des3_ecb_block(imk, bytes(a ^ b for a, b in zip(y, _COMPLEMENT, strict=True)))
   return adjust_parity(left + right)
 
 

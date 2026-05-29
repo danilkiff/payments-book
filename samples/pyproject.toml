@@ -47,6 +47,7 @@ known-first-party = [
     "bin_last4",
     "bitmap",
     "dukpt",
+    "emv_keys",
     "luhn",
     "mac",
     "posting",
