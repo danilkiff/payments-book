@@ -1,0 +1,27 @@
+{
+  "upload_type": "publication",
+  "publication_type": "book",
+  "title": "Инженерия платежей (Payments Engineering)",
+  "language": "rus",
+  "license": "cc-by-nc-4.0",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Danilkiff, Oleg Y.",
+      "orcid": "0009-0002-8031-2575"
+    }
+  ],
+  "description": "<p><strong>RU.</strong> Книга о карточных платежах, СБП и платёжной инфраструктуре: EMV, ISO 8583, 3-D Secure, токенизация и HSM-криптография, эквайринг и эмиссия, экономика схем и interchange, СБП и платёжная система «Мир», а также регуляторика, KYC/KYB, ПОД/ФТ, санкции, фрод, подписки, сверка, диспуты и управление отказами. Для инженеров, архитекторов и продуктовых специалистов, которым нужна точная механика, а не обзоры.</p><p><strong>EN.</strong> Payments Engineering is a Russian-language technical reference on how card payments and account-to-account systems work end to end: the EMV stack, ISO 8583 messaging, 3-D Secure, tokenization and HSM-backed cryptography, acquiring and issuing, scheme economics and interchange, Russia's Faster Payments System (SBP) and the Mir card scheme, plus the operational disciplines around a live payment product — regulation, KYC/KYB, AML and sanctions, fraud, subscriptions, reconciliation, disputes and decline management. Written for engineers, architects and product specialists who need precise mechanics rather than marketing overviews.</p>",
+  "keywords": [
+    "payments",
+    "cards",
+    "SBP",
+    "EMV",
+    "ISO 8583",
+    "3-D Secure",
+    "PCI DSS",
+    "acquiring",
+    "issuing",
+    "fintech"
+  ]
+}

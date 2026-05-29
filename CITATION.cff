@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Если вы цитируете эту книгу, используйте приведённые ниже метаданные."
 title: "Инженерия платежей"
-abstract: "Книга о карточных платежах, СБП и платёжной инфраструктуре."
+abstract: "Книга о карточных платежах, СБП и платёжной инфраструктуре: EMV, ISO 8583, 3-D Secure, эквайринг и эмиссия, экономика схем, регуляторика, ПОД/ФТ, санкции, фрод, диспуты. — Payments Engineering: a Russian-language technical reference on card payments, ISO 8583, 3-D Secure, acquiring/issuing, scheme economics, Russia's Faster Payments System (SBP) and the Mir scheme, plus regulation, AML, sanctions, fraud and disputes."
 authors:
   - family-names: Danilkiff
     given-names: Oleg Y.
