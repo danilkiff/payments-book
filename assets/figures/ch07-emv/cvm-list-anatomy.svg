@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 188" width="600" height="188">
+<rect x="8" y="16" width="26" height="26" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<text x="21.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">8E</text>
+<text x="21.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">тег</text>
+<rect x="40" y="16" width="26" height="26" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<text x="53.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">0E</text>
+<text x="53.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">L</text>
+<rect x="72" y="16" width="104" height="26" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<text x="124.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">00 00 00 00</text>
+<text x="124.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">X (сумма)</text>
+<rect x="182" y="16" width="104" height="26" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<text x="234.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">00 00 00 00</text>
+<text x="234.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">Y (сумма)</text>
+<rect x="292" y="16" width="52" height="26" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<text x="318.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">44 03</text>
+<text x="318.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">правило 1</text>
+<rect x="350" y="16" width="52" height="26" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<text x="376.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">42 03</text>
+<text x="376.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">правило 2</text>
+<rect x="408" y="16" width="52" height="26" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<text x="434.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">1F 00</text>
+<text x="434.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">правило 3</text>
+<rect x="0" y="84" width="600" height="24" fill="#E8ECF7"/>
+<text x="8" y="100" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Правило</text>
+<text x="72" y="100" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Байт 1 (CVM Code)</text>
+<text x="192" y="100" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Байт 2</text>
+<text x="262" y="100" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Смысл</text>
+<text x="8" y="124" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">44 03</text>
+<text x="72" y="124" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">след. + код 04</text>
+<text x="192" y="124" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">усл. 03</text>
+<text x="262" y="124" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Offline enc. PIN, если терминал поддерживает</text>
+<rect x="0" y="132" width="600" height="24" fill="#F5F7FD"/>
+<text x="8" y="148" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">42 03</text>
+<text x="72" y="148" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">след. + код 02</text>
+<text x="192" y="148" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">усл. 03</text>
+<text x="262" y="148" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">Online PIN, если терминал поддерживает</text>
+<text x="8" y="172" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">1F 00</text>
+<text x="72" y="172" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">стоп + код 1F</text>
+<text x="192" y="172" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">усл. 00</text>
+<text x="262" y="172" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">No CVM, всегда (fallback)</text>
+</svg>

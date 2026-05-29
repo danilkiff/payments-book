@@ -416,6 +416,93 @@ PIN, превышена ли нужная сумма, допускает ли к
     в~разделе~\ref{sec:contactless-mobile}.
 \end{itemize}
 
+\needspace{6\baselineskip}
+\subsection*{Как читается CVM List}\label{sec:emv-cvm-list}
+
+Список приходит в~теге~\texttt{0x8E} и~устроен жёстко: два четырёхбайтовых
+порога X и~Y в~валюте приложения, дальше пары байт~--- Cardholder Verification
+Rules. Каждое правило~--- байт CVM Code и~байт Condition Code
+(рис.~\ref{fig:cvm-list-anatomy}).
+
+\begin{figure}[tbp]
+  \centering
+  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/cvm-list-anatomy}
+  \caption{Анатомия CVM List \texttt{0x8E}: пороги X, Y и~три правила с~разбором.}\label{fig:cvm-list-anatomy}
+\end{figure}
+
+В~байте CVM Code бит~7 решает судьбу правила при~неуспехе: \texttt{1}~---
+перейти к~следующему правилу, \texttt{0}~--- считать верификацию проваленной
+и~остановиться. Младшие шесть бит~--- код метода (табл.~\ref{tab:cvm-codes}).
+Байт Condition Code задаёт, когда правило применимо вообще: всегда, только
+при~снятии наличных, только если терминал поддерживает метод, или по~сумме
+относительно X и~Y (табл.~\ref{tab:cvm-conditions}).
+
+\begin{table}[H]
+  \caption{CVM Code (младшие 6~бит байта~1 правила)~\cite{emvco-book3}.}\label{tab:cvm-codes}
+  \begingroup
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabularx}{\textwidth}{@{}P{5.2em} Y@{}}
+    \toprule
+    \headrow
+    \thd{Код} & \thd{Метод} \\
+    \midrule
+    \texttt{000000} & провалить обработку верификации \\
+    \texttt{000001} & Offline PIN, открытый текст (проверяет чип) \\
+    \texttt{000010} & Online PIN (шифруется в~PIN-блок) \\
+    \texttt{000011} & Offline PIN, открытый текст, плюс подпись \\
+    \texttt{000100} & Offline PIN, зашифрованный (проверяет чип) \\
+    \texttt{000101} & Offline PIN, зашифрованный, плюс подпись \\
+    \texttt{011110} & подпись \\
+    \texttt{011111} & No CVM \\
+    \bottomrule
+  \end{tabularx}%
+  \endgroup
+\end{table}
+
+Коды \texttt{10\,xxxx} зарезервированы за~платёжными системами, \texttt{11\,xxxx}~---
+за~эмитентом; CDCVM на~устройстве (раздел~\ref{sec:contactless-mobile}) кодируется
+именно в~этих диапазонах.
+
+\begin{table}[H]
+  \caption{Condition Code (байт~2 правила)~\cite{emvco-book3}.}\label{tab:cvm-conditions}
+  \begingroup
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabularx}{\textwidth}{@{}P{3.2em} Y@{}}
+    \toprule
+    \headrow
+    \thd{Код} & \thd{Правило применимо} \\
+    \midrule
+    \texttt{00} & всегда \\
+    \texttt{01} & снятие наличных в~автомате без~кассира \\
+    \texttt{02} & не~наличные и~не~покупка с~выдачей наличных \\
+    \texttt{03} & если терминал поддерживает метод \\
+    \texttt{04} & снятие наличных через кассира \\
+    \texttt{05} & покупка с~выдачей наличных \\
+    \texttt{06} & в~валюте приложения, сумма меньше X \\
+    \texttt{07} & в~валюте приложения, сумма больше X \\
+    \texttt{08} & в~валюте приложения, сумма меньше Y \\
+    \texttt{09} & в~валюте приложения, сумма больше Y \\
+    \bottomrule
+  \end{tabularx}%
+  \endgroup
+\end{table}
+
+Терминал идёт по~правилам сверху вниз (EMV Book~3,
+\S10.5.5)~\cite{emvco-book3}. Для каждого проверяет условие из~байта~2; если оно
+выполнено, пробует метод из~байта~1. Метод прошёл~--- верификация завершена.
+Метод провалился~--- терминал смотрит бит~7: единица отправляет к~следующему
+правилу, ноль завершает верификацию провалом. Правило, чьё условие не~выполнено,
+пропускается без~попытки.
+
+Пример с~рисунка~--- \texttt{44\,03 42\,03 1F\,00}: сначала Offline PIN
+в~зашифрованном виде, если у~терминала есть PIN-клавиатура; не~прошёл~---
+Online PIN; недоступен и~он~--- No CVM с~условием \enquote{всегда}. Так одна
+карта обслуживается и~на~POS с~клавиатурой, и~на~вендинговом автомате без~неё.
+
 Если ни один метод из~CVM List не применим~--- например, у~терминала нет
 клавиатуры, а~карта требует PIN,~--- результат фиксируется как \enquote{CVM
 failed}. Соответствующий бит попадает в~TVR (Terminal Verification Results,
