@@ -46,7 +46,7 @@ for top, bottom, w, color in BOXES:
   lines.append(t(x + w / 2, STRIP_Y + BOX_H + 13, bottom, size=9, fill=MUTED))
   x += w + GAP
 
-lines.append(t(STRIP_X, NOTE_Y, "восстановлено открытым ключом CA  —  пересчитать Hash, сверить с восстановленным",
+lines.append(t(STRIP_X, NOTE_Y, "открытый ключ CA восстанавливает блок; терминал сверяет Hash",
                size=9, fill=MUTED, anchor="start"))
 
 lines.append("</svg>")

@@ -51,14 +51,14 @@
 <rect x="464" y="96" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="534" y="96" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="604" y="96" width="69" height="29" fill="#F5F7FD" fill-opacity="1.0" stroke="#5C647A" stroke-width="0.5"/>
-<text x="102" y="145" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">4: скрипт</text>
+<text x="102" y="145" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">4: сценарий</text>
 <rect x="114" y="126" width="69" height="29" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
-<text x="149.0" y="145" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">N скр</text>
+<text x="149.0" y="145" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">N сцен</text>
 <rect x="184" y="126" width="69" height="29" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="254" y="126" width="69" height="29" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="324" y="126" width="69" height="29" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="394" y="126" width="69" height="29" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
-<text x="429.0" y="145" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">скр✗</text>
+<text x="429.0" y="145" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">сцен✗</text>
 <rect x="464" y="126" width="69" height="29" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
 <text x="499.0" y="145" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">ODA пр</text>
 <rect x="534" y="126" width="69" height="29" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
