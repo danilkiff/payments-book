@@ -118,7 +118,7 @@ fig_by_dir = {d["dir"]: d["figures"] for d in res.get("figures", [])}
 dir_for_unit = {u["key"]: u["fig_dir"] for u in manifest}
 
 idx = ["# Типографская вычитка — свежий проход\n",
-       f"Книга: 381 печатная страница, рендер 150 DPI. Свод: {len(records)} находок "
+       f"Книга: {max(u['last_page'] for u in manifest)} стр. (B5), рендер 150 DPI. Свод: {len(records)} находок "
        f"({sum(1 for r in records if r['severity']=='high')} high / "
        f"{sum(1 for r in records if r['severity']=='medium')} medium / "
        f"{sum(1 for r in records if r['severity']=='low')} low). "
