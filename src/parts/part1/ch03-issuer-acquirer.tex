@@ -33,7 +33,7 @@
 антифроду и~разбору диспутов.
 
 На~этапе персонализации на~карту загружаются апплет EMV
-(Europay/Mastercard/Visa, спецификация чиповых карт), ключи эмитента IMK
+(Europay/\allowbreak Mastercard/\allowbreak Visa, спецификация чиповых карт), ключи эмитента IMK
 (Issuer Master Key, мастер-ключ эмитента), параметры управления риском эмитента
 (IAC, Issuer Action Codes, и~прикладные офлайн-лимиты~--- последовательных
 операций и~кумулятивной суммы), а~также данные платёжного приложения AID
@@ -93,7 +93,7 @@ Funds, \texttt{05} Do Not Honor или \texttt{14} Invalid Card Number,
 (Risk-Based Authentication, аутентификация на~основе оценки риска);
 см.~главу~\ref{ch:3ds}.
 
-\needspace{6\baselineskip}
+\needspace{4\baselineskip}
 \subsection*{Управление токенами}
 
 После выпуска карты её реквизиты живут на~пластике, в~телефоне, в~браузере
@@ -104,7 +104,7 @@ Funds, \texttt{05} Do Not Honor или \texttt{14} Invalid Card Number,
 принимает решение об~одобрении после процедуры ID\&V (Identification \&
 Verification, идентификация и~верификация) держателя, а~затем управляет
 состоянием токена~--- активирует, приостанавливает или
-удаляет~\cite{emvco-payment-tokenisation}.\footnote{\cite{visa-vts,nspk-tsp}.}
+удаляет~\cite{emvco-payment-tokenisation,visa-vts,nspk-tsp}.
 
 Токен остаётся связанным с~исходной картой. Если держатель блокирует карту,
 эмитент обязан приостановить и~связанные с~ней токены. Если карта перевыпущена,
@@ -122,7 +122,7 @@ Verification, идентификация и~верификация) держат
   средств держателю по~правилам карточной сети с~переносом ответственности
 на~эквайера и~ТСП) через карточную сеть, направляя его эквайеру; жизненный цикл
 диспута разобран
-в~разделе~\ref{sec:disputes-lifecycle}~\cite{visa-core-rules}.\footnote{\cite{mc-chargeback-guide,visa-vcr-merchants}.}
+в~разделе~\ref{sec:disputes-lifecycle}~\cite{visa-core-rules,mc-chargeback-guide,visa-vcr-merchants}.
 
 Приняв обращение и~отнеся его к~подходящему классу, эмитент сопоставляет
 ситуацию с~правилами сети: есть ли подходящий код причины, не~пропущены ли
@@ -132,9 +132,9 @@ Verification, идентификация и~верификация) держат
 (компенсирующие свидетельства~--- набор документов, подтверждающих легитимность
 операции), эмитент решает, принять объяснение или идти дальше,
 к~\textit{pre-arbitration} (досудебная стадия спора между эмитентом и~эквайером
-перед арбитражем сети)~\cite{visa-core-rules}.\footnote{\cite{mc-chargeback-guide,visa-vcr-merchants}.}
+перед арбитражем сети)~\cite{visa-core-rules,mc-chargeback-guide,visa-vcr-merchants}.
 
-\needspace{6\baselineskip}
+\needspace{4\baselineskip}
 \section{Эквайер}\label{sec:ia-acquirer}
 
 \highlight{Эквайер (acquirer) подключает терминал или платёжный шлюз,
@@ -234,7 +234,7 @@ VAMP (Visa Acquirer Monitoring Program) и~MC~ECP (Mastercard Excessive
 Chargeback Program)~---
 в~разделе~\ref{sec:disputes-monitoring}~\cite{visa-vamp-intro,mc-tpr}.
 
-\needspace{6\baselineskip}
+\needspace{4\baselineskip}
 \subsection*{Ответственность за расчёт}
 
 Для продавца эквайринг заканчивается в~момент поступления денег. Эквайер
