@@ -7,47 +7,47 @@
 
 <!-- Header swimlanes -->
 <rect x="50" y="14" width="160" height="38" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="130" y="39" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="bold" fill="#1A2030">Клиент</text>
+<text x="130" y="39" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Клиент</text>
 
 <rect x="510" y="14" width="180" height="38" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="600" y="39" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="bold" fill="#1A2030">BNPL-провайдер</text>
+<text x="600" y="39" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">BNPL-провайдер</text>
 
 <!-- Lifelines -->
 <line x1="130" y1="52" x2="130" y2="370" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 <line x1="600" y1="52" x2="600" y2="370" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 
 <!-- Header for markers column -->
-<text x="48" y="86" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#5C647A">момент</text>
-<text x="48" y="100" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">/ доля</text>
+<text x="48" y="86" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">момент</text>
+<text x="48" y="100" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">/ доля</text>
 
-<text x="703" y="86" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#5C647A">маркер</text>
-<text x="703" y="100" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">авторизации</text>
+<text x="703" y="86" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">маркер</text>
+<text x="703" y="100" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">авторизации</text>
 
 <!-- Installment 1 (CIT) -->
-<text x="48" y="140" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">T0</text>
+<text x="48" y="140" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">T0</text>
 <line x1="600" y1="156" x2="130" y2="156" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="365" y="148" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">списание 1/4 (25 %)</text>
+<text x="365" y="148" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">списание 1/4 (25 %)</text>
 <rect x="650" y="146" width="40" height="20" fill="#E8ECF7"/>
 <text x="670" y="161" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">CIT</text>
 
 <!-- Installment 2 (MIT) -->
-<text x="48" y="200" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">T+14 дн</text>
+<text x="48" y="200" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">T+14 дн</text>
 <line x1="600" y1="216" x2="130" y2="216" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="365" y="208" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">списание 2/4 (25 %)</text>
+<text x="365" y="208" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">списание 2/4 (25 %)</text>
 <text x="688" y="212" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIT</text>
 <text x="688" y="226" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">NTID / Trace ID ref</text>
 
 <!-- Installment 3 (MIT) -->
-<text x="48" y="252" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">T+28 дн</text>
+<text x="48" y="252" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">T+28 дн</text>
 <line x1="600" y1="268" x2="130" y2="268" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="365" y="260" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">списание 3/4 (25 %)</text>
+<text x="365" y="260" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">списание 3/4 (25 %)</text>
 <text x="688" y="264" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIT</text>
 <text x="688" y="278" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">NTID / Trace ID ref</text>
 
 <!-- Installment 4 (MIT) -->
-<text x="48" y="304" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">T+42 дн</text>
+<text x="48" y="304" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">T+42 дн</text>
 <line x1="600" y1="320" x2="130" y2="320" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="365" y="312" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">списание 4/4 (25 %)</text>
+<text x="365" y="312" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">списание 4/4 (25 %)</text>
 <text x="688" y="316" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIT</text>
 <text x="688" y="330" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#5C647A">NTID / Trace ID ref</text>
 

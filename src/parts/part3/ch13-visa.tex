@@ -289,16 +289,16 @@ Direct: дебет \textbf{ACH} (Automated Clearing House~--- американс
 межбанковских расчётов с~отложенным неттингом) или иной банковский перевод.
 Такие сценарии не~оформляются как AFT и~подключаются по~отдельным программам.
 
-Клиринг по~AFT и~OCT передаётся отдельным потоком через BASE~II в~формате
-TC~33.A~--- пакетном клиринговом файле Visa~\cite{visa-tc33a-capture-file};
-схема на~рис.~\ref{fig:visa-direct-flow} отображает только авторизационный трек
-V.I.P.~System.
-
 \begin{figure}[!ht]
   \centering
   \includefiguresvg[width=\linewidth]{assets/figures/ch13-visa/visa-direct-flow}
   \caption{Типовой поток Visa Direct: AFT и~OCT.}\label{fig:visa-direct-flow}
 \end{figure}
+
+Клиринг по~AFT и~OCT передаётся отдельным потоком через BASE~II в~формате
+TC~33.A~--- пакетном клиринговом файле Visa~\cite{visa-tc33a-capture-file};
+схема на~рис.~\ref{fig:visa-direct-flow} отображает только авторизационный трек
+V.I.P.~System.
 
 Платформа выплат перед запуском фиксирует четыре параметра: кто финансирует
 AFT, какой SLA (\textit{service-level agreement}, формальное соглашение

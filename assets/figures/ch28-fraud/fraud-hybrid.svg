@@ -10,14 +10,14 @@
 <rect x="228" y="40" width="592" height="360" fill="#B8821C" fill-opacity="0.18"/>
 
 <!-- Grid lines -->
-<line x1="80" y1="40" x2="80" y2="400" stroke="#1A2030" stroke-width="1.2"/>
-<line x1="80" y1="400" x2="820" y2="400" stroke="#1A2030" stroke-width="1.2"/>
-<line x1="228" y1="40" x2="228" y2="400" stroke="#E8ECF7" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="450" y1="40" x2="450" y2="400" stroke="#E8ECF7" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="80" y1="310" x2="820" y2="310" stroke="#E8ECF7" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="80" y1="220" x2="820" y2="220" stroke="#E8ECF7" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="80" y1="130" x2="820" y2="130" stroke="#E8ECF7" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="80" y1="40" x2="820" y2="40" stroke="#E8ECF7" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="80" y1="40" x2="80" y2="400" stroke="#5C647A" stroke-width="1"/>
+<line x1="80" y1="400" x2="820" y2="400" stroke="#5C647A" stroke-width="1"/>
+<line x1="228" y1="40" x2="228" y2="400" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="450" y1="40" x2="450" y2="400" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="80" y1="310" x2="820" y2="310" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="80" y1="220" x2="820" y2="220" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="80" y1="130" x2="820" y2="130" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="80" y1="40" x2="820" y2="40" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 
 <!-- Y-axis ticks/labels -->
 <text x="74" y="404" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">0%</text>
@@ -33,8 +33,8 @@
 <text x="820" y="418" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">10%</text>
 
 <!-- Axis titles -->
-<text x="450" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">FPR</text>
-<text x="22" y="220" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030" transform="rotate(-90 22 220)">TPR</text>
+<text x="450" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">FPR</text>
+<text x="22" y="220" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030" transform="rotate(-90 22 220)">TPR</text>
 
 <!-- Random classifier diagonal: TPR=FPR; at FPR=10%, TPR=10% → y=400-0.10*360=364 -->
 <line x1="80" y1="400" x2="820" y2="364" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
@@ -48,28 +48,28 @@
 
 <!-- Working point @75 (Block) -->
 <circle cx="117" cy="148" r="7" fill="#C15462" stroke="#FFFFFF" stroke-width="2"/>
-<text x="130" y="138" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">порог 75</text>
+<text x="130" y="138" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">порог 75</text>
 <text x="130" y="154" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">TPR 70%, FPR 0,5%</text>
 
 <!-- Working point @65 (3DS step-up) -->
 <circle cx="228" cy="84" r="7" fill="#B8821C" stroke="#FFFFFF" stroke-width="2"/>
-<text x="240" y="74" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">порог 65</text>
+<text x="240" y="74" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">порог 65</text>
 <text x="240" y="90" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">TPR 88%, FPR 2%</text>
 
-<!-- Arrow connecting two points -->
-<line x1="125" y1="140" x2="222" y2="92" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<!-- Arrow connecting two points: threshold transition 75 -> 65 -->
+<line x1="125" y1="140" x2="222" y2="92" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
 
 <!-- ====== Three action plates below the plot: y=460..520 ====== -->
 
-<rect x="80" y="460" width="240" height="60" rx="8" fill="#C15462" fill-opacity="0.18" stroke="#C15462" stroke-width="2"/>
-<text x="200" y="486" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">Block</text>
+<rect x="80" y="460" width="240" height="60" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
+<text x="200" y="486" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Block</text>
 <text x="200" y="504" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">score ≥ 75</text>
 
 <rect x="330" y="460" width="240" height="60" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="450" y="486" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">3DS step-up</text>
+<text x="450" y="486" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">3DS step-up</text>
 <text x="450" y="504" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">65 ≤ score &lt; 75</text>
 
-<rect x="580" y="460" width="240" height="60" rx="8" fill="#2F8B67" fill-opacity="0.18" stroke="#2F8B67" stroke-width="2"/>
-<text x="700" y="486" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">Pass</text>
+<rect x="580" y="460" width="240" height="60" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="700" y="486" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Pass</text>
 <text x="700" y="504" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5C647A">score &lt; 65</text>
 </svg>

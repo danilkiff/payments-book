@@ -587,7 +587,7 @@ of Service Entry Mode)~--- способ ввода данных карты
 
 Ответ эмитента проходит обратный путь. DE~39 (Response Code), двухсимвольный
 код, шлюз транслирует в~JSON-поле \texttt{status} со~значениями
-\texttt{succeeded}, \texttt{declined}, \path{requires_action} и~дополняет
+\texttt{succeeded}, \texttt{declined}, \mbox{\path{requires_action}} и~дополняет
 текстовым описанием. Шлюз \emph{теряет} часть информации: ISO~8583
 различает десятки причин отказа (\texttt{05}~Do Not Honor,
 \texttt{51}~Insufficient Funds, \texttt{61}~Exceeds Withdrawal Limit), тогда

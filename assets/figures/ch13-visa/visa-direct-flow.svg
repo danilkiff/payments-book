@@ -24,10 +24,10 @@
 <!-- ===== Секция A: AFT (debit отправителя) ===== -->
 <text x="10" y="78" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">A. AFT — авторизация дебета отправителя</text>
 
-<!-- Lifelines секции A (верхний сегмент: до разрыва) -->
-<line x1="65" y1="84" x2="65" y2="148" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="280" y1="84" x2="280" y2="148" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="490" y1="84" x2="490" y2="148" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<!-- Lifelines: непрерывные вертикали от заголовков актёров до низа -->
+<line x1="65" y1="66" x2="65" y2="256" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="280" y1="66" x2="280" y2="256" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+<line x1="490" y1="66" x2="490" y2="256" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 
 <!-- AFT 0100: эквайер -> VisaNet -->
 <line x1="67" y1="100" x2="278" y2="100" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
@@ -37,13 +37,11 @@
 <line x1="278" y1="130" x2="67" y2="130" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
 <text x="172" y="124" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Ответ AFT 0110 — авторизация OK</text>
 
+<!-- Разделитель секций A / B поверх непрерывных жизней -->
+<line x1="20" y1="152" x2="540" y2="152" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
+
 <!-- ===== Секция B: OCT (кредит получателю) ===== -->
 <text x="10" y="166" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">B. OCT — перевод средств на карту получателя</text>
-
-<!-- Lifelines секции B -->
-<line x1="65" y1="172" x2="65" y2="228" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="280" y1="172" x2="280" y2="228" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="490" y1="172" x2="490" y2="228" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
 
 <!-- OCT 0200 VisaNet -> Эмитент -->
 <line x1="282" y1="188" x2="488" y2="188" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
@@ -56,7 +54,7 @@
 <!-- Уведомление эмитента получателю -->
 <line x1="490" y1="236" x2="490" y2="256" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
 <text x="500" y="248" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">T+минуты</text>
-<rect x="410" y="256" width="160" height="22" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
+<rect x="420" y="256" width="140" height="22" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
 <text x="490" y="271" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">уведомление получателю</text>
 
 </svg>

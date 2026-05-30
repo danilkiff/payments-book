@@ -3,11 +3,8 @@
    viewBox="0 0 620 290"
    width="620"
    height="290"
-   version="1.1"
-   id="svg30"
    xmlns="http://www.w3.org/2000/svg">
-  <defs
-     id="defs8">
+  <defs>
     <marker
        id="arr-Muted"
        viewBox="0 0 10 10"
@@ -18,8 +15,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
-         id="path1" />
+         fill="#5C647A" />
     </marker>
     <marker
        id="arr-Muted-s"
@@ -31,8 +27,7 @@
        orient="auto">
       <path
          d="M 10,0 0,5 10,10 Z"
-         fill="#5c647a"
-         id="path2" />
+         fill="#5C647A" />
     </marker>
     <marker
        id="arr-Good"
@@ -44,8 +39,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#2f8b67"
-         id="path3" />
+         fill="#2F8B67" />
     </marker>
     <marker
        id="arr-Good-s"
@@ -57,8 +51,7 @@
        orient="auto">
       <path
          d="M 10,0 0,5 10,10 Z"
-         fill="#2f8b67"
-         id="path4" />
+         fill="#2F8B67" />
     </marker>
     <marker
        id="arr-Bad"
@@ -70,8 +63,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#c15462"
-         id="path5" />
+         fill="#C15462" />
     </marker>
     <marker
        id="arr-Bad-s"
@@ -83,8 +75,7 @@
        orient="auto">
       <path
          d="M 10,0 0,5 10,10 Z"
-         fill="#c15462"
-         id="path6" />
+         fill="#C15462" />
     </marker>
     <marker
        id="arr-AccentA"
@@ -96,8 +87,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#4e63d9"
-         id="path7" />
+         fill="#4E63D9" />
     </marker>
     <marker
        id="arr-AccentA-s"
@@ -109,8 +99,7 @@
        orient="auto">
       <path
          d="M 10,0 0,5 10,10 Z"
-         fill="#4e63d9"
-         id="path8" />
+         fill="#4E63D9" />
     </marker>
   </defs>
   <!-- Axes header -->
@@ -120,8 +109,7 @@
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
-     fill="#5c647a"
-     id="text9">Категории квалификации (применяются одновременно):</text>
+     fill="#5C647A">Категории квалификации (применяются одновременно):</text>
   <!-- 5 parallel axes as columns -->
   <rect
      x="9.7303953"
@@ -129,153 +117,136 @@
      width="110"
      height="44"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="2"
-     id="rect9" />
+     stroke="#4E63D9"
+     stroke-width="2" />
   <text
      x="64.730392"
      y="43.273491"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#1a2030"
-     id="text10">Регион</text>
+     fill="#1A2030">Регион</text>
   <text
      x="64.730392"
      y="58.273491"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#5c647a"
-     id="text11">US / EU / IC</text>
+     fill="#5C647A">US / EU / IC</text>
   <rect
      x="129.73039"
      y="25.273493"
      width="110"
      height="44"
      rx="8"
-     fill="#7759d6"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#7759d6"
-     stroke-width="2"
-     id="rect11" />
+     stroke="#4E63D9"
+     stroke-width="2" />
   <text
      x="184.73039"
      y="43.273491"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#1a2030"
-     id="text12">Продукт</text>
+     fill="#1A2030">Продукт</text>
   <text
      x="184.73039"
      y="58.273491"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#5c647a"
-     id="text13">Consumer / WE / Comm.</text>
+     fill="#5C647A">Consumer / WE / Comm.</text>
   <rect
      x="249.73039"
      y="25.273493"
      width="110"
      height="44"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="2"
-     id="rect13" />
+     stroke="#4E63D9"
+     stroke-width="2" />
   <text
      x="304.73041"
      y="43.273491"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#1a2030"
-     id="text14">MCC</text>
+     fill="#1A2030">MCC</text>
   <text
      x="304.73041"
      y="58.273491"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#5c647a"
-     id="text15">grocery / fuel / T&amp;E ...</text>
+     fill="#5C647A">grocery / fuel / T&amp;E ...</text>
   <rect
      x="369.73041"
      y="25.273493"
      width="110"
      height="44"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="2"
-     id="rect15" />
+     stroke="#4E63D9"
+     stroke-width="2" />
   <text
      x="424.73041"
      y="43.273491"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#1a2030"
-     id="text16">Режим ввода POS</text>
+     fill="#1A2030">Режим ввода POS</text>
   <text
      x="424.73041"
      y="58.273491"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#5c647a"
-     id="text17">CP / CNP / Contactless</text>
+     fill="#5C647A">CP / CNP / Contactless</text>
   <rect
      x="489.73041"
      y="25.273493"
      width="110"
      height="44"
      rx="8"
-     fill="#b8821c"
+     fill="#B8821C"
      fill-opacity="0.18"
-     stroke="#b8821c"
-     stroke-width="2"
-     id="rect17" />
+     stroke="#B8821C"
+     stroke-width="2" />
   <text
      x="544.73041"
      y="43.273491"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#1a2030"
-     id="text18">Качество данных</text>
+     fill="#1A2030">Качество данных</text>
   <text
      x="544.73041"
      y="58.273491"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#5c647a"
-     id="text19">на сигналах</text>
+     fill="#5C647A">на сигналах</text>
   <!-- Combined evaluation arrow down -->
   <line
      x1="300.89102"
      y1="74.88662"
      x2="300.89102"
      y2="106.73172"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="2"
-     marker-end="url(#arr-Muted)"
-     id="line19" />
+     marker-end="url(#arr-Muted)" />
   <text
      x="313.46503"
      y="93.351646"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#5c647a"
-     id="text20">комбинированная оценка</text>
+     fill="#5C647A">комбинированная оценка</text>
   <!-- Combined eval box -->
   <rect
      x="175.76112"
@@ -283,66 +254,57 @@
      width="260"
      height="40"
      rx="8"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
-     stroke-width="2"
-     id="rect20" />
+     stroke="#7759D6"
+     stroke-width="2" />
   <text
      x="305.76114"
      y="127.12395"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#1a2030"
-     id="text21">Подбор программы interchange</text>
+     fill="#1A2030">Подбор программы interchange</text>
   <text
      x="305.76114"
      y="141.12395"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#5c647a"
-     id="text22">region × product × MCC × channel × signals × token</text>
+     fill="#5C647A">region x product x MCC x channel x signals x token</text>
   <!-- OK and downgrade branches -->
   <line
      x1="235.76112"
      y1="149.12395"
      x2="175.76112"
      y2="182.12395"
-     stroke="#2f8b67"
+     stroke="#2F8B67"
      stroke-width="1.5"
-     marker-end="url(#arr-Good)"
-     id="line22" />
+     marker-end="url(#arr-Good)" />
   <text
      x="228.79871"
      y="167.67154"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#1a2030"
-     id="text23">OK</text>
+     fill="#1A2030">OK</text>
   <line
      x1="375.76114"
      y1="149.12395"
      x2="435.76114"
      y2="182.12395"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="1.5"
-     marker-end="url(#arr-Bad)"
-     id="line23" />
+     marker-end="url(#arr-Bad)" />
   <text
      x="359.93295"
      y="164.01552"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#1a2030"
-     id="text24"><tspan
-       id="tspan30"
+     fill="#1A2030"><tspan
        x="359.93295"
        y="164.01552">сигналы</tspan><tspan
-       id="tspan31"
        x="359.93295"
        y="175.26552">ниже порога</tspan></text>
   <!-- Qualified Rate box -->
@@ -352,19 +314,17 @@
      width="280"
      height="60"
      rx="8"
-     fill="#2f8b67"
+     fill="#2F8B67"
      fill-opacity="0.15"
-     stroke="#2f8b67"
-     stroke-width="2"
-     id="rect24" />
+     stroke="#2F8B67"
+     stroke-width="2" />
   <text
      x="155.76112"
      y="217.12395"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
-     fill="#1a2030"
-     id="text25">Qualified Rate</text>
+     fill="#1A2030">Qualified Rate</text>
   <!-- Stepped Downgrade -->
   <rect
      x="315.64798"
@@ -372,11 +332,10 @@
      width="290.22632"
      height="94.305923"
      rx="8.0062428"
-     fill="#c15462"
+     fill="#C15462"
      fill-opacity="0.15"
-     stroke="#c15462"
-     stroke-width="1.5"
-     id="rect25" />
+     stroke="#C15462"
+     stroke-width="1.5" />
   <text
      x="460.76114"
      y="199.12395"
@@ -384,47 +343,41 @@
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      font-weight="bold"
-     fill="#1a2030"
-     id="text26">Downgrade (ступенчатая категория)</text>
+     fill="#1A2030">Downgrade (ступенчатая категория)</text>
   <line
      x1="330.76114"
      y1="209.12395"
      x2="590.76117"
      y2="209.12395"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="1"
-     stroke-dasharray="6,3"
-     id="line26" />
+     stroke-dasharray="6,3" />
   <text
      x="330.76114"
      y="225.12395"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#1a2030"
-     id="text27">— Mid-Qualified</text>
+     fill="#1A2030">— Mid-Qualified</text>
   <text
      x="330.76114"
      y="239.12395"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#1a2030"
-     id="text28">— EIRF (Electronic Interchange Reimbursement Fee)</text>
+     fill="#1A2030">— EIRF (Electronic Interchange Reimbursement Fee)</text>
   <text
      x="330.76114"
      y="253.12395"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#1a2030"
-     id="text29">— Standard Rate</text>
+     fill="#1A2030">— Standard Rate</text>
   <text
      x="330.76114"
      y="267.12393"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9"
-     fill="#1a2030"
-     id="text30">— Non-Qualified</text>
+     fill="#1A2030">— Non-Qualified</text>
 </svg>

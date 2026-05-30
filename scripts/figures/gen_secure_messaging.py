@@ -38,9 +38,11 @@ lines = svg_header(VIEW_W, VIEW_H)
 x = STRIP_X
 box_x = {}
 for top, bottom, w, color in BOXES:
+  # Warn (жёлтый) на белом фоне иначе пропадает -- канон требует 0.18.
+  fill_opacity = {WARN: "0.18"}.get(color, "0.15")
   lines.append(
     f'<rect x="{x}" y="{STRIP_Y}" width="{w}" height="{BOX_H}" '
-    f'fill="{color}" fill-opacity="0.15" stroke="{MUTED}" stroke-width="0.5"/>'
+    f'fill="{color}" fill-opacity="{fill_opacity}" stroke="{MUTED}" stroke-width="0.5"/>'
   )
   lines.append(t(x + w / 2, STRIP_Y + 20, top, size=11, fill=INK, weight="bold"))
   lines.append(t(x + w / 2, STRIP_Y + BOX_H + 13, bottom, size=9, fill=MUTED))

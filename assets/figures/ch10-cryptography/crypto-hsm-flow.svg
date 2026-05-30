@@ -11,7 +11,7 @@
 <text x="270" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Терминал</text>
 
 <line x1="270" y1="80" x2="270" y2="120" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="278" y="100" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">1. ARQC + PIN-блок (TPK)</text>
+<text x="278" y="100" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">ARQC + PIN-блок (TPK)</text>
 
 <rect x="170" y="120" width="200" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
 <text x="270" y="144" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Эквайер</text>
@@ -29,10 +29,10 @@
 <text x="270" y="304" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Хост эмитента</text>
 
 <line x1="255" y1="320" x2="255" y2="370" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="248" y="350" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">3. ARQC</text>
+<text x="248" y="350" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">ARQC</text>
 
 <line x1="285" y1="370" x2="285" y2="320" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="292" y="350" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">4. ARPC</text>
+<text x="292" y="350" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">ARPC</text>
 
 <!-- HSM ЭМИТЕНТА (central bottom) -->
 <rect x="140" y="370" width="260" height="100" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2" stroke-dasharray="6,3"/>

@@ -19,7 +19,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
+         fill="#5C647A"
          id="path1" />
     </marker>
     <marker
@@ -32,7 +32,7 @@
        orient="auto">
       <path
          d="M 10,0 0,5 10,10 Z"
-         fill="#5c647a"
+         fill="#5C647A"
          id="path2" />
     </marker>
   </defs>
@@ -43,9 +43,9 @@
      width="130"
      height="50"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect2" />
   <text
@@ -55,7 +55,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text2">Покупатель</text>
   <text
      x="110"
@@ -63,7 +63,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text3">браузер, аккаунт ТСП</text>
   <rect
      x="235"
@@ -71,9 +71,9 @@
      width="130"
      height="50"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect3" />
   <text
@@ -83,7 +83,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text4">Сайт продавца</text>
   <text
      x="300"
@@ -91,7 +91,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text5">checkout, корзина, CoF</text>
   <rect
      x="425"
@@ -99,9 +99,9 @@
      width="130"
      height="50"
      rx="8"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="2"
      id="rect5" />
   <text
@@ -111,7 +111,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text6">PSP</text>
   <text
      x="490"
@@ -119,7 +119,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text7">API, vault, антифрод</text>
   <rect
      x="615"
@@ -127,9 +127,9 @@
      width="130"
      height="50"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect7" />
   <text
@@ -139,7 +139,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text8">Эмитент</text>
   <text
      x="680"
@@ -147,7 +147,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text9">авторизация, ACS</text>
   <!-- TLS request/response arrows -->
   <line
@@ -155,7 +155,7 @@
      y1="40"
      x2="235"
      y2="40"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
      marker-end="url(#arr-Muted)"
      id="line9" />
@@ -164,7 +164,7 @@
      y1="53"
      x2="175"
      y2="53"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
      marker-end="url(#arr-Muted)"
      id="line10" />
@@ -173,7 +173,7 @@
      y1="40"
      x2="425"
      y2="40"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
      marker-end="url(#arr-Muted)"
      id="line11" />
@@ -182,7 +182,7 @@
      y1="53"
      x2="365"
      y2="53"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
      marker-end="url(#arr-Muted)"
      id="line12" />
@@ -191,7 +191,7 @@
      y1="40"
      x2="615"
      y2="40"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
      marker-end="url(#arr-Muted)"
      id="line13" />
@@ -200,7 +200,7 @@
      y1="53"
      x2="555"
      y2="53"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
      marker-end="url(#arr-Muted)"
      id="line14" />
@@ -209,7 +209,7 @@
      cx="205"
      cy="85"
      r="11"
-     fill="#c15462"
+     fill="#C15462"
      id="circle14" />
   <text
      x="205"
@@ -224,7 +224,7 @@
      cx="300"
      cy="85"
      r="11"
-     fill="#c15462"
+     fill="#C15462"
      id="circle15" />
   <text
      x="300"
@@ -239,7 +239,7 @@
      cx="395"
      cy="85"
      r="11"
-     fill="#c15462"
+     fill="#C15462"
      id="circle16" />
   <text
      x="395"
@@ -254,7 +254,7 @@
      cx="490"
      cy="85"
      r="11"
-     fill="#c15462"
+     fill="#C15462"
      id="circle17" />
   <text
      x="490"
@@ -269,7 +269,7 @@
      cx="585"
      cy="85"
      r="11"
-     fill="#c15462"
+     fill="#C15462"
      id="circle18" />
   <text
      x="585"
@@ -286,7 +286,7 @@
      y1="96"
      x2="87"
      y2="130"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="1"
      stroke-dasharray="6,3"
      id="line18" />
@@ -295,7 +295,7 @@
      y1="96"
      x2="249"
      y2="130"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="1"
      stroke-dasharray="6,3"
      id="line19" />
@@ -304,7 +304,7 @@
      y1="96"
      x2="411"
      y2="130"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="1"
      stroke-dasharray="6,3"
      id="line20" />
@@ -313,7 +313,7 @@
      y1="96"
      x2="575"
      y2="130"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="1"
      stroke-dasharray="6,3"
      id="line21" />
@@ -322,7 +322,7 @@
      y1="96"
      x2="737"
      y2="130"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="1"
      stroke-dasharray="6,3"
      id="line22" />
@@ -333,8 +333,8 @@
      width="135"
      height="40"
      rx="6"
-     fill="#f5f7fd"
-     stroke="#c15462"
+     fill="#F5F7FD"
+     stroke="#C15462"
      stroke-width="1.5"
      id="rect22" />
   <text
@@ -344,7 +344,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text22">1 · Фишинг</text>
   <rect
      x="182"
@@ -352,8 +352,8 @@
      width="135"
      height="40"
      rx="6"
-     fill="#f5f7fd"
-     stroke="#c15462"
+     fill="#F5F7FD"
+     stroke="#C15462"
      stroke-width="1.5"
      id="rect23" />
   <text
@@ -363,7 +363,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text23">2 · Magecart</text>
   <rect
      x="344"
@@ -371,8 +371,8 @@
      width="135"
      height="40"
      rx="6"
-     fill="#f5f7fd"
-     stroke="#c15462"
+     fill="#F5F7FD"
+     stroke="#C15462"
      stroke-width="1.5"
      id="rect24" />
   <text
@@ -382,7 +382,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text24">3 · Card testing</text>
   <rect
      x="508"
@@ -390,8 +390,8 @@
      width="135"
      height="40"
      rx="6"
-     fill="#f5f7fd"
-     stroke="#c15462"
+     fill="#F5F7FD"
+     stroke="#C15462"
      stroke-width="1.5"
      id="rect25" />
   <text
@@ -401,7 +401,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text25">4 · ATO + CoF</text>
   <rect
      x="670"
@@ -409,8 +409,8 @@
      width="135"
      height="40"
      rx="6"
-     fill="#f5f7fd"
-     stroke="#c15462"
+     fill="#F5F7FD"
+     stroke="#C15462"
      stroke-width="1.5"
      id="rect26" />
   <text
@@ -420,7 +420,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text26">5 · AVS-обход / fullz</text>
   <!-- 3DS effect badges per column -->
   <rect
@@ -429,9 +429,9 @@
      width="135"
      height="40"
      rx="6"
-     fill="#b8821c"
+     fill="#B8821C"
      fill-opacity="0.18"
-     stroke="#b8821c"
+     stroke="#B8821C"
      stroke-width="1.5"
      id="rect27" />
   <text
@@ -441,7 +441,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text27">закрывает частично</text>
   <rect
      x="182"
@@ -449,9 +449,9 @@
      width="135"
      height="40"
      rx="6"
-     fill="#c15462"
+     fill="#C15462"
      fill-opacity="0.15"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="1.5"
      id="rect28" />
   <text
@@ -461,7 +461,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text28">не закрывает</text>
   <rect
      x="344"
@@ -469,9 +469,9 @@
      width="135"
      height="40"
      rx="6"
-     fill="#2f8b67"
+     fill="#2F8B67"
      fill-opacity="0.15"
-     stroke="#2f8b67"
+     stroke="#2F8B67"
      stroke-width="1.5"
      id="rect29" />
   <text
@@ -481,7 +481,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text29">закрывает</text>
   <rect
      x="508"
@@ -489,9 +489,9 @@
      width="135"
      height="40"
      rx="6"
-     fill="#2f8b67"
+     fill="#2F8B67"
      fill-opacity="0.15"
-     stroke="#2f8b67"
+     stroke="#2F8B67"
      stroke-width="1.5"
      id="rect30" />
   <text
@@ -501,7 +501,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text30">закрывает</text>
   <rect
      x="670"
@@ -509,9 +509,9 @@
      width="135"
      height="40"
      rx="6"
-     fill="#2f8b67"
+     fill="#2F8B67"
      fill-opacity="0.15"
-     stroke="#2f8b67"
+     stroke="#2F8B67"
      stroke-width="1.5"
      id="rect31" />
   <text
@@ -521,7 +521,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text31">закрывает</text>
   <!-- BOTTOM LEGEND -->
 </svg>

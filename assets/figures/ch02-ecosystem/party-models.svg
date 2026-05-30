@@ -51,13 +51,13 @@
 <line x1="595" y1="102" x2="645" y2="102" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
 <text x="620" y="95" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">покупка</text>
 
-<rect x="490" y="225" width="260" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="620" y="256" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">American Express</text>
+<rect x="490" y="265" width="260" height="50" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="620" y="296" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">American Express</text>
 
-<line x1="523" y1="125" x2="555" y2="225" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<text x="525" y="177" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">карта, счёт</text>
+<line x1="523" y1="125" x2="568" y2="265" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<text x="525" y="195" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">карта, счёт</text>
 
-<line x1="718" y1="125" x2="685" y2="225" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
-<text x="715" y="177" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">приём, расчёт</text>
+<line x1="718" y1="125" x2="672" y2="265" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted-s)"/>
+<text x="715" y="195" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">приём, расчёт</text>
 
 </svg>

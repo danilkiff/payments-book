@@ -12,7 +12,7 @@
 <line x1="220" y1="54" x2="220" y2="250" stroke="#5C647A" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="6,3"/>
 <line x1="410" y1="54" x2="410" y2="250" stroke="#5C647A" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="6,3"/>
 <line x1="590" y1="54" x2="590" y2="250" stroke="#5C647A" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="6,3"/>
-<rect x="120" y="78" width="100" height="26" rx="6" fill="#2F8B67" fill-opacity="0.18" stroke="#2F8B67" stroke-width="2"/>
+<rect x="120" y="78" width="100" height="26" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
 <text x="170.0" y="95.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">MTI 0400 / 0420</text>
 <text x="108" y="91" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Отмена</text>
 <text x="108" y="104" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(reversal)</text>
@@ -20,7 +20,7 @@
 <text x="265.0" y="155.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">не MTI · cancel в API</text>
 <text x="108" y="151" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Аннулирование</text>
 <text x="108" y="164" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(void)</text>
-<rect x="410" y="198" width="330" height="26" rx="6" fill="#C15462" fill-opacity="0.18" stroke="#C15462" stroke-width="2"/>
+<rect x="410" y="198" width="330" height="26" rx="6" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
 <text x="575.0" y="215.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">новая транзакция</text>
 <text x="108" y="211" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Возврат</text>
 <text x="108" y="224" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(refund)</text>

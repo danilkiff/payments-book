@@ -51,6 +51,10 @@
 \DeclareCaptionLabelSeparator{emdash}{~--- }
 \captionsetup{labelsep=emdash}
 \usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+% Числовые диапазоны сжатых ссылок ([29–31]) — короткое тире.
+% Под babel-russian дефолтный \bibrangedash резолвится в длинное тире,
+% и диапазон визуально сливается с абзацными em-dash; канон требует en-dash.
+\renewcommand*{\bibrangedash}{\textendash}
 \usepackage[unicode]{hyperref}
 % Список источников: мелкий шрифт; URL не печатается отдельной строкой,
 % title кликабельный (href на url); note — серым с новой строки.
@@ -63,6 +67,25 @@
   \iffieldundef{url}{\mkbibquote{#1\isdot}}{\href{\thefield{url}}{\mkbibquote{#1\isdot}}}%
 }
 \DeclareFieldFormat{note}{}
+% DOI как обычный текст (PT Serif), а не моноширинный \nolinkurl: дефолтный
+% формат biblatex печатает DOI через \nolinkurl, который под xurl рвётся
+% после любого символа — год «1989» уезжал как «198»+«9». Печатаем DOI
+% телом текста и разрешаем перенос только после «.» и «/», поэтому
+% числовые группы (1989, 10478785) не разрываются.
+\makeatletter
+\newcommand*{\pmt@doitext}[1]{\pmt@doitext@scan#1\@nil}
+\def\pmt@doitext@scan#1{%
+  \ifx#1\@nil\else
+  #1%
+  \ifx#1.\allowbreak\else\ifx#1/\allowbreak\fi\fi
+  \expandafter\pmt@doitext@scan
+\fi}
+\DeclareFieldFormat{doi}{%
+  \mkbibacro{DOI}\addcolon\space
+  \ifhyperref
+  {\href{https://doi.org/#1}{\pmt@doitext{#1}}}
+{\pmt@doitext{#1}}}
+\makeatother
 % Записи с keyword=noauthor печатаются без author и без year
 % (для ФЗ — снимает тавтологии «Федеральное Собрание РФ. Федеральный
 % закон от...» и «в силе с DD.MM.YYYY. YYYY.», обе даты уже в title).

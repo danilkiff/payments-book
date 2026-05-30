@@ -20,7 +20,7 @@
 <text x="100" y="128" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">acquirer</text>
 
 <!-- MIP (left) -->
-<rect x="180" y="98" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.12" stroke="#5C647A" stroke-width="1.5"/>
+<rect x="180" y="98" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
 <text x="215" y="119" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIP</text>
 
 <!-- Authorization Platform (center) -->
@@ -30,7 +30,7 @@
 <text x="410" y="135" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">stand-in при недоступности эмитента</text>
 
 <!-- MIP (right) -->
-<rect x="570" y="98" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.12" stroke="#5C647A" stroke-width="1.5"/>
+<rect x="570" y="98" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
 <text x="605" y="119" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIP</text>
 
 <!-- Эмитент (right) -->
@@ -54,7 +54,7 @@
 <text x="100" y="254" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">acquirer</text>
 
 <!-- MIP (left, layer 2) -->
-<rect x="180" y="224" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.12" stroke="#5C647A" stroke-width="1.5"/>
+<rect x="180" y="224" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
 <text x="215" y="245" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIP</text>
 
 <!-- GCMS (center, layer 2) -->
@@ -64,7 +64,7 @@
 <text x="410" y="261" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">IPM-сообщения, пакетная обработка</text>
 
 <!-- MIP (right, layer 2) -->
-<rect x="570" y="224" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.12" stroke="#5C647A" stroke-width="1.5"/>
+<rect x="570" y="224" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
 <text x="605" y="245" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIP</text>
 
 <!-- Эмитент (right, layer 2) -->

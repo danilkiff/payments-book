@@ -50,11 +50,13 @@
 <line x1="485" y1="170" x2="693" y2="170" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 <text x="589" y="162" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">запрос ID&amp;V</text>
 
-<!-- Step 4: ID&V → решение эмитента (три ветви без пояснений) -->
+<!-- Step 4: ID&V → решение эмитента (Good одобрено / Warn условно / Bad отказ) -->
 <line x1="695" y1="200" x2="487" y2="200" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <line x1="695" y1="225" x2="487" y2="225" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 <line x1="695" y1="250" x2="487" y2="250" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
 <text x="591" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">ID&amp;V → решение эмитента</text>
+<text x="591" y="218" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">условно (доп. проверка)</text>
+<text x="591" y="243" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">отказ</text>
 
 <!-- Step 5: DPAN + keys как два отдельных артефакта -->
 <rect x="262" y="290" width="200" height="32" rx="6" fill="#F5F7FD" stroke="#4E63D9" stroke-width="1.5"/>

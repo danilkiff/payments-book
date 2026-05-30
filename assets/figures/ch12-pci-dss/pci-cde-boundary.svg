@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   viewBox="0 0 680 360"
-   width="680"
+   viewBox="161 2 380 360"
+   width="380"
    height="360"
    version="1.1"
    id="svg8"
@@ -15,46 +15,34 @@
      cy="182.14091"
      rx="180"
      ry="170"
-     fill="#e8ecf7"
-     stroke="#5c647a"
+     fill="#E8ECF7"
+     stroke="#5C647A"
      stroke-width="1"
      id="ellipse1" />
-  <!-- Среднее кольцо: единая зона in-scope-but-not-CDE (connected-to + security-impacting как перекрывающиеся подкатегории) -->
+  <!-- Среднее кольцо: единая зона in-scope-but-not-CDE (connected-to и security-impacting; строгого разделения нет, см. прозу) -->
   <ellipse
      cx="350.78986"
      cy="182.14091"
      rx="120"
      ry="115"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="1"
      stroke-dasharray="6,3"
      id="ellipse2" />
-  <!-- Полупрозрачная «бежевая» подсветка подкатегории connected-to, перекрывающаяся со security-impacting -->
-  <ellipse
-     cx="350.78986"
-     cy="182.14091"
-     rx="120"
-     ry="115"
-     fill="#b8821c"
-     fill-opacity="0.18"
-     stroke="none"
-     id="ellipse3"
-     style="stroke-width:2;stroke-dasharray:none" />
   <!-- CDE -->
   <ellipse
      cx="350.78986"
      cy="182.14091"
      rx="68"
      ry="58"
-     fill="#c15462"
+     fill="#C15462"
      fill-opacity="0.15"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="2"
      stroke-dasharray="6,3"
-     id="ellipse4"
-     style="stroke-dasharray:6,3;stroke-dashoffset:0" />
+     id="ellipse4" />
   <!-- Подписи зон -->
   <text
      x="352.65018"
@@ -63,17 +51,8 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text4">Вне области</text>
-  <text
-     x="349.20898"
-     y="327.16479"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1a2030"
-     id="text4-1">Вне области</text>
   <text
      x="355.62668"
      y="105.20891"
@@ -81,7 +60,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text5"
      dx="0.37206423"><tspan
        id="tspan10"
@@ -97,7 +76,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text6"><tspan
        id="tspan8"
        x="353.88077"
@@ -106,16 +85,14 @@
        x="353.88077"
        y="274.25458">(connected-to)</tspan></text>
   <text
-     x="417.03613"
-     y="156.34227"
+     x="350.78986"
+     y="187"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="34.7937px"
+     font-size="40px"
      font-weight="bold"
-     fill="#1a2030"
-     id="text7"
-     transform="scale(0.83598621,1.196192)"
-     style="stroke-width:3.16306">CDE</text>
+     fill="#1A2030"
+     id="text7">CDE</text>
   <!-- Пометка про запрет хранения SAD внутри CDE -->
   <rect
      x="318.38278"
@@ -124,11 +101,10 @@
      height="27.223038"
      rx="2.8922184"
      fill="#ffffff"
-     stroke="#c15462"
-     stroke-width="0.887327"
+     stroke="#C15462"
+     stroke-width="1"
      stroke-dasharray="6,3"
-     id="rect7"
-     style="stroke-width:1;stroke-dasharray:6,3;stroke-dashoffset:0" />
+     id="rect7" />
   <text
      x="350.78986"
      y="210.64091"
@@ -136,7 +112,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text8"><tspan
        id="tspan12"
        x="350.78986"

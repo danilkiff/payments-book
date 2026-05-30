@@ -20,7 +20,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
+         fill="#5C647A"
          id="path1" />
     </marker>
     <marker
@@ -33,7 +33,7 @@
        orient="auto">
       <path
          d="M 10,0 0,5 10,10 Z"
-         fill="#5c647a"
+         fill="#5C647A"
          id="path2" />
     </marker>
     <marker
@@ -46,7 +46,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#4e63d9"
+         fill="#4E63D9"
          id="path3" />
     </marker>
     <marker
@@ -59,7 +59,7 @@
        orient="auto">
       <path
          d="M 10,0 0,5 10,10 Z"
-         fill="#4e63d9"
+         fill="#4E63D9"
          id="path4" />
     </marker>
     <marker
@@ -72,86 +72,8 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#b8821c"
+         fill="#B8821C"
          id="path5" />
-    </marker>
-    <marker
-       id="arr-Muted-s-5"
-       viewBox="0 0 10 10"
-       refX="1"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 10,0 0,5 10,10 Z"
-         fill="#5c647a"
-         id="path2-2" />
-    </marker>
-    <marker
-       id="arr-Muted-2"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
-         id="path1-6" />
-    </marker>
-    <marker
-       id="arr-Muted-s-8"
-       viewBox="0 0 10 10"
-       refX="1"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 10,0 0,5 10,10 Z"
-         fill="#5c647a"
-         id="path2-4" />
-    </marker>
-    <marker
-       id="arr-Muted-1"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
-         id="path1-7" />
-    </marker>
-    <marker
-       id="arr-Muted-s-8-7"
-       viewBox="0 0 10 10"
-       refX="1"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 10,0 0,5 10,10 Z"
-         fill="#5c647a"
-         id="path2-4-7" />
-    </marker>
-    <marker
-       id="arr-Muted-1-4"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
-         id="path1-7-4" />
     </marker>
   </defs>
   <!-- Chip body -->
@@ -161,8 +83,8 @@
      width="670.18042"
      height="373.54977"
      rx="12.003232"
-     fill="#f5f7fd"
-     stroke="#5c647a"
+     fill="#F5F7FD"
+     stroke="#5C647A"
      stroke-width="1.3618"
      id="rect5" />
   <!-- =================== Contact pad ISO 7816 =================== -->
@@ -173,7 +95,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text6">Контактная площадка ISO 7816</text>
   <rect
      x="36.346825"
@@ -181,8 +103,8 @@
      width="140.1362"
      height="132.13469"
      rx="10.009728"
-     fill="#e8ecf7"
-     stroke="#5c647a"
+     fill="#E8ECF7"
+     stroke="#5C647A"
      stroke-width="1.5"
      id="rect6" />
   <rect
@@ -192,7 +114,7 @@
      height="24.309284"
      rx="3.0031986"
      fill="#ffffff"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="0.872052"
      id="rect7" />
   <text
@@ -201,7 +123,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text7">VCC</text>
   <rect
      x="108.41705"
@@ -210,7 +132,7 @@
      height="24.309284"
      rx="3.0031986"
      fill="#ffffff"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="0.872052"
      id="rect8" />
   <text
@@ -219,7 +141,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text8">GND</text>
   <rect
      x="46.350952"
@@ -228,7 +150,7 @@
      height="24.309284"
      rx="3.0031986"
      fill="#ffffff"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="0.872052"
      id="rect9" />
   <text
@@ -237,7 +159,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text9">RST</text>
   <rect
      x="108.41705"
@@ -246,7 +168,7 @@
      height="24.309284"
      rx="3.0031986"
      fill="#ffffff"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="0.872052"
      id="rect10" />
   <text
@@ -255,7 +177,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text10">VPP</text>
   <rect
      x="46.350952"
@@ -264,7 +186,7 @@
      height="24.309284"
      rx="3.0031986"
      fill="#ffffff"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="0.872052"
      id="rect11" />
   <text
@@ -273,7 +195,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text11">CLK</text>
   <rect
      x="46.271305"
@@ -282,7 +204,7 @@
      height="24.309284"
      rx="3.0031986"
      fill="#ffffff"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="0.872052"
      id="rect11-2" />
   <text
@@ -291,7 +213,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text11-3">AUX1 (RFU)</text>
   <rect
      x="108.03575"
@@ -300,7 +222,7 @@
      height="24.309284"
      rx="3.0031986"
      fill="#ffffff"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="0.872052"
      id="rect11-7" />
   <text
@@ -309,7 +231,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text11-0">AUX2 (RFU)</text>
   <rect
      x="108.41705"
@@ -318,7 +240,7 @@
      height="24.309284"
      rx="3.0031986"
      fill="#ffffff"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="0.872052"
      id="rect12" />
   <text
@@ -327,7 +249,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text12">I/O</text>
   <text
      x="106.41492"
@@ -335,8 +257,8 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
-     id="text13">контактный режим</text>
+     fill="#5C647A"
+     id="text13">контактный интерфейс</text>
   <!-- =================== Antenna ISO 14443 =================== -->
   <text
      x="106.41492"
@@ -345,7 +267,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text14">Антенна ISO 14443</text>
   <rect
      x="36.38739"
@@ -353,8 +275,8 @@
      width="140.05507"
      height="129.85849"
      rx="10.003933"
-     fill="#e8ecf7"
-     stroke="#5c647a"
+     fill="#E8ECF7"
+     stroke="#5C647A"
      stroke-width="1.5"
      id="rect14" />
   <rect
@@ -364,7 +286,7 @@
      height="100"
      rx="8"
      fill="none"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect15" />
   <rect
@@ -374,7 +296,7 @@
      height="76"
      rx="6"
      fill="none"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect16" />
   <rect
@@ -384,7 +306,7 @@
      height="52"
      rx="4"
      fill="none"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect17" />
   <text
@@ -393,7 +315,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text17">NFC, PayWave/PayPass</text>
   <!-- =================== Processor =================== -->
   <text
@@ -403,7 +325,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text18">Процессор</text>
   <text
      x="291.41492"
@@ -411,7 +333,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text19">8/16/32-бит ядро</text>
   <!-- =================== I/O controller =================== -->
   <rect
@@ -420,9 +342,9 @@
      width="120"
      height="60"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect19" />
   <text
@@ -432,7 +354,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text20">I/O-контроллер</text>
   <text
      x="294.03461"
@@ -440,7 +362,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text21">7816 UART + 14443 RF</text>
   <!-- =================== Memory row =================== -->
   <rect
@@ -449,9 +371,9 @@
      width="85"
      height="65"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect21" />
   <text
@@ -461,7 +383,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text22">ROM</text>
   <rect
      x="486.41492"
@@ -469,9 +391,9 @@
      width="85"
      height="65"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect23" />
   <text
@@ -481,7 +403,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text24">RAM</text>
   <text
      x="528.41492"
@@ -489,7 +411,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text25">рабочая</text>
   <rect
      x="581.41492"
@@ -497,9 +419,9 @@
      width="85"
      height="65"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect25" />
   <text
@@ -509,7 +431,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text26">EEPROM</text>
   <!-- DATA BUS -->
   <line
@@ -517,7 +439,7 @@
      y1="26.111551"
      x2="671.41492"
      y2="26.111551"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="2.00082"
      id="line28" />
   <text
@@ -527,14 +449,14 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="bold"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text29">DATA BUS</text>
   <line
      x1="433.41492"
      y1="26.111551"
      x2="433.41492"
      y2="46.111553"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
      marker-end="url(#arr-Muted)"
      marker-start="url(#arr-Muted-s)"
@@ -544,40 +466,37 @@
      y1="109.99792"
      x2="432.96036"
      y2="129.99792"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
-     marker-end="url(#arr-Muted-2)"
-     marker-start="url(#arr-Muted-s-5)"
-     id="line29-7"
-     style="marker-start:url(#arr-Muted-s-5);marker-end:url(#arr-Muted-2)" />
+     marker-end="url(#arr-Muted)"
+     marker-start="url(#arr-Muted-s)"
+     id="line29-7" />
   <line
      x1="528.60217"
      y1="111.17004"
      x2="528.60217"
      y2="131.17004"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
-     marker-end="url(#arr-Muted-1)"
-     marker-start="url(#arr-Muted-s-8)"
-     id="line29-8"
-     style="marker-start:url(#arr-Muted-s-8);marker-end:url(#arr-Muted-1)" />
+     marker-end="url(#arr-Muted)"
+     marker-start="url(#arr-Muted-s)"
+     id="line29-8" />
   <line
      x1="625.58136"
      y1="111.13612"
      x2="625.58136"
      y2="131.13612"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
-     marker-end="url(#arr-Muted-1-4)"
-     marker-start="url(#arr-Muted-s-8-7)"
-     id="line29-8-1"
-     style="marker-start:url(#arr-Muted-s-8-7);marker-end:url(#arr-Muted-1-4)" />
+     marker-end="url(#arr-Muted)"
+     marker-start="url(#arr-Muted-s)"
+     id="line29-8-1" />
   <line
      x1="528.41492"
      y1="26.111551"
      x2="528.41492"
      y2="46.111553"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
      marker-end="url(#arr-Muted)"
      marker-start="url(#arr-Muted-s)"
@@ -587,7 +506,7 @@
      y1="26.111551"
      x2="623.41492"
      y2="46.111553"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
      marker-end="url(#arr-Muted)"
      marker-start="url(#arr-Muted-s)"
@@ -598,7 +517,7 @@
      y1="131.11156"
      x2="671.41492"
      y2="131.11156"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="2.00553"
      id="line32" />
   <text
@@ -608,7 +527,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="bold"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text32">ADDRESS BUS</text>
   <!-- CPU trunk to buses -->
   <line
@@ -616,7 +535,7 @@
      y1="166.11156"
      x2="290.34604"
      y2="26.111551"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="2"
      id="line36" />
   <!-- =================== Crypto coprocessor =================== -->
@@ -626,9 +545,9 @@
      width="120"
      height="65"
      rx="8"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="2"
      id="rect36" />
   <rect
@@ -637,9 +556,9 @@
      width="120"
      height="65"
      rx="8"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="2"
      id="rect36-5" />
   <text
@@ -649,7 +568,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text36"
      dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.79545456"><tspan
        id="tspan45"
@@ -664,7 +583,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text37">AES, 3DES, RSA, ECC</text>
   <!-- =================== TRNG =================== -->
   <rect
@@ -673,9 +592,9 @@
      width="124.20653"
      height="65.115631"
      rx="7.0975165"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="1.97543"
      id="rect37" />
   <text
@@ -685,7 +604,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text38">TRNG</text>
   <!-- CPU - Crypto - TRNG links -->
   <line
@@ -693,7 +612,7 @@
      y1="198.11156"
      x2="391.38992"
      y2="198.11156"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="2.02484"
      marker-end="url(#arr-Muted)"
      marker-start="url(#arr-Muted-s)"
@@ -703,7 +622,7 @@
      y1="198.11156"
      x2="541.29053"
      y2="198.11156"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.90353"
      marker-end="url(#arr-Muted)"
      marker-start="url(#arr-Muted-s)"
@@ -715,9 +634,9 @@
      width="192.80229"
      height="58.917789"
      rx="5.6087942"
-     fill="#b8821c"
+     fill="#B8821C"
      fill-opacity="0.18"
-     stroke="#b8821c"
+     stroke="#B8821C"
      stroke-width="1.43714"
      id="rect40" />
   <text
@@ -727,13 +646,13 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text40">Защитный экран и сенсоры</text>
   <!-- Защита alarm → CPU -->
   <path
      d="M 393.05779,266.42486 Q 368.71493,250.8292 346.80638,230.03498"
      fill="none"
-     stroke="#b8821c"
+     stroke="#B8821C"
      stroke-width="2.24986"
      stroke-dasharray="6,3"
      marker-end="url(#arr-Warn)"
@@ -743,7 +662,7 @@
   <path
      d="m 176.41493,111.11155 h 30 l 0.87323,178.31123 h 27.18306"
      fill="none"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      marker-end="url(#arr-AccentA)"
      marker-start="url(#arr-AccentA-s)"
@@ -752,7 +671,7 @@
   <path
      d="m 176.50596,302.95313 h 20.78536 l 10.76924,-0.0151 26.43131,0.17533"
      fill="none"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1.98237"
      marker-end="url(#arr-AccentA)"
      marker-start="url(#arr-AccentA-s)"

@@ -216,7 +216,7 @@
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11"
      fill="#1A2030"
-     id="text17">→ request_uri</text>
+     id="text17">-&gt; request_uri</text>
   <!-- Step 3: Клиент - редирект на ASPSP -->
   <rect
      x="360.0"

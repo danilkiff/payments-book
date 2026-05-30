@@ -62,8 +62,8 @@
 <rect x="120.0" y="266.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
 <text x="200.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">merchant_pending</text>
 <line x1="280.0" y1="276.0" x2="320.0" y2="276.0" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted-s)"/>
-<rect x="320.0" y="266.0" width="160" height="20" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
-<text x="400.0" y="274.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030"><tspan x="400.0">merchant_earned +</tspan><tspan x="400.0" dy="10">platform_fee_earned</tspan></text>
+<rect x="320.0" y="261.0" width="160" height="30" rx="4" fill="#ffffff" stroke="#2F8B67" stroke-width="1"/>
+<text x="400.0" y="273.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030"><tspan x="400.0">merchant_earned +</tspan><tspan x="400.0" dy="11">platform_fee_earned</tspan></text>
 <text x="650.0" y="280.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">4 500 + 500 руб.</text>
 
 <!-- Row 3: Расчёт -->

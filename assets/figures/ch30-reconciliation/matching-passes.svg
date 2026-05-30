@@ -10,7 +10,7 @@
 <text x="324" y="80" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">amount</text>
 <text x="420" y="80" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">date</text>
 <text x="516" y="80" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">card</text>
-<line x1="36" y1="84" x2="686" y2="84" stroke="#5C647A" stroke-width="0.5"/>
+<line x1="36" y1="84" x2="686" y2="84" stroke="#5C647A" stroke-width="1"/>
 <text x="36" y="98" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">internal</text>
 <text x="106" y="98" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">ARN 72711493163001285828825</text>
 <text x="324" y="98" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">100,00 GBP</text>
@@ -23,7 +23,7 @@
 <text x="516" y="114" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">4242 4242 4242 4242</text>
 <rect x="20" y="144" width="720" height="110" rx="8" fill="#F5F7FD" stroke="#B8821C" stroke-width="1.5"/>
 <text x="36" y="166" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Pass 2: мягкий, сумма+карта, ≈12%</text>
-<rect x="634" y="156" width="90" height="36" rx="6" fill="#B8821C" fill-opacity="0.15" stroke="#B8821C" stroke-width="1.5"/>
+<rect x="634" y="156" width="90" height="36" rx="6" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
 <text x="679.0" y="170" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">soft</text>
 <text x="679.0" y="185" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">≈ 12 %</text>
 <text x="36" y="204" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">source</text>
@@ -31,7 +31,7 @@
 <text x="324" y="204" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">amount</text>
 <text x="420" y="204" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">date</text>
 <text x="516" y="204" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">card</text>
-<line x1="36" y1="208" x2="686" y2="208" stroke="#5C647A" stroke-width="0.5"/>
+<line x1="36" y1="208" x2="686" y2="208" stroke="#5C647A" stroke-width="1"/>
 <text x="36" y="222" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">internal</text>
 <text x="106" y="222" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">RRN 316300273057</text>
 <text x="324" y="222" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">50,00 GBP</text>
@@ -52,7 +52,7 @@
 <text x="324" y="328" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">amount</text>
 <text x="420" y="328" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">date</text>
 <text x="516" y="328" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">card</text>
-<line x1="36" y1="332" x2="686" y2="332" stroke="#5C647A" stroke-width="0.5"/>
+<line x1="36" y1="332" x2="686" y2="332" stroke="#5C647A" stroke-width="1"/>
 <text x="36" y="346" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">internal</text>
 <text x="106" y="346" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">ARN 92831564198001473829164</text>
 <text x="324" y="346" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">95,00 GBP</text>

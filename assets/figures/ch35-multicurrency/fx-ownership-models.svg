@@ -51,6 +51,6 @@
 <text x="285.0" y="285.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Сумма держателю:</text>
 <text x="485.0" y="285.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">B2B / пакетно</text>
 <text x="285.0" y="302.0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Источник курса:</text>
-<text x="485.0" y="302.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">FX-провайдер / форвард</text>
+<text x="485.0" y="302.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">FX-провайдер</text>
 <line x1="290.0" y1="347.0" x2="480.0" y2="347.0" stroke="#2F8B67" stroke-width="1"/>
 </svg>

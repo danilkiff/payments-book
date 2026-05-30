@@ -10,19 +10,6 @@
   <defs
      id="defs4">
     <marker
-       id="arr-Muted"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
-         id="path1" />
-    </marker>
-    <marker
        id="arr-Good"
        viewBox="0 0 10 10"
        refX="9"
@@ -32,7 +19,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#2f8b67"
+         fill="#2F8B67"
          id="path2" />
     </marker>
     <marker
@@ -45,7 +32,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#4e63d9"
+         fill="#4E63D9"
          id="path3" />
     </marker>
     <marker
@@ -58,7 +45,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#c15462"
+         fill="#C15462"
          id="path4" />
     </marker>
   </defs>
@@ -69,9 +56,9 @@
      width="260"
      height="50"
      rx="8"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="2"
      id="rect4" />
   <text
@@ -81,7 +68,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text4">Кобейджинговая карта</text>
   <text
      x="305.07037"
@@ -89,7 +76,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text5">Mir Credit · A0 00 00 06 58 10 10 · tag 87 = 01</text>
   <text
      x="305.07037"
@@ -97,7 +84,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text6">UnionPay Credit · A0 00 00 03 33 01 01 02 · tag 87 = 02</text>
   <!-- Branching arrows -->
   <line
@@ -105,7 +92,7 @@
      y1="54.446301"
      x2="95.335442"
      y2="88.947159"
-     stroke="#2f8b67"
+     stroke="#2F8B67"
      stroke-width="2"
      marker-end="url(#arr-Good)"
      id="line6" />
@@ -114,7 +101,7 @@
      y1="54.597019"
      x2="305.07037"
      y2="89.597015"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      marker-end="url(#arr-AccentA)"
      id="line7" />
@@ -123,7 +110,7 @@
      y1="54.253887"
      x2="465.83307"
      y2="87.942764"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="2"
      stroke-dasharray="6,3"
      marker-end="url(#arr-Bad)"
@@ -135,12 +122,11 @@
      width="178.72742"
      height="66.350151"
      rx="5.395545"
-     fill="#2f8b67"
+     fill="#2F8B67"
      fill-opacity="0.15"
-     stroke="#2f8b67"
-     stroke-width="1.2476"
-     id="rect8"
-     style="stroke-width:2;stroke-dasharray:none" />
+     stroke="#2F8B67"
+     stroke-width="2"
+     id="rect8" />
   <text
      x="53.070377"
      y="109.59702"
@@ -148,7 +134,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text8">A · Mir выбран</text>
   <text
      x="17.070377"
@@ -157,7 +143,7 @@
      font-family="Inter, sans-serif"
      font-size="9px"
      font-weight="bold"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text9">Маршрут</text>
   <text
      x="17.070377"
@@ -165,7 +151,7 @@
      text-anchor="start"
      font-family="Inter, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text10">ОПКЦ НСПК</text>
   <text
      x="17.070377"
@@ -174,7 +160,7 @@
      font-family="Inter, sans-serif"
      font-size="9px"
      font-style="italic"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text11">обычно — операция в РФ</text>
   <!-- OUTCOME B: UnionPay → UPI -->
   <rect
@@ -183,12 +169,11 @@
      width="207.66084"
      height="67.967293"
      rx="7.2229853"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="1.89989"
-     id="rect11"
-     style="stroke-width:2;stroke-dasharray:none" />
+     stroke="#4E63D9"
+     stroke-width="2"
+     id="rect11" />
   <text
      x="253.07037"
      y="109.59702"
@@ -196,7 +181,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text12">B · UnionPay выбран</text>
   <text
      x="202.07037"
@@ -205,7 +190,7 @@
      font-family="Inter, sans-serif"
      font-size="9px"
      font-weight="bold"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text13">Маршрут</text>
   <text
      x="202.07037"
@@ -213,7 +198,7 @@
      text-anchor="start"
      font-family="Inter, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text14">UnionPay International</text>
   <text
      x="202.07037"
@@ -222,7 +207,7 @@
      font-family="Inter, sans-serif"
      font-size="9px"
      font-style="italic"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text15">обычно — операция за рубежом</text>
   <!-- OUTCOME C: Empty candidate list -->
   <rect
@@ -231,12 +216,11 @@
      width="149.36142"
      height="68.957512"
      rx="4.5090241"
-     fill="#c15462"
+     fill="#C15462"
      fill-opacity="0.15"
-     stroke="#c15462"
-     stroke-width="1.50562"
-     id="rect15"
-     style="stroke-width:2;stroke-dasharray:none" />
+     stroke="#C15462"
+     stroke-width="2"
+     id="rect15" />
   <text
      x="472.07037"
      y="109.59702"
@@ -244,7 +228,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text16">C · Empty candidate list</text>
   <text
      x="416.07037"
@@ -253,7 +237,7 @@
      font-family="Inter, sans-serif"
      font-size="9px"
      font-weight="bold"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text17">Исход</text>
   <text
      x="416.07037"
@@ -261,6 +245,6 @@
      text-anchor="start"
      font-family="Inter, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text18">decline / fallback</text>
 </svg>

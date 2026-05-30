@@ -14,8 +14,8 @@
      y="4"
      width="740"
      height="26"
-     fill="#e8ecf7"
-     stroke="#5c647a"
+     fill="#E8ECF7"
+     stroke="#5C647A"
      stroke-width="1"
      id="rect2" />
   <text
@@ -25,16 +25,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text3">Tap-to-beep: 1170 мс</text>
   <rect
      x="4"
      y="32"
      width="376.3248"
      height="32"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1.5"
      id="rect3" />
   <text
@@ -44,16 +44,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text4">Карта и терминал, 595 мс (51%)</text>
   <rect
      x="380.3248"
      y="32"
      width="319.4017"
      height="32"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="1.5"
      id="rect4" />
   <text
@@ -63,16 +63,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text5">Сеть и эмитент, 505 мс (43%)</text>
   <rect
      x="699.7265"
      y="32"
      width="44.273506"
      height="32"
-     fill="#5c647a"
-     fill-opacity="0.14"
-     stroke="#5c647a"
+     fill="#5C647A"
+     fill-opacity="0.15"
+     stroke="#5C647A"
      stroke-width="1.5"
      id="rect5" />
   <text
@@ -82,54 +82,54 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text6">70</text>
   <rect
      x="4"
      y="66"
      width="15.811966"
      height="58"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1.5"
      id="rect8" />
   <text
      x="11.905983"
-     y="60"
+     y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text9">1</text>
   <rect
      x="19.811966"
      y="66"
      width="25.299145"
      height="58"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1.5"
      id="rect9" />
   <text
      x="32.46154"
-     y="60"
+     y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text10">2</text>
   <rect
      x="45.111115"
      y="66"
      width="28.461538"
      height="58"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1.5"
      id="rect10" />
   <text
@@ -137,9 +137,9 @@
      y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12px"
+     font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text11">3</text>
   <text
      x="59.341881"
@@ -148,16 +148,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text12">45 мс</text>
   <rect
      x="73.572647"
      y="66"
      width="126.49573"
      height="58"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1.5"
      id="rect12" />
   <text
@@ -165,9 +165,9 @@
      y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12px"
+     font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text13">4</text>
   <text
      x="136.82051"
@@ -176,7 +176,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text14">200 мс</text>
   <text
      x="136.82051"
@@ -185,16 +185,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text15">READ RECORD</text>
   <rect
      x="200.06837"
      y="66"
      width="180.25641"
      height="58"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1.5"
      id="rect15" />
   <text
@@ -202,9 +202,9 @@
      y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12px"
+     font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text16">5</text>
   <text
      x="290.19659"
@@ -213,7 +213,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text17">285 мс</text>
   <text
      x="290.19659"
@@ -222,35 +222,35 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text18">GENERATE AC</text>
   <rect
      x="380.3248"
      y="66"
      width="9.4871798"
      height="58"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="1.5"
      id="rect18" />
   <text
      x="385.06839"
-     y="60"
+     y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text19">6</text>
   <rect
      x="389.81195"
      y="66"
      width="44.273506"
      height="58"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="1.5"
      id="rect19" />
   <text
@@ -258,9 +258,9 @@
      y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12px"
+     font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text20">7</text>
   <text
      x="411.94873"
@@ -269,16 +269,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text21">70 мс</text>
   <rect
      x="434.08548"
      y="66"
      width="37.948719"
      height="58"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="1.5"
      id="rect21" />
   <text
@@ -286,9 +286,9 @@
      y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12px"
+     font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text22">8</text>
   <text
      x="453.05981"
@@ -297,16 +297,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text23">60 мс</text>
   <rect
      x="472.03418"
      y="66"
      width="177.09402"
      height="58"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="1.5"
      id="rect23" />
   <text
@@ -314,9 +314,9 @@
      y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12px"
+     font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text24">9</text>
   <text
      x="560.58118"
@@ -325,7 +325,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text25">280 мс</text>
   <text
      x="560.58118"
@@ -334,16 +334,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text26">HSM+risk+ARPC</text>
   <rect
      x="649.12823"
      y="66"
      width="50.598289"
      height="58"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="1.5"
      id="rect26" />
   <text
@@ -351,9 +351,9 @@
      y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12px"
+     font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text27">10</text>
   <text
      x="674.42737"
@@ -362,16 +362,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text28">80 мс</text>
   <rect
      x="699.7265"
      y="66"
      width="44.273506"
      height="58"
-     fill="#5c647a"
-     fill-opacity="0.18"
-     stroke="#5c647a"
+     fill="#5C647A"
+     fill-opacity="0.15"
+     stroke="#5C647A"
      stroke-width="1.5"
      id="rect28" />
   <text
@@ -379,9 +379,9 @@
      y="84"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12px"
+     font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text29">11</text>
   <text
      x="721.86322"
@@ -390,15 +390,15 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text30">70 мс</text>
   <line
      x1="4"
      y1="128"
      x2="4"
      y2="132"
-     stroke="#5c647a"
-     stroke-width="0.8"
+     stroke="#5C647A"
+     stroke-width="1"
      id="line30" />
   <text
      x="4"
@@ -407,15 +407,15 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text31">0</text>
   <line
      x1="130.49573"
      y1="128"
      x2="130.49573"
      y2="132"
-     stroke="#5c647a"
-     stroke-width="0.8"
+     stroke="#5C647A"
+     stroke-width="1"
      id="line31" />
   <text
      x="130.49573"
@@ -424,15 +424,15 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text32">200</text>
   <line
      x1="256.99146"
      y1="128"
      x2="256.99146"
      y2="132"
-     stroke="#5c647a"
-     stroke-width="0.8"
+     stroke="#5C647A"
+     stroke-width="1"
      id="line32" />
   <text
      x="256.99146"
@@ -441,15 +441,15 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text33">400</text>
   <line
      x1="383.48718"
      y1="128"
      x2="383.48718"
      y2="132"
-     stroke="#5c647a"
-     stroke-width="0.8"
+     stroke="#5C647A"
+     stroke-width="1"
      id="line33" />
   <text
      x="383.48718"
@@ -458,15 +458,15 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text34">600</text>
   <line
      x1="509.98291"
      y1="128"
      x2="509.98291"
      y2="132"
-     stroke="#5c647a"
-     stroke-width="0.8"
+     stroke="#5C647A"
+     stroke-width="1"
      id="line34" />
   <text
      x="509.98291"
@@ -475,15 +475,15 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text35">800</text>
   <line
      x1="636.47864"
      y1="128"
      x2="636.47864"
      y2="132"
-     stroke="#5c647a"
-     stroke-width="0.8"
+     stroke="#5C647A"
+     stroke-width="1"
      id="line35" />
   <text
      x="636.47864"
@@ -492,15 +492,15 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text36">1000</text>
   <line
      x1="744"
      y1="128"
      x2="744"
      y2="132"
-     stroke="#5c647a"
-     stroke-width="0.8"
+     stroke="#5C647A"
+     stroke-width="1"
      id="line36" />
   <text
      x="744"
@@ -509,7 +509,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text37">1170</text>
   <text
      x="756"
@@ -518,15 +518,15 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text38">мс</text>
   <line
      x1="4"
      y1="128"
      x2="744"
      y2="128"
-     stroke="#5c647a"
-     stroke-width="0.8"
+     stroke="#5C647A"
+     stroke-width="1"
      id="line38" />
   <text
      x="286"
@@ -535,16 +535,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text39">Доминанты: 565 мс из 1170 (48%):</text>
   <rect
      x="4"
      y="176"
      width="14"
      height="14"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1.5"
      id="rect39" />
   <text
@@ -554,7 +554,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text40">Фаза 5: GENERATE AC (~285 мс), ARQC на ограниченном CPU чипа.</text>
   <text
      x="26"
@@ -563,16 +563,16 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text41">Нижний предел tap-to-beep на стороне карты.</text>
   <rect
      x="390"
      y="176"
      width="14"
      height="14"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="1.5"
      id="rect41" />
   <text
@@ -582,7 +582,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text42">Фаза 9: ~280 мс у эмитента, почти всё — risk-engine; HSM verify+ARPC ~5 мс.</text>
   <text
      x="412"
@@ -591,6 +591,6 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-weight="normal"
-     fill="#5c647a"
-     id="text43">Экономия: in-memory кэш, асинхронный режим для некритичных проверок.</text>
+     fill="#5C647A"
+     id="text43">Экономия: in-memory кэш; асинхронные проверки там, где допускает SLA.</text>
 </svg>

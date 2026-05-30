@@ -19,7 +19,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#4e63d9"
+         fill="#4E63D9"
          id="path1" />
     </marker>
     <marker
@@ -32,7 +32,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#7759d6"
+         fill="#7759D6"
          id="path2" />
     </marker>
   </defs>
@@ -43,9 +43,9 @@
      width="200"
      height="36"
      rx="8"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      id="rect2" />
   <text
@@ -55,7 +55,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="13px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text2">Терминал</text>
   <rect
      x="440"
@@ -63,9 +63,9 @@
      width="200"
      height="36"
      rx="8"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="2"
      id="rect3" />
   <text
@@ -75,26 +75,26 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="13px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text3">Карта</text>
   <!-- ============ Lifelines ============ -->
   <line
-     x1="180.76096"
+     x1="180"
      y1="48"
-     x2="180.76096"
-     y2="356.35315"
-     stroke="#5c647a"
-     stroke-width="0.922932"
-     stroke-dasharray="6, 3"
+     x2="180"
+     y2="356"
+     stroke="#5C647A"
+     stroke-width="1"
+     stroke-dasharray="6,3"
      id="line3" />
   <line
-     x1="540.57074"
+     x1="540"
      y1="48"
-     x2="540.57074"
-     y2="357.11411"
-     stroke="#5c647a"
-     stroke-width="0.924071"
-     stroke-dasharray="6, 3"
+     x2="540"
+     y2="357"
+     stroke="#5C647A"
+     stroke-width="1"
+     stroke-dasharray="6,3"
      id="line4" />
   <!-- ============ Phase: PRE ============ -->
   <rect
@@ -102,9 +102,8 @@
      y="58"
      width="626.79163"
      height="20"
-     fill="#e8ecf7"
-     id="rect4"
-     style="stroke-width:0.960079" />
+     fill="#E8ECF7"
+     id="rect4" />
   <text
      x="30"
      y="72"
@@ -112,7 +111,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text4">PRE INTERNAL AUTHENTICATE</text>
   <!-- Event 1: T → K: READ RECORD -->
   <line
@@ -120,7 +119,7 @@
      y1="100"
      x2="540"
      y2="100"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      marker-end="url(#arr-AccentA)"
      id="line5" />
@@ -131,7 +130,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text5">READ RECORD</text>
   <!-- Event 2: K → T: records + certificates -->
   <line
@@ -139,7 +138,7 @@
      y1="128"
      x2="180"
      y2="128"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="2"
      marker-end="url(#arr-AccentB)"
      id="line6" />
@@ -149,7 +148,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text6">записи EMV + сертификаты</text>
   <!-- Event 3: T internal: build PKI chain -->
   <rect
@@ -158,9 +157,9 @@
      width="180"
      height="22"
      rx="6"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1"
      id="rect6" />
   <text
@@ -169,7 +168,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text7">PKI: PK CA → эмитент → ICC</text>
   <!-- ============ Phase: INTERNAL AUTHENTICATE ============ -->
   <rect
@@ -177,9 +176,8 @@
      y="174"
      width="624.32379"
      height="20"
-     fill="#e8ecf7"
-     id="rect7"
-     style="stroke-width:0.958188" />
+     fill="#E8ECF7"
+     id="rect7" />
   <text
      x="30"
      y="188"
@@ -187,7 +185,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text8">INTERNAL AUTHENTICATE</text>
   <!-- Event 4: T internal: UN gen -->
   <rect
@@ -196,9 +194,9 @@
      width="180"
      height="22"
      rx="6"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1"
      id="rect8" />
   <text
@@ -207,7 +205,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text9">UN = rand(4B), тег 9F37</text>
   <!-- Event 5: T → K: INTERNAL AUTHENTICATE -->
   <line
@@ -215,7 +213,7 @@
      y1="250"
      x2="540"
      y2="250"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      marker-end="url(#arr-AccentA)"
      id="line9" />
@@ -226,7 +224,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text10">INTERNAL AUTHENTICATE</text>
   <text
      x="360"
@@ -235,7 +233,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-style="italic"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text11">UN + DDOL</text>
   <!-- Event 6: K internal: forms SDAD -->
   <rect
@@ -244,9 +242,9 @@
      width="180"
      height="22"
      rx="6"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="1"
      id="rect11" />
   <text
@@ -255,7 +253,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text12">формирует SDAD</text>
   <!-- Event 7: K → T: SDAD -->
   <line
@@ -263,7 +261,7 @@
      y1="310"
      x2="180"
      y2="310"
-     stroke="#7759d6"
+     stroke="#7759D6"
      stroke-width="2"
      marker-end="url(#arr-AccentB)"
      id="line12" />
@@ -274,7 +272,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text13">SDAD</text>
   <text
      x="360"
@@ -283,7 +281,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
      font-style="italic"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text14">тег 9F4B</text>
   <!-- ============ Phase: VERIFY ============ -->
   <rect
@@ -291,9 +289,8 @@
      y="326"
      width="627.67621"
      height="20"
-     fill="#e8ecf7"
-     id="rect14"
-     style="stroke-width:0.960757" />
+     fill="#E8ECF7"
+     id="rect14" />
   <text
      x="30"
      y="340"
@@ -301,7 +298,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text15">VERIFY</text>
   <!-- Event 8: fork: pass / fail -->
   <rect
@@ -310,9 +307,9 @@
      width="219.46765"
      height="21.89835"
      rx="7.3155885"
-     fill="#2f8b67"
+     fill="#2F8B67"
      fill-opacity="0.15"
-     stroke="#2f8b67"
+     stroke="#2F8B67"
      stroke-width="1.10165"
      id="rect15" />
   <text
@@ -322,7 +319,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text16">SDAD проверен → DDA</text>
   <rect
      x="20"
@@ -330,9 +327,9 @@
      width="220"
      height="22"
      rx="6"
-     fill="#c15462"
+     fill="#C15462"
      fill-opacity="0.15"
-     stroke="#c15462"
+     stroke="#C15462"
      stroke-width="1"
      id="rect16" />
   <text
@@ -342,6 +339,6 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text17">подпись/hash не совпали → отказ</text>
 </svg>

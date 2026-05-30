@@ -162,12 +162,12 @@
   <line x1="680" y1="276" x2="680" y2="294" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3"/>
 
   <!-- Облако TSP с replenishment -->
-  <path d="M 555 380 q 0 -16 16 -16 h 18 q 0 -10 12 -10 h 20 q 12 0 12 10 h 20 q 16 0 16 16 q 0 14 -16 14 h -82 q -16 0 -16 -14 z"
+  <path d="M 599 416 C 595 416 595 407 599 405 C 596 397 607 395 611 400 C 613 391 625 391 628 398 C 631 393 638 396 637 403 C 641 405 640 414 634 416 Z"
         fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-  <text x="608" y="384" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">TSP сети</text>
+  <text x="617" y="409" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">TSP сети</text>
 
   <!-- Стрелка replenishment с облака к защ. хранилищу -->
-  <line x1="640" y1="370" x2="660" y2="358" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+  <line x1="617" y1="390" x2="617" y2="358" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 
   <!-- Свойство офлайн -->
   <rect x="645" y="370" width="120" height="48" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>

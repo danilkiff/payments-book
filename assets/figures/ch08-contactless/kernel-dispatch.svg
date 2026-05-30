@@ -3,10 +3,7 @@
    viewBox="0 0 880 622"
    width="880"
    height="622"
-   version="1.1"
-   id="svg51"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns="http://www.w3.org/2000/svg">
   <defs
      id="defs4">
     <marker
@@ -78,7 +75,7 @@
      y="42"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="11"
      font-weight="bold"
      fill="#1A2030"
      id="text4">SELECT PPSE</text>
@@ -107,7 +104,7 @@
      y="132"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12"
+     font-size="11"
      font-weight="bold"
      fill="#1A2030"
      id="text7">PPSE FCI: пример карты Мир–Maestro</text>
@@ -117,7 +114,7 @@
      y="178"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      font-weight="bold"
      fill="#5C647A"
      id="text9">AID (4F)</text>
@@ -126,7 +123,7 @@
      y="178"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      font-weight="bold"
      fill="#5C647A"
      id="text10">Application Label (50)</text>
@@ -135,7 +132,7 @@
      y="178"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      font-weight="bold"
      fill="#5C647A"
      id="text11">Priority (87)</text>
@@ -153,14 +150,13 @@
      width="14"
      height="26"
      fill="#2F8B67"
-     fill-opacity="0.55"
      id="rect12" />
   <text
      x="160"
      y="204"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text12">A0 00 00 06 58 10 10</text>
@@ -169,7 +165,7 @@
      y="204"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      fill="#1A2030"
      id="text13">MIR</text>
   <text
@@ -177,7 +173,7 @@
      y="204"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text14">01</text>
@@ -188,14 +184,13 @@
      width="14"
      height="26"
      fill="#7759D6"
-     fill-opacity="0.40"
      id="rect14" />
   <text
      x="160"
      y="232"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text15">A0 00 00 00 04 30 60</text>
@@ -204,7 +199,7 @@
      y="232"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      fill="#1A2030"
      id="text16">MAESTRO</text>
   <text
@@ -212,7 +207,7 @@
      y="232"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text17">02</text>
@@ -233,7 +228,7 @@
      height="68"
      rx="8"
      fill="#4E63D9"
-     fill-opacity="0.10"
+     fill-opacity="0.15"
      stroke="#4E63D9"
      stroke-width="2"
      id="rect17" />
@@ -242,7 +237,7 @@
      y="298"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="12"
+     font-size="11"
      font-weight="bold"
      fill="#1A2030"
      id="text18">Combination Selection</text>
@@ -251,9 +246,9 @@
      y="314"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      fill="#5C647A"
-     id="text19">AID карты ∩ AID терминала, по min priority (тег 87)</text>
+     id="text19">пересечение AID карты и терминала, по min priority (тег 87)</text>
   <rect
      x="280"
      y="322"
@@ -266,7 +261,7 @@
      y="336"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text20">Выбран AID: A0 00 00 06 58 10 10 (MIR)</text>
@@ -297,14 +292,13 @@
      width="14"
      height="20"
      fill="#4E63D9"
-     fill-opacity="0.40"
      id="rect22" />
   <text
      x="160"
      y="409"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text23">A0 00 00 00 03</text>
@@ -313,15 +307,15 @@
      y="409"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      fill="#5C647A"
-     id="text24">→</text>
+     id="text24">-&gt;</text>
   <text
      x="370"
      y="409"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      fill="#1A2030"
      id="text25">VCPS / Kernel 3</text>
   <!-- row MC -->
@@ -331,14 +325,13 @@
      width="14"
      height="20"
      fill="#7759D6"
-     fill-opacity="0.40"
      id="rect25" />
   <text
      x="160"
      y="431"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text26">A0 00 00 00 04</text>
@@ -347,15 +340,15 @@
      y="431"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      fill="#5C647A"
-     id="text27">→</text>
+     id="text27">-&gt;</text>
   <text
      x="370"
      y="431"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      fill="#1A2030"
      id="text28">M/Chip / Kernel 2</text>
   <!-- row Mir — highlighted -->
@@ -372,14 +365,13 @@
      width="14"
      height="20"
      fill="#2F8B67"
-     fill-opacity="0.55"
      id="rect29" />
   <text
      x="160"
      y="455"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text29">A0 00 00 06 58</text>
@@ -388,15 +380,15 @@
      y="455"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      fill="#5C647A"
-     id="text30">→</text>
+     id="text30">-&gt;</text>
   <text
      x="370"
      y="455"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text31">MPA</text>
@@ -437,7 +429,7 @@
      height="110"
      rx="8"
      fill="#4E63D9"
-     fill-opacity="0.12"
+     fill-opacity="0.15"
      stroke="#4E63D9"
      stroke-width="2"
      id="rect33" />
@@ -446,7 +438,7 @@
      y="524"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="11"
      font-weight="bold"
      fill="#1A2030"
      id="text33">Kernel 3 — VCPS (Visa)</text>
@@ -455,15 +447,15 @@
      y="540"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      fill="#5C647A"
-     id="text34">RID A0 00 00 00 03 · qVSDC profile</text>
+     id="text34">RID A0 00 00 00 03, qVSDC profile</text>
   <text
      x="60"
      y="566"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text35">A0 00 00 00 03 10 10</text>
@@ -472,7 +464,7 @@
      y="566"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      fill="#5C647A"
      id="text36">VISA</text>
   <text
@@ -480,7 +472,7 @@
      y="588"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text37">A0 00 00 00 03 20 10</text>
@@ -489,7 +481,7 @@
      y="588"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      fill="#5C647A"
      id="text38">ELECTRON</text>
   <!-- Kernel 2 (M/Chip) -->
@@ -500,7 +492,7 @@
      height="110"
      rx="8"
      fill="#7759D6"
-     fill-opacity="0.12"
+     fill-opacity="0.15"
      stroke="#7759D6"
      stroke-width="2"
      id="rect38" />
@@ -509,7 +501,7 @@
      y="524"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="11"
      font-weight="bold"
      fill="#1A2030"
      id="text39">Kernel 2 — M/Chip (Mastercard)</text>
@@ -518,7 +510,7 @@
      y="540"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      fill="#5C647A"
      id="text40">RID A0 00 00 00 04</text>
   <text
@@ -526,7 +518,7 @@
      y="566"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text41">A0 00 00 00 04 10 10</text>
@@ -535,15 +527,15 @@
      y="566"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#5c647a"
+     font-size="9"
+     fill="#5C647A"
      id="text42">MC CREDIT/DEBIT</text>
   <text
      x="330"
      y="588"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text43">A0 00 00 00 04 30 60</text>
@@ -552,8 +544,8 @@
      y="588"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#5c647a"
+     font-size="9"
+     fill="#5C647A"
      id="text44">MAESTRO</text>
   <!-- MPA (Мир) -->
   <rect
@@ -563,7 +555,7 @@
      height="110"
      rx="8"
      fill="#2F8B67"
-     fill-opacity="0.12"
+     fill-opacity="0.15"
      stroke="#2F8B67"
      stroke-width="2"
      id="rect44" />
@@ -572,7 +564,7 @@
      y="524"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="13"
+     font-size="11"
      font-weight="bold"
      fill="#1A2030"
      id="text45">MPA (Мир)</text>
@@ -581,15 +573,15 @@
      y="540"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      fill="#5C647A"
-     id="text46">RID A0 00 00 06 58 · НСПК</text>
+     id="text46">RID A0 00 00 06 58, НСПК</text>
   <text
      x="600"
      y="566"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text47">A0 00 00 06 58 10 10</text>
@@ -598,7 +590,7 @@
      y="566"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      fill="#5C647A"
      id="text48">MIR CREDIT</text>
   <text
@@ -606,7 +598,7 @@
      y="588"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
+     font-size="10"
      font-weight="bold"
      fill="#1A2030"
      id="text49">A0 00 00 06 58 20 10</text>
@@ -615,7 +607,7 @@
      y="588"
      text-anchor="start"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
+     font-size="9"
      fill="#5C647A"
      id="text50">MIR DEBIT</text>
 </svg>

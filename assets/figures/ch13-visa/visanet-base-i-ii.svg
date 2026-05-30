@@ -19,7 +19,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#4e63d9"
+         fill="#4E63D9"
          id="path1" />
     </marker>
     <marker
@@ -32,7 +32,7 @@
        orient="auto">
       <path
          d="M 10,0 0,5 10,10 Z"
-         fill="#4e63d9"
+         fill="#4E63D9"
          id="path2" />
     </marker>
     <marker
@@ -45,7 +45,7 @@
        orient="auto">
       <path
          d="M 0,0 10,5 0,10 Z"
-         fill="#5c647a"
+         fill="#5C647A"
          id="path3" />
     </marker>
     <marker
@@ -58,7 +58,7 @@
        orient="auto">
       <path
          d="M 10,0 0,5 10,10 Z"
-         fill="#5c647a"
+         fill="#5C647A"
          id="path4" />
     </marker>
   </defs>
@@ -69,44 +69,42 @@
      width="21.530586"
      height="180.17126"
      rx="1.3249592"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="3.42858"
-     id="rect4"
-     style="stroke-width:2;stroke-dasharray:none" />
+     stroke="#4E63D9"
+     stroke-width="1.5"
+     id="rect4" />
   <rect
      x="411.17316"
      y="6.1796174"
      width="22.843283"
      height="180.14465"
      rx="1.4057405"
-     fill="#4e63d9"
+     fill="#4E63D9"
      fill-opacity="0.15"
-     stroke="#4e63d9"
-     stroke-width="3.42858"
-     id="rect4-3"
-     style="stroke-width:2;stroke-dasharray:none" />
+     stroke="#4E63D9"
+     stroke-width="1.5"
+     id="rect4-3" />
   <text
-     x="-97.569481"
-     y="21.776329"
+     x="-97.388100"
+     y="22.573800"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text4"
-     transform="rotate(-90.468741)">ЭКВАЙЕР</text>
+     transform="rotate(-90)">ЭКВАЙЕР</text>
   <text
-     x="94.148026"
-     y="-419.02182"
+     x="96.434200"
+     y="-418.501600"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text4-0"
-     transform="rotate(90.312801)">ЭМИТЕНТ</text>
+     transform="rotate(90)">ЭМИТЕНТ</text>
   <!-- VisaNet (центральный контейнер) -->
   <rect
      x="83.512604"
@@ -114,10 +112,10 @@
      width="274.64963"
      height="180.0191"
      rx="7.8471327"
-     fill="#7759d6"
+     fill="#7759D6"
      fill-opacity="0.15"
-     stroke="#7759d6"
-     stroke-width="1.9809"
+     stroke="#7759D6"
+     stroke-width="1.5"
      id="rect5" />
   <text
      x="213.88654"
@@ -126,7 +124,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="11px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text5">VisaNet</text>
   <!-- BASE I (авторизация) -->
   <text
@@ -136,7 +134,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text6">V.I.P. System: BASE I (авторизация)</text>
   <!-- VIC -->
   <rect
@@ -146,7 +144,7 @@
      height="32"
      rx="6"
      fill="#ffffff"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="1.5"
      id="rect6" />
   <text
@@ -156,7 +154,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text7">VIC</text>
   <!-- STIP -->
   <rect
@@ -166,7 +164,7 @@
      height="32"
      rx="6"
      fill="#ffffff"
-     stroke="#b8821c"
+     stroke="#B8821C"
      stroke-width="1.5"
      id="rect7" />
   <text
@@ -176,7 +174,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text8">STIP</text>
   <!-- VAA -->
   <rect
@@ -186,7 +184,7 @@
      height="32"
      rx="6"
      fill="#ffffff"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1.5"
      id="rect8" />
   <text
@@ -196,7 +194,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text9">VAA</text>
   <!-- разделитель -->
   <line
@@ -204,7 +202,7 @@
      y1="101.47574"
      x2="333.88654"
      y2="101.47574"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="1"
      id="line9" />
   <!-- BASE II (клиринг) -->
@@ -215,7 +213,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="normal"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text10">BASE II (клиринг)</text>
   <!-- VSS -->
   <rect
@@ -225,8 +223,8 @@
      height="26.173487"
      rx="6.0083323"
      fill="#ffffff"
-     stroke="#7759d6"
-     stroke-width="1.3016"
+     stroke="#7759D6"
+     stroke-width="1.5"
      stroke-dasharray="6,3"
      id="rect10" />
   <text
@@ -236,7 +234,7 @@
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10px"
      font-weight="bold"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text11">VSS</text>
   <!-- Банк-эмитент -->
   <!-- Авторизация: эквайер <-> VisaNet -->
@@ -245,7 +243,7 @@
      y1="67.384087"
      x2="93.286896"
      y2="67.384087"
-     stroke="#4e63d9"
+     stroke="#4E63D9"
      stroke-width="2"
      marker-end="url(#arr-AccentA)"
      marker-start="url(#arr-AccentA-s)"
@@ -256,15 +254,15 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
-     id="text13">0100↔0110</text>
+     fill="#1A2030"
+     id="text13">0100&lt;-&gt;0110</text>
   <text
      x="58.313831"
      y="79.370239"
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#5c647a"
+     fill="#5C647A"
      id="text14">через VIC</text>
   <!-- Авторизация: VisaNet <-> эмитент -->
   <line
@@ -272,8 +270,8 @@
      y1="66.880623"
      x2="410.29565"
      y2="66.880623"
-     stroke="#4e63d9"
-     stroke-width="2.20039"
+     stroke="#4E63D9"
+     stroke-width="2"
      marker-end="url(#arr-AccentA)"
      marker-start="url(#arr-AccentA-s)"
      id="line14" />
@@ -283,7 +281,7 @@
      y1="146.47574"
      x2="93.630493"
      y2="146.47574"
-     stroke="#5c647a"
+     stroke="#5C647A"
      stroke-width="2"
      stroke-dasharray="6,3"
      marker-end="url(#arr-Muted)"
@@ -294,7 +292,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text16"><tspan
        id="tspan17"
        x="56.497944"
@@ -308,7 +306,7 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
+     fill="#1A2030"
      id="text16-9"><tspan
        id="tspan17-5"
        x="378.68384"
@@ -322,8 +320,8 @@
      y1="146.47574"
      x2="409.87384"
      y2="146.47574"
-     stroke="#5c647a"
-     stroke-width="2.30473"
+     stroke="#5C647A"
+     stroke-width="2"
      stroke-dasharray="6,3"
      marker-end="url(#arr-Muted)"
      id="line16" />
@@ -333,6 +331,6 @@
      text-anchor="middle"
      font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="9px"
-     fill="#1a2030"
-     id="text13-5">0100↔0110</text>
+     fill="#1A2030"
+     id="text13-5">0100&lt;-&gt;0110</text>
 </svg>

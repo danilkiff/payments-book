@@ -35,7 +35,7 @@ NOTE_Y = BOX_Y + BOX_H + 26
 VIEW_H = NOTE_Y + 14
 
 MARKER = (
-  '<marker id="arr" markerWidth="9" markerHeight="9" refX="6" refY="3" '
+  '<marker id="arr-Muted" markerWidth="9" markerHeight="9" refX="6" refY="3" '
   f'orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="{MUTED}"/></marker>'
 )
 lines = svg_header(VIEW_W, VIEW_H, extra_defs=MARKER)
@@ -45,7 +45,7 @@ for i, (title, l1, l2, color) in enumerate(STAGES):
   x = BOX_X0 + i * (BOX_W + GAP)
   lines.append(
     f'<rect x="{x}" y="{BOX_Y}" width="{BOX_W}" height="{BOX_H}" rx="4" '
-    f'fill="{color}" fill-opacity="0.13" stroke="{MUTED}" stroke-width="0.6"/>'
+    f'fill="{color}" fill-opacity="0.15" stroke="{MUTED}" stroke-width="0.6"/>'
   )
   lines.append(t(x + BOX_W / 2, BOX_Y + 20, title, size=11, fill=INK, weight="bold"))
   lines.append(t(x + BOX_W / 2, BOX_Y + 37, l1, size=9, fill=MUTED))
@@ -59,7 +59,7 @@ for i in range(len(STAGES) - 1):
   x2 = centers[i + 1][0] - 3
   lines.append(
     f'<line x1="{x1}" y1="{ay}" x2="{x2 - 4}" y2="{ay}" '
-    f'stroke="{MUTED}" stroke-width="1.2" marker-end="url(#arr)"/>'
+    f'stroke="{MUTED}" stroke-width="1.2" marker-end="url(#arr-Muted)"/>'
   )
 
 lines.append(t(BOX_X0, NOTE_Y,

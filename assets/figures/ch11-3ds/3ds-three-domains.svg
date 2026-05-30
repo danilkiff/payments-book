@@ -86,7 +86,7 @@
 
 <!-- ===== 3DS Method URL (Warn-пунктир): ACS -> Браузер, маршрут слева ===== -->
 <!-- L-маршрут: из ACS вниз, далее по y=222 влево, далее вниз в браузер с левой стороны -->
-<path d="M 460,178 L 460,222 L 260,222 L 260,310" fill="none" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+<path d="M 460,178 L 460,240 L 260,240 L 260,310" fill="none" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 <text x="362" y="217" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">3DS Method URL</text>
 <text x="362" y="229" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">(отпечаток устройства, до AReq)</text>
 
@@ -100,6 +100,6 @@
 <text x="595" y="245" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">CRes</text>
 
 <text x="530" y="200" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">канал вызова</text>
-<text x="530" y="211" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">ACS ↔ устройство</text>
+<text x="530" y="211" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">между ACS и устройством</text>
 
 </svg>

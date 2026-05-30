@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" width="560" height="240">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 0 572 240" width="572" height="240">
 
 <!-- Soft band for biased-ramp zone -->
 <rect x="180" y="30" width="180" height="170" fill="#F5F7FD"/>
@@ -8,39 +8,39 @@
 <rect x="360" y="30" width="160" height="170" fill="#E8ECF7"/>
 
 <!-- Y axis -->
-<line x1="80" y1="20" x2="80" y2="210" stroke="#1A2030" stroke-width="1.2"/>
-<polygon points="80,20 76,28 84,28" fill="#1A2030"/>
+<line x1="80" y1="20" x2="80" y2="210" stroke="#5C647A" stroke-width="1.2"/>
+<polygon points="80,20 76,28 84,28" fill="#5C647A"/>
 
 <!-- X axis -->
-<line x1="70" y1="200" x2="540" y2="200" stroke="#1A2030" stroke-width="1.2"/>
-<polygon points="540,200 532,196 532,204" fill="#1A2030"/>
+<line x1="70" y1="200" x2="540" y2="200" stroke="#5C647A" stroke-width="1.2"/>
+<polygon points="540,200 532,196 532,204" fill="#5C647A"/>
 
 <!-- Axis titles -->
 <text x="50" y="20" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">P(онлайн)</text>
 <text x="540" y="222" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">сумма транзакции</text>
 
 <!-- Y tick: 100% -->
-<line x1="76" y1="30" x2="80" y2="30" stroke="#1A2030" stroke-width="1"/>
+<line x1="76" y1="30" x2="80" y2="30" stroke="#5C647A" stroke-width="1"/>
 <text x="72" y="34" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">100%</text>
 
 <!-- Y tick: MTPBRS -->
-<line x1="76" y1="110" x2="80" y2="110" stroke="#1A2030" stroke-width="1"/>
+<line x1="76" y1="110" x2="80" y2="110" stroke="#5C647A" stroke-width="1"/>
 <text x="72" y="114" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MTPBRS</text>
 
 <!-- Y tick: TPRS -->
-<line x1="76" y1="180" x2="80" y2="180" stroke="#1A2030" stroke-width="1"/>
+<line x1="76" y1="180" x2="80" y2="180" stroke="#5C647A" stroke-width="1"/>
 <text x="72" y="184" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">TPRS</text>
 
 <!-- X tick: 0 -->
-<line x1="80" y1="200" x2="80" y2="204" stroke="#1A2030" stroke-width="1"/>
+<line x1="80" y1="200" x2="80" y2="204" stroke="#5C647A" stroke-width="1"/>
 <text x="80" y="218" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">0</text>
 
 <!-- X tick: TVBRS -->
-<line x1="180" y1="200" x2="180" y2="204" stroke="#1A2030" stroke-width="1"/>
+<line x1="180" y1="200" x2="180" y2="204" stroke="#5C647A" stroke-width="1"/>
 <text x="180" y="218" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">TVBRS</text>
 
 <!-- X tick: floor limit -->
-<line x1="360" y1="200" x2="360" y2="204" stroke="#1A2030" stroke-width="1"/>
+<line x1="360" y1="200" x2="360" y2="204" stroke="#5C647A" stroke-width="1"/>
 <text x="360" y="218" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">floor limit</text>
 
 <!-- Curve segment 1: plateau at TPRS, x=80..180 -->

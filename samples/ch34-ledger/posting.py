@@ -29,7 +29,7 @@ class Ledger:
     return total
 
 
-# Применение событий из ch33: одна функция -- одна группа проводок.
+# Применение событий этой главы: одна функция -- одна группа проводок.
 
 
 def authorize(ledger: Ledger, amount: int) -> None:
