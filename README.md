@@ -9,6 +9,10 @@
 
 Примеры из книги и их проверка (python) - в [`samples/`](samples/README.md).
 
+## Нашли ошибку?
+
+Поправки приветствуются. Сообщить: [issue по шаблону errata](https://github.com/danilkiff/payments-book/issues/new/choose). Что приложить и как опираться на источники — в [`CONTRIBUTING.md`](CONTRIBUTING.md). Подтверждённые ошибки — в [`ERRATA.md`](ERRATA.md).
+
 ## Лицензия
 
 [![CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0/)

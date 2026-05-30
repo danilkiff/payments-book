@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Как сообщить об ошибке — короткая инструкция
+    url: https://github.com/danilkiff/payments-book/blob/master/CONTRIBUTING.md
+    about: Что приложить к errata, как опираться на источники, правило про NDA.

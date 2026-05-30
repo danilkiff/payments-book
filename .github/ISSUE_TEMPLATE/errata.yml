@@ -1,0 +1,68 @@
+name: Ошибка или неточность (errata)
+description: Фактическая ошибка, неточность, битая ссылка, опечатка или ошибка в коде примера.
+title: "[errata] "
+labels: ["errata"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за поправку. Книга в public alpha — ошибки неизбежны, и публичные errata их и исправляют.
+        Перед отправкой проверьте, что похожего сообщения ещё нет среди [issues](https://github.com/danilkiff/payments-book/issues).
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Тип
+      options:
+        - Фактическая ошибка
+        - Неточность или устаревшие данные
+        - Ссылка, цитата или нормативный акт
+        - Опечатка или типографика
+        - Рисунок или схема
+        - Код примера (samples/)
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Где
+      description: Глава и раздел, метка \label{...} или номер страницы PDF. Чем точнее, тем лучше.
+      placeholder: "гл. 7 «EMV», раздел «Архитектура чиповой транзакции» / sec:emv-architecture / с. 84"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версия
+      description: git SHA и дата сборки с оборота титула (строка «…сборка ДАТА, SHA») либо DOI версии на Zenodo.
+      placeholder: "13e6232, 2026-05-30 / 10.5281/zenodo.XXXXXXXX"
+    validations:
+      required: false
+  - type: textarea
+    id: what
+    attributes:
+      label: Что не так
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Как должно быть
+      description: По возможности — точная формулировка поправки.
+    validations:
+      required: false
+  - type: textarea
+    id: source
+    attributes:
+      label: Публичный источник
+      description: Для фактических правок — ссылка на публичный первоисточник (стандарт, нормативный акт, документация сети, RFC, white paper). Для опечаток оставьте пустым.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Подтверждения
+      options:
+        - label: Я поискал среди существующих issues — дубликата нет.
+          required: true
+        - label: Источник публичный. Я не привожу сведения из NDA или закрытых спецификаций (M/Chip, внутренние спецификации НСПК «Мир», внутренние документы Visa/Mastercard).
+          required: true

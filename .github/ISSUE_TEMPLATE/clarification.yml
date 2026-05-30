@@ -1,0 +1,22 @@
+name: Неясность или вопрос по содержанию
+description: Текст непонятен, противоречив или требует пояснения — но это не явная ошибка.
+title: "[вопрос] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Для явных ошибок используйте шаблон «Ошибка или неточность (errata)».
+  - type: input
+    id: location
+    attributes:
+      label: Где
+      description: Глава и раздел, метка \label{...} или номер страницы PDF.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Что неясно
+    validations:
+      required: true
