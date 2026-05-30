@@ -1,123 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   viewBox="161 2 380 360"
-   width="380"
-   height="360"
-   version="1.1"
-   id="svg8"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs8" />
-  <!-- Внешнее кольцо: общий ИТ-периметр (out-of-scope) -->
-  <ellipse
-     cx="350.78986"
-     cy="182.14091"
-     rx="180"
-     ry="170"
-     fill="#E8ECF7"
-     stroke="#5C647A"
-     stroke-width="1"
-     id="ellipse1" />
-  <!-- Среднее кольцо: единая зона in-scope-but-not-CDE (connected-to и security-impacting; строгого разделения нет, см. прозу) -->
-  <ellipse
-     cx="350.78986"
-     cy="182.14091"
-     rx="120"
-     ry="115"
-     fill="#7759D6"
-     fill-opacity="0.15"
-     stroke="#7759D6"
-     stroke-width="1"
-     stroke-dasharray="6,3"
-     id="ellipse2" />
-  <!-- CDE -->
-  <ellipse
-     cx="350.78986"
-     cy="182.14091"
-     rx="68"
-     ry="58"
-     fill="#C15462"
-     fill-opacity="0.15"
-     stroke="#C15462"
-     stroke-width="2"
-     stroke-dasharray="6,3"
-     id="ellipse4" />
-  <!-- Подписи зон -->
-  <text
-     x="352.65018"
-     y="44.791103"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text4">Вне области</text>
-  <text
-     x="355.62668"
-     y="105.20891"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text5"
-     dx="0.37206423"><tspan
-       id="tspan10"
-       x="355.62668"
-       y="105.20891">влияющие на безопасность</tspan><tspan
-       id="tspan11"
-       x="355.62668"
-       y="118.95891">(security-impacting)</tspan></text>
-  <text
-     x="353.88077"
-     y="260.50458"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11px"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text6"><tspan
-       id="tspan8"
-       x="353.88077"
-       y="260.50458">связанные</tspan><tspan
-       id="tspan9"
-       x="353.88077"
-       y="274.25458">(connected-to)</tspan></text>
-  <text
-     x="350.78986"
-     y="187"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="40px"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text7">CDE</text>
-  <!-- Пометка про запрет хранения SAD внутри CDE -->
-  <rect
-     x="318.38278"
-     y="199.718"
-     width="63.628803"
-     height="27.223038"
-     rx="2.8922184"
-     fill="#ffffff"
-     stroke="#C15462"
-     stroke-width="1"
-     stroke-dasharray="6,3"
-     id="rect7" />
-  <text
-     x="350.78986"
-     y="210.64091"
-     text-anchor="middle"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9px"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text8"><tspan
-       id="tspan12"
-       x="350.78986"
-       y="210.64091">SAD</tspan><tspan
-       id="tspan13"
-       x="350.78986"
-       y="221.89091">не хранить</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="680" height="420">
+  <defs>
+    <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
+    <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+    <marker id="arr-Good"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+    <marker id="arr-Warn"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
+    <marker id="arr-Bad"     viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
+    <marker id="arr-Muted"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  </defs>
+
+  <!-- "Вне области оценки": фон-фон под всем кадром -->
+  <rect x="0" y="0" width="680" height="420" fill="#F5F7FD"/>
+  <text x="660" y="408" text-anchor="end"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="9px" fill="#5C647A">Вне области оценки</text>
+
+  <!-- Внешняя рамка: в периметре оценки (тонкая Muted-рамка, Panel-заливка) -->
+  <rect x="24" y="22" width="632" height="346" rx="8"
+        fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
+  <text x="40" y="46"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="11px" font-weight="bold" fill="#1A2030">В периметре оценки</text>
+
+  <!-- Два пересекающихся эллипса равного веса -->
+  <!-- Левый: connected-to (AccentA) -->
+  <ellipse cx="262" cy="150" rx="180" ry="98"
+           fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+  <!-- Правый: security-impacting (AccentB) -->
+  <ellipse cx="418" cy="150" rx="180" ry="98"
+           fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
+
+  <!-- Подпись левого множества -->
+  <text x="150" y="150" text-anchor="middle"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="11px" font-weight="bold" fill="#1A2030">связанные (connected-to)</text>
+
+  <!-- Подпись правого множества -->
+  <text x="530" y="143" text-anchor="middle"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="11px" font-weight="bold" fill="#1A2030">влияющие на безопасность</text>
+  <text x="530" y="157" text-anchor="middle"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="11px" font-weight="bold" fill="#1A2030">(security-impacting)</text>
+
+  <!-- Зона пересечения: один короткий ярлык -->
+  <text x="340" y="153" text-anchor="middle"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="9px" fill="#1A2030">в обеих</text>
+
+  <!-- CDE: отдельное ядро в основании (НЕ часть Венна) -->
+  <rect x="220" y="298" width="240" height="56" rx="4"
+        fill="#E8ECF7" stroke="#1A2030" stroke-width="1.5"/>
+  <text x="340" y="324" text-anchor="middle"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="11px" font-weight="bold" fill="#1A2030">CDE</text>
+  <text x="340" y="342" text-anchor="middle"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="10px" fill="#1A2030">CHD/SAD</text>
 </svg>

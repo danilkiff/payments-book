@@ -1,96 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="820" height="620">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 462" width="820" height="462">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-Good-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
-  <marker id="arr-Bad-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#C15462"/></marker>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
+  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
+  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-Good-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
+  <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
+  <marker id="arr-Bad-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#C15462"/></marker>
 </defs>
 
-<!-- Корень: Отказ MIT -->
-<rect x="290.0" y="15.0" width="140" height="40" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
-<text x="360.0" y="40.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Отказ MIT</text>
-<line x1="360.0" y1="55.0" x2="360.0" y2="73.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<!-- ============ Корень: отказ по MIT ============ -->
+<rect x="295" y="16" width="230" height="46" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="410" y="37" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Отказ по MIT</text>
+<text x="410" y="52" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">регулярное списание</text>
 
-<!-- Узел 1: hard / soft decline -->
-<polygon points="360.0,80.0 470.0,120.0 360.0,160.0 250.0,120.0" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="2"/>
-<text x="360.0" y="116.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">hard / soft</text>
-<text x="360.0" y="130.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">decline?</text>
+<!-- корень -> дискриминатор 1 -->
+<line x1="410" y1="62" x2="410" y2="86" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
 
-<!-- hard -> Уведомить (правая ветка вниз) -->
-<text x="495.0" y="115.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">hard</text>
-<path d="M 470 120 C 720 120, 740 220, 720 480" fill="none" stroke="#C15462" stroke-width="1.5" marker-end="url(#arr-Bad)"/>
-<rect x="492" y="119.5" width="70" height="11" fill="#ffffff"/>
-<text x="495.0" y="128.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">карта закрыта</text>
+<!-- ============ Дискриминатор 1: код отказа ============ -->
+<polygon points="410,90 510,134 410,178 310,134" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="2"/>
+<text x="410" y="138" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Код отказа?</text>
 
-<!-- soft -> вниз к ромбу SCA -->
-<text x="375.0" y="180.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">soft</text>
-<line x1="360.0" y1="160.0" x2="360.0" y2="188.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<!-- ребро влево: код требует аутентификации -> лист 3DS/SCA (AccentA, нейтральный редирект) -->
+<path d="M 350 152 C 250 200, 175 210, 155 246" fill="none" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<rect x="60" y="186" width="222" height="28" rx="4" fill="#ffffff"/>
+<text x="171" y="199" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">код требует</text>
+<text x="171" y="211" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">аутентификации</text>
 
-<!-- Узел 2: Требуется SCA? -->
-<polygon points="360.0,195.0 470.0,235.0 360.0,275.0 250.0,235.0" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="2"/>
-<text x="360.0" y="231.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Требуется</text>
-<text x="360.0" y="245.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">SCA?</text>
+<!-- ребро вправо-вниз: код допускает повтор -> классификатор MAC (AccentB, второй нейтральный путь) -->
+<path d="M 470 152 C 540 196, 530 200, 525 244" fill="none" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<rect x="498" y="184" width="210" height="20" rx="4" fill="#ffffff"/>
+<text x="503" y="198" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">код допускает повтор</text>
 
-<!-- exemption нет -> 3DS -->
-<text x="200.0" y="225.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">exemption нет</text>
-<line x1="250.0" y1="235.0" x2="180.0" y2="283.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
-<rect x="100.0" y="285.0" width="160" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="180.0" y="305.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Вернуть клиента</text>
-<text x="180.0" y="322.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">в 3DS</text>
+<!-- ============ Лист 3DS/SCA (нейтральный, AccentA) ============ -->
+<rect x="40" y="252" width="232" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
+<text x="156" y="276" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Вернуть клиента в 3DS / SCA</text>
+<text x="156" y="292" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">ту же MIT не повторять</text>
 
-<!-- exemption применима -> Какой MAC? -->
-<text x="500.0" y="225.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">exemption применима</text>
-<line x1="470.0" y1="235.0" x2="540.0" y2="283.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
+<!-- ============ Дискриминатор 2: классификатор MAC ============ -->
+<polygon points="525,248 660,304 525,360 390,304" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
+<text x="525" y="298" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Классификатор MAC</text>
+<text x="525" y="313" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">DE 48</text>
 
-<!-- Узел 3: какой MAC? -->
-<polygon points="555.0,285.0 665.0,325.0 555.0,365.0 445.0,325.0" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="2"/>
-<text x="555.0" y="321.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Какой MAC?</text>
-<text x="555.0" y="335.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">Merchant Advice Code</text>
+<!-- ребро MAC 03 / незнакомый -> STOP (Bad) -->
+<path d="M 430 322 C 300 360, 200 360, 162 396" fill="none" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
+<rect x="78" y="334" width="192" height="20" rx="4" fill="#ffffff"/>
+<text x="174" y="348" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 03 / незнакомый</text>
 
-<!-- MAC 01 -> Account Updater (влево) -->
-<text x="440.0" y="318.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 01</text>
-<text x="440.0" y="330.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">new account info</text>
-<line x1="445.0" y1="325.0" x2="370.0" y2="395.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<rect x="220.0" y="395.0" width="160" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="300.0" y="415.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Account Updater</text>
-<text x="300.0" y="432.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">VAU / ABU → повтор</text>
+<!-- ребро MAC 01 -> UPDATE (Warn) -->
+<path d="M 525 360 C 480 378, 450 380, 430 396" fill="none" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
+<rect x="380" y="366" width="70" height="20" rx="4" fill="#ffffff"/>
+<text x="415" y="380" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 01</text>
 
-<!-- MAC 24-30 -> ждать N (вниз и чуть влево) -->
-<text x="555.0" y="382.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 24–30</text>
-<line x1="555.0" y1="365.0" x2="525.0" y2="393.0" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
-<rect x="410.0" y="395.0" width="200" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="510.0" y="415.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Ждать N</text>
-<text x="510.0" y="432.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">1ч / 24ч / 2–10 дн → повтор</text>
+<!-- ребро MAC 24-30 -> WAIT (Good, ok-путь) -->
+<path d="M 620 322 C 680 350, 685 360, 685 396" fill="none" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<rect x="628" y="338" width="120" height="26" rx="4" fill="#ffffff"/>
+<text x="688" y="356" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 24–30</text>
 
-<!-- MAC 03 -> Уведомить (вправо, к правой колонке) -->
-<text x="670.0" y="320.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 03</text>
-<path d="M 665 325 C 760 340, 760 440, 720 476" fill="none" stroke="#C15462" stroke-width="1.5" marker-end="url(#arr-Bad)"/>
-<rect x="668" y="323.5" width="62" height="11" fill="#ffffff"/>
-<text x="670.0" y="332.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">do not honor</text>
+<!-- ============ Лист STOP (Bad) ============ -->
+<rect x="40" y="398" width="246" height="50" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
+<text x="163" y="421" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">STOP</text>
+<text x="163" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">повторы прекратить</text>
 
-<!-- Прочее (другие MAC / нет MAC) -> Повтор с лимитами -->
-<path d="M 625 343 C 665 400, 665 450, 615 478" fill="none" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="668.0" y="425.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#1A2030">иначе</text>
+<!-- ============ Лист UPDATE (Warn) ============ -->
+<rect x="312" y="398" width="206" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="415" y="421" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">UPDATE</text>
+<text x="415" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">реквизиты через ABU / VAU</text>
 
-<!-- Повтор с лимитами -->
-<rect x="395.0" y="478.0" width="220" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="505.0" y="507.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Повтор с лимитами</text>
+<!-- ============ Лист WAIT (Good) ============ -->
+<rect x="558" y="398" width="252" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
+<text x="684" y="421" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">WAIT</text>
+<text x="684" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">повтор через интервал</text>
 
-<!-- Уведомить клиента (правая колонка, ниже) -->
-<rect x="635.0" y="478.0" width="170" height="50" rx="8" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="2"/>
-<text x="720.0" y="498.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">Уведомить клиента</text>
-<text x="720.0" y="515.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">письмо / push / биллинг</text>
-
-<!-- Dunning-ярлык -->
-<rect x="195.0" y="565.0" width="170" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5" stroke-dasharray="6,3"/>
-<text x="280.0" y="590.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Dunning</text>
-
-<!-- Стрелка от Уведомить -> Dunning -->
-<path d="M 680 535 C 500 580, 420 590, 365 585" fill="none" stroke="#B8821C" stroke-width="1.5" marker-end="url(#arr-Warn)"/>
 </svg>
