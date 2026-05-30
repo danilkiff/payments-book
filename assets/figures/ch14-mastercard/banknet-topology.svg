@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 350" width="820" height="350">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300">
 <defs>
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
   <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
@@ -7,82 +7,82 @@
 </defs>
 
 <!-- Banknet container -->
-<rect x="10" y="10" width="800" height="330" rx="10" fill="#F5F7FD" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3"/>
-<text x="30" y="32" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">Banknet</text>
+<rect x="8" y="8" width="484" height="284" rx="10" fill="#F5F7FD" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="22" y="28" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="bold" fill="#1A2030">Banknet</text>
 
 <!-- ============ Layer 1: Authorization (real-time) ============ -->
-<rect x="20" y="50" width="780" height="120" rx="6" fill="#ffffff" stroke="#7759D6" stroke-width="1"/>
-<text x="30" y="68" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Авторизация (real-time)</text>
+<rect x="16" y="44" width="468" height="100" rx="6" fill="#ffffff" stroke="#7759D6" stroke-width="1"/>
+<text x="24" y="60" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#5C647A">Авторизация (real-time)</text>
 
 <!-- Эквайер (left) -->
-<rect x="40" y="90" width="120" height="50" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
-<text x="100" y="113" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Эквайер</text>
-<text x="100" y="128" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">acquirer</text>
+<rect x="16" y="72" width="80" height="56" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="56" y="97" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">Эквайер</text>
+<text x="56" y="115" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">acquirer</text>
 
 <!-- MIP (left) -->
-<rect x="180" y="98" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
-<text x="215" y="119" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIP</text>
+<rect x="107" y="82" width="44" height="36" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
+<text x="129" y="105" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">MIP</text>
 
 <!-- Authorization Platform (center) -->
-<rect x="270" y="78" width="280" height="74" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
-<text x="410" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Authorization Platform</text>
-<text x="410" y="118" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">коммутатор онлайн-авторизации</text>
-<text x="410" y="135" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">stand-in при недоступности эмитента</text>
+<rect x="162" y="64" width="176" height="72" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
+<text x="250" y="88" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">Authorization Platform</text>
+<text x="250" y="108" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">коммутатор</text>
+<text x="250" y="124" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">онлайн-авторизации</text>
 
 <!-- MIP (right) -->
-<rect x="570" y="98" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
-<text x="605" y="119" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIP</text>
+<rect x="349" y="82" width="44" height="36" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
+<text x="371" y="105" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">MIP</text>
 
 <!-- Эмитент (right) -->
-<rect x="660" y="90" width="120" height="50" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
-<text x="720" y="113" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Эмитент</text>
-<text x="720" y="128" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">issuer</text>
+<rect x="404" y="72" width="80" height="56" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="444" y="97" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">Эмитент</text>
+<text x="444" y="115" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">issuer</text>
 
 <!-- Arrows in Authorization layer -->
-<line x1="162" y1="115" x2="178" y2="115" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<line x1="252" y1="115" x2="268" y2="115" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<line x1="552" y1="115" x2="568" y2="115" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<line x1="642" y1="115" x2="658" y2="115" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<line x1="96" y1="100" x2="105" y2="100" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<line x1="151" y1="100" x2="160" y2="100" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<line x1="338" y1="100" x2="347" y2="100" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+<line x1="393" y1="100" x2="402" y2="100" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 
 <!-- ============ Layer 2: Clearing + Settlement (batch) ============ -->
-<rect x="20" y="180" width="780" height="150" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1"/>
-<text x="30" y="198" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Клиринг и расчёт (batch, файлы IPM)</text>
+<rect x="16" y="156" width="468" height="126" rx="6" fill="#ffffff" stroke="#B8821C" stroke-width="1"/>
+<text x="24" y="172" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#5C647A">Клиринг и расчёт (batch, файлы IPM)</text>
 
 <!-- Эквайер (left, layer 2) -->
-<rect x="40" y="216" width="120" height="50" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
-<text x="100" y="239" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Эквайер</text>
-<text x="100" y="254" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">acquirer</text>
+<rect x="16" y="186" width="80" height="50" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="56" y="209" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">Эквайер</text>
+<text x="56" y="227" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">acquirer</text>
 
 <!-- MIP (left, layer 2) -->
-<rect x="180" y="224" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
-<text x="215" y="245" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIP</text>
+<rect x="107" y="193" width="44" height="36" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
+<text x="129" y="216" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">MIP</text>
 
 <!-- GCMS (center, layer 2) -->
-<rect x="270" y="204" width="280" height="74" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="410" y="226" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">GCMS</text>
-<text x="410" y="244" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Global Clearing Management System</text>
-<text x="410" y="261" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">IPM-сообщения, пакетная обработка</text>
+<rect x="162" y="178" width="176" height="62" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<text x="250" y="200" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">GCMS</text>
+<text x="250" y="218" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">Global Clearing</text>
+<text x="250" y="234" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">Management System</text>
 
 <!-- MIP (right, layer 2) -->
-<rect x="570" y="224" width="70" height="34" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
-<text x="605" y="245" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">MIP</text>
+<rect x="349" y="193" width="44" height="36" rx="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
+<text x="371" y="216" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">MIP</text>
 
 <!-- Эмитент (right, layer 2) -->
-<rect x="660" y="216" width="120" height="50" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
-<text x="720" y="239" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">Эмитент</text>
-<text x="720" y="254" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">issuer</text>
+<rect x="404" y="186" width="80" height="50" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
+<text x="444" y="209" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">Эмитент</text>
+<text x="444" y="227" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">issuer</text>
 
 <!-- Arrows in Clearing layer -->
-<line x1="162" y1="241" x2="178" y2="241" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
-<line x1="252" y1="241" x2="268" y2="241" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
-<line x1="552" y1="241" x2="568" y2="241" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
-<line x1="642" y1="241" x2="658" y2="241" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
+<line x1="96" y1="211" x2="105" y2="211" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
+<line x1="151" y1="211" x2="160" y2="211" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
+<line x1="338" y1="211" x2="347" y2="211" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
+<line x1="393" y1="211" x2="402" y2="211" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
 
 <!-- SAM below GCMS -->
-<rect x="320" y="290" width="180" height="32" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
-<text x="410" y="311" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">SAM · расчёт нетто-позиций</text>
+<rect x="162" y="250" width="176" height="22" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
+<text x="250" y="265" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A2030">SAM, расчёт нетто-позиций</text>
 
-<!-- GCMS → SAM vertical arrow -->
-<line x1="410" y1="278" x2="410" y2="288" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+<!-- GCMS to SAM vertical arrow -->
+<line x1="250" y1="240" x2="250" y2="248" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
 
 </svg>

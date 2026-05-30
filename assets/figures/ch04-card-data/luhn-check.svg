@@ -7,7 +7,7 @@
 <text x="124.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">16</text>
 <rect x="106" y="59" width="36" height="26" rx="3" fill="#E8ECF7"/>
 <text x="124.0" y="77.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">4</text>
-<rect x="106" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
+<rect x="106" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="124.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#4E63D9">8</text>
 <rect x="106" y="117" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="124.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">8</text>
@@ -20,7 +20,7 @@
 <text x="196.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">14</text>
 <rect x="178" y="59" width="36" height="26" rx="3" fill="#E8ECF7"/>
 <text x="196.0" y="77.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">6</text>
-<rect x="178" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
+<rect x="178" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="196.0" y="105.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#4E63D9">12-9=3</text>
 <rect x="178" y="117" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="196.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">3</text>
@@ -33,7 +33,7 @@
 <text x="276.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">12</text>
 <rect x="258" y="59" width="36" height="26" rx="3" fill="#E8ECF7"/>
 <text x="276.0" y="77.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">2</text>
-<rect x="258" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
+<rect x="258" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="276.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#4E63D9">4</text>
 <rect x="258" y="117" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="276.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">4</text>
@@ -46,7 +46,7 @@
 <text x="348.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">10</text>
 <rect x="330" y="59" width="36" height="26" rx="3" fill="#E8ECF7"/>
 <text x="348.0" y="77.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">1</text>
-<rect x="330" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
+<rect x="330" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="348.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#4E63D9">2</text>
 <rect x="330" y="117" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="348.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">2</text>
@@ -59,7 +59,7 @@
 <text x="428.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">8</text>
 <rect x="410" y="59" width="36" height="26" rx="3" fill="#E8ECF7"/>
 <text x="428.0" y="77.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">3</text>
-<rect x="410" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
+<rect x="410" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="428.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#4E63D9">6</text>
 <rect x="410" y="117" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="428.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">6</text>
@@ -72,7 +72,7 @@
 <text x="500.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">6</text>
 <rect x="482" y="59" width="36" height="26" rx="3" fill="#E8ECF7"/>
 <text x="500.0" y="77.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">5</text>
-<rect x="482" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
+<rect x="482" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="500.0" y="105.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#4E63D9">10-9=1</text>
 <rect x="482" y="117" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="500.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">1</text>
@@ -85,7 +85,7 @@
 <text x="580.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">4</text>
 <rect x="562" y="59" width="36" height="26" rx="3" fill="#E8ECF7"/>
 <text x="580.0" y="77.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">0</text>
-<rect x="562" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
+<rect x="562" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="580.0" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#4E63D9">0</text>
 <rect x="562" y="117" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="580.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">0</text>
@@ -98,7 +98,7 @@
 <text x="652.0" y="47.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">2</text>
 <rect x="634" y="59" width="36" height="26" rx="3" fill="#E8ECF7"/>
 <text x="652.0" y="77.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">9</text>
-<rect x="634" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
+<rect x="634" y="88" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
 <text x="652.0" y="105.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#4E63D9">18-9=9</text>
 <rect x="634" y="117" width="36" height="26" rx="3" fill="#4E63D9" fill-opacity="0.15"/>
 <text x="652.0" y="135.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">9</text>

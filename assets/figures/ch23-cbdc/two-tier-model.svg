@@ -32,7 +32,7 @@
 <rect x="40" y="245" width="240" height="70" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
 <text x="160" y="285" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Коммерческие банки</text>
 
-<rect x="290" y="245" width="240" height="70" rx="6" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
+<rect x="290" y="245" width="240" height="70" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
 <text x="410" y="285" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Федеральное казначейство</text>
 
 <rect x="540" y="245" width="240" height="70" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5" stroke-dasharray="6,3"/>

@@ -79,7 +79,7 @@ for col_idx, (title, subtitle, values, example_value) in enumerate(POSITIONS):
 
   rows_start_y = HEADER_H + EXAMPLE_BAR_H + 14
   lines.append(t(x + 14, rows_start_y, "Значение", size=9, fill=MUTED, weight="bold", anchor="start"))
-  lines.append(t(x + 60, rows_start_y, "Смысл", size=9, fill=MUTED, weight="bold", anchor="start"))
+  lines.append(t(x + 66, rows_start_y, "Смысл", size=9, fill=MUTED, weight="bold", anchor="start"))
 
   for row_idx, (val, meaning) in enumerate(values):
     row_y = rows_start_y + 6 + (row_idx + 1) * ROW_H
@@ -94,7 +94,7 @@ for col_idx, (title, subtitle, values, example_value) in enumerate(POSITIONS):
     lines.append(t(x + 18, row_y, val, size=11, fill=INK,
                    weight="bold" if is_example else "normal"))
     font_size = 10 if len(meaning) <= 26 else 9
-    lines.append(t(x + 36, row_y, meaning, size=font_size, fill=INK,
+    lines.append(t(x + 66, row_y, meaning, size=font_size, fill=INK,
                    weight="bold" if is_example else "normal", anchor="start"))
 
 lines.append("</svg>")

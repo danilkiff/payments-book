@@ -213,9 +213,9 @@
      width="110"
      height="44"
      rx="8"
-     fill="#B8821C"
-     fill-opacity="0.18"
-     stroke="#B8821C"
+     fill="#4E63D9"
+     fill-opacity="0.15"
+     stroke="#4E63D9"
      stroke-width="2" />
   <text
      x="544.73041"
@@ -279,7 +279,7 @@
      x2="175.76112"
      y2="182.12395"
      stroke="#2F8B67"
-     stroke-width="1.5"
+     stroke-width="2"
      marker-end="url(#arr-Good)" />
   <text
      x="228.79871"
@@ -294,7 +294,7 @@
      x2="435.76114"
      y2="182.12395"
      stroke="#C15462"
-     stroke-width="1.5"
+     stroke-width="2"
      marker-end="url(#arr-Bad)" />
   <text
      x="359.93295"
@@ -335,7 +335,7 @@
      fill="#C15462"
      fill-opacity="0.15"
      stroke="#C15462"
-     stroke-width="1.5" />
+     stroke-width="2" />
   <text
      x="460.76114"
      y="199.12395"

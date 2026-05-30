@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="680" height="420">
-  <defs>
-    <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-    <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-    <marker id="arr-Good"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-    <marker id="arr-Warn"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-    <marker id="arr-Bad"     viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
-    <marker id="arr-Muted"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  </defs>
-
   <!-- "Вне области оценки": фон-фон под всем кадром -->
   <rect x="0" y="0" width="680" height="420" fill="#F5F7FD"/>
   <text x="660" y="408" text-anchor="end"
@@ -50,7 +41,7 @@
 
   <!-- CDE: отдельное ядро в основании (НЕ часть Венна) -->
   <rect x="220" y="298" width="240" height="56" rx="4"
-        fill="#E8ECF7" stroke="#1A2030" stroke-width="1.5"/>
+        fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
   <text x="340" y="324" text-anchor="middle"
         font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
         font-size="11px" font-weight="bold" fill="#1A2030">CDE</text>

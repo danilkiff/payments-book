@@ -77,9 +77,8 @@
 <!-- RReq: ACS -> DS -->
 <line x1="443" y1="168" x2="382" y2="168" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
 <text x="411" y="181" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">RReq</text>
-<!-- RReq: DS -> 3DS Server -->
+<!-- RReq: DS -> 3DS Server (стрелка без дублирующей подписи — RReq уже помечен у ACS-конца) -->
 <line x1="258" y1="168" x2="197" y2="168" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="226" y="181" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">RReq</text>
 
 <!-- ===== Подпись о RRes (текст, без отдельной стрелки — это симметричный обратный путь) ===== -->
 <text x="320" y="200" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#2F8B67">RRes возвращается тем же путём через DS</text>
@@ -99,7 +98,7 @@
 <path d="M 410,310 L 410,285 L 590,285 L 590,180" fill="none" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
 <text x="595" y="245" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">CRes</text>
 
-<text x="530" y="200" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">канал вызова</text>
-<text x="530" y="211" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">между ACS и устройством</text>
+<text x="498" y="200" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">канал вызова</text>
+<text x="498" y="211" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">между ACS и устройством</text>
 
 </svg>

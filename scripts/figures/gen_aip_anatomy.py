@@ -88,11 +88,13 @@ for row in range(NUM_ROWS):
     elif is_functional:
       fill, opacity, text_weight = ACCENT_A, 0.15, "normal"
     else:
-      fill, opacity, text_weight = SOFT, 1.0, "normal"
+      # Soft -- сплошная заливка без fill-opacity (README, "Заливки и обводки").
+      fill, opacity, text_weight = SOFT, None, "normal"
 
+    opacity_attr = f' fill-opacity="{opacity}"' if opacity is not None else ""
     lines.append(
       f'<rect x="{cx}" y="{ry}" width="{CELL_W - 1}" height="{CELL_H - 1}" '
-      f'fill="{fill}" fill-opacity="{opacity}" '
+      f'fill="{fill}"{opacity_attr} '
       f'stroke="{MUTED}" stroke-width="0.5"/>'
     )
 
@@ -114,12 +116,14 @@ for col in range(2):
 
   has_set = any((col, b) in FUNCTIONAL_BITS and (byte >> (b - 1)) & 1 for b in range(1, 9))
   fill = WARN if has_set else SOFT
-  opacity = 0.18 if has_set else 1.0
+  # Soft -- сплошная заливка без fill-opacity (README, "Заливки и обводки").
+  opacity = 0.18 if has_set else None
   text_weight = "bold" if has_set else "normal"
 
+  opacity_attr = f' fill-opacity="{opacity}"' if opacity is not None else ""
   lines.append(
     f'<rect x="{cx}" y="{HEX_BAR_Y}" width="{box_w}" height="{HEX_BAR_H}" '
-    f'fill="{fill}" fill-opacity="{opacity}" '
+    f'fill="{fill}"{opacity_attr} '
     f'stroke="{MUTED}" stroke-width="0.5"/>'
   )
   # Hex

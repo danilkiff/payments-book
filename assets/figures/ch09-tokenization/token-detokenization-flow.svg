@@ -56,6 +56,7 @@
 
 <!-- Event 2: ТСП → Эквайер -->
 <line x1="205" y1="170" x2="330" y2="170" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<rect x="188" y="156" width="158" height="11" fill="#ffffff"/>
 <text x="267" y="164" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">DPAN + сумма + MID + TRID</text>
 
 <!-- Event 3: Эквайер → Сеть -->
@@ -74,6 +75,7 @@
 
 <!-- Event 6: Сеть → Эмитент -->
 <line x1="455" y1="330" x2="710" y2="330" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<rect x="514" y="316" width="136" height="11" fill="#ffffff"/>
 <text x="582" y="324" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MTI 0100 · DE 2 = FPAN · TAL</text>
 
 <!-- Phase label: RESPONSE LEG -->
@@ -82,10 +84,12 @@
 
 <!-- Event 7: Эмитент → Сеть (response with FPAN) -->
 <line x1="710" y1="400" x2="455" y2="400" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<rect x="506" y="386" width="152" height="11" fill="#ffffff"/>
 <text x="582" y="394" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MTI 0110 · DE 2 = FPAN · DE 39 = 00</text>
 
 <!-- Event 8: Сеть → ... → Держатель (cascading response with DPAN substitution) -->
 <path d="M 455,420 L 330,420 L 205,420 L 80,420" fill="none" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<rect x="141" y="406" width="252" height="11" fill="#ffffff"/>
 <text x="267" y="414" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MTI 0110 · DE 2 = DPAN — продавцу и держателю</text>
 
 </svg>

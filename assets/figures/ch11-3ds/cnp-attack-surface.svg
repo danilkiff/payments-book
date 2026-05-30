@@ -334,7 +334,7 @@
      height="40"
      rx="6"
      fill="#F5F7FD"
-     stroke="#C15462"
+     stroke="#5C647A"
      stroke-width="1.5"
      id="rect22" />
   <text
@@ -353,7 +353,7 @@
      height="40"
      rx="6"
      fill="#F5F7FD"
-     stroke="#C15462"
+     stroke="#5C647A"
      stroke-width="1.5"
      id="rect23" />
   <text
@@ -372,7 +372,7 @@
      height="40"
      rx="6"
      fill="#F5F7FD"
-     stroke="#C15462"
+     stroke="#5C647A"
      stroke-width="1.5"
      id="rect24" />
   <text
@@ -391,7 +391,7 @@
      height="40"
      rx="6"
      fill="#F5F7FD"
-     stroke="#C15462"
+     stroke="#5C647A"
      stroke-width="1.5"
      id="rect25" />
   <text
@@ -410,7 +410,7 @@
      height="40"
      rx="6"
      fill="#F5F7FD"
-     stroke="#C15462"
+     stroke="#5C647A"
      stroke-width="1.5"
      id="rect26" />
   <text
@@ -523,5 +523,4 @@
      font-weight="bold"
      fill="#1A2030"
      id="text31">закрывает</text>
-  <!-- BOTTOM LEGEND -->
 </svg>

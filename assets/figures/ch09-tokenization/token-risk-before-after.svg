@@ -10,10 +10,10 @@
 <text x="280" y="46" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">До токенизации</text>
 
 <rect x="395" y="25" width="200" height="32" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
-<text x="495" y="46" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Локальная</text>
+<text x="495" y="46" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Локальная токенизация</text>
 
 <rect x="610" y="25" width="200" height="32" rx="6" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
-<text x="710" y="46" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Сетевая</text>
+<text x="710" y="46" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Сетевая токенизация</text>
 
 <!-- ROW 1: ТСП A -->
 <text x="20" y="95" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">ТСП A</text>

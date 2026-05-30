@@ -62,19 +62,6 @@
          fill="#7759D6"
          id="path4" />
     </marker>
-    <marker
-       id="arr-Warn"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M0,0 L10,5 L0,10 Z"
-         fill="#B8821C"
-         id="path5" />
-    </marker>
   </defs>
   <!-- swim-lane labels (left column) -->
   <text
@@ -509,7 +496,7 @@
      id="line40b" />
   <text
      x="700.0"
-     y="170.0"
+     y="157.0"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"
@@ -518,7 +505,7 @@
      id="text-async-7a">асинхронно:</text>
   <text
      x="700.0"
-     y="183.0"
+     y="170.0"
      text-anchor="middle"
      font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
      font-size="10"

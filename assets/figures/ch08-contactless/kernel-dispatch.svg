@@ -4,49 +4,6 @@
    width="760"
    height="252"
    xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <marker
-       id="arr-Muted"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path d="M0,0 L10,5 L0,10 Z" fill="#5C647A" />
-    </marker>
-    <marker
-       id="arr-AccentA"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9" />
-    </marker>
-    <marker
-       id="arr-AccentB"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path d="M0,0 L10,5 L0,10 Z" fill="#7759D6" />
-    </marker>
-    <marker
-       id="arr-Good"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67" />
-    </marker>
-  </defs>
-
   <!-- Selected-row highlight (Good @0.15), drawn under the grid -->
   <rect x="40" y="78" width="680" height="48" fill="#2F8B67" fill-opacity="0.15" />
 

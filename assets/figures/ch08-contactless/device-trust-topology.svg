@@ -2,9 +2,7 @@
 <defs>
   <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
   <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-Good"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
   <marker id="arr-Warn"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-Bad"     viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
   <marker id="arr-Muted"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
 </defs>
 
@@ -49,9 +47,6 @@
 
   <!-- Выделенный путь NFC → eSE -->
   <line x1="185" y1="210" x2="185" y2="220" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-
-  <!-- Контрольный канал AP → eSE (тонкий, не для криптографии) -->
-  <line x1="135" y1="252" x2="143" y2="252" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3"/>
 
   <!-- Содержимое eSE -->
   <rect x="55" y="296" width="170" height="60" rx="4" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
@@ -149,8 +144,8 @@
   <rect x="610" y="248" width="140" height="26" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
   <text x="680" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">HCE Service · приложение кошелька</text>
 
-  <!-- Стрелка NFC → HCE Service -->
-  <line x1="680" y1="210" x2="680" y2="248" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
+  <!-- Стрелка NFC → Application Processor (выровнена по SE/TEE: до верхней грани блока) -->
+  <line x1="680" y1="210" x2="680" y2="220" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
 
   <!-- Защищённое хранилище ОС с LUK -->
   <rect x="595" y="296" width="170" height="60" rx="4" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
