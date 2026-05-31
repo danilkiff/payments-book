@@ -433,12 +433,12 @@ MT-сообщения хранили данные сторон в~неструк
 и~сравнивал \enquote{сырые} строки. MX-сообщения (CBPR+~--- Cross-Border Payments and
 Reporting Plus) задают структурированные поля~\cite{iso-20022-cbpr-plus}:
 
-\begin{enumerate}
+\begin{itemize}
   \item Nm~--- имя;
   \item PstlAdr~--- почтовый адрес с~townName, country code, subdivision;
   \item LEI~--- Legal Entity Identifier для~юрлиц;
   \item Id/OrgId/AnyBIC~--- идентификатор организации.
-\end{enumerate}
+\end{itemize}
 
 Проверка работает с~отдельными атрибутами, а~не с~единой строкой, как раньше.
 Точность сопоставления выросла: имя и~адрес разделены, код страны в~отдельном
