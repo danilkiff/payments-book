@@ -5,7 +5,7 @@
 <text x="22" y="78" text-anchor="start" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Операция</text>
 
 <rect x="155" y="55" width="180" height="40" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="245" y="72" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Международная схема</text>
+<text x="245" y="72" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Международная сеть</text>
 <text x="245" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">Visa · Mastercard · Amex</text>
 
 <rect x="345" y="55" width="195" height="40" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
@@ -64,7 +64,7 @@
 <!-- ROW 10: Offline auth -->
 <rect x="15" y="320" width="525" height="26" fill="#F5F7FD"/>
 <text x="22" y="338" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Offline auth (SDA/DDA/CDA)</text>
-<text x="165" y="338" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">RSA, сертификат CA схемы</text>
+<text x="165" y="338" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">RSA, сертификат CA сети</text>
 <text x="355" y="338" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">RSA, сертификат CA НСПК</text>
 
 <!-- RIGHT PANEL: Russian HSM vendors -->
