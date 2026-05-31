@@ -63,7 +63,7 @@ jobs:
 
       - name: Upload PDF for release job
         if: steps.download.outputs.cached == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: release-pdf
           path: build/payments-book.pdf
@@ -79,7 +79,7 @@ jobs:
     if: needs.download-pdf.outputs.cached != 'true'
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       # См. комментарий к аналогичному шагу в ci.yml — без этого Docker
       # создаст build/ от root и cp в «Create GitHub Release» упадёт с Permission denied.
@@ -106,7 +106,7 @@ jobs:
           args: payments-book.tex
 
       - name: Upload PDF for release job
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: release-pdf
           path: build/payments-book.pdf
@@ -124,10 +124,10 @@ jobs:
        needs.build-pdf-fallback.result == 'skipped')
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Download PDF
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: release-pdf
           path: build/
