@@ -429,9 +429,9 @@
      width="135"
      height="40"
      rx="6"
-     fill="#B8821C"
-     fill-opacity="0.18"
-     stroke="#B8821C"
+     fill="#2F8B67"
+     fill-opacity="0.15"
+     stroke="#2F8B67"
      stroke-width="1.5"
      id="rect27" />
   <text
@@ -442,16 +442,16 @@
      font-size="10px"
      font-weight="bold"
      fill="#1A2030"
-     id="text27">закрывает частично</text>
+     id="text27">снижает риск</text>
   <rect
      x="182"
      y="185"
      width="135"
      height="40"
      rx="6"
-     fill="#C15462"
-     fill-opacity="0.15"
-     stroke="#C15462"
+     fill="#B8821C"
+     fill-opacity="0.18"
+     stroke="#B8821C"
      stroke-width="1.5"
      id="rect28" />
   <text
@@ -462,16 +462,16 @@
      font-size="10px"
      font-weight="bold"
      fill="#1A2030"
-     id="text28">не закрывает</text>
+     id="text28">частично</text>
   <rect
      x="344"
      y="185"
      width="135"
      height="40"
      rx="6"
-     fill="#2F8B67"
-     fill-opacity="0.15"
-     stroke="#2F8B67"
+     fill="#B8821C"
+     fill-opacity="0.18"
+     stroke="#B8821C"
      stroke-width="1.5"
      id="rect29" />
   <text
@@ -482,7 +482,7 @@
      font-size="10px"
      font-weight="bold"
      fill="#1A2030"
-     id="text29">закрывает</text>
+     id="text29">частично</text>
   <rect
      x="508"
      y="185"
@@ -502,16 +502,16 @@
      font-size="10px"
      font-weight="bold"
      fill="#1A2030"
-     id="text30">закрывает</text>
+     id="text30">снижает риск</text>
   <rect
      x="670"
      y="185"
      width="135"
      height="40"
      rx="6"
-     fill="#2F8B67"
+     fill="#C15462"
      fill-opacity="0.15"
-     stroke="#2F8B67"
+     stroke="#C15462"
      stroke-width="1.5"
      id="rect31" />
   <text
@@ -522,5 +522,5 @@
      font-size="10px"
      font-weight="bold"
      fill="#1A2030"
-     id="text31">закрывает</text>
+     id="text31">не помогает</text>
 </svg>
