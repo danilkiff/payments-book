@@ -1217,6 +1217,12 @@ Chip по-прежнему используется из-за поздней EMV
 подтверждает себя в~операции~--- PAN, сертификаты эмитента и~карты, ключ карты,
 счётчики, CVM List, коды действий,~--- эмитент загружает при~выпуске.
 
+\begin{figure}[!ht]
+  \centering
+  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/card-personalization-flow}
+  \caption{Межзональный обмен ключевым материалом под~транспортным ключом, который собирают из~компонентов под~dual control и~split knowledge.}\label{fig:card-personalization-flow}
+\end{figure}
+
 Жизненный цикл чипа фиксирует CPLC (Card Production Life Cycle,
 тег~\texttt{0x9F7F}, 42~байта): производство микросхемы, предперсонализация,
 персонализация, использование, блокировка. CPLC хранит производственную
@@ -1248,12 +1254,6 @@ GET DATA для~диагностики и~учёта.
 и~ни один оператор не~видит ключ целиком~\cite{visa-vsdc-guide}.
 Ошибка здесь дороже всего: скомпрометированный транспортный ключ открывает ключи
 всей партии карт.
-
-\begin{figure}[tbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/card-personalization-flow}
-  \caption{Межзональный обмен ключевым материалом под~транспортным ключом, который собирают из~компонентов под~dual control и~split knowledge.}\label{fig:card-personalization-flow}
-\end{figure}
 
 Персонализация карт Мир следует той~же модели~--- подготовка данных, бюро,
 загрузка по~GlobalPlatform,~--- но~на~криптографии ГОСТ и~по~требованиям НСПК;
