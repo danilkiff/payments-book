@@ -1,15 +1,11 @@
 % frontmatter/pre.tex — обложка и служебная страница после титула
 
-\newcommand{\bookcoverimage}{assets/cover.png}
-
+% Векторная обложка (TikZ): \drawbookcover определён в src/frontmatter/cover.tex
+% (генерируется scripts/figures/gen_cover.py, подключается в src/preamble.tex).
 \newcommand{\makebookcover}{%
   \begingroup
   \thispagestyle{empty}%
-  \AddToShipoutPictureBG*{%
-    \AtPageLowerLeft{%
-      \includegraphics[width=\paperwidth,height=\paperheight]{\bookcoverimage}%
-    }%
-  }%
+  \AddToShipoutPictureBG*{\AtPageLowerLeft{\drawbookcover}}%
   \null
   \clearpage
   \endgroup
