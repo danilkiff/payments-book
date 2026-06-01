@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458 300" width="458" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-28 0 568 206" width="568" height="206">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
@@ -6,33 +6,34 @@
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
   <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
 </defs>
-<ellipse cx="229.0" cy="18.0" rx="9.0" ry="9.0" fill="#5C647A" stroke="#5C647A" stroke-width="2"/>
-<line x1="229.0" y1="27.0" x2="229.0" y2="38.0" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<rect x="132.0" y="38.0" width="194" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="229.0" y="62.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">AwaitingAuthorisation</text>
-<line x1="180.0" y1="78.0" x2="112.0" y2="126.0" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="116.0" y="104.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">подтверждает</text>
-<line x1="278.0" y1="78.0" x2="346.0" y2="126.0" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
-<text x="340.0" y="104.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">отклоняет</text>
-<rect x="18.0" y="128.0" width="150" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="93.0" y="152.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">Authorised</text>
-<rect x="290.0" y="128.0" width="150" height="40" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
-<text x="365.0" y="152.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">Rejected</text>
-<line x1="130.0" y1="168.0" x2="130.0" y2="244.0" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="124.0" y="194.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">использовано</text>
-<rect x="18.0" y="244.0" width="150" height="40" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="93.0" y="268.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">Consumed</text>
-<line x1="168.0" y1="152.0" x2="232.0" y2="244.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="126.0" y="216.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">ExpirationDateTime</text>
-<text x="126.0" y="230.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">истёк</text>
-<line x1="250.0" y1="78.0" x2="258.0" y2="244.0" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="262.0" y="112.0" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">таймаут</text>
-<rect x="230.0" y="244.0" width="120" height="40" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="290.0" y="268.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">Expired</text>
-<polyline points="326.0,58.0 440.0,120.0 425.0,244.0" fill="none" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="420.0" y="186.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">DELETE</text>
-<text x="420.0" y="201.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">через ASPSP</text>
-<rect x="368.0" y="244.0" width="80" height="40" rx="8" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="408.0" y="264.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="normal" fill="#1A2030">Deleted</text>
-<text x="408.0" y="278.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#5C647A">(до Authorised)</text>
+<!-- happy path: initial -> AwaitingAuthorisation -> Authorised -->
+<ellipse cx="16" cy="62" rx="8" ry="8" fill="#5C647A" stroke="#5C647A" stroke-width="2"/>
+<line x1="24" y1="62" x2="37" y2="62" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<rect x="39" y="44" width="158" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="118" y="66" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">AwaitingAuthorisation</text>
+<line x1="197" y1="62" x2="299" y2="62" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
+<text x="248" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">подтверждает</text>
+<rect x="301" y="44" width="140" height="36" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
+<text x="371" y="66" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Authorised</text>
+<!-- terminal states -->
+<rect x="20" y="152" width="104" height="36" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
+<text x="72" y="174" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Rejected</text>
+<rect x="138" y="152" width="104" height="36" rx="8" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="190" y="174" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Deleted</text>
+<rect x="256" y="152" width="104" height="36" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
+<text x="308" y="174" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Expired</text>
+<rect x="392" y="152" width="108" height="36" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
+<text x="446" y="174" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1A2030">Consumed</text>
+<!-- transitions from AwaitingAuthorisation -->
+<line x1="80" y1="80" x2="74" y2="152" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
+<text x="60" y="118" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">отклоняет</text>
+<line x1="120" y1="80" x2="186" y2="152" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
+<text x="111" y="110" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">DELETE</text>
+<line x1="156" y1="80" x2="300" y2="152" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+<text x="254" y="106" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">таймаут</text>
+<!-- transitions from Authorised -->
+<line x1="360" y1="80" x2="320" y2="152" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
+<text x="330" y="112" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">истёк</text>
+<line x1="404" y1="80" x2="440" y2="152" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
+<text x="448" y="128" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#1A2030">использовано</text>
 </svg>
