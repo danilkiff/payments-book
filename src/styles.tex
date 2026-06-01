@@ -100,6 +100,10 @@
 \soulregister{\texttt}{1}
 \soulregister{\mbox}{1}
 \soulregister{\enquote}{1}
+% Кавычки внутри \highlight писать как \mbox{\enquote{...}}: soul красит
+% содержимое \mbox целиком вместе с ёлочками, тогда как делитеры
+% зарегистрированного \enquote без обёртки остаются вне жёлтого фона.
+% \mbox запрещает перенос внутри закавыченного — для коротких терминов это норма.
 \DeclareRobustCommand{\highlight}[1]{%
   \begingroup
   \sethlcolor{MarkerYellow}%
