@@ -1,20 +1,16 @@
 # Инженерия платежей
 
-Исходники книги о карточных платежах, СБП и платёжной инфраструктуре.
-
-> [!WARNING]
-> **Public alpha.** Иллюстрации имеют огрехи, структура разделов не финальна, неизбежны фактологические и стилистические ошибки. 
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19884844.svg)](https://doi.org/10.5281/zenodo.19884844)
 
-Примеры из книги и их проверка (python) - в [`samples/`](samples/README.md).
+Исходники книги о карточных платежах, СБП и платёжной инфраструктуре.
+Примеры из книги и их проверка (python) - в [samples/](samples/README.md).
 
 ## Нашли ошибку?
 
-Поправки приветствуются. Сообщить: [issue по шаблону errata](https://github.com/danilkiff/payments-book/issues/new/choose). Что приложить и как опираться на источники — в [`CONTRIBUTING.md`](CONTRIBUTING.md). Подтверждённые ошибки — в [`ERRATA.md`](ERRATA.md).
+Поправки приветствуются. Сообщить: [issue по шаблону errata](https://github.com/danilkiff/payments-book/issues/new/choose). 
+Что приложить и как опираться на источники — в [CONTRIBUTING.md](CONTRIBUTING.md). 
+Подтверждённые ошибки — в [ERRATA.md](ERRATA.md).
 
 ## Лицензия
-
-[![CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Текст книги распространяется на условиях [CC BY-NC 4.0](LICENSE).
