@@ -297,10 +297,11 @@ ISO/IEC~7812~\cite{iso-7812-transition} и~публичной документа
 распределения, не~зарегистрированные в~ISO.
 
 \begin{table}[t]
+  \caption{Параметры национальных карточных сетей
+  СНГ.}\label{tab:regional-comparison}
   \begingroup
-  \footnotesize
+  \tablesetup
   \setlength{\tabcolsep}{3pt}
-  \renewcommand{\arraystretch}{1.15}
   \begin{tabularx}{\textwidth}{
       @{}P{0.14\textwidth}
       Y
@@ -317,26 +318,29 @@ ISO/IEC~7812~\cite{iso-7812-transition} и~публичной документа
     Мир & 2200--2204 & По~таблицам НСПК
     & Да (ТСП свыше~20~млн руб./год)
     & Кобейдж с~UnionPay \\
+    \rowsep
     Белкарт & требует сверки & По~правилам оператора
     & Да (по~ряду категорий ТСП)
     & Кобейдж с~Мир; до~2022~--- Maestro \\
+    \rowsep
     HUMO & требует сверки & По~правилам НСПК Узбекистана
     & Да (внутри Узбекистана)
     & Кобейдж с~UnionPay \\
+    \rowsep
     UzCard & требует сверки & По~правилам UzCard
     & Да (внутри Узбекистана)
     & Ограниченный \\
+    \rowsep
     ArCa & требует сверки & По~правилам ЦБ Армении
     & Да (внутри Армении)
     & Кобейдж с~Visa/MC, JCB, UnionPay; ArCa--Мир~--- до~30~марта 2024 \\
+    \rowsep
     ЭЛКАРТ & требует сверки & По~правилам оператора
     & Да (внутри Кыргызстана)
     & Кобейдж с~UnionPay и~Мир \\
     \bottomrule
-  \end{tabularx}%
+  \end{tabularx}\par
   \endgroup
-  \caption{Параметры национальных карточных сетей
-  СНГ.}\label{tab:regional-comparison}
 \end{table}
 
 Поддержка национальной карты~--- это согласие на~её внутреннюю платёжную систему

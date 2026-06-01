@@ -246,10 +246,9 @@ MCC~--- попытка скрыть фактический профиль биз
 
 \needspace{4\baselineskip}
 \begin{table}[H]
+  \caption{Критерии идентификации ТСП по~категориям риска.}\label{tab:kyb-risk}
   \begingroup
-  \footnotesize
-  \setlength{\tabcolsep}{4pt}
-  \renewcommand{\arraystretch}{1.2}
+  \tablesetup
   \begin{minipage}{\textwidth}
     \begin{tabularx}{\textwidth}{
         @{}B{0.18\textwidth}
@@ -268,23 +267,25 @@ MCC~--- попытка скрыть фактический профиль биз
       retail, SaaS (Software as a Service) &
       travel &
       crypto exchange,\newline gambling, adult \\
+      \rowsep
       Документы &
       стандартный пакет &
       расширенный пакет\newline + лицензии &
       расширенный пакет\newline + финансовая отчётность \\
+      \rowsep
       Мониторинг после подключения &
       квартальный &
       ежемесячный &
       еженедельный \\
+      \rowsep
       Плавающий резерв &
       нет &
       5--10\% &
       10--20\% \\
       \bottomrule
     \end{tabularx}
-  \end{minipage}%
+  \end{minipage}\par
   \endgroup
-  \caption{Критерии идентификации ТСП по~категориям риска.}\label{tab:kyb-risk}
 \end{table}
 
 \section{Мониторинг ТСП после подключения}\label{sec:merchant-monitoring}

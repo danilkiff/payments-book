@@ -357,10 +357,9 @@ CVV/CVC1, CVV2 и~iCVV эмитент вычисляет одним алгори
 Значение, верное для одного канала, не~проходит проверку в~другом.
 
 \begin{table}[H]
+  \caption{Статические коды верификации: один алгоритм, разная подстановка сервисного кода.}\label{tab:cvv-family}
   \begingroup
-  \footnotesize
-  \setlength{\tabcolsep}{4pt}
-  \renewcommand{\arraystretch}{1.2}
+  \tablesetup
   \begin{tabularx}{\textwidth}{
       @{}P{0.15\textwidth}
       Y
@@ -375,12 +374,13 @@ CVV/CVC1, CVV2 и~iCVV эмитент вычисляет одним алгори
     \thd{Канал приёма} \\
     \midrule
     CVV/CVC1 & дискреционные данные Track~1 и~Track~2 полосы & настоящий код полосы & магнитная полоса \\
+    \rowsep
     CVV2/CVC2 & напечатан на~пластике, на~полосу не~пишется & \texttt{000} & CNP: интернет, заказ по~телефону \\
+    \rowsep
     iCVV/Chip CVC & Track~2 Equivalent чипа, тег~\texttt{57} & \texttt{999} & чиповые транзакции \\
     \bottomrule
-  \end{tabularx}%
+  \end{tabularx}\par
   \endgroup
-  \caption{Статические коды верификации: один алгоритм, разная подстановка сервисного кода.}\label{tab:cvv-family}
 \end{table}
 
 Сервисные коды \texttt{000} и~\texttt{999} на~магнитной полосе недопустимы:

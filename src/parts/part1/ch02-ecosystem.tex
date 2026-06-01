@@ -207,10 +207,10 @@ PayKeeper или Best2Pay сочетают шлюз с~функциями агр
 сети.
 
 \begin{table}[H]
+  \caption{Сравнение технических посредников в~карточной
+  цепочке.}\label{tab:intermediaries-comparison}
   \begingroup
-  \footnotesize
-  \setlength{\tabcolsep}{4pt}
-  \renewcommand{\arraystretch}{1.2}
+  \tablesetup
   \begin{tabularx}{\textwidth}{
       @{}P{0.20\textwidth}
       Y
@@ -227,15 +227,17 @@ PayKeeper или Best2Pay сочетают шлюз с~функциями агр
     \thd{Фасилитатор} \\
     \midrule
     Лицензия & --- & --- & агрегатор & БПА \\
+    \rowsep
     Участвует в~расчётах & нет & нет & да & да \\
+    \rowsep
     Договор с~ТСП & банк & банк & PSP & фасилитатор \\
+    \rowsep
     Риск чарджбэков & нет & нет & общий с~банком & на нём \\
+    \rowsep
     Дескриптор & эквайер & эквайер & ТСП & субмерчант \\
     \bottomrule
-  \end{tabularx}%
+  \end{tabularx}\par
   \endgroup
-  \caption{Сравнение технических посредников в~карточной
-  цепочке.}\label{tab:intermediaries-comparison}
 \end{table}
 
 Строка \enquote{Лицензия} группирует посредников по категориям
