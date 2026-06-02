@@ -36,9 +36,9 @@
 \usepackage{longtable}
 \usepackage{float}
 \usepackage{wrapfig}  % обтекание текстом узких фигур (напр. стек протоколов)
-% Сквозная нумерация таблиц и~рисунков с~единицы по всей книге
+% Сквозная нумерация таблиц и рисунков с единицы по всей книге
 % (вместо дефолтной KOMA-нумерации «глава.номер»);
-% \counterwithout~--- ядро LaTeX2e, отдельный пакет chngcntr не~нужен.
+% \counterwithout — ядро LaTeX2e, отдельный пакет chngcntr не нужен.
 \counterwithout{table}{chapter}
 \counterwithout{figure}{chapter}
 % Нумерация сносок с единицы на каждой странице.
@@ -136,8 +136,8 @@
 \DeclareTOCStyleEntry[numwidth=3.2em]{default}{section}
 
 % --- Уплотнение TOC: убрать вертикальную паузу перед каждой главой ---
-% KOMA по умолчанию ставит ~1em перед записью \chapter в TOC; на 38 главах
-% это съедает ~0.7 страницы. Глава по-прежнему различима по жирности и
+% KOMA по умолчанию ставит около 1em перед записью \chapter в TOC; на 38 главах
+% это съедает около 0.7 страницы. Глава по-прежнему различима по жирности и
 % номеру слева.
 \RedeclareSectionCommand[tocbeforeskip=0.2em]{chapter}
 
