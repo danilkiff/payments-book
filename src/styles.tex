@@ -25,7 +25,7 @@
 % определяется в cover.tex позже по порядку загрузки, поэтому дублируем hex здесь.
 \colorlet{ImportantInk}{Bad}
 \definecolor{PracticeInk}{HTML}{2F6E95}
-\definecolor{MarkerYellow}{HTML}{FFF2A8}
+\definecolor{MarkerSand}{HTML}{EFE4C2}  % песочный highlight — в тон открывателей частей
 
 % --- Пастельная палитра купюр Банка России (верхний градиент на старте части) ---
 % Соответствие частей сохранено: I→100, II→200, III→1000, IV→2000, V→5000.
@@ -79,8 +79,9 @@
 \newcolumntype{P}[1]{>{\tblnohyphens\RaggedRight\arraybackslash}p{#1}}
 \newcolumntype{B}[1]{>{\tblnohyphens\RaggedRight\arraybackslash\bfseries}p{#1}}
 
-% --- Стиль таблиц (Packt header-strip) ---
-% Тёмная плашка Ink на всю ширину строки хедера, белый PT~Sans~Bold в~ячейках.
+% --- Стиль таблиц (тёмная header-strip) ---
+% Плашка HdrSlate (поднятый сине-стальной, мягче мёртвого Ink) на всю ширину
+% строки хедера, белый PT Sans Bold в ячейках.
 % Тело таблицы — белое, без зебры. Booktabs-линейки.
 %
 % Использование:
@@ -92,7 +93,9 @@
 %     ...
 %     \bottomrule
 %   \end{tabularx}
-\newcommand{\headrow}{\rowcolor{Ink}}
+% HdrSlate — «поднятый» тёмный сине-стальной для хедера таблиц (см. комментарий выше).
+\definecolor{HdrSlate}{HTML}{2C3650}
+\newcommand{\headrow}{\rowcolor{HdrSlate}}
 \newcommand{\thd}[1]{{\color{white}\sffamily\bfseries #1}}
 
 % --- Легенда-подпись под таблицей ---
@@ -162,7 +165,7 @@
 % \mbox запрещает перенос внутри закавыченного — для коротких терминов это норма.
 \DeclareRobustCommand{\highlight}[1]{%
   \begingroup
-  \sethlcolor{MarkerYellow}%
+  \sethlcolor{MarkerSand}%
   \hl{#1}%
   \endgroup
 }
