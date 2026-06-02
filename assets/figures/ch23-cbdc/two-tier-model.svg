@@ -1,49 +1,298 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440">
-<defs>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-</defs>
-
-<!-- LAYER 1 — Bank of Russia -->
-<rect x="20" y="35" width="780" height="125" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="32" y="55" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Уровень 1 · Банк России</text>
-
-<rect x="40" y="75" width="175" height="70" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="127" y="115" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Эмиссия</text>
-
-<rect x="225" y="75" width="175" height="70" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="312" y="115" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Реестр кошельков</text>
-
-<rect x="410" y="75" width="175" height="70" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="497" y="115" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Расчётный движок</text>
-
-<rect x="595" y="75" width="185" height="70" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3"/>
-<text x="687" y="115" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">DLT-узлы</text>
-
-<!-- INTER-LAYER FLOWS -->
-<line x1="300" y1="160" x2="300" y2="200" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<line x1="520" y1="200" x2="520" y2="160" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-
-<!-- LAYER 2 — Intermediaries -->
-<rect x="20" y="205" width="780" height="125" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="32" y="225" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Уровень 2 · Участники платформы</text>
-
-<rect x="40" y="245" width="240" height="70" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
-<text x="160" y="285" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Коммерческие банки</text>
-
-<rect x="290" y="245" width="240" height="70" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
-<text x="410" y="285" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Федеральное казначейство</text>
-
-<rect x="540" y="245" width="240" height="70" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5" stroke-dasharray="6,3"/>
-<text x="660" y="285" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Иные участники</text>
-
-<!-- Down to client -->
-<line x1="410" y1="330" x2="410" y2="360" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)" marker-start="url(#arr-Muted)"/>
-
-<!-- CLIENT -->
-<rect x="270" y="360" width="280" height="55" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="410" y="383" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Клиент</text>
-<text x="410" y="401" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">физлицо · ТСП · ГРБС (через интерфейсы Казначейства)</text>
-
+<svg
+   viewBox="0 0 820 320"
+   width="820"
+   height="320"
+   version="1.1"
+   id="svg12"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <marker
+       id="arr-Muted"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#5c647a"
+         id="path1" />
+    </marker>
+    <marker
+       id="arr-AccentA"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#4e63d9"
+         id="path2" />
+    </marker>
+    <marker
+       id="arr-AccentA-9"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#4e63d9"
+         id="path2-1" />
+    </marker>
+  </defs>
+  <!-- LAYER 1 — Bank of Russia -->
+  <rect
+     x="19.82349"
+     y="6.8268242"
+     width="780.35303"
+     height="85.10643"
+     rx="8.0036201"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="2"
+     stroke-dasharray="6, 3"
+     id="rect2" />
+  <text
+     x="32"
+     y="27"
+     text-anchor="start"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text2">Уровень 1 · Банк России</text>
+  <rect
+     x="39.766453"
+     y="46.766449"
+     width="175.11046"
+     height="33.171574"
+     rx="6.003787"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.5"
+     id="rect3" />
+  <text
+     x="127"
+     y="67"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text3">Эмиссия</text>
+  <rect
+     x="224.88322"
+     y="46.766449"
+     width="175.11046"
+     height="33.171574"
+     rx="6.003787"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.5"
+     id="rect4" />
+  <text
+     x="312"
+     y="67"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text4">Реестр кошельков</text>
+  <rect
+     x="410"
+     y="46.766449"
+     width="175.11046"
+     height="33.171574"
+     rx="6.003787"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.5"
+     id="rect5" />
+  <text
+     x="497"
+     y="67"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text5">Расчётный движок</text>
+  <rect
+     x="595.11676"
+     y="46.766449"
+     width="185.11678"
+     height="33.171574"
+     rx="6.003787"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="1.5"
+     stroke-dasharray="6, 3"
+     id="rect6" />
+  <text
+     x="687"
+     y="67"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text6">DLT-узлы</text>
+  <!-- INTER-LAYER FLOWS -->
+  <line
+     x1="300"
+     y1="92"
+     x2="300"
+     y2="132"
+     stroke="#4e63d9"
+     stroke-width="2"
+     marker-end="url(#arr-AccentA)"
+     id="line6" />
+  <line
+     x1="409.50708"
+     y1="216.09921"
+     x2="409.50708"
+     y2="256.09921"
+     stroke="#4e63d9"
+     stroke-width="2"
+     marker-end="url(#arr-AccentA-9)"
+     id="line6-5"
+     style="marker-end:url(#arr-AccentA-9)" />
+  <line
+     x1="520"
+     y1="132"
+     x2="520"
+     y2="92"
+     stroke="#5c647a"
+     stroke-width="2"
+     stroke-dasharray="6, 3"
+     marker-end="url(#arr-Muted)"
+     id="line7" />
+  <!-- LAYER 2 — Intermediaries -->
+  <rect
+     x="19.816322"
+     y="132.81978"
+     width="780.36737"
+     height="83.648331"
+     rx="8.003768"
+     fill="#2f8b67"
+     fill-opacity="0.15"
+     stroke="#2f8b67"
+     stroke-width="2"
+     stroke-dasharray="6, 3"
+     id="rect7" />
+  <text
+     x="32"
+     y="157"
+     text-anchor="start"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text7">Уровень 2 · Участники платформы</text>
+  <rect
+     x="39.751194"
+     y="176.75119"
+     width="240.16139"
+     height="31.239174"
+     rx="6.0040345"
+     fill="#2f8b67"
+     fill-opacity="0.15"
+     stroke="#2f8b67"
+     stroke-width="1.5"
+     id="rect8" />
+  <text
+     x="160"
+     y="197"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text8">Коммерческие банки</text>
+  <rect
+     x="289.91931"
+     y="176.75119"
+     width="240.16139"
+     height="31.239174"
+     rx="6.0040345"
+     fill="#2f8b67"
+     fill-opacity="0.15"
+     stroke="#2f8b67"
+     stroke-width="1.5"
+     id="rect9" />
+  <text
+     x="410"
+     y="197"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text9">Федеральное казначейство</text>
+  <rect
+     x="540.0874"
+     y="176.75119"
+     width="240.16139"
+     height="31.239174"
+     rx="6.0040345"
+     fill="#2f8b67"
+     fill-opacity="0.15"
+     stroke="#2f8b67"
+     stroke-width="1.5"
+     stroke-dasharray="6, 3"
+     id="rect10" />
+  <text
+     x="660"
+     y="197"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text10">Иные участники</text>
+  <!-- Down to client -->
+  <!-- CLIENT -->
+  <rect
+     x="270"
+     y="256"
+     width="280"
+     height="55"
+     rx="8"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="2"
+     id="rect11" />
+  <text
+     x="410"
+     y="279"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text11">Клиент</text>
+  <text
+     x="410"
+     y="297"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text12">физлицо · ТСП · ГРБС (через интерфейсы Казначейства)</text>
 </svg>
