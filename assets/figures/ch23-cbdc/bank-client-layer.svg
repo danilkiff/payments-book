@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 300"
+   width="800"
+   height="300"
+   version="1.1"
+   id="svg28"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <marker
+       id="arr-AccentA"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#4e63d9"
+         id="path1" />
+    </marker>
+  </defs>
+  <!-- FORBIDDEN: client straight to platform -->
+  <path
+     d="M 66.302128,136.64843 V 21.201348 H 698.07514 V 69.54481"
+     fill="none"
+     stroke="#c15462"
+     stroke-width="1.55456"
+     stroke-dasharray="6, 3"
+     id="path2" />
+  <line
+     x1="377"
+     y1="15"
+     x2="389"
+     y2="27"
+     stroke="#c15462"
+     stroke-width="2"
+     id="line2" />
+  <line
+     x1="389"
+     y1="15"
+     x2="377"
+     y2="27"
+     stroke="#c15462"
+     stroke-width="2"
+     id="line3" />
+  <text
+     x="383"
+     y="11"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#c15462"
+     id="text3">прямого доступа нет</text>
+  <!-- CLIENT -->
+  <rect
+     x="7.9163246"
+     y="136.91632"
+     width="120.16735"
+     height="56.751385"
+     rx="8.011157"
+     fill="#ffffff"
+     stroke="#5c647a"
+     stroke-width="1.5"
+     id="rect3" />
+  <text
+     x="68"
+     y="168"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text4">Клиент</text>
+  <!-- CLIENT -> BANK (DBO) -->
+  <line
+     x1="128"
+     y1="165"
+     x2="184"
+     y2="165"
+     stroke="#4e63d9"
+     stroke-width="2"
+     marker-end="url(#arr-AccentA)"
+     id="line5" />
+  <text
+     x="154"
+     y="157"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text6">ДБО</text>
+  <!-- BANK panel -->
+  <rect
+     x="183.88921"
+     y="60.889198"
+     width="372.22159"
+     height="208.91199"
+     rx="8.0047655"
+     fill="#e8ecf7"
+     stroke="#5c647a"
+     stroke-width="1"
+     id="rect6" />
+  <text
+     x="196"
+     y="82"
+     text-anchor="start"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text7">Банк-участник · клиентская сторона</text>
+  <rect
+     x="197.78874"
+     y="95.788757"
+     width="168.20634"
+     height="42.259853"
+     rx="6.0073695"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.5"
+     id="rect7" />
+  <text
+     x="282"
+     y="112"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text8">Идентификация</text>
+  <text
+     x="282"
+     y="128"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text9">115-ФЗ</text>
+  <rect
+     x="374.00491"
+     y="95.788757"
+     width="168.20634"
+     height="42.259853"
+     rx="6.0073695"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.5"
+     id="rect9" />
+  <text
+     x="458"
+     y="112"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text10">Подпись и</text>
+  <text
+     x="458"
+     y="128"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text11">авторизация</text>
+  <rect
+     x="197.77846"
+     y="149.77846"
+     width="168.2164"
+     height="40.657711"
+     rx="6.0077286"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.5"
+     id="rect11" />
+  <text
+     x="282"
+     y="166"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text12">ПОД/ФТ/ФРОМУ</text>
+  <text
+     x="282"
+     y="182"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text13">валютный контроль</text>
+  <rect
+     x="374.00516"
+     y="149.77846"
+     width="168.2164"
+     height="40.657711"
+     rx="6.0077286"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.5"
+     id="rect13" />
+  <text
+     x="458"
+     y="166"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text14">Антифрод</text>
+  <text
+     x="458"
+     y="182"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text15">лимиты · реквизиты</text>
+  <rect
+     x="197.78874"
+     y="203.78876"
+     width="168.20634"
+     height="42.259853"
+     rx="6.0073695"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.5"
+     id="rect15" />
+  <text
+     x="282"
+     y="220"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text16">Ввод/вывод</text>
+  <text
+     x="282"
+     y="236"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text17">счёт · кошелёк</text>
+  <rect
+     x="374.00491"
+     y="203.78876"
+     width="168.20634"
+     height="42.259853"
+     rx="6.0073695"
+     fill="#4e63d9"
+     fill-opacity="0.15"
+     stroke="#4e63d9"
+     stroke-width="1.5"
+     id="rect17" />
+  <text
+     x="458"
+     y="220"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text18">Приём</text>
+  <text
+     x="458"
+     y="236"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text19">универсальный QR · НСПК</text>
+  <text
+     x="196"
+     y="262"
+     text-anchor="start"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text20">248-ФЗ · тариф ЦБ</text>
+  <!-- BANK -> PLATFORM (checked order to settlement) -->
+  <line
+     x1="556"
+     y1="172"
+     x2="616"
+     y2="172"
+     stroke="#4e63d9"
+     stroke-width="2"
+     marker-end="url(#arr-AccentA)"
+     id="line20" />
+  <text
+     x="586"
+     y="164"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text21">на расчёт</text>
+  <!-- PLATFORM panel (thin backend) -->
+  <rect
+     x="616"
+     y="36"
+     width="164"
+     height="250"
+     rx="8"
+     fill="#f5f7fd"
+     stroke="#5c647a"
+     stroke-width="1"
+     id="rect21" />
+  <text
+     x="698"
+     y="58"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text22">Платформа</text>
+  <text
+     x="698"
+     y="74"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text23">Банка России</text>
+  <text
+     x="698"
+     y="91"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text24">хранение · расчёт · эмиссия</text>
+  <rect
+     x="630"
+     y="102"
+     width="136"
+     height="46"
+     rx="6"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="1.5"
+     id="rect24" />
+  <text
+     x="698"
+     y="129"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text25">Кошелёк · реестр</text>
+  <rect
+     x="630"
+     y="156"
+     width="136"
+     height="46"
+     rx="6"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="1.5"
+     id="rect25" />
+  <text
+     x="698"
+     y="183"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text26">Расчётный движок</text>
+  <rect
+     x="630"
+     y="210"
+     width="136"
+     height="46"
+     rx="6"
+     fill="#7759d6"
+     fill-opacity="0.15"
+     stroke="#7759d6"
+     stroke-width="1.5"
+     id="rect26" />
+  <text
+     x="698"
+     y="237"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     fill="#1a2030"
+     id="text27">Эмиссия</text>
+  <text
+     x="698"
+     y="274"
+     text-anchor="middle"
+     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+     font-size="9px"
+     fill="#5c647a"
+     id="text28">обязательство Банка России</text>
+</svg>
