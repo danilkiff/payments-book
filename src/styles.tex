@@ -20,8 +20,11 @@
 \definecolor{Bad}{HTML}{C15462}
 
 % --- Цвета notebox-блоков и текстового маркера ---
-\definecolor{ImportantInk}{HTML}{A1273C}
-\definecolor{PracticeInk}{HTML}{1C56A3}
+% ВАЖНО — Bad (канон фигур, красный «внимание»): \colorlet, чтобы цвет следовал
+% за каноном. ПРАКТИКА — тон обложки CoverSteel #2F6E95 (gen_cover.py); CoverSteel
+% определяется в cover.tex позже по порядку загрузки, поэтому дублируем hex здесь.
+\colorlet{ImportantInk}{Bad}
+\definecolor{PracticeInk}{HTML}{2F6E95}
 \definecolor{MarkerYellow}{HTML}{FFF2A8}
 
 % --- Пастельная палитра купюр Банка России (верхний градиент на старте части) ---
@@ -165,26 +168,26 @@
 }
 
 % --- Базовый стиль notebox ---
-% Хедер-плашка во всю ширину (белый sans-serif по цветному фону) + белое тело
-% + тонкая цветная линейка снизу. Без рамки слева/справа/сверху — блок
-% не «давит» на полосу и хорошо читается как самостоятельная единица.
+% Мягкая плашка: бледная заливка титульной полосы (цвет!14) с тёмным цветным
+% титулом (sans-serif), едва тонированное тело (цвет!4), скруглённые углы
+% (arc 4pt), без рамки и линеек. Тон держится в одной гамме с заливками фигур
+% (15%) и пастелью открывателей частей — блок не «давит» на полосу и читается
+% как самостоятельная единица. Цвет титульной полосы/тела задаёт \colornotebox.
 \tcbset{
   notebox/.style={
     enhanced,
     breakable=false,
     boxrule=0pt,
-    arc=0pt, outer arc=0pt,
+    arc=4pt, outer arc=4pt,
     frame hidden,
     before skip=\medskipamount,
     after skip=\medskipamount,
     left=6pt, right=6pt, top=4pt, bottom=4pt,
-    colback=white,
     fontupper=\rmfamily\footnotesize\linespread{0.95}\selectfont
     \setlength{\parindent}{0pt}%
     \setlength{\parskip}{0.5\baselineskip plus 1pt minus 1pt},
     parbox=false,
     fonttitle=\sffamily\footnotesize\bfseries,
-    coltitle=white,
     titlerule=0pt,
     toptitle=3pt, bottomtitle=3pt,
     lefttitle=8pt, righttitle=8pt,
@@ -193,11 +196,14 @@
 
 % --- Цветной notebox с заголовком (общая основа) ---
 % \colornotebox{<цвет>}{<заголовок>}{<содержимое>}
+% Титульная полоса — заливка цвет!14, текст титула — насыщенный цвет;
+% тело — цвет!4. Скругление и отсутствие рамки берутся из стиля notebox.
 \newcommand{\colornotebox}[3]{%
   \begin{tcolorbox}[notebox,
-      colbacktitle=#1,
-      title={#2},
-    borderline south={0.4pt}{0pt}{#1}]
+      colbacktitle=#1!14,
+      coltitle=#1,
+      colback=#1!4,
+    title={#2}]
     #3
 \end{tcolorbox}}
 
