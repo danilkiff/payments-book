@@ -35,19 +35,6 @@
          fill="#4e63d9"
          id="path2" />
     </marker>
-    <marker
-       id="arr-AccentA-9"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#4e63d9"
-         id="path2-1" />
-    </marker>
   </defs>
   <!-- LAYER 1 — Bank of Russia -->
   <rect
@@ -169,9 +156,9 @@
      y2="256.09921"
      stroke="#4e63d9"
      stroke-width="2"
-     marker-end="url(#arr-AccentA-9)"
+     marker-end="url(#arr-AccentA)"
      id="line6-5"
-     style="marker-end:url(#arr-AccentA-9)" />
+     style="marker-end:url(#arr-AccentA)" />
   <line
      x1="520"
      y1="132"
