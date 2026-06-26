@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
   INK, MUTED, PANEL, SOFT, ACCENT_A, ACCENT_B,
+  TIER_PANEL, TIER_LIGHT, TIER_NEUTRAL, TIER_DARK, TIER_LIGHT_MID, zebra,
   FONT, figures_dir, t, write_svg, svg_header,
 )
 
@@ -93,30 +94,33 @@ for f in fields:
   f["alt"] = alt if k in ("fixed", "llvar") else 0
 
 
-def fill_for(field, is_ll=False):
+# Тип поля кодируется тиром светлоты (см. _common.py): fixed -- светлый тир
+# ACCENT_A с zebra по смежным полям, llvar -- тёмный тир ACCENT_B, bitmap --
+# нейтральный MUTED, mti -- сплошной PANEL. Так типы различимы и при дальтонизме.
+def fill_for(field):
   k = field["palette"]
   if k == "mti":
-    return PANEL, 1.0
+    return PANEL, TIER_PANEL
   if k == "bitmap":
-    return MUTED, 0.15
+    return MUTED, TIER_NEUTRAL
   if k == "fixed":
-    return ACCENT_A, 0.15
+    return ACCENT_A, zebra(TIER_LIGHT, field["alt"])
   if k == "llvar":
-    return ACCENT_B, 0.15
-  return PANEL, 1.0
+    return ACCENT_B, TIER_DARK
+  return PANEL, TIER_PANEL
 
 
 def swatch(field):
   k = field["palette"]
   if k == "mti":
-    return PANEL, 1.0
+    return PANEL, TIER_PANEL
   if k == "bitmap":
-    return MUTED, 0.15
+    return MUTED, TIER_NEUTRAL
   if k == "fixed":
-    return ACCENT_A, 0.15
+    return ACCENT_A, TIER_LIGHT_MID
   if k == "llvar":
-    return ACCENT_B, 0.15
-  return PANEL, 1.0
+    return ACCENT_B, TIER_DARK
+  return PANEL, TIER_PANEL
 
 
 TYPE_LABEL = {"mti": "MTI", "bitmap": "Bitmap", "fixed": "fixed", "llvar": "LLVAR"}
@@ -186,11 +190,18 @@ for row in range(ROWS):
     cx = HV_X_BYTES + col * CELL_W + extra
     f = byte_to_field[i]
     is_ll = (f["ll_len"] > 0 and i - f["offset"] < f["ll_len"])
-    fill, op = fill_for(f, is_ll=is_ll)
+    fill, op = fill_for(f)
     lines.append(
       f'<rect x="{cx}" y="{y}" width="{CELL_W}" height="{CELL_H}" '
       f'fill="{fill}" fill-opacity="{op}"/>'
     )
+    # Не-цветовая метка: тёмная кромка на байтах LL-префикса размечает
+    # переменную длину и отличает llvar от fixed независимо от цвета.
+    if is_ll:
+      lines.append(
+        f'<line x1="{cx}" y1="{y}" x2="{cx + CELL_W}" y2="{y}" '
+        f'stroke="{INK}" stroke-width="2"/>'
+      )
     lines.append(t(cx + CELL_W / 2, y + 14, f"{data[i]:02X}",
                    size=11, fill=INK))
     b = data[i]

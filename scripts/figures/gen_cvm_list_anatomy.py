@@ -13,18 +13,20 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
-  INK, MUTED, SOFT, PANEL, ACCENT_A, ACCENT_B, WARN,
+  INK, MUTED, SOFT, PANEL, ACCENT_A, TIER_LIGHT, zebra,
   figures_dir, t, write_svg, svg_header,
 )
 
-# Поля стрипа: (подпись_hex, ширина_в_ячейках, имя, цвет)
+# Поля стрипа: (подпись_hex, ширина_в_ячейках, имя, цвет). Смежные поля одного
+# оттенка различаются СВЕТЛОТОЙ (zebra), а не сменой ACCENT_A/ACCENT_B: при
+# равной opacity синий и фиолетовый сливались, особенно при дальтонизме.
 FIELDS = [
   ("8E", 1, "тег", MUTED),
   ("0E", 1, "L", MUTED),
   ("00 00 00 00", 4, "X (сумма)", ACCENT_A),
-  ("00 00 00 00", 4, "Y (сумма)", ACCENT_B),
+  ("00 00 00 00", 4, "Y (сумма)", ACCENT_A),
   ("44 03", 2, "правило 1", ACCENT_A),
-  ("42 03", 2, "правило 2", ACCENT_B),
+  ("42 03", 2, "правило 2", ACCENT_A),
   ("1F 00", 2, "правило 3", ACCENT_A),
 ]
 
@@ -59,11 +61,17 @@ lines = svg_header(VIEW_W, VIEW_H)
 
 # Стрип
 x = STRIP_X
+accent_alt = 0
 for hexstr, ncell, name, color in FIELDS:
   w = ncell * CELL_W
+  if color == ACCENT_A:
+    op = zebra(TIER_LIGHT, accent_alt)
+    accent_alt = 1 - accent_alt
+  else:
+    op = 0.15
   lines.append(
     f'<rect x="{x}" y="{STRIP_Y}" width="{w}" height="{CELL_H}" '
-    f'fill="{color}" fill-opacity="0.15" stroke="{MUTED}" stroke-width="0.5"/>'
+    f'fill="{color}" fill-opacity="{op}" stroke="{MUTED}" stroke-width="0.5"/>'
   )
   lines.append(t(x + w / 2, STRIP_Y + 17, hexstr, size=10, fill=INK, weight="bold"))
   lines.append(t(x + w / 2, STRIP_Y + CELL_H + 14, name, size=9, fill=MUTED))

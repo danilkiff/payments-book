@@ -17,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
   INK, MUTED, SOFT, PANEL, ACCENT_A, ACCENT_B, WARN,
+  TIER_LIGHT_MID, TIER_DARK,
   figures_dir, t, write_svg, svg_header,
 )
 
@@ -70,15 +71,17 @@ PAN_GROUPS = [
   (4, 15, "правые 12 цифр PAN без check"),
 ]
 
+# Два операнда XOR разведены по тирам светлоты (светлый PIN vs тёмный PAN):
+# при равной opacity 0.15 синий и фиолетовый сливались, особенно при дальтонизме.
 PIN_GROUP_COLORS = {
   "формат": (PANEL, 1.0),
   "длина": (PANEL, 1.0),
-  "PIN": (ACCENT_A, 0.15),
+  "PIN": (ACCENT_A, TIER_LIGHT_MID),
   "F-padding": (SOFT, 1.0),
 }
 PAN_GROUP_COLORS = {
   "нули": (SOFT, 1.0),
-  "правые 12 цифр PAN без check": (ACCENT_B, 0.15),
+  "правые 12 цифр PAN без check": (ACCENT_B, TIER_DARK),
 }
 
 

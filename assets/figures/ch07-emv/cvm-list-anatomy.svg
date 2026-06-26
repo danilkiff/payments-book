@@ -6,19 +6,19 @@
 <rect x="40" y="16" width="26" height="26" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
 <text x="53.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">0E</text>
 <text x="53.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">L</text>
-<rect x="72" y="16" width="104" height="26" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="72" y="16" width="104" height="26" fill="#4E63D9" fill-opacity="0.22" stroke="#5C647A" stroke-width="0.5"/>
 <text x="124.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">00 00 00 00</text>
 <text x="124.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">X (сумма)</text>
-<rect x="182" y="16" width="104" height="26" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="182" y="16" width="104" height="26" fill="#4E63D9" fill-opacity="0.32" stroke="#5C647A" stroke-width="0.5"/>
 <text x="234.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">00 00 00 00</text>
 <text x="234.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">Y (сумма)</text>
-<rect x="292" y="16" width="52" height="26" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="292" y="16" width="52" height="26" fill="#4E63D9" fill-opacity="0.22" stroke="#5C647A" stroke-width="0.5"/>
 <text x="318.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">44 03</text>
 <text x="318.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">правило 1</text>
-<rect x="350" y="16" width="52" height="26" fill="#7759D6" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="350" y="16" width="52" height="26" fill="#4E63D9" fill-opacity="0.32" stroke="#5C647A" stroke-width="0.5"/>
 <text x="376.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">42 03</text>
 <text x="376.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">правило 2</text>
-<rect x="408" y="16" width="52" height="26" fill="#4E63D9" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="408" y="16" width="52" height="26" fill="#4E63D9" fill-opacity="0.22" stroke="#5C647A" stroke-width="0.5"/>
 <text x="434.0" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">1F 00</text>
 <text x="434.0" y="56" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">правило 3</text>
 <rect x="0" y="84" width="600" height="24" fill="#E8ECF7"/>

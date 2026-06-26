@@ -12,7 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
-  INK, MUTED, SOFT, ACCENT_A, ACCENT_B,
+  INK, MUTED, SOFT, ACCENT_A, TIER_LIGHT, zebra,
   figures_dir, t, write_svg, svg_header,
 )
 
@@ -52,8 +52,10 @@ lines = svg_header(VIEW_W, VIEW_H)
 
 # Hex strip
 x = HEX_X
+# Соседние пары различаются СВЕТЛОТОЙ одного оттенка (zebra), а не сменой
+# оттенка ACCENT_A/ACCENT_B: при равной opacity синий и фиолетовый сливались.
 for idx, (tag_hex, length, name_ru, name_en) in enumerate(PAIRS):
-  color = ACCENT_A if idx % 2 == 0 else ACCENT_B
+  color, op = ACCENT_A, zebra(TIER_LIGHT, idx % 2)
   tag_bytes = [tag_hex[:2], tag_hex[2:]]
   length_byte = f"{length:02X}"
 
@@ -61,7 +63,7 @@ for idx, (tag_hex, length, name_ru, name_en) in enumerate(PAIRS):
     cx = x + i * CELL_W
     lines.append(
       f'<rect x="{cx}" y="{HEX_Y}" width="{CELL_W - 1}" height="{CELL_H}" '
-      f'fill="{color}" fill-opacity="0.15" '
+      f'fill="{color}" fill-opacity="{op}" '
       f'stroke="{MUTED}" stroke-width="0.5"/>'
     )
     lines.append(t(cx + CELL_W / 2, HEX_Y + 16, hb, size=11, fill=INK, weight="bold"))
@@ -69,7 +71,7 @@ for idx, (tag_hex, length, name_ru, name_en) in enumerate(PAIRS):
   cx = x + 2 * CELL_W
   lines.append(
     f'<rect x="{cx}" y="{HEX_Y}" width="{CELL_W - 1}" height="{CELL_H}" '
-    f'fill="{color}" fill-opacity="0.15" '
+    f'fill="{color}" fill-opacity="{op}" '
     f'stroke="{MUTED}" stroke-width="0.5"/>'
   )
   lines.append(t(cx + CELL_W / 2, HEX_Y + 16, length_byte, size=11, fill=INK, weight="bold"))
@@ -91,12 +93,12 @@ lines.append(t(TBL_X_NAME, hdr_y + 16, "Запрошенное значение"
 
 for idx, (tag_hex, length, name_ru, name_en) in enumerate(PAIRS):
   ry = TBL_Y_OFFSET + (1 + idx) * TBL_ROW_H
-  color = ACCENT_A if idx % 2 == 0 else ACCENT_B
+  color, op = ACCENT_A, zebra(TIER_LIGHT, idx % 2)
   if idx % 2 == 1:
     lines.append(f'<rect x="0" y="{ry}" width="{VIEW_W}" height="{TBL_ROW_H}" fill="{SOFT}"/>')
   lines.append(
     f'<rect x="0" y="{ry + 4}" width="{COL_SWATCH}" height="{TBL_ROW_H - 8}" '
-    f'fill="{color}" fill-opacity="0.15"/>'
+    f'fill="{color}" fill-opacity="{op}"/>'
   )
   hex_str = f"{tag_hex[:2]} {tag_hex[2:]} {length:02X}"
   lines.append(t(TBL_X_HEX, ry + 16, hex_str, size=11, fill=INK, anchor="start", weight="bold"))
