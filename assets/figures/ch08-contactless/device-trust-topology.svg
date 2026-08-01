@@ -99,7 +99,7 @@
 
   <!-- AMBA3 AXI bus fabric — линия разделения -->
   <line x1="410" y1="222" x2="410" y2="282" stroke="#4E63D9" stroke-width="2"/>
-  <text x="500" y="217" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">AMBA AXI · TZASC</text>
+  <text x="440" y="218" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">AMBA AXI · TZASC</text>
 
   <!-- Путь к Secure World -->
   <line x1="452" y1="210" x2="452" y2="223" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
@@ -142,7 +142,7 @@
   <rect x="595" y="222" width="170" height="60" rx="4" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
   <text x="680" y="240" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#1A2030">Application Processor · ОС</text>
   <rect x="610" y="248" width="140" height="26" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
-  <text x="680" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">HCE Service · приложение кошелька</text>
+  <text x="680" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">HCE Service кошелька</text>
 
   <!-- Стрелка NFC → Application Processor (выровнена по SE/TEE: до верхней грани блока) -->
   <line x1="680" y1="210" x2="680" y2="220" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
@@ -150,8 +150,8 @@
   <!-- Защищённое хранилище ОС с LUK -->
   <rect x="595" y="296" width="170" height="60" rx="4" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
   <text x="680" y="314" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">в защ. хранилище ОС лежат:</text>
-  <text x="680" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">DPAN · пул LUK (одноразовые ключи)</text>
-  <text x="680" y="346" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">криптограмма генерируется приложением</text>
+  <text x="680" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">DPAN · пул одноразовых LUK</text>
+  <text x="680" y="346" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">криптограмма формируется в ОС</text>
 
   <!-- Связь HCE Service ↔ хранилище -->
   <line x1="680" y1="276" x2="680" y2="294" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3"/>
@@ -167,8 +167,8 @@
   <!-- Свойство офлайн -->
   <rect x="645" y="370" width="120" height="48" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
   <text x="705" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">офлайн ограничен</text>
-  <text x="705" y="399" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">пулом LUK; replenishment</text>
-  <text x="705" y="412" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">требует онлайн-связи с TSP</text>
+  <text x="705" y="399" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">пулом LUK; пополнение —</text>
+  <text x="705" y="412" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">онлайн через TSP</text>
 </g>
 
 <!-- ============================================================ -->
