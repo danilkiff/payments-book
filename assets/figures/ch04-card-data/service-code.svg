@@ -1,58 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 290" width="720" height="290">
-<text x="125.0" y="18" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#5C647A">Позиция 1</text>
-<text x="125.0" y="34" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">interchange + чип</text>
-<rect x="95.0" y="50" width="60" height="42" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="125.0" y="80" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="bold" fill="#1A2030">2</text>
-<text x="24" y="114" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Значение</text>
-<text x="76" y="114" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Смысл</text>
-<text x="28" y="140" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">1</text>
-<text x="76" y="140" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">международная</text>
-<rect x="10" y="146" width="230" height="20" fill="#B8821C" fill-opacity="0.18"/>
-<text x="28" y="160" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">2</text>
-<text x="76" y="160" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">международная + чип</text>
-<text x="28" y="180" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">5</text>
-<text x="76" y="180" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">национальная</text>
-<text x="28" y="200" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">6</text>
-<text x="76" y="200" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">национальная + чип</text>
-<text x="28" y="220" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">7</text>
-<text x="76" y="220" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">частная</text>
-<text x="28" y="240" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">9</text>
-<text x="76" y="240" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">тестовая</text>
-<text x="367.0" y="18" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#5C647A">Позиция 2</text>
-<text x="367.0" y="34" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">авторизация</text>
-<rect x="337.0" y="50" width="60" height="42" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="367.0" y="80" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="bold" fill="#1A2030">0</text>
-<text x="266" y="114" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Значение</text>
-<text x="318" y="114" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Смысл</text>
-<rect x="252" y="126" width="230" height="20" fill="#B8821C" fill-opacity="0.18"/>
-<text x="270" y="140" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">0</text>
-<text x="318" y="140" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">обычная</text>
-<text x="270" y="160" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">2</text>
-<text x="318" y="160" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">онлайн через эмитента</text>
-<text x="270" y="180" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">4</text>
-<text x="318" y="180" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">через эмитента, если нет соглашения</text>
-<text x="609.0" y="18" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#5C647A">Позиция 3</text>
-<text x="609.0" y="34" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#5C647A">услуги + PIN</text>
-<rect x="579.0" y="50" width="60" height="42" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="609.0" y="80" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="bold" fill="#1A2030">1</text>
-<text x="508" y="114" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Значение</text>
-<text x="560" y="114" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Смысл</text>
-<text x="512" y="140" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">0</text>
-<text x="560" y="140" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">без огр., PIN</text>
-<rect x="494" y="146" width="230" height="20" fill="#B8821C" fill-opacity="0.18"/>
-<text x="512" y="160" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">1</text>
-<text x="560" y="160" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">без ограничений</text>
-<text x="512" y="180" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">2</text>
-<text x="560" y="180" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">товары/услуги</text>
-<text x="512" y="200" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">3</text>
-<text x="560" y="200" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">ATM, PIN</text>
-<text x="512" y="220" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">4</text>
-<text x="560" y="220" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">только наличные</text>
-<text x="512" y="240" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">5</text>
-<text x="560" y="240" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">товары/услуги, PIN</text>
-<text x="512" y="260" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">6</text>
-<text x="560" y="260" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#1A2030">без огр., PIN при наличии PED</text>
-<text x="512" y="280" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="normal" fill="#1A2030">7</text>
-<text x="560" y="280" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">товары/услуги, PIN при PED</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 173" width="385pt" height="173pt">
+<g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" fill="#1A2030">
+<g>
+<text x="62.1667" y="11" font-size="9" font-weight="bold" text-anchor="middle">Позиция 1</text>
+<text x="62.1667" y="20" font-size="7" fill="#5C647A" text-anchor="middle">interchange + чип</text>
+<rect x="50.1667" y="24" width="24" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="62.1667" y="36.5" font-size="9" font-weight="bold" text-anchor="middle">2</text>
+<text x="3" y="53" font-size="7" font-weight="bold" fill="#5C647A">Значение · смысл</text>
+</g>
+<g>
+<text x="7" y="66" font-size="8" text-anchor="middle">1</text>
+<text x="14" y="66" font-size="8">международная</text>
+</g>
+<g>
+<rect x="2" y="69" width="120.333" height="12" rx="3" fill="#E8ECF7"/>
+<text x="7" y="78" font-size="8" font-weight="bold" text-anchor="middle">2</text>
+<text x="14" y="78" font-size="8" font-weight="bold">международная + чип</text>
+</g>
+<g>
+<text x="7" y="90" font-size="8" text-anchor="middle">5</text>
+<text x="14" y="90" font-size="8">национальная</text>
+</g>
+<g>
+<text x="7" y="102" font-size="8" text-anchor="middle">6</text>
+<text x="14" y="102" font-size="8">национальная + чип</text>
+</g>
+<g>
+<text x="7" y="114" font-size="8" text-anchor="middle">7</text>
+<text x="14" y="114" font-size="8">частная</text>
+</g>
+<g>
+<text x="7" y="126" font-size="8" text-anchor="middle">9</text>
+<text x="14" y="126" font-size="8">тестовая</text>
+</g>
+<g>
+<text x="192.5" y="11" font-size="9" font-weight="bold" text-anchor="middle">Позиция 2</text>
+<text x="192.5" y="20" font-size="7" fill="#5C647A" text-anchor="middle">авторизация</text>
+<rect x="180.5" y="24" width="24" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="192.5" y="36.5" font-size="9" font-weight="bold" text-anchor="middle">0</text>
+<text x="133.333" y="53" font-size="7" font-weight="bold" fill="#5C647A">Значение · смысл</text>
+</g>
+<g>
+<rect x="132.333" y="57" width="120.333" height="12" rx="3" fill="#E8ECF7"/>
+<text x="137.333" y="66" font-size="8" font-weight="bold" text-anchor="middle">0</text>
+<text x="144.333" y="66" font-size="8" font-weight="bold">обычная</text>
+</g>
+<g>
+<text x="137.333" y="78" font-size="8" text-anchor="middle">2</text>
+<text x="144.333" y="78" font-size="8">онлайн через эмитента</text>
+</g>
+<g>
+<text x="137.333" y="90" font-size="8" text-anchor="middle">4</text>
+<text x="144.333" y="90" font-size="8">через эмитента, если нет</text>
+<text x="144.333" y="99" font-size="8">соглашения</text>
+</g>
+<g>
+<text x="322.833" y="11" font-size="9" font-weight="bold" text-anchor="middle">Позиция 3</text>
+<text x="322.833" y="20" font-size="7" fill="#5C647A" text-anchor="middle">услуги + PIN</text>
+<rect x="310.833" y="24" width="24" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="322.833" y="36.5" font-size="9" font-weight="bold" text-anchor="middle">1</text>
+<text x="263.667" y="53" font-size="7" font-weight="bold" fill="#5C647A">Значение · смысл</text>
+</g>
+<g>
+<text x="267.667" y="66" font-size="8" text-anchor="middle">0</text>
+<text x="274.667" y="66" font-size="8">без огр., PIN</text>
+</g>
+<g>
+<rect x="262.667" y="69" width="120.333" height="12" rx="3" fill="#E8ECF7"/>
+<text x="267.667" y="78" font-size="8" font-weight="bold" text-anchor="middle">1</text>
+<text x="274.667" y="78" font-size="8" font-weight="bold">без ограничений</text>
+</g>
+<g>
+<text x="267.667" y="90" font-size="8" text-anchor="middle">2</text>
+<text x="274.667" y="90" font-size="8">товары/услуги</text>
+</g>
+<g>
+<text x="267.667" y="102" font-size="8" text-anchor="middle">3</text>
+<text x="274.667" y="102" font-size="8">ATM, PIN</text>
+</g>
+<g>
+<text x="267.667" y="114" font-size="8" text-anchor="middle">4</text>
+<text x="274.667" y="114" font-size="8">только наличные</text>
+</g>
+<g>
+<text x="267.667" y="126" font-size="8" text-anchor="middle">5</text>
+<text x="274.667" y="126" font-size="8">товары/услуги, PIN</text>
+</g>
+<g>
+<text x="267.667" y="138" font-size="8" text-anchor="middle">6</text>
+<text x="274.667" y="138" font-size="8">без огр., PIN при наличии</text>
+<text x="274.667" y="147" font-size="8">PED</text>
+</g>
+<g>
+<text x="267.667" y="159" font-size="8" text-anchor="middle">7</text>
+<text x="274.667" y="159" font-size="8">товары/услуги, PIN при</text>
+<text x="274.667" y="168" font-size="8">PED</text>
+</g>
+</g>
 </svg>

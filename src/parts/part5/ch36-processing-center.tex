@@ -28,14 +28,33 @@ CMS, верификация ARQC и~генерация ARPC, обработка 
 и~расчётного модулей; каждый компонент задаёт свои требования к~задержке,
 доступности и~контролю над ключевым материалом.
 Распределение этих компонентов по~трём конфигурациям сведено
-на~рис.~\ref{fig:processor-configurations}.
+в~табл.~\ref{tab:processor-configurations}.
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch36-processing-center/processor-configurations}
+\begin{table}[tbp]
   \caption{Распределение функций процессингового центра
-  по~конфигурациям: \textit{acquirer}, \textit{issuer}, \textit{coupled}.}\label{fig:processor-configurations}
-\end{figure}
+  по~конфигурациям: \textit{acquirer}, \textit{issuer}, \textit{coupled}}\label{tab:processor-configurations}
+  \begingroup
+  \tablesetup
+  \begin{tabularx}{\textwidth}{@{}B{0.19\textwidth} Y Y Y@{}}
+    \toprule
+    \headrow
+    \thd{Компонент} & \thd{Acquirer processor} & \thd{Issuer processor} & \thd{Coupled processor} \\
+    \midrule
+    Коммутатор авторизации & приём от~терминалов и~шлюзов; маршрут запроса в~сеть &
+    запрос от~сети к~хосту; ответ обратно в~сеть & on-us: напрямую, минуя сеть \\
+    \rowsep
+    Пул HSM & TAK, ZAK; PIN translation & IMK, ARQC verify, ARPC gen, key ceremony &
+    объединённый пул: оба набора ключей \\
+    \rowsep
+    Клиринговый модуль & формирует исходящий: TC33 / IPM~1240 / НСПК &
+    принимает входящий, матчит с~авторизацией & on-us: сопоставление внутри одной системы \\
+    \rowsep
+    Расчётный модуль & своя нетто-позиция; проводки на~корсчёт эквайера &
+    своя нетто-позиция; проводки на~корсчёт эмитента & on-us: внутренние взаимозачёты, без сети \\
+    \bottomrule
+  \end{tabularx}\par
+  \endgroup
+\end{table}
 
 \section{Компоненты процессингового центра}\label{sec:pc-components}
 

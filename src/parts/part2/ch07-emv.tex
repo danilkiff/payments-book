@@ -64,7 +64,7 @@ EMV закрывает один класс фрода~--- клонировани
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\textwidth]{assets/figures/ch07-emv/emv-chip-architecture}
+  \includefigure{assets/figures/ch07-emv/emv-chip-architecture}
   \caption{Архитектура чипа платёжной карты.}\label{fig:emv-chip-architecture}
   \medskip
 \end{figure}
@@ -239,7 +239,7 @@ AIP (Application Interchange Profile, тег \texttt{0x82})~--- битовое �
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/aip-anatomy}
+  \includefigure{assets/figures/ch07-emv/aip-anatomy}
   \caption{Раскладка AIP: 2~байта, MSB слева; жёлтым~--- биты примера \texttt{AIP = 0x5800}.}\label{fig:aip-anatomy}
 \end{figure}
 
@@ -264,7 +264,7 @@ PDOL (Processing Options Data Object List, тег
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.95\linewidth]{assets/figures/ch07-emv/pdol-anatomy}
+  \includefigure{assets/figures/ch07-emv/pdol-anatomy}
   \caption{Побайтовый разбор 15-байтового PDOL бесконтактной Visa: пять пар \mbox{\texttt{(тег, длина)}}.}\label{fig:pdol-anatomy}
 \end{figure}
 
@@ -345,7 +345,7 @@ Dynamic Application Data, куда входят \emph{ICC Dynamic Number}
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth,height=.7\textheight]{assets/figures/ch07-emv/emv-dda-sequence}
+  \includefigure{assets/figures/ch07-emv/emv-dda-sequence}
   \caption{Контактный сценарий DDA с~командой \texttt{INTERNAL AUTHENTICATE}.}\label{fig:emv-dda-sequence}
 \end{figure}
 
@@ -414,7 +414,7 @@ Annex~A2.1)~\cite{emvco-book2}. В~этой схеме проверяющий в
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/emv-cert-recovery}
+  \includefigure{assets/figures/ch07-emv/emv-cert-recovery}
   \caption{Восстановление Issuer Public Key Certificate: маркеры \texttt{0x6A} и~\texttt{0xBC}, хеш внутри.}\label{fig:emv-cert-recovery}
 \end{figure}
 
@@ -526,7 +526,7 @@ Verification Method, метод верификации держателя)~--- �
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/cvm-list-anatomy}
+  \includefigure{assets/figures/ch07-emv/cvm-list-anatomy}
   \caption{Анатомия CVM List \texttt{0x8E}: пороги X, Y и~три правила с~разбором.}\label{fig:cvm-list-anatomy}
 \end{figure}
 
@@ -710,7 +710,7 @@ emvdecoder.com~\cite{emvdecoder}) декодируют TVR, AIP, TSI и~CVM List
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/tsi-anatomy}
+  \includefigure{assets/figures/ch07-emv/tsi-anatomy}
   \caption{Раскладка TSI: 2~байта, MSB слева; жёлтым~--- биты примера \texttt{TSI = 0xE800}.}\label{fig:tsi-anatomy}
 \end{figure}
 
@@ -774,7 +774,7 @@ Biased Random Selection по~мере приближения суммы к~floor
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.7\textwidth]{assets/figures/ch07-emv/emv-random-selection}
+  \includefigure{assets/figures/ch07-emv/emv-random-selection}
   \caption{Вероятность отправки операции онлайн при случайном отборе.}\label{fig:emv-random-selection}
 \end{figure}
 
@@ -844,8 +844,8 @@ IAC-Online и~IAC-Default эмитент записывает на~карту п
 В~онлайн-сценарии команда \texttt{GENERATE AC} (разобрана ниже) выполняется
 дважды: первым вызовом терминал запрашивает у~карты ARQC и~отправляет его
 эмитенту, а~после ответа вторым вызовом запрашивает финальную криптограмму~---
-TC при~одобрении, AAC при~отказе. Дерево выбора между ARQC, TC и~AAC показано
-на~рис.~\ref{fig:emv-cryptogram-decision}.
+TC при~одобрении, AAC при~отказе. Выбор между ARQC, TC и~AAC сведён
+в~табл.~\ref{tab:emv-cryptogram-decision}.
 
 Тип криптограммы кодируется в~теге \texttt{0x9F27}~--- CID (Cryptogram
 Information Data)~\cite{emvco-book3}. В~публичном глоссарии Visa TADG ARQC, TC
@@ -856,11 +856,27 @@ Information Data)~\cite{emvco-book3}. В~публичном глоссарии V
 идут CID (\texttt{0x9F27}), ATC и~IAD~--- порядок TLV-объектов внутри поля
 не~закреплён, и~парсер ищет их по~тегам.
 
-\begin{figure}[!ht]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/emv-cryptogram-decision}
-  \caption{Принятие решения о~типе криптограммы в~EMV.}\label{fig:emv-cryptogram-decision}
-\end{figure}
+\begin{table}[!ht]
+  \caption{Принятие решения о~типе криптограммы в~EMV}\label{tab:emv-cryptogram-decision}
+  \begingroup
+  \tablesetup
+  \begin{tabularx}{\textwidth}{@{}P{0.38\textwidth} B{0.14\textwidth} Y@{}}
+    \toprule
+    \headrow
+    \thd{Маска TVR~$\cap$~TAC/IAC} & \thd{Криптограмма} & \thd{Поведение терминала} \\
+    \midrule
+    Denial~$\neq$~0: любой бит маски Denial выставлен &
+    \cellcolor{Bad!10}AAC & отказ; дальнейшая обработка прекращается \\
+    \rowsep
+    Denial~$=$~0, Online~$\neq$~0: офлайн-отказ исключён, нужен онлайн &
+    \cellcolor{Ink!6}ARQC & уход в~онлайн для~авторизации эмитентом \\
+    \rowsep
+    Denial~$=$~0, Online~$=$~0: обе маски пусты &
+    \cellcolor{Good!14}TC & офлайн-одобрение картой без~обращения к~эмитенту \\
+    \bottomrule
+  \end{tabularx}\par
+  \endgroup
+\end{table}
 
 \subsection*{Команда GENERATE AC и~сборка криптограммы}\label{sec:emv-generate-ac}
 
@@ -872,7 +888,7 @@ Information Data)~\cite{emvco-book3}. В~публичном глоссарии V
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/cid-anatomy}
+  \includefigure{assets/figures/ch07-emv/cid-anatomy}
   \caption{GENERATE AC: P1 запроса и~CID ответа; жёлтым~--- биты примера.}\label{fig:cid-anatomy}
 \end{figure}
 
@@ -997,7 +1013,7 @@ Format~A занимает пять байт;
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/cvr-anatomy}
+  \includefigure{assets/figures/ch07-emv/cvr-anatomy}
   \caption{CVR Format~A: четыре значащих байта; жёлтым~--- поля примера \texttt{0x28\,38\,00\,00}.}\label{fig:cvr-anatomy}
 \end{figure}
 
@@ -1091,7 +1107,7 @@ Update)~--- четыре байта инструкций карте внутри
 
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/csu-anatomy}
+  \includefigure{assets/figures/ch07-emv/csu-anatomy}
   \caption{CSU: байт~2 действий эмитента; жёлтым~--- биты примера \texttt{0x00\,82\,00\,00}.}\label{fig:csu-anatomy}
 \end{figure}
 
@@ -1294,7 +1310,7 @@ Chip по-прежнему используется из-за поздней EMV
 
 \begin{figure}[!ht]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch07-emv/card-personalization-flow}
+  \includefigure{assets/figures/ch07-emv/card-personalization-flow}
   \caption{Межзональный обмен ключевым материалом под~транспортным ключом, который собирают из~компонентов под~\textit{dual control} и~\textit{split knowledge}.}\label{fig:card-personalization-flow}
 \end{figure}
 

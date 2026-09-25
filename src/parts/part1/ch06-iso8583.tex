@@ -10,18 +10,64 @@ MTI~0110~--- том~же жизненном цикле, что в~гл.~\ref{ch:
 
 \section{Структура сообщения}\label{sec:iso8583-structure}
 
-Сообщение целиком~--- на~рис.~\ref{fig:mti-0100-anatomy}. Сверху~--- байты
-в~hex-виде с~подсветкой по~полям; снизу~--- содержимое каждого поля, его начало
-и~декодированный смысл. Поля переменной длины (LLVAR) выделены другим цветом;
-префикс длины~\texttt{LL} в~первых двух байтах каждого LLVAR показан
-насыщеннее остального значения.
+Сообщение целиком~--- на~рис.~\ref{fig:mti-0100-anatomy}: байты в~hex-виде
+с~подсветкой по~полям. Содержимое каждого поля, его начало и~декодированный
+смысл~--- в~табл.~\ref{tab:mti-0100-fields}. Поля переменной длины (LLVAR)
+выделены другим цветом; префикс длины~\texttt{LL} в~первых двух байтах каждого
+LLVAR отмечен тёмной кромкой.
 
 \begin{figure}[tbp]
   \centering
-  {\renewcommand{\figuremaxheight}{.92\textheight}%
-  \includefiguresvg[width=\linewidth]{assets/figures/ch06-iso8583/mti-0100-anatomy}}
-  \caption{Разбор MTI~0100 по~байтам: hex-дамп сверху и~таблица полей снизу.}\label{fig:mti-0100-anatomy}
+  \includefigure{assets/figures/ch06-iso8583/mti-0100-anatomy}
+  \caption{Hex-дамп MTI~0100 с~подсветкой полей по~типу.}\label{fig:mti-0100-anatomy}
 \end{figure}
+
+\begin{table}[tbp]
+  \caption{Поля MTI~0100: тип, смещение, длина и~значение}\label{tab:mti-0100-fields}
+  \begingroup
+  \tablesetup
+  \begin{tabularx}{\textwidth}{@{}B{0.2\textwidth} P{0.09\textwidth} P{0.12\textwidth} P{0.09\textwidth} Y@{}}
+    \toprule
+    \headrow
+    \thd{Поле} & \thd{Тип} & \thd{Смещение} & \thd{Длина, байт} & \thd{Значение} \\
+    \midrule
+    MTI & MTI & \texttt{0x00} & 4 & \texttt{0100} \\
+    \rowsep
+    Bitmap & Bitmap & \texttt{0x04} & 8 & DE~2, 3, 4, 7, 11, 12, 13, 14, 22, 25, 32, 35, 41, 42, 49 \\
+    \rowsep
+    DE~2 (PAN) & LLVAR & \texttt{0x0c} & 18 & LL=16, \texttt{2200121234560892} \\
+    \rowsep
+    DE~3 (Proc Code) & fixed & \texttt{0x1e} & 6 & \texttt{000000} \\
+    \rowsep
+    DE~4 (Amount) & fixed & \texttt{0x24} & 12 & \texttt{000000125050} \\
+    \rowsep
+    DE~7 (Trans DT) & fixed & \texttt{0x30} & 10 & \texttt{0317173045} \\
+    \rowsep
+    DE~11 (STAN) & fixed & \texttt{0x3a} & 6 & \texttt{482731} \\
+    \rowsep
+    DE~12 (Local Time) & fixed & \texttt{0x40} & 6 & \texttt{173045} \\
+    \rowsep
+    DE~13 (Local Date) & fixed & \texttt{0x46} & 4 & \texttt{0317} \\
+    \rowsep
+    DE~14 (Expiry) & fixed & \texttt{0x4a} & 4 & \texttt{2612} \\
+    \rowsep
+    DE~22 (POS Entry) & fixed & \texttt{0x4e} & 3 & \texttt{071} \\
+    \rowsep
+    DE~25 (POS Cond) & fixed & \texttt{0x51} & 2 & \texttt{00} \\
+    \rowsep
+    DE~32 (Acq Inst) & LLVAR & \texttt{0x53} & 8 & LL=06, \texttt{123456} \\
+    \rowsep
+    DE~35 (Track 2) & LLVAR & \texttt{0x5b} & 36 & LL=34, \texttt{2200121234560892=26122011234567890} \\
+    \rowsep
+    DE~41 (Terminal) & fixed & \texttt{0x7f} & 8 & \texttt{TERM0001} \\
+    \rowsep
+    DE~42 (Merchant) & fixed & \texttt{0x87} & 15 & \texttt{MERCHANT0000001} \\
+    \rowsep
+    DE~49 (Currency) & fixed & \texttt{0x96} & 3 & \texttt{643} \\
+    \bottomrule
+  \end{tabularx}\par
+  \endgroup
+\end{table}
 
 Грамматика ISO~8583 одинакова для~всех сообщений и~состоит из~трёх частей
 в~строгом порядке:
@@ -58,8 +104,8 @@ MTI~--- первые четыре цифры сообщения; каждая ц
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.95\linewidth]{assets/figures/ch06-iso8583/mti-breakdown}
-  \caption{MTI~0100 по~четырём позициям; жёлтым подсвечены значения примера.}\label{fig:mti-breakdown}
+  \includefigure{assets/figures/ch06-iso8583/mti-breakdown}
+  \caption{MTI~0100 по~четырём позициям; выделены значения примера.}\label{fig:mti-breakdown}
 \end{figure}
 
 В~паре запрос/ответ меняется только третья цифра~--- функция; класс, версия
@@ -166,7 +212,7 @@ MSB; разворот по~ячейкам~--- на~рис.~\ref{fig:bitmap-prese
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=.85\linewidth]{assets/figures/ch06-iso8583/bitmap-presence}
+  \includefigure{assets/figures/ch06-iso8583/bitmap-presence}
   \caption{Bitmap MTI~0100, развёрнутая в~64~ячейки: заполненная~--- DE присутствует.}\label{fig:bitmap-presence}
 \end{figure}
 

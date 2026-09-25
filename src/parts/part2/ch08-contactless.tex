@@ -11,9 +11,9 @@ ISO~14443, который задаёт типы карт, антиколлизи
 карты, когда в~поле сразу несколько) и~транспортный уровень, поверх которого
 работает платёжное приложение~\cite{iso-14443-1,iso-14443-2,iso-14443-3,iso-14443-4}.
 
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{r}{176pt}
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch08-contactless/contactless-protocol-stack}
+  \includefigure{assets/figures/ch08-contactless/contactless-protocol-stack}
   \caption{Стек протоколов бесконтактного платежа и~анатомия APDU-команд.}%
   \label{fig:contactless-protocol-stack}
 \end{wrapfigure}
@@ -86,11 +86,34 @@ EMVCo определяет несколько ядер бесконтактно�
 бесконтактных правил для~терминала, и~детали сертификации разбираются
 в~главах~\ref{ch:visa},~\ref{ch:mastercard} и~\ref{ch:mir}.
 
-\begin{wrapfigure}{r}{0.52\textwidth}
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch08-contactless/kernel-dispatch}
-  \caption{Маршрутизация AID к~бесконтактному ядру (Мир--Maestro).}\label{fig:kernel-dispatch}
-\end{wrapfigure}
+\begin{table}[tbp]
+  \caption{Маршрутизация AID к~бесконтактному ядру (Мир--Maestro)}\label{tab:kernel-dispatch}
+  \begingroup
+  \tablesetup
+  \begin{minipage}{\textwidth}
+    \begin{tabularx}{\textwidth}{@{}P{0.3\textwidth} P{0.2\textwidth} Y@{}}
+      \toprule
+      \headrow
+      \thd{AID (RID)} & \thd{Priority (87)} & \thd{Ядро} \\
+      \midrule
+      \rowcolor{Good!14}
+      \textbf{A0 00 00 06 58}\newline MPA Мир & \textbf{01} &
+      \textbf{Mir kernel}\newline НСПК \\
+      \rowsep
+      \textbf{A0 00 00 00 04}\newline Maestro & \textbf{02} &
+      \textbf{Kernel~2}\newline M/Chip \\
+      \rowsep
+      {\color{Muted}\textbf{A0 00 00 00 03}\newline Visa} & {\color{Muted}---} &
+      {\color{Muted}\textbf{Kernel~3}\newline qVSDC} \\
+      \bottomrule
+    \end{tabularx}
+    \par\smallskip
+    \tablenote{Зелёная строка~--- выбранное приложение с~меньшим Priority;
+    строка Visa без~Priority приведена для~сравнения.}
+  \end{minipage}\par
+  \endgroup
+\end{table}
+
 PPSE возвращает в~FCI список Directory Entry (тег 61); каждая запись содержит ADF
 Name (4F), Application Label (50) и~Application Priority Indicator (87).
 Combination Selection сопоставляет список AID карты со~списком AID терминала и~выбирает
@@ -333,7 +356,7 @@ HCE через Mir HCE~SDK поверх TSP~НСПК; SE-варианта у~Mir
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch08-contactless/device-trust-topology}
+  \includefigure{assets/figures/ch08-contactless/device-trust-topology}
   \caption{Где хранится ключевой материал DPAN: SE, TEE, HCE.}\label{fig:device-trust-topology}
 \end{figure}
 
@@ -493,7 +516,7 @@ BLE-сценарий требует привязки устройства, по�
 
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch08-contactless/contactless-provisioning}
+  \includefigure{assets/figures/ch08-contactless/contactless-provisioning}
   \caption{Выпуск и~привязка токена при~подключении мобильного платежа.}\label{fig:contactless-provisioning}
 \end{figure}
 

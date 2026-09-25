@@ -1,60 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 290" width="560" height="290">
-<defs>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
-</defs>
-
-<!-- Lifeline-заголовки -->
-<rect x="10" y="20" width="110" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="65" y="38" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Банк-эквайер</text>
-<text x="65" y="52" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">отправителя</text>
-
-<rect x="215" y="15" width="130" height="45" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
-<text x="280" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">VisaNet</text>
-<text x="280" y="48" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">V.I.P. System / BASE I</text>
-
-<rect x="435" y="20" width="110" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="490" y="38" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">Банк-эмитент</text>
-<text x="490" y="52" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="normal" fill="#1A2030">получателя</text>
-
-<!-- ===== Секция A: AFT (debit отправителя) ===== -->
-<text x="10" y="78" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">A. AFT — авторизация дебета отправителя</text>
-
-<!-- Lifelines: непрерывные вертикали от заголовков актёров до низа -->
-<line x1="65" y1="66" x2="65" y2="256" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="280" y1="66" x2="280" y2="256" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="490" y1="66" x2="490" y2="256" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-
-<!-- AFT 0100: эквайер -> VisaNet -->
-<line x1="67" y1="100" x2="278" y2="100" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="172" y="94" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">AFT 0100 (снять у отправителя)</text>
-
-<!-- Ответ AFT 0110 — авторизация OK -->
-<line x1="278" y1="130" x2="67" y2="130" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="172" y="124" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Ответ AFT 0110 — авторизация OK</text>
-
-<!-- Разделитель секций A / B поверх непрерывных жизней -->
-<line x1="20" y1="152" x2="540" y2="152" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-
-<!-- ===== Секция B: OCT (кредит получателю) ===== -->
-<text x="10" y="166" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">B. OCT — перевод средств на карту получателя</text>
-
-<!-- OCT 0200 VisaNet -> Эмитент -->
-<line x1="282" y1="188" x2="488" y2="188" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="385" y="182" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">OCT 0200 (кредит получателю)</text>
-
-<!-- Ответ OCT 0210 -->
-<line x1="488" y1="218" x2="282" y2="218" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="385" y="212" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">Ответ OCT 0210</text>
-
-<!-- Уведомление эмитента получателю -->
-<line x1="490" y1="236" x2="490" y2="256" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="500" y="248" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">T+минуты</text>
-<rect x="420" y="256" width="140" height="22" rx="6" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1"/>
-<text x="490" y="271" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">уведомление получателю</text>
-
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 152" width="385pt" height="152pt">
+<defs><marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker></defs>
+<rect x="5.0" y="2" width="121.0" height="22" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+<text x="65.5" y="11.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">Банк-эквайер</text>
+<text x="65.5" y="20.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">отправителя</text>
+<line x1="65.5" y1="24" x2="65.5" y2="152" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="132.0" y="2" width="121.0" height="22" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="192.5" y="11.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">VisaNet</text>
+<text x="192.5" y="20.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">V.I.P. System / BASE I</text>
+<line x1="192.5" y1="24" x2="192.5" y2="152" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="259.0" y="2" width="121.0" height="22" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="0.75"/>
+<text x="319.5" y="11.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">Банк-эмитент</text>
+<text x="319.5" y="20.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">получателя</text>
+<line x1="319.5" y1="24" x2="319.5" y2="152" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="2" y="36" width="381" height="12" fill="#E8ECF7"/>
+<text x="6" y="45" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="bold" fill="#5C647A">A. AFT — авторизация дебета отправителя</text>
+<line x1="65.5" y1="62" x2="191.5" y2="62" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="64.7" y="51.5" width="128.6" height="9" fill="#ffffff"/>
+<text x="129.0" y="59.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">AFT 0100 (снять у отправителя)</text>
+<line x1="192.5" y1="79" x2="66.5" y2="79" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
+<rect x="59.4" y="68.5" width="139.1" height="9" fill="#ffffff"/>
+<text x="129.0" y="76.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">Ответ AFT 0110 — авторизация OK</text>
+<rect x="2" y="85" width="381" height="12" fill="#E8ECF7"/>
+<text x="6" y="94" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="bold" fill="#5C647A">B. OCT — перевод средств на карту получателя</text>
+<line x1="192.5" y1="111" x2="318.5" y2="111" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="191.8" y="100.5" width="128.3" height="9" fill="#ffffff"/>
+<text x="256.0" y="108.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">OCT 0200 (кредит получателю)</text>
+<line x1="319.5" y1="128" x2="193.5" y2="128" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
+<rect x="222.6" y="117.5" width="66.8" height="9" fill="#ffffff"/>
+<text x="256.0" y="125.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">Ответ OCT 0210</text>
+<rect x="268.0" y="133" width="102.9" height="13" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75" stroke-dasharray="3,2"/>
+<text x="319.5" y="142" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="bold" fill="#1A2030">уведомление получателю</text>
+<text x="264.0" y="142.0" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">T+минуты</text>
 </svg>

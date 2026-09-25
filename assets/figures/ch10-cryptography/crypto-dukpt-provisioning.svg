@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 164" width="385pt" height="164pt">
+<defs><marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker></defs>
+<text x="2" y="10" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Provisioning (один раз)</text>
+<g>
+<rect x="2" y="16" width="381" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="8" y="28" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">BDK</text>
+<text x="212.5" y="28" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">FE DC BA 98 76 54 32 10 F1 F1 F1 F1 F1 F1 F1 F1</text>
+<text x="377" y="28" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">16 B</text>
+</g>
+<g>
+<rect x="2" y="38" width="381" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="8" y="50" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">IKI</text>
+<text x="212.5" y="50" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">12 34 56 78 90 12 34 56</text>
+<text x="377" y="50" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">8 B</text>
+</g>
+<text x="2" y="70" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">Derivation Data (16 B) для Initial Key</text>
+<g>
+<rect x="2.00" y="74" width="22.81" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
+<text x="13.41" y="86" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">01</text>
+<text x="13.41" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">version</text>
+<rect x="25.81" y="74" width="22.81" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
+<text x="37.22" y="86" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">01</text>
+<text x="37.22" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">cnt</text>
+<rect x="49.62" y="74" width="46.62" height="18" fill="#7759D6" fill-opacity="0.55" stroke="#5C647A" stroke-width="0.5"/>
+<text x="72.94" y="86" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">80 01</text>
+<text x="72.94" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">keyUsage</text>
+<rect x="97.25" y="74" width="46.62" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
+<text x="120.56" y="86" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">00 02</text>
+<text x="120.56" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">algo</text>
+<rect x="144.88" y="74" width="46.62" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
+<text x="168.19" y="86" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">00 80</text>
+<text x="168.19" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">length</text>
+<rect x="192.50" y="74" width="189.50" height="18" fill="#5C647A" fill-opacity="0.42" stroke="#5C647A" stroke-width="0.5"/>
+<text x="287.25" y="86" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">12 34 56 78 90 12 34 56</text>
+<text x="287.25" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">IKI</text>
+</g>
+<line x1="192.5" y1="102" x2="192.5" y2="114" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<g>
+<rect x="2" y="115" width="381" height="16" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="192.5" y="126" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">AES-128 ECB</text>
+</g>
+<line x1="192.5" y1="131" x2="192.5" y2="143" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<g>
+<rect x="2" y="144" width="381" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="8" y="156" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">Initial Key (IK)</text>
+<text x="212.5" y="156" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">12 73 67 1E A2 6A C2 9A FA 4D 10 84 12 76 52 A1</text>
+<text x="377" y="156" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">16 B</text>
+</g>
+</svg>

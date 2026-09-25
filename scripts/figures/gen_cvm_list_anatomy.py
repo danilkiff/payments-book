@@ -13,16 +13,15 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
-  INK, MUTED, SOFT, PANEL, ACCENT_A, TIER_LIGHT, zebra,
-  figures_dir, t, write_svg, svg_header,
+  ACCENT_A, CANVAS_W, FONT, FS_BODY, FS_NOTE, MUTED, PANEL, SOFT, SW_FRAME,
+  TIER_LIGHT, figures_dir, svg_header_pt, t, write_svg, zebra,
 )
 
-# Поля стрипа: (подпись_hex, ширина_в_ячейках, имя, цвет). Смежные поля одного
-# оттенка различаются СВЕТЛОТОЙ (zebra), а не сменой ACCENT_A/ACCENT_B: при
-# равной opacity синий и фиолетовый сливались, особенно при дальтонизме.
+# Поля стрипа: (hex, ширина в ячейках, имя, тон). Смежные поля ACCENT_A
+# различаются светлотой (zebra TIER_LIGHT), тег и длина -- нейтральный Panel.
 FIELDS = [
-  ("8E", 1, "тег", MUTED),
-  ("0E", 1, "L", MUTED),
+  ("8E", 1, "тег", None),
+  ("0E", 1, "L", None),
   ("00 00 00 00", 4, "X (сумма)", ACCENT_A),
   ("00 00 00 00", 4, "Y (сумма)", ACCENT_A),
   ("44 03", 2, "правило 1", ACCENT_A),
@@ -37,63 +36,60 @@ RULES = [
   ("1F 00", "стоп + код 1F", "усл. 00", "No CVM, всегда (fallback)"),
 ]
 
-VIEW_W = 600
-CELL_W = 26
-CELL_H = 26
-STRIP_X = 8
-STRIP_Y = 16
-GAP = 6
-LBL_BELOW = 28
+W = CANVAS_W
+CELL_W = 20
+CELL_H = 16
+GAP = 5
+STRIP_Y = 2
+STRIP_W = sum(n for _, n, _, _ in FIELDS) * CELL_W + (len(FIELDS) - 1) * GAP
+STRIP_X = (W - STRIP_W) / 2
 
-TBL_Y = STRIP_Y + CELL_H + LBL_BELOW + 14
-TBL_ROW_H = 24
-COL_HEX = 64
-COL_B1 = 120
-COL_B2 = 70
-TBL_X_HEX = 8
-TBL_X_B1 = TBL_X_HEX + COL_HEX
-TBL_X_B2 = TBL_X_B1 + COL_B1
-TBL_X_SENSE = TBL_X_B2 + COL_B2
+ROW_H = 14
+TBL_Y = STRIP_Y + CELL_H + 18
+X_HEX = 4
+X_B1 = X_HEX + 44
+X_B2 = X_B1 + 86
+X_SENSE = X_B2 + 44
+H = TBL_Y + (1 + len(RULES)) * ROW_H + 2
 
-VIEW_H = TBL_Y + (1 + len(RULES)) * TBL_ROW_H + 8
 
-lines = svg_header(VIEW_W, VIEW_H)
+def build():
+  out = []
+  x = STRIP_X
+  alt = 0
+  for hexstr, ncell, name, tone in FIELDS:
+    w = ncell * CELL_W
+    if tone is None:
+      fill = f'fill="{PANEL}"'
+    else:
+      fill = f'fill="{tone}" fill-opacity="{zebra(TIER_LIGHT, alt)}"'
+      alt = 1 - alt
+    out.append(
+      f'<rect x="{x:.1f}" y="{STRIP_Y}" width="{w}" height="{CELL_H}" {fill} '
+      f'stroke="{MUTED}" stroke-width="{SW_FRAME}"/>'
+    )
+    out.append(t(f"{x + w / 2:.1f}", STRIP_Y + 11, hexstr, size=FS_BODY,
+                 weight="bold"))
+    out.append(t(f"{x + w / 2:.1f}", STRIP_Y + CELL_H + 9, name, size=FS_NOTE,
+                 fill=MUTED))
+    x += w + GAP
 
-# Стрип
-x = STRIP_X
-accent_alt = 0
-for hexstr, ncell, name, color in FIELDS:
-  w = ncell * CELL_W
-  if color == ACCENT_A:
-    op = zebra(TIER_LIGHT, accent_alt)
-    accent_alt = 1 - accent_alt
-  else:
-    op = 0.15
-  lines.append(
-    f'<rect x="{x}" y="{STRIP_Y}" width="{w}" height="{CELL_H}" '
-    f'fill="{color}" fill-opacity="{op}" stroke="{MUTED}" stroke-width="0.5"/>'
-  )
-  lines.append(t(x + w / 2, STRIP_Y + 17, hexstr, size=10, fill=INK, weight="bold"))
-  lines.append(t(x + w / 2, STRIP_Y + CELL_H + 14, name, size=9, fill=MUTED))
-  x += w + GAP
+  out.append(f'<rect x="0" y="{TBL_Y}" width="{W}" height="{ROW_H}" fill="{PANEL}"/>')
+  for cx, s in ((X_HEX, "Правило"), (X_B1, "Байт 1 (CVM Code)"),
+                (X_B2, "Байт 2"), (X_SENSE, "Смысл")):
+    out.append(t(cx, TBL_Y + 10, s, size=FS_BODY, weight="bold", fill=MUTED,
+                 anchor="start"))
+  for idx, (hexstr, b1, b2, sense) in enumerate(RULES):
+    ry = TBL_Y + (1 + idx) * ROW_H
+    if idx % 2 == 1:
+      out.append(f'<rect x="0" y="{ry}" width="{W}" height="{ROW_H}" fill="{SOFT}"/>')
+    out.append(t(X_HEX, ry + 10, hexstr, size=FS_BODY, weight="bold",
+                 anchor="start"))
+    out.append(t(X_B1, ry + 10, b1, size=FS_BODY, anchor="start"))
+    out.append(t(X_B2, ry + 10, b2, size=FS_BODY, anchor="start"))
+    out.append(t(X_SENSE, ry + 10, sense, size=FS_BODY, anchor="start"))
+  return svg_header_pt(W, H) + [f'<g font-family="{FONT}">'] + out + ["</g>", "</svg>"]
 
-# Таблица разбора правил
-hdr_y = TBL_Y
-lines.append(f'<rect x="0" y="{hdr_y}" width="{VIEW_W}" height="{TBL_ROW_H}" fill="{PANEL}"/>')
-lines.append(t(TBL_X_HEX, hdr_y + 16, "Правило", size=10, fill=MUTED, weight="bold", anchor="start"))
-lines.append(t(TBL_X_B1, hdr_y + 16, "Байт 1 (CVM Code)", size=10, fill=MUTED, weight="bold", anchor="start"))
-lines.append(t(TBL_X_B2, hdr_y + 16, "Байт 2", size=10, fill=MUTED, weight="bold", anchor="start"))
-lines.append(t(TBL_X_SENSE, hdr_y + 16, "Смысл", size=10, fill=MUTED, weight="bold", anchor="start"))
 
-for idx, (hexstr, b1, b2, sense) in enumerate(RULES):
-  ry = TBL_Y + (1 + idx) * TBL_ROW_H
-  if idx % 2 == 1:
-    lines.append(f'<rect x="0" y="{ry}" width="{VIEW_W}" height="{TBL_ROW_H}" fill="{SOFT}"/>')
-  lines.append(t(TBL_X_HEX, ry + 16, hexstr, size=11, fill=INK, anchor="start", weight="bold"))
-  lines.append(t(TBL_X_B1, ry + 16, b1, size=10, fill=INK, anchor="start"))
-  lines.append(t(TBL_X_B2, ry + 16, b2, size=10, fill=INK, anchor="start"))
-  lines.append(t(TBL_X_SENSE, ry + 16, sense, size=9, fill=INK, anchor="start"))
-
-lines.append("</svg>")
-
-write_svg(figures_dir() / "ch07-emv" / "cvm-list-anatomy.svg", lines)
+if __name__ == "__main__":
+  write_svg(figures_dir() / "ch07-emv" / "cvm-list-anatomy.svg", build())

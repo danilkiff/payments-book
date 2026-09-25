@@ -1,383 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   viewBox="0 0 620 290"
-   width="620"
-   height="290"
-   xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <marker
-       id="arr-Muted"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#5C647A" />
-    </marker>
-    <marker
-       id="arr-Muted-s"
-       viewBox="0 0 10 10"
-       refX="1"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 10,0 0,5 10,10 Z"
-         fill="#5C647A" />
-    </marker>
-    <marker
-       id="arr-Good"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#2F8B67" />
-    </marker>
-    <marker
-       id="arr-Good-s"
-       viewBox="0 0 10 10"
-       refX="1"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 10,0 0,5 10,10 Z"
-         fill="#2F8B67" />
-    </marker>
-    <marker
-       id="arr-Bad"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#C15462" />
-    </marker>
-    <marker
-       id="arr-Bad-s"
-       viewBox="0 0 10 10"
-       refX="1"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 10,0 0,5 10,10 Z"
-         fill="#C15462" />
-    </marker>
-    <marker
-       id="arr-AccentA"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 0,0 10,5 0,10 Z"
-         fill="#4E63D9" />
-    </marker>
-    <marker
-       id="arr-AccentA-s"
-       viewBox="0 0 10 10"
-       refX="1"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M 10,0 0,5 10,10 Z"
-         fill="#4E63D9" />
-    </marker>
-  </defs>
-  <!-- Axes header -->
-  <text
-     x="9.7303953"
-     y="15.273493"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#5C647A">Категории квалификации (применяются одновременно):</text>
-  <!-- 5 parallel axes as columns -->
-  <rect
-     x="9.7303953"
-     y="25.273493"
-     width="110"
-     height="44"
-     rx="8"
-     fill="#4E63D9"
-     fill-opacity="0.15"
-     stroke="#4E63D9"
-     stroke-width="2" />
-  <text
-     x="64.730392"
-     y="43.273491"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">Регион</text>
-  <text
-     x="64.730392"
-     y="58.273491"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#5C647A">US / EU / IC</text>
-  <rect
-     x="129.73039"
-     y="25.273493"
-     width="110"
-     height="44"
-     rx="8"
-     fill="#4E63D9"
-     fill-opacity="0.15"
-     stroke="#4E63D9"
-     stroke-width="2" />
-  <text
-     x="184.73039"
-     y="43.273491"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">Продукт</text>
-  <text
-     x="184.73039"
-     y="58.273491"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#5C647A">Consumer / WE / Comm.</text>
-  <rect
-     x="249.73039"
-     y="25.273493"
-     width="110"
-     height="44"
-     rx="8"
-     fill="#4E63D9"
-     fill-opacity="0.15"
-     stroke="#4E63D9"
-     stroke-width="2" />
-  <text
-     x="304.73041"
-     y="43.273491"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">MCC</text>
-  <text
-     x="304.73041"
-     y="58.273491"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#5C647A">grocery / fuel / T&amp;E ...</text>
-  <rect
-     x="369.73041"
-     y="25.273493"
-     width="110"
-     height="44"
-     rx="8"
-     fill="#4E63D9"
-     fill-opacity="0.15"
-     stroke="#4E63D9"
-     stroke-width="2" />
-  <text
-     x="424.73041"
-     y="43.273491"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">Режим ввода POS</text>
-  <text
-     x="424.73041"
-     y="58.273491"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#5C647A">CP / CNP / Contactless</text>
-  <rect
-     x="489.73041"
-     y="25.273493"
-     width="110"
-     height="44"
-     rx="8"
-     fill="#4E63D9"
-     fill-opacity="0.15"
-     stroke="#4E63D9"
-     stroke-width="2" />
-  <text
-     x="544.73041"
-     y="43.273491"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">Качество данных</text>
-  <text
-     x="544.73041"
-     y="58.273491"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#5C647A">на сигналах</text>
-  <!-- Combined evaluation arrow down -->
-  <line
-     x1="300.89102"
-     y1="74.88662"
-     x2="300.89102"
-     y2="106.73172"
-     stroke="#5C647A"
-     stroke-width="2"
-     marker-end="url(#arr-Muted)" />
-  <text
-     x="313.46503"
-     y="93.351646"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#5C647A">комбинированная оценка</text>
-  <!-- Combined eval box -->
-  <rect
-     x="175.76112"
-     y="109.12395"
-     width="260"
-     height="40"
-     rx="8"
-     fill="#7759D6"
-     fill-opacity="0.15"
-     stroke="#7759D6"
-     stroke-width="2" />
-  <text
-     x="305.76114"
-     y="127.12395"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">Подбор программы interchange</text>
-  <text
-     x="305.76114"
-     y="141.12395"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#5C647A">region x product x MCC x channel x signals x token</text>
-  <!-- OK and downgrade branches -->
-  <line
-     x1="235.76112"
-     y1="149.12395"
-     x2="175.76112"
-     y2="182.12395"
-     stroke="#2F8B67"
-     stroke-width="2"
-     marker-end="url(#arr-Good)" />
-  <text
-     x="228.79871"
-     y="167.67154"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#1A2030">OK</text>
-  <line
-     x1="375.76114"
-     y1="149.12395"
-     x2="435.76114"
-     y2="182.12395"
-     stroke="#C15462"
-     stroke-width="2"
-     marker-end="url(#arr-Bad)" />
-  <text
-     x="359.93295"
-     y="164.01552"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#1A2030"><tspan
-       x="359.93295"
-       y="164.01552">сигналы</tspan><tspan
-       x="359.93295"
-       y="175.26552">ниже порога</tspan></text>
-  <!-- Qualified Rate box -->
-  <rect
-     x="15.761132"
-     y="182.12395"
-     width="280"
-     height="60"
-     rx="8"
-     fill="#2F8B67"
-     fill-opacity="0.15"
-     stroke="#2F8B67"
-     stroke-width="2" />
-  <text
-     x="155.76112"
-     y="217.12395"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">Qualified Rate</text>
-  <!-- Stepped Downgrade -->
-  <rect
-     x="315.64798"
-     y="182.01079"
-     width="290.22632"
-     height="94.305923"
-     rx="8.0062428"
-     fill="#C15462"
-     fill-opacity="0.15"
-     stroke="#C15462"
-     stroke-width="2" />
-  <text
-     x="460.76114"
-     y="199.12395"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030">Downgrade (ступенчатая категория)</text>
-  <line
-     x1="330.76114"
-     y1="209.12395"
-     x2="590.76117"
-     y2="209.12395"
-     stroke="#C15462"
-     stroke-width="1"
-     stroke-dasharray="6,3" />
-  <text
-     x="330.76114"
-     y="225.12395"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#1A2030">— Mid-Qualified</text>
-  <text
-     x="330.76114"
-     y="239.12395"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#1A2030">— EIRF (Electronic Interchange Reimbursement Fee)</text>
-  <text
-     x="330.76114"
-     y="253.12395"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#1A2030">— Standard Rate</text>
-  <text
-     x="330.76114"
-     y="267.12393"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#1A2030">— Non-Qualified</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 184" width="385pt" height="184pt">
+<defs>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
+  <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
+</defs>
+<g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" fill="#1A2030">
+<text x="2" y="9" font-size="8" fill="#5C647A">Категории квалификации (применяются одновременно):</text>
+
+<!-- Регион -->
+<g>
+  <rect x="2" y="15" width="50" height="26" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="27" y="25.99" text-anchor="middle" font-size="8" font-weight="bold">Регион</text>
+  <text x="27" y="34.71" text-anchor="middle" font-size="7" fill="#5C647A">US / EU / IC</text>
+</g>
+
+<!-- Продукт -->
+<g>
+  <rect x="53.5" y="15" width="88" height="26" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="97.5" y="25.99" text-anchor="middle" font-size="8" font-weight="bold">Продукт</text>
+  <text x="97.5" y="34.71" text-anchor="middle" font-size="7" fill="#5C647A">Consumer / WE / Comm.</text>
+</g>
+
+<!-- MCC -->
+<g>
+  <rect x="143" y="15" width="78" height="26" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="182" y="25.99" text-anchor="middle" font-size="8" font-weight="bold">MCC</text>
+  <text x="182" y="34.71" text-anchor="middle" font-size="7" fill="#5C647A">grocery / fuel / T&amp;E ...</text>
+</g>
+
+<!-- Режим ввода POS -->
+<g>
+  <rect x="222.5" y="15" width="82" height="26" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="263.5" y="25.99" text-anchor="middle" font-size="8" font-weight="bold">Режим ввода POS</text>
+  <text x="263.5" y="34.71" text-anchor="middle" font-size="7" fill="#5C647A">CP / CNP / Contactless</text>
+</g>
+
+<!-- Качество данных -->
+<g>
+  <rect x="306" y="15" width="77" height="26" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="344.5" y="25.99" text-anchor="middle" font-size="8" font-weight="bold">Качество данных</text>
+  <text x="344.5" y="34.71" text-anchor="middle" font-size="7" fill="#5C647A">на сигналах</text>
+</g>
+<g>
+  <line x1="182" y1="41.5" x2="182" y2="61.5" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+  <text x="187" y="54" font-size="7" fill="#5C647A">комбинированная оценка</text>
+</g>
+
+<!-- Подбор программы -->
+<g>
+  <rect x="72" y="62" width="220" height="28" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="182" y="73.99" text-anchor="middle" font-size="8" font-weight="bold">Подбор программы interchange</text>
+  <text x="182" y="82.71" text-anchor="middle" font-size="7" fill="#5C647A">region x product x MCC x channel x signals x token</text>
+</g>
+<g>
+  <line x1="122" y1="90.5" x2="89" y2="117.5" stroke="#2F8B67" stroke-width="1" marker-end="url(#arr-Good)"/>
+  <text x="97" y="106" text-anchor="end" font-size="8">OK</text>
+</g>
+<g>
+  <line x1="242" y1="90.5" x2="230" y2="117.5" stroke="#C15462" stroke-width="1" marker-end="url(#arr-Bad)"/>
+  <text x="255" y="101" font-size="7" fill="#5C647A">сигналы</text>
+  <text x="255" y="109" font-size="7" fill="#5C647A">ниже порога</text>
+</g>
+
+<!-- Qualified Rate -->
+<g>
+  <rect x="2" y="118" width="150" height="28" rx="3" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="0.75"/>
+  <text x="77" y="134.24" text-anchor="middle" font-size="8" font-weight="bold">Qualified Rate</text>
+</g>
+
+<!-- Downgrade -->
+<g>
+  <rect x="170" y="118" width="213" height="64" rx="3" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="0.75"/>
+  <text x="276.5" y="129" text-anchor="middle" font-size="8" font-weight="bold">Downgrade (ступенчатая категория)</text>
+  <line x1="176" y1="133.5" x2="377" y2="133.5" stroke="#C15462" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="176" y="143" font-size="8">— Mid-Qualified</text>
+  <text x="176" y="153" font-size="8">— EIRF (Electronic Interchange Reimbursement Fee)</text>
+  <text x="176" y="163" font-size="8">— Standard Rate</text>
+  <text x="176" y="173" font-size="8">— Non-Qualified</text>
+</g>
+
+</g>
 </svg>

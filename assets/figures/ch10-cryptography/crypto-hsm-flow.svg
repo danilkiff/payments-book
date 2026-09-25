@@ -1,68 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 30 710 380" width="710" height="380">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 260.5" width="385pt" height="260.5pt">
 <defs>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
 </defs>
+<g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" fill="#1A2030">
 
-<!-- CENTRAL FLOW (vertical message path) -->
-<rect x="170" y="40" width="200" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="270" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Терминал</text>
+<!-- Путь сообщения -->
+<g>
+  <rect x="118" y="2" width="90" height="20" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+  <text x="163" y="15.5" text-anchor="middle" font-size="8" font-weight="bold">Терминал</text>
+</g>
+<g>
+  <rect x="118" y="56" width="90" height="20" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+  <text x="163" y="69.5" text-anchor="middle" font-size="8" font-weight="bold">Эквайер</text>
+</g>
+<g>
+  <rect x="118" y="110" width="90" height="20" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="163" y="123.5" text-anchor="middle" font-size="8" font-weight="bold">Карточная сеть</text>
+</g>
+<g>
+  <rect x="118" y="164" width="90" height="20" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="0.75"/>
+  <text x="163" y="177.5" text-anchor="middle" font-size="8" font-weight="bold">Хост эмитента</text>
+</g>
+<g>
+  <line x1="163" y1="22" x2="163" y2="55" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+  <text x="169" y="41.5" font-size="8" font-weight="bold">ARQC + PIN-блок (TPK)</text>
+</g>
+<g>
+  <line x1="163" y1="76" x2="163" y2="109" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+  <text x="169" y="95.5" font-size="7" fill="#5C647A">маршрутизация · PIN под ZPK</text>
+</g>
+<g>
+  <line x1="163" y1="130" x2="163" y2="163" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+  <text x="169" y="149.5" font-size="7" fill="#5C647A">маршрутизация · PIN перешифрован</text>
+</g>
 
-<line x1="270" y1="80" x2="270" y2="120" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="278" y="100" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">ARQC + PIN-блок (TPK)</text>
+<!-- HSM эквайера -->
+<g>
+  <rect x="2" y="2" width="106" height="78" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+  <text x="55" y="14" text-anchor="middle" font-size="8" font-weight="bold">HSM эквайера</text>
+  <text x="8" y="28" font-size="7" font-weight="bold" fill="#5C647A">Ключи (под LMK)</text>
+  <text x="8" y="38" font-size="8">TPK · ZPK</text>
+  <text x="8" y="47.5" font-size="8">ZMK / TMK — KEK</text>
+  <text x="8" y="62" font-size="7" font-weight="bold" fill="#5C647A">Операции</text>
+  <text x="8" y="72" font-size="8">PIN translate</text>
+</g>
+<line x1="108" y1="66" x2="117" y2="66" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
 
-<rect x="170" y="120" width="200" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="270" y="144" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Эквайер</text>
+<!-- Зональный HSM -->
+<g>
+  <rect x="2" y="98" width="106" height="74" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="55" y="110" text-anchor="middle" font-size="8" font-weight="bold">Зональный HSM</text>
+  <text x="55" y="119" text-anchor="middle" font-size="7" fill="#5C647A">(сети)</text>
+  <text x="8" y="133" font-size="7" font-weight="bold" fill="#5C647A">Ключи</text>
+  <text x="8" y="143" font-size="8">ZPK ↔ ZPK</text>
+  <text x="8" y="157" font-size="7" font-weight="bold" fill="#5C647A">Операция</text>
+  <text x="8" y="167" font-size="8">Перешифрование PIN</text>
+</g>
+<line x1="108" y1="124" x2="117" y2="120" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
 
-<line x1="270" y1="160" x2="270" y2="200" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="278" y="180" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">маршрутизация · PIN под ZPK</text>
+<!-- ARQC / ARPC -->
+<g>
+  <line x1="208" y1="170" x2="243" y2="170" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+  <text x="226" y="167" text-anchor="middle" font-size="8" font-weight="bold">ARQC</text>
+  <line x1="244" y1="178" x2="209" y2="178" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
+  <text x="226" y="188" text-anchor="middle" font-size="8" font-weight="bold">ARPC</text>
+</g>
 
-<rect x="170" y="200" width="200" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="270" y="224" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Карточная сеть</text>
+<!-- HSM эмитента -->
+<g>
+  <rect x="244" y="156" width="139" height="102.5" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="0.75"/>
+  <text x="313.5" y="167" text-anchor="middle" font-size="8" font-weight="bold">HSM эмитента</text>
+  <text x="250" y="177" font-size="7" font-weight="bold" fill="#5C647A">Ключи (под LMK)</text>
+  <text x="250" y="186" font-size="8">IMK-AC · IMK-SMI · IMK-SMC</text>
+  <text x="250" y="195.5" font-size="8">CVK · PVK</text>
+  <text x="250" y="210" font-size="7" font-weight="bold" fill="#5C647A">Деривация на транзакцию</text>
+  <text x="250" y="219" font-size="8">MK = KDF(IMK, PAN+PSN)</text>
+  <text x="250" y="228.5" font-size="8">SK_AC = f(MK_AC, ATC)</text>
+  <text x="250" y="243" font-size="7" font-weight="bold" fill="#5C647A">Операции</text>
+  <text x="250" y="252" font-size="8">ARQC verify · ARPC · CVV · PVV</text>
+</g>
 
-<line x1="270" y1="240" x2="270" y2="280" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="278" y="260" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">маршрутизация · PIN перешифрован</text>
-
-<rect x="170" y="280" width="200" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="270" y="304" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Хост эмитента</text>
-
-<!-- HSM ЭКВАЙЕРА (left, aligned with Эквайер) -->
-<rect x="15" y="40" width="140" height="120" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="85" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">HSM эквайера</text>
-<text x="27" y="80" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Ключи (под LMK)</text>
-<text x="27" y="93" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">TPK · ZPK</text>
-<text x="27" y="105" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">ZMK / TMK — KEK</text>
-<text x="27" y="129" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Операции</text>
-<text x="27" y="142" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">PIN translate</text>
-<line x1="155" y1="140" x2="170" y2="140" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-
-<!-- ЗОНАЛЬНЫЙ HSM (left, aligned with Карточная сеть) -->
-<rect x="15" y="200" width="140" height="100" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="85" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Зональный HSM</text>
-<text x="85" y="234" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">(сети)</text>
-<text x="27" y="254" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Ключи</text>
-<text x="27" y="267" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">ZPK ↔ ZPK</text>
-<text x="27" y="285" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Операция</text>
-<text x="27" y="297" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Перешифрование PIN</text>
-<line x1="155" y1="240" x2="170" y2="220" stroke="#5C647A" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-
-<!-- HSM ЭМИТЕНТА (right of Хост эмитента; ARQC/ARPC exchange) -->
-<line x1="370" y1="294" x2="450" y2="294" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="410" y="288" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">ARQC</text>
-<line x1="452" y1="312" x2="372" y2="312" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="410" y="324" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">ARPC</text>
-
-<rect x="452" y="245" width="256" height="155" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="580" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">HSM эмитента</text>
-<text x="464" y="286" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Ключи (под LMK)</text>
-<text x="464" y="299" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">IMK-AC · IMK-SMI · IMK-SMC</text>
-<text x="464" y="311" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">CVK · PVK</text>
-<text x="464" y="332" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Деривация на транзакцию</text>
-<text x="464" y="345" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">MK = KDF(IMK, PAN+PSN)</text>
-<text x="464" y="357" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#1A2030">SK_AC = f(MK_AC, ATC)</text>
-<text x="464" y="378" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#5C647A">Операции</text>
-<text x="464" y="391" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">ARQC verify · ARPC · CVV · PVV</text>
-
+</g>
 </svg>

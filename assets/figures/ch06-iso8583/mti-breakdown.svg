@@ -1,580 +1,138 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   viewBox="0 0 720 300"
-   width="720"
-   height="300"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <!-- ============ Block 1: Позиция 1 (версия стандарта) ============ -->
-  <text
-     x="100"
-     y="34"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#5C647A">Позиция 1</text>
-  <rect
-     x="70"
-     y="50"
-     width="60"
-     height="42"
-     rx="4"
-     fill="#B8821C"
-     fill-opacity="0.18"
-     stroke="#B8821C"
-     stroke-width="1.5" />
-  <text
-     x="100"
-     y="80"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="24"
-     font-weight="bold"
-     fill="#1A2030">0</text>
-  <text
-     x="28"
-     y="114"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     font-weight="bold"
-     fill="#5C647A">Значение</text>
-  <text
-     x="80"
-     y="114"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     font-weight="bold"
-     fill="#5C647A">Смысл</text>
-  <rect
-     x="20"
-     y="126"
-     width="160"
-     height="20"
-     fill="#B8821C"
-     fill-opacity="0.18" />
-  <text
-     x="46"
-     y="140"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030">0</text>
-  <text
-     x="64"
-     y="140"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     font-weight="bold"
-     fill="#1A2030">ISO 8583:1987</text>
-  <text
-     x="46"
-     y="160"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">1</text>
-  <text
-     x="64"
-     y="160"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">ред. 1993</text>
-  <text
-     x="46"
-     y="180"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">2</text>
-  <text
-     x="64"
-     y="180"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">ред. 2003</text>
-  <text
-     x="46"
-     y="200"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">3</text>
-  <text
-     x="64"
-     y="200"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">ред. 2023</text>
-  <!-- ============ Block 2: Позиция 2 (класс сообщения) ============ -->
-  <text
-     x="275"
-     y="34"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#5C647A">Позиция 2</text>
-  <rect
-     x="245"
-     y="50"
-     width="60"
-     height="42"
-     rx="4"
-     fill="#B8821C"
-     fill-opacity="0.18"
-     stroke="#B8821C"
-     stroke-width="1.5" />
-  <text
-     x="275"
-     y="80"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="24"
-     font-weight="bold"
-     fill="#1A2030">1</text>
-  <text
-     x="203"
-     y="114"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     font-weight="bold"
-     fill="#5C647A">Значение</text>
-  <text
-     x="255"
-     y="114"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     font-weight="bold"
-     fill="#5C647A">Смысл</text>
-  <rect
-     x="195"
-     y="126"
-     width="160"
-     height="20"
-     fill="#B8821C"
-     fill-opacity="0.18" />
-  <text
-     x="221"
-     y="140"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030">1</text>
-  <text
-     x="239"
-     y="140"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     font-weight="bold"
-     fill="#1A2030">авторизация</text>
-  <text
-     x="221"
-     y="160"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">2</text>
-  <text
-     x="239"
-     y="160"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">финансовое</text>
-  <text
-     x="221"
-     y="180"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">3</text>
-  <text
-     x="239"
-     y="180"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">file action</text>
-  <text
-     x="221"
-     y="200"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">4</text>
-  <text
-     x="239"
-     y="200"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#1A2030">reversal, чарджбэк</text>
-  <text
-     x="221"
-     y="220"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">5</text>
-  <text
-     x="239"
-     y="220"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">reconciliation</text>
-  <text
-     x="221"
-     y="240"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">6</text>
-  <text
-     x="239"
-     y="240"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#1A2030">административное</text>
-  <text
-     x="221"
-     y="260"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">7</text>
-  <text
-     x="239"
-     y="260"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">fee collection</text>
-  <text
-     x="221"
-     y="280"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">8</text>
-  <text
-     x="239"
-     y="280"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#1A2030">управление сетью</text>
-  <!-- ============ Block 3: Позиция 3 (функция в потоке) ============ -->
-  <text
-     x="450"
-     y="34"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#5C647A">Позиция 3</text>
-  <rect
-     x="420"
-     y="50"
-     width="60"
-     height="42"
-     rx="4"
-     fill="#B8821C"
-     fill-opacity="0.18"
-     stroke="#B8821C"
-     stroke-width="1.5" />
-  <text
-     x="450"
-     y="80"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="24"
-     font-weight="bold"
-     fill="#1A2030">0</text>
-  <text
-     x="378"
-     y="114"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     font-weight="bold"
-     fill="#5C647A">Значение</text>
-  <text
-     x="430"
-     y="114"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     font-weight="bold"
-     fill="#5C647A">Смысл</text>
-  <rect
-     x="370"
-     y="126"
-     width="160"
-     height="20"
-     fill="#B8821C"
-     fill-opacity="0.18" />
-  <text
-     x="396"
-     y="140"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030">0</text>
-  <text
-     x="414"
-     y="140"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     font-weight="bold"
-     fill="#1A2030">request</text>
-  <text
-     x="396"
-     y="160"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">1</text>
-  <text
-     x="414"
-     y="160"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">request response</text>
-  <text
-     x="396"
-     y="180"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">2</text>
-  <text
-     x="414"
-     y="180"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">advice</text>
-  <text
-     x="396"
-     y="200"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">3</text>
-  <text
-     x="414"
-     y="200"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">advice response</text>
-  <text
-     x="396"
-     y="220"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">4</text>
-  <text
-     x="414"
-     y="220"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">notification</text>
-  <text
-     x="396"
-     y="240"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">5</text>
-  <text
-     x="414"
-     y="240"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">notification ack</text>
-  <text
-     x="396"
-     y="260"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">6</text>
-  <text
-     x="414"
-     y="260"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">instruction</text>
-  <text
-     x="396"
-     y="280"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">7</text>
-  <text
-     x="414"
-     y="280"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">instruction ack</text>
-  <!-- ============ Block 4: Позиция 4 (инициатор пары) ============ -->
-  <text
-     x="625"
-     y="34"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#5C647A">Позиция 4</text>
-  <rect
-     x="595"
-     y="50"
-     width="60"
-     height="42"
-     rx="4"
-     fill="#B8821C"
-     fill-opacity="0.18"
-     stroke="#B8821C"
-     stroke-width="1.5" />
-  <text
-     x="625"
-     y="80"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="24"
-     font-weight="bold"
-     fill="#1A2030">0</text>
-  <text
-     x="553"
-     y="114"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     font-weight="bold"
-     fill="#5C647A">Значение</text>
-  <text
-     x="605"
-     y="114"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     font-weight="bold"
-     fill="#5C647A">Смысл</text>
-  <rect
-     x="545"
-     y="126"
-     width="160"
-     height="20"
-     fill="#B8821C"
-     fill-opacity="0.18" />
-  <text
-     x="571"
-     y="140"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030">0</text>
-  <text
-     x="589"
-     y="140"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     font-weight="bold"
-     fill="#1A2030">эквайер</text>
-  <text
-     x="571"
-     y="160"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">1</text>
-  <text
-     x="589"
-     y="160"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">эквайер, повтор</text>
-  <text
-     x="571"
-     y="180"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">2</text>
-  <text
-     x="589"
-     y="180"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">эмитент</text>
-  <text
-     x="571"
-     y="200"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">3</text>
-  <text
-     x="589"
-     y="200"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">эмитент, повтор</text>
-  <text
-     x="571"
-     y="220"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">4</text>
-  <text
-     x="589"
-     y="220"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="10"
-     fill="#1A2030">др. сторона</text>
-  <text
-     x="571"
-     y="240"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     fill="#1A2030">5</text>
-  <text
-     x="589"
-     y="240"
-     text-anchor="start"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#1A2030">др. сторона, повтор</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 156" width="385pt" height="156pt">
+<g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" fill="#1A2030">
+<g>
+<text x="48.125" y="11" font-size="9" font-weight="bold" text-anchor="middle">Позиция 1</text>
+<rect x="36.125" y="16" width="24" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="48.125" y="28.5" font-size="9" font-weight="bold" text-anchor="middle">0</text>
+<text x="3" y="45" font-size="7" font-weight="bold" fill="#5C647A">Значение · смысл</text>
+</g>
+<g>
+<rect x="2" y="49" width="92.25" height="12" rx="3" fill="#E8ECF7"/>
+<text x="7" y="58" font-size="8" font-weight="bold" text-anchor="middle">0</text>
+<text x="14" y="58" font-size="8" font-weight="bold">ISO 8583:1987</text>
+</g>
+<g>
+<text x="7" y="70" font-size="8" text-anchor="middle">1</text>
+<text x="14" y="70" font-size="8">ред. 1993</text>
+</g>
+<g>
+<text x="7" y="82" font-size="8" text-anchor="middle">2</text>
+<text x="14" y="82" font-size="8">ред. 2003</text>
+</g>
+<g>
+<text x="7" y="94" font-size="8" text-anchor="middle">3</text>
+<text x="14" y="94" font-size="8">ред. 2023</text>
+</g>
+<g>
+<text x="144.375" y="11" font-size="9" font-weight="bold" text-anchor="middle">Позиция 2</text>
+<rect x="132.375" y="16" width="24" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="144.375" y="28.5" font-size="9" font-weight="bold" text-anchor="middle">1</text>
+<text x="99.25" y="45" font-size="7" font-weight="bold" fill="#5C647A">Значение · смысл</text>
+</g>
+<g>
+<rect x="98.25" y="49" width="92.25" height="12" rx="3" fill="#E8ECF7"/>
+<text x="103.25" y="58" font-size="8" font-weight="bold" text-anchor="middle">1</text>
+<text x="110.25" y="58" font-size="8" font-weight="bold">авторизация</text>
+</g>
+<g>
+<text x="103.25" y="70" font-size="8" text-anchor="middle">2</text>
+<text x="110.25" y="70" font-size="8">финансовое</text>
+</g>
+<g>
+<text x="103.25" y="82" font-size="8" text-anchor="middle">3</text>
+<text x="110.25" y="82" font-size="8">file action</text>
+</g>
+<g>
+<text x="103.25" y="94" font-size="8" text-anchor="middle">4</text>
+<text x="110.25" y="94" font-size="8">reversal,</text>
+<text x="110.25" y="103" font-size="8">chargeback</text>
+</g>
+<g>
+<text x="103.25" y="115" font-size="8" text-anchor="middle">5</text>
+<text x="110.25" y="115" font-size="8">reconciliation</text>
+</g>
+<g>
+<text x="103.25" y="127" font-size="8" text-anchor="middle">6</text>
+<text x="110.25" y="127" font-size="8">административное</text>
+</g>
+<g>
+<text x="103.25" y="139" font-size="8" text-anchor="middle">7</text>
+<text x="110.25" y="139" font-size="8">fee collection</text>
+</g>
+<g>
+<text x="103.25" y="151" font-size="8" text-anchor="middle">8</text>
+<text x="110.25" y="151" font-size="8">управление сетью</text>
+</g>
+<g>
+<text x="240.625" y="11" font-size="9" font-weight="bold" text-anchor="middle">Позиция 3</text>
+<rect x="228.625" y="16" width="24" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="240.625" y="28.5" font-size="9" font-weight="bold" text-anchor="middle">0</text>
+<text x="195.5" y="45" font-size="7" font-weight="bold" fill="#5C647A">Значение · смысл</text>
+</g>
+<g>
+<rect x="194.5" y="49" width="92.25" height="12" rx="3" fill="#E8ECF7"/>
+<text x="199.5" y="58" font-size="8" font-weight="bold" text-anchor="middle">0</text>
+<text x="206.5" y="58" font-size="8" font-weight="bold">request</text>
+</g>
+<g>
+<text x="199.5" y="70" font-size="8" text-anchor="middle">1</text>
+<text x="206.5" y="70" font-size="8">request response</text>
+</g>
+<g>
+<text x="199.5" y="82" font-size="8" text-anchor="middle">2</text>
+<text x="206.5" y="82" font-size="8">advice</text>
+</g>
+<g>
+<text x="199.5" y="94" font-size="8" text-anchor="middle">3</text>
+<text x="206.5" y="94" font-size="8">advice response</text>
+</g>
+<g>
+<text x="199.5" y="106" font-size="8" text-anchor="middle">4</text>
+<text x="206.5" y="106" font-size="8">notification</text>
+</g>
+<g>
+<text x="199.5" y="118" font-size="8" text-anchor="middle">5</text>
+<text x="206.5" y="118" font-size="8">notification ack</text>
+</g>
+<g>
+<text x="199.5" y="130" font-size="8" text-anchor="middle">6</text>
+<text x="206.5" y="130" font-size="8">instruction</text>
+</g>
+<g>
+<text x="199.5" y="142" font-size="8" text-anchor="middle">7</text>
+<text x="206.5" y="142" font-size="8">instruction ack</text>
+</g>
+<g>
+<text x="336.875" y="11" font-size="9" font-weight="bold" text-anchor="middle">Позиция 4</text>
+<rect x="324.875" y="16" width="24" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="336.875" y="28.5" font-size="9" font-weight="bold" text-anchor="middle">0</text>
+<text x="291.75" y="45" font-size="7" font-weight="bold" fill="#5C647A">Значение · смысл</text>
+</g>
+<g>
+<rect x="290.75" y="49" width="92.25" height="12" rx="3" fill="#E8ECF7"/>
+<text x="295.75" y="58" font-size="8" font-weight="bold" text-anchor="middle">0</text>
+<text x="302.75" y="58" font-size="8" font-weight="bold">эквайер</text>
+</g>
+<g>
+<text x="295.75" y="70" font-size="8" text-anchor="middle">1</text>
+<text x="302.75" y="70" font-size="8">эквайер, повтор</text>
+</g>
+<g>
+<text x="295.75" y="82" font-size="8" text-anchor="middle">2</text>
+<text x="302.75" y="82" font-size="8">эмитент</text>
+</g>
+<g>
+<text x="295.75" y="94" font-size="8" text-anchor="middle">3</text>
+<text x="302.75" y="94" font-size="8">эмитент, повтор</text>
+</g>
+<g>
+<text x="295.75" y="106" font-size="8" text-anchor="middle">4</text>
+<text x="302.75" y="106" font-size="8">др. сторона</text>
+</g>
+<g>
+<text x="295.75" y="118" font-size="8" text-anchor="middle">5</text>
+<text x="302.75" y="118" font-size="8">др. сторона, повтор</text>
+</g>
+</g>
 </svg>

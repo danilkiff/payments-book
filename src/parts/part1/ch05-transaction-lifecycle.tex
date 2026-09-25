@@ -276,7 +276,7 @@ Mastercard клиринг должен прийти в~пределах 7--30~к
 средства от~сети,
 перечисляет их продавцу по~условиям договора, ежедневно, через день или
 по~иному графику, за~вычетом MSC. Четыре фазы и~разрывы между ними сведены
-на~рис.~\ref{fig:tx-lifecycle-timeline}. В~продуктовом реестре эти два события
+в~табл.~\ref{tab:tx-lifecycle-timeline}. В~продуктовом реестре эти два события
 соответствуют разным переходам и~собственному графику выплат
 (см.~раздел~\ref{sec:ledger-balances}).
 
@@ -286,11 +286,34 @@ Mastercard клиринг должен прийти в~пределах 7--30~к
 провайдера. Для продавца с~большим оборотом или низкой маржой каждый
 дополнительный день задержки замораживает оборотные средства.
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch05-transaction-lifecycle/tx-lifecycle-timeline}
-  \caption{Четыре фазы карточной транзакции и~три разрыва между ними.}\label{fig:tx-lifecycle-timeline}
-\end{figure}
+\begin{table}[tbp]
+  \caption{Четыре фазы карточной транзакции и~три разрыва между ними}\label{tab:tx-lifecycle-timeline}
+  \begingroup
+  \tablesetup
+  \begin{tabularx}{\textwidth}{@{}B{0.15\textwidth} P{0.15\textwidth} Y P{0.16\textwidth} P{0.19\textwidth}@{}}
+    \toprule
+    \headrow
+    \thd{Фаза} & \thd{Срок} & \thd{Акторы} & \thd{Протокол} & \thd{Состояние} \\
+    \midrule
+    Авторизация & T0~..~T+ несколько~с &
+    терминал~$\leftrightarrow$ эквайер~$\leftrightarrow$ сеть~$\leftrightarrow$ эмитент &
+    ISO~8583 (0100/0110) & холд на~счёте держателя, сумма заблокирована \\
+    \rowsep
+    Клиринг & T0~..~T+1 раб. дня &
+    эквайер~$\to$ сеть~$\to$ эмитент (batch конца дня) &
+    файлы клиринга & сумма зафиксирована \\
+    \rowsep
+    Расчёт & T+1~..~T+2 раб. дня &
+    сеть~$\leftrightarrow$ корсчета банков &
+    нетто-расчёт & деньги между банками \\
+    \rowsep
+    Выплата (по~договору) & T+1~..~T+5 раб. дней &
+    эквайер~$\to$ ТСП по~графику договора &
+    банковский перевод & зачисление на~счёт ТСП \\
+    \bottomrule
+  \end{tabularx}\par
+  \endgroup
+\end{table}
 
 \section{Одностадийная и~двухстадийная схема}\label{sec:tx-dual-single}
 
@@ -426,7 +449,7 @@ Request}/0400 в~течение 24~часов после отмены ранее
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch05-transaction-lifecycle/tx-cancellation-timeline}
+  \includefigure{assets/figures/ch05-transaction-lifecycle/tx-cancellation-timeline}
   \caption{\textit{Reversal}, \textit{void} и~возврат на временной шкале транзакции.}\label{fig:tx-cancellation-timeline}
 \end{figure}
 

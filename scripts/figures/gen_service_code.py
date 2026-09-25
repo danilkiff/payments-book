@@ -1,8 +1,8 @@
-"""Генератор service-code.svg для гл. 3 § "Сервисный код".
+"""Генератор service-code.svg для гл. 4, раздел "Сервисный код".
 
-Три позиции сервисного кода Track 2 (ISO/IEC 7813:2006 Table 3).
-Каждая позиция действует независимо. Жёлтым подсвечены значения примера
-201 из дампа MTI 0100 (гл. 5).
+Три позиции сервисного кода Track 2 (iso-7813, Table 3). Каждая позиция
+действует независимо. Выделены значения примера 201 из~дампа MTI 0100
+(гл. ISO 8583). Раскладка positions_svg() общая с~gen_mti_breakdown.py.
 """
 import sys
 from pathlib import Path
@@ -10,8 +10,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
-  INK, MUTED, SOFT, WARN,
-  figures_dir, t, write_svg, svg_header,
+  CANVAS_H_MAX, CANVAS_W, FONT, FS_BODY, FS_HEAD, FS_NOTE, INK, MUTED, PANEL,
+  RX, box, figures_dir, svg_header_pt, text_width, write_svg, xml_escape,
 )
 
 POS_1 = [
@@ -38,65 +38,96 @@ POS_3 = [
   ("7", "товары/услуги, PIN при PED"),
 ]
 
-EXAMPLE = ("2", "0", "1")
-
 POSITIONS = [
-  ("Позиция 1", "interchange + чип", POS_1, EXAMPLE[0]),
-  ("Позиция 2", "авторизация", POS_2, EXAMPLE[1]),
-  ("Позиция 3", "услуги + PIN", POS_3, EXAMPLE[2]),
+  ("Позиция 1", "interchange + чип", POS_1, "2"),
+  ("Позиция 2", "авторизация", POS_2, "0"),
+  ("Позиция 3", "услуги + PIN", POS_3, "1"),
 ]
 
-VIEW_W = 720
-COL_W = 230
-COL_GAP = 12
-COL_X = [10, 10 + COL_W + COL_GAP, 10 + 2 * (COL_W + COL_GAP)]
-HEADER_H = 50
-EXAMPLE_BAR_H = 50
-ROW_H = 20
-NUM_ROWS_MAX = max(len(p[2]) for p in POSITIONS)
+MARGIN = 2
+ROW_H = 12
+LINE_H = 9
+VAL_X = 5
+MEAN_X = 12
 
-VIEW_H = HEADER_H + EXAMPLE_BAR_H + (NUM_ROWS_MAX + 1) * ROW_H + 10
 
-lines = svg_header(VIEW_W, VIEW_H)
+def txt(x, y, s, size=FS_BODY, weight="normal", fill=INK, anchor="start"):
+  attrs = f' font-size="{size}"'
+  if weight != "normal":
+    attrs += f' font-weight="{weight}"'
+  if fill != INK:
+    attrs += f' fill="{fill}"'
+  if anchor != "start":
+    attrs += f' text-anchor="{anchor}"'
+  return f'<text x="{x:g}" y="{y:g}"{attrs}>{xml_escape(s)}</text>'
 
-for col_idx, (title, subtitle, values, example_value) in enumerate(POSITIONS):
-  x = COL_X[col_idx]
-  cx = x + COL_W / 2
 
-  lines.append(t(cx, 18, title, size=11, fill=MUTED, weight="bold"))
-  lines.append(t(cx, 34, subtitle, size=10, fill=MUTED))
+def wrap(s, width, weight):
+  """Перенос по~словам под~ширину width при кегле FS_BODY."""
+  lines, cur = [], ""
+  for word in s.split():
+    cand = f"{cur} {word}".strip()
+    if cur and text_width(cand, FS_BODY, weight) > width:
+      lines.append(cur)
+      cur = word
+    else:
+      cur = cand
+  lines.append(cur)
+  return lines
 
-  example_cell_y = HEADER_H
-  cell_w = 60
-  cell_x = cx - cell_w / 2
-  lines.append(
-    f'<rect x="{cell_x}" y="{example_cell_y}" width="{cell_w}" '
-    f'height="{EXAMPLE_BAR_H - 8}" rx="4" '
-    f'fill="{WARN}" fill-opacity="0.18" '
-    f'stroke="{WARN}" stroke-width="1.5"/>'
-  )
-  lines.append(t(cx, example_cell_y + 30, example_value, size=24, fill=INK, weight="bold"))
 
-  rows_start_y = HEADER_H + EXAMPLE_BAR_H + 14
-  lines.append(t(x + 14, rows_start_y, "Значение", size=9, fill=MUTED, weight="bold", anchor="start"))
-  lines.append(t(x + 66, rows_start_y, "Смысл", size=9, fill=MUTED, weight="bold", anchor="start"))
+def positions_svg(positions, gap):
+  """Колонки позиций: заголовок, цифра примера, список значений.
 
-  for row_idx, (val, meaning) in enumerate(values):
-    row_y = rows_start_y + 6 + (row_idx + 1) * ROW_H
-    is_example = (val == example_value)
+  positions: [(заголовок, подзаголовок или "", [(значение, смысл)], пример)].
+  Строка примера выделена нейтральной плашкой PANEL и~полужирным.
+  """
+  n = len(positions)
+  cw = (CANVAS_W - 2 * MARGIN - (n - 1) * gap) / n
+  has_sub = any(p[1] for p in positions)
+  y_digit = MARGIN + (22 if has_sub else 14)
+  y_head = y_digit + 18 + 11
+  y_rows = y_head + 4
+  out, bottom = [], 0
+  for i, (title, sub, values, example) in enumerate(positions):
+    x = MARGIN + i * (cw + gap)
+    cx = x + cw / 2
+    out.append("<g>")
+    out.append(txt(cx, MARGIN + 9, title, FS_HEAD, "bold", anchor="middle"))
+    if sub:
+      out.append(txt(cx, MARGIN + 18, sub, FS_NOTE, fill=MUTED, anchor="middle"))
+    out.append(box(f"{cx - 12:g}", y_digit, 24, 18))
+    out.append(txt(cx, y_digit + 12.5, example, FS_HEAD, "bold", anchor="middle"))
+    out.append(txt(x + 1, y_head, "Значение · смысл", FS_NOTE, "bold", MUTED))
+    out.append("</g>")
+    y = y_rows
+    for val, meaning in values:
+      is_ex = val == example
+      weight = "bold" if is_ex else "normal"
+      parts = wrap(meaning, cw - MEAN_X - 1, weight)
+      h = ROW_H + LINE_H * (len(parts) - 1)
+      out.append("<g>")
+      if is_ex:
+        out.append(
+          f'<rect x="{x:g}" y="{y:g}" width="{cw:g}" height="{h}" rx="{RX}" '
+          f'fill="{PANEL}"/>'
+        )
+      out.append(txt(x + VAL_X, y + 9, val, weight=weight, anchor="middle"))
+      for k, part in enumerate(parts):
+        out.append(txt(x + MEAN_X, y + 9 + k * LINE_H, part, weight=weight))
+      out.append("</g>")
+      y += h
+    bottom = max(bottom, y)
+  height = bottom + MARGIN
+  if height > CANVAS_H_MAX:
+    raise ValueError(f"высота {height} > {CANVAS_H_MAX}")
+  lines = svg_header_pt(CANVAS_W, height)
+  lines.append(f'<g font-family="{FONT}" fill="{INK}">')
+  lines += out
+  lines += ["</g>", "</svg>"]
+  return lines
 
-    if is_example:
-      lines.append(
-        f'<rect x="{x}" y="{row_y - 14}" width="{COL_W}" '
-        f'height="{ROW_H}" fill="{WARN}" fill-opacity="0.18"/>'
-      )
 
-    lines.append(t(x + 18, row_y, val, size=11, fill=INK,
-                   weight="bold" if is_example else "normal"))
-    font_size = 10 if len(meaning) <= 26 else 9
-    lines.append(t(x + 66, row_y, meaning, size=font_size, fill=INK,
-                   weight="bold" if is_example else "normal", anchor="start"))
-
-lines.append("</svg>")
-
-write_svg(figures_dir() / "ch04-card-data" / "service-code.svg", lines)
+if __name__ == "__main__":
+  write_svg(figures_dir() / "ch04-card-data" / "service-code.svg",
+            positions_svg(POSITIONS, gap=10))

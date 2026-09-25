@@ -1,59 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440">
-<defs>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-</defs>
-
-<!-- Header swimlanes -->
-<rect x="50" y="14" width="160" height="38" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="130" y="39" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Клиент</text>
-
-<rect x="280" y="14" width="160" height="38" rx="8" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="2"/>
-<text x="360" y="39" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">ТСП</text>
-
-<rect x="510" y="14" width="180" height="38" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="600" y="39" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">BNPL-провайдер</text>
-
-<!-- Lifelines -->
-<line x1="130" y1="52" x2="130" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="360" y1="52" x2="360" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="600" y1="52" x2="600" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-
-<!-- Step 1: Клиент → ТСП -->
-<line x1="130" y1="86" x2="360" y2="86" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="245" y="78" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">оформление заказа, выбор BNPL</text>
-
-<!-- Step 2: ТСП → BNPL -->
-<line x1="360" y1="118" x2="600" y2="118" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="480" y="110" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">SDK / API: orderId, сумма</text>
-
-<!-- Step 3: BNPL → Клиент -->
-<line x1="600" y1="150" x2="130" y2="150" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="365" y="142" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">график: 4 платежа × 25 % (Pay-in-4)</text>
-
-<!-- Step 4: Клиент → BNPL -->
-<line x1="130" y1="186" x2="600" y2="186" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="365" y="178" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">подтверждение + сохранение credential</text>
-<rect x="285" y="192" width="160" height="20" fill="#E8ECF7"/>
-<text x="365" y="207" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">CIT · stored credential</text>
-
-<!-- Scoring box -->
-<rect x="510" y="226" width="180" height="34" rx="6" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
-<text x="600" y="248" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">скоринг</text>
-
-<!-- Step 5: BNPL → ТСП webhook -->
-<line x1="600" y1="282" x2="360" y2="282" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="480" y="274" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">webhook: approved</text>
-
-<!-- Step 6: BNPL → ТСП settlement -->
-<line x1="600" y1="320" x2="360" y2="320" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="480" y="312" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">settlement (−комиссия)</text>
-
-<!-- Step 7: ТСП → Клиент товар -->
-<line x1="360" y1="372" x2="130" y2="372" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-<text x="245" y="364" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">товар отгружен</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 181" width="385pt" height="181pt">
+<defs><marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker></defs>
+<rect x="5.0" y="2" width="121.0" height="22" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+<text x="65.5" y="15.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">Клиент</text>
+<line x1="65.5" y1="24" x2="65.5" y2="181" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="132.0" y="2" width="121.0" height="22" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="192.5" y="15.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">ТСП</text>
+<line x1="192.5" y1="24" x2="192.5" y2="181" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="259.0" y="2" width="121.0" height="22" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="0.75"/>
+<text x="319.5" y="15.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">BNPL-провайдер</text>
+<line x1="319.5" y1="24" x2="319.5" y2="181" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<line x1="65.5" y1="47" x2="191.5" y2="47" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="61.9" y="36.5" width="134.1" height="9" fill="#ffffff"/>
+<text x="129.0" y="44.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">оформление заказа, выбор BNPL</text>
+<line x1="192.5" y1="64" x2="318.5" y2="64" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="204.6" y="53.5" width="102.8" height="9" fill="#ffffff"/>
+<text x="256.0" y="61.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">SDK / API: orderId, сумма</text>
+<line x1="319.5" y1="81" x2="66.5" y2="81" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="119.0" y="70.5" width="147.1" height="9" fill="#ffffff"/>
+<text x="192.5" y="78.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">график: 4 платежа × 25 % (Pay-in-4)</text>
+<line x1="65.5" y1="98" x2="318.5" y2="98" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="111.4" y="87.5" width="162.1" height="9" fill="#ffffff"/>
+<text x="192.5" y="95.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">подтверждение + сохранение credential</text>
+<rect x="153.9" y="99.5" width="77.2" height="8" fill="#ffffff"/>
+<text x="192.5" y="106.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">CIT · stored credential</text>
+<rect x="300.2" y="111" width="38.6" height="13" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75" stroke-dasharray="3,2"/>
+<text x="319.5" y="120" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="bold" fill="#1A2030">скоринг</text>
+<line x1="319.5" y1="141" x2="193.5" y2="141" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="216.5" y="130.5" width="79.0" height="9" fill="#ffffff"/>
+<text x="256.0" y="138.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">webhook: approved</text>
+<line x1="319.5" y1="158" x2="193.5" y2="158" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
+<rect x="206.4" y="147.5" width="99.2" height="9" fill="#ffffff"/>
+<text x="256.0" y="155.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">settlement (−комиссия)</text>
+<line x1="192.5" y1="175" x2="66.5" y2="175" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="96.1" y="164.5" width="65.8" height="9" fill="#ffffff"/>
+<text x="129.0" y="172.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">товар отгружен</text>
 </svg>

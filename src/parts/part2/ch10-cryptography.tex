@@ -190,8 +190,7 @@ Manual~\cite{thales-payshield-host-commands} (это отдельный доку
 
 \begin{figure}[!ht]
   \centering
-  {\renewcommand{\figuremaxheight}{.65\textheight}%
-  \includefiguresvg[width=\linewidth]{assets/figures/ch10-cryptography/crypto-hsm-flow}}
+  \includefigure{assets/figures/ch10-cryptography/crypto-hsm-flow}
   \caption{HSM в~авторизационном потоке ARQC/ARPC: эквайер, зональный
   узел, эмитент.}%
   \label{fig:crypto-hsm-flow}
@@ -243,12 +242,51 @@ FIPS~140--3), MAC канала (ГОСТ~34.13 вместо ISO~9797-1~alg.~3) �
 безопасности ПС~Мир~\cite{nspk-mir-security} конкретный список рекомендованных
 моделей HSM не~раскрывает.
 
-\begin{figure}[!ht]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch10-cryptography/crypto-hsm-mir}
+\begin{table}[!ht]
   \caption{HSM эмитента карт \enquote{Мир} и~международная схема: сертификация,
-  ключи, MAC, подпись клиринговых файлов.}\label{fig:crypto-hsm-mir}
-\end{figure}
+  ключи, MAC, подпись клиринговых файлов}\label{tab:crypto-hsm-mir}
+  \begingroup
+  \tablesetup
+  \begin{minipage}{\textwidth}
+    \begin{tabularx}{\textwidth}{@{}B{0.24\textwidth} Y Y@{}}
+      \toprule
+      \headrow
+      \thd{Операция} & \thd{Международная сеть (Visa, Mastercard, Amex)} &
+      \thd{ПС~Мир (НСПК, банки-эмитенты)} \\
+      \midrule
+      Норматив & PCI SSC, scheme rules & ЦБ 719-П, 851-П, ФСБ №~378 \\
+      \rowsep
+      Сертификация HSM & FIPS~140-3 L3--L4, PCI PTS HSM &
+      ФСБ КВ2 + реестр Минпромторга \\
+      \rowsep
+      LMK (корневой) & AES / 3DES & AES / 3DES, опц. Кузнечик \\
+      \rowsep
+      Зональный ключ к~ПС & ZMK Visa/MC (3DES / AES) &
+      ZAK НСПК (ГОСТ~34.12/34.13) \\
+      \rowsep
+      PIN-блок (ZPK) & ISO~9564 F0, 3DES / AES &
+      F0 (3DES), F4 опц., Кузнечик опц. \\
+      \rowsep
+      Online ARQC / ARPC & EMV CSK на~3DES / AES &
+      EMV CSK на~3DES (ГОСТ не~активирован) \\
+      \rowsep
+      MAC канала с~ПС & 3DES-MAC, ISO~9797-1 alg.~3 & ГОСТ-MAC по~ГОСТ~34.13 \\
+      \rowsep
+      ЭП клир. файлов и~хеш & RSA / ECDSA + SHA-2 & ГОСТ~34.10-2012 + Стрибог \\
+      \rowsep
+      Хост-API HSM & Thales A0 / JA / KQ \ldots &
+      Thales-эмуляция + PKCS\#11 GOST \\
+      \rowsep
+      Offline auth (SDA/DDA/CDA) & RSA, сертификат CA сети &
+      RSA, сертификат CA НСПК \\
+      \bottomrule
+    \end{tabularx}
+    \par\smallskip
+    \tablenote{Российские платёжные HSM, три вендора в~эмиссионной инфраструктуре
+    Мир: КриптоПро HSM~2.0~R3, ViPNet HSM~PS, SPB HSM~PS.}
+  \end{minipage}\par
+  \endgroup
+\end{table}
 
 \FloatBarrier
 \section{Иерархия ключей}\label{sec:crypto-key-hierarchy}
@@ -289,7 +327,7 @@ FIPS~140--3), MAC канала (ГОСТ~34.13 вместо ISO~9797-1~alg.~3) �
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch10-cryptography/crypto-key-hierarchy}
+  \includefigure{assets/figures/ch10-cryptography/crypto-key-hierarchy}
   \caption{Дерево деривации EMV: IMK, ключ карты, сессионный ключ.}\label{fig:crypto-key-hierarchy}
 \end{figure}
 
@@ -388,7 +426,7 @@ Format~2~--- без~TLV-обёртки; набор полей под MAC у~ни
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch10-cryptography/secure-messaging}
+  \includefigure{assets/figures/ch10-cryptography/secure-messaging}
   \caption{Защищённая команда эмитента: MAC на~SK\_SMI, шифр данных на~SK\_SMC.}\label{fig:secure-messaging}
 \end{figure}
 
@@ -427,12 +465,18 @@ DUKPT (Derived Unique Key Per Transaction)~--- схема управления �
     не~применяется.
 \end{itemize}
 
-\begin{figure}[p]
+\begin{figure}[tbp]
   \centering
-  {\renewcommand{\figuremaxheight}{.85\textheight}%
-  \includefiguresvg[width=\linewidth]{assets/figures/ch10-cryptography/crypto-dukpt}}
-  \caption{AES DUKPT по~ANSI X9.24--3--2017: деривация Initial Key из~BDK
-  и~Working Key из~IDK.}\label{fig:crypto-dukpt}
+  \includefigure{assets/figures/ch10-cryptography/crypto-dukpt-provisioning}
+  \caption{AES DUKPT по~ANSI X9.24--3--2017, provisioning: деривация Initial
+  Key из~BDK.}\label{fig:crypto-dukpt-provisioning}
+\end{figure}
+
+\begin{figure}[tbp]
+  \centering
+  \includefigure{assets/figures/ch10-cryptography/crypto-dukpt-transaction}
+  \caption{AES DUKPT по~ANSI X9.24--3--2017, per-transaction: деривация IDK
+  из~IK и~Working Key из~IDK.}\label{fig:crypto-dukpt-transaction}
 \end{figure}
 
 AES DUKPT строится в~два шага деривации. Эквайер хранит в~HSM 128-битный BDK.
@@ -474,7 +518,7 @@ AES-ECB необратима без ключа, а~IDK прошлых позиц
 
 В~примере все три шага деривации реализованы в~одном файле; функция
 \path{make_derivation_data} строит 16-байтовый блок по~разметке
-из~рис.~\ref{fig:crypto-dukpt}, а~\path{aes_ecb_block}~--- единственный
+из~рис.~\ref{fig:crypto-dukpt-provisioning} и~\ref{fig:crypto-dukpt-transaction}, а~\path{aes_ecb_block}~--- единственный
 криптографический примитив:
 
 \codefile{Python}{samples/ch10-dukpt/dukpt.py}
@@ -490,7 +534,8 @@ AES-ECB необратима без ключа, а~IDK прошлых позиц
 
 На~официальных векторах из~Supplement to
 X9.24--3--2017~\cite{x9-24-3-test-vectors} эти три вызова возвращают значения,
-подсвеченные жёлтым на~рис.~\ref{fig:crypto-dukpt}. Замена
+подсвеченные жёлтым на~рис.~\ref{fig:crypto-dukpt-provisioning}
+и~\ref{fig:crypto-dukpt-transaction}. Замена
 \path{KU_PIN_ENCRYPTION} на~\path{KU_MAC_GENERATION} или
 \path{KU_DATA_ENCRYPTION} даёт независимый рабочий ключ того~же IDK для
 других операций (\textit{key separation}).
@@ -531,7 +576,7 @@ ISO~9564 определяет несколько форматов PIN-блока
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch10-cryptography/pin-block-format0}
+  \includefigure{assets/figures/ch10-cryptography/pin-block-format0}
   \caption{Сборка PIN-блока Format~0: PIN-поле, PAN-поле, XOR двух
   полей.}\label{fig:pin-block-format0}
 \end{figure}
@@ -703,11 +748,28 @@ control добавляет второй барьер: ни одно действ
 должен обрабатывать оба семейства алгоритмов, HSM~--- хранить и~использовать
 оба набора ключей~\cite{gost-34-10,gost-34-12}.
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguresvg[width=0.9\linewidth]{assets/figures/ch10-cryptography/gost-vs-international}
-  \caption{Криптография ГОСТ и~международные алгоритмы по~ролям.}\label{fig:gost-vs-international}
-\end{figure}
+\begin{table}[tbp]
+  \caption{Криптография ГОСТ и~международные алгоритмы по~ролям}\label{tab:gost-vs-international}
+  \begingroup
+  \tablesetup
+  \begin{minipage}{\textwidth}
+    \begin{tabularx}{\textwidth}{@{}B{0.2\textwidth} Y Y@{}}
+      \toprule
+      \headrow
+      \thd{Роль} & \thd{ГОСТ} & \thd{Международный} \\
+      \midrule
+      Подпись & ГОСТ~34.10 & ECDSA / ECC \\
+      \rowsep
+      Шифрование & ГОСТ~34.12: Кузнечик, Магма & блочные шифры: AES, 3DES \\
+      \rowsep
+      Режимы & ГОСТ~34.13 & NIST SP~800-38: GCM / CBC / CTR \\
+      \rowsep
+      Хеш & ГОСТ~34.11: Стрибог & SHA-256 \\
+      \bottomrule
+    \end{tabularx}
+  \end{minipage}\par
+  \endgroup
+\end{table}
 
 Внедрение поддержки ГОСТ начинается с~HSM: ряд западных моделей получает
 алгоритмы ГОСТ только с~дополнительным модулем или прошивкой.

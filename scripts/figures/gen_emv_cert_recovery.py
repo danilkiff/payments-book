@@ -12,43 +12,47 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
-  INK, MUTED, ACCENT_A, ACCENT_B, WARN,
-  figures_dir, t, write_svg, svg_header,
+  CANVAS_W, FONT, FS_BODY, FS_NOTE, MUTED, box, figures_dir, svg_header_pt, t,
+  write_svg,
 )
 
-# (верхняя подпись, нижняя подпись, ширина, цвет)
+# (верхняя подпись, нижняя подпись, ширина, тон). Маркеры и формат --
+# нейтральный Panel; поля сертификата и хеш -- два типа данных (A, B).
 BOXES = [
-  ("6A", "заголовок", 50, WARN),
-  ("02", "формат", 50, MUTED),
-  ("поля + ключ эмитента", "ID, срок, серийный, PK", 210, ACCENT_A),
-  ("Hash", "SHA-1, 20 байт", 110, ACCENT_B),
-  ("BC", "трейлер", 50, WARN),
+  ("6A", "заголовок", 38, None),
+  ("02", "формат", 38, None),
+  ("поля + ключ эмитента", "ID, срок, серийный, PK", 150, "AccentA"),
+  ("Hash", "SHA-1, 20 байт", 90, "AccentB"),
+  ("BC", "трейлер", 38, None),
 ]
 
-VIEW_W = 548
-STRIP_X = 12
-STRIP_Y = 22
-BOX_H = 30
-GAP = 6
-NOTE_Y = STRIP_Y + BOX_H + 16 + 18
-VIEW_H = NOTE_Y + 14
+W = CANVAS_W
+GAP = 5
+BOX_H = 18
+STRIP_W = sum(b[2] for b in BOXES) + GAP * (len(BOXES) - 1)
+X0 = (W - STRIP_W) / 2
+Y0 = 2
+NOTE_Y = Y0 + BOX_H + 21
+H = NOTE_Y + 3
 
-lines = svg_header(VIEW_W, VIEW_H)
 
-x = STRIP_X
-for top, bottom, w, color in BOXES:
-  opacity = "0.18" if color == WARN else "0.15"
-  lines.append(
-    f'<rect x="{x}" y="{STRIP_Y}" width="{w}" height="{BOX_H}" '
-    f'fill="{color}" fill-opacity="{opacity}" stroke="{MUTED}" stroke-width="0.5"/>'
-  )
-  size = 11 if len(top) <= 6 else 10
-  lines.append(t(x + w / 2, STRIP_Y + 20, top, size=size, fill=INK, weight="bold"))
-  lines.append(t(x + w / 2, STRIP_Y + BOX_H + 13, bottom, size=9, fill=MUTED))
-  x += w + GAP
+def build():
+  out = []
+  x = X0
+  for top, bottom, w, tone in BOXES:
+    out += [
+      "<g>",
+      box(f"{x:.1f}", Y0, w, BOX_H, tone),
+      t(f"{x + w / 2:.1f}", Y0 + 12, top, size=FS_BODY, weight="bold"),
+      t(f"{x + w / 2:.1f}", Y0 + BOX_H + 9, bottom, size=FS_NOTE, fill=MUTED),
+      "</g>",
+    ]
+    x += w + GAP
+  out.append(t(f"{X0:.1f}", NOTE_Y,
+               "открытый ключ CA восстанавливает блок; терминал сверяет Hash",
+               size=FS_NOTE, fill=MUTED, anchor="start"))
+  return svg_header_pt(W, H) + [f'<g font-family="{FONT}">'] + out + ["</g>", "</svg>"]
 
-lines.append(t(STRIP_X, NOTE_Y, "открытый ключ CA восстанавливает блок; терминал сверяет Hash",
-               size=9, fill=MUTED, anchor="start"))
 
-lines.append("</svg>")
-write_svg(figures_dir() / "ch07-emv" / "emv-cert-recovery.svg", lines)
+if __name__ == "__main__":
+  write_svg(figures_dir() / "ch07-emv" / "emv-cert-recovery.svg", build())

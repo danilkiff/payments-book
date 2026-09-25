@@ -122,7 +122,7 @@ Acquirer Reference Data) и~DE~48 (Additional Data) сообщения ISO~8583/
 (см.~\cite{iso-8583-2023})~\cite{visa-core-rules,mc-tpr}. Валюта транзакции
 и~валюта расчёта кодируются в~разных полях, а~формат представления суммы
 (с~разделителем или без, с~фиксированной точностью или плавающей) различается
-между сетями. На~рис.~\ref{fig:base2-vs-ipm} сведены состав DE
+между сетями. В~табл.~\ref{tab:base2-vs-ipm} сведены состав DE
 для~IPM~1240 First Presentment и~подтверждённые позиции TCR~0 для~Visa TC~05
 в~TC~33.A по~Visa Acceptance Developer
 Portal~\cite{visa-acceptance-capture-spec} и~Mastercard GCMS Reference
@@ -137,11 +137,97 @@ Manual~2021~\cite{mc-gcms-rm-2021}. Внутренняя структура 23-�
 трёхбуквенных и~трёхзначных кодов валют)~\cite{iso-4217}. Без~этого шага
 алгоритм сопоставления будет путать разницу форматов с~денежным расхождением.
 
-\begin{figure}[!htbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch30-reconciliation/base2-vs-ipm}
-  \caption{Visa TC~05 в~TC~33.A (TCR~0) и~Mastercard IPM~1240 First Presentment: состав полей.}\label{fig:base2-vs-ipm}
-\end{figure}
+\begin{table}[!htbp]
+  \caption{Visa TC~05 в~TC~33.A (TCR~0) и~Mastercard IPM~1240 First Presentment: состав полей}\label{tab:base2-vs-ipm}
+  \begingroup
+  \tablesetup
+  \begin{minipage}{\textwidth}
+    \begin{tabularx}{\textwidth}{@{}P{0.34\textwidth} P{0.16\textwidth} Y@{}}
+      \toprule
+      \headrow
+      \thd{Поле} & \thd{Поз. / DE} & \thd{Значение} \\
+      \midrule
+      \multicolumn{3}{@{}>{\bfseries}l@{}}{\cellcolor{Ink!6}Visa BASE~II / TC~33.A~$\to$ TC~05: Sales Draft, TCR0 (168~байт)} \\
+      \rowsep
+      Transaction Code & 1--2 & 05 Sales Draft \\
+      \rowsep
+      TCR Sequence Number & 4 & 0 \\
+      \rowsep
+      Application Code & 17--20 & BASE \\
+      \rowsep
+      Message Identifier & 21--35 & ACQUIRER0000001 \\
+      \rowsep
+      Account Number (PAN) & --- & 4242 4242 4242 4242 \\
+      \rowsep
+      Acquirer Reference Number & --- & 72711493163001285828825 \\
+      \rowsep
+      Acquirer Business ID & --- & 10054321 \\
+      \rowsep
+      Purchase Date (MMDD) & --- & 0612 \\
+      \rowsep
+      Destination Amount & --- & 100.00 \\
+      \rowsep
+      Destination Currency Code & --- & 826 GBP \\
+      \rowsep
+      Merchant Name / City & --- & STORE EXAMPLE / LONDON \\
+      \rowsep
+      Merchant Country / MCC & --- & GBR / 5651 \\
+      \rowsep
+      Auth Code & --- & 107090 \\
+      \rowsep
+      POS Entry Mode & --- & 01 \\
+      \rowsep
+      Action Code & 135--146 & 5 (TC~05 clearing record) \\
+      \rowsep
+      \multicolumn{3}{@{}>{\bfseries}l@{}}{\cellcolor{Ink!6}Mastercard IPM~1240: First Presentment, Function Code~200} \\
+      \rowsep
+      Message Type Identifier & MTI & 1240 \\
+      \rowsep
+      Primary bitmap (DE~1--64) & BMP1 & F000 0142 0CC1 E000 \\
+      \rowsep
+      Secondary bitmap (DE~65--128) & BMP2 & 0200 0000 0400 0000 \\
+      \rowsep
+      PAN & DE~2 & 5555 5555 5555 4444 \\
+      \rowsep
+      Processing Code & DE~3 & 000000 \\
+      \rowsep
+      Amount, Transaction & DE~4 & 000000010000 (=100.00) \\
+      \rowsep
+      Function Code & DE~24 & 200 First Presentment \\
+      \rowsep
+      MCC & DE~26 & 5651 \\
+      \rowsep
+      Acquirer Reference Data & DE~31 & 72711493163001285828825 \\
+      \rowsep
+      Retrieval Reference Number & DE~37 & 316300273056 \\
+      \rowsep
+      Approval Code & DE~38 & 107090 \\
+      \rowsep
+      Card Acceptor Terminal ID & DE~41 & 01234567 \\
+      \rowsep
+      Card Acceptor ID Code & DE~42 & 1087654321 \\
+      \rowsep
+      Additional Data (PDS) & DE~48 & PDS 0023 / 0148 / 0158 / 0165 \\
+      \rowsep
+      Currency, Transaction & DE~49 & 826 GBP \\
+      \rowsep
+      Currency, Reconciliation & DE~50 & 826 \\
+      \rowsep
+      Currency, Cardholder Billing & DE~51 & 826 \\
+      \rowsep
+      Message Number & DE~71 & 00000796 \\
+      \rowsep
+      Transaction Originator Inst. & DE~94 & 024354 \\
+      \bottomrule
+    \end{tabularx}
+    \par\smallskip
+    \tablenote{Одна успешная розничная покупка~--- два формата клиринга:
+      100,00~GBP, MCC~5651 (Family Clothing); PAN~--- тестовые номера Stripe;
+      значения иллюстративные, состав полей~--- из~первичных спецификаций.
+    Поз.~--- позиция в~записи TCR0 Visa, DE~--- элемент данных IPM Mastercard.}
+  \end{minipage}\par
+  \endgroup
+\end{table}
 
 Парсер собирает клиринговую запись, извлекает поля сопоставления и~передаёт
 их в~механизм сверки. Разбирать Visa BASE~II и~Mastercard IPM одним парсером
@@ -191,7 +277,7 @@ Manual~2021~\cite{mc-gcms-rm-2021}. Внутренняя структура 23-�
 
 \begin{figure}[!htbp]
   \centering
-  \includefiguresvg[width=.7\linewidth]{assets/figures/ch30-reconciliation/net-vs-gross}
+  \includefigure{assets/figures/ch30-reconciliation/net-vs-gross}
   \caption{Нетто- и~валовой расчёт: 100 транзакций в~одну позицию.}\label{fig:net-vs-gross}
 \end{figure}
 
@@ -298,14 +384,39 @@ Authorization}~\cite{mc-tpr,visa-core-rules}. Поверх бухгалтерс�
 проверяются поля и~допуски. Чем слабее критерии сопоставления, тем аккуратнее
 должна быть ручная проверка. Если на~третий проход регулярно приходится
 больше 2--3\,\% записей, причина~--- в~качестве входных данных или в~пропущенном
-сценарии, а~не~в~алгоритме. Рисунок~\ref{fig:matching-passes} показывает
+сценарии, а~не~в~алгоритме. Таблица~\ref{tab:matching-passes} показывает
 пример строки на~каждом проходе с~иллюстративными долями.
 
-\begin{figure}[!htbp]
-  \centering
-  \includefiguresvg[width=.75\linewidth]{assets/figures/ch30-reconciliation/matching-passes}
-  \caption{Три прохода сверки: строгий, мягкий, ручная очередь.}\label{fig:matching-passes}
-\end{figure}
+\begin{table}[!htbp]
+  \caption{Три прохода сверки: строгий, мягкий, ручная очередь}\label{tab:matching-passes}
+  \begingroup
+  \tablesetup
+  \begin{tabularx}{\textwidth}{@{}P{0.12\textwidth} P{0.36\textwidth} P{0.13\textwidth} P{0.14\textwidth} Y@{}}
+    \toprule
+    \headrow
+    \thd{source} & \thd{reference} & \thd{amount} & \thd{date} & \thd{card} \\
+    \midrule
+    \multicolumn{5}{@{}>{\bfseries}l@{}}{\cellcolor{Good!14}Pass~1: строгий, ARN+сумма+дата; matched, $\approx$85\,\%} \\
+    \rowsep
+    internal & ARN 72711493163001285828825 & 100,00 GBP & 2023-06-12 & 4242 4242 4242 4242 \\
+    \rowsep
+    external & ARN 72711493163001285828825 & 100,00 GBP & 2023-06-12 & 4242 4242 4242 4242 \\
+    \rowsep
+    \multicolumn{5}{@{}>{\bfseries}l@{}}{\cellcolor{Warn!18}Pass~2: мягкий, сумма+карта; soft, $\approx$12\,\%} \\
+    \rowsep
+    internal & RRN 316300273057 & 50,00 GBP & 2023-06-12 & 5555 5555 5555 4444 \\
+    \rowsep
+    external & ARN 32827645198001473829164 & 50,00 GBP & 2023-06-14 & 5555 5555 5555 4444 \\
+    \rowsep
+    \multicolumn{5}{@{}>{\bfseries}l@{}}{\cellcolor{Bad!10}Pass~3: ручная очередь; manual, $\approx$3\,\%} \\
+    \rowsep
+    internal & ARN 92831564198001473829164 & 95,00 GBP & 2023-06-12 & 4242 4242 4242 4242 \\
+    \rowsep
+    external & ARN 88142539471860392856103 & 75,00 GBP & 2023-06-13 & 5555 5555 5555 4444 \\
+    \bottomrule
+  \end{tabularx}\par
+  \endgroup
+\end{table}
 
 Общая ссылка записи \texttt{reference}~--- RRN на~стороне авторизации, ARN или
 эквивалент в~клиринге; для~механизма сверки важно, чтобы строка была одинаково

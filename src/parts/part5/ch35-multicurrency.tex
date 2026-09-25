@@ -64,12 +64,28 @@ TTL увеличивает долю истёкших сессий, длинны�
 потери на~устаревшем курсе обнаруживаются только при~ежемесячной сверке
 казначейства.
 
-\begin{figure}[htbp]
-  \centering
-  \includefiguresvg[width=.65\linewidth]{assets/figures/ch35-multicurrency/fx-ownership-models}
+\begin{table}[tbp]
   \caption{Четыре модели владения курсом в~мультивалютном
-  продукте.}\label{fig:fx-ownership-models}
-\end{figure}
+  продукте}\label{tab:fx-ownership-models}
+  \begingroup
+  \tablesetup
+  \begin{tabularx}{\textwidth}{@{}B{0.2\textwidth} P{0.16\textwidth} Y P{0.16\textwidth} Y@{}}
+    \toprule
+    \headrow
+    \thd{Владелец курса} & \thd{Модель} & \thd{TTL курса} & \thd{Сумма держателю} & \thd{Источник курса} \\
+    \midrule
+    Эмитент & стандартный карточный & фиксация при~клиринге & постфактум &
+    правила сети; диапазоны наценок в~правилах сетей публично не~закреплены \\
+    \rowsep
+    Эквайер / DCC-провайдер & DCC & момент авторизации & до~авторизации & провайдер DCC \\
+    \rowsep
+    Платформа & собственный курс & короткий (сессия) & в~момент выбора & валютный модуль \\
+    \rowsep
+    FX-провайдер & B2B / форвард & дольше одной сессии & B2B / пакетно & FX-провайдер \\
+    \bottomrule
+  \end{tabularx}\par
+  \endgroup
+\end{table}
 
 Подписка с~ежемесячным списанием в~EUR при~выплате продавцу в~USD проходит
 через конверсию 12~раз в~год, и~при~каждой конверсии курс другой; совокупная
@@ -148,7 +164,7 @@ Uzcard (Узбекистан) прекратил приём \enquote{Мира} �
 
 \begin{figure}[htb]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch35-multicurrency/three-currencies-timeline}
+  \includefigure{assets/figures/ch35-multicurrency/three-currencies-timeline}
   \caption{Жизненный цикл операции в~нескольких валютах: transaction
   $\to$ billing $\to$ settlement $\to$ payout.}\label{fig:three-currencies-timeline}
 \end{figure}
@@ -210,7 +226,7 @@ DCC~\cite{visa-core-rules,mc-tpr}.
 Выбор коридора зависит от~стоимости авторизации и~расчёта, доли одобрений для
 нужного диапазона BIN, валюты выплаты продавцу и~стороны, которая несёт
 валютный риск. Параметры обоих маршрутов по~этим факторам показаны
-на~рис.~\ref{fig:corridor-routing}; состав параметров согласован с~публичными
+в~табл.~\ref{tab:corridor-routing}; состав параметров согласован с~публичными
 правилами Visa и~таблицами Visa~USA~IRF~\cite{visa-core-rules,visa-interchange}.
 
 Дорогой маршрут через эквайера страны держателя карты повышает
@@ -230,12 +246,41 @@ DCC~\cite{visa-core-rules,mc-tpr}.
 меньше, но~у~продавца появляется несколько валютных балансов и~отдельный
 график выплат по~каждому.
 
-\begin{figure}[htbp]
-  \centering
-  \includefiguresvg[width=.85\linewidth]{assets/figures/ch35-multicurrency/corridor-routing}
+\begin{table}[tbp]
   \caption{Маршрутизация по~коридору: сравнение двух стратегий
-  для одного платежа.}\label{fig:corridor-routing}
-\end{figure}
+  для одного платежа}\label{tab:corridor-routing}
+  \begingroup
+  \tablesetup
+  \begin{minipage}{\textwidth}
+    \begin{tabularx}{\textwidth}{@{}B{0.22\textwidth} Y Y@{}}
+      \toprule
+      \headrow
+      \thd{Параметр} & \thd{Маршрут A: UK-эквайер для всех транзакций} &
+      \thd{Маршрут B: US-эквайер для US-карт, UK для прочих} \\
+      \midrule
+      Тип транзакции & международная & внутренняя для US-карт \\
+      \rowsep
+      Доля одобрений & ниже (эмитент видит как международную) &
+      выше (эмитент видит как внутреннюю) \\
+      \rowsep
+      Межбанковская комиссия & международный тариф Visa~USA & US Domestic IRF \\
+      \rowsep
+      Комиссии сети & + International Service Assessment &
+      стандарт + комиссии эквайера \\
+      \rowsep
+      Валюта расчёта & GBP & USD + GBP (раздельные балансы) \\
+      \rowsep
+      Подключение & минимальный & юрлицо в~США, договор с~US-эквайером \\
+      \rowsep
+      Когда выигрывает & \textbf{низкий объём US-карт} & \textbf{значимый объём US-карт} \\
+      \bottomrule
+    \end{tabularx}
+    \par\smallskip
+    \tablenote{ТСП с~продажами в~Великобритании, держатель Visa~USA, средний
+    чек 50~GBP.}
+  \end{minipage}\par
+  \endgroup
+\end{table}
 
 \practicenote{%
   Если внутри принимаются потоки в~нескольких валютах, а~продавцу обещан один
@@ -301,7 +346,7 @@ DCC~\cite{visa-core-rules,mc-tpr}.
 \vspace{-2pt}
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=.85\linewidth]{assets/figures/ch35-multicurrency/multicurrency-recon}
+  \includefigure{assets/figures/ch35-multicurrency/multicurrency-recon}
   \caption{Одна транзакция в~пяти валютных
   представлениях.}\label{fig:multicurrency-recon}
 \end{figure}

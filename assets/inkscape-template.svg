@@ -1,84 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-  Шаблон-палитра для фигур книги. Открывать в Inkscape как стартовую точку
-  для новых фигур: File → New from Template (или просто Save As под нужным
-  именем). Палитра соответствует src/styles.tex; используется в фигурах,
-  таблицах и notebox-блоках книги.
-
-  Семантика цветов:
-    Ink/Muted/Soft/Panel — нейтральный каркас и текст
-    AccentA/AccentB      — нейтральные смысловые акценты
-    Good/Warn/Bad        — семантика статусов (ок / осторожно / нельзя)
-
-  Заливки (fills) применяются как solid color с fill-opacity 0.12-0.18:
-  более насыщенные цвета книги требуют меньшей opacity, чем пастель Excalidraw.
-
-  Шрифт: Inter, фолбэк через system sans. Толщины линий: 1px (тонкий каркас),
-  1.5px (основные контуры), 2px (стрелки и связи). Стрелки: треугольник 5×5px.
-  Пунктир: stroke-dasharray="6,3".
+  Шаблон фигуры канона assets/figures/README.md: холст 385 pt = \textwidth,
+  1 единица = 1 pt в печати, высота до 272. File / Save As под именем фигуры,
+  образцы ниже копировать и удалять, размер холста менять только по высоте
+  (Document Properties, единицы pt).
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 460" width="780" height="460">
-<defs>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-Good"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-Warn"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-Bad"     viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
-  <marker id="arr-Muted"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-</defs>
-
-<text x="20" y="30" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#1A2030">Палитра фигур (src/styles.tex)</text>
-
-<!-- Нейтральный каркас -->
-<text x="20" y="60" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Нейтральные</text>
-<rect x="20"  y="70" width="80" height="40" fill="#1A2030"/>
-<text x="60"  y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Ink #1A2030</text>
-<rect x="110" y="70" width="80" height="40" fill="#5C647A"/>
-<text x="150" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Muted #5C647A</text>
-<rect x="200" y="70" width="80" height="40" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
-<text x="240" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Panel #E8ECF7</text>
-<rect x="290" y="70" width="80" height="40" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-<text x="330" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Soft #F5F7FD</text>
-
-<!-- Акценты -->
-<text x="20" y="160" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Акценты (нейтральные)</text>
-<rect x="20"  y="170" width="80" height="40" fill="#4E63D9"/>
-<rect x="20"  y="170" width="80" height="40" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5" x-overlay="hint"/>
-<text x="60"  y="225" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">AccentA #4E63D9</text>
-<rect x="110" y="170" width="80" height="40" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="150" y="225" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">AccentA fill 0.15</text>
-<rect x="200" y="170" width="80" height="40" fill="#7759D6"/>
-<text x="240" y="225" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">AccentB #7759D6</text>
-<rect x="290" y="170" width="80" height="40" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
-<text x="330" y="225" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">AccentB fill 0.15</text>
-
-<!-- Семантические -->
-<text x="20" y="260" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Семантические</text>
-<rect x="20"  y="270" width="80" height="40" fill="#2F8B67"/>
-<text x="60"  y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Good #2F8B67</text>
-<rect x="110" y="270" width="80" height="40" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
-<text x="150" y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Good fill 0.15</text>
-<rect x="200" y="270" width="80" height="40" fill="#B8821C"/>
-<text x="240" y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Warn #B8821C</text>
-<rect x="290" y="270" width="80" height="40" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="330" y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Warn fill 0.18</text>
-<rect x="380" y="270" width="80" height="40" fill="#C15462"/>
-<text x="420" y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Bad #C15462</text>
-<rect x="470" y="270" width="80" height="40" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
-<text x="510" y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Bad fill 0.15</text>
-
-<!-- Стрелки и линии -->
-<text x="20" y="370" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Стрелки и линии</text>
-<line x1="20"  y1="395" x2="120" y2="395" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="130" y="399" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">AccentA, 2px solid</text>
-<line x1="20"  y1="415" x2="120" y2="415" stroke="#7759D6" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-AccentB)"/>
-<text x="130" y="419" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">AccentB, dashed</text>
-<line x1="280" y1="395" x2="380" y2="395" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="390" y="399" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Good, 2px</text>
-<line x1="280" y1="415" x2="380" y2="415" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-<text x="390" y="419" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Warn, dashed</text>
-<line x1="540" y1="395" x2="640" y2="395" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
-<text x="650" y="399" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Bad, 2px</text>
-<line x1="540" y1="415" x2="640" y2="415" stroke="#5C647A" stroke-width="1.5" marker-end="url(#arr-Muted)"/>
-<text x="650" y="419" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Muted, 1.5px</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 250" width="385pt" height="250pt">
+<defs><marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker><marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker><marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker><marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker><marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker><marker id="arr-Good-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker><marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker><marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker><marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker><marker id="arr-Bad-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#C15462"/></marker><marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker><marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker></defs>
+<g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" fill="#1A2030">
+<text x="4" y="12" font-size="9" font-weight="bold">Заголовок секции 9 bold</text>
+<text x="150" y="12" font-size="8">подпись 8</text>
+<text x="220" y="12" font-size="7" fill="#5C647A">пометка 7 Muted</text>
+<g><rect x="4" y="22" width="58" height="24" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/><text x="33" y="32" text-anchor="middle" font-size="8" font-weight="bold">Блок</text><text x="33" y="41" text-anchor="middle" font-size="7" fill="#5C647A">нейтральный</text></g>
+<g><rect x="67" y="22" width="58" height="24" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/><text x="96" y="32" text-anchor="middle" font-size="8" font-weight="bold">Блок</text><text x="96" y="41" text-anchor="middle" font-size="7" fill="#5C647A">сторона A</text></g>
+<g><rect x="130" y="22" width="58" height="24" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="0.75"/><text x="159" y="32" text-anchor="middle" font-size="8" font-weight="bold">Блок</text><text x="159" y="41" text-anchor="middle" font-size="7" fill="#5C647A">сторона B</text></g>
+<g><rect x="193" y="22" width="58" height="24" rx="3" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="0.75"/><text x="222" y="32" text-anchor="middle" font-size="8" font-weight="bold">Блок</text><text x="222" y="41" text-anchor="middle" font-size="7" fill="#5C647A">ok</text></g>
+<g><rect x="256" y="22" width="58" height="24" rx="3" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="0.75"/><text x="285" y="32" text-anchor="middle" font-size="8" font-weight="bold">Блок</text><text x="285" y="41" text-anchor="middle" font-size="7" fill="#5C647A">условно</text></g>
+<g><rect x="319" y="22" width="58" height="24" rx="3" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="0.75"/><text x="348" y="32" text-anchor="middle" font-size="8" font-weight="bold">Блок</text><text x="348" y="41" text-anchor="middle" font-size="7" fill="#5C647A">отказ</text></g>
+<g><rect x="4" y="56" width="185" height="60" rx="3" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/><text x="10" y="67" font-size="7" font-weight="bold" fill="#5C647A">Зона (Soft, рамка 0.5 пунктир)</text></g>
+<g><rect x="12" y="74" width="80" height="34" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/><text x="18" y="85" font-size="7" font-weight="bold" fill="#5C647A">Панель (Panel)</text></g>
+<g><rect x="100" y="78" width="80" height="22" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75" stroke-dasharray="3,2"/><text x="140" y="92" text-anchor="middle" font-size="8">необязательный</text></g>
+<line x1="200" y1="60" x2="250" y2="60" stroke="#4E63D9" stroke-width="1" marker-end="url(#arr-AccentA)"/>
+<line x1="260" y1="60" x2="310" y2="60" stroke="#4E63D9" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-AccentA)"/>
+<text x="316" y="62.5" font-size="7" fill="#5C647A">AccentA</text>
+<line x1="200" y1="69" x2="250" y2="69" stroke="#7759D6" stroke-width="1" marker-end="url(#arr-AccentB)"/>
+<line x1="260" y1="69" x2="310" y2="69" stroke="#7759D6" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-AccentB)"/>
+<text x="316" y="71.5" font-size="7" fill="#5C647A">AccentB</text>
+<line x1="200" y1="78" x2="250" y2="78" stroke="#2F8B67" stroke-width="1" marker-end="url(#arr-Good)"/>
+<line x1="260" y1="78" x2="310" y2="78" stroke="#2F8B67" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Good)"/>
+<text x="316" y="80.5" font-size="7" fill="#5C647A">Good</text>
+<line x1="200" y1="87" x2="250" y2="87" stroke="#B8821C" stroke-width="1" marker-end="url(#arr-Warn)"/>
+<line x1="260" y1="87" x2="310" y2="87" stroke="#B8821C" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Warn)"/>
+<text x="316" y="89.5" font-size="7" fill="#5C647A">Warn</text>
+<line x1="200" y1="96" x2="250" y2="96" stroke="#C15462" stroke-width="1" marker-end="url(#arr-Bad)"/>
+<line x1="260" y1="96" x2="310" y2="96" stroke="#C15462" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Bad)"/>
+<text x="316" y="98.5" font-size="7" fill="#5C647A">Bad</text>
+<line x1="200" y1="105" x2="250" y2="105" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<line x1="260" y1="105" x2="310" y2="105" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
+<text x="316" y="107.5" font-size="7" fill="#5C647A">Muted</text>
+<line x1="200" y1="120" x2="250" y2="120" stroke="#5C647A" stroke-width="1" marker-start="url(#arr-Muted-s)" marker-end="url(#arr-Muted)"/>
+<text x="260" y="122.5" font-size="7" fill="#5C647A">двусторонняя связь</text>
+<g><rect x="4" y="136" width="70" height="18" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/><text x="39" y="148" text-anchor="middle" font-size="8" font-weight="bold">Участник</text></g>
+<g><rect x="160" y="136" width="70" height="18" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/><text x="195" y="148" text-anchor="middle" font-size="8" font-weight="bold">Участник</text></g>
+<line x1="39" y1="154" x2="39" y2="246" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<line x1="195" y1="154" x2="195" y2="246" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<line x1="39" y1="180" x2="194" y2="180" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<text x="117" y="177" text-anchor="middle" font-size="8">запрос</text>
+<line x1="195" y1="202" x2="40" y2="202" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
+<text x="117" y="199" text-anchor="middle" font-size="8">ответ</text>
+<line x1="39" y1="226" x2="194" y2="226" stroke="#2F8B67" stroke-width="1" marker-end="url(#arr-Good)"/>
+<text x="117" y="223" text-anchor="middle" font-size="8" font-weight="bold">итог (Good)</text>
+<text x="117" y="235" text-anchor="middle" font-size="7" fill="#5C647A">пометка под сообщением</text>
+<text x="250" y="160" font-size="7" fill="#5C647A">Цвет: нейтральный по умолчанию;</text>
+<text x="250" y="169" font-size="7" fill="#5C647A">A/B различают две стороны;</text>
+<text x="250" y="178" font-size="7" fill="#5C647A">Good/Warn/Bad только оценка.</text>
+<text x="250" y="193" font-size="7" fill="#5C647A">Линии: 0.5 рамка, 0.75 блок,</text>
+<text x="250" y="202" font-size="7" fill="#5C647A">1 связь; пунктир 3,2.</text>
+</g></svg>

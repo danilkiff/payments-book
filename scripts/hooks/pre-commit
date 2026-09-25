@@ -1,5 +1,7 @@
 #!/bin/sh
-# Проверки для проиндексированных .tex-файлов:
+# Проверки проиндексированных файлов:
+#   0. .svg --- scripts/figures/lint_svg.py (канон фигур).
+# Для .tex:
 #   1. tex-fmt --check; если файл нужно переформатировать --- форматирует
 #      его в дереве и прерывает коммит (просит пересобрать через git add).
 #   2. chktex -q; если есть предупреждения --- прерывает коммит.
@@ -7,6 +9,18 @@
 # Обойти проверки: git commit --no-verify.
 
 set -eu
+
+svgs=$(git diff --cached --name-only --diff-filter=ACMR -z \
+  | tr '\0' '\n' \
+  | grep -E '\.svg$' || true)
+
+if [ -n "$svgs" ]; then
+  if ! echo "$svgs" | xargs python3 scripts/figures/lint_svg.py; then
+    echo >&2
+    echo "pre-commit: SVG вне канона assets/figures/README.md (см. выше)." >&2
+    exit 1
+  fi
+fi
 
 files=$(git diff --cached --name-only --diff-filter=ACMR -z \
   | tr '\0' '\n' \

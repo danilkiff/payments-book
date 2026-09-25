@@ -79,11 +79,32 @@ SLA) под каждую сеть: спор по~Visa требует ответ�
 эмитент уведомляет ТСП о~поданной жалобе, и~продавец успевает провести возврат
 до~формального chargeback~\cite{mc-dispute-management}.
 
-\begin{figure}[htbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch31-disputes/vcr-vs-mc-flow}
-  \caption{Стадии разрешения спора у~Visa и~Mastercard.}\label{fig:vcr-vs-mc-flow}
-\end{figure}
+\begin{table}[tbp]
+  \caption{Стадии разрешения спора у~Visa и~Mastercard}\label{tab:vcr-vs-mc-flow}
+  \begingroup
+  \tablesetup
+  \begin{tabularx}{\textwidth}{@{}B{0.2\textwidth} Y Y@{}}
+    \toprule
+    \headrow
+    \thd{Стадия процесса} & \thd{Visa (VCR)} & \thd{Mastercard} \\
+    \midrule
+    Раннее снятие & Order Insight, CDRN, RDR (Verifi) &
+    Ethoca Consumer Clarity, Alerts \\
+    \rowsep
+    Chargeback & Visa Resolve Online (VROL) & MasterCom (IPM~1442) \\
+    \rowsep
+    Ответ эквайера & representment & second presentment (IPM~1240, FC~205/282) \\
+    \rowsep
+    Срок ответа & 9~дн (US/CA), 18~дн (мир) & 45~дн \\
+    \rowsep
+    Пре-арбитраж & pre-arbitration (через VROL) &
+    arbitration chargeback (IPM~1442, FC~451/454) \\
+    \rowsep
+    Арбитраж & Visa Arbitration Committee & Mastercard Arbitration Committee \\
+    \bottomrule
+  \end{tabularx}\par
+  \endgroup
+\end{table}
 
 Раннее снятие спора применимо только там, где спор возник из-за неузнавания
 покупки или недостатка сведений. При неполученном товаре, некачественной услуге или

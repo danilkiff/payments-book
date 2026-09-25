@@ -12,8 +12,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
-  INK, MUTED, SOFT, ACCENT_A, TIER_LIGHT, zebra,
-  figures_dir, t, write_svg, svg_header,
+  ACCENT_A, CANVAS_W, FONT, FS_BODY, FS_NOTE, INK, MUTED, SOFT, SW_FRAME,
+  TIER_LIGHT, figures_dir, svg_header_pt, t, write_svg, zebra,
 )
 
 # 5 пар (tag_hex, length, ru_name, en_name)
@@ -25,88 +25,71 @@ PAIRS = [
   ("9F1A", 2, "код страны", "Terminal Country Code"),
 ]
 
-VIEW_W = 540
-CELL_W = 28
-CELL_H = 24
-HEX_X = 30
-HEX_Y = 24
+W = CANVAS_W
+CELL_W = 22
+CELL_H = 16
 PAIR_GAP = 8
-LBL_BELOW = 30
+STRIP_W = len(PAIRS) * 3 * CELL_W + (len(PAIRS) - 1) * PAIR_GAP
+HEX_X = (W - STRIP_W) / 2
+HEX_Y = 2
 
-TBL_Y_OFFSET = 90
-TBL_ROW_H = 24
-COL_SWATCH = 14
-COL_HEX = 100
-COL_TAG = 70
-COL_LEN = 48
-COL_NAME = VIEW_W - COL_SWATCH - COL_HEX - COL_TAG - COL_LEN - 8 - 8
+ROW_H = 14
+TBL_Y = HEX_Y + CELL_H + 18
+SWATCH = 8
+X_HEX = SWATCH + 6
+X_TAG = X_HEX + 50
+X_LEN = X_TAG + 42
+X_NAME = X_LEN + 28
+H = TBL_Y + (1 + len(PAIRS)) * ROW_H + 2
 
-TBL_X_HEX = COL_SWATCH + 6
-TBL_X_TAG = TBL_X_HEX + COL_HEX
-TBL_X_LEN = TBL_X_TAG + COL_TAG
-TBL_X_NAME = TBL_X_LEN + COL_LEN
 
-VIEW_H = TBL_Y_OFFSET + (1 + len(PAIRS)) * TBL_ROW_H + 8
+def cell(x, y, op):
+  # Соседние пары различаются светлотой одного оттенка (zebra TIER_LIGHT).
+  return (
+    f'<rect x="{x:.1f}" y="{y}" width="{CELL_W}" height="{CELL_H}" '
+    f'fill="{ACCENT_A}" fill-opacity="{op}" stroke="{MUTED}" '
+    f'stroke-width="{SW_FRAME}"/>'
+  )
 
-lines = svg_header(VIEW_W, VIEW_H)
 
-# Hex strip
-x = HEX_X
-# Соседние пары различаются СВЕТЛОТОЙ одного оттенка (zebra), а не сменой
-# оттенка ACCENT_A/ACCENT_B: при равной opacity синий и фиолетовый сливались.
-for idx, (tag_hex, length, name_ru, name_en) in enumerate(PAIRS):
-  color, op = ACCENT_A, zebra(TIER_LIGHT, idx % 2)
-  tag_bytes = [tag_hex[:2], tag_hex[2:]]
-  length_byte = f"{length:02X}"
+def build():
+  out = []
+  x = HEX_X
+  for idx, (tag_hex, length, _, _) in enumerate(PAIRS):
+    op = zebra(TIER_LIGHT, idx % 2)
+    for i, hb in enumerate([tag_hex[:2], tag_hex[2:], f"{length:02X}"]):
+      cx = x + i * CELL_W
+      out.append(cell(cx, HEX_Y, op))
+      out.append(t(f"{cx + CELL_W / 2:.1f}", HEX_Y + 11, hb, size=FS_BODY,
+                   weight="bold"))
+    out.append(t(f"{x + CELL_W:.1f}", HEX_Y + CELL_H + 9, "тег",
+                 size=FS_NOTE, fill=MUTED))
+    out.append(t(f"{x + 2.5 * CELL_W:.1f}", HEX_Y + CELL_H + 9, "L",
+                 size=FS_NOTE, fill=MUTED))
+    x += 3 * CELL_W + PAIR_GAP
 
-  for i, hb in enumerate(tag_bytes):
-    cx = x + i * CELL_W
-    lines.append(
-      f'<rect x="{cx}" y="{HEX_Y}" width="{CELL_W - 1}" height="{CELL_H}" '
-      f'fill="{color}" fill-opacity="{op}" '
-      f'stroke="{MUTED}" stroke-width="0.5"/>'
+  out.append(f'<rect x="0" y="{TBL_Y}" width="{W}" height="{ROW_H}" fill="{SOFT}"/>')
+  for cx, s in ((X_HEX, "Hex"), (X_TAG, "Тег"), (X_LEN, "Len"),
+                (X_NAME, "Запрошенное значение")):
+    out.append(t(cx, TBL_Y + 10, s, size=FS_BODY, weight="bold", fill=MUTED,
+                 anchor="start"))
+  for idx, (tag_hex, length, ru, en) in enumerate(PAIRS):
+    ry = TBL_Y + (1 + idx) * ROW_H
+    if idx % 2 == 1:
+      out.append(f'<rect x="0" y="{ry}" width="{W}" height="{ROW_H}" fill="{SOFT}"/>')
+    out.append(
+      f'<rect x="0" y="{ry + 3}" width="{SWATCH}" height="{ROW_H - 6}" '
+      f'fill="{ACCENT_A}" fill-opacity="{zebra(TIER_LIGHT, idx % 2)}"/>'
     )
-    lines.append(t(cx + CELL_W / 2, HEX_Y + 16, hb, size=11, fill=INK, weight="bold"))
+    out.append(t(X_HEX, ry + 10, f"{tag_hex[:2]} {tag_hex[2:]} {length:02X}",
+                 size=FS_BODY, weight="bold", anchor="start"))
+    out.append(t(X_TAG, ry + 10, f"0x{tag_hex}", size=FS_BODY, anchor="start"))
+    out.append(t(X_LEN, ry + 10, f"{length} B", size=FS_BODY, fill=MUTED,
+                 anchor="start"))
+    out.append(t(X_NAME, ry + 10, f"{ru} ({en})", size=FS_BODY, fill=INK,
+                 anchor="start"))
+  return svg_header_pt(W, H) + [f'<g font-family="{FONT}">'] + out + ["</g>", "</svg>"]
 
-  cx = x + 2 * CELL_W
-  lines.append(
-    f'<rect x="{cx}" y="{HEX_Y}" width="{CELL_W - 1}" height="{CELL_H}" '
-    f'fill="{color}" fill-opacity="{op}" '
-    f'stroke="{MUTED}" stroke-width="0.5"/>'
-  )
-  lines.append(t(cx + CELL_W / 2, HEX_Y + 16, length_byte, size=11, fill=INK, weight="bold"))
 
-  tag_center = x + CELL_W
-  lines.append(t(tag_center, HEX_Y + LBL_BELOW + 5, "тег", size=9, fill=MUTED))
-  lines.append(t(cx + CELL_W / 2, HEX_Y + LBL_BELOW + 5, "L", size=9, fill=MUTED))
-
-  x += 3 * CELL_W + PAIR_GAP
-
-# Таблица
-hdr_y = TBL_Y_OFFSET
-lines.append(f'<rect x="0" y="{hdr_y}" width="{VIEW_W}" height="{TBL_ROW_H}" fill="{SOFT}"/>')
-lines.append(t(TBL_X_HEX, hdr_y + 16, "Hex", size=10, fill=MUTED, weight="bold", anchor="start"))
-lines.append(t(TBL_X_TAG, hdr_y + 16, "Тег", size=10, fill=MUTED, weight="bold", anchor="start"))
-lines.append(t(TBL_X_LEN, hdr_y + 16, "Len", size=10, fill=MUTED, weight="bold", anchor="start"))
-lines.append(t(TBL_X_NAME, hdr_y + 16, "Запрошенное значение", size=10,
-               fill=MUTED, weight="bold", anchor="start"))
-
-for idx, (tag_hex, length, name_ru, name_en) in enumerate(PAIRS):
-  ry = TBL_Y_OFFSET + (1 + idx) * TBL_ROW_H
-  color, op = ACCENT_A, zebra(TIER_LIGHT, idx % 2)
-  if idx % 2 == 1:
-    lines.append(f'<rect x="0" y="{ry}" width="{VIEW_W}" height="{TBL_ROW_H}" fill="{SOFT}"/>')
-  lines.append(
-    f'<rect x="0" y="{ry + 4}" width="{COL_SWATCH}" height="{TBL_ROW_H - 8}" '
-    f'fill="{color}" fill-opacity="{op}"/>'
-  )
-  hex_str = f"{tag_hex[:2]} {tag_hex[2:]} {length:02X}"
-  lines.append(t(TBL_X_HEX, ry + 16, hex_str, size=11, fill=INK, anchor="start", weight="bold"))
-  lines.append(t(TBL_X_TAG, ry + 16, f"0x{tag_hex}", size=11, fill=INK, anchor="start"))
-  lines.append(t(TBL_X_LEN, ry + 16, f"{length} B", size=10, fill=MUTED, anchor="start"))
-  lines.append(t(TBL_X_NAME, ry + 16, f"{name_ru} ({name_en})",
-                 size=10, fill=INK, anchor="start"))
-
-lines.append("</svg>")
-
-write_svg(figures_dir() / "ch07-emv" / "pdol-anatomy.svg", lines)
+if __name__ == "__main__":
+  write_svg(figures_dir() / "ch07-emv" / "pdol-anatomy.svg", build())

@@ -53,6 +53,111 @@ FONT = (
   "'Helvetica Neue', Arial, sans-serif"
 )
 
+# Геометрия канона: 1 единица viewBox = 1 pt в~печати. Фигура включается
+# \includefigure в~натуральную величину, без масштабирования.
+# CANVAS_W = \textwidth (386.96 pt TeX = 385.6 bp), CANVAS_H_MAX = .45\textheight.
+CANVAS_W = 385
+CANVAS_H_MAX = 272
+
+FS_HEAD = 9  # заголовок секции, bold
+FS_BODY = 8  # подпись блока, подпись сообщения
+FS_NOTE = 7  # пометка, подзаголовок блока; меньше нельзя
+
+SW_FRAME = 0.5  # рамка панели, линия жизни, сетка
+SW_BOX = 0.75  # контур блока
+SW_LINK = 1  # связь, стрелка
+DASH = "3,2"  # асинхронная, необязательная связь, ответ
+RX = 3  # скругление блока
+
+ARROW_TONES = {
+  "AccentA": ACCENT_A,
+  "AccentB": ACCENT_B,
+  "Good": GOOD,
+  "Warn": WARN,
+  "Bad": BAD,
+  "Muted": MUTED,
+}
+
+
+def markers(*tones, start=False) -> str:
+  """<marker>-определения arr-<Tone> для~<defs>; без аргументов -- все шесть.
+
+  start=True добавляет arr-<Tone>-s для~marker-start.
+  """
+  out = []
+  for name in tones or ARROW_TONES:
+    out.append(
+      f'<marker id="arr-{name}" viewBox="0 0 10 10" refX="9" refY="5" '
+      f'markerWidth="5" markerHeight="5" orient="auto">'
+      f'<path d="M0,0 L10,5 L0,10 Z" fill="{ARROW_TONES[name]}"/></marker>'
+    )
+    if start:
+      out.append(
+        f'<marker id="arr-{name}-s" viewBox="0 0 10 10" refX="1" refY="5" '
+        f'markerWidth="5" markerHeight="5" orient="auto">'
+        f'<path d="M10,0 L0,5 L10,10 Z" fill="{ARROW_TONES[name]}"/></marker>'
+      )
+  return "".join(out)
+
+
+_font_cache = {}
+
+
+def _font_file(weight: str) -> str:
+  import subprocess
+
+  pattern = "Inter:bold" if weight == "bold" else "Inter:regular"
+  return subprocess.run(
+    ["fc-match", "-f", "%{file}", pattern],
+    capture_output=True,
+    text=True,
+    check=True,
+  ).stdout
+
+
+def text_width(s: str, size=FS_BODY, weight="normal") -> float:
+  """Ширина строки Inter в~pt; без файла шрифта -- оценка 0.56 em на знак."""
+  key = (size, weight)
+  if key not in _font_cache:
+    _font_cache[key] = None
+    try:
+      from PIL import ImageFont
+
+      _font_cache[key] = ImageFont.truetype(_font_file(weight), size)
+    except Exception:
+      pass
+  font = _font_cache[key]
+  if font is None:
+    return 0.56 * size * len(s)
+  return font.getlength(s)
+
+
+def box(x, y, w, h, tone=None, dashed=False):
+  """Блок канона: нейтральный (tone=None) или~с~заливкой тона 0.15 (Warn 0.18)."""
+  dash = f' stroke-dasharray="{DASH}"' if dashed else ""
+  if tone is None:
+    return (
+      f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{RX}" '
+      f'fill="{PANEL}" stroke="{MUTED}" stroke-width="{SW_BOX}"{dash}/>'
+    )
+  color = ARROW_TONES[tone]
+  op = 0.18 if tone == "Warn" else 0.15
+  return (
+    f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{RX}" '
+    f'fill="{color}" fill-opacity="{op}" stroke="{color}" '
+    f'stroke-width="{SW_BOX}"{dash}/>'
+  )
+
+
+def arrow(x1, y1, x2, y2, tone="Muted", dashed=False):
+  """Связь со~стрелкой; цвет линии и~маркера совпадают."""
+  dash = f' stroke-dasharray="{DASH}"' if dashed else ""
+  return (
+    f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
+    f'stroke="{ARROW_TONES[tone]}" stroke-width="{SW_LINK}"{dash} '
+    f'marker-end="url(#arr-{tone})"/>'
+  )
+
 
 def repo_root() -> Path:
   """Корень репозитория книги."""
@@ -104,6 +209,18 @@ def svg_header(view_w: int, view_h: int, extra_defs: str = "") -> list:
     '<?xml version="1.0" encoding="UTF-8" standalone="no"?>',
     f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {view_w} {view_h}" '
     f'width="{view_w}" height="{view_h}">',
+  ]
+  if extra_defs:
+    out.append(f"<defs>{extra_defs}</defs>")
+  return out
+
+
+def svg_header_pt(view_w: float, view_h: float, extra_defs: str = "") -> list:
+  """Заголовок SVG канона: width/height в~pt равны viewBox."""
+  out = [
+    '<?xml version="1.0" encoding="UTF-8" standalone="no"?>',
+    f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {view_w} {view_h}" '
+    f'width="{view_w}pt" height="{view_h}pt">',
   ]
   if extra_defs:
     out.append(f"<defs>{extra_defs}</defs>")

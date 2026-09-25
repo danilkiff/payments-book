@@ -1,95 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440">
-<defs>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-</defs>
-
-<!-- COLUMN HEADERS (6 actors) -->
-<!-- Держатель -->
-<rect x="30" y="15" width="100" height="55" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="80" y="38" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Держатель</text>
-<text x="80" y="53" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">мобильный кошелёк</text>
-
-<!-- ТСП -->
-<rect x="155" y="15" width="100" height="55" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="205" y="38" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">ТСП</text>
-<text x="205" y="53" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">видит только DPAN</text>
-
-<!-- Эквайер/PSP -->
-<rect x="280" y="15" width="100" height="55" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="330" y="38" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Эквайер / PSP</text>
-<text x="330" y="53" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">видит только DPAN</text>
-
-<!-- Карточная сеть -->
-<rect x="405" y="15" width="100" height="55" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="455" y="38" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Карточная сеть</text>
-<text x="455" y="53" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">DPAN &lt;-&gt; FPAN</text>
-
-<!-- TSP Vault -->
-<rect x="530" y="15" width="100" height="55" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2" stroke-dasharray="6,3"/>
-<text x="580" y="38" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">TSP / Vault</text>
-<text x="580" y="53" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">mapping + assurance</text>
-
-<!-- Эмитент -->
-<rect x="660" y="15" width="100" height="55" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="710" y="38" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Эмитент</text>
-<text x="710" y="53" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">видит FPAN + meta</text>
-
-<!-- LIFELINES -->
-<line x1="80" y1="80" x2="80" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="205" y1="80" x2="205" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="330" y1="80" x2="330" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="455" y1="80" x2="455" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="580" y1="80" x2="580" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="710" y1="80" x2="710" y2="430" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-
-<!-- Phase label: REQUEST LEG -->
-<rect x="20" y="92" width="780" height="20" fill="#E8ECF7"/>
-<text x="30" y="106" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Запрос авторизации (request leg)</text>
-
-<!-- Event 1: Держатель → ТСП -->
-<line x1="80" y1="130" x2="205" y2="130" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="142" y="124" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">DPAN + TAVV</text>
-
-<!-- Event 2: ТСП → Эквайер -->
-<line x1="205" y1="170" x2="330" y2="170" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<rect x="188" y="156" width="158" height="11" fill="#ffffff"/>
-<text x="267" y="164" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">DPAN + сумма + MID + TRID</text>
-
-<!-- Event 3: Эквайер → Сеть -->
-<line x1="330" y1="210" x2="455" y2="210" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="392" y="204" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MTI 0100 · DE 2 = DPAN</text>
-<rect x="294" y="215" width="196" height="11" fill="#ffffff"/>
-<text x="392" y="223" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">BIN из token range -&gt; маршрут в TSP</text>
-
-<!-- Event 4: Сеть → TSP Vault (detokenize) -->
-<line x1="455" y1="250" x2="580" y2="250" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="517" y="244" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">detokenize</text>
-
-<!-- Event 5: TSP Vault → Сеть (return FPAN) -->
-<line x1="580" y1="290" x2="455" y2="290" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="517" y="284" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">FPAN + Token Assurance</text>
-
-<!-- Event 6: Сеть → Эмитент -->
-<line x1="455" y1="330" x2="710" y2="330" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<rect x="514" y="316" width="136" height="11" fill="#ffffff"/>
-<text x="582" y="324" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MTI 0100 · DE 2 = FPAN · TAL</text>
-
-<!-- Phase label: RESPONSE LEG -->
-<rect x="20" y="358" width="780" height="20" fill="#E8ECF7"/>
-<text x="30" y="372" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Ответ авторизации (response leg)</text>
-
-<!-- Event 7: Эмитент → Сеть (response with FPAN) -->
-<line x1="710" y1="400" x2="455" y2="400" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<rect x="506" y="386" width="152" height="11" fill="#ffffff"/>
-<text x="582" y="394" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MTI 0110 · DE 2 = FPAN · DE 39 = 00</text>
-
-<!-- Event 8: Сеть → ... → Держатель (cascading response with DPAN substitution) -->
-<path d="M 455,420 L 330,420 L 205,420 L 80,420" fill="none" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<rect x="141" y="406" width="252" height="11" fill="#ffffff"/>
-<text x="267" y="414" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">MTI 0110 · DE 2 = DPAN — продавцу и держателю</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 228" width="385pt" height="228pt">
+<defs><marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker><marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker></defs>
+<rect x="5.0" y="2" width="57.5" height="40" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+<text x="33.8" y="15.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">Держатель</text>
+<text x="33.8" y="24.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">мобильный</text>
+<text x="33.8" y="33.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">кошелёк</text>
+<line x1="33.8" y1="42" x2="33.8" y2="228" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="68.5" y="2" width="57.5" height="40" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+<text x="97.2" y="15.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">ТСП</text>
+<text x="97.2" y="24.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">видит только</text>
+<text x="97.2" y="33.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">DPAN</text>
+<line x1="97.2" y1="42" x2="97.2" y2="228" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="132.0" y="2" width="57.5" height="40" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+<text x="160.8" y="11.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">Эквайер /</text>
+<text x="160.8" y="20.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">PSP</text>
+<text x="160.8" y="29.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">видит только</text>
+<text x="160.8" y="38.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">DPAN</text>
+<line x1="160.8" y1="42" x2="160.8" y2="228" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="195.5" y="2" width="57.5" height="40" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="224.2" y="15.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">Карточная</text>
+<text x="224.2" y="24.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">сеть</text>
+<text x="224.2" y="33.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">DPAN &lt;-&gt; FPAN</text>
+<line x1="224.2" y1="42" x2="224.2" y2="228" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="259.0" y="2" width="57.5" height="40" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="287.8" y="15.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">TSP / Vault</text>
+<text x="287.8" y="24.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">mapping +</text>
+<text x="287.8" y="33.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">assurance</text>
+<line x1="287.8" y1="42" x2="287.8" y2="228" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="322.5" y="2" width="57.5" height="40" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="0.75"/>
+<text x="351.2" y="15.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">Эмитент</text>
+<text x="351.2" y="24.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">видит FPAN</text>
+<text x="351.2" y="33.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">+ meta</text>
+<line x1="351.2" y1="42" x2="351.2" y2="228" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="2" y="54" width="381" height="12" fill="#E8ECF7"/>
+<text x="6" y="63" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="bold" fill="#5C647A">Запрос авторизации (request leg)</text>
+<line x1="33.8" y1="80" x2="96.2" y2="80" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="36.7" y="69.5" width="57.6" height="9" fill="#ffffff"/>
+<text x="65.5" y="77.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">DPAN + TAVV</text>
+<line x1="97.2" y1="97" x2="159.8" y2="97" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="71.4" y="86.5" width="115.2" height="9" fill="#ffffff"/>
+<text x="129.0" y="94.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">DPAN + сумма + MID + TRID</text>
+<line x1="160.8" y1="114" x2="223.2" y2="114" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="144.4" y="103.5" width="96.2" height="9" fill="#ffffff"/>
+<text x="192.5" y="111.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">MTI 0100 · DE 2 = DPAN</text>
+<rect x="127.8" y="115.5" width="129.5" height="8" fill="#ffffff"/>
+<text x="192.5" y="122.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">BIN из token range -&gt; маршрут в TSP</text>
+<line x1="224.2" y1="139" x2="286.8" y2="139" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="232.4" y="128.5" width="47.2" height="9" fill="#ffffff"/>
+<text x="256.0" y="136.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">detokenize</text>
+<line x1="287.8" y1="156" x2="225.2" y2="156" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
+<rect x="204.8" y="145.5" width="102.3" height="9" fill="#ffffff"/>
+<text x="256.0" y="153.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">FPAN + Token Assurance</text>
+<line x1="224.2" y1="173" x2="350.2" y2="173" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="229.4" y="162.5" width="116.7" height="9" fill="#ffffff"/>
+<text x="287.8" y="170.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">MTI 0100 · DE 2 = FPAN · TAL</text>
+<rect x="2" y="179" width="381" height="12" fill="#E8ECF7"/>
+<text x="6" y="188" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="bold" fill="#5C647A">Ответ авторизации (response leg)</text>
+<line x1="351.2" y1="205" x2="225.2" y2="205" stroke="#2F8B67" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Good)"/>
+<rect x="216.5" y="194.5" width="142.5" height="9" fill="#ffffff"/>
+<text x="287.8" y="202.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">MTI 0110 · DE 2 = FPAN · DE 39 = 00</text>
+<line x1="224.2" y1="222" x2="34.8" y2="222" stroke="#2F8B67" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Good)"/>
+<rect x="28.6" y="211.5" width="200.8" height="9" fill="#ffffff"/>
+<text x="129.0" y="219.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">MTI 0110 · DE 2 = DPAN — продавцу и держателю</text>
 </svg>

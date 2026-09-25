@@ -57,7 +57,7 @@ SCF~\cite{mc-tpr,visa-core-rules}.
 
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch29-subscriptions/scf-lifecycle}
+  \includefigure{assets/figures/ch29-subscriptions/scf-lifecycle}
   \caption{SCF на~временной шкале: CIT с~выдачей NTID и~серия MIT
   со~ссылкой на~NTID; отсутствие NTID ведёт к~отказу.}\label{fig:scf-lifecycle}
 \end{figure}
@@ -144,7 +144,7 @@ SF5); POS~Entry~Mode~10~--- единый код \textit{Credentials on File} д�
 
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch29-subscriptions/ntid-chain}
+  \includefigure{assets/figures/ch29-subscriptions/ntid-chain}
   \caption{Цепочка NTID/Trace~ID: форматы полей Visa и~Mastercard,
   индикаторы CoF/MIT, POS~Entry~Mode~10.}%
   \label{fig:ntid-chain}
@@ -219,7 +219,7 @@ Visa использует схожую логику через категори�
 
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=.8\linewidth]{assets/figures/ch29-subscriptions/decline-decision-tree}
+  \includefigure{assets/figures/ch29-subscriptions/decline-decision-tree}
   \caption{Дерево решений по~MAC: STOP (03), UPDATE (01), WAIT (24--30).}\label{fig:decline-decision-tree}
 \end{figure}
 
@@ -269,11 +269,35 @@ Payment Account Management API, который снабжает ABU данным
 сети~\cite{visa-lifecycle-management}. Пакетные файлы для токенизированных
 реквизитов не~нужны.
 
-\begin{figure}[htbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch29-subscriptions/credential-update-flow}
-  \caption{Account Updater (VAU/ABU) и~сетевая токенизация: сравнение по~шести параметрам.}\label{fig:credential-update-flow}
-\end{figure}
+\begin{table}[tbp]
+  \caption{Account Updater (VAU/ABU) и~сетевая токенизация: сравнение по~шести параметрам}\label{tab:credential-update-flow}
+  \begingroup
+  \tablesetup
+  \begin{tabularx}{\textwidth}{@{}B{0.2\textwidth} Y Y@{}}
+    \toprule
+    \headrow
+    \thd{Параметр} & \thd{Account Updater: Visa VAU / Mastercard ABU} &
+    \thd{Сетевая токенизация: Network Tokens} \\
+    \midrule
+    У~продавца хранится & PAN и~срок действия & токен сети, PAN не~виден \\
+    \rowsep
+    Кто инициирует & эмитент~$\to$ сеть~$\to$ продавец &
+    сеть меняет PAN под~токеном \\
+    \rowsep
+    Канал доставки & batch-файлы или real-time в~авторизации &
+    прозрачно при авторизации \\
+    \rowsep
+    Что обновляется & PAN, expiry в~базе продавца &
+    исходный PAN у~сети, токен прежний \\
+    \rowsep
+    Покрытие & участвующие BIN, не~все типы карт &
+    все токенизированные карты \\
+    \rowsep
+    Цена неучастия & Mastercard: \$0,09 за~устаревшую & штрафа сети нет \\
+    \bottomrule
+  \end{tabularx}\par
+  \endgroup
+\end{table}
 
 ТСП отправляет MIT по~карте с~истёкшим сроком, а~сервис обновления реквизитов
 (ABU/VAU) недоступен~--- пакетный файл не~обработался или запрос в~реальном

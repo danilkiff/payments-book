@@ -195,3 +195,6 @@ labelsep=0.55em,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt}
 \newcommand{\includefiguresvg}[2][width=\linewidth]{%
   \includegraphics[height=\figuremaxheight,keepaspectratio,#1]{#2.pdf}%
 }
+% \includefigure{path-without-ext} --- фигура канона assets/figures/README.md:
+% 1 единица viewBox = 1 pt, включается в~натуральную величину без масштабирования.
+\newcommand{\includefigure}[1]{\includegraphics{#1.pdf}}

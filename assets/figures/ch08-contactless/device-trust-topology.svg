@@ -1,180 +1,167 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" width="820" height="480">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 265" width="385pt" height="265pt">
 <defs>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-Warn"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-Muted"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
 </defs>
+<g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" fill="#1A2030">
+<text x="192.5" text-anchor="middle" y="11" font-size="9" font-weight="bold">Где живёт ключевой материал DPAN на устройстве</text>
 
-<!-- Заголовок фигуры -->
-<text x="410" y="22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Где живёт ключевой материал DPAN на устройстве</text>
-
-<!-- ============================================================ -->
-<!-- ПАНЕЛЬ 1: SE (Apple Pay, Fitbit Pay) -->
-<!-- ============================================================ -->
-<g id="panel-se">
-  <!-- Заголовок панели -->
-  <text x="140" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">SE</text>
-  <text x="140" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">Apple Pay · Fitbit Pay</text>
-
-  <!-- Внешний терминал NFC -->
-  <rect x="50" y="82" width="180" height="28" rx="4" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
-  <text x="140" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">POS-терминал · NFC 13,56 МГц</text>
-
-  <!-- Стрелка терминал → NFC controller -->
-  <line x1="140" y1="110" x2="140" y2="138" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-  <text x="148" y="126" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">APDU</text>
-
-  <!-- Корпус устройства -->
-  <rect x="40" y="148" width="200" height="282" rx="10" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-  <text x="140" y="166" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">iPhone / Apple Watch / Fitbit</text>
-
-  <!-- NFC контроллер -->
-  <rect x="55" y="176" width="170" height="34" rx="4" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
-  <text x="140" y="197" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#1A2030">NFC controller</text>
-
-  <!-- Application Processor -->
-  <rect x="55" y="222" width="80" height="60" rx="4" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
-  <text x="95" y="245" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#1A2030">Application</text>
-  <text x="95" y="259" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#1A2030">Processor</text>
-  <text x="95" y="273" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">iOS / watchOS</text>
-
-  <!-- eSE — отдельный чип -->
-  <rect x="145" y="222" width="80" height="60" rx="4" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-  <text x="185" y="244" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">eSE</text>
-  <text x="185" y="258" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Java Card applet</text>
-  <text x="185" y="272" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">EMVCo + CC</text>
-
-  <!-- Выделенный путь NFC → eSE -->
-  <line x1="185" y1="210" x2="185" y2="220" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-
-  <!-- Содержимое eSE -->
-  <rect x="55" y="296" width="170" height="60" rx="4" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-  <text x="140" y="314" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">в eSE постоянно лежат:</text>
-  <text x="140" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">DPAN · мастер-ключ · ATC</text>
-  <text x="140" y="346" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">криптограмма формируется здесь</text>
-
-  <!-- Свойство офлайн -->
-  <rect x="55" y="368" width="170" height="50" rx="4" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
-  <text x="140" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">офлайн без ограничений</text>
-  <text x="140" y="400" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">по числу операций; floor limit</text>
-  <text x="140" y="414" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">и срок токена действуют</text>
+<!-- SE -->
+<g>
+  <text x="64.5" text-anchor="middle" y="26" font-size="9" font-weight="bold">SE</text>
+  <text x="64.5" text-anchor="middle" y="35" font-size="7" fill="#5C647A">Apple Pay · Fitbit Pay</text>
+</g>
+<g>
+  <rect x="5" y="40" width="119" height="14" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="64.5" text-anchor="middle" y="49.5" font-size="7">POS-терминал · NFC 13,56 МГц</text>
+</g>
+<g>
+  <line x1="64.5" y1="54" x2="64.5" y2="65.5" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+  <text x="68.5" y="62" font-size="7" fill="#5C647A">APDU</text>
+</g>
+<g>
+  <rect x="2" y="66" width="125" height="178" rx="3" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
+  <text x="64.5" text-anchor="middle" y="75" font-size="7" fill="#5C647A">iPhone / Apple Watch / Fitbit</text>
+</g>
+<g>
+  <rect x="5" y="80" width="119" height="20" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="64.5" text-anchor="middle" y="93" font-size="8">NFC controller</text>
+</g>
+<g>
+  <rect x="5" y="114" width="53" height="34" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="31.5" text-anchor="middle" y="125" font-size="8">Application</text>
+  <text x="31.5" text-anchor="middle" y="134" font-size="8">Processor</text>
+  <text x="31.5" text-anchor="middle" y="143" font-size="7" fill="#5C647A">iOS / watchOS</text>
+</g>
+<g>
+  <rect x="61" y="114" width="63" height="34" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="92.5" text-anchor="middle" y="125" font-size="8" font-weight="bold">eSE</text>
+  <text x="92.5" text-anchor="middle" y="134" font-size="7">Java Card applet</text>
+  <text x="92.5" text-anchor="middle" y="143" font-size="7">EMVCo + CC</text>
+</g>
+<line x1="92.5" y1="100" x2="92.5" y2="113" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<g>
+  <rect x="5" y="154" width="119" height="40" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="64.5" text-anchor="middle" y="164" font-size="7" font-weight="bold">в eSE постоянно лежат:</text>
+  <text x="64.5" text-anchor="middle" y="173" font-size="7">DPAN · мастер-ключ · ATC</text>
+  <text x="64.5" text-anchor="middle" y="182" font-size="7">криптограмма</text>
+  <text x="64.5" text-anchor="middle" y="191" font-size="7">формируется здесь</text>
+</g>
+<g>
+  <rect x="5" y="200" width="119" height="40" rx="3" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="0.75"/>
+  <text x="64.5" text-anchor="middle" y="214" font-size="7" font-weight="bold">офлайн без ограничений</text>
+  <text x="64.5" text-anchor="middle" y="223" font-size="7">по числу операций; floor limit</text>
+  <text x="64.5" text-anchor="middle" y="232" font-size="7">и срок токена действуют</text>
 </g>
 
-<!-- ============================================================ -->
-<!-- ПАНЕЛЬ 2: TEE (Samsung Pay) -->
-<!-- ============================================================ -->
-<g id="panel-tee">
-  <text x="410" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">TEE</text>
-  <text x="410" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">Samsung Pay (Knox · TrustZone)</text>
-
-  <!-- Внешний терминал NFC -->
-  <rect x="320" y="82" width="180" height="28" rx="4" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
-  <text x="410" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">POS-терминал · NFC 13,56 МГц</text>
-
-  <line x1="410" y1="110" x2="410" y2="138" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-  <text x="418" y="126" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">APDU</text>
-
-  <rect x="310" y="148" width="200" height="282" rx="10" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-  <text x="410" y="166" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">Galaxy SoC</text>
-
-  <!-- NFC контроллер -->
-  <rect x="325" y="176" width="170" height="34" rx="4" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
-  <text x="410" y="197" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#1A2030">NFC controller</text>
-
-  <!-- Один SoC с двумя мирами -->
-  <rect x="325" y="222" width="170" height="60" rx="4" fill="#F5F7FD" stroke="#5C647A" stroke-width="1.5"/>
-
-  <!-- Normal World -->
-  <rect x="328" y="225" width="82" height="54" rx="3" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
-  <text x="369" y="244" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#1A2030">Normal World</text>
-  <text x="369" y="258" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">Android</text>
-  <text x="369" y="272" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">приложения</text>
-
-  <!-- Secure World -->
-  <rect x="412" y="225" width="80" height="54" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-  <text x="452" y="244" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Secure World</text>
-  <text x="452" y="258" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">Knox TEE</text>
-  <text x="452" y="272" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">trustlets</text>
-
-  <!-- AMBA3 AXI bus fabric — линия разделения -->
-  <line x1="410" y1="222" x2="410" y2="282" stroke="#4E63D9" stroke-width="2"/>
-  <text x="440" y="218" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">AMBA AXI · TZASC</text>
-
-  <!-- Путь к Secure World -->
-  <line x1="452" y1="210" x2="452" y2="223" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-
-  <!-- Содержимое Secure World -->
-  <rect x="325" y="296" width="170" height="60" rx="4" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-  <text x="410" y="314" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">в Secure World лежат:</text>
-  <text x="410" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">DPAN · ключи · LUK · ATC</text>
-  <text x="410" y="346" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">криптограмма формируется в TEE</text>
-
-  <rect x="325" y="368" width="170" height="50" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-  <text x="410" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">офлайн ограничен</text>
-  <text x="410" y="400" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">пулом LUK по правилам сети,</text>
-  <text x="410" y="414" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">обычно дольше, чем у HCE</text>
+<!-- TEE -->
+<g>
+  <text x="192.5" text-anchor="middle" y="26" font-size="9" font-weight="bold">TEE</text>
+  <text x="192.5" text-anchor="middle" y="35" font-size="7" fill="#5C647A">Samsung Pay (Knox · TrustZone)</text>
+</g>
+<g>
+  <rect x="133" y="40" width="119" height="14" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="192.5" text-anchor="middle" y="49.5" font-size="7">POS-терминал · NFC 13,56 МГц</text>
+</g>
+<g>
+  <line x1="192.5" y1="54" x2="192.5" y2="65.5" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+  <text x="196.5" y="62" font-size="7" fill="#5C647A">APDU</text>
+</g>
+<g>
+  <rect x="130" y="66" width="125" height="178" rx="3" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
+  <text x="192.5" text-anchor="middle" y="75" font-size="7" fill="#5C647A">Galaxy SoC</text>
+</g>
+<g>
+  <rect x="133" y="80" width="119" height="20" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="192.5" text-anchor="middle" y="93" font-size="8">NFC controller</text>
+</g>
+<g>
+  <rect x="133" y="114" width="119" height="34" rx="3" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.75"/>
+  <rect x="135" y="116" width="56.5" height="30" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="163.25" text-anchor="middle" y="125" font-size="8">Normal World</text>
+  <text x="163.25" text-anchor="middle" y="134" font-size="7" fill="#5C647A">Android</text>
+  <text x="163.25" text-anchor="middle" y="143" font-size="7" fill="#5C647A">приложения</text>
+  <rect x="193.5" y="116" width="56.5" height="30" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="221.75" text-anchor="middle" y="125" font-size="8" font-weight="bold">Secure World</text>
+  <text x="221.75" text-anchor="middle" y="134" font-size="7">Knox TEE</text>
+  <text x="221.75" text-anchor="middle" y="143" font-size="7">trustlets</text>
+</g>
+<g>
+  <line x1="192.5" y1="114" x2="192.5" y2="148" stroke="#5C647A" stroke-width="1"/>
+  <text x="198.5" text-anchor="end" y="111" font-size="7" fill="#5C647A">AMBA AXI · TZASC</text>
+</g>
+<line x1="221.75" y1="100" x2="221.75" y2="115" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<g>
+  <rect x="133" y="154" width="119" height="40" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="192.5" text-anchor="middle" y="164" font-size="7" font-weight="bold">в Secure World лежат:</text>
+  <text x="192.5" text-anchor="middle" y="173" font-size="7">DPAN · ключи · LUK · ATC</text>
+  <text x="192.5" text-anchor="middle" y="182" font-size="7">криптограмма</text>
+  <text x="192.5" text-anchor="middle" y="191" font-size="7">формируется в TEE</text>
+</g>
+<g>
+  <rect x="133" y="200" width="119" height="40" rx="3" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="0.75"/>
+  <text x="192.5" text-anchor="middle" y="214" font-size="7" font-weight="bold">офлайн ограничен</text>
+  <text x="192.5" text-anchor="middle" y="223" font-size="7">пулом LUK по правилам сети,</text>
+  <text x="192.5" text-anchor="middle" y="232" font-size="7">обычно дольше, чем у HCE</text>
 </g>
 
-<!-- ============================================================ -->
-<!-- ПАНЕЛЬ 3: HCE (Google Wallet, Mir Pay, Garmin Pay) -->
-<!-- ============================================================ -->
-<g id="panel-hce">
-  <text x="680" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">HCE</text>
-  <text x="680" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">Google Wallet · Mir Pay · Garmin Pay</text>
-
-  <!-- Внешний терминал NFC -->
-  <rect x="590" y="82" width="180" height="28" rx="4" fill="#E8ECF7" stroke="#5C647A" stroke-width="1"/>
-  <text x="680" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">POS-терминал · NFC 13,56 МГц</text>
-
-  <line x1="680" y1="110" x2="680" y2="138" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
-  <text x="688" y="126" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">APDU</text>
-
-  <rect x="580" y="148" width="200" height="282" rx="10" fill="#F5F7FD" stroke="#5C647A" stroke-width="1"/>
-  <text x="680" y="166" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">Android / Wear OS / Garmin OS</text>
-
-  <!-- NFC контроллер с routing table -->
-  <rect x="595" y="176" width="170" height="34" rx="4" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
-  <text x="680" y="192" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#1A2030">NFC controller</text>
-  <text x="680" y="204" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">AID routing table → host CPU</text>
-
-  <!-- Application Processor с HCE Service -->
-  <rect x="595" y="222" width="170" height="60" rx="4" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="1.5"/>
-  <text x="680" y="240" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#1A2030">Application Processor · ОС</text>
-  <rect x="610" y="248" width="140" height="26" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="1.5"/>
-  <text x="680" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">HCE Service кошелька</text>
-
-  <!-- Стрелка NFC → Application Processor (выровнена по SE/TEE: до верхней грани блока) -->
-  <line x1="680" y1="210" x2="680" y2="220" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-
-  <!-- Защищённое хранилище ОС с LUK -->
-  <rect x="595" y="296" width="170" height="60" rx="4" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-  <text x="680" y="314" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">в защ. хранилище ОС лежат:</text>
-  <text x="680" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">DPAN · пул одноразовых LUK</text>
-  <text x="680" y="346" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">криптограмма формируется в ОС</text>
-
-  <!-- Связь HCE Service ↔ хранилище -->
-  <line x1="680" y1="276" x2="680" y2="294" stroke="#7759D6" stroke-width="1.5" stroke-dasharray="6,3"/>
-
-  <!-- Облако TSP с replenishment -->
-  <path d="M 599 416 C 595 416 595 407 599 405 C 596 397 607 395 611 400 C 613 391 625 391 628 398 C 631 393 638 396 637 403 C 641 405 640 414 634 416 Z"
-        fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-  <text x="617" y="409" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">TSP сети</text>
-
-  <!-- Стрелка replenishment с облака к защ. хранилищу -->
-  <line x1="617" y1="390" x2="617" y2="358" stroke="#B8821C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Warn)"/>
-
-  <!-- Свойство офлайн -->
-  <rect x="645" y="370" width="120" height="48" rx="4" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-  <text x="705" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="#1A2030">офлайн ограничен</text>
-  <text x="705" y="399" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">пулом LUK; пополнение —</text>
-  <text x="705" y="412" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1A2030">онлайн через TSP</text>
+<!-- HCE -->
+<g>
+  <text x="320.5" text-anchor="middle" y="26" font-size="9" font-weight="bold">HCE</text>
+  <text x="320.5" text-anchor="middle" y="35" font-size="7" fill="#5C647A">Google Wallet · Mir Pay · Garmin Pay</text>
+</g>
+<g>
+  <rect x="261" y="40" width="119" height="14" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="320.5" text-anchor="middle" y="49.5" font-size="7">POS-терминал · NFC 13,56 МГц</text>
+</g>
+<g>
+  <line x1="320.5" y1="54" x2="320.5" y2="65.5" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+  <text x="324.5" y="62" font-size="7" fill="#5C647A">APDU</text>
+</g>
+<g>
+  <rect x="258" y="66" width="125" height="178" rx="3" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
+  <text x="320.5" text-anchor="middle" y="75" font-size="7" fill="#5C647A">Android / Wear OS / Garmin OS</text>
+</g>
+<g>
+  <rect x="261" y="80" width="119" height="20" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="320.5" text-anchor="middle" y="89" font-size="8">NFC controller</text>
+  <text x="320.5" text-anchor="middle" y="97" font-size="7" fill="#5C647A">AID routing table → host CPU</text>
+</g>
+<g>
+  <rect x="261" y="114" width="119" height="34" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="320.5" text-anchor="middle" y="124" font-size="8">Application Processor · ОС</text>
+  <rect x="273" y="128" width="95" height="16" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="320.5" text-anchor="middle" y="139" font-size="7">HCE Service кошелька</text>
+</g>
+<line x1="320.5" y1="100" x2="320.5" y2="113" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<line x1="320.5" y1="144" x2="320.5" y2="154" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2"/>
+<g>
+  <rect x="261" y="154" width="119" height="40" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="320.5" text-anchor="middle" y="164" font-size="7" font-weight="bold">в защ. хранилище ОС лежат:</text>
+  <text x="320.5" text-anchor="middle" y="173" font-size="7">DPAN · пул одноразовых LUK</text>
+  <text x="320.5" text-anchor="middle" y="182" font-size="7">криптограмма</text>
+  <text x="320.5" text-anchor="middle" y="191" font-size="7">формируется в ОС</text>
+</g>
+<g>
+  <rect x="261" y="212" width="42" height="16" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="282" text-anchor="middle" y="223" font-size="7" font-weight="bold">TSP сети</text>
+</g>
+<line x1="282" y1="212" x2="282" y2="195" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
+<g>
+  <rect x="307" y="200" width="73" height="40" rx="3" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="0.75"/>
+  <text x="343.5" text-anchor="middle" y="209.5" font-size="7" font-weight="bold">офлайн ограничен</text>
+  <text x="343.5" text-anchor="middle" y="218.5" font-size="7">пулом LUK;</text>
+  <text x="343.5" text-anchor="middle" y="227.5" font-size="7">пополнение —</text>
+  <text x="343.5" text-anchor="middle" y="236.5" font-size="7">онлайн через TSP</text>
 </g>
 
-<!-- ============================================================ -->
-<!-- Подпись внизу: общая шкала изоляции -->
-<!-- ============================================================ -->
-<line x1="40" y1="450" x2="780" y2="450" stroke="#5C647A" stroke-width="1"/>
-<text x="40" y="466" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">←  сильнее аппаратная изоляция ключей</text>
-<text x="780" y="466" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#5C647A">слабее, программная защита в ОС  →</text>
+<!-- шкала изоляции -->
+<g>
+  <line x1="3" y1="252" x2="382" y2="252" stroke="#5C647A" stroke-width="1" marker-start="url(#arr-Muted-s)" marker-end="url(#arr-Muted)"/>
+  <text x="2" y="262" font-size="7" fill="#5C647A">сильнее аппаратная изоляция ключей</text>
+  <text x="383" text-anchor="end" y="262" font-size="7" fill="#5C647A">слабее, программная защита в ОС</text>
+</g>
+
+</g>
 </svg>

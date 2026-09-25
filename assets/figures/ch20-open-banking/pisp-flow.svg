@@ -1,76 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480">
-<defs>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-</defs>
-
-<!-- Swimlane headers -->
-<rect x="40" y="14" width="160" height="40" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="2"/>
-<text x="120" y="38" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">Клиент</text>
-
-<rect x="280" y="14" width="160" height="40" rx="8" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="360" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">ТСП / PISP</text>
-<text x="360" y="48" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">TPP</text>
-
-<rect x="520" y="14" width="160" height="40" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="600" y="33" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1A2030">ASPSP</text>
-<text x="600" y="48" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">банк плательщика</text>
-
-<!-- Lifelines -->
-<line x1="120" y1="56" x2="120" y2="470" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="360" y1="56" x2="360" y2="470" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-<line x1="600" y1="56" x2="600" y2="470" stroke="#5C647A" stroke-width="1" stroke-dasharray="6,3"/>
-
-<!-- Phase 1 label: consent setup -->
-<rect x="20" y="68" width="680" height="20" fill="#E8ECF7"/>
-<text x="30" y="82" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Создание согласия на платёж с SCA (PSD2 Art. 97)</text>
-
-<!-- Event 1: Клиент → ТСП -->
-<line x1="120" y1="106" x2="360" y2="106" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<text x="240" y="100" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">выбор PISP-оплаты</text>
-
-<!-- Event 2: PISP → ASPSP: POST consent -->
-<line x1="360" y1="138" x2="600" y2="138" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="480" y="132" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">POST /domestic-payment-consents</text>
-<text x="480" y="152" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">client_credentials → ConsentId</text>
-
-<!-- Event 3: PISP → Клиент: redirect -->
-<line x1="360" y1="176" x2="120" y2="176" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="240" y="170" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">redirect → ASPSP</text>
-
-<!-- Event 4: Клиент ↔ ASPSP: SCA -->
-<line x1="120" y1="210" x2="600" y2="210" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="372" y="204" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">SCA: два фактора</text>
-<text x="372" y="224" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">consent → Authorised</text>
-
-<!-- Event 5: ASPSP → PISP: redirect c authorization_code -->
-<line x1="600" y1="248" x2="360" y2="248" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="480" y="242" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">authorization_code</text>
-
-<!-- Event 6: PISP → ASPSP: token exchange -->
-<line x1="360" y1="280" x2="600" y2="280" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="480" y="274" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">POST /token</text>
-<text x="480" y="294" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">code → access_token</text>
-
-<!-- Phase 2 label: payment initiation -->
-<rect x="20" y="312" width="680" height="20" fill="#E8ECF7"/>
-<text x="30" y="326" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#5C647A">Инициация платежа: POST /domestic-payments и опрос статуса</text>
-
-<!-- Event 7: PISP → ASPSP: create payment -->
-<line x1="360" y1="350" x2="600" y2="350" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<text x="480" y="344" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">POST /domestic-payments</text>
-<text x="480" y="364" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">access_token → PaymentId</text>
-
-<!-- Event 8: ASPSP → PISP: polling status -->
-<line x1="600" y1="392" x2="360" y2="392" stroke="#5C647A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-Muted)"/>
-<text x="480" y="386" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">опрос статуса (асинхронно)</text>
-<text x="480" y="406" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#5C647A">Pending → AcceptedSettlement → Completed</text>
-
-<!-- Event 9: PISP → ТСП → Клиент: confirmation -->
-<line x1="360" y1="440" x2="120" y2="440" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<text x="240" y="434" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#1A2030">подтверждение заказа</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 259" width="385pt" height="259pt">
+<defs><marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker><marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker></defs>
+<rect x="5.0" y="2" width="121.0" height="22" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+<text x="65.5" y="15.5" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">Клиент</text>
+<line x1="65.5" y1="24" x2="65.5" y2="259" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="132.0" y="2" width="121.0" height="22" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="0.75"/>
+<text x="192.5" y="11.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">ТСП / PISP</text>
+<text x="192.5" y="20.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">TPP</text>
+<line x1="192.5" y1="24" x2="192.5" y2="259" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="259.0" y="2" width="121.0" height="22" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+<text x="319.5" y="11.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">ASPSP</text>
+<text x="319.5" y="20.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">банк плательщика</text>
+<line x1="319.5" y1="24" x2="319.5" y2="259" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+<rect x="2" y="36" width="381" height="12" fill="#E8ECF7"/>
+<text x="6" y="45" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="bold" fill="#5C647A">Создание согласия на платёж с SCA (PSD2 Art. 97)</text>
+<line x1="65.5" y1="62" x2="191.5" y2="62" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="88.9" y="51.5" width="80.3" height="9" fill="#ffffff"/>
+<text x="129.0" y="59.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">выбор PISP-оплаты</text>
+<line x1="192.5" y1="79" x2="318.5" y2="79" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="183.4" y="68.5" width="145.2" height="9" fill="#ffffff"/>
+<text x="256.0" y="76.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">POST /domestic-payment-consents</text>
+<rect x="203.0" y="80.5" width="106.0" height="8" fill="#ffffff"/>
+<text x="256.0" y="87.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">client_credentials → ConsentId</text>
+<line x1="192.5" y1="104" x2="66.5" y2="104" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="93.3" y="93.5" width="71.3" height="9" fill="#ffffff"/>
+<text x="129.0" y="101.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">redirect → ASPSP</text>
+<line x1="65.5" y1="121" x2="318.5" y2="121" stroke="#2F8B67" stroke-width="1" marker-end="url(#arr-Good)"/>
+<rect x="154.5" y="110.5" width="76.1" height="9" fill="#ffffff"/>
+<text x="192.5" y="118.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">SCA: два фактора</text>
+<rect x="153.9" y="122.5" width="77.2" height="8" fill="#ffffff"/>
+<text x="192.5" y="129.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">consent → Authorised</text>
+<line x1="319.5" y1="146" x2="193.5" y2="146" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="218.0" y="135.5" width="76.0" height="9" fill="#ffffff"/>
+<text x="256.0" y="143.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">authorization_code</text>
+<line x1="192.5" y1="163" x2="318.5" y2="163" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="229.6" y="152.5" width="52.9" height="9" fill="#ffffff"/>
+<text x="256.0" y="160.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">POST /token</text>
+<rect x="218.0" y="164.5" width="76.1" height="8" fill="#ffffff"/>
+<text x="256.0" y="171.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">code → access_token</text>
+<rect x="2" y="177" width="381" height="12" fill="#E8ECF7"/>
+<text x="6" y="186" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="bold" fill="#5C647A">Инициация платежа: POST /domestic-payments и опрос статуса</text>
+<line x1="192.5" y1="203" x2="318.5" y2="203" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="201.1" y="192.5" width="109.8" height="9" fill="#ffffff"/>
+<text x="256.0" y="200.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">POST /domestic-payments</text>
+<rect x="208.7" y="204.5" width="94.6" height="8" fill="#ffffff"/>
+<text x="256.0" y="211.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">access_token → PaymentId</text>
+<line x1="319.5" y1="228" x2="193.5" y2="228" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
+<rect x="198.5" y="217.5" width="115.0" height="9" fill="#ffffff"/>
+<text x="256.0" y="225.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">опрос статуса (асинхронно)</text>
+<rect x="178.1" y="229.5" width="155.8" height="8" fill="#ffffff"/>
+<text x="256.0" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">Pending → AcceptedSettlement → Completed</text>
+<line x1="192.5" y1="253" x2="66.5" y2="253" stroke="#2F8B67" stroke-width="1" marker-end="url(#arr-Good)"/>
+<rect x="82.0" y="242.5" width="94.1" height="9" fill="#ffffff"/>
+<text x="129.0" y="250.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">подтверждение заказа</text>
 </svg>

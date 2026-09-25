@@ -1,80 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 462" width="820" height="462">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 192" width="385pt" height="192pt">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
-  <marker id="arr-AccentA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentA-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#4E63D9"/></marker>
-  <marker id="arr-AccentB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7759D6"/></marker>
-  <marker id="arr-AccentB-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#7759D6"/></marker>
   <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
-  <marker id="arr-Good-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#2F8B67"/></marker>
   <marker id="arr-Warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#B8821C"/></marker>
-  <marker id="arr-Warn-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#B8821C"/></marker>
   <marker id="arr-Bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C15462"/></marker>
-  <marker id="arr-Bad-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#C15462"/></marker>
 </defs>
+<g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" fill="#1A2030">
 
-<!-- ============ Корень: отказ по MIT ============ -->
-<rect x="295" y="16" width="230" height="46" rx="8" fill="#E8ECF7" stroke="#5C647A" stroke-width="1.5"/>
-<text x="410" y="37" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Отказ по MIT</text>
-<text x="410" y="52" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">регулярное списание</text>
+<!-- Корень: отказ по MIT -->
+<g>
+  <rect x="185" y="2" width="90" height="24" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="230" y="13" text-anchor="middle" font-size="8" font-weight="bold">Отказ по MIT</text>
+  <text x="230" y="22" text-anchor="middle" font-size="7" fill="#5C647A">регулярное списание</text>
+</g>
+<g>
+  <line x1="230" y1="26" x2="230" y2="39" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+</g>
 
-<!-- корень -> дискриминатор 1 -->
-<line x1="410" y1="62" x2="410" y2="86" stroke="#5C647A" stroke-width="2" marker-end="url(#arr-Muted)"/>
+<!-- Условие 1: код отказа -->
+<g>
+  <polygon points="230,40 280,58 230,76 180,58" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="230" y="61" text-anchor="middle" font-size="8" font-weight="bold">Код отказа?</text>
+</g>
 
-<!-- ============ Дискриминатор 1: код отказа ============ -->
-<polygon points="410,90 510,134 410,178 310,134" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="2"/>
-<text x="410" y="138" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Код отказа?</text>
+<!-- Ветвь: код требует аутентификации -->
+<g>
+  <line x1="180" y1="58" x2="105" y2="58" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+  <text x="142.5" y="46" text-anchor="middle" font-size="7" fill="#5C647A">код требует</text>
+  <text x="142.5" y="54" text-anchor="middle" font-size="7" fill="#5C647A">аутентификации</text>
+</g>
+<g>
+  <rect x="2" y="44" width="102" height="34" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="53" y="55" text-anchor="middle" font-size="8" font-weight="bold">Вернуть клиента</text>
+  <text x="53" y="64" text-anchor="middle" font-size="8" font-weight="bold">в 3DS / SCA</text>
+  <text x="53" y="73" text-anchor="middle" font-size="7" fill="#5C647A">ту же MIT не повторять</text>
+</g>
 
-<!-- ребро влево: код требует аутентификации -> лист 3DS/SCA (AccentA, нейтральный редирект) -->
-<path d="M 350 152 C 250 200, 175 210, 155 246" fill="none" stroke="#4E63D9" stroke-width="2" marker-end="url(#arr-AccentA)"/>
-<rect x="60" y="186" width="222" height="28" rx="4" fill="#ffffff"/>
-<text x="171" y="199" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">код требует</text>
-<text x="171" y="211" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">аутентификации</text>
+<!-- Ветвь: код допускает повтор -->
+<g>
+  <line x1="230" y1="76" x2="230" y2="95" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+  <text x="235" y="89" font-size="7" fill="#5C647A">код допускает повтор</text>
+</g>
 
-<!-- ребро вправо-вниз: код допускает повтор -> классификатор MAC (AccentB, второй нейтральный путь) -->
-<path d="M 470 152 C 540 196, 530 200, 525 244" fill="none" stroke="#7759D6" stroke-width="2" marker-end="url(#arr-AccentB)"/>
-<rect x="498" y="184" width="210" height="20" rx="4" fill="#ffffff"/>
-<text x="503" y="198" text-anchor="start" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">код допускает повтор</text>
+<!-- Условие 2: классификатор MAC -->
+<g>
+  <polygon points="230,96 300,116 230,136 160,116" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="230" y="115" text-anchor="middle" font-size="8" font-weight="bold">Классификатор MAC</text>
+  <text x="230" y="124" text-anchor="middle" font-size="7" fill="#5C647A">DE 48</text>
+</g>
 
-<!-- ============ Лист 3DS/SCA (нейтральный, AccentA) ============ -->
-<rect x="40" y="252" width="232" height="50" rx="8" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="1.5"/>
-<text x="156" y="276" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">Вернуть клиента в 3DS / SCA</text>
-<text x="156" y="292" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">ту же MIT не повторять</text>
+<!-- MAC 03 / незнакомый: STOP -->
+<g>
+  <path d="M160,116 H76 V163" fill="none" stroke="#C15462" stroke-width="1" marker-end="url(#arr-Bad)"/>
+  <text x="118" y="111" text-anchor="middle" font-size="7" fill="#5C647A">MAC 03 / незнакомый</text>
+</g>
+<g>
+  <rect x="2" y="164" width="148" height="26" rx="3" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="0.75"/>
+  <text x="76" y="175" text-anchor="middle" font-size="8" font-weight="bold">STOP</text>
+  <text x="76" y="184" text-anchor="middle" font-size="7" fill="#5C647A">повторы прекратить</text>
+</g>
 
-<!-- ============ Дискриминатор 2: классификатор MAC ============ -->
-<polygon points="525,248 660,304 525,360 390,304" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="2"/>
-<text x="525" y="298" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Классификатор MAC</text>
-<text x="525" y="313" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">DE 48</text>
+<!-- MAC 01: UPDATE -->
+<g>
+  <line x1="230" y1="136" x2="230" y2="163" stroke="#B8821C" stroke-width="1" marker-end="url(#arr-Warn)"/>
+  <text x="235" y="152" font-size="7" fill="#5C647A">MAC 01</text>
+</g>
+<g>
+  <rect x="172" y="164" width="116" height="26" rx="3" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="0.75"/>
+  <text x="230" y="175" text-anchor="middle" font-size="8" font-weight="bold">UPDATE</text>
+  <text x="230" y="184" text-anchor="middle" font-size="7" fill="#5C647A">реквизиты через ABU / VAU</text>
+</g>
 
-<!-- ребро MAC 03 / незнакомый -> STOP (Bad) -->
-<path d="M 430 322 C 300 360, 200 360, 162 396" fill="none" stroke="#C15462" stroke-width="2" marker-end="url(#arr-Bad)"/>
-<rect x="78" y="334" width="192" height="20" rx="4" fill="#ffffff"/>
-<text x="174" y="348" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 03 / незнакомый</text>
+<!-- MAC 24-30: WAIT -->
+<g>
+  <path d="M300,116 H339.5 V163" fill="none" stroke="#2F8B67" stroke-width="1" marker-end="url(#arr-Good)"/>
+  <text x="321" y="111" text-anchor="middle" font-size="7" fill="#5C647A">MAC 24–30</text>
+</g>
+<g>
+  <rect x="296" y="164" width="87" height="26" rx="3" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="0.75"/>
+  <text x="339.5" y="175" text-anchor="middle" font-size="8" font-weight="bold">WAIT</text>
+  <text x="339.5" y="184" text-anchor="middle" font-size="7" fill="#5C647A">повтор через интервал</text>
+</g>
 
-<!-- ребро MAC 01 -> UPDATE (Warn) -->
-<path d="M 525 360 C 480 378, 450 380, 430 396" fill="none" stroke="#B8821C" stroke-width="2" marker-end="url(#arr-Warn)"/>
-<rect x="380" y="366" width="70" height="20" rx="4" fill="#ffffff"/>
-<text x="415" y="380" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 01</text>
-
-<!-- ребро MAC 24-30 -> WAIT (Good, ok-путь) -->
-<path d="M 620 322 C 680 350, 685 360, 685 396" fill="none" stroke="#2F8B67" stroke-width="2" marker-end="url(#arr-Good)"/>
-<rect x="628" y="338" width="120" height="26" rx="4" fill="#ffffff"/>
-<text x="688" y="356" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#1A2030">MAC 24–30</text>
-
-<!-- ============ Лист STOP (Bad) ============ -->
-<rect x="40" y="398" width="246" height="50" rx="8" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="1.5"/>
-<text x="163" y="421" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">STOP</text>
-<text x="163" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">повторы прекратить</text>
-
-<!-- ============ Лист UPDATE (Warn) ============ -->
-<rect x="312" y="398" width="206" height="50" rx="8" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="1.5"/>
-<text x="415" y="421" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">UPDATE</text>
-<text x="415" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">реквизиты через ABU / VAU</text>
-
-<!-- ============ Лист WAIT (Good) ============ -->
-<rect x="558" y="398" width="252" height="50" rx="8" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="1.5"/>
-<text x="684" y="421" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">WAIT</text>
-<text x="684" y="438" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5C647A">повтор через интервал</text>
-
+</g>
 </svg>

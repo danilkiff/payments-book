@@ -1,8 +1,9 @@
-"""Генератор bitmap-presence.svg для гл. 5 ISO 8583 § 5.3.
+"""Генератор bitmap-presence.svg для гл. 6 ISO 8583, раздел о~bitmap.
 
-8 рядов (по байту primary bitmap MTI 0100) × 8 ячеек (биты MSB->LSB).
+8 рядов (по~байту primary bitmap MTI 0100) x 8 ячеек (биты MSB->LSB).
 Заполненные ячейки -- присутствующие DE; пустые -- отсутствующие.
 Бит 1 первого байта -- флаг расширения (secondary bitmap), здесь 0.
+Источник раскладки -- fis-iso8583-guide-2023.
 """
 import sys
 from pathlib import Path
@@ -10,62 +11,67 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
-  INK, MUTED, SOFT, ACCENT_A,
-  figures_dir, t, write_svg, svg_header,
+  ACCENT_A, FONT, FS_BODY, FS_NOTE, INK, MUTED, SOFT, SW_FRAME, TIER_LIGHT,
+  figures_dir, svg_header_pt, write_svg, xml_escape,
 )
 
 BITMAP_HEX = "72 3C 04 81 20 C0 80 00"
 bitmap = bytes.fromhex(BITMAP_HEX.replace(" ", ""))
 
-VIEW_W = 480
-VIEW_H = 290
-CELL_W = 42
-CELL_H = 30
-GRID_X = 78
-GRID_Y = 36
-COL_HEADER_Y = 24
+CELL_W = 40
+CELL_H = 22
+GRID_X = 36
+GRID_Y = 14
+MARGIN = 2
 
-lines = svg_header(VIEW_W, VIEW_H)
 
-# Заголовки колонок: позиции битов 1..8 (1 = MSB)
+def txt(x, y, s, size=FS_BODY, weight="normal", fill=INK, anchor="middle"):
+  attrs = f' font-size="{size}"'
+  if weight != "normal":
+    attrs += f' font-weight="{weight}"'
+  if fill != INK:
+    attrs += f' fill="{fill}"'
+  if anchor != "start":
+    attrs += f' text-anchor="{anchor}"'
+  return f'<text x="{x:g}" y="{y:g}"{attrs}>{xml_escape(s)}</text>'
+
+
+out = ["<g>"]
+out.append(txt(GRID_X - 5, GRID_Y - 4, "Hex", FS_NOTE, "bold", MUTED, "end"))
 for col in range(8):
   cx = GRID_X + col * CELL_W + CELL_W / 2
-  lines.append(t(cx, COL_HEADER_Y, str(col + 1), size=10, fill=MUTED, weight="bold"))
+  out.append(txt(cx, GRID_Y - 4, str(col + 1), FS_NOTE, "bold", MUTED))
+out.append("</g>")
 
-lines.append(t(GRID_X - 8, COL_HEADER_Y, "Hex", size=10, fill=MUTED, weight="bold", anchor="end"))
-
-# Ряды: один на байт bitmap
 for row in range(8):
   byte = bitmap[row]
-  row_y = GRID_Y + row * CELL_H
-  lines.append(t(GRID_X - 8, row_y + 19, f"0x{byte:02X}", size=11, fill=INK,
-                 anchor="end", weight="bold"))
-
+  y = GRID_Y + row * CELL_H
+  out.append("<g>")
+  out.append(txt(GRID_X - 5, y + CELL_H / 2 + 3, f"0x{byte:02X}", weight="bold",
+                 anchor="end"))
   for col in range(8):
     bit_pos = row * 8 + col + 1
     is_set = bool(byte & (1 << (7 - col)))
-    cx = GRID_X + col * CELL_W
-    cy = row_y
-
+    x = GRID_X + col * CELL_W
     if is_set:
-      fill, opacity = ACCENT_A, 0.15
-      text_content = f"DE {bit_pos}" if bit_pos >= 2 else "+64"
-      text_weight = "bold"
+      fill = f'fill="{ACCENT_A}" fill-opacity="{TIER_LIGHT[0]}"'
     else:
-      fill, opacity = SOFT, 1.0
-      text_content = ""
-      text_weight = "normal"
-
-    lines.append(
-      f'<rect x="{cx}" y="{cy}" width="{CELL_W - 1}" height="{CELL_H - 1}" '
-      f'fill="{fill}" fill-opacity="{opacity}" '
-      f'stroke="{MUTED}" stroke-width="0.5"/>'
+      fill = f'fill="{SOFT}"'
+    out.append(
+      f'<rect x="{x}" y="{y}" width="{CELL_W}" height="{CELL_H}" {fill} '
+      f'stroke="{MUTED}" stroke-width="{SW_FRAME}"/>'
     )
-    if text_content:
-      font_size = 10 if len(text_content) <= 4 else 9
-      lines.append(t(cx + CELL_W / 2, cy + 19, text_content,
-                     size=font_size, fill=INK, weight=text_weight))
+    if is_set:
+      label = f"DE {bit_pos}" if bit_pos >= 2 else "+64"
+      out.append(txt(x + CELL_W / 2, y + CELL_H / 2 + 3, label, weight="bold"))
+  out.append("</g>")
 
-lines.append("</svg>")
+width = GRID_X + 8 * CELL_W + MARGIN
+height = GRID_Y + 8 * CELL_H + MARGIN
+lines = svg_header_pt(width, height)
+lines.append(f'<g font-family="{FONT}" fill="{INK}">')
+lines += out
+lines += ["</g>", "</svg>"]
 
-write_svg(figures_dir() / "ch06-iso8583" / "bitmap-presence.svg", lines)
+if __name__ == "__main__":
+  write_svg(figures_dir() / "ch06-iso8583" / "bitmap-presence.svg", lines)

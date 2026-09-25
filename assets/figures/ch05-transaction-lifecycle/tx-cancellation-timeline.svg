@@ -1,27 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 266" width="760" height="266">
-<text x="170.0" y="24" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Авторизация</text>
-<text x="170.0" y="40" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">T0 .. T+с</text>
-<text x="315.0" y="24" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Клиринг</text>
-<text x="315.0" y="40" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">T0 .. T+1 р. дн.</text>
-<text x="500.0" y="24" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Расчёт</text>
-<text x="500.0" y="40" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">T+1 .. T+2 р. дн.</text>
-<text x="665.0" y="24" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">После расчёта</text>
-<text x="665.0" y="40" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">T+2 .. T+5 р. дн.</text>
-<line x1="120" y1="54" x2="740" y2="54" stroke="#5C647A" stroke-width="1.5"/>
-<line x1="220" y1="54" x2="220" y2="250" stroke="#5C647A" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="6,3"/>
-<line x1="410" y1="54" x2="410" y2="250" stroke="#5C647A" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="6,3"/>
-<line x1="590" y1="54" x2="590" y2="250" stroke="#5C647A" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="6,3"/>
-<rect x="120" y="78" width="100" height="26" rx="6" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="2"/>
-<text x="170.0" y="95.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">MTI 0400 / 0420</text>
-<text x="108" y="91" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Отмена</text>
-<text x="108" y="104" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(reversal)</text>
-<rect x="120" y="138" width="290" height="26" rx="6" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="2"/>
-<text x="265.0" y="155.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">не MTI · cancel в API</text>
-<text x="108" y="151" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Аннулирование</text>
-<text x="108" y="164" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(void)</text>
-<rect x="410" y="198" width="330" height="26" rx="6" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="2"/>
-<text x="575.0" y="215.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#1A2030">новая транзакция</text>
-<text x="108" y="211" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A2030">Возврат</text>
-<text x="108" y="224" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="normal" fill="#5C647A">(refund)</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 120" width="385pt" height="120pt">
+<g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" fill="#1A2030">
+
+<!-- Шкала фаз -->
+<g>
+  <text x="110" y="11" text-anchor="middle" font-size="8" font-weight="bold">Авторизация</text>
+  <text x="110" y="20" text-anchor="middle" font-size="7" fill="#5C647A">T0 .. T+с</text>
+</g>
+<g>
+  <text x="188" y="11" text-anchor="middle" font-size="8" font-weight="bold">Клиринг</text>
+  <text x="188" y="20" text-anchor="middle" font-size="7" fill="#5C647A">T0 .. T+1 р. дн.</text>
+</g>
+<g>
+  <text x="268" y="11" text-anchor="middle" font-size="8" font-weight="bold">Расчёт</text>
+  <text x="268" y="20" text-anchor="middle" font-size="7" fill="#5C647A">T+1 .. T+2 р. дн.</text>
+</g>
+<g>
+  <text x="345.5" y="11" text-anchor="middle" font-size="8" font-weight="bold">После расчёта</text>
+  <text x="345.5" y="20" text-anchor="middle" font-size="7" fill="#5C647A">T+2 .. T+5 р. дн.</text>
+</g>
+<g>
+  <line x1="72" y1="26" x2="383" y2="26" stroke="#5C647A" stroke-width="0.5"/>
+  <line x1="148" y1="26" x2="148" y2="118" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <line x1="228" y1="26" x2="228" y2="118" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <line x1="308" y1="26" x2="308" y2="118" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+</g>
+
+<!-- Отмена (reversal): только до клиринга -->
+<g>
+  <text x="66" y="44" text-anchor="end" font-size="8" font-weight="bold">Отмена</text>
+  <text x="66" y="52" text-anchor="end" font-size="7" fill="#5C647A">(reversal)</text>
+</g>
+<g>
+  <rect x="73" y="37" width="74" height="16" rx="3" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="0.75"/>
+  <text x="110" y="48" text-anchor="middle" font-size="8" font-weight="bold">MTI 0400 / 0420</text>
+</g>
+
+<!-- Аннулирование (void): до расчёта -->
+<g>
+  <text x="66" y="74" text-anchor="end" font-size="8" font-weight="bold">Аннулирование</text>
+  <text x="66" y="82" text-anchor="end" font-size="7" fill="#5C647A">(void)</text>
+</g>
+<g>
+  <rect x="73" y="67" width="154" height="16" rx="3" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="0.75"/>
+  <text x="150" y="78" text-anchor="middle" font-size="8" font-weight="bold">не MTI · cancel в API</text>
+</g>
+
+<!-- Возврат (refund): после расчёта -->
+<g>
+  <text x="66" y="104" text-anchor="end" font-size="8" font-weight="bold">Возврат</text>
+  <text x="66" y="112" text-anchor="end" font-size="7" fill="#5C647A">(refund)</text>
+</g>
+<g>
+  <rect x="229" y="97" width="153" height="16" rx="3" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="0.75"/>
+  <text x="305.5" y="108" text-anchor="middle" font-size="8" font-weight="bold">новая транзакция</text>
+</g>
+
+</g>
 </svg>

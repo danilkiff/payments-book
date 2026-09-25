@@ -1,8 +1,9 @@
-"""Генератор mti-0100-anatomy.svg для гл. 5 ISO 8583.
+"""Генератор mti-0100-anatomy.svg для гл. 6 ISO 8583.
 
-Полный разбор MTI 0100 в~стиле дамп-анализатора:
-- сверху hex-view 10 рядов по 16 байт, ячейки подсвечены по полям;
-- снизу таблица: имя поля, тип, смещение, длина, hex, декодированное значение.
+Hex-дамп MTI 0100 по~12 байт в~ряду, ячейки подсвечены по~типу поля,
+легенда типов снизу. Таблица полей (смещение, длина, значение) вынесена
+в~LaTeX: tab:mti-0100-fields в~src/parts/part1/ch06-iso8583.tex; при правке
+HEX или SCHEMA таблица сверяется с~выводом parse().
 
 Схема каждого поля -- из прозы § 5.5 ("Разбираем MTI 0100 и MTI 0110 до конца").
 Парсинг и сверка значений -- samples/ch06-iso8583-anatomy/anatomy.py.
@@ -13,9 +14,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
-  INK, MUTED, PANEL, SOFT, ACCENT_A, ACCENT_B,
-  TIER_PANEL, TIER_LIGHT, TIER_NEUTRAL, TIER_DARK, TIER_LIGHT_MID, zebra,
-  FONT, figures_dir, t, write_svg, svg_header,
+  ACCENT_A, ACCENT_B, CANVAS_W, FONT, FS_BODY, FS_NOTE, INK, MUTED, PANEL,
+  SW_LINK, TIER_DARK, TIER_LIGHT, TIER_LIGHT_MID, TIER_NEUTRAL, TIER_PANEL,
+  figures_dir, svg_header_pt, text_width, write_svg, xml_escape, zebra,
 )
 
 HEX = """
@@ -110,153 +111,113 @@ def fill_for(field):
   return PANEL, TIER_PANEL
 
 
-def swatch(field):
-  k = field["palette"]
-  if k == "mti":
-    return PANEL, TIER_PANEL
-  if k == "bitmap":
-    return MUTED, TIER_NEUTRAL
-  if k == "fixed":
-    return ACCENT_A, TIER_LIGHT_MID
-  if k == "llvar":
-    return ACCENT_B, TIER_DARK
-  return PANEL, TIER_PANEL
-
-
-TYPE_LABEL = {"mti": "MTI", "bitmap": "Bitmap", "fixed": "fixed", "llvar": "LLVAR"}
-
 byte_to_field = [None] * len(data)
 for f in fields:
   for o in range(f["offset"], f["offset"] + f["length"]):
     byte_to_field[o] = f
 
-# Hex view: 12 байт/ряд -> 13 рядов
 BPR = 12
-CELL_W = 24
-CELL_H = 20
-ROW_GAP = 3
-HV_OFFSET_W = 36
-HV_GROUP_GAP = 4
-HV_ASCII_PAD = 12
+CELL_W = 20
+CELL_H = 13
+ROW_GAP = 2
+GROUP_GAP = 4
+MARGIN = 2
+OFFSET_W = 26
+ASCII_PAD = 10
+HEAD_H = 12
+LEGEND_GAP = 10
+SWATCH = 10
 ROWS = (len(data) + BPR - 1) // BPR
 
-HV_X_OFFSET = 8
-HV_X_BYTES = HV_X_OFFSET + HV_OFFSET_W
-HV_Y_TOP = 24
-HV_Y_BYTES = HV_Y_TOP + 6
+X_BYTES = MARGIN + OFFSET_W
 N_GROUPS = (BPR - 1) // 4
-HV_X_ASCII = HV_X_BYTES + BPR * CELL_W + N_GROUPS * HV_GROUP_GAP + HV_ASCII_PAD
-HV_W = HV_X_ASCII + BPR * 9 + 6
-HV_H = HV_Y_BYTES + ROWS * (CELL_H + ROW_GAP) + 4
+X_ASCII = X_BYTES + BPR * CELL_W + N_GROUPS * GROUP_GAP + ASCII_PAD
+Y_BYTES = MARGIN + HEAD_H
 
-# Таблица
-TBL_Y = HV_H + 22
-TBL_ROW_H = 22
-COL_SWATCH = 14
-COL_NAME = 145
-COL_TYPE = 50
-COL_OFF = 48
-COL_LEN = 42
-COL_VAL = HV_W - (COL_SWATCH + COL_NAME + COL_TYPE + COL_OFF + COL_LEN) - 8
-TBL_X_NAME = COL_SWATCH + 6
-TBL_X_TYPE = TBL_X_NAME + COL_NAME - 6
-TBL_X_OFF = TBL_X_TYPE + COL_TYPE
-TBL_X_LEN = TBL_X_OFF + COL_OFF
-TBL_X_VAL = TBL_X_LEN + COL_LEN
 
-VIEW_W = HV_W
-VIEW_H = TBL_Y + (1 + len(fields)) * TBL_ROW_H + 6
+def txt(x, y, s, size=FS_BODY, weight="normal", fill=INK, anchor="start"):
+  attrs = f' font-size="{size}"'
+  if weight != "normal":
+    attrs += f' font-weight="{weight}"'
+  if fill != INK:
+    attrs += f' fill="{fill}"'
+  if anchor != "start":
+    attrs += f' text-anchor="{anchor}"'
+  return f'<text x="{x:g}" y="{y:g}"{attrs}>{xml_escape(s)}</text>'
 
-lines = svg_header(VIEW_W, VIEW_H)
 
-# Hex-view header
-lines.append(t(HV_X_OFFSET, 16, "Offset", size=10, fill=MUTED, weight="bold", anchor="start"))
-hv_bytes_center = HV_X_BYTES + (BPR * CELL_W + N_GROUPS * HV_GROUP_GAP) / 2
-lines.append(t(hv_bytes_center, 16, "Hex bytes", size=10, fill=MUTED, weight="bold"))
-lines.append(t(HV_X_ASCII, 16, "ASCII", size=10, fill=MUTED, weight="bold", anchor="start"))
+def rect(x, y, w, h, fill, op):
+  o = f' fill-opacity="{op}"' if op != 1.0 else ""
+  return (
+    f'<rect x="{x:g}" y="{y:g}" width="{w:g}" height="{h:g}" '
+    f'fill="{fill}"{o}/>'
+  )
 
-# Hex-view rows
+
+def edge(x, y, w):
+  """Кромка над~байтом LL-префикса: нецветовой признак переменной длины."""
+  return (
+    f'<line x1="{x:g}" y1="{y + 0.5:g}" x2="{x + w:g}" y2="{y + 0.5:g}" '
+    f'stroke="{MUTED}" stroke-width="{SW_LINK}"/>'
+  )
+
+
+out = ["<g>"]
+out.append(txt(MARGIN, MARGIN + 7, "Offset", FS_NOTE, "bold", MUTED))
+bytes_w = BPR * CELL_W + N_GROUPS * GROUP_GAP
+out.append(txt(X_BYTES + bytes_w / 2, MARGIN + 7, "Hex bytes", FS_NOTE, "bold",
+               MUTED, "middle"))
+out.append(txt(X_ASCII, MARGIN + 7, "ASCII", FS_NOTE, "bold", MUTED))
+out.append("</g>")
+
+ascii_right = 0
 for row in range(ROWS):
-  y = HV_Y_BYTES + row * (CELL_H + ROW_GAP)
-  offset = row * BPR
-  lines.append(t(HV_X_OFFSET + HV_OFFSET_W - 4, y + 13, f"{offset:04X}",
-                 size=10, fill=MUTED, anchor="end"))
-  ascii_chars = []
+  y = Y_BYTES + row * (CELL_H + ROW_GAP)
+  base = row * BPR
+  out.append("<g>")
+  out.append(txt(X_BYTES - 4, y + 9.5, f"{base:04X}", fill=MUTED, anchor="end"))
+  chars = []
   for col in range(BPR):
-    i = offset + col
+    i = base + col
     if i >= len(data):
       break
-    extra = (col // 4) * HV_GROUP_GAP
-    cx = HV_X_BYTES + col * CELL_W + extra
+    x = X_BYTES + col * CELL_W + (col // 4) * GROUP_GAP
     f = byte_to_field[i]
-    is_ll = (f["ll_len"] > 0 and i - f["offset"] < f["ll_len"])
-    fill, op = fill_for(f)
-    lines.append(
-      f'<rect x="{cx}" y="{y}" width="{CELL_W}" height="{CELL_H}" '
-      f'fill="{fill}" fill-opacity="{op}"/>'
-    )
-    # Не-цветовая метка: тёмная кромка на байтах LL-префикса размечает
-    # переменную длину и отличает llvar от fixed независимо от цвета.
-    if is_ll:
-      lines.append(
-        f'<line x1="{cx}" y1="{y}" x2="{cx + CELL_W}" y2="{y}" '
-        f'stroke="{INK}" stroke-width="2"/>'
-      )
-    lines.append(t(cx + CELL_W / 2, y + 14, f"{data[i]:02X}",
-                   size=11, fill=INK))
-    b = data[i]
-    ascii_chars.append(chr(b) if 32 <= b < 127 else ".")
-  lines.append(t(HV_X_ASCII, y + 14, "".join(ascii_chars),
-                 size=11, fill=INK, anchor="start"))
+    out.append(rect(x, y, CELL_W, CELL_H, *fill_for(f)))
+    if f["ll_len"] and i - f["offset"] < f["ll_len"]:
+      out.append(edge(x, y, CELL_W))
+    out.append(txt(x + CELL_W / 2, y + 9.5, f"{data[i]:02X}", anchor="middle"))
+    chars.append(chr(data[i]) if 32 <= data[i] < 127 else ".")
+  line = "".join(chars)
+  ascii_right = max(ascii_right, X_ASCII + text_width(line))
+  out.append(txt(X_ASCII, y + 9.5, line))
+  out.append("</g>")
 
-# Table header
-hdr_y = TBL_Y
-lines.append(f'<rect x="0" y="{hdr_y}" width="{VIEW_W}" height="{TBL_ROW_H}" fill="{SOFT}"/>')
-lines.append(t(TBL_X_NAME, hdr_y + 15, "Поле", size=11, fill=MUTED, weight="bold", anchor="start"))
-lines.append(t(TBL_X_TYPE, hdr_y + 15, "Тип", size=11, fill=MUTED, weight="bold", anchor="start"))
-lines.append(t(TBL_X_OFF, hdr_y + 15, "Off", size=11, fill=MUTED, weight="bold", anchor="start"))
-lines.append(t(TBL_X_LEN, hdr_y + 15, "Len", size=11, fill=MUTED, weight="bold", anchor="start"))
-lines.append(t(TBL_X_VAL, hdr_y + 15, "Значение", size=11, fill=MUTED, weight="bold", anchor="start"))
+y_leg = Y_BYTES + ROWS * (CELL_H + ROW_GAP) + LEGEND_GAP
+legend = [
+  ("MTI", PANEL, TIER_PANEL, False),
+  ("Bitmap", MUTED, TIER_NEUTRAL, False),
+  ("fixed", ACCENT_A, TIER_LIGHT_MID, False),
+  ("LLVAR", ACCENT_B, TIER_DARK, False),
+  ("кромка: префикс LL", ACCENT_B, TIER_DARK, True),
+]
+x = X_BYTES
+for label, fill, op, ll in legend:
+  out.append("<g>")
+  out.append(rect(x, y_leg, SWATCH, SWATCH, fill, op))
+  if ll:
+    out.append(edge(x, y_leg, SWATCH))
+  out.append(txt(x + SWATCH + 4, y_leg + 8, label, FS_NOTE, fill=MUTED))
+  out.append("</g>")
+  x += SWATCH + 4 + text_width(label, FS_NOTE) + 14
 
-# Table rows
-for idx, f in enumerate(fields):
-  ry = TBL_Y + (1 + idx) * TBL_ROW_H
-  if idx % 2 == 1:
-    lines.append(f'<rect x="0" y="{ry}" width="{VIEW_W}" height="{TBL_ROW_H}" fill="{SOFT}"/>')
-  fill, op = swatch(f)
-  lines.append(
-    f'<rect x="0" y="{ry + 4}" width="{COL_SWATCH}" height="{TBL_ROW_H - 8}" '
-    f'fill="{fill}" fill-opacity="{op}"/>'
-  )
-  lines.append(t(TBL_X_NAME, ry + 15, f["name"], size=11, fill=INK, anchor="start"))
-  lines.append(t(TBL_X_TYPE, ry + 15, TYPE_LABEL[f["palette"]], size=10, fill=MUTED, anchor="start"))
-  lines.append(t(TBL_X_OFF, ry + 15, f'{f["offset"]:#04x}', size=10, fill=MUTED, anchor="start"))
-  lines.append(t(TBL_X_LEN, ry + 15, f'{f["length"]} B', size=10, fill=MUTED, anchor="start"))
+width = round(max(ascii_right, x) + MARGIN)
+height = y_leg + SWATCH + MARGIN
+assert width <= CANVAS_W, width
+lines = svg_header_pt(width, height)
+lines.append(f'<g font-family="{FONT}" fill="{INK}">')
+lines += out
+lines += ["</g>", "</svg>"]
 
-  raw = f["raw"]
-  if f["name"] == "Bitmap":
-    des = []
-    for bi, byte in enumerate(raw):
-      for bit in range(8):
-        if byte & (1 << (7 - bit)):
-          de = bi * 8 + bit + 1
-          if de != 1:
-            des.append(de)
-    val = "DE " + ", ".join(str(d) for d in des)
-  else:
-    if f["ll_len"] > 0:
-      ll = raw[:f["ll_len"]].decode("ascii")
-      v = raw[f["ll_len"]:].decode("ascii", errors="replace")
-      val = f'LL={ll}, "{v}"'
-    else:
-      val = '"' + raw.decode("ascii", errors="replace") + '"'
-  # COL_VAL ≈ 159px при шрифте 10px вмещает ~27 знаков (цифры в Bitmap уже —
-  # до 30); прежние 38/44 при 11px вылезали за правый край viewBox и срезались.
-  max_chars = 27 if f["name"] != "Bitmap" else 30
-  if len(val) > max_chars:
-    val = val[:max_chars - 1] + "…"
-  lines.append(t(TBL_X_VAL, ry + 15, val, size=10, fill=INK, anchor="start"))
-
-lines.append("</svg>")
-
-write_svg(figures_dir() / "ch06-iso8583" / "mti-0100-anatomy.svg", lines)
+if __name__ == "__main__":
+  write_svg(figures_dir() / "ch06-iso8583" / "mti-0100-anatomy.svg", lines)

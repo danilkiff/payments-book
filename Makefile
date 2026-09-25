@@ -1,4 +1,4 @@
-.PHONY: help init pdf svg clean fmt check log
+.PHONY: help init pdf svg figlint clean fmt check log
 .DEFAULT_GOAL := help
 
 help:  ## показать эту справку
@@ -8,7 +8,10 @@ init:  ## установить git hooks (core.hooksPath → scripts/hooks)
 	@git config core.hooksPath scripts/hooks
 	@echo "core.hooksPath → scripts/hooks (хуки: $$(ls scripts/hooks))"
 
-svg:  ## .svg → .pdf через Inkscape (инкрементально, по mtime)
+figlint:  ## проверка SVG на канон assets/figures/README.md
+	python3 scripts/figures/lint_svg.py
+
+svg: figlint  ## .svg → .pdf через Inkscape (инкрементально, по mtime)
 	python3 scripts/svg2pdf.py
 
 pdf: svg  ## собрать книгу (svg → gitversion → latexmk)

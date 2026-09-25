@@ -5,6 +5,9 @@ APDU (CLA INS P1 P2) + данные + MAC. MAC считается на сесс�
 SK_SMI поверх заголовка и данных (целостность и аутентичность); при
 необходимости данные шифруются на SK_SMC (конфиденциальность, например
 новый PIN в PIN CHANGE). Источник: emvco-book2, §9.
+
+AccentA помечает всё, что относится к ключу SK_SMI (MAC и его охват),
+AccentB -- к ключу SK_SMC (шифр данных).
 """
 import sys
 from pathlib import Path
@@ -12,52 +15,54 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _common import (
-  INK, MUTED, SOFT, ACCENT_A, ACCENT_B, WARN,
-  figures_dir, t, write_svg, svg_header,
+  ACCENT_A, CANVAS_W, FS_BODY, FS_NOTE, MUTED, SW_LINK,
+  box, figures_dir, svg_header_pt, t, text_width, write_svg,
 )
 
-# (верхняя подпись, нижняя подпись, ширина, цвет)
+# (верхняя подпись, нижняя подпись, ширина, тон)
 BOXES = [
-  ("86", "тег команды", 56, MUTED),
-  ("CLA INS P1 P2", "заголовок APDU", 150, ACCENT_A),
-  ("данные", "шифр на SK_SMC", 130, ACCENT_B),
-  ("MAC", "на SK_SMI", 90, WARN),
+  ("86", "тег команды", 52, None),
+  ("CLA INS P1 P2", "заголовок APDU", 118, None),
+  ("данные", "шифр на SK_SMC", 110, "AccentB"),
+  ("MAC", "на SK_SMI", 70, "AccentA"),
 ]
 
-VIEW_W = 520
-STRIP_X = 12
-STRIP_Y = 22
-BOX_H = 30
 GAP = 6
-LBL_BELOW = 16
-BRACKET_Y = STRIP_Y + BOX_H + LBL_BELOW + 16
-VIEW_H = BRACKET_Y + 30
+BOX_H = 20
+STRIP_Y = 2
+total = sum(b[2] for b in BOXES) + GAP * (len(BOXES) - 1)
+STRIP_X = (CANVAS_W - total) / 2
+LBL_Y = STRIP_Y + BOX_H + 10
+BRACKET_Y = LBL_Y + 10
+VIEW_H = BRACKET_Y + 14
 
-lines = svg_header(VIEW_W, VIEW_H)
+lines = svg_header_pt(CANVAS_W, VIEW_H)
 
 x = STRIP_X
 box_x = {}
-for top, bottom, w, color in BOXES:
-  # Warn (жёлтый) на белом фоне иначе пропадает -- канон требует 0.18.
-  fill_opacity = {WARN: "0.18"}.get(color, "0.15")
-  lines.append(
-    f'<rect x="{x}" y="{STRIP_Y}" width="{w}" height="{BOX_H}" '
-    f'fill="{color}" fill-opacity="{fill_opacity}" stroke="{MUTED}" stroke-width="0.5"/>'
-  )
-  lines.append(t(x + w / 2, STRIP_Y + 20, top, size=11, fill=INK, weight="bold"))
-  lines.append(t(x + w / 2, STRIP_Y + BOX_H + 13, bottom, size=9, fill=MUTED))
+for top, bottom, w, tone in BOXES:
+  for s, size, weight in ((top, FS_BODY, "bold"), (bottom, FS_NOTE, "normal")):
+    assert text_width(s, size, weight) < w + GAP, s
+  lines.append("<g>")
+  lines.append(box(x, STRIP_Y, w, BOX_H, tone))
+  lines.append(t(x + w / 2, STRIP_Y + 13.5, top, size=FS_BODY, weight="bold"))
+  lines.append(t(x + w / 2, LBL_Y, bottom, size=FS_NOTE, fill=MUTED))
+  lines.append("</g>")
   box_x[top] = (x, w)
   x += w + GAP
 
-# Скобка «под MAC»: от начала заголовка до конца данных
+# Скобка охвата MAC: от начала заголовка до конца данных
 hx0 = box_x["CLA INS P1 P2"][0]
 hx1 = box_x["данные"][0] + box_x["данные"][1]
 by = BRACKET_Y
+lines.append("<g>")
 lines.append(
-  f'<path d="M{hx0} {by - 6} L{hx0} {by} L{hx1} {by} L{hx1} {by - 6}" '
-  f'fill="none" stroke="{WARN}" stroke-width="1"/>'
+  f'<path d="M{hx0} {by - 5} L{hx0} {by} L{hx1} {by} L{hx1} {by - 5}" '
+  f'fill="none" stroke="{ACCENT_A}" stroke-width="{SW_LINK}"/>'
 )
-lines.append(t((hx0 + hx1) / 2, by + 14, "входит в MAC", size=9, fill=WARN))
+lines.append(t((hx0 + hx1) / 2, by + 10, "входит в MAC", size=FS_NOTE,
+               fill=ACCENT_A))
+lines.append("</g>")
 
 lines.append("</svg>")
 write_svg(figures_dir() / "ch10-cryptography" / "secure-messaging.svg", lines)

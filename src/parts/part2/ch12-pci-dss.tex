@@ -110,7 +110,7 @@ Scoping Information Supplement выделяет три типа систем в~
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=0.8\linewidth]{assets/figures/ch12-pci-dss/pci-cde-boundary}
+  \includefigure{assets/figures/ch12-pci-dss/pci-cde-boundary}
   \caption{Периметр CDE и~смежные системы.}\label{fig:pci-cde-boundary}
 \end{figure}
 
@@ -315,11 +315,47 @@ PCI). Конкретная стоимость соответствия зави�
 инфраструктуры, региональных тарифов QSA и~состава внешних сервисов;
 усреднённых тарифов PCI SSC не публикует~\cite{pci-dss-4}.
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch12-pci-dss/pci-saq-decision}
-  \caption{Восемь типов SAQ и~условия их применимости.}\label{fig:pci-saq-decision}
-\end{figure}
+\begin{table}[tbp]
+  \caption{Восемь типов SAQ и~условия их применимости}\label{tab:pci-saq-decision}
+  \begingroup
+  \tablesetup
+  \begin{minipage}{\textwidth}
+    \begin{tabularx}{\textwidth}{@{}B{0.09\textwidth} P{0.26\textwidth} Y@{}}
+      \toprule
+      \headrow
+      \thd{SAQ} & \thd{Канал приёма} & \thd{Условие применимости} \\
+      \midrule
+      \cellcolor{Good!14}A & e-commerce, full redirect &
+      страница оплаты полностью у~PSP; сайт ТСП только инициирует redirect \\
+      \rowsep
+      \cellcolor{Good!14}A-EP & e-commerce, iframe / Direct Post &
+      часть элементов платёжной страницы формируется сайтом ТСП \\
+      \rowsep
+      \cellcolor{Warn!18}B & физ. терминал, dial-out &
+      импринтер или автономный POS, без электронного хранения CHD \\
+      \rowsep
+      \cellcolor{Warn!18}B-IP & физ. терминал по~IP &
+      PTS-сертифицированный POI, автономный, по~IP \\
+      \rowsep
+      \cellcolor{Warn!18}C & торговая точка, POS-приложение &
+      платёжное приложение на~стороне ТСП, подключённое к~интернету \\
+      \rowsep
+      \cellcolor{Warn!18}C-VT & virtual terminal &
+      колл-центр или бэк-офис; CHD вводят вручную через веб-интерфейс PSP \\
+      \rowsep
+      \cellcolor{Good!14}P2PE & валидированное PCI P2PE &
+      сертифицированное end-to-end шифрование от~POI до~расшифровщика \\
+      \rowsep
+      \cellcolor{Bad!10}D & всё остальное &
+      ТСП сам хранит, обрабатывает или передаёт CHD; полный объём PCI~DSS \\
+      \bottomrule
+    \end{tabularx}
+    \par\smallskip
+    \tablenote{Заливка типа SAQ показывает объём требований: зелёный~---
+    сокращённый, жёлтый~--- промежуточный, красный~--- полный объём PCI~DSS.}
+  \end{minipage}\par
+  \endgroup
+\end{table}
 
 \section{PCI DSS~4.0.1}\label{sec:pci-401}
 

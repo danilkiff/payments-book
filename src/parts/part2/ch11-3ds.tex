@@ -45,7 +45,7 @@ Authentication, SCA) по~второй европейской директиве
 
 \begin{figure}[tbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch11-3ds/cnp-attack-surface}
+  \includefigure{assets/figures/ch11-3ds/cnp-attack-surface}
   \caption{Пять векторов компрометации CNP и~зона эффективности 3DS.}%
   \label{fig:cnp-attack-surface}
 \end{figure}
@@ -97,7 +97,7 @@ ACS и~доставляет ему сообщение. Без~этого про�
 
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch11-3ds/3ds-three-domains}
+  \includefigure{assets/figures/ch11-3ds/3ds-three-domains}
   \caption{Архитектура трёх доменов 3-D Secure.}\label{fig:3ds-three-domains}
 \end{figure}
 
@@ -150,7 +150,7 @@ chargeback~\cite{emvco-3ds-whitepaper}. Карточные сети прекра
 
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch11-3ds/3ds-v1-flow}
+  \includefigure{assets/figures/ch11-3ds/3ds-v1-flow}
   \caption{Поток 3DS v1: VEReq/VERes между MPI и~DS, PAReq/PARes через браузер.}\label{fig:3ds-v1-flow}
 \end{figure}
 
@@ -234,6 +234,13 @@ Results Response (RRes). Итоговый статус аутентификац�
 дополнительный запрос подтверждения отсеивает часть покупателей, поэтому качество данных
 в~3DS-сообщении напрямую влияет на~конверсию.
 
+\begin{figure}[htbp]
+  \centering
+  \includefigure{assets/figures/ch11-3ds/3ds-v2-flow-frictionless}
+  \caption{Поток 3DS v2, сценарий \textit{frictionless}: AReq/ARes.}%
+  \label{fig:3ds-v2-flow-frictionless}
+\end{figure}
+
 \subsection*{Сценарий \textit{challenge}}
 
 Если ACS обнаруживает повышенный риск~--- например, новое устройство или нетипичную
@@ -250,8 +257,9 @@ push-подтверждение с~биометрией в~мобильном б
 
 \begin{figure}[htbp]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch11-3ds/3ds-v2-flow}
-  \caption{Поток 3DS v2: сценарии \textit{frictionless} (AReq/ARes) и~\textit{challenge} (CReq/CRes, RReq/RRes).}\label{fig:3ds-v2-flow}
+  \includefigure{assets/figures/ch11-3ds/3ds-v2-flow-challenge}
+  \caption{Поток 3DS v2, сценарий \textit{challenge}: CReq/CRes, RReq/RRes.}%
+  \label{fig:3ds-v2-flow-challenge}
 \end{figure}
 
 \FloatBarrier

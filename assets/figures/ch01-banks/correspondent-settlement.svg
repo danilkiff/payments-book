@@ -1,411 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   viewBox="0 0 760 490"
-   width="760"
-   height="490"
-   version="1.1"
-   id="svg26"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs2">
-    <marker
-       id="arr-Muted"
-       viewBox="0 0 10 10"
-       refX="9"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M0,0 L10,5 L0,10 Z"
-         fill="#5C647A"
-         id="path1" />
-    </marker>
-    <marker
-       id="arr-Muted-s"
-       viewBox="0 0 10 10"
-       refX="1"
-       refY="5"
-       markerWidth="5"
-       markerHeight="5"
-       orient="auto">
-      <path
-         d="M10,0 L0,5 L10,10 Z"
-         fill="#5C647A"
-         id="path2" />
-    </marker>
-  </defs>
-  <!-- ====================== PANEL 1: Сбербанк ====================== -->
-  <rect
-     x="20"
-     y="20"
-     width="720"
-     height="120"
-     rx="8"
-     fill="#F5F7FD"
-     stroke="#5C647A"
-     stroke-width="1.5"
-     id="rect2"
-     style="stroke-width:1.35164013;stroke-dasharray:none" />
-  <text
-     x="34.871094"
-     y="41.706539"
-     font-family="Inter, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text18-0"
-     style="stroke-width:0.901094;stroke-dasharray:none">Сбербанк · бухгалтерский учёт банка</text>
-  <text
-     x="725"
-     y="42"
-     text-anchor="end"
-     font-family="Inter, '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="9"
-     fill="#5C647A"
-     id="text3"
-     style="stroke-width:0.901094;stroke-dasharray:none">БИК 044525225 · к/с 30101810400000000225</text>
-  <!-- row 1: счёт физлица отправителя -->
-  <rect
-     x="35"
-     y="58"
-     width="115"
-     height="28"
-     rx="4"
-     fill="#4E63D9"
-     fill-opacity="0.15"
-     stroke="#4E63D9"
-     stroke-width="1.5"
-     id="rect3"
-     style="stroke-width:1.35164013;stroke-dasharray:none" />
-  <text
-     x="92"
-     y="76"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text4"
-     style="stroke-width:0.901094;stroke-dasharray:none">40817 810...</text>
-  <text
-     x="160"
-     y="76"
-     font-family="Inter, sans-serif"
-     font-size="10"
-     fill="#1A2030"
-     id="text5"
-     style="stroke-width:0.90109366;stroke-dasharray:none">Иванов И.И., счёт физлица в рублях</text>
-  <text
-     x="725"
-     y="76"
-     text-anchor="end"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text6"
-     style="stroke-width:0.90109366;stroke-dasharray:none">−1000 руб.</text>
-  <!-- row 2: 30102 (актив у банка) -->
-  <rect
-     x="35"
-     y="94"
-     width="115"
-     height="28"
-     rx="4"
-     fill="#4E63D9"
-     fill-opacity="0.15"
-     stroke="#4E63D9"
-     stroke-width="1.5"
-     id="rect6"
-     style="stroke-width:1.35164013;stroke-dasharray:none" />
-  <text
-     x="92"
-     y="112"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text7"
-     style="stroke-width:0.901094;stroke-dasharray:none">30102 810...</text>
-  <text
-     x="160"
-     y="112"
-     font-family="Inter, sans-serif"
-     font-size="10"
-     fill="#1A2030"
-     id="text8"
-     style="stroke-width:0.90109366;stroke-dasharray:none">актив: средства банка на корсчёте в Банке России</text>
-  <text
-     x="725"
-     y="112"
-     text-anchor="end"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text9"
-     style="stroke-width:0.90109366;stroke-dasharray:none">−1000 руб.</text>
-  <!-- ====================== PANEL 2: Банк России ====================== -->
-  <rect
-     x="20"
-     y="180"
-     width="720"
-     height="140"
-     rx="8"
-     fill="#E8ECF7"
-     stroke="#5C647A"
-     stroke-width="1.5"
-     id="rect9"
-     style="stroke-width:1.35164013;stroke-dasharray:none" />
-  <text
-     x="35"
-     y="202"
-     font-family="Inter, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text10"
-     style="stroke-width:0.90109366;stroke-dasharray:none">Банк России · бухгалтерский учёт РКЦ (Платёжная система Банка России)</text>
-  <!-- bracket: атомарная проводка -->
-  <rect
-     x="32"
-     y="215"
-     width="696"
-     height="90"
-     rx="6"
-     fill="#5C647A"
-     fill-opacity="0.15"
-     stroke="#5C647A"
-     stroke-width="1.5"
-     stroke-dasharray="6,3"
-     id="rect10"
-     style="stroke-dashoffset:0" />
-  <text
-     x="725"
-     y="232"
-     text-anchor="end"
-     font-family="Inter, sans-serif"
-     font-size="9"
-     font-weight="bold"
-     fill="#5C647A"
-     id="text11"
-     style="stroke-width:0.90109366;stroke-dasharray:none">атомарная проводка ЦБ</text>
-  <!-- row 1: 30101 (пассив у ЦБ, по Сберу) -->
-  <rect
-     x="45"
-     y="240"
-     width="240"
-     height="26"
-     rx="4"
-     fill="#F5F7FD"
-     stroke="#5C647A"
-     stroke-width="1"
-     id="rect11"
-     style="stroke-width:0.90109366;stroke-dasharray:none" />
-  <text
-     x="165"
-     y="258"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text12"
-     style="stroke-width:0.90109366;stroke-dasharray:none">30101 810 4 0000 0000225</text>
-  <text
-     x="295"
-     y="258"
-     font-family="Inter, sans-serif"
-     font-size="10"
-     fill="#1A2030"
-     id="text13"
-     style="stroke-width:0.90109366;stroke-dasharray:none">пассив: обязательство ЦБ перед Сбербанком</text>
-  <text
-     x="715"
-     y="258"
-     text-anchor="end"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text14"
-     style="stroke-width:0.90109366;stroke-dasharray:none">−1000 руб.</text>
-  <!-- row 2: 30101 (пассив у ЦБ, по Альфе) -->
-  <rect
-     x="45"
-     y="270"
-     width="240"
-     height="26"
-     rx="4"
-     fill="#F5F7FD"
-     stroke="#5C647A"
-     stroke-width="1"
-     id="rect14"
-     style="stroke-width:0.90109366;stroke-dasharray:none" />
-  <text
-     x="165"
-     y="288"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text15"
-     style="stroke-width:0.90109366;stroke-dasharray:none">30101 810 2 0000 0000593</text>
-  <text
-     x="295"
-     y="288"
-     font-family="Inter, sans-serif"
-     font-size="10"
-     fill="#1A2030"
-     id="text16"
-     style="stroke-width:0.90109366;stroke-dasharray:none">пассив: обязательство ЦБ перед Альфа-Банком</text>
-  <text
-     x="715"
-     y="288"
-     text-anchor="end"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text17"
-     style="stroke-width:0.90109366;stroke-dasharray:none">+1000 руб.</text>
-  <!-- ====================== PANEL 3: Альфа-Банк ====================== -->
-  <rect
-     x="20"
-     y="360"
-     width="720"
-     height="120"
-     rx="8"
-     fill="#F5F7FD"
-     stroke="#5C647A"
-     stroke-width="1.5"
-     id="rect17"
-     style="stroke-width:1.35164013;stroke-dasharray:none" />
-  <text
-     x="35"
-     y="382"
-     font-family="Inter, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text18"
-     style="stroke-width:0.90109366;stroke-dasharray:none">Альфа-Банк · бухгалтерский учёт банка</text>
-  <text
-     x="725"
-     y="382"
-     text-anchor="end"
-     font-family="Inter, sans-serif"
-     font-size="9"
-     fill="#5C647A"
-     id="text19"
-     style="stroke-width:0.901094;stroke-dasharray:none">БИК 044525593 · к/с 30101810200000000593</text>
-  <!-- row 1: 30102 (актив у банка) -->
-  <rect
-     x="35"
-     y="398"
-     width="115"
-     height="28"
-     rx="4"
-     fill="#7759D6"
-     fill-opacity="0.15"
-     stroke="#7759D6"
-     stroke-width="1.5"
-     id="rect19"
-     style="stroke-width:1.35164013;stroke-dasharray:none" />
-  <text
-     x="92"
-     y="416"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text20"
-     style="stroke-width:0.901094;stroke-dasharray:none">30102 810...</text>
-  <text
-     x="160"
-     y="416"
-     font-family="Inter, sans-serif"
-     font-size="10"
-     fill="#1A2030"
-     id="text21"
-     style="stroke-width:0.90109366;stroke-dasharray:none">актив: средства банка на корсчёте в Банке России</text>
-  <text
-     x="725"
-     y="416"
-     text-anchor="end"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text22"
-     style="stroke-width:0.90109366;stroke-dasharray:none">+1000 руб.</text>
-  <!-- row 2: счёт физлица получателя -->
-  <rect
-     x="35"
-     y="434"
-     width="115"
-     height="28"
-     rx="4"
-     fill="#7759D6"
-     fill-opacity="0.15"
-     stroke="#7759D6"
-     stroke-width="1.5"
-     id="rect22"
-     style="stroke-width:1.35164013;stroke-dasharray:none" />
-  <text
-     x="92"
-     y="452"
-     text-anchor="middle"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text23"
-     style="stroke-width:0.901094;stroke-dasharray:none">40817 810...</text>
-  <text
-     x="160"
-     y="452"
-     font-family="Inter, sans-serif"
-     font-size="10"
-     fill="#1A2030"
-     id="text24"
-     style="stroke-width:0.90109366;stroke-dasharray:none">Петров П.П., счёт физлица в рублях</text>
-  <text
-     x="725"
-     y="452"
-     text-anchor="end"
-     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-     font-size="11"
-     font-weight="bold"
-     fill="#1A2030"
-     id="text25"
-     style="stroke-width:0.90109366;stroke-dasharray:none">+1000 руб.</text>
-  <!-- ====================== Связи: 30102 ↔ 30101 (зеркальные счета-антиподы) ====================== -->
-  <line
-     x1="382"
-     y1="140.54926"
-     x2="382"
-     y2="180.16528"
-     stroke="#5C647A"
-     stroke-width="2"
-     marker-end="url(#arr-Muted)"
-     marker-start="url(#arr-Muted-s)"
-     id="line25"
-     style="stroke-dashoffset:0" />
-  <line
-     x1="382"
-     y1="360.55707"
-     x2="382"
-     y2="320.64276"
-     stroke="#5C647A"
-     stroke-width="2"
-     marker-end="url(#arr-Muted)"
-     marker-start="url(#arr-Muted-s)"
-     id="line26"
-     style="stroke-dashoffset:0" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 242" width="385pt" height="242pt">
+<defs>
+  <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
+  <marker id="arr-Muted-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#5C647A"/></marker>
+</defs>
+<g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" fill="#1A2030">
+
+<!-- Сбербанк: учёт банка отправителя -->
+<g>
+  <rect x="2" y="2" width="381" height="64" rx="3" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
+  <text x="8" y="15" font-size="9" font-weight="bold">Сбербанк · бухгалтерский учёт банка</text>
+  <text x="377" y="15" text-anchor="end" font-size="7" fill="#5C647A">БИК 044525225 · к/с 30101810400000000225</text>
+</g>
+<g>
+  <rect x="8" y="22" width="64" height="16" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+  <text x="40" y="33" text-anchor="middle" font-size="8" font-weight="bold">40817 810...</text>
+  <text x="78" y="33" font-size="8">Иванов И.И., счёт физлица в рублях</text>
+  <text x="377" y="33" text-anchor="end" font-size="8" font-weight="bold">−1000 руб.</text>
+</g>
+<g>
+  <rect x="8" y="42" width="64" height="16" rx="3" fill="#4E63D9" fill-opacity="0.15" stroke="#4E63D9" stroke-width="0.75"/>
+  <text x="40" y="53" text-anchor="middle" font-size="8" font-weight="bold">30102 810...</text>
+  <text x="78" y="53" font-size="8">актив: средства банка на корсчёте в Банке России</text>
+  <text x="377" y="53" text-anchor="end" font-size="8" font-weight="bold">−1000 руб.</text>
+</g>
+
+<!-- Банк России: учёт РКЦ -->
+<g>
+  <rect x="2" y="84" width="381" height="74" rx="3" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
+  <text x="8" y="97" font-size="9" font-weight="bold">Банк России · бухгалтерский учёт РКЦ (Платёжная система Банка России)</text>
+</g>
+<g>
+  <rect x="6" y="103" width="373" height="50" rx="3" fill="#ffffff" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="373" y="112" text-anchor="end" font-size="7" font-weight="bold" fill="#5C647A">атомарная проводка ЦБ</text>
+</g>
+<g>
+  <rect x="12" y="115" width="114" height="16" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="69" y="126" text-anchor="middle" font-size="8" font-weight="bold">30101 810 4 0000 0000225</text>
+  <text x="131" y="126" font-size="8">пассив: обязательство ЦБ перед Сбербанком</text>
+  <text x="373" y="126" text-anchor="end" font-size="8" font-weight="bold">−1000 руб.</text>
+</g>
+<g>
+  <rect x="12" y="133" width="114" height="16" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
+  <text x="69" y="144" text-anchor="middle" font-size="8" font-weight="bold">30101 810 2 0000 0000593</text>
+  <text x="131" y="144" font-size="8">пассив: обязательство ЦБ перед Альфа-Банком</text>
+  <text x="373" y="144" text-anchor="end" font-size="8" font-weight="bold">+1000 руб.</text>
+</g>
+
+<!-- Альфа-Банк: учёт банка получателя -->
+<g>
+  <rect x="2" y="176" width="381" height="64" rx="3" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
+  <text x="8" y="189" font-size="9" font-weight="bold">Альфа-Банк · бухгалтерский учёт банка</text>
+  <text x="377" y="189" text-anchor="end" font-size="7" fill="#5C647A">БИК 044525593 · к/с 30101810200000000593</text>
+</g>
+<g>
+  <rect x="8" y="196" width="64" height="16" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="0.75"/>
+  <text x="40" y="207" text-anchor="middle" font-size="8" font-weight="bold">30102 810...</text>
+  <text x="78" y="207" font-size="8">актив: средства банка на корсчёте в Банке России</text>
+  <text x="377" y="207" text-anchor="end" font-size="8" font-weight="bold">+1000 руб.</text>
+</g>
+<g>
+  <rect x="8" y="216" width="64" height="16" rx="3" fill="#7759D6" fill-opacity="0.15" stroke="#7759D6" stroke-width="0.75"/>
+  <text x="40" y="227" text-anchor="middle" font-size="8" font-weight="bold">40817 810...</text>
+  <text x="78" y="227" font-size="8">Петров П.П., счёт физлица в рублях</text>
+  <text x="377" y="227" text-anchor="end" font-size="8" font-weight="bold">+1000 руб.</text>
+</g>
+
+<!-- Связи: 30102 банка и 30101 в учёте ЦБ -->
+<g>
+  <line x1="192.5" y1="67" x2="192.5" y2="83" stroke="#5C647A" stroke-width="1" marker-start="url(#arr-Muted-s)" marker-end="url(#arr-Muted)"/>
+  <line x1="192.5" y1="159" x2="192.5" y2="175" stroke="#5C647A" stroke-width="1" marker-start="url(#arr-Muted-s)" marker-end="url(#arr-Muted)"/>
+</g>
+
+</g>
 </svg>

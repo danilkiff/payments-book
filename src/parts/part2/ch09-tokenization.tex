@@ -39,17 +39,50 @@ Standard, подробно~--- в~гл.~\ref{ch:pci-dss}), но~только п�
 и~разновидностях токенизации (сетевая, токен PSP, vault и~FPE,
 Format-Preserving Encryption)~--- в~разделе~\ref{sec:pci-scope-reduction}.
 
-\begin{figure}[tbp]
-  \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch09-tokenization/token-risk-before-after}
-  \caption{Узлы~$\times$~сценарии токенизации; цвет ячейки~--- PCI-периметр узла.}\label{fig:token-risk-before-after}
-\end{figure}
+\begin{table}[tbp]
+  \caption{Узлы~$\times$~сценарии токенизации; цвет ячейки~--- PCI-периметр узла}\label{tab:token-risk-before-after}
+  \begingroup
+  \tablesetup
+  \begin{minipage}{\textwidth}
+    \begin{tabularx}{\textwidth}{@{}P{0.19\textwidth} Y Y Y@{}}
+      \toprule
+      \headrow
+      \thd{Узел} & \thd{До токенизации} & \thd{Локальная токенизация} &
+      \thd{Сетевая токенизация} \\
+      \midrule
+      \textbf{ТСП~A}\newline e-commerce &
+      \cellcolor{Bad!10}\textbf{PAN-копия}\newline в~CDE &
+      \cellcolor{Good!14}\textbf{локальный токен}\newline вне~CDE &
+      \cellcolor{Good!14}\textbf{DPAN}\newline вне~CDE \\
+      \rowsep
+      \textbf{ТСП~B}\newline другая площадка &
+      \cellcolor{Bad!10}\textbf{PAN-копия}\newline в~CDE &
+      \cellcolor{Good!14}\textbf{локальный токен}\newline отдельный от~ТСП~A &
+      \cellcolor{Good!14}\textbf{DPAN}\newline свой DPAN на~каждый ТСП \\
+      \rowsep
+      \textbf{PSP / шлюз}\newline провайдер платежей &
+      \cellcolor{Bad!10}\textbf{PAN-копия}\newline в~CDE &
+      \cellcolor{Warn!18}\textbf{PAN + токен (vault)}\newline в~CDE, расширенный периметр &
+      \cellcolor{Good!14}\textbf{DPAN}\newline вне~CDE~--- детокенизация в~сети \\
+      \rowsep
+      \textbf{Подписка}\newline card-on-file / MIT &
+      \cellcolor{Bad!10}\textbf{PAN-копия}\newline в~CDE &
+      \cellcolor{Good!14}\textbf{локальный токен}\newline вне~CDE &
+      \cellcolor{Good!14}\textbf{DPAN + PAR}\newline card-on-file без~PAN \\
+      \bottomrule
+    \end{tabularx}
+    \par\smallskip
+    \tablenote{Заливка ячейки показывает периметр PCI~DSS узла: красный~---
+    в~CDE, жёлтый~--- расширенный периметр, зелёный~--- вне~CDE.}
+  \end{minipage}\par
+  \endgroup
+\end{table}
 
 Сетевая и~локальная токенизация различаются охватом. Локальный токен действует
 внутри сервиса, который его выпустил и~может детокенизировать.
 \highlight{Сетевой токен выпускает и~распознаёт сама карточная сеть, поэтому он
   проходит весь путь от~ТСП до~эмитента: компрометация любого узла маршрута
-раскрывает токен, а~не~PAN}. Матрица на~рис.~\ref{fig:token-risk-before-after}
+раскрывает токен, а~не~PAN}. Матрица в~табл.~\ref{tab:token-risk-before-after}
 показывает узлы по~периметру~PCI: \textit{в~CDE}~--- полный набор требований
 PCI~DSS, \textit{расширенный~CDE}~--- узел содержит vault детокенизации,
 \textit{вне~CDE}~--- узел видит только токен или DPAN. Vault в~сетевой
@@ -724,7 +757,7 @@ BIN и~хвост в~суррогате нужны для~маршрутизац
 
 \begin{figure}[t]
   \centering
-  \includefiguresvg[width=\linewidth]{assets/figures/ch09-tokenization/token-detokenization-flow}
+  \includefigure{assets/figures/ch09-tokenization/token-detokenization-flow}
   \caption{Токенизированная авторизация: подмена DPAN~$\leftrightarrow$~FPAN на~стороне TSP.}\label{fig:token-detokenization-flow}
 \end{figure}
 
