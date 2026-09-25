@@ -169,9 +169,10 @@ Banking UK PISP сначала создаёт ресурс \texttt{payment-conse
 
 Жизненный цикл \texttt{domestic-payment-consent}
 (рис.~\ref{fig:consent-lifecycle}) уточняет правила перехода. После
-\texttt{Authorised} переход \texttt{Revoke} закрыт (PSD2 Art.~80);
+\texttt{Authorised} переход \texttt{Revoke} закрыт (PSD2 Art.~80), тогда как
+\texttt{account-access-consent} AISP удаляет и~после авторизации;
 \texttt{DELETE} через ASPSP~--- отдельная операция до~\texttt{Authorised}
-с~иным смыслом, чем \texttt{Revoked}~\cite{ob-uk-pi-3110}.
+с~иным смыслом, чем \texttt{Revoked}~\cite{ob-uk-pi-3110,openbanking-uk-account-access-consents}.
 
 \begin{figure}[htbp]
   \centering
@@ -391,9 +392,9 @@ Connect}~\cite{tc26-mr-26-2-002-2024}. Подпись JWT и~проверка п
 
 Отдельный стандарт СТО~БР ФАПИ.ПАОК-1.0-2024, введённый приказом
 от~07.10.2024~№~ОД-1616 \enquote{О~введении ФАПИ.ПАОК}, описывает профиль
-аутентификации, инициированной
-клиентом по~отдельному каналу (Client Initiated Backchannel Authentication,
-CIBA)~\cite{fapi-paok-2024}. Сценарий нужен там, где у~устройства, инициирующего
+аутентификации по~отдельному каналу, инициированной клиентом OpenID Connect,
+то~есть приложением, запрашивающим доступ от~имени пользователя (Client
+Initiated Backchannel Authentication, CIBA)~\cite{fapi-paok-2024}. Сценарий нужен там, где у~устройства, инициирующего
 доступ, ограничены браузер или экран подтверждения: оплата с~умной
 колонки, подтверждение через мобильное банковское приложение в~ответ
 на~инициацию из~контактного центра, аутентификация на~устройстве с~отдельным
@@ -447,7 +448,7 @@ API инициации платежа. Тот~же принцип защищае
 
 Каждый шаг процедуры даёт отдельный код ответа. Ошибка проверки подписи
 \textit{request object} отклоняет запрос до~показа экрана согласия. Истекшее
-или отозванное согласие отзывает \texttt{access\_token}; банк возвращает статус,
+или отозванное согласие лишает силы выданный по~нему \texttt{access\_token}; банк возвращает статус,
 отличный от~\enquote{недостаточно средств} или \enquote{лимит превышен}.
 Сертификат клиента в~mTLS, отличный от~привязки токена, запускает новый процесс
 с~PAR. Продукт, который объединяет все эти отказы в~одну колонку
@@ -458,8 +459,9 @@ API инициации платежа. Тот~же принцип защищае
 зафиксирован в~разделе~9.3.3 \texttt{ConsentStatus} стандарта, введённого
 приказом от~19.12.2025~№~ОД-2895 \enquote{О~введении стандарта согласия
 на~доступ к~счетам юрлиц}~\cite{cbr-od-2895}. \texttt{DELETE}-операция доступна
-как до~авторизации пользователем, так и~после~неё~--- это отличает российскую
-модель от~Open Banking UK, где после \texttt{Authorised} \texttt{Revoke} закрыт.
+как до~авторизации пользователем, так и~после~неё, как у~\texttt{account-access-consent}
+в~Open Banking UK; закрытый после \texttt{Authorised} переход \texttt{Revoke}
+относится там только к~платёжному согласию.
 
 \begin{figure}[htbp]
   \centering
@@ -588,13 +590,13 @@ Berlin Group NextGenPSD2 и~базовым FAPI~2.0.
     \headrow
     \thd{Параметр} & \thd{ФАПИ.СЕК (РФ)} & \thd{Open Banking UK} & \thd{Berlin Group (ЕС)} & \thd{FAPI~2.0 (OIDF)} \\
     \midrule
-    Базовый профиль & FAPI~1.0 Advanced + ГОСТ-надстройка & FAPI~1.0 Advanced & собственный профиль на~FAPI и~OAuth~2.0 & FAPI~2.0 \\
+    Базовый профиль & FAPI~1.0 Advanced + ГОСТ-надстройка & FAPI~1.0 Advanced & собственный профиль NextGenPSD2, OAuth~2.0~--- один из~вариантов SCA & FAPI~2.0 \\
     \rowsep
     Криптография & ГОСТ~Р~34.10/\allowbreak 34.11/\allowbreak 34.12 в~JWS, JWE, JWK & RSA, ECDSA, SHA-2 & RSA, ECDSA, SHA-2 & задаётся реализующим профилем \\
     \rowsep
     Транспорт & ГОСТ~TLS & TLS~1.2+ & TLS~1.2+ & TLS~1.2+ \\
     \rowsep
-    Подпись запроса & request object на~ГОСТ, СКЗИ обязательно & signed JWT, mTLS & signed JWT, mTLS либо QSeal & PAR обязательно \\
+    Подпись запроса & request object на~ГОСТ, СКЗИ обязательно & signed JWT, mTLS & signed JWT, mTLS либо QSeal & не~требуется: целостность запроса даёт PAR, подпись~--- в~профиле Message Signing \\
     \rowsep
     Лицензируемые роли & договор с~банком + соответствие стандарту & AISP, PISP по~PSD2 & AISP, PISP, CBPII по~PSD2 & за~пределами профиля \\
     \rowsep
