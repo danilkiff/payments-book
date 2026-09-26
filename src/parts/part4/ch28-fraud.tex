@@ -161,7 +161,7 @@ Server, ACS)~\cite{emvco-3ds-tech-features}.
 поэтому доля верных ответов (\textit{accuracy}) ничего не~говорит о~качестве
 модели антифрода: модель, отвечающая \enquote{легитимно} на~каждый запрос,
 формально выглядит почти идеальной, но бесполезна. Каждое решение модели
-попадает в~одну из~четырёх клеток матрицы несоответствий (\textit{confusion
+попадает в~одну из~клеток матрицы несоответствий (\textit{confusion
 matrix}): \textbf{TP} (\textit{true positives}~--- мошеннические операции,
 которые модель верно заблокировала), \textbf{FP} (\textit{false positives}~---
 честные операции, ошибочно заблокированные), \textbf{TN} (\textit{true
@@ -183,7 +183,7 @@ negatives}~--- честные операции, верно пропущенны�
   F_1 = 2 \cdot \frac{\mathrm{precision} \cdot \mathrm{recall}}
   {\mathrm{precision} + \mathrm{recall}}.
 \]
-Зависимость от~порога модели показывают две кривые: PR (\textit{precision}
+Зависимость от~порога модели показывают кривые: PR (\textit{precision}
 от~\textit{recall}) с~PR-AUC и~\textbf{ROC} (Receiver Operating
 Characteristic~--- TPR от~FPR) с~ROC-AUC от~0,5 у~случайного классификатора
 до~1
@@ -376,7 +376,7 @@ drift} заметен в~реальном времени, контроль на�
 \section{Стоимость ложноположительных срабатываний}\label{sec:fraud-false-positive}
 \enlargethispage{5\baselineskip}
 
-Настройка антифрода~--- выбор между двумя ошибками матрицы несоответствий:
+Настройка антифрода~--- выбор между ошибками матрицы несоответствий:
 ложноположительным срабатыванием
 (\textit{false positive}, FP~--- числитель FPR) и~ложноотрицательным
 (\textit{false negative}, FN); система, не~пропускающая ни~одной атаки,
