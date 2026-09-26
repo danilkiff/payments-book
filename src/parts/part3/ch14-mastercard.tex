@@ -18,10 +18,10 @@ interchange.
   операционный и~платёжный клиринговый центр НСПК
   (ОПКЦ~НСПК), минуя Banknet~--- глобальную сеть
   Mastercard для~авторизации, клиринга и~расчёта; сроки действия
-  продлеваются российскими банками-эмитентами~\cite{cbr-russia-cards-normal-2022}.
+  продлевают российские банки-эмитенты~\cite{cbr-russia-cards-normal-2022}.
   За~пределами РФ эти карты не~принимаются. Унаследованная
   инфраструктура эквайеров в~России построена по~логике Mastercard,
-  поэтому архитектура и~правила сети остаются рабочим знанием;
+  поэтому знание архитектуры и~правил сети сохраняет практическую ценность;
   российские изменения после 2022~года разбираются
   в~гл.~\ref{ch:mir}.
 
@@ -64,14 +64,14 @@ Interface Processor (MIP), обеспечивающий шифрование к�
 \section{Dual message: IPM против TC33}\label{sec:mc-dmsa}
 
 Модель \textit{dual message} разобрана в~разделе~\ref{sec:tx-dual-single}.
-\highlight{В~Mastercard авторизационный диалог строится вокруг
+\highlight{В~Mastercard авторизационный диалог ведут сообщения
   MTI~0100/MTI~0110 (MTI~--- message type identifier, четырёхзначный код типа
   сообщения ISO~8583); на~клиринговом этапе эквайер формирует для~GCMS
   интегрированные продуктовые сообщения IPM~1240 (Integrated Product Messages).
   TC33 (формат пакетного клирингового файла Visa BASE~II), как у~Visa, здесь
 не~применяется~\mbox{\cite{mc-chargeback-guide}}}. IPM-файл собирает эквайер
 на~основании авторизованных операций, принятых к~финансовому представлению.
-Authorization Platform IPM не~генерирует: она поставляет авторизационные
+Authorization Platform IPM не~генерирует: она формирует авторизационные
 ответы, на~которые опирается клиринг.
 
 Наборы полей в~авторизации и~в~клиринге различаются. IPM построен
@@ -158,7 +158,7 @@ SAM. IPM~1442 \textit{first chargeback}~--- не~ответ на~1240, а~сам
 (часть)~\cite{mc-chargeback-guide,mc-tpr}. Из~элементов данных IPM для~разбора
 важнее других DE48~--- дополнительные данные в~виде PDS, включая данные
 токена, идентификатор типа транзакции и~дополнительные данные ТСП,
-и~DE63 Transaction Life Cycle ID, чей Trace ID связывает клиринговую
+и~DE63 Transaction Life Cycle ID, Trace ID которого связывает клиринговую
 запись с~авторизацией~\cite{mc-gcms-rm-2021}. Структуры авторизации и~клиринга различаются,
 поэтому клиринговому разбору нужен собственный парсер.
 
@@ -247,7 +247,7 @@ Mastercard публично не~фиксирует единый профиль 
 Эти реализации надстраиваются над~базовым EMV: M/Chip даёт чиповый профиль, MDES~---
 сетевые токены, а~поверх токенов работают цифровые профили~--- облачный
 Mastercard Cloud-Based Payments (MCBP) и~удалённый DSRP
-(рис.~\ref{fig:mchip-dsrp-layers}). Схема покрывает чиповый профиль
+(рис.~\ref{fig:mchip-dsrp-layers}). Схема охватывает чиповый профиль
 и~токенизацию; CNP-сценарии Mastercard шире: аутентификация держателя
 при~онлайн-оплате (3-D~Secure~2, см.~гл.~\ref{ch:3ds}) и~Click to~Pay
 поверх EMVCo~SRC (Secure Remote Commerce~--- стандарт EMVCo для~упрощённого
@@ -329,7 +329,7 @@ real-time}) Mastercard Send зачисляет выплаты почти в~ре
 
 \section{Interchange Mastercard}\label{sec:mc-interchange}
 
-Каркас interchange (регион $\to$ продукт $\to$ MCC $\to$ канал $\to$
+Схема квалификации interchange (регион $\to$ продукт $\to$ MCC $\to$ канал $\to$
 квалифицирующие условия $\to$ downgrade), MSC и~тарифные модели
 для~ТСП разобраны в~разделе~\ref{sec:ecosystem-interchange} и~применимы
 к~Mastercard без изменений~\cite{mc-interchange-us}. Своё у~Mastercard здесь
@@ -339,8 +339,8 @@ real-time}) Mastercard Send зачисляет выплаты почти в~ре
 Признаки, по~которым сеть квалифицирует транзакцию, Mastercard объединяет под
 именем \emph{Data Quality}: ECI (electronic
 commerce indicator)/CVV2 (Card Verification Value~2)/ AVS (Address Verification
-Service) для~CNP (см.~гл.~\ref{ch:3ds}), тайминг авторизации и~клиринга, POS
-Entry Mode и~CVM-исход (cardholder verification method) для~card-present,
+Service) для~CNP (см.~гл.~\ref{ch:3ds}), сроки авторизации и~клиринга, POS
+Entry Mode и~результат CVM (cardholder verification method) для~card-present,
 признаки card-on-file (сохранённые у~ТСП реквизиты для повторных списаний;
 см.~гл.~\ref{ch:tokenization}) и~сетевого токена. Нарушение обязательного
 для~программы признака смещает транзакцию в~менее выгодную
@@ -359,10 +359,8 @@ Downgrade возникает, когда транзакции не~хватае�
 и~каких признаков не~хватило~\cite{mc-interchange-us}.
 
 С~1~апреля 2026~года Mastercard взимает с~эквайеров в~США сбор Fallback
-Avoidance~--- 0{,}10\,\% от~суммы за~авторизованный \textit{fallback}
-на~магнитную полосу, когда карту с~чипом принимает чиповый терминал, по~Mastercard
-core (основной кредитно-дебетовый бренд) и~Maestro (исторический дебетовый
-бренд Mastercard)~\cite{windriver-mc-fallback-2026,fiserv-card-brand-updates-2026}.
+Avoidance по~картам Mastercard core (основной кредитно-дебетовый бренд) и~Maestro (исторический дебетовый бренд Mastercard)~--- 0{,}10\,\% от~суммы за~авторизованный \textit{fallback}
+на~магнитную полосу, когда карту с~чипом принимает чиповый терминал~\cite{windriver-mc-fallback-2026,fiserv-card-brand-updates-2026}.
 
 \begin{figure}[tbp]
   \centering
