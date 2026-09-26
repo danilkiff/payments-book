@@ -12,8 +12,8 @@
 <text x="363.2" y="9" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="bold" fill="#5C647A">бит 1</text>
 <text x="363.2" y="17" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">LSB</text>
 <text x="60.1" y="32" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">1: AC + аутент.</text>
-<rect x="66.1" y="20.0" width="39.6" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
-<text x="85.9" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">AC 2-й</text>
+<rect x="66.1" y="20.0" width="39.6" height="18" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
+<text x="85.9" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">AC 2-й</text>
 <rect x="105.7" y="20.0" width="39.6" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="145.3" y="20.0" width="39.6" height="18" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
 <text x="165.1" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">AC 1-й</text>
@@ -69,8 +69,8 @@
 <text x="363.2" y="86" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">!онл</text>
 <text x="60.1" y="114" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#5C647A">Пример:</text>
 <rect x="67.1" y="100.0" width="77.2" height="22" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
-<text x="105.7" y="109" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">0x28</text>
-<text x="105.7" y="118" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">0010 1000</text>
+<text x="105.7" y="109" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">0xA8</text>
+<text x="105.7" y="118" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">1010 1000</text>
 <rect x="146.3" y="100.0" width="77.2" height="22" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
 <text x="185.0" y="109" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">0x38</text>
 <text x="185.0" y="118" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">0011 1000</text>

@@ -15,10 +15,10 @@
 <rect x="70.2" y="20.0" width="39.1" height="18" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
 <text x="89.8" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">тип</text>
 <rect x="109.3" y="20.0" width="39.1" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
-<rect x="148.4" y="20.0" width="39.1" height="18" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
-<text x="168.0" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">CDA</text>
-<rect x="187.5" y="20.0" width="39.1" height="18" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
-<rect x="226.6" y="20.0" width="39.1" height="18" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="148.4" y="20.0" width="39.1" height="18" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
+<rect x="187.5" y="20.0" width="39.1" height="18" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
+<text x="207.1" y="32" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">CDA</text>
+<rect x="226.6" y="20.0" width="39.1" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="265.7" y="20.0" width="39.1" height="18" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="304.8" y="20.0" width="39.1" height="18" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="343.9" y="20.0" width="39.1" height="18" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
@@ -36,7 +36,7 @@
 <rect x="343.9" y="38.0" width="39.1" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
 <text x="64.2" y="78" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#5C647A">Пример:</text>
 <rect x="71.2" y="64.0" width="154.4" height="22" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
-<text x="148.4" y="73" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">0xA0</text>
+<text x="148.4" y="73" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">0x90</text>
 <text x="148.4" y="82" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">запрос ARQC + CDA</text>
 <rect x="227.6" y="64.0" width="154.4" height="22" fill="#B8821C" fill-opacity="0.18" stroke="#5C647A" stroke-width="0.5"/>
 <text x="304.8" y="73" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">0x80</text>
