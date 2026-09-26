@@ -30,10 +30,13 @@ jobs:
           pip install --quiet cffconvert
           cffconvert --validate -i CITATION.cff
 
-      - name: Install Inkscape for SVG→PDF
+      # Inter и Pillow нужны lint_svg.py для замера ширины текста: без них
+      # линтер берёт грубую оценку и находит ложные вылеты за холст.
+      - name: Install Inkscape, Inter and Pillow for SVG→PDF
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q inkscape
+          sudo apt-get install -y -q inkscape fonts-inter
+          pip install --quiet pillow
 
       - name: SVG → figure PDFs
         run: make svg

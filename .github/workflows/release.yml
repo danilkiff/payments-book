@@ -86,10 +86,11 @@ jobs:
       - name: Prepare build dir
         run: mkdir -p build
 
-      - name: Install Inkscape for SVG→PDF
+      # См. комментарий к аналогичному шагу в ci.yml.
+      - name: Install Inkscape, Inter and Pillow for SVG→PDF
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q inkscape
+          sudo apt-get install -y -q inkscape fonts-inter python3-pil
 
       - name: SVG → figure PDFs
         run: make svg
