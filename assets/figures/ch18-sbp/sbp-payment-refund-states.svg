@@ -11,7 +11,7 @@
 <!-- Машина состояний платежа -->
 <g>
   <rect x="2" y="2" width="381" height="94" rx="3" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
-  <text x="8" y="14" font-size="9" font-weight="bold">Машина состояний платежа (operationId)</text>
+  <text x="8" y="14" font-size="9" font-weight="bold">Машина состояний платежа (trxId)</text>
 </g>
 <g>
   <rect x="8" y="22" width="80" height="26" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
@@ -66,7 +66,7 @@
 <g>
   <rect x="2" y="104" width="272" height="60" rx="3" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5" stroke-dasharray="3,2"/>
   <text x="8" y="116" font-size="9" font-weight="bold">Машина состояний возврата</text>
-  <text x="8" y="126" font-size="7" fill="#5C647A">тот же operationId</text>
+  <text x="8" y="126" font-size="7" fill="#5C647A">тот же trxId</text>
 </g>
 <g>
   <rect x="146" y="132" width="56" height="26" rx="3" fill="#B8821C" fill-opacity="0.18" stroke="#B8821C" stroke-width="0.75"/>
