@@ -31,7 +31,7 @@ EVENTS = [
   Msg("pisp", "aspsp", "POST /domestic-payments", strong=True,
       note="access_token → PaymentId"),
   Msg("aspsp", "pisp", "опрос статуса (асинхронно)", reply=True,
-      note="Pending → AcceptedSettlement → Completed"),
+      note="Pending → AcceptedSettlementCompleted / Rejected"),
   Msg("pisp", "psu", "подтверждение заказа", tone="Good"),
 ]
 

@@ -48,8 +48,8 @@
 <line x1="319.5" y1="228" x2="193.5" y2="228" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
 <rect x="198.5" y="217.5" width="115.0" height="9" fill="#ffffff"/>
 <text x="256.0" y="225.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">опрос статуса (асинхронно)</text>
-<rect x="178.1" y="229.5" width="155.8" height="8" fill="#ffffff"/>
-<text x="256.0" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">Pending → AcceptedSettlement → Completed</text>
+<rect x="165.8" y="229.5" width="180.4" height="8" fill="#ffffff"/>
+<text x="256.0" y="236.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#5C647A">Pending → AcceptedSettlementCompleted / Rejected</text>
 <line x1="192.5" y1="253" x2="66.5" y2="253" stroke="#2F8B67" stroke-width="1" marker-end="url(#arr-Good)"/>
 <rect x="82.0" y="242.5" width="94.1" height="9" fill="#ffffff"/>
 <text x="129.0" y="250.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">подтверждение заказа</text>
