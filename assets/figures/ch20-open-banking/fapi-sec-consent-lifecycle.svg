@@ -42,10 +42,6 @@
   <line x1="70" y1="42" x2="70" y2="99" stroke="#C15462" stroke-width="1" marker-end="url(#arr-Bad)"/>
   <text x="75" y="74" font-size="7" fill="#5C647A">Пользователь отклоняет</text>
 </g>
-<g>
-  <line x1="110" y1="42" x2="249" y2="106" stroke="#B8821C" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Warn)"/>
-  <text x="190" y="72" font-size="7" fill="#5C647A">DELETE</text>
-</g>
 
 <!-- Переход из Authorised -->
 <g>
