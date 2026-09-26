@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 184" width="385pt" height="184pt">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 176" width="385pt" height="176pt">
 <defs>
   <marker id="arr-Muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5C647A"/></marker>
   <marker id="arr-Good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2F8B67"/></marker>
@@ -51,7 +51,7 @@
 <g>
   <rect x="72" y="62" width="220" height="28" rx="3" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.75"/>
   <text x="182" y="73.99" text-anchor="middle" font-size="8" font-weight="bold">Подбор программы interchange</text>
-  <text x="182" y="82.71" text-anchor="middle" font-size="7" fill="#5C647A">region x product x MCC x channel x signals x token</text>
+  <text x="182" y="82.71" text-anchor="middle" font-size="7" fill="#5C647A">регион x продукт x MCC x ввод POS x качество данных</text>
 </g>
 <g>
   <line x1="122" y1="90.5" x2="89" y2="117.5" stroke="#2F8B67" stroke-width="1" marker-end="url(#arr-Good)"/>
@@ -63,21 +63,21 @@
   <text x="255" y="109" font-size="7" fill="#5C647A">ниже порога</text>
 </g>
 
-<!-- Qualified Rate -->
+<!-- Целевая программа -->
 <g>
   <rect x="2" y="118" width="150" height="28" rx="3" fill="#2F8B67" fill-opacity="0.15" stroke="#2F8B67" stroke-width="0.75"/>
-  <text x="77" y="134.24" text-anchor="middle" font-size="8" font-weight="bold">Qualified Rate</text>
+  <text x="77" y="129.99" text-anchor="middle" font-size="8" font-weight="bold">Целевая программа</text>
+  <text x="77" y="138.71" text-anchor="middle" font-size="7" fill="#5C647A">Merit III Base: 1,65 % + 0,10</text>
 </g>
 
 <!-- Downgrade -->
 <g>
-  <rect x="170" y="118" width="213" height="64" rx="3" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="0.75"/>
-  <text x="276.5" y="129" text-anchor="middle" font-size="8" font-weight="bold">Downgrade (ступенчатая категория)</text>
+  <rect x="170" y="118" width="213" height="56" rx="3" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="0.75"/>
+  <text x="276.5" y="129" text-anchor="middle" font-size="8" font-weight="bold">Downgrade (программа дороже)</text>
   <line x1="176" y1="133.5" x2="377" y2="133.5" stroke="#C15462" stroke-width="0.5" stroke-dasharray="3,2"/>
-  <text x="176" y="143" font-size="8">— Mid-Qualified</text>
-  <text x="176" y="153" font-size="8">— EIRF (Electronic Interchange Reimbursement Fee)</text>
-  <text x="176" y="163" font-size="8">— Standard Rate</text>
-  <text x="176" y="173" font-size="8">— Non-Qualified</text>
+  <text x="176" y="143" font-size="8">— Merit I, Key-entered: 1,95 % + 0,10</text>
+  <text x="176" y="153" font-size="8">— Standard: 3,15 % + 0,10</text>
+  <text x="176" y="166" font-size="7" fill="#5C647A">Consumer Credit Core, США, 2025–2026, USD</text>
 </g>
 
 </g>
