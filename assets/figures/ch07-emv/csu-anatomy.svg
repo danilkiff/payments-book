@@ -47,14 +47,13 @@
 <rect x="260.2" y="56.0" width="40.9" height="18" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="301.1" y="56.0" width="40.9" height="18" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="342.1" y="56.0" width="40.9" height="18" fill="#F5F7FD" stroke="#5C647A" stroke-width="0.5"/>
-<text x="49.5" y="86" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">4: профили</text>
+<text x="49.5" y="86" text-anchor="end" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A2030">4: эмитент</text>
 <rect x="55.5" y="74.0" width="40.9" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
-<text x="76.0" y="86" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#1A2030">профиль 1</text>
+<text x="76.0" y="86" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">эмитент</text>
 <rect x="96.5" y="74.0" width="40.9" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="137.4" y="74.0" width="40.9" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="178.3" y="74.0" width="40.9" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="219.3" y="74.0" width="40.9" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
-<text x="239.7" y="86" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="normal" fill="#1A2030">профиль 2</text>
 <rect x="260.2" y="74.0" width="40.9" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="301.1" y="74.0" width="40.9" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
 <rect x="342.1" y="74.0" width="40.9" height="18" fill="#E8ECF7" stroke="#5C647A" stroke-width="0.5"/>
