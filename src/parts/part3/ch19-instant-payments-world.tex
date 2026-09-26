@@ -33,8 +33,7 @@ RTGS (real-time gross settlement, валовой расчёт в~реально�
 Pix отправляется не~по~номеру счёта напрямую, а~по~ключу: номеру мобильного
 телефона, адресу электронной почты, CPF (идентификационный номер физлица), CNPJ
 (идентификатор юрлица) или случайному ключу (EVP), который BCB выдаёт как UUID
-по~RFC~4122 (в~бразильских банковских интерфейсах его обычно показывают как
-строку из~32~шестнадцатеричных символов). Директория DICT (Diretório de
+по~RFC~4122. Директория DICT (Diretório de
   Identificadores de Contas
 Transacionais) под управлением BCB отображает ключ в~реквизиты счёта
 и~участника. Перед отправкой банк плательщика обращается к~DICT, получает
@@ -231,7 +230,7 @@ Worldwide Interbank Financial Telecommunication)~\cite{fednow-tech-overview}.
 мастер-счетами переводами управления ликвидностью (\textit{liquidity management
 transfer}, LMT) внутри самого FedNow~\cite{fednow-liquidity-guide}.
 
-\subsection*{Пробелы FedNow: QR, возвраты, сроки}\label{subsec:fednow-gaps}
+\subsection*{Инициация и~антифрод}\label{subsec:fednow-gaps}
 
 Своего QR-кода у~FedNow нет: в~правилах схемы нет ни ссылки для оплаты, ни
 форматов QR. Запрос на~оплату схема определяет как необязательную функцию:
