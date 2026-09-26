@@ -22,7 +22,7 @@ PARTIES = [
 
 FRICTIONLESS = [
   Msg("hold", "req", "старт оплаты"),
-  Msg("acs", "hold", "3DS Method URL", reply=True),
+  Msg("hold", "acs", "3DS Method URL (скрытый iframe)"),
   Msg("req", "srv", "authReq"),
   Msg("srv", "ds", "AReq"),
   Msg("ds", "acs", "AReq"),
@@ -33,8 +33,8 @@ FRICTIONLESS = [
 
 CHALLENGE = [
   Msg("acs", "req", "ARes (transStatus=C, Challenge Required)", reply=True),
-  Msg("acs", "hold", "CReq", note="UX: OTP / биометрия (вызов)"),
-  Msg("hold", "acs", "CRes"),
+  Msg("hold", "acs", "CReq", note="UX: OTP / биометрия (вызов)"),
+  Msg("acs", "hold", "CRes", reply=True),
   Msg("acs", "srv", "RReq"),
   Msg("srv", "acs", "RRes", reply=True),
   Msg("req", "srv", "авторизация"),

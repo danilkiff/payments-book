@@ -19,9 +19,9 @@
 <line x1="40.1" y1="47" x2="115.3" y2="47" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
 <rect x="50.2" y="36.5" width="56.0" height="9" fill="#ffffff"/>
 <text x="78.2" y="44.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">старт оплаты</text>
-<line x1="344.9" y1="64" x2="41.1" y2="64" stroke="#5C647A" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr-Muted)"/>
-<rect x="158.0" y="53.5" width="69.0" height="9" fill="#ffffff"/>
-<text x="192.5" y="61.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">3DS Method URL</text>
+<line x1="40.1" y1="64" x2="343.9" y2="64" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
+<rect x="123.8" y="53.5" width="137.5" height="9" fill="#ffffff"/>
+<text x="192.5" y="61.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">3DS Method URL (скрытый iframe)</text>
 <line x1="116.3" y1="81" x2="191.5" y2="81" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
 <rect x="136.8" y="70.5" width="35.2" height="9" fill="#ffffff"/>
 <text x="154.4" y="78.0" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="normal" fill="#1A2030">authReq</text>
