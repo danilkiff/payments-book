@@ -66,9 +66,9 @@
   <text x="50.36" y="53" font-size="8">capture</text>
 </g>
 <g>
-  <circle cx="9" cy="72" r="6" fill="#C15462" fill-opacity="0.15" stroke="#C15462" stroke-width="0.75"/>
+  <circle cx="9" cy="72" r="6" fill="#5C647A" fill-opacity="0.15" stroke="#5C647A" stroke-width="0.75"/>
   <text x="9" y="74.5" text-anchor="middle" font-size="7" font-weight="bold">2</text>
-  <line x1="47.36" y1="72" x2="255.35" y2="72" stroke="#C15462" stroke-width="1" marker-end="url(#arr-Bad)"/>
+  <line x1="47.36" y1="72" x2="255.35" y2="72" stroke="#5C647A" stroke-width="1" marker-end="url(#arr-Muted)"/>
   <rect x="49.4" y="63" width="18.0" height="8" fill="#ffffff"/>
   <text x="50.36" y="69" font-size="8">void</text>
 </g>
@@ -136,7 +136,7 @@
   <line x1="8" y1="236" x2="26" y2="236" stroke="#2F8B67" stroke-width="1" marker-end="url(#arr-Good)"/>
   <text x="32" y="238.5" font-size="7" fill="#5C647A">подтверждение (capture)</text>
   <line x1="134" y1="236" x2="152" y2="236" stroke="#2F8B67" stroke-width="1" marker-end="url(#arr-Good)"/>
-  <text x="158" y="238.5" font-size="7" fill="#5C647A">признание / release</text>
+  <text x="158" y="238.5" font-size="7" fill="#5C647A">расчёт (T+N)</text>
   <line x1="260" y1="236" x2="278" y2="236" stroke="#B8821C" stroke-width="1" marker-end="url(#arr-Warn)"/>
   <text x="284" y="238.5" font-size="7" fill="#5C647A">hold / release (резерв)</text>
   <line x1="8" y1="248" x2="26" y2="248" stroke="#C15462" stroke-width="1" marker-end="url(#arr-Bad)"/>
