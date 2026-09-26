@@ -143,3 +143,14 @@ jobs:
             "build/payments-book-${tag}.pdf" \
             --title "$tag" \
             --generate-notes
+
+  # ── Zenodo ──
+  # Отдельный workflow: при сбое Zenodo перезапускается вручную по тегу
+  # без повторного создания GitHub Release.
+  zenodo:
+    name: Publish PDF to Zenodo
+    needs: [release]
+    uses: ./.github/workflows/zenodo.yml
+    with:
+      tag: ${{ github.ref_name }}
+    secrets: inherit

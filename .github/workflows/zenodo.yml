@@ -1,0 +1,36 @@
+name: Zenodo
+
+on:
+  workflow_call:
+    inputs:
+      tag:
+        type: string
+        required: true
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Тег релиза, например v2026.09.26"
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    name: Publish PDF to Zenodo
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Download PDF from GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download "${{ inputs.tag }}" -p '*.pdf' -D build
+
+      # Токен Zenodo со scope deposit:write и deposit:actions.
+      - name: Publish new Zenodo version
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+        run: python3 scripts/zenodo-publish.py "build/payments-book-${{ inputs.tag }}.pdf" "${{ inputs.tag }}"
