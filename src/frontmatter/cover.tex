@@ -111,8 +111,10 @@
     \node[anchor=center,text=CoverInk!70,font=\sffamily] at (8.8,23.7) {\fontsize{9}{9}\selectfont O\kern0.22em P\kern0.22em E\kern0.22em N\kern0.22em \kern0.22em S\kern0.22em O\kern0.22em U\kern0.22em R\kern0.22em C\kern0.22em E};
     % титул во всю ширину полосы (сплошной чернильный синий)
     \node[anchor=center] at (8.8,7.3) {\resizebox{15.8cm}{!}{\sffamily\bfseries\color{CoverInk}ИНЖЕНЕРИЯ ПЛАТЕЖЕЙ}};
+    % автор строкой сразу под титулом: так его находит парсер Google Scholar
+    \node[anchor=center,text=CoverInk,font=\sffamily\bfseries] at (8.8,5.85) {\fontsize{12.5}{12.5}\selectfont Oleg Y. Danilkiff};
     % подзаголовок
-    \node[anchor=center,text=CoverInk!82,font=\sffamily,align=center,text width=15cm] at (8.8,5.6) {\fontsize{11}{15}\selectfont Открытая книга о карточных платежах, СБП и платёжной инфраструктуре};
+    \node[anchor=center,text=CoverInk!82,font=\sffamily,align=center,text width=15cm] at (8.8,4.75) {\fontsize{11}{15}\selectfont Открытая книга о карточных платежах, СБП и платёжной инфраструктуре};
     % год
     \node[anchor=center,text=CoverInk!70,font=\sffamily\bfseries] at (8.8,1.45) {\fontsize{11}{11}\selectfont 2026};
   \end{tikzpicture}%
