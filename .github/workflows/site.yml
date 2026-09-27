@@ -1,0 +1,71 @@
+name: Site
+
+on:
+  workflow_call:
+    inputs:
+      tag:
+        type: string
+        required: true
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Тег релиза, например v2026.09.26"
+        type: string
+        required: true
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy payments.pq3.ru
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Download PDF from GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download "${{ inputs.tag }}" -p '*.pdf' -D build
+
+      - name: Install poppler-utils
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q poppler-utils
+
+      - name: Build site
+        run: |
+          python3 scripts/gen-site.py "build/payments-book-${{ inputs.tag }}.pdf" "${{ inputs.tag }}" build/site
+          tar czf out.tar.gz -C build/site .
+
+      - name: Copy site to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          source: "out.tar.gz"
+          target: "/var/www/payments.pq3.ru/releases/${{ inputs.tag }}"
+
+      # Симлинк html переключается одной операцией: Caddy не видит
+      # наполовину распакованный релиз. Хранятся два последних релиза.
+      - name: Atomic switch & cleanup
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            set -euo pipefail
+            rel="/var/www/payments.pq3.ru/releases/${{ inputs.tag }}"
+            cd "$rel"
+            tar xzf out.tar.gz
+            rm -f out.tar.gz
+            ln -sfn "$rel" /var/www/payments.pq3.ru/html
+            cd /var/www/payments.pq3.ru/releases
+            ls -1dt */ | tail -n +3 | xargs -r rm -rf

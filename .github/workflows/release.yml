@@ -154,3 +154,12 @@ jobs:
     with:
       tag: ${{ github.ref_name }}
     secrets: inherit
+
+  # ── payments.pq3.ru ──
+  site:
+    name: Deploy site
+    needs: [release]
+    uses: ./.github/workflows/site.yml
+    with:
+      tag: ${{ github.ref_name }}
+    secrets: inherit

@@ -1,4 +1,4 @@
-.PHONY: help init pdf svg figlint clean fmt check log
+.PHONY: help init pdf svg figlint site clean fmt check log
 .DEFAULT_GOAL := help
 
 help:  ## показать эту справку
@@ -17,6 +17,9 @@ svg: figlint  ## .svg → .pdf через Inkscape (инкрементально
 pdf: svg  ## собрать книгу (svg → gitversion → latexmk)
 	@scripts/gen-gitversion.sh
 	latexmk payments-book.tex
+
+site:  ## сайт payments.pq3.ru в build/site из build/payments-book.pdf (нужен pdftoppm)
+	python3 scripts/gen-site.py build/payments-book.pdf $$(git describe --tags --abbrev=0) build/site
 
 clean:  ## очистить build/ и удалить сгенерированные figure PDF
 	latexmk -C payments-book.tex

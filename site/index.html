@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>$title - $author</title>
+    <meta name="description" content="$abstract_ru" />
+    <meta name="keywords" content="$keywords" />
+    <link rel="canonical" href="$url" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <meta name="citation_title" content="$title" />
+    <meta name="citation_author" content="$citation_author" />
+    <meta name="citation_author_orcid" content="https://orcid.org/$orcid" />
+    <meta name="citation_publication_date" content="$citation_date" />
+    <meta name="citation_language" content="ru" />
+    <meta name="citation_doi" content="$doi" />
+    <meta name="citation_keywords" content="$keywords" />
+    <meta name="citation_abstract" content="$abstract_ru" />
+    <meta name="citation_abstract_html_url" content="$url" />
+    <meta name="citation_pdf_url" content="$url$pdf" />
+
+    <meta property="og:type" content="book" />
+    <meta property="og:title" content="$title" />
+    <meta property="og:description" content="$abstract_ru" />
+    <meta property="og:url" content="$url" />
+    <meta property="og:image" content="${url}cover.png" />
+    <meta property="og:locale" content="ru_RU" />
+    <script type="application/ld+json">
+$jsonld
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Mono&display=swap"
+    />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <a class="cover" href="$pdf"><img src="cover.png" width="720" height="1023" alt="Обложка книги $title" /></a>
+        <div class="lead">
+          <p class="kicker">Открытая книга</p>
+          <h1>$title</h1>
+          <p class="author">$author</p>
+          <p class="subtitle">Карточные платежи, СБП и платёжная инфраструктура</p>
+          <p class="actions">
+            <a class="button" href="$pdf" download>Скачать PDF</a>
+            <a class="button ghost" href="https://github.com/danilkiff/payments-book">Исходники</a>
+          </p>
+          <p class="meta">
+            $version от $date_ru · PDF $pdf_mb МБ · CC BY-NC 4.0<br />
+            DOI <a href="https://doi.org/$doi">$doi</a>
+          </p>
+        </div>
+      </header>
+
+      <section>
+        <h2>О книге</h2>
+        <p>$abstract_ru</p>
+        <p lang="en" class="en">$abstract_en</p>
+      </section>
+
+      <section>
+        <h2>Содержание</h2>
+        <ol class="toc">
+$toc
+        </ol>
+      </section>
+
+      <section>
+        <h2>Как цитировать</h2>
+        <p class="cite">$author. $title. $year. DOI: <a href="https://doi.org/$doi">$doi</a></p>
+        <details>
+          <summary>BibTeX</summary>
+          <pre>@book{danilkiff-payments-engineering,
+  author    = {$citation_author},
+  title     = {$title},
+  year      = {$year},
+  publisher = {Zenodo},
+  doi       = {$doi},
+  url       = {https://doi.org/$doi}
+}</pre>
+        </details>
+      </section>
+
+      <footer>
+        <a href="https://github.com/danilkiff/payments-book/issues">Сообщить об ошибке</a> ·
+        <a href="https://github.com/danilkiff/payments-book/releases">Все версии</a> ·
+        <a href="https://zenodo.org/records/$zenodo_recid">Zenodo</a> ·
+        <a href="https://orcid.org/$orcid">ORCID</a>
+      </footer>
+    </main>
+  </body>
+</html>

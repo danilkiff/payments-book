@@ -1,6 +1,6 @@
 #!/bin/sh
 # Проверки проиндексированных файлов:
-#   0. .svg --- scripts/figures/lint_svg.py (канон фигур).
+#   0. .svg в assets/figures --- scripts/figures/lint_svg.py (канон фигур).
 # Для .tex:
 #   1. tex-fmt --check; если файл нужно переформатировать --- форматирует
 #      его в дереве и прерывает коммит (просит пересобрать через git add).
@@ -12,7 +12,7 @@ set -eu
 
 svgs=$(git diff --cached --name-only --diff-filter=ACMR -z \
   | tr '\0' '\n' \
-  | grep -E '\.svg$' || true)
+  | grep -E '^assets/figures/.*\.svg$' || true)
 
 if [ -n "$svgs" ]; then
   if ! echo "$svgs" | xargs python3 scripts/figures/lint_svg.py; then

@@ -3,6 +3,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19884844.svg)](https://doi.org/10.5281/zenodo.19884844)
 
 Исходники книги о карточных платежах, СБП и платёжной инфраструктуре.
+Актуальный PDF - на [payments.pq3.ru](https://payments.pq3.ru/), сайт собирает `make site` и выкладывает релизный workflow.
 Примеры из книги и их проверка (python) - в [samples/](samples/README.md).
 
 ## Нашли ошибку?
