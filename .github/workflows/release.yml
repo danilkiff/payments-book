@@ -150,6 +150,8 @@ jobs:
   zenodo:
     name: Publish PDF to Zenodo
     needs: [release]
+    # Без явного условия job наследует skipped от build-pdf-fallback.
+    if: always() && needs.release.result == 'success'
     uses: ./.github/workflows/zenodo.yml
     with:
       tag: ${{ github.ref_name }}
@@ -159,6 +161,7 @@ jobs:
   site:
     name: Deploy site
     needs: [release]
+    if: always() && needs.release.result == 'success'
     uses: ./.github/workflows/site.yml
     with:
       tag: ${{ github.ref_name }}
