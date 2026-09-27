@@ -64,7 +64,7 @@ def preface():
         (ROOT / "src" / "frontmatter" / "preface.tex").read_text(encoding="utf-8"),
     )
     paras = [p for p in re.split(r"\n\s*\n", text) if p.strip() and "\\addchap" not in p]
-    rule = next(p for p in paras if p.lstrip().startswith("Я держался правила"))
+    rule = next(p for p in paras if p.lstrip().startswith("Я придерживался правила"))
     return [tex_to_html(p) for p in paras[:3] + [rule]]
 
 
