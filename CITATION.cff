@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Если вы цитируете эту книгу, используйте приведённые ниже метаданные."
 title: "Инженерия платежей"
-abstract: "Книга о карточных платежах, СБП и платёжной инфраструктуре: EMV, ISO 8583, 3-D Secure, эквайринг и эмиссия, экономика схем, регуляторика, ПОД/ФТ, санкции, фрод, диспуты. — Payments Engineering: a Russian-language technical reference on card payments, ISO 8583, 3-D Secure, acquiring/issuing, scheme economics, Russia's Faster Payments System (SBP) and the Mir scheme, plus regulation, AML, sanctions, fraud and disputes."
+abstract: "Инженерия платежей: открытый технический справочник на русском языке о механике платёжных систем от поля сообщения до проводки в леджере: EMV и бесконтакт, ISO 8583, 3-D Secure, токенизация, HSM-криптография, эквайринг и эмиссия, interchange, Visa, Mastercard, ПС Мир, UnionPay, СБП, мгновенные платежи, открытый банкинг, цифровой рубль, регуляторика, ПОД/ФТ, санкции, фрод, сверка, диспуты, платёжный шлюз, леджер и процессинговый центр. Payments Engineering: an open Russian-language technical reference on payment systems from message field to ledger entry: EMV, ISO 8583, 3-D Secure, tokenization, HSM cryptography, acquiring and issuing, interchange, Visa, Mastercard, Mir, UnionPay, SBP, instant payments, open banking, the digital ruble, regulation, AML, sanctions, fraud, reconciliation, disputes, payment gateway, ledger and processing center."
 authors:
   - family-names: Danilkiff
     given-names: Oleg Y.
@@ -17,14 +17,32 @@ identifiers:
 keywords:
   - payments
   - cards
-  - SBP
   - EMV
   - ISO 8583
   - 3-D Secure
   - PCI DSS
+  - tokenization
+  - HSM
   - acquiring
   - issuing
+  - interchange
+  - Mir
+  - NSPK
+  - SBP
+  - instant payments
+  - open banking
+  - CBDC
+  - digital ruble
+  - AML
+  - sanctions
+  - fraud
   - fintech
+  - платежи
+  - платёжные системы
+  - эквайринг
+  - эмиссия
+  - СБП
+  - "ПОД/ФТ"
 preferred-citation:
   type: book
   title: "Инженерия платежей"
