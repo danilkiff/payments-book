@@ -22,7 +22,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # .zenodo.json берётся из того же тега, что и PDF.
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.tag }}
 
       - name: Download PDF from GitHub Release
         env:
