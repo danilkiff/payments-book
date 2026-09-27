@@ -69,3 +69,25 @@ jobs:
             ln -sfn "$rel" /var/www/payments.pq3.ru/html
             cd /var/www/payments.pq3.ru/releases
             ls -1dt */ | tail -n +3 | xargs -r rm -rf
+
+      # IndexNow принимают Яндекс и Bing; ключ подтверждается файлом
+      # site/<ключ>.txt в корне сайта. Сбой уведомления не отменяет выкладку.
+      - name: Notify IndexNow
+        continue-on-error: true
+        run: |
+          key=$(ls site | sed -n 's/^\([0-9a-f]\{32\}\)\.txt$/\1/p')
+          code=$(curl -sS -o /dev/null -w "%{http_code}" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data-binary @- https://api.indexnow.org/indexnow <<EOF
+          {
+            "host": "payments.pq3.ru",
+            "key": "$key",
+            "urlList": [
+              "https://payments.pq3.ru/",
+              "https://payments.pq3.ru/payments-book.pdf"
+            ]
+          }
+          EOF
+          )
+          echo "IndexNow: $code"
+          case "$code" in 200|202) ;; *) exit 1 ;; esac
