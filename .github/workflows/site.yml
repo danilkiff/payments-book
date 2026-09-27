@@ -33,10 +33,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh release download "${{ inputs.tag }}" -p '*.pdf' -D build
 
-      - name: Install poppler-utils
+      - name: Install poppler-utils, Pillow and PT Sans
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q poppler-utils
+          sudo apt-get install -y -q poppler-utils python3-pil fonts-paratype
 
       - name: Build site
         run: |

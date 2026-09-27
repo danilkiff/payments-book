@@ -23,9 +23,14 @@
 
     <meta property="og:type" content="book" />
     <meta property="og:title" content="$title" />
-    <meta property="og:description" content="$abstract_ru" />
+    <meta property="og:site_name" content="payments.pq3.ru" />
+    <meta property="og:description" content="$og_description" />
     <meta property="og:url" content="$url" />
-    <meta property="og:image" content="${url}cover.png" />
+    <meta property="og:image" content="${url}og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Обложка книги $title, $author" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:locale" content="ru_RU" />
     <script type="application/ld+json">
 $jsonld
@@ -47,7 +52,7 @@ $jsonld
           <p class="kicker">Открытая книга</p>
           <h1>$title</h1>
           <p class="author">$author</p>
-          <p class="subtitle">Карточные платежи, СБП и платёжная инфраструктура</p>
+          <p class="subtitle">$subtitle</p>
           <p class="actions">
             <a class="button" href="$pdf" download>Скачать PDF</a>
             <a class="button ghost" href="https://github.com/danilkiff/payments-book">Исходники</a>

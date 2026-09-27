@@ -18,7 +18,7 @@ pdf: svg  ## собрать книгу (svg → gitversion → latexmk)
 	@scripts/gen-gitversion.sh
 	latexmk payments-book.tex
 
-site:  ## сайт payments.pq3.ru в build/site из build/payments-book.pdf (нужен pdftoppm)
+site:  ## сайт payments.pq3.ru в build/site из build/payments-book.pdf (нужны pdftoppm, Pillow, PT Sans)
 	python3 scripts/gen-site.py build/payments-book.pdf $$(git describe --tags --abbrev=0) build/site
 
 clean:  ## очистить build/ и удалить сгенерированные figure PDF
