@@ -26,7 +26,7 @@
     <meta property="og:type" content="book" />
     <meta property="og:title" content="$title" />
     <meta property="og:site_name" content="payments.pq3.ru" />
-    <meta property="og:description" content="$og_description" />
+    <meta property="og:description" content="$abstract_ru" />
     <meta property="og:url" content="$url" />
     <meta property="og:image" content="${url}og.png" />
     <meta property="og:image:width" content="1200" />
@@ -42,49 +42,30 @@ $jsonld
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Mono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Mono&display=swap"
     />
     <link rel="stylesheet" href="site.css" />
   </head>
   <body>
     <main>
-      <header class="hero">
+      <header class="title">
         <a class="cover" href="$pdf"><img src="cover.png" width="720" height="1023" alt="Обложка книги $title" /></a>
-        <div class="lead">
-          <p class="kicker">Открытая книга</p>
+        <div>
           <h1>$title</h1>
-          <p class="author">$author</p>
           <p class="subtitle">$subtitle</p>
-          <p class="actions">
+          <p class="author"><a href="https://orcid.org/$orcid">$author</a></p>
+          <p class="abstract">$abstract_ru</p>
+          <div class="actions">
             <a class="button" href="$pdf" download>Скачать PDF</a>
             <a class="button ghost" href="https://github.com/danilkiff/payments-book">Исходники</a>
-          </p>
-          <p class="meta">
-            $version от $date_ru · PDF $pdf_mb МБ · CC BY-NC 4.0<br />
-            DOI <a href="https://doi.org/$doi">$doi</a>
-          </p>
-        </div>
-      </header>
-
-      <section>
-        <h2>О книге</h2>
-        <p>$abstract_ru</p>
-        <p lang="en" class="en">$abstract_en</p>
-      </section>
-
-      <section>
-        <h2>Содержание</h2>
-        <ol class="toc">
-$toc
-        </ol>
-      </section>
-
-      <section>
-        <h2>Как цитировать</h2>
-        <p class="cite">$author. $title. $year. DOI: <a href="https://doi.org/$doi">$doi</a></p>
-        <details>
-          <summary>BibTeX</summary>
-          <pre>@book{danilkiff-payments-engineering,
+            <a class="button ghost" href="https://github.com/danilkiff/payments-book/issues">Сообщить об ошибке</a>
+            <details class="cite">
+              <summary class="button ghost">Как цитировать</summary>
+              <div class="cite-panel">
+                <p class="cite-label">Ссылка <button type="button" data-copy="cite-text">Копировать</button></p>
+                <p id="cite-text">$author. $title. $year. DOI: $doi</p>
+                <p class="cite-label">BibTeX <button type="button" data-copy="cite-bibtex">Копировать</button></p>
+                <pre id="cite-bibtex">@book{danilkiff-payments-engineering,
   author    = {$citation_author},
   title     = {$title},
   year      = {$year},
@@ -92,15 +73,53 @@ $toc
   doi       = {$doi},
   url       = {https://doi.org/$doi}
 }</pre>
-        </details>
+              </div>
+            </details>
+          </div>
+          <p class="meta">
+            Версия $version от $date_ru (<a href="https://github.com/danilkiff/payments-book/releases">все версии</a>), PDF $pdf_mb&nbsp;МБ, лицензия <span class="nowrap">CC BY-NC 4.0</span><br />
+            DOI <a class="doi" href="https://doi.org/$doi">$doi</a>
+          </p>
+        </div>
+      </header>
+
+      <div class="columns">
+        <div>
+      <section class="prose">
+        <h2>Предисловие</h2>
+$preface
+        <p class="more"><a href="$pdf#page=$preface_page">Предисловие целиком</a></p>
       </section>
 
-      <footer>
-        <a href="https://github.com/danilkiff/payments-book/issues">Сообщить об ошибке</a> ·
-        <a href="https://github.com/danilkiff/payments-book/releases">Все версии</a> ·
-        <a href="https://zenodo.org/records/$zenodo_recid">Zenodo</a> ·
-        <a href="https://orcid.org/$orcid">ORCID</a>
-      </footer>
+      <figure>
+        <a href="figure.svg"><img src="figure.svg" width="385" height="189" alt="$figure_alt" /></a>
+        <figcaption>Рис.&nbsp;$figure_num&nbsp;&mdash; $figure_caption Из $figure_chapter, <a href="$figure_href">с.&nbsp;$figure_page</a>.</figcaption>
+      </figure>
+        </div>
+
+      <section>
+        <h2>Оглавление</h2>
+        <ol class="toc">
+$toc
+        </ol>
+      </section>
+      </div>
+
+
     </main>
+    <script>
+      const cite = document.querySelector("details.cite");
+      document.addEventListener("click", (ev) => {
+        if (!cite.contains(ev.target)) cite.open = false;
+      });
+      for (const b of document.querySelectorAll("[data-copy]")) {
+        b.addEventListener("click", () => {
+          navigator.clipboard.writeText(document.getElementById(b.dataset.copy).textContent).then(() => {
+            b.textContent = "Скопировано";
+            setTimeout(() => (b.textContent = "Копировать"), 1500);
+          });
+        });
+      }
+    </script>
   </body>
 </html>

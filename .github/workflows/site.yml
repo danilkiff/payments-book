@@ -26,14 +26,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Выдержка, рисунок и метаданные Zenodo берутся из того же тега, что и PDF.
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.tag }}
 
       - name: Download PDF from GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release download "${{ inputs.tag }}" -p '*.pdf' -D build
 
-      - name: Install poppler-utils, Pillow and PT Sans
+      - name: Install poppler-utils, Pillow and ParaType fonts
         run: |
           sudo apt-get update -q
           sudo apt-get install -y -q poppler-utils python3-pil fonts-paratype

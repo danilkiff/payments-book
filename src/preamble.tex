@@ -106,6 +106,9 @@
 % --- Визуальные стили (цвета, tcolorbox, notebox-блоки, маркер) ---
 \input{src/styles}
 
+% --- Название, подзаголовок, автор ---
+\input{src/meta}
+
 % --- Векторная обложка (определения; генерируется scripts/figures/gen_cover.py) ---
 % После styles, где загружены tikz + tikzlibrary fadings. Рисуется \drawbookcover
 % из \makebookcover (src/frontmatter/pre.tex).
@@ -113,8 +116,9 @@
 
 % --- Метаданные PDF ---
 \hypersetup{
-  pdftitle={Инженерия платежей: открытая книга о~карточных платежах, СБП и платёжной инфраструктуре},
-  pdfauthor={},
+  pdftitle={\booktitle},
+  pdfsubject={\booksubtitle},
+  pdfauthor={\bookauthor},
   hidelinks,
   bookmarksnumbered=true,
 }
